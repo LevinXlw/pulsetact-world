@@ -1,0 +1,8 @@
+import type {Blocker,Position,Progress} from './types';
+export const furniture=[{id:'quiet-desks',name:'独立学习桌组',cost:4,quiet:3,collab:0},{id:'discussion-table',name:'讨论桌',cost:4,quiet:0,collab:3},{id:'acoustic-screen',name:'隔音屏风',cost:3,quiet:2,collab:0},{id:'whiteboard',name:'白板',cost:2,quiet:0,collab:2},{id:'shared-power',name:'共享电源点',cost:1,quiet:1,collab:1}];
+export function metrics(ids:string[]){return furniture.filter(f=>ids.includes(f.id)).reduce((a,f)=>({cost:a.cost+f.cost,quiet:a.quiet+f.quiet,collab:a.collab+f.collab}),{cost:0,quiet:0,collab:0});}
+export function goalMet(goal:string,ids:string[]){const m=metrics(ids);return goal==='偏安静'?m.quiet>=4:goal==='偏协作'?m.collab>=4:m.quiet>=3&&m.collab>=3;}
+export const progressCount=(p:Progress)=>new Set(p.opened).size+new Set(p.talked).size+new Set(p.completed).size;
+export function blocked(x:number,z:number,bs:Blocker[],r=.35){return Math.abs(x)>17-r||Math.abs(z)>14-r||bs.some(b=>Math.abs(x-b.x)<b.w/2+r&&Math.abs(z-b.z)<b.d/2+r);}
+export function move(pos:Position,dx:number,dz:number,dt:number,bs:Blocker[]):Position {if(!pos.every(Number.isFinite)||blocked(...pos,bs))return [0,11];const l=Math.hypot(dx,dz)||1;let [x,z]=pos;const steps=Math.max(1,Math.ceil(Math.min(dt,.1)/.016));for(let i=0;i<steps;i++){const sx=dx/l*3.5*Math.min(dt,.1)/steps,sz=dz/l*3.5*Math.min(dt,.1)/steps;if(!blocked(x+sx,z,bs))x+=sx;if(!blocked(x,z+sz,bs))z+=sz;}return [x,z];}
+export function visible(a:Position,b:Position,bs:Blocker[]){const length=Math.hypot(b[0]-a[0],b[1]-a[1]);for(let t=0;t<length;t+=.15){const v=t/(length||1);if(bs.some(r=>Math.abs(a[0]+(b[0]-a[0])*v-r.x)<r.w/2&&Math.abs(a[1]+(b[1]-a[1])*v-r.z)<r.d/2))return false;}return true;}

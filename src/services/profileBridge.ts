@@ -1,0 +1,2 @@
+import type {Save} from '../types';
+export function profileCandidates(save:Save){return {interests:[...save.profile.interests.map(value=>({value,sourceId:save.profile.id})),...Object.entries(save.activities).filter(([,a])=>a.completed&&typeof a.answers.feeling==='string').map(([id,a])=>({value:a.answers.feeling,sourceId:id==='mit'?'mit-study-space':'harvard-course-discussion'}))],favoritePlaces:save.favorites,questions:save.notes.map(n=>({value:n.text,sourceId:n.id,campus:n.campus}))};}

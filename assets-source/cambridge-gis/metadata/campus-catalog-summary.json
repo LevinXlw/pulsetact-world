@@ -1,0 +1,68 @@
+[
+  {
+    "campus": "mit",
+    "tile": "F4",
+    "nearbyBuildings": 92,
+    "namedExamples": [
+      "McCormick Hall, Building W4",
+      "Fariborz Maseeh Hall, Building W1",
+      "Building W11",
+      "139 Massachusetts Avenue Visitor Lot",
+      " ",
+      "Wright Brothers Wind Tunnel, Building 17",
+      " ",
+      "Kresge Auditorium, Building W16",
+      "Building W2",
+      "High Voltage Research Lab, Building N10",
+      "Superconducting Test Facility, Building N9",
+      "Building N16C",
+      "Building N16A",
+      "Building N16B",
+      "Cooling Tower & Oil Reserve, Building N16"
+    ]
+  },
+  {
+    "campus": "mit",
+    "tile": "G4",
+    "nearbyBuildings": 95,
+    "namedExamples": [
+      "Massachusetts Ave over Memorial Drive ",
+      "Koch Biology Building, Building 68",
+      "Albany Garage, Building N4",
+      " ",
+      " ",
+      "Green Building, Building 54",
+      "East Campus, Building 62",
+      "East Campus, Building 64",
+      "Walker Memorial, Building 50",
+      "Power Plant Annex, Building 43",
+      "Dorrance Building, Building 16 ",
+      "Eastman Laboratories, Building 6 ",
+      "Rogers Building, Building 7 ",
+      "EG&G Education Center, Building 34",
+      "Fairchild Building (38), Building 38"
+    ]
+  },
+  {
+    "campus": "harvard",
+    "tile": "E3",
+    "nearbyBuildings": 478,
+    "namedExamples": [
+      "Cambridge Street Underpass",
+      "Fogg Art Museum",
+      "William James Hall",
+      "Lowell Lecture Hall",
+      "Sparks House",
+      "Adolphus Busch Hall",
+      "Adolphus Busch Hall",
+      "Sparks House Garage",
+      "Paine Hall",
+      "Littauer Center",
+      "Gannett House",
+      "Hemingway Gymnasium",
+      "Hemingway Gymnasium",
+      "Claverly Hall",
+      "9 Bow Street"
+    ]
+  }
+]

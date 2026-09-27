@@ -1,0 +1,32 @@
+{
+  "campus": "mit",
+  "vegetationStatus": "ready",
+  "quality": "standard",
+  "ambientOcclusion": true,
+  "presentation": true,
+  "cameraPosition": [
+    58.990905,
+    5.591477772161989,
+    65.301177
+  ],
+  "cameraGroundHeight": 3.9414777721619885,
+  "fov": 48,
+  "position": [
+    58.990905,
+    3.9414777721619885,
+    65.301177
+  ],
+  "cameraForward": [
+    -0.41745643615789263,
+    0.08489768280241602,
+    -0.9047223371649072
+  ],
+  "mode": "stroll",
+  "openingTrianglesRemoved": 14,
+  "surfaceTriangles": {
+    "walls": 22682,
+    "roofs": 7156
+  },
+  "calls": 154,
+  "triangles": 2158993
+}

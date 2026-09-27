@@ -1,0 +1,103 @@
+{
+  "source": "https://www.cambridgema.gov/gis/3d/3ddata/3ddatadownloadmap",
+  "selectedTiles": [
+    {
+      "tile": "E3",
+      "campus": "harvard"
+    },
+    {
+      "tile": "F4",
+      "campus": "mit"
+    },
+    {
+      "tile": "G4",
+      "campus": "mit"
+    }
+  ],
+  "files": [
+    {
+      "tile": "E3",
+      "campus": "harvard",
+      "kind": "buildings",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/Camb3D_E-3_2023_Bulding_Models_OBJ.zip",
+      "path": "harvard/E3/Camb3D_E-3_2023_Bulding_Models_OBJ.zip"
+    },
+    {
+      "tile": "E3",
+      "campus": "harvard",
+      "kind": "terrain",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_E-3_2018_TerrainMesh_OBJ.zip",
+      "path": "harvard/E3/CAMB3D_E-3_2018_TerrainMesh_OBJ.zip"
+    },
+    {
+      "tile": "E3",
+      "campus": "harvard",
+      "kind": "orthophoto",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_E-3_2025_OrthoPhoto_JPG.zip",
+      "path": "harvard/E3/CAMB3D_E-3_2025_OrthoPhoto_JPG.zip"
+    },
+    {
+      "tile": "E3",
+      "campus": "harvard",
+      "kind": "groundplan",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_E-3_2025_GISGroundplan_JPG.zip",
+      "path": "harvard/E3/CAMB3D_E-3_2025_GISGroundplan_JPG.zip"
+    },
+    {
+      "tile": "F4",
+      "campus": "mit",
+      "kind": "buildings",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+      "path": "mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip"
+    },
+    {
+      "tile": "F4",
+      "campus": "mit",
+      "kind": "terrain",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_F-4_2018_TerrainMesh_OBJ.zip",
+      "path": "mit/F4/CAMB3D_F-4_2018_TerrainMesh_OBJ.zip"
+    },
+    {
+      "tile": "F4",
+      "campus": "mit",
+      "kind": "orthophoto",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_F-4_2025_OrthoPhoto_JPG.zip",
+      "path": "mit/F4/CAMB3D_F-4_2025_OrthoPhoto_JPG.zip"
+    },
+    {
+      "tile": "F4",
+      "campus": "mit",
+      "kind": "groundplan",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_F-4_2025_GISGroundplan_JPG.zip",
+      "path": "mit/F4/CAMB3D_F-4_2025_GISGroundplan_JPG.zip"
+    },
+    {
+      "tile": "G4",
+      "campus": "mit",
+      "kind": "buildings",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+      "path": "mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip"
+    },
+    {
+      "tile": "G4",
+      "campus": "mit",
+      "kind": "terrain",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_G-4_2018_TerrainMesh_OBJ.zip",
+      "path": "mit/G4/CAMB3D_G-4_2018_TerrainMesh_OBJ.zip"
+    },
+    {
+      "tile": "G4",
+      "campus": "mit",
+      "kind": "orthophoto",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_G-4_2025_OrthoPhoto_JPG.zip",
+      "path": "mit/G4/CAMB3D_G-4_2025_OrthoPhoto_JPG.zip"
+    },
+    {
+      "tile": "G4",
+      "campus": "mit",
+      "kind": "groundplan",
+      "url": "https://cambmagisdata.blob.core.windows.net/camb3d/CAMB3D_G-4_2025_GISGroundplan_JPG.zip",
+      "path": "mit/G4/CAMB3D_G-4_2025_GISGroundplan_JPG.zip"
+    }
+  ]
+}

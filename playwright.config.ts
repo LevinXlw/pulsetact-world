@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'tests/e2e',timeout:90000,expect:{timeout:15000},workers:1,use:{baseURL:'http://127.0.0.1:5173',viewport:{width:1440,height:900},browserName:'chromium',channel:process.env.PLAYWRIGHT_CHANNEL||'msedge',screenshot:'only-on-failure',launchOptions:{args:['--enable-webgl','--ignore-gpu-blocklist']}},reporter:[['list'],['html',{open:'never'}]]});

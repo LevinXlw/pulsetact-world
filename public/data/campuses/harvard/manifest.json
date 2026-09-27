@@ -1,0 +1,6560 @@
+{
+  "campus": "harvard",
+  "radius": 420,
+  "originStatePlaneFeet": [
+    759833.3159679235,
+    2961657.579608309
+  ],
+  "spawn": [
+    -27.089,
+    20.116
+  ],
+  "points": {
+    "harvard-yard": [
+      -27.089,
+      20.116
+    ],
+    "harvard-widener": [
+      -12.174,
+      40.043
+    ],
+    "harvard-memorial": [
+      20.43,
+      -35.637
+    ]
+  },
+  "buildingCount": 652,
+  "buildingTriangles": 87969,
+  "terrainTriangles": 79753,
+  "modelBytes": 20221544,
+  "models": [
+    {
+      "id": "CAM_AUEEX-VBKQT-DCCLX",
+      "name": "Cambridge Street Underpass",
+      "tile": "E3",
+      "position": [
+        -45.302,
+        -170.034
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_WH3C6-978Q4-3Q23H",
+      "name": "Fogg Art Museum",
+      "tile": "E3",
+      "position": [
+        182.323,
+        16.111
+      ],
+      "triangles": 307
+    },
+    {
+      "id": "CAM_XF711-N5LRY-1ZTID",
+      "name": "42 Kirkland Street",
+      "tile": "E3",
+      "position": [
+        372.033,
+        -293.841
+      ],
+      "triangles": 247
+    },
+    {
+      "id": "CAM_BNMVL-SXQ7L-74ZI3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        368.142,
+        -262.589
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_1AKMS-O6CO0-A183Y",
+      "name": "Westengard House",
+      "tile": "E3",
+      "position": [
+        -384.62,
+        -163.904
+      ],
+      "triangles": 106
+    },
+    {
+      "id": "CAM_WHF43-U77UJ-20W5R",
+      "name": "Lipmann House",
+      "tile": "E3",
+      "position": [
+        338.465,
+        -354.302
+      ],
+      "triangles": 317
+    },
+    {
+      "id": "CAM_UW8H0-BRQV6-S08JC",
+      "name": "37-41 Kirkland Street",
+      "tile": "E3",
+      "position": [
+        307.324,
+        -325.819
+      ],
+      "triangles": 210
+    },
+    {
+      "id": "CAM_LT62D-DC8AQ-1J6D4",
+      "name": "William James Hall",
+      "tile": "E3",
+      "position": [
+        235.522,
+        -317.949
+      ],
+      "triangles": 72
+    },
+    {
+      "id": "CAM_BS0J8-ED7DN-DN6O0",
+      "name": "Lowell Lecture Hall",
+      "tile": "E3",
+      "position": [
+        72.009,
+        -264.287
+      ],
+      "triangles": 276
+    },
+    {
+      "id": "CAM_O90UX-2LNTZ-RT7GF",
+      "name": "Sparks House",
+      "tile": "E3",
+      "position": [
+        106.59,
+        -279.005
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_YZXUI-SKLT0-8891I",
+      "name": "Adolphus Busch Hall",
+      "tile": "E3",
+      "position": [
+        164.663,
+        -301.735
+      ],
+      "triangles": 993
+    },
+    {
+      "id": "CAM_O9LUP-XSKHC-0H9CM",
+      "name": "Adolphus Busch Hall",
+      "tile": "E3",
+      "position": [
+        163.901,
+        -271.628
+      ],
+      "triangles": 70
+    },
+    {
+      "id": "CAM_2OS6F-N9A2K-IC2GW",
+      "name": "Sparks House Garage",
+      "tile": "E3",
+      "position": [
+        127.854,
+        -297.11
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_PPS85-P0F1R-HP428",
+      "name": "Paine Hall",
+      "tile": "E3",
+      "position": [
+        -57.061,
+        -284.186
+      ],
+      "triangles": 159
+    },
+    {
+      "id": "CAM_RDE23-ZU2QL-C5WUZ",
+      "name": "Littauer Center",
+      "tile": "E3",
+      "position": [
+        -157.375,
+        -235.358
+      ],
+      "triangles": 239
+    },
+    {
+      "id": "CAM_Q76S2-MTKF4-5PWB7",
+      "name": "Gannett House",
+      "tile": "E3",
+      "position": [
+        -240.798,
+        -265.393
+      ],
+      "triangles": 110
+    },
+    {
+      "id": "CAM_1DKRO-6MX0W-9HR6A",
+      "name": "Hemingway Gymnasium",
+      "tile": "E3",
+      "position": [
+        -202.23,
+        -307.73
+      ],
+      "triangles": 297
+    },
+    {
+      "id": "CAM_28GZ4-O0SO6-ZPT4S",
+      "name": "Hemingway Gymnasium",
+      "tile": "E3",
+      "position": [
+        -265.695,
+        -298.623
+      ],
+      "triangles": 59
+    },
+    {
+      "id": "CAM_R6488-0NLTE-KOPOM",
+      "name": "Hastings Hall",
+      "tile": "E3",
+      "position": [
+        -280.866,
+        -356.878
+      ],
+      "triangles": 687
+    },
+    {
+      "id": "CAM_3QPFV-MY3XN-I91YC",
+      "name": "Yenching Library",
+      "tile": "E3",
+      "position": [
+        214.242,
+        -375.505
+      ],
+      "triangles": 364
+    },
+    {
+      "id": "CAM_S7WOL-DH7T1-VHQ3H",
+      "name": "Claverly Hall",
+      "tile": "E3",
+      "position": [
+        -109.747,
+        247.776
+      ],
+      "triangles": 303
+    },
+    {
+      "id": "CAM_LZ3CD-KYK0R-IVVC8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -115.235,
+        224.394
+      ],
+      "triangles": 24
+    },
+    {
+      "id": "CAM_6BKWC-I7C9V-2JBEB",
+      "name": "9 Bow Street",
+      "tile": "E3",
+      "position": [
+        43.119,
+        269.923
+      ],
+      "triangles": 257
+    },
+    {
+      "id": "CAM_VVHLI-PPGWY-3AUXF",
+      "name": "Linden Street Studios",
+      "tile": "E3",
+      "position": [
+        -53.186,
+        220.445
+      ],
+      "triangles": 115
+    },
+    {
+      "id": "CAM_SC90O-RDSXL-2UJ66",
+      "name": "5-7 Linden Street",
+      "tile": "E3",
+      "position": [
+        -92.206,
+        190.713
+      ],
+      "triangles": 270
+    },
+    {
+      "id": "CAM_C7QF1-ITLK3-D9CF8",
+      "name": "Randolph Hall, Adams House",
+      "tile": "E3",
+      "position": [
+        -62.515,
+        267.969
+      ],
+      "triangles": 903
+    },
+    {
+      "id": "CAM_T8ZIR-LVJKL-0QUII",
+      "name": "Apthorp, Adams House",
+      "tile": "E3",
+      "position": [
+        -53.619,
+        233.772
+      ],
+      "triangles": 156
+    },
+    {
+      "id": "CAM_VJDB1-3BTQB-3GFYV",
+      "name": "Wigglesworth Hall C",
+      "tile": "E3",
+      "position": [
+        10.359,
+        163.044
+      ],
+      "triangles": 686
+    },
+    {
+      "id": "CAM_8IH9Q-WMADV-ZVGAM",
+      "name": "Wigglesworth Hall",
+      "tile": "E3",
+      "position": [
+        -65.044,
+        135.891
+      ],
+      "triangles": 672
+    },
+    {
+      "id": "CAM_0M3E5-SZ0YY-IS372",
+      "name": "Wadsworth House",
+      "tile": "E3",
+      "position": [
+        -122.16,
+        106.496
+      ],
+      "triangles": 507
+    },
+    {
+      "id": "CAM_LV8C3-8JQVU-NUZN9",
+      "name": "Matthews Hall",
+      "tile": "E3",
+      "position": [
+        -148.87,
+        25.623
+      ],
+      "triangles": 497
+    },
+    {
+      "id": "CAM_MKFG3-9XUI7-ZNOEM",
+      "name": "Phillips Brooks House",
+      "tile": "E3",
+      "position": [
+        -130.259,
+        -149.722
+      ],
+      "triangles": 94
+    },
+    {
+      "id": "CAM_AA4ZB-HN3K0-NHZVL",
+      "name": "Mower Hall",
+      "tile": "E3",
+      "position": [
+        -156.477,
+        -131.745
+      ],
+      "triangles": 323
+    },
+    {
+      "id": "CAM_ARUZ8-762GM-PVPOZ",
+      "name": "Holden Chapel",
+      "tile": "E3",
+      "position": [
+        -146.965,
+        -107.457
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_90VRQ-WGJ4B-XZI2Y",
+      "name": "Lionel Hall",
+      "tile": "E3",
+      "position": [
+        -166.261,
+        -89.938
+      ],
+      "triangles": 351
+    },
+    {
+      "id": "CAM_Y9GRZ-C4SE0-FGVNN",
+      "name": "Massachusetts Hall",
+      "tile": "E3",
+      "position": [
+        -159.917,
+        -15.926
+      ],
+      "triangles": 373
+    },
+    {
+      "id": "CAM_N31GJ-X9R71-OZA56",
+      "name": "Straus Hall",
+      "tile": "E3",
+      "position": [
+        -185.607,
+        18.24
+      ],
+      "triangles": 377
+    },
+    {
+      "id": "CAM_EC1X9-WFN87-2N5JJ",
+      "name": "Lehman Hall, Dudley House",
+      "tile": "E3",
+      "position": [
+        -176.297,
+        77.933
+      ],
+      "triangles": 90
+    },
+    {
+      "id": "CAM_CL9FA-J3403-S9TUY",
+      "name": "19 Ware Street",
+      "tile": "E3",
+      "position": [
+        278.89,
+        100.743
+      ],
+      "triangles": 120
+    },
+    {
+      "id": "CAM_BDKRT-S21YS-0LDYM",
+      "name": "15 Ware Street",
+      "tile": "E3",
+      "position": [
+        268.624,
+        133.515
+      ],
+      "triangles": 112
+    },
+    {
+      "id": "CAM_SPK45-FZPUL-TOGIB",
+      "name": "15 Ware Street Garage",
+      "tile": "E3",
+      "position": [
+        247.996,
+        132.256
+      ],
+      "triangles": 14
+    },
+    {
+      "id": "CAM_WF8O1-326D6-G8PF5",
+      "name": "Pennypacker Hall",
+      "tile": "E3",
+      "position": [
+        230.248,
+        244.556
+      ],
+      "triangles": 164
+    },
+    {
+      "id": "CAM_6MA03-M28DL-PCLWH",
+      "name": "Hurlbut Hall",
+      "tile": "E3",
+      "position": [
+        199.196,
+        238.127
+      ],
+      "triangles": 206
+    },
+    {
+      "id": "CAM_OSHE5-9CW0W-RVXP2",
+      "name": "Greenough Hall",
+      "tile": "E3",
+      "position": [
+        208.494,
+        152.461
+      ],
+      "triangles": 106
+    },
+    {
+      "id": "CAM_7U0NJ-ZYI3C-QN73N",
+      "name": "16 Prescott Street",
+      "tile": "E3",
+      "position": [
+        221.915,
+        119.792
+      ],
+      "triangles": 189
+    },
+    {
+      "id": "CAM_B078E-HQQS1-3Z5NM",
+      "name": "18 Prescott Street Garage",
+      "tile": "E3",
+      "position": [
+        243.167,
+        113.826
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_Z2KZV-2WOCO-44IB0",
+      "name": "20-20A Prescott Street",
+      "tile": "E3",
+      "position": [
+        237.548,
+        81.017
+      ],
+      "triangles": 202
+    },
+    {
+      "id": "CAM_WNLD1-CP787-WHW7D",
+      "name": "22-24 Prescott Street",
+      "tile": "E3",
+      "position": [
+        229.44,
+        52.488
+      ],
+      "triangles": 124
+    },
+    {
+      "id": "CAM_1FVID-JIZZE-2SYET",
+      "name": "472-474 Broadway",
+      "tile": "E3",
+      "position": [
+        243.181,
+        28.882
+      ],
+      "triangles": 124
+    },
+    {
+      "id": "CAM_PW33P-JFQV2-1QGWP",
+      "name": "The Inn at Harvard",
+      "tile": "E3",
+      "position": [
+        133.79,
+        261.093
+      ],
+      "triangles": 652
+    },
+    {
+      "id": "CAM_PKPI7-Y7PMW-9RZP2",
+      "name": "Barker Center",
+      "tile": "E3",
+      "position": [
+        151.97,
+        184.205
+      ],
+      "triangles": 577
+    },
+    {
+      "id": "CAM_FJDCV-5OMYH-N6JER",
+      "name": "Faculty Club",
+      "tile": "E3",
+      "position": [
+        171.391,
+        115.071
+      ],
+      "triangles": 536
+    },
+    {
+      "id": "CAM_OI636-17IKE-T96A1",
+      "name": "Lamont Library",
+      "tile": "E3",
+      "position": [
+        71.65,
+        169.696
+      ],
+      "triangles": 105
+    },
+    {
+      "id": "CAM_1M2EV-BHFNT-6KRV9",
+      "name": "Dana Palmer",
+      "tile": "E3",
+      "position": [
+        137.558,
+        142.905
+      ],
+      "triangles": 88
+    },
+    {
+      "id": "CAM_O6LKK-DSZXU-AJ7U0",
+      "name": "Faculty Club",
+      "tile": "E3",
+      "position": [
+        146.859,
+        123.838
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_211UF-MEPO6-7OUC8",
+      "name": "7 Ware Street",
+      "tile": "E3",
+      "position": [
+        239.947,
+        207.894
+      ],
+      "triangles": 321
+    },
+    {
+      "id": "CAM_EM0DM-0GVEW-T6R3O",
+      "name": "Barker Center",
+      "tile": "E3",
+      "position": [
+        142.134,
+        210.263
+      ],
+      "triangles": 126
+    },
+    {
+      "id": "CAM_926GC-X77Z4-IO6ZX",
+      "name": "Barker Center, Warren House",
+      "tile": "E3",
+      "position": [
+        176.52,
+        147.293
+      ],
+      "triangles": 204
+    },
+    {
+      "id": "CAM_ACSPE-WEQJW-PQ3G0",
+      "name": "Morton Prince House",
+      "tile": "E3",
+      "position": [
+        207.932,
+        210.873
+      ],
+      "triangles": 130
+    },
+    {
+      "id": "CAM_N2P0B-QX941-SUUOE",
+      "name": "Houghton Library",
+      "tile": "E3",
+      "position": [
+        34.943,
+        122.951
+      ],
+      "triangles": 252
+    },
+    {
+      "id": "CAM_BKD5H-ZD6YG-YNWYC",
+      "name": "Loeb",
+      "tile": "E3",
+      "position": [
+        87.607,
+        87.268
+      ],
+      "triangles": 213
+    },
+    {
+      "id": "CAM_ZC306-3CMPZ-TSA0O",
+      "name": "Emerson Hall",
+      "tile": "E3",
+      "position": [
+        94.233,
+        47.281
+      ],
+      "triangles": 92
+    },
+    {
+      "id": "CAM_Q1JYW-OX4BJ-6SIPH",
+      "name": "Robinson Hall",
+      "tile": "E3",
+      "position": [
+        114.182,
+        -48.135
+      ],
+      "triangles": 24
+    },
+    {
+      "id": "CAM_QK37S-MTGOH-7TCM3",
+      "name": "Sever Hall",
+      "tile": "E3",
+      "position": [
+        70.344,
+        -8.054
+      ],
+      "triangles": 303
+    },
+    {
+      "id": "CAM_4ZVZD-KSWXD-SS5AR",
+      "name": "Boylston Hall",
+      "tile": "E3",
+      "position": [
+        -78.192,
+        107.369
+      ],
+      "triangles": 109
+    },
+    {
+      "id": "CAM_TA0CD-5J5W8-NTQKF",
+      "name": "Weld Hall",
+      "tile": "E3",
+      "position": [
+        -63.245,
+        41.71
+      ],
+      "triangles": 338
+    },
+    {
+      "id": "CAM_0ZZC4-YKM6N-5IXG9",
+      "name": "Grays Hall",
+      "tile": "E3",
+      "position": [
+        -120.409,
+        71.815
+      ],
+      "triangles": 272
+    },
+    {
+      "id": "CAM_8CAJB-PAAY2-4ROA8",
+      "name": "University Hall",
+      "tile": "E3",
+      "position": [
+        -59.8,
+        -17.295
+      ],
+      "triangles": 122
+    },
+    {
+      "id": "CAM_SV1O9-N4R0E-8RILC",
+      "name": "Thayer Hall",
+      "tile": "E3",
+      "position": [
+        -32.899,
+        -81.664
+      ],
+      "triangles": 228
+    },
+    {
+      "id": "CAM_3R7L6-FE2UC-IHDGF",
+      "name": "Memorial Church",
+      "tile": "E3",
+      "position": [
+        25.362,
+        -66.37
+      ],
+      "triangles": 152
+    },
+    {
+      "id": "CAM_S09O3-LYF7I-44K6Y",
+      "name": "Canaday Hall",
+      "tile": "E3",
+      "position": [
+        1.383,
+        -108.662
+      ],
+      "triangles": 112
+    },
+    {
+      "id": "CAM_48CKE-B42WT-BM700",
+      "name": "Canaday Hall",
+      "tile": "E3",
+      "position": [
+        29.355,
+        -127.305
+      ],
+      "triangles": 88
+    },
+    {
+      "id": "CAM_ZZ8JX-M0LN1-ZW1E2",
+      "name": "Holworthy Hall",
+      "tile": "E3",
+      "position": [
+        -72.648,
+        -135.623
+      ],
+      "triangles": 56
+    },
+    {
+      "id": "CAM_P4KLB-56FDY-RUM02",
+      "name": "Sackler Museum",
+      "tile": "E3",
+      "position": [
+        180.18,
+        -93.297
+      ],
+      "triangles": 297
+    },
+    {
+      "id": "CAM_C6W10-KZQEZ-6WIJG",
+      "name": "85-95 Prescott Street",
+      "tile": "E3",
+      "position": [
+        218.251,
+        -61.066
+      ],
+      "triangles": 258
+    },
+    {
+      "id": "CAM_95IR3-9ZP4K-KWC7M",
+      "name": "1746 Cambridge Street",
+      "tile": "E3",
+      "position": [
+        222.311,
+        -101.056
+      ],
+      "triangles": 349
+    },
+    {
+      "id": "CAM_1T5YY-8Z81O-Q4J62",
+      "name": "CGIS South",
+      "tile": "E3",
+      "position": [
+        263.219,
+        -82.127
+      ],
+      "triangles": 283
+    },
+    {
+      "id": "CAM_MVTFN-DML7Y-S6PS8",
+      "name": "Annenberg Hall",
+      "tile": "E3",
+      "position": [
+        127.893,
+        -186.857
+      ],
+      "triangles": 725
+    },
+    {
+      "id": "CAM_XTE6Q-NSP1G-MMEUC",
+      "name": "Gund Hall",
+      "tile": "E3",
+      "position": [
+        203.39,
+        -176.766
+      ],
+      "triangles": 343
+    },
+    {
+      "id": "CAM_RNZ3C-3GS8D-86ZN3",
+      "name": "Knafel Building",
+      "tile": "E3",
+      "position": [
+        254.352,
+        -149.952
+      ],
+      "triangles": 276
+    },
+    {
+      "id": "CAM_O5JPT-ETC78-DGMC4",
+      "name": "7 Sumner Road",
+      "tile": "E3",
+      "position": [
+        286.351,
+        -178.14
+      ],
+      "triangles": 76
+    },
+    {
+      "id": "CAM_7F7LO-DF51I-R6UBB",
+      "name": "3 Sumner Road",
+      "tile": "E3",
+      "position": [
+        289.121,
+        -161.82
+      ],
+      "triangles": 136
+    },
+    {
+      "id": "CAM_MS9N7-3Y9BT-DMQR6",
+      "name": "1727 Cambridge Street",
+      "tile": "E3",
+      "position": [
+        286.938,
+        -133.439
+      ],
+      "triangles": 277
+    },
+    {
+      "id": "CAM_WHCZ7-Q7YIK-GSYLW",
+      "name": "13 Sumner Road",
+      "tile": "E3",
+      "position": [
+        291.383,
+        -206.496
+      ],
+      "triangles": 186
+    },
+    {
+      "id": "CAM_MG4NW-2487S-R3KP1",
+      "name": "20 Sumner Road",
+      "tile": "E3",
+      "position": [
+        338.304,
+        -255.19
+      ],
+      "triangles": 61
+    },
+    {
+      "id": "CAM_HRM2T-8DFZ3-83II0",
+      "name": "40 Kirkland Street",
+      "tile": "E3",
+      "position": [
+        344.804,
+        -282.855
+      ],
+      "triangles": 203
+    },
+    {
+      "id": "CAM_9DBLY-TAQSR-2I01K",
+      "name": "Stoughton Hall",
+      "tile": "E3",
+      "position": [
+        -115.016,
+        -121.844
+      ],
+      "triangles": 126
+    },
+    {
+      "id": "CAM_SLBR3-ZSC9R-3TJZF",
+      "name": "Hollis Hall",
+      "tile": "E3",
+      "position": [
+        -124.357,
+        -80.769
+      ],
+      "triangles": 136
+    },
+    {
+      "id": "CAM_WJJ66-TL87E-IL4JA",
+      "name": "38 Kirkland Street",
+      "tile": "E3",
+      "position": [
+        304.66,
+        -259.528
+      ],
+      "triangles": 180
+    },
+    {
+      "id": "CAM_WLAV7-X5R69-J973G",
+      "name": "34 Kirkland Street",
+      "tile": "E3",
+      "position": [
+        267.695,
+        -252.588
+      ],
+      "triangles": 159
+    },
+    {
+      "id": "CAM_20TZA-X87UC-ZWCKG",
+      "name": "Widener Library",
+      "tile": "E3",
+      "position": [
+        -11.5,
+        92.589
+      ],
+      "triangles": 630
+    },
+    {
+      "id": "CAM_1P1FI-Z2GEI-R6RAO",
+      "name": "Harvard Hall",
+      "tile": "E3",
+      "position": [
+        -152.714,
+        -60.586
+      ],
+      "triangles": 159
+    },
+    {
+      "id": "CAM_JZKI7-R0O00-LOZZ3",
+      "name": "Canaday Hall",
+      "tile": "E3",
+      "position": [
+        54.047,
+        -94.741
+      ],
+      "triangles": 170
+    },
+    {
+      "id": "CAM_EDWA0-CWZ6W-C2FTT",
+      "name": "8 Prescott St",
+      "tile": "E3",
+      "position": [
+        202.58,
+        190.754
+      ],
+      "triangles": 176
+    },
+    {
+      "id": "CAM_C0EHZ-Q0KBU-X9XX0",
+      "name": "17 Ware Street",
+      "tile": "E3",
+      "position": [
+        275.47,
+        119.909
+      ],
+      "triangles": 87
+    },
+    {
+      "id": "CAM_HJO9Q-4OO1L-FUPIN",
+      "name": "18 Prescott Street",
+      "tile": "E3",
+      "position": [
+        225.243,
+        104.871
+      ],
+      "triangles": 176
+    },
+    {
+      "id": "CAM_ALIMV-36LZ4-YFFP7",
+      "name": "Broadway Garage",
+      "tile": "E3",
+      "position": [
+        289.193,
+        -28.2
+      ],
+      "triangles": 156
+    },
+    {
+      "id": "CAM_F2DZV-IN84S-RRU0D",
+      "name": "17 Sumner Road",
+      "tile": "E3",
+      "position": [
+        292.366,
+        -227.38
+      ],
+      "triangles": 82
+    },
+    {
+      "id": "CAM_4538O-7T1CA-RMYMM",
+      "name": "Fairfax Hall",
+      "tile": "E3",
+      "position": [
+        -91.599,
+        168.436
+      ],
+      "triangles": 330
+    },
+    {
+      "id": "CAM_4XPTJ-6HS2K-2CPF0",
+      "name": "Manter Hall",
+      "tile": "E3",
+      "position": [
+        -128.524,
+        157.2
+      ],
+      "triangles": 42
+    },
+    {
+      "id": "CAM_CSORR-3GX75-JC7BS",
+      "name": "Smith Campus Center Shops",
+      "tile": "E3",
+      "position": [
+        -208.364,
+        177.913
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_8JO61-Y9QRK-EFV3R",
+      "name": "Smith Center Health Services",
+      "tile": "E3",
+      "position": [
+        -154.355,
+        145.803
+      ],
+      "triangles": 30
+    },
+    {
+      "id": "CAM_2D6RB-NY4MO-FM3S7",
+      "name": "Smith Campus Center Garage",
+      "tile": "E3",
+      "position": [
+        -175.925,
+        191.22
+      ],
+      "triangles": 98
+    },
+    {
+      "id": "CAM_V1O1D-INRF4-GBPMD",
+      "name": "Smith Center Health Services",
+      "tile": "E3",
+      "position": [
+        -194.778,
+        233.701
+      ],
+      "triangles": 46
+    },
+    {
+      "id": "CAM_5SG0H-F8S5L-R0FZO",
+      "name": "Smith Center Health Services",
+      "tile": "E3",
+      "position": [
+        -210.737,
+        184.823
+      ],
+      "triangles": 382
+    },
+    {
+      "id": "CAM_DL0IN-93N4W-RADVB",
+      "name": "Science Center",
+      "tile": "E3",
+      "position": [
+        -28.447,
+        -222.597
+      ],
+      "triangles": 738
+    },
+    {
+      "id": "CAM_EWCH3-DR2H7-CHN5B",
+      "name": "Science Center",
+      "tile": "E3",
+      "position": [
+        -63.385,
+        -259.087
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_79G0C-KY027-Y8RYZ",
+      "name": "Science Center",
+      "tile": "E3",
+      "position": [
+        -56.018,
+        -261.21
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_A3ZQG-VL3UX-WO72N",
+      "name": "Science Center",
+      "tile": "E3",
+      "position": [
+        -48.975,
+        -263.178
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_YGLJ8-5XF6D-L8RUZ",
+      "name": "Science Center",
+      "tile": "E3",
+      "position": [
+        -70.649,
+        -255.63
+      ],
+      "triangles": 457
+    },
+    {
+      "id": "CAM_6AN8S-UU3Z4-IBBFF",
+      "name": "Jefferson Laboratory",
+      "tile": "E3",
+      "position": [
+        -100.103,
+        -327.544
+      ],
+      "triangles": 222
+    },
+    {
+      "id": "CAM_7U5QF-5813E-LRRMC",
+      "name": "9-13A Ware Street",
+      "tile": "E3",
+      "position": [
+        235.57,
+        168.555
+      ],
+      "triangles": 292
+    },
+    {
+      "id": "CAM_71Z9F-OTMVE-CZEZH",
+      "name": "Russell Hall, Adams House",
+      "tile": "E3",
+      "position": [
+        -26.466,
+        286.239
+      ],
+      "triangles": 400
+    },
+    {
+      "id": "CAM_F1I3T-WH6XL-MJFQI",
+      "name": "Westmorely Court, Adams House",
+      "tile": "E3",
+      "position": [
+        10.213,
+        286.03
+      ],
+      "triangles": 775
+    },
+    {
+      "id": "CAM_NN5F6-533WK-ZW9D2",
+      "name": "Jefferson Laboratory",
+      "tile": "E3",
+      "position": [
+        -67.448,
+        -359.131
+      ],
+      "triangles": 281
+    },
+    {
+      "id": "CAM_EFNJZ-5BRSG-L8WCG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -59.741,
+        -332.19
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_TQNVY-W8LC8-4QGDC",
+      "name": "22 Plympton Street",
+      "tile": "E3",
+      "position": [
+        -2.201,
+        258.411
+      ],
+      "triangles": 26
+    },
+    {
+      "id": "CAM_O15W9-ZKXJ3-XYYTC",
+      "name": "Division of Continuing Education",
+      "tile": "E3",
+      "position": [
+        -386.301,
+        -7.204
+      ],
+      "triangles": 203
+    },
+    {
+      "id": "CAM_8KPGM-COEMA-M3A8D",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -166.571,
+        314.655
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_AQTHJ-Z3GRG-IMFFI",
+      "name": "74 Mount Auburn Street",
+      "tile": "E3",
+      "position": [
+        -179.564,
+        282.102
+      ],
+      "triangles": 136
+    },
+    {
+      "id": "CAM_ECQRW-U8E2O-22BNW",
+      "name": "Maklin Athletic Center",
+      "tile": "E3",
+      "position": [
+        -251.247,
+        327.576
+      ],
+      "triangles": 761
+    },
+    {
+      "id": "CAM_6FD7G-2DVZZ-VSXJ6",
+      "name": "54 Dunster Street",
+      "tile": "E3",
+      "position": [
+        -247.015,
+        275.123
+      ],
+      "triangles": 162
+    },
+    {
+      "id": "CAM_LLYXA-M831G-DLUFP",
+      "name": "41 Winthrop Street",
+      "tile": "E3",
+      "position": [
+        -228.791,
+        290.985
+      ],
+      "triangles": 100
+    },
+    {
+      "id": "CAM_CPDI5-L2BWY-N7UB8",
+      "name": "78 Mount Auburn Street",
+      "tile": "E3",
+      "position": [
+        -229.581,
+        258.953
+      ],
+      "triangles": 163
+    },
+    {
+      "id": "CAM_LEHUL-QFTX9-EG5AN",
+      "name": "90 Mount Auburn Street",
+      "tile": "E3",
+      "position": [
+        -289.036,
+        226.812
+      ],
+      "triangles": 269
+    },
+    {
+      "id": "CAM_0F9GZ-4Y0SI-SBOKP",
+      "name": "65-67 Winthrop Street",
+      "tile": "E3",
+      "position": [
+        -298.619,
+        248.635
+      ],
+      "triangles": 118
+    },
+    {
+      "id": "CAM_3LAYS-2JB4L-GXN8A",
+      "name": "77 Dunster Street",
+      "tile": "E3",
+      "position": [
+        -299.838,
+        322.893
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_7UYNV-ZRCLY-O23UN",
+      "name": "60 Kennedy Street",
+      "tile": "E3",
+      "position": [
+        -351.074,
+        297.925
+      ],
+      "triangles": 138
+    },
+    {
+      "id": "CAM_D5C4E-KESVD-C8QYC",
+      "name": "17-19 South Street",
+      "tile": "E3",
+      "position": [
+        -316.425,
+        312.91
+      ],
+      "triangles": 59
+    },
+    {
+      "id": "CAM_0L1MB-B9S63-QB5UC",
+      "name": "69 Dunster Street",
+      "tile": "E3",
+      "position": [
+        -294.403,
+        305.166
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_IHJY8-6W3WV-Z08IZ",
+      "name": "53 Dunster Street, Dudley House",
+      "tile": "E3",
+      "position": [
+        -277.843,
+        260.9
+      ],
+      "triangles": 138
+    },
+    {
+      "id": "CAM_5W17A-GFNZY-VKY0L",
+      "name": "Advocate Building",
+      "tile": "E3",
+      "position": [
+        -338.455,
+        305.154
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_Y6VV2-S3NUO-UNT7J",
+      "name": "Oberon",
+      "tile": "E3",
+      "position": [
+        150.339,
+        385.357
+      ],
+      "triangles": 753
+    },
+    {
+      "id": "CAM_HDADR-CTKRU-9C4UK",
+      "name": "Lowell Masters House",
+      "tile": "E3",
+      "position": [
+        -218.864,
+        385.701
+      ],
+      "triangles": 266
+    },
+    {
+      "id": "CAM_KU4PS-0G4DL-D04M6",
+      "name": "Lowell House",
+      "tile": "E3",
+      "position": [
+        -148.978,
+        384.265
+      ],
+      "triangles": 3697
+    },
+    {
+      "id": "CAM_0XYHW-6VOBS-E0WMH",
+      "name": "Bryan Hall, Kirkland House",
+      "tile": "E3",
+      "position": [
+        -326.993,
+        334.042
+      ],
+      "triangles": 865
+    },
+    {
+      "id": "CAM_H45R6-SE1GC-HT1VH",
+      "name": "Smith Hall, Kirkland House",
+      "tile": "E3",
+      "position": [
+        -387.782,
+        375.734
+      ],
+      "triangles": 1956
+    },
+    {
+      "id": "CAM_L8SKC-RQ1P1-H59OV",
+      "name": "Hicks House, Kirkland House",
+      "tile": "E3",
+      "position": [
+        -363.407,
+        319.088
+      ],
+      "triangles": 92
+    },
+    {
+      "id": "CAM_YT6RV-VYZK0-CT6HC",
+      "name": "Mather Hall, Quincy House",
+      "tile": "E3",
+      "position": [
+        -28.483,
+        388.182
+      ],
+      "triangles": 351
+    },
+    {
+      "id": "CAM_ECBSO-39XQE-S6FAD",
+      "name": "Hampden Hall",
+      "tile": "E3",
+      "position": [
+        -2.273,
+        205.55
+      ],
+      "triangles": 298
+    },
+    {
+      "id": "CAM_IQFPP-UGXBS-E2YXR",
+      "name": "32-42 Church Street",
+      "tile": "E3",
+      "position": [
+        -329.243,
+        8.887
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_ZSCFS-YHKC8-BLUFN",
+      "name": "26-28 Church Street ",
+      "tile": "E3",
+      "position": [
+        -302.068,
+        9.339
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_IL8R1-SUFTH-01OWJ",
+      "name": "Apley Court at Dudley House",
+      "tile": "E3",
+      "position": [
+        -146.833,
+        214.841
+      ],
+      "triangles": 86
+    },
+    {
+      "id": "CAM_BXLJL-GMA5U-2LICR",
+      "name": "65 Rear Mount Auburn ",
+      "tile": "E3",
+      "position": [
+        -138.334,
+        230.576
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_3D2KM-VEK98-735UV",
+      "name": "Farkas Hall",
+      "tile": "E3",
+      "position": [
+        -130.102,
+        200.406
+      ],
+      "triangles": 232
+    },
+    {
+      "id": "CAM_MXYI1-XV4C2-AF4BG",
+      "name": "65 Mount Auburn Street",
+      "tile": "E3",
+      "position": [
+        -137.365,
+        250.958
+      ],
+      "triangles": 189
+    },
+    {
+      "id": "CAM_X016G-I4OPZ-5304Q",
+      "name": "LISE - Lab for Integrated Science and Engineering",
+      "tile": "E3",
+      "position": [
+        -25.618,
+        -356.504
+      ],
+      "triangles": 399
+    },
+    {
+      "id": "CAM_89SCB-DPZSI-G059V",
+      "name": "McKay Laboratory, Gordon",
+      "tile": "E3",
+      "position": [
+        -2.477,
+        -321.902
+      ],
+      "triangles": 347
+    },
+    {
+      "id": "CAM_4S91N-P130B-XJ4S7",
+      "name": "Mallinckrodt Chemistry Lab",
+      "tile": "E3",
+      "position": [
+        91.008,
+        -309.192
+      ],
+      "triangles": 445
+    },
+    {
+      "id": "CAM_9S7SE-GT6BI-JVZMM",
+      "name": "Mallinckrodt Chemistry Lab",
+      "tile": "E3",
+      "position": [
+        98.637,
+        -343.341
+      ],
+      "triangles": 122
+    },
+    {
+      "id": "CAM_TBD9Z-6Z2MT-TZVOW",
+      "name": "Sherman Fairchild Biochemistry",
+      "tile": "E3",
+      "position": [
+        146.082,
+        -361.792
+      ],
+      "triangles": 302
+    },
+    {
+      "id": "CAM_RBXBE-N9OG7-C9ZED",
+      "name": "Mallinckrodt Chemistry Lab",
+      "tile": "E3",
+      "position": [
+        42.743,
+        -340.89
+      ],
+      "triangles": 472
+    },
+    {
+      "id": "CAM_NMSC5-DVH8V-LLFHL",
+      "name": "Mallinckrodt Chemistry Lab",
+      "tile": "E3",
+      "position": [
+        89.017,
+        -374.483
+      ],
+      "triangles": 261
+    },
+    {
+      "id": "CAM_JSIHJ-QH5C0-XTZIL",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -388.663,
+        217.297
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_35B6Y-5TDV6-1HCXD",
+      "name": "Rosovsky Hall",
+      "tile": "E3",
+      "position": [
+        -94.683,
+        338.486
+      ],
+      "triangles": 419
+    },
+    {
+      "id": "CAM_N2RMO-QUKKN-1OD4J",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -189.311,
+        307.349
+      ],
+      "triangles": 273
+    },
+    {
+      "id": "CAM_8OZGY-F3NCQ-8CMSG",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -217.545,
+        270.214
+      ],
+      "triangles": 118
+    },
+    {
+      "id": "CAM_SWM9I-31C93-MWU9G",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -241.244,
+        251.625
+      ],
+      "triangles": 149
+    },
+    {
+      "id": "CAM_UMD83-6ZUW9-IH3JP",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -118.804,
+        314.173
+      ],
+      "triangles": 181
+    },
+    {
+      "id": "CAM_UVG7N-PTG56-VW692",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -308.518,
+        217.417
+      ],
+      "triangles": 106
+    },
+    {
+      "id": "CAM_RVRR0-QU6QO-FRFL5",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -340.773,
+        284.931
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_XUH52-YQP6B-D77VT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -300.684,
+        283.712
+      ],
+      "triangles": 199
+    },
+    {
+      "id": "CAM_VFW77-408AQ-UT147",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -264.483,
+        235.252
+      ],
+      "triangles": 226
+    },
+    {
+      "id": "CAM_XCIYH-QL30O-MPU09",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        31.268,
+        385.387
+      ],
+      "triangles": 446
+    },
+    {
+      "id": "CAM_SL5H2-5HDES-TYJ06",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        180.756,
+        384.754
+      ],
+      "triangles": 308
+    },
+    {
+      "id": "CAM_F253U-OOMTN-X4LPZ",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        349.035,
+        388.701
+      ],
+      "triangles": 42
+    },
+    {
+      "id": "CAM_FYEKA-AJ8Z2-WZCC6",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        370.263,
+        335.039
+      ],
+      "triangles": 207
+    },
+    {
+      "id": "CAM_H2TW7-70CZJ-8V0DT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        385.207,
+        299.855
+      ],
+      "triangles": 229
+    },
+    {
+      "id": "CAM_VDNFL-HXZXX-LHZAA",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        359.247,
+        363.024
+      ],
+      "triangles": 100
+    },
+    {
+      "id": "CAM_AEUZ7-9I0KJ-HXACV",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        258.165,
+        353.329
+      ],
+      "triangles": 485
+    },
+    {
+      "id": "CAM_VC2FA-D1JO0-AJK1D",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        302.771,
+        377.781
+      ],
+      "triangles": 148
+    },
+    {
+      "id": "CAM_KOMEK-XHNJT-FO2TQ",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        312.053,
+        361.468
+      ],
+      "triangles": 162
+    },
+    {
+      "id": "CAM_2PED1-9UZB0-TV5OM",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        327.001,
+        343.557
+      ],
+      "triangles": 97
+    },
+    {
+      "id": "CAM_2PPUZ-RLLUA-7FHK5",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        277.777,
+        310.922
+      ],
+      "triangles": 340
+    },
+    {
+      "id": "CAM_URO6P-AUNUY-DTXJG",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        294.54,
+        313.018
+      ],
+      "triangles": 306
+    },
+    {
+      "id": "CAM_NSS9Q-ZIBCQ-NV6P4",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        312.483,
+        320.903
+      ],
+      "triangles": 265
+    },
+    {
+      "id": "CAM_MZPWL-R8OKC-50Y3B",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        304.549,
+        334.07
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_BZL7H-2STLY-S03VS",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        325.555,
+        279.425
+      ],
+      "triangles": 105
+    },
+    {
+      "id": "CAM_GXUPB-BCKSX-1QXAD",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        348.897,
+        288.351
+      ],
+      "triangles": 132
+    },
+    {
+      "id": "CAM_WYZLM-UHYNQ-Y0TNY",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        339.518,
+        248.768
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_D50SS-3O73F-VN0NP",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        375.988,
+        240.179
+      ],
+      "triangles": 112
+    },
+    {
+      "id": "CAM_CFC73-VQZD0-FO83L",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        364.508,
+        259.205
+      ],
+      "triangles": 287
+    },
+    {
+      "id": "CAM_3OGTK-ICG2Q-FEACA",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        371.96,
+        150.046
+      ],
+      "triangles": 101
+    },
+    {
+      "id": "CAM_SQFR5-RJS4A-OBC0D",
+      "name": "Cambridge Rindge and Latin - Auto Shop",
+      "tile": "E3",
+      "position": [
+        363.193,
+        108.128
+      ],
+      "triangles": 323
+    },
+    {
+      "id": "CAM_FGDBE-JNDJE-54HOP",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        283.026,
+        381.659
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_OG4N2-JBCG4-Z6JLE",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        286.675,
+        326.104
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_0Y4ZR-URLP3-ARGTG",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        365.032,
+        158.32
+      ],
+      "triangles": 79
+    },
+    {
+      "id": "CAM_PGSH0-ESB78-VJ3OT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        365.513,
+        -200.9
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_E2C1P-YWTNE-4QSEM",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        385.034,
+        -182.675
+      ],
+      "triangles": 130
+    },
+    {
+      "id": "CAM_0UFFL-XUB46-GIVGY",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        372.915,
+        -126.684
+      ],
+      "triangles": 287
+    },
+    {
+      "id": "CAM_FNZID-OJHZI-2BB0V",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        345.435,
+        -128.451
+      ],
+      "triangles": 230
+    },
+    {
+      "id": "CAM_EI58W-0LR8P-DC11O",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        363.311,
+        -158.334
+      ],
+      "triangles": 85
+    },
+    {
+      "id": "CAM_R8JVI-E2V5C-ZSB55",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -366.1,
+        -102.819
+      ],
+      "triangles": 505
+    },
+    {
+      "id": "CAM_MREXC-6HS60-HH395",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -355.058,
+        -72.952
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_MBOYL-6969A-N98UK",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -254.684,
+        -28.041
+      ],
+      "triangles": 280
+    },
+    {
+      "id": "CAM_PJHUH-851XQ-T644V",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -327.982,
+        -24.142
+      ],
+      "triangles": 14
+    },
+    {
+      "id": "CAM_SQRIV-P8NV3-XLLUU",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -377.156,
+        -59.765
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_B629D-2XYUN-OLE7B",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -377.056,
+        -44.604
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_TTI37-R9LGD-2H83V",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -387.653,
+        -34.492
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_JI06C-ZJS9F-7S51E",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -313.531,
+        -30.105
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_WPNLW-2QYRB-OFHWD",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        313.498,
+        -349.498
+      ],
+      "triangles": 222
+    },
+    {
+      "id": "CAM_BY4NO-MOLJG-N9HPQ",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        300.107,
+        -378.899
+      ],
+      "triangles": 294
+    },
+    {
+      "id": "CAM_IH5TI-UU0SB-LX25U",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        164.94,
+        -287.707
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_BX3VF-1SMYW-TMVZ1",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -283.182,
+        -229.629
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_VFIAD-56K8X-2JSUG",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -334.021,
+        -228.061
+      ],
+      "triangles": 152
+    },
+    {
+      "id": "CAM_VS408-TZAI1-PRWTH",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -69.458,
+        302.209
+      ],
+      "triangles": 499
+    },
+    {
+      "id": "CAM_3VTBA-DSU8K-0FCIU",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -159.317,
+        237.032
+      ],
+      "triangles": 42
+    },
+    {
+      "id": "CAM_9OYLD-4EBJD-RUKUE",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -92.738,
+        211.647
+      ],
+      "triangles": 262
+    },
+    {
+      "id": "CAM_C2GUJ-K8FY2-YSGQY",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -17.399,
+        322.968
+      ],
+      "triangles": 92
+    },
+    {
+      "id": "CAM_ROLQH-M5NHE-MXJAP",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -39.826,
+        313.875
+      ],
+      "triangles": 31
+    },
+    {
+      "id": "CAM_XZYK1-OI1LM-HXXB5",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        205.393,
+        341.475
+      ],
+      "triangles": 352
+    },
+    {
+      "id": "CAM_THGFT-EOII7-VRGEN",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        229.405,
+        336.298
+      ],
+      "triangles": 85
+    },
+    {
+      "id": "CAM_2XET6-2MPRF-7LOI5",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        235.589,
+        324.825
+      ],
+      "triangles": 147
+    },
+    {
+      "id": "CAM_IKCY7-LKNMP-3NRXC",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        241.978,
+        313.167
+      ],
+      "triangles": 167
+    },
+    {
+      "id": "CAM_F6I0P-3QG2U-7OARV",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        245.138,
+        294.957
+      ],
+      "triangles": 291
+    },
+    {
+      "id": "CAM_5JDFF-UCU0A-2VMLD",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        257.353,
+        294.446
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_YANNH-WYUU9-NCPL7",
+      "name": "IKEDA CENTER",
+      "tile": "E3",
+      "position": [
+        215.939,
+        288.091
+      ],
+      "triangles": 271
+    },
+    {
+      "id": "CAM_4P04F-XDVUF-ROHNK",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        268.941,
+        252.115
+      ],
+      "triangles": 396
+    },
+    {
+      "id": "CAM_A1K3L-Z1R0F-7YZR4",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        315.651,
+        189.6
+      ],
+      "triangles": 394
+    },
+    {
+      "id": "CAM_7VXI0-JF80G-ABYSP",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        325.509,
+        139.444
+      ],
+      "triangles": 252
+    },
+    {
+      "id": "CAM_CREED-ITHC1-XXF88",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        319.828,
+        90.277
+      ],
+      "triangles": 154
+    },
+    {
+      "id": "CAM_P1SB5-W9TSJ-NH227",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        295.03,
+        70.632
+      ],
+      "triangles": 380
+    },
+    {
+      "id": "CAM_NFJBP-XG0NP-96ELS",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        266.0,
+        52.937
+      ],
+      "triangles": 284
+    },
+    {
+      "id": "CAM_F05CB-KNT72-6EWLY",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        288.253,
+        49.911
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_WRVOF-FGN4U-LGFFX",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        370.206,
+        183.841
+      ],
+      "triangles": 76
+    },
+    {
+      "id": "CAM_WI6VQ-S7AHJ-WIYNI",
+      "name": "Old Cambridge Baptist Church",
+      "tile": "E3",
+      "position": [
+        174.844,
+        291.13
+      ],
+      "triangles": 318
+    },
+    {
+      "id": "CAM_3G16Q-XXBKI-KGMOB",
+      "name": "Fire Headquarters",
+      "tile": "E3",
+      "position": [
+        137.633,
+        -109.342
+      ],
+      "triangles": 392
+    },
+    {
+      "id": "CAM_FV2US-HXR8N-O78UK",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        248.221,
+        -31.187
+      ],
+      "triangles": 240
+    },
+    {
+      "id": "CAM_3JCT0-AGPD0-Y8XFI",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        323.737,
+        -167.19
+      ],
+      "triangles": 134
+    },
+    {
+      "id": "CAM_8QM5D-U558I-2KLSA",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        331.245,
+        -194.641
+      ],
+      "triangles": 448
+    },
+    {
+      "id": "CAM_HCQOO-OD13N-S8YXW",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        335.324,
+        -212.712
+      ],
+      "triangles": 116
+    },
+    {
+      "id": "CAM_9AGAQ-E4W05-ZJ5IM",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        310.625,
+        -80.285
+      ],
+      "triangles": 82
+    },
+    {
+      "id": "CAM_U1RRN-APJCR-JZJA9",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        231.528,
+        -244.836
+      ],
+      "triangles": 132
+    },
+    {
+      "id": "CAM_ALYCZ-QDGII-1P4VO",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        319.694,
+        -131.899
+      ],
+      "triangles": 180
+    },
+    {
+      "id": "CAM_B5Q34-WU5PK-SGEL1",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        335.493,
+        -231.162
+      ],
+      "triangles": 234
+    },
+    {
+      "id": "CAM_MB8DR-34VF6-IULQD",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        334.297,
+        327.449
+      ],
+      "triangles": 184
+    },
+    {
+      "id": "CAM_DCEOS-MAQVR-85TNT",
+      "name": "Hotel Veritas",
+      "tile": "E3",
+      "position": [
+        212.58,
+        353.62
+      ],
+      "triangles": 373
+    },
+    {
+      "id": "CAM_QH15R-8XZII-PA8YT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        309.393,
+        345.241
+      ],
+      "triangles": 73
+    },
+    {
+      "id": "CAM_UOFL9-AT0B0-TIN3B",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        305.8,
+        273.869
+      ],
+      "triangles": 148
+    },
+    {
+      "id": "CAM_0Q5B8-G9VGR-IJNDT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        286.556,
+        240.136
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_L8CCU-SK0VG-XD26B",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        243.312,
+        119.032
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_MSDSG-CUUQZ-H60FQ",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        73.436,
+        281.367
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_CESAC-GOD7M-USOOI",
+      "name": "Carpenter Center",
+      "tile": "E3",
+      "position": [
+        170.374,
+        75.27
+      ],
+      "triangles": 214
+    },
+    {
+      "id": "CAM_EQC8A-PADAF-ALOG3",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -388.635,
+        -48.301
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_AL2CH-PTUFI-NU5AT",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -389.509,
+        -82.003
+      ],
+      "triangles": 49
+    },
+    {
+      "id": "CAM_9FJOV-SSFZF-H7CL6",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        384.165,
+        -244.195
+      ],
+      "triangles": 80
+    },
+    {
+      "id": "CAM_SIODH-ESZMQ-3VG96",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -116.15,
+        156.817
+      ],
+      "triangles": 273
+    },
+    {
+      "id": "CAM_U64XY-FAUHL-ITEZT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -378.112,
+        74.972
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_X4DHK-004E0-4BI37",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -361.946,
+        79.056
+      ],
+      "triangles": 71
+    },
+    {
+      "id": "CAM_T3KBB-D3HB5-QCGNP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -382.338,
+        56.985
+      ],
+      "triangles": 45
+    },
+    {
+      "id": "CAM_I4BPC-49B3I-PREC9",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -343.019,
+        83.356
+      ],
+      "triangles": 53
+    },
+    {
+      "id": "CAM_5L8GA-ZA3QQ-FBIZ0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -386.835,
+        38.705
+      ],
+      "triangles": 33
+    },
+    {
+      "id": "CAM_KDO9E-XSIM2-FKDBH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -276.777,
+        81.081
+      ],
+      "triangles": 37
+    },
+    {
+      "id": "CAM_UZ8B8-FCICC-ZUFAD",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -286.155,
+        64.101
+      ],
+      "triangles": 181
+    },
+    {
+      "id": "CAM_Q2MUK-4MMG3-0XSXI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -268.966,
+        52.565
+      ],
+      "triangles": 145
+    },
+    {
+      "id": "CAM_2SNBU-HFO03-82CXX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        0.332,
+        243.729
+      ],
+      "triangles": 149
+    },
+    {
+      "id": "CAM_EX5P3-P4HTN-4A1QC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        42.076,
+        253.24
+      ],
+      "triangles": 233
+    },
+    {
+      "id": "CAM_EVXI5-FKE9F-5HB7X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -164.712,
+        287.314
+      ],
+      "triangles": 175
+    },
+    {
+      "id": "CAM_V0R54-DZPVV-A4A5J",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        54.094,
+        339.996
+      ],
+      "triangles": 421
+    },
+    {
+      "id": "CAM_M45UF-4KGQ1-H29FZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        118.818,
+        353.952
+      ],
+      "triangles": 146
+    },
+    {
+      "id": "CAM_9ZGZ3-ICA5W-GMNWK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        90.289,
+        370.191
+      ],
+      "triangles": 119
+    },
+    {
+      "id": "CAM_B129O-3FT8E-WLLFF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        91.663,
+        341.614
+      ],
+      "triangles": 72
+    },
+    {
+      "id": "CAM_4Y9G9-YJ7VV-USUXV",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -335.485,
+        47.943
+      ],
+      "triangles": 284
+    },
+    {
+      "id": "CAM_NGQQS-Y6MYZ-0IC5R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -261.83,
+        41.742
+      ],
+      "triangles": 108
+    },
+    {
+      "id": "CAM_RY4A9-QM256-EKGZM",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        27.838,
+        229.686
+      ],
+      "triangles": 344
+    },
+    {
+      "id": "CAM_KR2DT-E7HH6-HGYV7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -326.182,
+        81.219
+      ],
+      "triangles": 30
+    },
+    {
+      "id": "CAM_AXEIM-RVZL6-P76RN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -276.183,
+        12.887
+      ],
+      "triangles": 122
+    },
+    {
+      "id": "CAM_QG2D9-C7WF8-27NPQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -240.524,
+        18.392
+      ],
+      "triangles": 253
+    },
+    {
+      "id": "CAM_HZ7D1-7F4AH-QAIIB",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -319.46,
+        41.536
+      ],
+      "triangles": 54
+    },
+    {
+      "id": "CAM_WNV8C-DRGQQ-161YS",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -131.885,
+        179.596
+      ],
+      "triangles": 188
+    },
+    {
+      "id": "CAM_7QY1P-ZXN4N-G8V8G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -157.425,
+        247.788
+      ],
+      "triangles": 151
+    },
+    {
+      "id": "CAM_G2ZA1-PR5KF-X7CLJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        133.81,
+        378.205
+      ],
+      "triangles": 218
+    },
+    {
+      "id": "CAM_ICCIX-228MG-1UTNP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -156.003,
+        229.423
+      ],
+      "triangles": 21
+    },
+    {
+      "id": "CAM_VGZQ0-8V62T-T6ZPQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -375.295,
+        242.517
+      ],
+      "triangles": 80
+    },
+    {
+      "id": "CAM_7DGZR-M92OZ-FXT9D",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        98.026,
+        316.748
+      ],
+      "triangles": 251
+    },
+    {
+      "id": "CAM_F7UM1-1VF1R-PLF96",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        77.415,
+        270.307
+      ],
+      "triangles": 137
+    },
+    {
+      "id": "CAM_UF6YG-IMWR9-OSO0Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        288.029,
+        269.305
+      ],
+      "triangles": 251
+    },
+    {
+      "id": "CAM_RR7KU-A87S5-63TO7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        349.548,
+        204.887
+      ],
+      "triangles": 138
+    },
+    {
+      "id": "CAM_5N9OY-78BZ7-B8VMH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        9.35,
+        332.534
+      ],
+      "triangles": 172
+    },
+    {
+      "id": "CAM_GY7WR-EW7QS-IYG5B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -367.196,
+        -64.901
+      ],
+      "triangles": 85
+    },
+    {
+      "id": "CAM_P5JFW-8H33G-PXMWV",
+      "name": "Portland Loo",
+      "tile": "E3",
+      "position": [
+        -213.301,
+        -69.058
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_581WE-H2SA3-ZOHSO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -217.736,
+        282.435
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_31US8-0SAF3-QUT5L",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -154.765,
+        306.152
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_1DFEY-7197P-HJJY3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -146.372,
+        296.816
+      ],
+      "triangles": 72
+    },
+    {
+      "id": "CAM_297FQ-XLLBD-UC3ON",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -208.562,
+        294.374
+      ],
+      "triangles": 139
+    },
+    {
+      "id": "CAM_OP606-C2ZRL-C2GY1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        343.887,
+        218.873
+      ],
+      "triangles": 141
+    },
+    {
+      "id": "CAM_ITSHJ-RU6JJ-YXSXW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -320.231,
+        236.778
+      ],
+      "triangles": 56
+    },
+    {
+      "id": "CAM_RTBLU-18OIA-QKPG5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -311.078,
+        242.997
+      ],
+      "triangles": 33
+    },
+    {
+      "id": "CAM_QR9Y9-E2OU0-FG6C1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -333.971,
+        130.559
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_0PDGA-J47NP-T6HJ6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -343.377,
+        153.109
+      ],
+      "triangles": 43
+    },
+    {
+      "id": "CAM_7D5X5-G0CNJ-H5Y61",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -153.663,
+        224.397
+      ],
+      "triangles": 95
+    },
+    {
+      "id": "CAM_A0WJS-OI26W-C86X5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        379.066,
+        -156.876
+      ],
+      "triangles": 103
+    },
+    {
+      "id": "CAM_3J7H8-3LO50-5LHV3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -49.719,
+        188.855
+      ],
+      "triangles": 108
+    },
+    {
+      "id": "CAM_P0QZX-BO6OL-AUI2N",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -337.414,
+        268.286
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "CAM_RJIHM-CYIBD-YODA7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -314.812,
+        165.165
+      ],
+      "triangles": 94
+    },
+    {
+      "id": "CAM_WIA7Q-SSHMJ-VIPF7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -329.292,
+        156.087
+      ],
+      "triangles": 100
+    },
+    {
+      "id": "CAM_PME1D-H70LJ-VGHEK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -351.877,
+        136.818
+      ],
+      "triangles": 50
+    },
+    {
+      "id": "CAM_51S08-PYP5D-GMLEK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -287.967,
+        -20.455
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_46LHK-FKUM7-JR943",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -303.3,
+        -24.225
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_0BH88-0JX9S-Y4VR0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -23.422,
+        194.04
+      ],
+      "triangles": 242
+    },
+    {
+      "id": "CAM_OIOTM-4XYSK-5FW29",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -316.156,
+        -23.962
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "CAM_DMNSQ-BSW8X-W5OIN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -264.792,
+        189.017
+      ],
+      "triangles": 427
+    },
+    {
+      "id": "CAM_P20CE-3LGLQ-76B8Z",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -370.551,
+        205.217
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "CAM_BRVC2-69ZKL-39K9Z",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -386.013,
+        185.276
+      ],
+      "triangles": 472
+    },
+    {
+      "id": "CAM_P04Q6-Y5LWC-09APR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -261.66,
+        156.43
+      ],
+      "triangles": 310
+    },
+    {
+      "id": "CAM_AQR9P-2UZMF-YCBQ0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -231.151,
+        156.382
+      ],
+      "triangles": 278
+    },
+    {
+      "id": "CAM_FNVZW-4I8EO-KHCKM",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -243.185,
+        124.38
+      ],
+      "triangles": 255
+    },
+    {
+      "id": "CAM_AD15D-WGOUD-TE6PX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -219.016,
+        124.709
+      ],
+      "triangles": 126
+    },
+    {
+      "id": "CAM_U94JA-Z9F68-UPTHC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -329.732,
+        256.586
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_A8S1E-FAZZH-SNKB4",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        132.015,
+        328.959
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_3UOGW-R7YNS-L6HKR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        376.675,
+        -271.808
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_GDKPH-9LSNE-YTXW6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        143.207,
+        337.524
+      ],
+      "triangles": 114
+    },
+    {
+      "id": "CAM_4TYWC-IUE34-3ZO1D",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        123.717,
+        323.705
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_TGB9Z-4KM8A-6H1M0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        89.952,
+        295.005
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_C75VM-LL6U7-UT21A",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        68.824,
+        258.617
+      ],
+      "triangles": 88
+    },
+    {
+      "id": "CAM_C2M8H-PHM9T-YG76P",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        64.943,
+        129.646
+      ],
+      "triangles": 54
+    },
+    {
+      "id": "CAM_7ZH6W-SZ1F9-2XBM8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -369.059,
+        -150.831
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_UBESN-ZM77J-0E25N",
+      "name": " ",
+      "tile": "E3",
+      "position": [
+        -361.941,
+        -141.118
+      ],
+      "triangles": 98
+    },
+    {
+      "id": "CAM_4QDVR-VXQHS-JFVA6",
+      "name": "Cambridge Rindge and Latin School",
+      "tile": "E3",
+      "position": [
+        370.862,
+        -20.407
+      ],
+      "triangles": 1956
+    },
+    {
+      "id": "CAM_Z61NZ-WO25L-ZDCZ1",
+      "name": "Out of Town News",
+      "tile": "E3",
+      "position": [
+        -215.191,
+        81.357
+      ],
+      "triangles": 147
+    },
+    {
+      "id": "CAM_IPPEA-H2A6C-SZ85F",
+      "name": "Out of Town News",
+      "tile": "E3",
+      "position": [
+        -216.769,
+        85.588
+      ],
+      "triangles": 10
+    },
+    {
+      "id": "CAM_0C034-FUS1X-X99UL",
+      "name": "Out of Town News",
+      "tile": "E3",
+      "position": [
+        -214.021,
+        77.505
+      ],
+      "triangles": 10
+    },
+    {
+      "id": "CAM_8M0DO-NOQ9S-VRK4K",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -225.481,
+        94.86
+      ],
+      "triangles": 93
+    },
+    {
+      "id": "CAM_52UUL-6QJS1-IQKP8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        82.886,
+        278.927
+      ],
+      "triangles": 59
+    },
+    {
+      "id": "CAM_WWS6D-QNBGP-2Z2U7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -301.723,
+        127.545
+      ],
+      "triangles": 338
+    },
+    {
+      "id": "CAM_02OZ6-RLDNO-OJ55Z",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        122.61,
+        -31.591
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_03CWS-QCMES-CE4AA",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        84.811,
+        107.381
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_059ID-S6PRN-I1196",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        309.862,
+        -378.34
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_0H2G6-E6BVP-7ZSLW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        269.339,
+        107.662
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_0IJKH-Q4XGD-CS59P",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        196.304,
+        270.283
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_0MZS9-718AR-01EO6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        35.3,
+        80.907
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_0OIWI-N5D4T-W8UT2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        217.442,
+        235.123
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_0RYMX-RL46S-G76BO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -202.379,
+        -19.703
+      ],
+      "triangles": 196
+    },
+    {
+      "id": "CAM_0W8IA-1MTLH-V5RJ2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -230.559,
+        356.766
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_15KX5-YSAU5-ADDXQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        83.514,
+        2.439
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_19YQK-Z2JRV-VIK4E",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -49.982,
+        -194.821
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_1AEM8-3G6VW-AOTOY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        81.128,
+        233.564
+      ],
+      "triangles": 160
+    },
+    {
+      "id": "CAM_1ALPT-IOEIK-UVJVK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -52.122,
+        -343.903
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_1BFBC-DBYDE-UYUYA",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        37.558,
+        -218.389
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_1DOX9-0A92A-HAFMF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        343.109,
+        362.282
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_1G544-TLFBU-9C46T",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        253.266,
+        -56.288
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_1GSB3-AM2KJ-ADFJV",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        183.856,
+        -299.166
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_1MDYA-D1TS8-O8LW6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        177.479,
+        135.62
+      ],
+      "triangles": 116
+    },
+    {
+      "id": "CAM_1QODK-KY8WY-7V5O2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        343.477,
+        -331.982
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_1UDYC-2P2K5-H24RR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        41.893,
+        293.236
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_1ZSEY-U6DME-YU0J5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        149.141,
+        136.41
+      ],
+      "triangles": 156
+    },
+    {
+      "id": "CAM_29VTY-EFPAV-YZN8W",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        11.68,
+        -152.671
+      ],
+      "triangles": 76
+    },
+    {
+      "id": "CAM_2C2K3-7RY4U-BVK36",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        209.448,
+        365.277
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_2IVRC-R7GM3-PD8KC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -71.222,
+        -111.206
+      ],
+      "triangles": 82
+    },
+    {
+      "id": "CAM_2K7Q9-HIH0U-Y22RW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -227.253,
+        -178.171
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_2O66L-WMK00-4BZE7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        92.577,
+        246.959
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "CAM_35NLY-39Y8Q-NRCRU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        18.936,
+        -282.205
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_39A2G-6LW8W-R39V0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        5.977,
+        -58.293
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_3EKKU-1ZXZ9-Z1BU2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -61.088,
+        117.29
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_3FLF3-19BV2-I4D2Z",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -221.284,
+        -132.751
+      ],
+      "triangles": 236
+    },
+    {
+      "id": "CAM_3QHBW-T03A1-337MB",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        137.86,
+        -35.52
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_3WW20-44C1J-L6MV3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -66.491,
+        96.682
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_40KV2-L85QD-V43LN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        57.917,
+        -62.021
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_44EJJ-4RLUZ-NSUE5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        147.725,
+        43.913
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_47P6N-BIYK8-PIN19",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -384.837,
+        10.797
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_4C1V7-FFE7V-LMIGG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        86.443,
+        8.175
+      ],
+      "triangles": 128
+    },
+    {
+      "id": "CAM_4CHS6-SE6NY-MQZSF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        42.22,
+        -285.068
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_4IQMM-HZ1SJ-XSHSP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        105.936,
+        -349.052
+      ],
+      "triangles": 168
+    },
+    {
+      "id": "CAM_4KM7V-NN64X-4RYR4",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        182.554,
+        -303.603
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_4RT6D-34JKI-JI5MJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        271.877,
+        108.349
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_4VPPS-FBY6N-49NLS",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        31.951,
+        -254.694
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_4VR9D-H7HAF-D26RA",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        169.473,
+        -279.303
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_4ZWXC-M1RIC-M07FY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        254.341,
+        -334.061
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_55Z4W-78326-UUHUX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        48.995,
+        281.104
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_5GCCO-ZMW33-OC32B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        138.241,
+        -42.625
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_5LULD-NM204-CG4LD",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        175.598,
+        -109.939
+      ],
+      "triangles": 172
+    },
+    {
+      "id": "CAM_5QXIB-HDMYY-UUE18",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -23.519,
+        -337.385
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_5T6VO-8MYS9-02QWY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -177.69,
+        359.099
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_5UFZ4-2PWYI-MZ04I",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -162.124,
+        82.709
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_61YIS-BQ9B6-NVFV1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -387.197,
+        6.317
+      ],
+      "triangles": 128
+    },
+    {
+      "id": "CAM_6C53S-517NZ-TFILE",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        185.196,
+        -294.549
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_6KD9C-F8617-LKNQM",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        262.081,
+        -14.452
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_6L0UL-TQXS6-MXLYP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -269.124,
+        247.845
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_6MACF-CH9XC-3L364",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        33.527,
+        147.705
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_6RK5F-ZFCFK-FV6WF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        108.719,
+        -338.844
+      ],
+      "triangles": 168
+    },
+    {
+      "id": "CAM_6WE7B-GKSMB-HW4DR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -148.611,
+        -223.576
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_70YUK-9537F-8BHFL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        337.194,
+        341.931
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_73TGP-UTIPC-3LMBP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        327.837,
+        294.746
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_76YYZ-O0A19-47P7R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        112.478,
+        -350.455
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_7B97A-9BBMH-0CPM8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        268.708,
+        99.31
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_7JPY2-1RC3E-8S35Y",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        53.245,
+        -127.08
+      ],
+      "triangles": 108
+    },
+    {
+      "id": "CAM_7LHTO-JPDLN-6R8IX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        60.995,
+        63.629
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_7OPU1-YIXDP-Q1R9C",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        205.203,
+        -226.224
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_7RJ2H-N9LW5-GLRAG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        13.923,
+        -82.403
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_7X1Z7-ZOCQT-LYP0Y",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -83.883,
+        92.16
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_7XNH9-3ZUQV-DOEIX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -10.368,
+        248.705
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_85H14-PA8H1-KJFIQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -349.537,
+        113.298
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_8DY3L-EASQU-EGNF7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        38.603,
+        145.015
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_8EGE9-TUTTT-ZIZG1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        52.576,
+        295.141
+      ],
+      "triangles": 148
+    },
+    {
+      "id": "CAM_8GCAP-64YKS-2Z10F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        13.076,
+        -135.428
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_8PPCD-VNYZJ-NDLT1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        70.456,
+        -211.384
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_8T6EP-VF958-IOX9G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        353.742,
+        376.769
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_8UT9U-RGRWP-HLQ46",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        169.044,
+        52.419
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_8VVYF-R5K1Y-OYTEG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -388.367,
+        144.811
+      ],
+      "triangles": 508
+    },
+    {
+      "id": "CAM_8X551-99WDL-U3OO4",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -219.465,
+        322.336
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_8XJDX-6121I-SGZFV",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -330.15,
+        304.167
+      ],
+      "triangles": 72
+    },
+    {
+      "id": "CAM_9CCWT-DTUIZ-CA5HJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        85.328,
+        -12.665
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_9DK3P-B7E9R-9TYT6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        282.402,
+        224.513
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_9DO1N-38SS1-RW079",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        93.793,
+        61.542
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_9ICRJ-MQ9O7-MA01Y",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        34.521,
+        -130.525
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_9MQSB-S01OQ-T8K6A",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -11.545,
+        -292.49
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_A847R-6RHZW-OM9IX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -15.825,
+        -310.261
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_A9032-X06D7-N5JX7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        241.75,
+        371.174
+      ],
+      "triangles": 80
+    },
+    {
+      "id": "CAM_ACGEN-LYR6O-1MHIY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        177.062,
+        184.279
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_AE9OG-1IEJB-011CK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        95.692,
+        -170.171
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_AH8IK-S4XSW-ZCZ3B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        127.95,
+        165.99
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_AIH5V-8BKFV-H006A",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        254.714,
+        204.244
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_AIHED-4AO4T-GY6GZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -370.959,
+        329.814
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_AK3C8-E91LY-JUY3X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        322.578,
+        332.157
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_ASBL0-C7NJI-RRPB8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        297.509,
+        -367.15
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_ATC9S-DYALP-KU83W",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        285.922,
+        -78.405
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_ATMUK-LU1JK-8ULSP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -310.32,
+        327.132
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_AX7QK-9HN4K-6C32G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        117.744,
+        182.597
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_B1ZC0-D1KON-QWOJJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        86.032,
+        5.613
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_B5IOH-4XOE4-BTDJY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -123.761,
+        82.269
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_B912B-4QD8M-9TI4G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        301.791,
+        -176.187
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_BDI48-KEIJL-FNLDO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -219.812,
+        -185.904
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_BR3I2-NKGEN-ZW389",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -95.083,
+        -182.665
+      ],
+      "triangles": 246
+    },
+    {
+      "id": "CAM_BVKMR-94E9G-XCBYG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        274.903,
+        109.823
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_BWMRJ-63NJB-S5BWI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -258.896,
+        297.025
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_BYVAQ-MNQ5G-CJFI5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        83.56,
+        326.579
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_C1MJ1-AR1W7-E4T90",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        322.675,
+        115.396
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_C2WYF-O7YOE-7WL9C",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        4.135,
+        -277.309
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_C755L-KYD27-1JKAY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        339.286,
+        276.074
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_CA2BI-B4GD5-UWI8R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        260.779,
+        135.861
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_CDYTH-FKLKM-0MZAT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -378.773,
+        154.521
+      ],
+      "triangles": 330
+    },
+    {
+      "id": "CAM_CKYNH-LKQR5-3J21E",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        36.593,
+        -77.128
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_CL3CY-MRLKN-XESKP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -317.339,
+        323.396
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_CTH5G-YGIUD-CLRVS",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        221.426,
+        -260.986
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_CUNX3-RP46T-JMCJO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        2.718,
+        224.735
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_CZM6V-QBGPP-46MG2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        106.251,
+        64.185
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_D1FCT-LYPA6-C2ELY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        33.108,
+        92.484
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_D2BR3-FLXGM-DWAHQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        46.559,
+        -293.154
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_D7OD9-XT8CN-R7XFY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -47.048,
+        364.551
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_D96WX-TVTGQ-LRZCF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        88.152,
+        108.074
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_D9G4J-XYXZ8-EE3IN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        287.18,
+        320.818
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_DGDE1-EVLYI-QM8S5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        105.009,
+        -353.618
+      ],
+      "triangles": 16
+    },
+    {
+      "id": "CAM_DNI43-TPM97-T2C6R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        233.93,
+        -361.334
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_DPU42-O6VPP-DRACW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -304.207,
+        355.927
+      ],
+      "triangles": 104
+    },
+    {
+      "id": "CAM_E5I0Y-2TMSP-XWDJQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -164.334,
+        80.172
+      ],
+      "triangles": 24
+    },
+    {
+      "id": "CAM_E96ZE-IV6CD-6TLGG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        31.054,
+        -348.212
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_EKQJI-QH2BQ-I0BHI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        11.029,
+        -279.589
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_EQN0F-JT95H-A6ETI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        344.842,
+        324.262
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_EY2BX-Q7TCM-PSVX3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        85.73,
+        329.067
+      ],
+      "triangles": 92
+    },
+    {
+      "id": "CAM_F2HBV-UY404-LXIUK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        78.136,
+        105.851
+      ],
+      "triangles": 58
+    },
+    {
+      "id": "CAM_F4WH9-2EP5I-7O8JP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -388.713,
+        154.558
+      ],
+      "triangles": 268
+    },
+    {
+      "id": "CAM_FG3DQ-AWFBN-TKSMF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -351.533,
+        277.139
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_FG7A5-OA4F2-2M0U3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        164.523,
+        138.693
+      ],
+      "triangles": 174
+    },
+    {
+      "id": "CAM_FUUHR-5ZYMS-G2BQ3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -347.432,
+        292.593
+      ],
+      "triangles": 14
+    },
+    {
+      "id": "CAM_FWQ51-QAHMR-BE8ZI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        246.234,
+        -330.883
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_G1ZLZ-O8LC8-8TM49",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        159.333,
+        314.95
+      ],
+      "triangles": 148
+    },
+    {
+      "id": "CAM_G2S32-I48GQ-BZ1JX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        136.724,
+        173.139
+      ],
+      "triangles": 56
+    },
+    {
+      "id": "CAM_GIROC-XZ3XJ-K1ICT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        9.129,
+        -83.403
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_GPNOC-59MD7-LKAJH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -210.617,
+        98.29
+      ],
+      "triangles": 100
+    },
+    {
+      "id": "CAM_GUJCB-EHS0D-9SBHP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        180.974,
+        38.568
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_GZUEC-N7SON-O1VLL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        238.02,
+        -12.507
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_H3VJK-1GWKQ-WN4LX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -280.739,
+        282.813
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_HDBLZ-ZNKN4-NZCWP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        148.068,
+        206.589
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_HJFEV-344IU-HIWBV",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -342.722,
+        294.389
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_HKK5R-NP9AR-LDSDW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -202.186,
+        97.714
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_HPGO3-8D77K-2CZ55",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        172.291,
+        201.999
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_HR7LU-FI19J-T121B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -351.066,
+        110.519
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_HRRYT-9CVZ7-3RLSZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -168.677,
+        -225.408
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_HS3VR-KEZ24-8TVLT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -49.596,
+        -130.232
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_HSEAB-O1F3H-WR7B7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -136.777,
+        24.367
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_HVIT1-UIT5J-TPP1B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -73.8,
+        343.954
+      ],
+      "triangles": 156
+    },
+    {
+      "id": "CAM_HYA97-WO4J3-8T77F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -64.178,
+        97.85
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_I3FBY-E0U0R-H3QPK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        340.453,
+        320.35
+      ],
+      "triangles": 100
+    },
+    {
+      "id": "CAM_I59K4-F2600-IK59F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -182.086,
+        -316.395
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_I7QTM-UXXZV-5GAIN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        347.66,
+        323.768
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_IHDGA-L3AF5-WPY65",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        177.288,
+        97.412
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_IRYOE-QPQK8-LZG1X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -367.866,
+        -90.916
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_ITQGJ-CA69Z-TFJIX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -59.888,
+        112.574
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_IUYQZ-9PC2L-PML6O",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        307.28,
+        217.276
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_J3WY1-JMP9U-FZOG3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -24.193,
+        -317.102
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_J4WUA-3C274-C0BS8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        167.915,
+        -326.472
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_J5AXD-QIQ7R-K38DC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        328.095,
+        -251.937
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_JD5WV-AYXQI-LSTY4",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        38.302,
+        297.667
+      ],
+      "triangles": 122
+    },
+    {
+      "id": "CAM_JI4OY-GPAHX-P4M7I",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        84.909,
+        -10.318
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_JOMDV-DBQ0J-F50JR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        153.445,
+        -174.001
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_JOOI4-2KEQC-9053X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -21.258,
+        -328.841
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_JPKBF-XTDOE-A9ZDC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -217.494,
+        320.571
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_JQF9Q-8ELLP-09J2J",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        373.79,
+        300.495
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_JRYLL-FHSUI-PHM34",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -240.667,
+        -79.606
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_JYF9D-M61XE-SJNKD",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        0.395,
+        -280.872
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_JZBTB-6EILV-B1YMU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        51.877,
+        287.255
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_K0A4G-3CUN5-XEAX6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        167.479,
+        -338.074
+      ],
+      "triangles": 108
+    },
+    {
+      "id": "CAM_K4XDM-DNW1C-1U66W",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -185.623,
+        -151.692
+      ],
+      "triangles": 212
+    },
+    {
+      "id": "CAM_K6AJB-306LB-4V9W3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -153.069,
+        -182.308
+      ],
+      "triangles": 448
+    },
+    {
+      "id": "CAM_K964V-3N7HE-BZZ4R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        153.027,
+        -171.673
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_KPWV1-EPX6K-CEKQH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -193.715,
+        -367.098
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_KXGI3-EYJLY-85S7F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -19.572,
+        -323.799
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_L3BB1-9RDHG-UMAU0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -48.452,
+        -272.087
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_L4KO9-MZ5LS-QC18P",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        108.048,
+        -341.608
+      ],
+      "triangles": 168
+    },
+    {
+      "id": "CAM_L7NQ1-2AD8F-TDLGX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -214.17,
+        -0.947
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_LFI56-A2D3R-E7NSF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        80.716,
+        361.375
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_LMMQ9-2F3G6-61M8N",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        339.074,
+        339.405
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_LORHZ-FPYMZ-0VZ7J",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        313.569,
+        272.921
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_LP0E3-8WTE4-2IC9C",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -133.361,
+        -57.424
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_LQC08-3SJX7-Y5ACP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -362.658,
+        29.191
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_LTPEU-AY7P8-QI69T",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -189.901,
+        -8.588
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_M1BT2-UNI30-EAM1B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -221.7,
+        327.02
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_M5BO8-I32GW-UT85K",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -58.758,
+        -265.153
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_M5QF4-OYW6G-D54SC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        80.298,
+        -130.017
+      ],
+      "triangles": 116
+    },
+    {
+      "id": "CAM_M5QYK-RA0S5-VEJ2L",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        163.279,
+        209.728
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_M6D90-G23QX-JPZQP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        121.833,
+        -149.347
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_M7GEW-405WU-NFZET",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -26.521,
+        374.381
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_M7R0A-R40YT-VNCRG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -326.986,
+        102.623
+      ],
+      "triangles": 134
+    },
+    {
+      "id": "CAM_MAYPY-IPM4S-8ELI5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -221.453,
+        106.971
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_MDHHC-VB1HS-V9RKL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        56.568,
+        -93.824
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_MKTK9-4Y464-53VWZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        230.14,
+        91.048
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_MLIKG-HHACZ-JKL1B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        384.735,
+        126.859
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_MLXT4-6N2W1-UQ02K",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        194.928,
+        47.666
+      ],
+      "triangles": 88
+    },
+    {
+      "id": "CAM_MRCPS-DPIMI-DVAJL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -50.107,
+        -14.151
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_MUUUS-Q8E7P-K1BAQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -135.519,
+        78.493
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_MZTYC-1FF8C-NSWWN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        76.825,
+        324.149
+      ],
+      "triangles": 96
+    },
+    {
+      "id": "CAM_N7SF2-VSHG9-030B7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -36.294,
+        -97.079
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_NBHZ9-V4R7Z-NUROJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        31.996,
+        -78.263
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_NE4IQ-QYVOE-U4WK9",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        65.353,
+        130.953
+      ],
+      "triangles": 136
+    },
+    {
+      "id": "CAM_NG6HB-3TQJB-5E10F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        337.871,
+        -335.018
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_NG9RJ-VCZVS-HA9UH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -346.903,
+        110.602
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_NKMEI-RU3U4-914AH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        17.966,
+        313.182
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_NMYHU-C4UZR-LNBWL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -175.92,
+        60.848
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_NTRFK-ZKAH9-XBSMT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        199.481,
+        272.273
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_NVE13-8O47V-QD1SK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -185.552,
+        -249.77
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_NZMT7-ITJDC-2AB3X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        267.771,
+        331.964
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_O0XA5-FRPVA-NZD2I",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        231.429,
+        -358.784
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_O23IB-MG48K-O3JG6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -137.971,
+        353.449
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_O4IXY-TLDPX-DB4DU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        344.664,
+        -250.83
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_OBXVS-8H6FU-AMMBO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        341.901,
+        332.365
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_OEXW6-H5Q9M-IYC9C",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        47.462,
+        114.122
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_OFRR4-G43QX-7W6GH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        39.496,
+        149.607
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_OMPU7-TKSCV-19OO5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        111.544,
+        -353.884
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_ON34T-O5TW0-5IOMT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -121.263,
+        82.94
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_OO9PN-5ST92-RWK4L",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        66.386,
+        77.401
+      ],
+      "triangles": 160
+    },
+    {
+      "id": "CAM_OS1F7-9LDE6-RBDKM",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        18.015,
+        -81.496
+      ],
+      "triangles": 56
+    },
+    {
+      "id": "CAM_OU2B0-I1D0D-U4BTT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -98.973,
+        111.417
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_P36G6-QWCWE-EG1R6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        93.848,
+        -61.042
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_P7DL9-FTITJ-DC3T0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        331.699,
+        -259.481
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_PALTE-O9PCS-84I7C",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        45.758,
+        289.931
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_PBP96-13HCW-P1MUH",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        56.986,
+        -58.086
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_PBQWZ-505PV-1EIY0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -138.919,
+        33.899
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_PERYO-WSVVW-H8O8I",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -18.35,
+        -319.385
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_PIEHE-Z5WDH-Z0S5I",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        162.011,
+        135.778
+      ],
+      "triangles": 148
+    },
+    {
+      "id": "CAM_PT3K4-U2C7Z-P9Y25",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        52.869,
+        -71.186
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_PWGQ8-P7Z3A-A1MVR",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        97.682,
+        181.816
+      ],
+      "triangles": 66
+    },
+    {
+      "id": "CAM_PWY9M-GVMGI-RH60G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        190.241,
+        -236.725
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_PZRER-JKNWT-Y98PA",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        166.69,
+        -274.156
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_Q2ZOK-DE57S-TBBOK",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        361.184,
+        -288.52
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_Q6IVH-4901Y-A2G6O",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        343.244,
+        329.787
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_Q7GMZ-TDU8R-R7Y5Z",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -389.85,
+        -123.076
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_Q9NZZ-242N6-6LTU1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        32.867,
+        82.115
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QC986-BK3A5-P0CH8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -286.278,
+        283.181
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QDY0Z-J2ZJ9-NQO2B",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        345.226,
+        -251.415
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QF40N-2PU85-YFT0H",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -276.97,
+        288.319
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QGEGS-5JRLU-XSXPQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -341.715,
+        297.427
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QISRU-F4X2Q-LW4H3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        231.346,
+        -157.874
+      ],
+      "triangles": 102
+    },
+    {
+      "id": "CAM_QOCP7-HBV5H-BB8WC",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -208.511,
+        -197.739
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_QP00V-IS8C2-T38CX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -135.746,
+        10.823
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_QSFB8-XXSS6-W6O7M",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -133.463,
+        79.03
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QXDYO-SOA6Z-MIMJN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        175.307,
+        319.823
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_QXWLJ-5RH1T-9WPPG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -150.954,
+        -220.797
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_R31TH-KSOQT-TPEIG",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        160.602,
+        95.137
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_R3KMZ-JG0DP-T0CKY",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -312.618,
+        325.542
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_R4M7N-7AGOO-OIR7U",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        53.83,
+        -189.404
+      ],
+      "triangles": 92
+    },
+    {
+      "id": "CAM_R65TM-OQAJN-BQ15Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -27.782,
+        -326.023
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_RJC7G-SQI1N-18PMU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -157.267,
+        310.794
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_RMCJX-SJOTG-FKA5X",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        193.779,
+        -249.456
+      ],
+      "triangles": 200
+    },
+    {
+      "id": "CAM_RMX8D-VAE6E-NUG05",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -52.434,
+        39.614
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_RSNJR-GR5CE-BN58V",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -130.832,
+        235.531
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_RTB9R-WMEVY-YELLE",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        164.296,
+        -372.178
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_S58YL-PQDYJ-O0PJ7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        40.885,
+        -129.057
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_S76CJ-5W3H1-2US5U",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        150.901,
+        131.991
+      ],
+      "triangles": 150
+    },
+    {
+      "id": "CAM_SE89S-97YPW-QQOEN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        27.707,
+        -269.763
+      ],
+      "triangles": 22
+    },
+    {
+      "id": "CAM_SKTDH-4GDT2-QH1Q3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        260.328,
+        -272.206
+      ],
+      "triangles": 72
+    },
+    {
+      "id": "CAM_SLIEF-P8FTM-XPKDL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        303.94,
+        -368.751
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_SLT87-MMXDE-Z19A1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        179.53,
+        -23.904
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_SNLV5-Y5O6A-UGWRZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -211.637,
+        110.674
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_STR6D-BM00I-AKFSP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        240.873,
+        197.889
+      ],
+      "triangles": 98
+    },
+    {
+      "id": "CAM_SVETU-HK42H-2H58O",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        118.297,
+        180.19
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_SVUUT-FTD64-EAJ29",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        37.468,
+        305.026
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_SZFQY-PNCH9-VJSDW",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        139.168,
+        175.704
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_T15JW-D5Q8A-GOBK3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -86.507,
+        88.563
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_T2337-40ULN-217U9",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -240.223,
+        -256.304
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_TAVLV-EZ66L-T2L3P",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -152.116,
+        370.458
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_TEMQV-YNUNE-82436",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        157.825,
+        50.328
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_TIDL4-8PEYN-TU22F",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        5.864,
+        309.331
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_TJSQU-PQGEZ-GWWZN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -266.07,
+        301.233
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_TNRCY-C67SV-RV7M5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        112.354,
+        -150.496
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_TQWKH-X5LEV-YRHXQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        314.539,
+        290.246
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_TX3AB-8AF5E-U14RX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -249.06,
+        301.842
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_TY8JC-LZPNU-ZLW9D",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        260.933,
+        141.98
+      ],
+      "triangles": 24
+    },
+    {
+      "id": "CAM_TYG6N-K9UGP-9MDYU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -363.376,
+        17.503
+      ],
+      "triangles": 96
+    },
+    {
+      "id": "CAM_U8OFU-2NNN2-HDT0G",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        277.585,
+        -132.988
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_UF0LU-X1JGK-JALZT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -250.586,
+        -368.231
+      ],
+      "triangles": 180
+    },
+    {
+      "id": "CAM_UFNPV-C6OP0-2ZPWX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -165.296,
+        78.607
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_UJ26M-8UKOV-R26K3",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -341.921,
+        109.714
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_UOB6N-JLQSU-MGWU7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        65.361,
+        130.805
+      ],
+      "triangles": 140
+    },
+    {
+      "id": "CAM_UTMGO-2F612-PUZJO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -25.937,
+        -321.385
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_UV45Y-PQC23-H0SGJ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -192.058,
+        -250.856
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_V4QL7-BD8QB-V4JYI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        68.917,
+        276.171
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_VAXEV-YIZWE-YI73N",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        227.32,
+        -222.945
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_VCMMN-MDM0L-FEHX8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        231.68,
+        86.897
+      ],
+      "triangles": 60
+    },
+    {
+      "id": "CAM_VGC7X-ROHQW-RD18Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -197.752,
+        283.083
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_VI67B-8NZW8-DBSIO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -4.818,
+        223.116
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_VIS9A-VG22K-OMF8R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        56.025,
+        -54.009
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_VMXF9-PENIJ-U8A7T",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        284.331,
+        316.284
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_VQQTY-MYJ6J-CT8E7",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        58.811,
+        -66.038
+      ],
+      "triangles": 64
+    },
+    {
+      "id": "CAM_VUWU3-11O5E-MDTO6",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        35.545,
+        -310.944
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_VWFWK-X4G4X-527ON",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -218.686,
+        324.529
+      ],
+      "triangles": 20
+    },
+    {
+      "id": "CAM_VXT5V-OAE2P-2DF7M",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        35.839,
+        88.172
+      ],
+      "triangles": 86
+    },
+    {
+      "id": "CAM_W09HS-5ENFB-1MNU8",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        116.978,
+        -334.542
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_W14YA-LLU77-PQA7U",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        222.576,
+        274.091
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_W2XC4-UMXEJ-67SAE",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        128.751,
+        -100.023
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_W31VE-A16UN-GWJ3Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        136.061,
+        -147.798
+      ],
+      "triangles": 48
+    },
+    {
+      "id": "CAM_W97JP-QDJOR-SXOR9",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -378.264,
+        7.233
+      ],
+      "triangles": 46
+    },
+    {
+      "id": "CAM_WAXJT-O1H92-FAL8P",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -314.176,
+        325.059
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_WBJ5K-WGD00-VJGAB",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -210.75,
+        106.994
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_WET3M-KB2GS-CUBZO",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        314.446,
+        -287.812
+      ],
+      "triangles": 118
+    },
+    {
+      "id": "CAM_WFHYM-MR79P-MDAKQ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -384.7,
+        4.304
+      ],
+      "triangles": 56
+    },
+    {
+      "id": "CAM_WKKB5-EIDB7-FSILX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        278.323,
+        -131.993
+      ],
+      "triangles": 52
+    },
+    {
+      "id": "CAM_WO8U7-MWP69-KBWMN",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        62.999,
+        -157.014
+      ],
+      "triangles": 84
+    },
+    {
+      "id": "CAM_WUIWF-8U0H0-V9W16",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        326.114,
+        -349.289
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_WV99D-KIIX1-UQIZI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        291.547,
+        -281.507
+      ],
+      "triangles": 86
+    },
+    {
+      "id": "CAM_X8NW9-L3BGN-2E36N",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        267.04,
+        -177.404
+      ],
+      "triangles": 70
+    },
+    {
+      "id": "CAM_XBJVH-4SOE6-1EKG5",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -171.618,
+        67.592
+      ],
+      "triangles": 32
+    },
+    {
+      "id": "CAM_XDNNY-7RRJV-LMD7R",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        66.453,
+        197.118
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_XIVV9-CQYEE-PTEZF",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -314.165,
+        228.846
+      ],
+      "triangles": 40
+    },
+    {
+      "id": "CAM_XMP50-F4J2E-LVQ4K",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        41.997,
+        138.3
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_XO80R-G58BC-7X6M2",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -226.209,
+        -354.769
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_XSZH8-D83WV-570EZ",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        139.032,
+        204.703
+      ],
+      "triangles": 30
+    },
+    {
+      "id": "CAM_XZXOB-BSRI2-3FTSL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -300.14,
+        209.492
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_Y03J2-RBJ4F-39UP0",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        378.973,
+        382.579
+      ],
+      "triangles": 96
+    },
+    {
+      "id": "CAM_Y39MA-2DKIM-38NBB",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -218.244,
+        227.698
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_YKQNA-WFZBD-NA6TU",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        347.869,
+        353.427
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_YLILU-ZMSLT-MPQL1",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        30.805,
+        -94.501
+      ],
+      "triangles": 62
+    },
+    {
+      "id": "CAM_YRK7T-Q2IXU-WR7N9",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        31.32,
+        313.242
+      ],
+      "triangles": 122
+    },
+    {
+      "id": "CAM_YTBV3-R9IDR-CXGNL",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -17.748,
+        379.969
+      ],
+      "triangles": 38
+    },
+    {
+      "id": "CAM_YVD4S-W13JH-QXF5Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        40.933,
+        304.535
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_Z0B24-XMUVS-SM4VM",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        139.067,
+        -36.996
+      ],
+      "triangles": 46
+    },
+    {
+      "id": "CAM_Z4CR4-6INDV-8MORT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -369.415,
+        2.294
+      ],
+      "triangles": 28
+    },
+    {
+      "id": "CAM_Z7VEZ-3Z810-82WYI",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -93.798,
+        270.546
+      ],
+      "triangles": 36
+    },
+    {
+      "id": "CAM_Z7YQU-218K4-E7Q1Q",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        -382.239,
+        88.594
+      ],
+      "triangles": 132
+    },
+    {
+      "id": "CAM_ZC669-8UJW5-78UTT",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        63.34,
+        -92.335
+      ],
+      "triangles": 68
+    },
+    {
+      "id": "CAM_ZKYMZ-J0GD5-F39RP",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        19.387,
+        -102.546
+      ],
+      "triangles": 12
+    },
+    {
+      "id": "CAM_ZNWUD-BSNE6-VNZZX",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        275.668,
+        -41.854
+      ],
+      "triangles": 44
+    },
+    {
+      "id": "CAM_ZYK2T-TQ34O-POHNA",
+      "name": "",
+      "tile": "E3",
+      "position": [
+        90.102,
+        -46.395
+      ],
+      "triangles": 40
+    }
+  ],
+  "source": "City of Cambridge GIS / CyberCity 3D; orthophotography: Nearmap 2025",
+  "years": {
+    "buildings": 2023,
+    "terrain": 2018,
+    "orthophoto": 2025
+  },
+  "coordinates": "EPSG:2249, US survey feet; local east/up/south in metres; height NAVD88",
+  "usage": "Local evaluation; commercial redistribution permission not confirmed."
+}

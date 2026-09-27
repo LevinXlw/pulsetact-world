@@ -1,0 +1,6 @@
+Draco 3D geometry decompression binaries.
+Source: https://github.com/google/draco
+Distributed by three@0.176.0, examples/jsm/libs/draco/gltf.
+Original Draco contributors. Licensed under Apache License 2.0; see LICENSE.
+These files are copied without modification. They are general-purpose open-source
+decoders, not Google Maps imagery or geographic data.

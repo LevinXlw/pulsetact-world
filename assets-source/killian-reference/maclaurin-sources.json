@@ -1,0 +1,29 @@
+[
+  {
+    "file": "maclaurin-wide.webp",
+    "url": "https://listart.mit.edu/sites/default/files/styles/colorbox_desktop/public/media/images/2022-09/37840250335_62c42e3d1b_o.jpg.webp?itok=QNSOrbmL",
+    "bytes": 588352,
+    "sha256": "6afb5197ae1b5a1310cee2d55941ecad1fc2c4603c828528498a7602a83f0a78",
+    "source": "https://listart.mit.edu/art-artists/maclaurin-buildings-1913",
+    "use": "Local visual reference only; no runtime texture",
+    "captureDate": "unknown"
+  },
+  {
+    "file": "maclaurin-front.webp",
+    "url": "https://listart.mit.edu/sites/default/files/styles/colorbox_desktop/public/media/images/2022-09/37840233395_92f2496114_o.jpg.webp?itok=DWsOpmV2",
+    "bytes": 472626,
+    "sha256": "8b432a1e6dd21cbee2b2e08b929f7a70e0146944be4b75d878694f86d254bab4",
+    "source": "https://listart.mit.edu/art-artists/maclaurin-buildings-1913",
+    "use": "Local visual reference only; no runtime texture",
+    "captureDate": "unknown"
+  },
+  {
+    "file": "maclaurin-oblique.webp",
+    "url": "https://listart.mit.edu/sites/default/files/styles/colorbox_desktop/public/media/images/2022-09/7215716600_8f1dfc92f7_o.jpg.webp?itok=2Glw5sYE",
+    "bytes": 281062,
+    "sha256": "505b65794116376fcbdf69ecc49449c2de22545572081a5e9aea96fb034297f8",
+    "source": "https://listart.mit.edu/art-artists/maclaurin-buildings-1913",
+    "use": "Local visual reference only; no runtime texture",
+    "captureDate": "unknown"
+  }
+]

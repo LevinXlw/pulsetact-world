@@ -1,0 +1,9 @@
+import type {CampusId} from '../types';
+export type Photo={id:string;campus:CampusId;blob:Blob;createdAt:string};
+async function database(){return new Promise<IDBDatabase>((resolve,reject)=>{const r=indexedDB.open('pulsetact-campus-photos',1);r.onupgradeneeded=()=>r.result.createObjectStore('photos',{keyPath:'id'});r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(new Error('无法打开照片存储，请检查浏览器隐私或存储设置。'));});}
+async function transaction<T>(mode:IDBTransactionMode,action:(s:IDBObjectStore)=>IDBRequest<T>){const db=await database();return new Promise<T>((resolve,reject)=>{const tx=db.transaction('photos',mode);const r=action(tx.objectStore('photos'));tx.oncomplete=()=>{resolve(r.result);db.close();};tx.onerror=tx.onabort=()=>{reject(new Error('照片存储失败，请释放浏览器存储空间后重试。'));db.close();};});}
+export const listPhotos=()=>transaction('readonly',s=>s.getAll()) as Promise<Photo[]>;
+export async function addPhoto(campus:CampusId,blob:Blob){if(blob.size>3*1024*1024)throw new Error('照片超过 3 MB，请降低画质后重试；仍可直接下载。');const db=await database();return new Promise<void>((resolve,reject)=>{const tx=db.transaction('photos','readwrite'),s=tx.objectStore('photos'),count=s.count();let full=false;count.onsuccess=()=>{if(count.result>=20){full=true;tx.abort();return;}s.add({id:crypto.randomUUID(),campus,blob,createdAt:new Date().toISOString()});};tx.oncomplete=()=>{db.close();resolve();};tx.onerror=tx.onabort=()=>{db.close();reject(new Error(full?'已达到 20 张照片上限，请在手册中删除旧照片后重试。':'照片保存失败，请检查浏览器存储空间；仍可直接下载。'));};});}
+export const deletePhoto=(id:string)=>transaction('readwrite',s=>s.delete(id));
+export const clearPhotos=()=>transaction('readwrite',s=>s.clear());
+export function download(blob:Blob,name:string){const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}

@@ -1,0 +1,28 @@
+{
+  "campus": "harvard",
+  "vegetationStatus": "ready",
+  "quality": "standard",
+  "ambientOcclusion": false,
+  "presentation": true,
+  "cameraPosition": [
+    72.911,
+    228.16931133160918,
+    210.11599999999999
+  ],
+  "cameraGroundHeight": 9.312969680679203,
+  "fov": 48,
+  "position": [
+    -27.089,
+    8.169311331609151,
+    20.116
+  ],
+  "cameraForward": [
+    -0.32632407437309846,
+    -0.7135075886167799,
+    -0.620015741308887
+  ],
+  "mode": "orbit",
+  "openingTrianglesRemoved": 0,
+  "calls": 2,
+  "triangles": 167722
+}

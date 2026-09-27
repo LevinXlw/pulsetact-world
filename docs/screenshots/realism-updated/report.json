@@ -1,0 +1,433 @@
+{
+  "stage": "updated",
+  "records": [
+    {
+      "key": "court",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          97.05555000000004,
+          104.26650516273753,
+          64.25715000000008
+        ],
+        "cameraGroundHeight": 4.2665051627375306,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.5245520627719641,
+          -0.5876049343701724,
+          -0.6160889339579985
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 167,
+        "triangles": 1709734
+      }
+    },
+    {
+      "key": "eye",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          45.16499,
+          5.558431910269311,
+          35.3371
+        ],
+        "cameraGroundHeight": 3.9084319102693144,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.4144199109111807,
+          0.1469780599370441,
+          -0.8981389576994819
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 158,
+        "triangles": 1645484
+      }
+    },
+    {
+      "key": "portico",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          11.575939999999997,
+          5.847665180342141,
+          -20.750109999999996
+        ],
+        "cameraGroundHeight": 4.197665180342142,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.09161280845326679,
+          0.2863734638705961,
+          -0.9537281229564649
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 92,
+        "triangles": 1451352
+      }
+    },
+    {
+      "key": "facade",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          105,
+          36,
+          -8.000000000000002
+        ],
+        "cameraGroundHeight": 2.327943974770278,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.7313603828401067,
+          -0.5844507236644514,
+          -0.3514674124582131
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 62,
+        "triangles": 1368746
+      }
+    },
+    {
+      "key": "river",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          -189.99999999999994,
+          130.00000000000003,
+          380
+        ],
+        "cameraGroundHeight": -0.10000000149011612,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.7854160530606149,
+          -0.3866663645836875,
+          -0.4833329557296091
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 187,
+        "triangles": 1478212
+      }
+    },
+    {
+      "key": "bridge",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          -34.22767735883393,
+          8.230750193203825,
+          248.8
+        ],
+        "cameraGroundHeight": 4.23075008392334,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.3820803599504352,
+          -0.1146241079851305,
+          0.9169928638810441
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 47,
+        "triangles": 1077424
+      }
+    },
+    {
+      "key": "eye",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          45.16499,
+          5.558431910269311,
+          35.3371
+        ],
+        "cameraGroundHeight": 3.9084319102693144,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.4144199109111807,
+          0.1469780599370441,
+          -0.8981389576994819
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 158,
+        "triangles": 1645484
+      }
+    },
+    {
+      "key": "portico",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          11.575939999999997,
+          5.847665180342141,
+          -20.750109999999996
+        ],
+        "cameraGroundHeight": 4.197665180342142,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.09161280845326679,
+          0.2863734638705961,
+          -0.9537281229564649
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 92,
+        "triangles": 1451352
+      }
+    },
+    {
+      "key": "westcourt",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          -10.927244450000003,
+          5.990211792959906,
+          119.03851214999997
+        ],
+        "cameraGroundHeight": 4.340211792959906,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.4189689149435666,
+          0.00028547781270247326,
+          -0.9080005323860934
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 121,
+        "triangles": 1568098
+      }
+    },
+    {
+      "key": "eastcourt",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          145.24884155,
+          5.913766594891536,
+          46.97586134999999
+        ],
+        "cameraGroundHeight": 4.2637665948915355,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.4189626515459565,
+          -0.005475433845859453,
+          -0.9079869581848525
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 84,
+        "triangles": 1610642
+      }
+    },
+    {
+      "key": "riverwalk",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          86.2238835,
+          4.5794828245818975,
+          124.32120949999995
+        ],
+        "cameraGroundHeight": 2.9294828245818962,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.6541841950929502,
+          -0.010054307659745739,
+          0.7562684376516529
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 61,
+        "triangles": 1338280
+      }
+    },
+    {
+      "key": "trees",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          21.999999999999996,
+          5.478660768664179,
+          12.000000000000005
+        ],
+        "cameraGroundHeight": 3.8286607686641787,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.9047767746646386,
+          0.1883477073687138,
+          -0.38197399015692624
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 113,
+        "triangles": 1572788
+      }
+    }
+  ],
+  "performance": {
+    "medianFrameMs": 7.5,
+    "p95FrameMs": 12.799999999999272,
+    "frames": 376,
+    "durationMs": 3006.5999999999985,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36"
+  },
+  "errors": []
+}

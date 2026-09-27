@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "externalModelFiles": [],
+  "assets": [
+    {
+      "id": "campus-buildings",
+      "path": "src/world/Buildings.tsx",
+      "source": "Project-authored procedural Three.js geometry",
+      "author": "Pulsetact project / Codex",
+      "license": "Project-owned generated source; no third-party media incorporated",
+      "modifications": "Original compressed campus interpretation",
+      "size": "Generated at runtime; included in JS bundle",
+      "fallback": "Procedural geometry is the primary implementation"
+    },
+    {
+      "id": "explorer-and-npcs",
+      "path": "src/world/Character.tsx",
+      "source": "Project-authored mesh components",
+      "author": "Pulsetact project / Codex",
+      "license": "Project-owned generated source",
+      "modifications": "Original avatar with idle and walking limb poses",
+      "size": "Generated at runtime",
+      "fallback": "No external assets required"
+    },
+    {
+      "id": "map",
+      "path": "src/App.tsx",
+      "source": "Original SVG geographic schematic",
+      "author": "Pulsetact project / Codex",
+      "license": "Project-owned generated source",
+      "modifications": "Not for navigation",
+      "size": "Included in app bundle",
+      "fallback": "School selection buttons remain HTML"
+    },
+    {
+      "id": "favicon",
+      "path": "public/favicon.svg",
+      "source": "Original lettermark",
+      "author": "Pulsetact project / Codex",
+      "license": "Project-owned generated source",
+      "modifications": "None",
+      "size": "Under 1 KB",
+      "fallback": "Text branding"
+    },
+    {
+      "id": "icons",
+      "path": "node_modules/lucide-react",
+      "source": "https://lucide.dev/",
+      "author": "Lucide contributors",
+      "license": "ISC",
+      "modifications": "None",
+      "size": "Tree-shaken bundled icons",
+      "fallback": "Text labels"
+    },
+    {
+      "id": "draco-decoders",
+      "path": "public/decoders/draco/",
+      "source": "three@0.176.0 examples/jsm/libs/draco/gltf; https://github.com/google/draco",
+      "author": "Draco contributors",
+      "license": "Apache-2.0 (included LICENSE)",
+      "modifications": "Unmodified decoder copies",
+      "size": 763341,
+      "fallback": "Explicit map loading error; original procedural campus remains available"
+    },
+    {
+      "id": "google-photorealistic-tiles",
+      "path": "Live API only; no stored map assets",
+      "source": "https://tile.googleapis.com/v1/3dtiles/root.json",
+      "author": "Google Maps and per-tile attributed providers",
+      "license": "Google Maps Platform terms; not a redistributable asset",
+      "modifications": "None; live rendering only",
+      "size": "Variable; not measured without configured Key",
+      "fallback": "Original procedural MIT campus"
+    }
+  ]
+}

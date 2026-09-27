@@ -1,0 +1,32 @@
+{
+  "campus": "mit",
+  "vegetationStatus": "ready",
+  "quality": "standard",
+  "ambientOcclusion": true,
+  "presentation": false,
+  "cameraPosition": [
+    17.742,
+    7.928222797599802,
+    61.459
+  ],
+  "cameraGroundHeight": 4.40207675450921,
+  "fov": 58,
+  "position": [
+    16.742,
+    4.428222797599801,
+    55.459
+  ],
+  "cameraForward": [
+    -0.15500150642821092,
+    -0.33325323882065366,
+    -0.9300090385692655
+  ],
+  "mode": "walk",
+  "openingTrianglesRemoved": 14,
+  "surfaceTriangles": {
+    "walls": 22682,
+    "roofs": 7156
+  },
+  "calls": 304,
+  "triangles": 2362155
+}

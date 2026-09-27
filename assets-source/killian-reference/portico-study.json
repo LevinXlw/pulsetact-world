@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "date": "2026-09-15",
+  "scope": "Building 10 courtyard-facing portico sample",
+  "basis": "Photo-informed construction on the existing GIS anchor; dimensions are estimates, not a measured facade survey.",
+  "references": [
+    {"file": "maclaurin-front.webp", "source": "https://listart.mit.edu/art-artists/maclaurin-buildings-1913", "use": "Nine glazed bays, five tall central bays, three door groups, capitals, stone courses"},
+    {"file": "maclaurin-oblique.webp", "source": "https://listart.mit.edu/art-artists/maclaurin-buildings-1913", "use": "Cornice layers, inscription visibility, drum courses and weathering"}
+  ],
+  "wall": {"width": 43.6, "front": -3.30, "thickness": 0.68, "top": 19.32},
+  "windows": {"baySpacing": 4.10, "centralWidth": 2.82, "outerWidth": 2.64, "glassSetback": 0.35, "top": 18.45, "lowerOuterTop": 11.35, "upperOuterBottom": 15.98},
+  "doors": {"centers": [-4.10, 0, 4.10], "width": 2.38, "height": 3.32},
+  "columns": {"count": 10, "spacing": 4.10, "shaftTop": 18.92, "baseHeight": 0.62},
+  "surface": {"stoneCourseHeight": 0.55, "stoneBlockWidth": 1.25, "weathering": "Restrained variation at block joints, ledges and wall bases; illustrative, not an exact weathering map"},
+  "unverified": ["Exact opening dimensions and depth", "Door joinery and interior appearance", "Hidden soffit ornament", "Stone block boundaries outside the supplied views"]
+}

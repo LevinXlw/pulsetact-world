@@ -1,0 +1,188 @@
+{
+  "stage": "after",
+  "records": [
+    {
+      "key": "front",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          45.16499,
+          5.558431910269311,
+          35.3371
+        ],
+        "cameraGroundHeight": 3.9084319102693144,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.4144199109111807,
+          0.1469780599370441,
+          -0.8981389576994819
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 130,
+        "triangles": 1838444
+      }
+    },
+    {
+      "key": "entrance",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          11.575939999999997,
+          5.847665180342141,
+          -20.750109999999996
+        ],
+        "cameraGroundHeight": 4.197665180342142,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.09161280845326679,
+          0.2863734638705961,
+          -0.9537281229564649
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 106,
+        "triangles": 1645116
+      }
+    },
+    {
+      "key": "door",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          13.323294899999999,
+          6.514989280700682,
+          -33.6708775
+        ],
+        "cameraGroundHeight": 4.864989280700684,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.39571481094498023,
+          0.3285206473361919,
+          -0.8576036221195593
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 106,
+        "triangles": 1645116
+      }
+    },
+    {
+      "key": "side",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          1.2390376000000032,
+          5.905543479364576,
+          -19.284402200000006
+        ],
+        "cameraGroundHeight": 4.255543479364576,
+        "fov": 48,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.46315250286567616,
+          0.2626269216759218,
+          -0.8464731886482224
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 110,
+        "triangles": 1684716
+      }
+    },
+    {
+      "key": "keyboard-route",
+      "scene": {
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          21.240105925432072,
+          7.687502170039141,
+          -22.358257916608075
+        ],
+        "cameraGroundHeight": 4.216085086089265,
+        "fov": 58.043426462858044,
+        "position": [
+          20.279595471455867,
+          4.188581200524993,
+          -28.131038663570923
+        ],
+        "cameraForward": [
+          -0.1550015064282142,
+          -0.33325323882065905,
+          -0.9300090385692631
+        ],
+        "mode": "walk",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 169,
+        "triangles": 1643840
+      }
+    }
+  ],
+  "performance": {
+    "medianMs": 4.199999999998909,
+    "p95Ms": 4.299999999999272,
+    "frames": 1199,
+    "durationMs": 5004,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36"
+  },
+  "errors": []
+}

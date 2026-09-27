@@ -1,0 +1,10 @@
+export type CampusId = 'harvard' | 'mit';
+export type Position = [number, number];
+export type Avatar = {outfit:string;skin:string;hair:string};
+export type Target = {id:string;name:string;en:string;position:Position;kind:'poi'|'npc'|'activity';summary:string;sourceId?:string;prompt?:string};
+export type Blocker = {x:number;z:number;w:number;d:number};
+export type Campus = {id:CampusId;name:string;en:string;area:string;description:string;accent:string;spawn:Position;targets:Target[];blockers:Blocker[]};
+export type Progress = {discovered:string[];opened:string[];talked:string[];completed:string[];position:Position};
+export type Activity = {step:number;answers:Record<string,string|string[]>;count:number;completed:boolean;lastResult?:Record<string,string|string[]>};
+export type Note = {id:string;campus:CampusId;text:string};
+export type Save = {schemaVersion:1;profile:{id:string;nickname:string;grade:string;interests:string[];avatar:Avatar};currentCampus:CampusId;progress:Record<CampusId,Progress>;favorites:string[];activities:Record<CampusId,Activity>;notes:Note[];settings:{quality:'low'|'medium';reducedMotion:boolean};updatedAt:string};

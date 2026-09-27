@@ -1,0 +1,12 @@
+node_modules/
+assets-source/checkpoints/
+assets-source/tools/
+assets-source/nyc-local/
+dist/
+test-results/
+playwright-report/
+.sites-runtime/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

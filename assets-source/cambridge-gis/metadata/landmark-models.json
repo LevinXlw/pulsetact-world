@@ -1,0 +1,37 @@
+[
+  {
+    "tile": "E3",
+    "name": "Memorial Church",
+    "modelId": "CAM_3R7L6-FE2UC-IHDGF",
+    "latitude": "42.3748964827484",
+    "longitude": "-71.1160384388625"
+  },
+  {
+    "tile": "E3",
+    "name": "Widener Library",
+    "modelId": "CAM_20TZA-X87UC-ZWCKG",
+    "latitude": "42.3734669152409",
+    "longitude": "-71.1164946834949"
+  },
+  {
+    "tile": "G4",
+    "name": "Maclaurin Buildings (3), Building 3",
+    "modelId": "CAM_NCSVT-TQ9F9-BG2NN",
+    "latitude": "42.3589049637951",
+    "longitude": "-71.0924017670138"
+  },
+  {
+    "tile": "G4",
+    "name": "Maclaurin Buildings (10), Building 10",
+    "modelId": "CAM_PX4ND-TBOZP-3FRN5",
+    "latitude": "42.3596813104936",
+    "longitude": "-71.0920190977949"
+  },
+  {
+    "tile": "G4",
+    "name": "Maclaurin Buildings (4), Building 4",
+    "modelId": "CAM_WP4AV-34RPJ-DGCTC",
+    "latitude": "42.3596980476308",
+    "longitude": "-71.0911796243513"
+  }
+]

@@ -1,0 +1,2 @@
+import {Component,type ReactNode} from 'react';
+export class AppBoundary extends Component<{children:ReactNode},{error:boolean}>{state={error:false};static getDerivedStateFromError(){return {error:true};}render(){return this.state.error?<main className="empty"><h1>这次加载遇到了一点问题。</h1><p>你的本地记录仍保留在浏览器中。可以重新加载，或返回地图。</p><button className="primary" onClick={()=>location.reload()}>重新加载</button><a href="/map">返回校园地图</a></main>:this.props.children;}}

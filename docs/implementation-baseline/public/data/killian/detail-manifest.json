@@ -1,0 +1,648 @@
+{
+  "version": 7,
+  "porticoSample": {
+    "version": 1,
+    "wall": {
+      "width": 43.6,
+      "front": -3.3,
+      "thickness": 0.68,
+      "top": 19.32
+    },
+    "glassDepth": -3.65,
+    "openings": [
+      {
+        "id": "window-0-lower",
+        "x": -16.4,
+        "w": 2.64,
+        "bottom": 5.34498924701769,
+        "top": 11.35,
+        "kind": "window"
+      },
+      {
+        "id": "window-0-upper",
+        "x": -16.4,
+        "w": 2.64,
+        "bottom": 15.98,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-1-lower",
+        "x": -12.299999999999999,
+        "w": 2.64,
+        "bottom": 5.34498924701769,
+        "top": 11.35,
+        "kind": "window"
+      },
+      {
+        "id": "window-1-upper",
+        "x": -12.299999999999999,
+        "w": 2.64,
+        "bottom": 15.98,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-2",
+        "x": -8.2,
+        "w": 2.82,
+        "bottom": 5.284989247017689,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-3",
+        "x": -4.1,
+        "w": 2.82,
+        "bottom": 8.34498924701769,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-4",
+        "x": 0,
+        "w": 2.82,
+        "bottom": 8.34498924701769,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-5",
+        "x": 4.1,
+        "w": 2.82,
+        "bottom": 8.34498924701769,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-6",
+        "x": 8.2,
+        "w": 2.82,
+        "bottom": 5.284989247017689,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-7-lower",
+        "x": 12.299999999999999,
+        "w": 2.64,
+        "bottom": 5.34498924701769,
+        "top": 11.35,
+        "kind": "window"
+      },
+      {
+        "id": "window-7-upper",
+        "x": 12.299999999999999,
+        "w": 2.64,
+        "bottom": 15.98,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "window-8-lower",
+        "x": 16.4,
+        "w": 2.64,
+        "bottom": 5.34498924701769,
+        "top": 11.35,
+        "kind": "window"
+      },
+      {
+        "id": "window-8-upper",
+        "x": 16.4,
+        "w": 2.64,
+        "bottom": 15.98,
+        "top": 18.45,
+        "kind": "window"
+      },
+      {
+        "id": "door-0",
+        "x": -4.1,
+        "w": 2.38,
+        "bottom": 4.864989247017689,
+        "top": 8.18498924701769,
+        "kind": "door"
+      },
+      {
+        "id": "door-1",
+        "x": 0,
+        "w": 2.38,
+        "bottom": 4.864989247017689,
+        "top": 8.18498924701769,
+        "kind": "door"
+      },
+      {
+        "id": "door-2",
+        "x": 4.1,
+        "w": 2.38,
+        "bottom": 4.864989247017689,
+        "top": 8.18498924701769,
+        "kind": "door"
+      }
+    ],
+    "columns": 10,
+    "reference": "assets-source/killian-reference/portico-study.json",
+    "status": "Photo-informed approximate portico sample; no surveyed dimension or interior claim"
+  },
+  "delivery": {
+    "core": "detail.glb",
+    "coreGzip": "detail.glb.gz",
+    "coreGzipBytes": 5461231,
+    "vegetation": "vegetation.glb",
+    "vegetationGzip": "vegetation.glb.gz",
+    "vegetationBytes": 32940964,
+    "vegetationGzipBytes": 8545836
+  },
+  "vegetation": {
+    "chunks": 41,
+    "style": "three tapered blades per cluster with secondary branches",
+    "treePositions": "unchanged from previous deterministic layout",
+    "species": "generic broadleaf approximation"
+  },
+  "frontDetails": {
+    "entranceBays": 3,
+    "drumPlaque": "MCMXVI",
+    "basis": "Local front photograph; dimensions approximate; doors closed"
+  },
+  "windows": 2375,
+  "windowsByModel": {
+    "CAM_PX4ND-TBOZP-3FRN5": 161,
+    "CAM_NCSVT-TQ9F9-BG2NN": 396,
+    "CAM_WP4AV-34RPJ-DGCTC": 384,
+    "CAM_IVRJC-BXJZD-X6ABS": 212,
+    "CAM_CQMYN-XKY6H-I7J3C": 240,
+    "CAM_CW7MH-H5BCN-PPGCW": 299,
+    "CAM_ME1KO-1JBIG-12R97": 273,
+    "CAM_MNJTM-TPVUN-KZN3Z": 178,
+    "CAM_TLJEH-BZQZ7-XG4P4": 164,
+    "CAM_KHMI4-9TDEE-EZ75Q": 68
+  },
+  "columns": 10,
+  "steps": 5,
+  "platformHeight": 4.864989247017689,
+  "dome": {
+    "center": [
+      -1.8490800857543945,
+      -67.1385498046875
+    ],
+    "base": 27.02484,
+    "radius": 19.15,
+    "profile": [
+      [
+        18.948387145996094,
+        37.52000045776367
+      ],
+      [
+        17.59750747680664,
+        40.369998931884766
+      ],
+      [
+        14.368659019470215,
+        42.619998931884766
+      ],
+      [
+        9.893613815307617,
+        45.02000045776367
+      ],
+      [
+        5.8972601890563965,
+        47.56999969482422
+      ]
+    ]
+  },
+  "porticoOpening": {
+    "center": [
+      12.904326162332634,
+      0,
+      -34.57887840848196
+    ],
+    "normal": [
+      0.41896891593933105,
+      0,
+      0.9080005288124084
+    ],
+    "width": 43.60953132608384,
+    "bottom": 2.294039726257324,
+    "top": 23.42494010925293
+  },
+  "trees": [
+    {
+      "x": -15.522641509493535,
+      "z": -3.8409949504587217,
+      "radius": 0.42
+    },
+    {
+      "x": -7.608568162639461,
+      "z": 10.12843289926515,
+      "radius": 0.42
+    },
+    {
+      "x": -0.9800608439131828,
+      "z": 24.691045651510606,
+      "radius": 0.42
+    },
+    {
+      "x": 4.9542727307475865,
+      "z": 39.57396352671129,
+      "radius": 0.42
+    },
+    {
+      "x": 10.702926119299644,
+      "z": 54.542557812681395,
+      "radius": 0.42
+    },
+    {
+      "x": 54.334194896373475,
+      "z": -36.074283468690396,
+      "radius": 0.42
+    },
+    {
+      "x": 60.467497299346306,
+      "z": -21.283173639474725,
+      "radius": 0.42
+    },
+    {
+      "x": 69.79419732737391,
+      "z": -7.965558922516685,
+      "radius": 0.42
+    },
+    {
+      "x": 76.4911698330369,
+      "z": 6.565462675054022,
+      "radius": 0.42
+    },
+    {
+      "x": 82.82973160458275,
+      "z": 21.261861881964336,
+      "radius": 0.42
+    },
+    {
+      "x": 24.697074911588768,
+      "z": 74.51708864588511,
+      "radius": 0.42
+    },
+    {
+      "x": 30.981608650678734,
+      "z": 88.13709657807124,
+      "radius": 0.42
+    },
+    {
+      "x": 39.36098696946536,
+      "z": 106.2971071543194,
+      "radius": 0.42
+    },
+    {
+      "x": 43.55067612885867,
+      "z": 115.37711244244349,
+      "radius": 0.42
+    },
+    {
+      "x": 88.25711192845736,
+      "z": 45.18926453013193,
+      "radius": 0.42
+    },
+    {
+      "x": 94.54164566754733,
+      "z": 58.809272462318056,
+      "radius": 0.42
+    },
+    {
+      "x": 102.92102398633395,
+      "z": 76.96928303856623,
+      "radius": 0.42
+    },
+    {
+      "x": 107.11071314572726,
+      "z": 86.04928832669032,
+      "radius": 0.42
+    },
+    {
+      "x": -17.84023181439008,
+      "z": 104.05650811810267,
+      "radius": 0.42
+    },
+    {
+      "x": -8.622915663724797,
+      "z": 124.03251975197566,
+      "radius": 0.42
+    },
+    {
+      "x": 138.33585914134417,
+      "z": 31.99385457653773,
+      "radius": 0.42
+    },
+    {
+      "x": 147.55317529200946,
+      "z": 51.969866210410714,
+      "radius": 0.42
+    },
+    {
+      "x": 359,
+      "z": 23,
+      "radius": 0.42
+    },
+    {
+      "x": 331,
+      "z": 37,
+      "radius": 0.42
+    },
+    {
+      "x": 345,
+      "z": 37,
+      "radius": 0.42
+    },
+    {
+      "x": 303,
+      "z": 51,
+      "radius": 0.42
+    },
+    {
+      "x": 317,
+      "z": 51,
+      "radius": 0.42
+    },
+    {
+      "x": 275,
+      "z": 65,
+      "radius": 0.42
+    },
+    {
+      "x": 233,
+      "z": 79,
+      "radius": 0.42
+    },
+    {
+      "x": 247,
+      "z": 79,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 93,
+      "radius": 0.42
+    },
+    {
+      "x": 205,
+      "z": 93,
+      "radius": 0.42
+    },
+    {
+      "x": 219,
+      "z": 93,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 107,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 107,
+      "radius": 0.42
+    },
+    {
+      "x": 177,
+      "z": 107,
+      "radius": 0.42
+    },
+    {
+      "x": 191,
+      "z": 107,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 121,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 121,
+      "radius": 0.42
+    },
+    {
+      "x": 149,
+      "z": 121,
+      "radius": 0.42
+    },
+    {
+      "x": 163,
+      "z": 121,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 135,
+      "radius": 0.42
+    },
+    {
+      "x": 121,
+      "z": 135,
+      "radius": 0.42
+    },
+    {
+      "x": -355,
+      "z": 149,
+      "radius": 0.42
+    },
+    {
+      "x": -383,
+      "z": 163,
+      "radius": 0.42
+    },
+    {
+      "x": -369,
+      "z": 163,
+      "radius": 0.42
+    },
+    {
+      "x": -355,
+      "z": 163,
+      "radius": 0.42
+    },
+    {
+      "x": -341,
+      "z": 163,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -383,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -369,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -355,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -341,
+      "z": 177,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -383,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -369,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -355,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -341,
+      "z": 191,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 205,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 205,
+      "radius": 0.42
+    },
+    {
+      "x": -383,
+      "z": 205,
+      "radius": 0.42
+    },
+    {
+      "x": -369,
+      "z": 205,
+      "radius": 0.42
+    },
+    {
+      "x": -355,
+      "z": 205,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 219,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 219,
+      "radius": 0.42
+    },
+    {
+      "x": -383,
+      "z": 219,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 233,
+      "radius": 0.42
+    },
+    {
+      "x": -229,
+      "z": 289,
+      "radius": 0.42
+    },
+    {
+      "x": -215,
+      "z": 289,
+      "radius": 0.42
+    },
+    {
+      "x": -257,
+      "z": 303,
+      "radius": 0.42
+    },
+    {
+      "x": -243,
+      "z": 303,
+      "radius": 0.42
+    },
+    {
+      "x": -285,
+      "z": 317,
+      "radius": 0.42
+    },
+    {
+      "x": -271,
+      "z": 317,
+      "radius": 0.42
+    },
+    {
+      "x": -313,
+      "z": 331,
+      "radius": 0.42
+    },
+    {
+      "x": -299,
+      "z": 331,
+      "radius": 0.42
+    },
+    {
+      "x": -341,
+      "z": 345,
+      "radius": 0.42
+    },
+    {
+      "x": -327,
+      "z": 345,
+      "radius": 0.42
+    },
+    {
+      "x": -411,
+      "z": 373,
+      "radius": 0.42
+    },
+    {
+      "x": -397,
+      "z": 373,
+      "radius": 0.42
+    }
+  ],
+  "bytes": 48411468,
+  "sourceModels": [
+    "CAM_PX4ND-TBOZP-3FRN5",
+    "CAM_NCSVT-TQ9F9-BG2NN",
+    "CAM_WP4AV-34RPJ-DGCTC",
+    "CAM_IVRJC-BXJZD-X6ABS",
+    "CAM_CQMYN-XKY6H-I7J3C",
+    "CAM_CW7MH-H5BCN-PPGCW",
+    "CAM_ME1KO-1JBIG-12R97",
+    "CAM_MNJTM-TPVUN-KZN3Z",
+    "CAM_TLJEH-BZQZ7-XG4P4",
+    "CAM_KHMI4-9TDEE-EZ75Q"
+  ],
+  "description": "Approximate repeated facade details on measured GIS planes. Building 10 has photo-referenced portico details; buildings 1, 2, 3, 4, 5, 6, 7, 8 and 11 use generic windows and trim, not photo-surveyed reconstruction. Materials are generic scans. No Tripo or Google mesh used."
+}

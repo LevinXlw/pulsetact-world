@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>帝国大厦 · 游戏原始场景复原</title>
+  <link rel="icon" href="data:,">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#c9d5dd;color:#f5f2e9;font-family:Inter,"Microsoft YaHei",sans-serif}#stage{position:fixed;inset:0}canvas{display:block;width:100%;height:100%}.veil{position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,#13232d55,transparent 26%,transparent 63%,#14242ccc)}header{position:fixed;left:34px;top:30px;pointer-events:none}.eyebrow{font-size:10px;letter-spacing:3px;opacity:.7}h1{font-size:34px;font-weight:400;letter-spacing:4px;margin:15px 0 8px}.subtitle{font:11px Georgia,serif;letter-spacing:2px}.badge{position:fixed;right:34px;top:33px;text-align:right;font-size:10px;line-height:2;letter-spacing:1px}.badge strong{font:23px Georgia,serif}.source{position:fixed;left:34px;bottom:138px;font-size:11px;line-height:1.9;color:#e5e9e2cc;max-width:238px}.source small{display:block;letter-spacing:1px;font-size:9px;color:#e5c695;margin-bottom:7px}.source a{color:inherit;display:inline-block;margin-top:9px;text-decoration:none}.source a:hover{text-decoration:underline}.controls{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);display:flex;gap:12px;align-items:center;max-width:calc(100% - 32px)}.group{display:flex;gap:3px;padding:5px;background:#1e2d34e8;border:1px solid #ffffff32;border-radius:8px}button,a.export{font:11px "Microsoft YaHei",sans-serif;color:#dae1de;padding:11px 15px;white-space:nowrap;background:transparent;border:0;border-radius:5px;cursor:pointer}button:hover{background:#ffffff17}button[aria-pressed=true]{color:#28312e;background:#e8e5da}button:focus-visible,a:focus-visible{outline:2px solid #efc485;outline-offset:4px}button:disabled{opacity:.5;cursor:wait}a.export{background:#1e2d34df;border:1px solid #ffffff32;text-decoration:none;padding:16px}a[aria-disabled=true]{pointer-events:none;opacity:.5}.status{position:fixed;left:34px;bottom:27px;font-size:10px;letter-spacing:.4px}.hint{position:fixed;right:34px;bottom:27px;font-size:10px;color:#dce4dfad}#error{position:fixed;left:34px;bottom:200px;color:#ffb99d;font-size:12px;max-width:80%}
+    @media(max-width:780px){header{top:22px;left:20px}h1{font-size:27px}.eyebrow{font-size:8px;letter-spacing:1.5px}.subtitle{font-size:9px}.badge{top:25px;right:20px;font-size:8px}.badge strong{font-size:18px}.source{display:none}.controls{width:calc(100% - 24px);max-width:none;flex-wrap:wrap;justify-content:center;gap:6px;bottom:48px}.views{width:100%;justify-content:center}.views button{flex:1;padding:11px 8px}button,a.export{font-size:10px;padding:10px}.status{left:20px;bottom:20px;font-size:9px}.hint{right:20px;bottom:20px;font-size:8px}.hint span{display:none}}
+  </style>
+</head>
+<body>
+  <div id="stage" aria-label="可拖动旋转的帝国大厦三维场景"></div><div class="veil"></div>
+  <header><div class="eyebrow">PULSETACT / LOCAL SCENE STUDY · 03</div><h1>帝国大厦</h1><div class="subtitle">EMPIRE STATE BUILDING</div></header>
+  <div class="badge"><strong>原始场景复原</strong><br>SPIDER-MAN REMASTERED<br><span id="measure">正在读取建筑…</span></div>
+  <div class="source"><small>RECOVERED FROM YOUR LOCAL GAME</small>游戏原始构件 · 原始摆放坐标<br>保留楼体退台、窗格与屋顶细节<br>贴图已还原，光照与材质为近似效果<br><a href="/docs/manhattan-map-study.html">探索周边街区 · 扩大地图 ↗</a><br><a href="/docs/empire-state-study.html">查看之前的手工搭建版 ↗</a></div>
+  <nav class="controls" aria-label="场景控制">
+    <div class="group views"><button data-view="overview" aria-pressed="true">建筑全貌</button><button data-view="crown" aria-pressed="false">塔冠细节</button><button data-view="facade" aria-pressed="false">立面近看</button><button data-view="street" aria-pressed="false">街角仰望</button></div>
+    <div class="group"><button data-light="day" aria-pressed="true">日间</button><button data-light="golden" aria-pressed="false">夕照</button></div>
+    <a id="download" class="export" aria-disabled="true" href="/assets-source/nyc-local/empire-original/empire-original.glb" download="empire-original.glb">↓ 建筑模型</a>
+  </nav>
+  <div id="status" class="status" role="status">正在读取游戏构件…</div><div class="hint">拖动环视 · 缩放<span> · 右键平移</span></div><div id="error" role="alert"></div>
+  <script type="module" src="/src/experiments/empire-original-study.ts"></script>
+</body>
+</html>

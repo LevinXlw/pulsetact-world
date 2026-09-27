@@ -1,0 +1,157 @@
+{
+  "stage": "baseline",
+  "records": [
+    {
+      "key": "court",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.5245520627719641,
+          -0.5876049343701724,
+          -0.6160889339579985
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 39,
+        "triangles": 722344
+      }
+    },
+    {
+      "key": "eye",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.41711062531979753,
+          -0.0941083133185145,
+          -0.9039703267307351
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 39,
+        "triangles": 722344
+      }
+    },
+    {
+      "key": "portico",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.09519309808136595,
+          -0.09410831331851448,
+          -0.9910004538051514
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 21,
+        "triangles": 720096
+      }
+    },
+    {
+      "key": "facade",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.7313603828401067,
+          -0.5844507236644514,
+          -0.3514674124582131
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 17,
+        "triangles": 675320
+      }
+    },
+    {
+      "key": "river",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.7854160530606149,
+          -0.3866663645836875,
+          -0.4833329557296091
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 43,
+        "triangles": 719924
+      }
+    },
+    {
+      "key": "bridge",
+      "scene": {
+        "campus": "mit",
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          0.3820803599504352,
+          -0.1146241079851305,
+          0.9169928638810441
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 2,
+        "surfaceTriangles": {
+          "walls": 22694,
+          "roofs": 7156
+        },
+        "calls": 16,
+        "triangles": 607116
+      }
+    }
+  ],
+  "performance": {
+    "medianFrameMs": 4.200000000000728,
+    "p95FrameMs": 8.299999999999272,
+    "frames": 640,
+    "durationMs": 3000.7000000000007,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36"
+  },
+  "errors": []
+}
