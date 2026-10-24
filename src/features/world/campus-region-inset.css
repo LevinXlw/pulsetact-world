@@ -1,0 +1,15 @@
+.campus-region-inset{width:100%;min-width:0;margin-top:18px;border:1px solid #d9dacb;border-radius:12px;overflow:hidden;background:#eeecdf;color:#4e6158}
+.campus-region-inset-map{position:relative;isolation:isolate;aspect-ratio:3/2;overflow:hidden}
+.campus-region-inset-map>svg{position:absolute;inset:0;display:block;width:100%;height:100%}
+.campus-region-inset-grid{fill:none;stroke:#d6d9cb;stroke-width:.65;opacity:.55}
+.campus-region-inset-place{position:absolute;top:12px;left:14px;max-width:calc(100% - 70px);font:9px/1.5 system-ui,sans-serif;letter-spacing:1.3px;color:#788074;text-transform:uppercase;pointer-events:none}
+.campus-region-inset-scale path{fill:none;stroke:#6a796c;stroke-width:1.5}.campus-region-inset-scale text{font:16px system-ui,sans-serif;fill:#647263}
+.campus-region-inset-north{fill:#6a796c}.campus-region-inset-north text{font:16px system-ui,sans-serif}
+.campus-region-inset .campus-region-inset-pin{position:absolute;z-index:1;display:flex;align-items:center;gap:6px;min-width:28px;min-height:28px;padding:4px 5px 4px 0;border:0;border-radius:5px;background:none;color:#3e5248;cursor:pointer;transform:translate(-6px,-50%);white-space:nowrap;box-shadow:none;text-align:left}
+.campus-region-inset-pin>i{display:block;flex:0 0 12px;width:12px;height:12px;box-sizing:border-box;border:2px solid #f7f5e9;border-radius:50%;background:var(--inset-school-color);box-shadow:0 0 0 1px var(--inset-school-color)}
+.campus-region-inset-pin>span{display:block;padding:4px 6px;border-radius:4px;background:#f7f5e9ed;font:600 10px/1.2 system-ui,sans-serif;letter-spacing:.2px}
+.campus-region-inset-pin.is-selected>i{box-shadow:0 0 0 1px var(--inset-school-color),0 0 0 5px #faf9f199}.campus-region-inset-pin.is-selected>span{color:var(--inset-school-color);box-shadow:0 1px 6px #293b2810}
+.campus-region-inset .campus-region-inset-pin.is-east{flex-direction:row-reverse;padding:4px 0 4px 5px;transform:translate(calc(-100% + 6px),-50%);text-align:right}
+.campus-region-inset .campus-region-inset-pin:hover>span{background:#fffef6}.campus-region-inset .campus-region-inset-pin:focus-visible{outline:2px solid #506c58;outline-offset:3px}
+.campus-region-inset-caption{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-top:1px solid #d9dacb;font:9px/1.5 system-ui,sans-serif;color:#7b8375}.campus-region-inset-caption>span:first-child{color:#5e6c5e;flex-shrink:0}.campus-region-inset-caption>span:last-child{text-align:right}
+@media(max-width:420px){.campus-region-inset-place{font-size:8px;letter-spacing:.8px}.campus-region-inset-caption{font-size:8px;padding:9px 10px}}

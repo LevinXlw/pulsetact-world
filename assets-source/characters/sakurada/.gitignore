@@ -1,0 +1,7 @@
+# Downloaded originals and reproducible generated binary intermediates.
+*.zip
+*.vrm
+*.glb
+*.png
+original/
+__pycache__/

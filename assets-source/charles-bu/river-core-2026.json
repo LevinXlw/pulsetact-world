@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-18",
+  "scope": "Charles River south bank behind GSU, Marsh/CAS and Silber Way, with existing MassGIS roadway/shoreline continuation toward Harvard Bridge to avoid a new road dead end; no expansion to the complete river transport network",
+  "primarySources": [
+    {"url":"https://services1.arcgis.com/hGdibHYSPO59RG1h/ArcGIS/rest/services/MassDOTRoads_gdb/FeatureServer/0","use":"Unchanged road axes and inventory carriageway widths; cached bu-massgis-roads.geojson / bu-road-data.ts"},
+    {"url":"https://www.mass.gov/info-details/massgis-data-massdep-hydrography-125000","use":"Cached massgis-hydrography.json polygon 14934 south shore vertices 63–94; 1:25,000 scale, not a detailed contemporary shore survey"},
+    {"url":"https://www.bu.edu/articles/2011/the-charles-river-to-the-right/","use":"Silber Way via Back Street, switchback footbridge over Storrow and connection to Charles River path"},
+    {"url":"https://www.bu.edu/articles/2009/boston-a-runners-paradise/","use":"Distinguishes Bay State Road footbridge behind Marsh and additional Silber Way footbridge"},
+    {"url":"https://www.bu.edu/articles/2009/icons-among-us-the-bu-beach/","use":"BU Beach is lawn separated from river by Storrow, with a grassy berm"}
+  ],
+  "coordinatePolicy": "No source road translation or rescaling. Source axes clipped only at x[-1510,400]. Core road detailing ends near Silber; asphalt/markings continue through the existing eastern source segments. South bank uses original lon/lat projected through the existing Cambridge coordinate transform.",
+  "authoredApproximations": [
+    "Exact footbridge switchback outlines were not obtained; route existence/location follows BU references, deck/ramp stations are authored within the measured shore-road-campus corridor.",
+    "Footbridges are 3m wide with modeled 4.8m minimum road clearance and 0.32m structural thickness. These dimensions are not engineering survey data.",
+    "Riverside path uses an 8m inland offset from the hydrographic shore, plus explicit land-side approaches. Path width and exact edges are not surveyed.",
+    "The eastern walking connection follows the existing Harvard Bridge west sidewalk then an authored short descent to the river-side promenade; its ramp and railing opening are not surveyed. Remaining Harvard Bridge and eastern road vertical profiles retain the existing prototype elevations.",
+    "No imagery downloaded: official MassGIS ortho request failed DNS and its approval attempt was interrupted. No measurements from unavailable imagery are claimed.",
+    "End elevations follow shared buElevation, using the current USGS 3DEP core DEM. Deck stations remain elevated; no whole-bridge terrain drape. Very low path samples use 0.79m ground minimum to avoid old shoreline/DEM water-edge mismatch."
+  ],
+  "outOfScope": ["Grand Junction railway bridge", "Complete Storrow ramps east of Silber Way", "Fenway and Medical campuses"]
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "project": "MIT CSAIL RVSN Ground-Truth, As-Built 3D CAD Model of Stata Center",
+  "official_page": "https://rvsn.csail.mit.edu/stata/",
+  "mirror_page": "https://rvsn.csail.mit.edu/content/stata/index.html",
+  "local_page": "rvsn-stata.html",
+  "evidence": "The official page credits Frank O. Gehry and Associates for CATIA data and links an Exterior Model from Gehry Technologies. Its documentation describes a detailed exterior model supplied by the Frank Gehry office. Separate downloadable PLY/RWX data is described as floor models.",
+  "exterior_link": "https://rvsn.csail.mit.edu/stata/exterior",
+  "ply_link": "https://rvsn.csail.mit.edu/stata/ply",
+  "download_result": "The exterior and PLY directory links returned HTTP 403 through web browsing. No CAD geometry was downloaded. The public project HTML was downloaded normally. No credentials, hidden paths, restricted map data, or access-control workarounds were used.",
+  "approval_state": "No pending approval. Further network searching stopped at root request.",
+  "license_result": "No explicit reuse or redistribution license found in the inspected public project page. Public availability of a project description does not establish a game-asset redistribution license. No license was inferred.",
+  "current_implementation": "Continue with the existing municipal source cage and photo-guided facade reconstruction; do not describe the output as imported Gehry CAD or an exact surveyed reconstruction."
+}

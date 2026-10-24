@@ -14,12 +14,14 @@ export class CampusCollision {
  private down=new Vector3(0,-1,0);
  private end=new Vector3();
  private query=new Box3();
- rebuild(ground:Mesh[],walls:Mesh[]){
+ private groundSampler:((x:number,z:number)=>number|undefined)|undefined;
+ rebuild(ground:Mesh[],walls:Mesh[],groundSampler?:(x:number,z:number)=>number|undefined){
   const entry=(mesh:Mesh):Entry=>({mesh,bounds:mesh.geometry.boundingBox!.clone().applyMatrix4(mesh.matrixWorld)});
-  this.ground=ground.map(entry);this.walls=walls.map(entry);this.all=[...this.ground,...this.walls];
+  this.ground=ground.map(entry);this.walls=walls.map(entry);this.all=[...this.ground,...this.walls];this.groundSampler=groundSampler;
  }
- clear(){this.ground=[];this.walls=[];this.all=[];this.candidates.length=0;this.hits.length=0;}
- groundHeight(x:number,z:number){
+ clear(){this.ground=[];this.walls=[];this.all=[];this.groundSampler=undefined;this.candidates.length=0;this.hits.length=0;}
+ groundHeight(x:number,z:number,_feetY?:number){
+  if(this.groundSampler)return this.groundSampler(x,z);
   this.candidates.length=0;this.hits.length=0;
   for(const item of this.ground)if(x>=item.bounds.min.x&&x<=item.bounds.max.x&&z>=item.bounds.min.z&&z<=item.bounds.max.z)this.candidates.push(item.mesh);
   this.origin.set(x,300,z);this.ray.set(this.origin,this.down);this.ray.near=0;this.ray.far=600;

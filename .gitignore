@@ -1,8 +1,12 @@
 node_modules/
 assets-source/checkpoints/
 assets-source/tools/
+assets-source/people/
+assets-source/renderpeople-free-page.html
 assets-source/nyc-local/
 dist/
+dist-cloud/
+.wrangler/
 test-results/
 playwright-report/
 .sites-runtime/
@@ -10,3 +14,17 @@ playwright-report/
 .env
 .env.*
 !.env.example
+
+.world-data/
+
+# Local review renders, diagnostics and tool caches (runtime assets live in public/).
+/output/
+/tmp/
+__pycache__/
+*.pyc
+*.blend1
+
+# The fixed account is bundled only into the backend on the release machine.
+/server/auth-credentials.mjs
+.dev.vars
+.dev.vars.*

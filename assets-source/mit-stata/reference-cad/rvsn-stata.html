@@ -1,0 +1,192 @@
+<html>
+<head><title>Ground-Truth, As-Built 3D CAD Model of Stata Center</title></head>
+<body>
+<a name="top"><h1>Ground-Truth, As-Built 3D CAD Model of Stata Center</h1></a>
+<font size=+1>
+
+<h2>Students: </h2>Xiao Xiao, Tiffany Li
+
+<h2>Abstract</h2>
+
+The goal of this project is to construct a 3D model of the Stata Center using existing floorplans and field measurements. We began with a set of 2D floorplans of the interior in DWG format, and we constructed various elements of the building- walls, floors, ceiling, stairs, etc- on top of the lines in the floorplans by adding 3D faces within the program AutoCAD. 
+<p>
+
+A detailed description of the project can be found <a href="documentation.html">here</a>.
+<br>
+Our original DWG-format files can be found <a href="#files">here</a>.
+
+<p>
+Update: in December 2011, Maurice Fallon and Hordur Johannsson cleaned
+up, reorganized and converted these models into PLY and RWX formats.  
+There are three directories of new files:
+
+<p>
+Here are the <a href="ply">PLY-format files</a>.
+
+<p>
+Here are the <a href="rwx_noceilings">RWX-format files (floorplans but no ceilings)</a>.
+
+<p>
+Here are the <a href="rwx_ceilings">RWX-format files (floorplans with ceilings)</a>.
+
+<p>
+
+<h1><a href="2007.html">Summer 2007</a> </h1>
+work continued by: Yang Yang, Jessi Ambrose
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+<h2>Acknowledgements</h2>
+
+<p>We are grateful to Kaustuv DeBiswas of the Architecture Department
+for helping us get started with AutoLISP inside AutoCAD; to CSAIL's TiG
+group; to MIT's Department of Facilities for the 2D floorplans with
+which we started; and to Frank O. Gehry and Associates for the CATIA
+data.
+
+<h2>Pictures</h2>
+
+<center><img src="images/vertical_nonplanar.JPG" height=400><br>
+<font size=4>
+This is an example of vertical non-planar geometry. Note how the wall consists of narrow strips of planar walls and how the ceiling largely consists of triangles emanating from vertices. A column can be seen on the right side of the picture through a section of wall. Note how it is modeled using the same technique as the wall.</font></center>
+
+<br>
+
+
+<center><img src="images/nonvertical.JPG" height=450><br>
+<font size=4>
+The blue wall is an example of a non-vertical wall. The numbers 1-4 refer to the points inputted into the convex combination function, which were clicked in that order. The function then proceeded to draw the wall.</font></center>
+
+<br>
+
+<center><img src="images/facade.JPG" height=300><br>
+<font size=4>
+This is a model of an office facade.</font></center>
+
+<br>
+
+<center><img src="images/stairs.JPG" height=400><br>
+<font size=4>
+On the left is a single step that we have modeled. The chunk of stairs on the right was made by putting together several of the step modules on the left.</font></center>
+
+<br>
+
+<center><img src="images/curved_stairs.JPG" height=400><br>
+<font size=4>
+This is a section of curved stairs that we modeled. Only the top surface of this particular stairway is complete.</font></center>
+
+<br>
+
+<center><img src="images/railings.JPG" height=400><br>
+<font size=4>This is a section of railings with details.</font></center>
+
+<br>
+
+<center><img src="images/railings_simple.JPG" height=400><br>
+<font size=4>This is a section of railings with only the top metal strip drawn.</font></center>
+
+<br>
+
+<center><img src="images/glass_old.JPG" height=400><br>
+<font size=4>The pink wall represents a glass wall. This is the old way we modeled glass walls.</font></center>
+
+<br>
+
+<center><img src="images/glass_new.JPG" height=400><br>
+<font size=4>This is the new way that we are modeling glass walls. Again in pink, the wall's visually prominent metal beams can now be seen. This image shows the same wall as the previous image with a bit more of the wall modeled.</font></center>
+
+<br>
+
+<center><img src="images/windows.JPG" height=400><br>
+<font size=4>This is the way we initially modeled these windows. Note the brown panel at the bottom. These windows were modeled by hand because the wall in which they are embedded is curved.</font></center>
+
+<br>
+
+<center><img src="images/windows2.JPG" height=400><br>
+<font size=4>Here is a row of windows generated using our window generating function.</font></center>
+
+<br>
+
+
+<center><img src="images/light_holder.JPG" height=400><br>
+<font size=4>The light-holder is the structure in lime-green.</font></center>
+
+<br>
+
+<a href="#top">back to top</a>
+
+<br>
+<br>
+
+<a name="files"><h2>Data</h2></a>
+
+Note: these files are viewable only within AutoCAD 2007. We will post
+DXF versions of each floor when the project is complete.<p>
+
+<h3>Individual Floor Models with Pictures</h3>
+<a href="fps/studentstreet.dwg">Student Street</a><br>
+<img src="images/fp_studentstreet.JPG" height=300><br>
+
+<br>
+<a href="fps/FP_01.dwg">2nd Floor</a><br>
+<img src="images/fp_01.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_03.dwg">3rd Floor</a><br>
+<img src="images/fp_03.JPG" height=300><br>
+
+<br>
+
+<a href="fps/fp_04c.dwg">4th Floor</a><br>
+<img src="images/fp_04.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_05.DWG">5th Floor</a><br>
+<img src="images/fp_05.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_06.DWG">6th Floor</a><br>
+<img src="images/fp_06.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_07.DWG">7th Floor</a><br>
+<img src="images/fp_07.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_08.DWG">8th Floor</a><br>
+<img src="images/fp_08.JPG" height=300><br>
+
+<br>
+
+<a href="fps/FP_09.DWG">9th Floor</a><br>
+<img src="images/fp_09.JPG" height=300><br>
+
+<br>
+
+
+<br>
+
+<h3>Exterior Model from Gehry Technologies</h3>
+click <a href="exterior">here</a> to download files.
+
+<p>
+<a href="#top">back to top</a>
+<p>
+
+</body>
+</html>

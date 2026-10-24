@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "campus": "arizona",
+  "bytes": 11410356,
+  "triangles": 247608,
+  "meshes": 10,
+  "visibleMeshes": 10,
+  "textures": 0,
+  "grid": {
+    "minX": -376,
+    "minZ": -664,
+    "columns": 177,
+    "rows": 154,
+    "cell": 8
+  },
+  "heightBytes": 109032
+}

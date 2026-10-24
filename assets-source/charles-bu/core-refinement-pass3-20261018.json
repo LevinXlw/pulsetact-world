@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-18",
+  "scope": "Third BU implementation pass: Bay State bowed facades and residential entry alignment; CDS public ground floor; corresponding bounded mobile model",
+  "references": [
+    {
+      "url": "https://www.bu.edu/housing/files/2016/07/Bay-State-Road-3.jpg",
+      "localReference": "output/bu-implementation-20261018-pass3/bay-state-reference.jpg",
+      "evidence": "Official housing exterior photograph, visually inspected: windowed curved brick bays, stone trim, raised residential entries and planted setbacks. Not a survey of each selected facade."
+    },
+    {
+      "url": "https://www.bu.edu/housing/residence/central-campus-apartments/",
+      "evidence": "Official residential context."
+    },
+    {
+      "url": "https://www.bu.edu/cpo/files/2019/12/19.12.03_Student-Town-Hall-Slide-Deck-_v1.pdf",
+      "localReference": "output/bu-cds-reference-08.png",
+      "evidence": "BU/KPMB 2019 ground landscape plan supports the glazed public frontage and paved approach. Planning material, not an as-built entrance survey."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2022/architects-of-bu-data-science-building-explain-their-design/",
+      "evidence": "Architect discussion of public and collaborative ground spaces addressing the street."
+    }
+  ],
+  "evidenceLimits": [
+    "Existing GIS footprints, source heights and occupied-volume collision are preserved. The terrain is the existing bare-earth DEM, not a door or threshold survey.",
+    "Bow-window counts, widths, trim and frame dimensions are authored approximations. The pass restores missing facade articulation without projecting another bay beyond the mapped envelope.",
+    "Residential paths are aligned to the existing model door and stoop, not certified real-world door locations. 38 cases remain unaligned and need individual facade review.",
+    "CDS columns retain their existing locations; authored door axes move 2.2m east to avoid those columns. No claim that the corrected axes are measured real main entrances.",
+    "Closed building interiors remain unimplemented. Mobile retains reduced geometry even in HD material mode."
+  ],
+  "changes": {
+    "bayState": "Group short convex GIS edges into a continuous street-facing bow; clip complete sash windows across the original facets. Desktop glass is recessed 0.29m with joined sill, jamb and lintel surfaces. Fixed reversed reveal winding and the 0.16m first-row wall gap found during screenshot review.",
+    "entries": {
+      "sharedHelper": "src/features/world/bu-brownstone-entry.ts",
+      "existingFrontages": 926,
+      "reviewedBrownstoneEntrances": 117,
+      "aligned": 79,
+      "retainedUnaligned": 38,
+      "reasons": {
+        "finiteSidewalkAxisOrDistance": 37,
+        "gapAreaWidth": 1
+      },
+      "examples": [
+        "168 Bay State",
+        "129 Bay State",
+        "131 Bay State",
+        "135 Bay State"
+      ]
+    },
+    "cds": "Recessed dark backing with exterior glazed subdivisions, double doors, heads and transoms. L-shaped paving fills the former 8.48m tower / 3.43m podium gaps. Narrow thresholds and slopes continuously meet the existing DEM apron; adjusted approximate door axes clear retained columns.",
+    "mobile": "Rebaked Boston; brick entrance surfaces receive the existing XZ brick material in HD. Added 180/192 Bay State bowed facades and the 127/125 pair facing the Bay State arrival. 34 selected brownstones in total; all other lightweight selection limits retained."
+  },
+  "geometry": {
+    "streetsTrianglesBefore": 396497,
+    "streetsTrianglesAfter": 396519,
+    "landmarkTrianglesBefore": 109710,
+    "landmarkTrianglesAfter": 110302,
+    "landmarkVisibleBatches": 21,
+    "landmarkGroundBatches": 6,
+    "landmarkCollisionMeshes": 24,
+    "desktopBayStateBowTriangleDelta": -964
+  },
+  "mobileBoston": {
+    "bytesBefore": 23550096,
+    "bytesAfter": 23681660,
+    "trianglesBefore": 644557,
+    "trianglesAfter": 648069,
+    "meshes": 1106,
+    "visibleMeshes": 188,
+    "textures": 0,
+    "assetLimitBytes": 26214400
+  },
+  "validation": {
+    "unitTests": "101 relevant tests across 12 files passed. After the final mobile-selection addition, 20 decoder/asset tests passed again. Not a complete repository test run.",
+    "build": "npm run build:cloudflare passed, including TypeScript. 95 assets / 136.93 MiB staged locally; not deployed. Existing large-chunk warnings remain.",
+    "fixedViews": "Six final same-camera before/after views, visually inspected. Zero page/shader errors, invalid geometry vertices or camera intersections.",
+    "comparisonReport": "Six image pairs, slider, image loading and 390px viewport layout passed; desktop and mobile report screenshots visually inspected.",
+    "mobilePlay": "Touch Chromium: all 29 BU destinations, visit recording, movement, HD switch, CDS/Bay State/Link HD rendering, save persistence, safe low-quality reload and viewport fit passed; zero recorded page/WebGL errors. Final Bay State arrival screenshot inspected after adding 127/125.",
+    "mobileBudget": "Final touch Chromium run: heap peak 76.46 MiB, ArrayBuffer backing 71.94 MiB; within 128/96 MiB regression budgets and no desktop MIT/detail GLBs. This is not a physical iPhone stability result."
+  },
+  "artifacts": {
+    "comparison": "output/bu-implementation-20261018-pass3/review.html",
+    "baseline": "output/bu-implementation-20261018-pass3/baseline/visual-report.json",
+    "result": "output/bu-implementation-20261018-pass3/result/visual-report.json",
+    "reportCheck": "output/bu-implementation-20261018-pass3/review-check.json",
+    "mobilePlay": "output/bu-implementation-20261018-pass3/mobile/report.json",
+    "mobileBudget": "output/bu-implementation-20261018-pass3/mobile-budget.json",
+    "cdsSource": "assets-source/charles-bu/cds-entry-refinement-20261018.json"
+  }
+}

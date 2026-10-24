@@ -1,15 +1,45 @@
 {
+  "people": [
+    {
+      "person": "nathan",
+      "ready": true,
+      "clip": "Walk",
+      "time": 0.3390999999046326,
+      "paused": false,
+      "reduced": false,
+      "poseOnly": false,
+      "position": [
+        49.38978491280429,
+        3.913699296479763,
+        52.22031763014026
+      ]
+    },
+    {
+      "person": "sophia",
+      "ready": true,
+      "clip": "Idle",
+      "time": 0.3390999999046326,
+      "paused": false,
+      "reduced": false,
+      "poseOnly": false,
+      "position": [
+        55.800016549999995,
+        3.9097624418080272,
+        55.760306209999996
+      ]
+    }
+  ],
   "campus": "mit",
   "vegetationStatus": "ready",
   "quality": "standard",
   "ambientOcclusion": true,
   "presentation": true,
   "cameraPosition": [
-    58.990905,
-    5.591477772161989,
-    65.301177
+    -2.6774370999999952,
+    5.993107126946329,
+    34.2848127
   ],
-  "cameraGroundHeight": 3.9414777721619885,
+  "cameraGroundHeight": 4.343107126946336,
   "fov": 48,
   "position": [
     58.990905,
@@ -17,16 +47,16 @@
     65.301177
   ],
   "cameraForward": [
-    -0.41745643615789263,
-    0.08489768280241602,
-    -0.9047223371649072
+    -0.792160694734627,
+    0.3884134981080218,
+    -0.47076149821862356
   ],
-  "mode": "stroll",
+  "mode": "orbit",
   "openingTrianglesRemoved": 14,
   "surfaceTriangles": {
     "walls": 22682,
     "roofs": 7156
   },
-  "calls": 154,
-  "triangles": 2158993
+  "calls": 119,
+  "triangles": 2168516
 }

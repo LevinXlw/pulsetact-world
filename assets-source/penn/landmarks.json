@@ -1,0 +1,72 @@
+{
+  "title": "University of Pennsylvania — College Green outdoor vignette",
+  "checked": "2026-10-15",
+  "implementation": "src/features/world/penn-campus.ts",
+  "layout": "src/features/world/penn-layout.ts",
+  "assetProvenance": "Original procedural geometry. Reference photographs and maps are consulted for architectural language and campus adjacencies only, and are not bundled as textures or models.",
+  "coordinateSystem": "Independent local metres; x east, y up, z south. Outdoor ground datum 0. College Green is central; College Hall to the south, Fisher and Meyerson to the east, Van Pelt to the north, Locust Walk/36th Street Walk to the west.",
+  "scope": "303 by 250 metre hand-modelled outdoor vignette. Footprints, heights and decorative profiles are approximate, not surveyed. Exterior restoration scaffolding, interiors, current opening hours and access restrictions are not simulated.",
+  "sources": [
+    {
+      "url": "https://facilities.upenn.edu/standards-policies/policies/outdoor",
+      "publisher": "University of Pennsylvania Facilities and Real Estate Services",
+      "supports": "College Green's cardinal boundaries: College Hall south, Fisher and Meyerson east, Van Pelt north, 36th Street Walk west."
+    },
+    {
+      "url": "https://admissions.upenn.edu/sites/default/files/2024-07/2023_Self-GuidedTour_Construction_0823_2.pdf",
+      "publisher": "Penn Admissions",
+      "supports": "Campus pedestrian relationships and relative positions; consulted as the official self-guided campus map, not a measured floor plan."
+    },
+    {
+      "url": "https://facilities.upenn.edu/maps/discover-penn",
+      "publisher": "University of Pennsylvania Facilities and Real Estate Services",
+      "supports": "College Hall: Thomas W. Richards, green serpentine stone, polychromatic Victorian Gothic details."
+    },
+    {
+      "url": "https://facilities.upenn.edu/maps/locations/college-hall",
+      "publisher": "University of Pennsylvania Facilities and Real Estate Services",
+      "supports": "College Hall identity and exterior campus context."
+    },
+    {
+      "url": "https://penntoday.upenn.edu/2004-04-01/ask-benny/college-hall-bell-no-longer-tolls-thee",
+      "publisher": "Penn Today",
+      "supports": "College Hall's original tall west and east towers were removed in 1914 and 1929. The model intentionally does not reconstruct those former towers."
+    },
+    {
+      "url": "https://penntoday.upenn.edu/news/class-2025-regular-decision-admissions-results",
+      "publisher": "Penn Today",
+      "supports": "Modern north facade reference: long green stone elevation, contrasting brown window surrounds, pointed openings, central gable and slate roof."
+    },
+    {
+      "url": "https://facilities.upenn.edu/maps/locations/fisher-fine-arts-library-anne-and-jerome",
+      "publisher": "University of Pennsylvania Facilities and Real Estate Services",
+      "supports": "Fisher Fine Arts Library at 220 South 34th Street, designed by Furness Evans Co.; main entrance faces College Green and has stone stairs. Sources record additions, restoration and 2025–26 envelope work; this vignette shows the architectural exterior without temporary scaffolding."
+    },
+    {
+      "url": "https://www.design.upenn.edu/sites/default/files/Self_Guided_Penn_Campus_Tours.pdf",
+      "publisher": "Penn Weitzman School of Design",
+      "supports": "Fisher semi-circular arches with short stone columns, brick, terra cotta and stone material vocabulary, and Victorian Romanesque details."
+    },
+    {
+      "url": "https://www.design.upenn.edu/architectural-archives/collections/furness-university-pennsylvania-library",
+      "publisher": "Penn Weitzman School of Design Architectural Archives",
+      "supports": "Furness original library design and building history; model is newly authored and does not redistribute architectural archival drawings."
+    },
+    {
+      "url": "https://www.design.upenn.edu/post/penns-phd-architecture-and-echoes-history",
+      "publisher": "Penn Weitzman School of Design",
+      "supports": "Fisher exterior photograph: red masonry, tall arched glazing, layered roof silhouette and round crenellated turret."
+    },
+    {
+      "url": "https://facilities.upenn.edu/about/campus-history",
+      "publisher": "University of Pennsylvania Facilities and Real Estate Services",
+      "supports": "College Green landscape language: canopy trees, lawns, brick and stone paving, granite curbs and consistent site furniture."
+    }
+  ],
+  "modelAssumptions": {
+    "collegeHall": "112m long simplified main mass, 18.8m eaves and a central gable about 33m high; projecting end bays, current gables without historic tall towers, thick window surrounds and cornices. Dimensions estimated for the playable vignette.",
+    "fisher": "38m by 56m main reading-room mass, 23.7m eaves, layered high roof with copper lantern, a north-west round turret and projecting west entrance. Dimension estimates and some repetitive ornamental profiles are stylized.",
+    "context": "Van Pelt Library, Meyerson Hall and Cohen Hall are simplified surrounding masses; no interiors or real-time campus services are represented.",
+    "landscape": "Lawn plots and 18 tree positions are authored for clear exploration routes. Benches and lanterns have collision, trees are instantiated by the shared scene vegetation system."
+  }
+}

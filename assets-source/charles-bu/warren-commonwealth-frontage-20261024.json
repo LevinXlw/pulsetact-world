@@ -1,0 +1,53 @@
+{
+  "scope": "Warren Towers existing Commonwealth Avenue north podium frontage only",
+  "reviewed": "2026-10-24",
+  "implementation": "src/features/world/bu-full-campus.ts::warrenStreetfront",
+  "sources": [
+    {
+      "url": "https://www.bu.edu/community/files/2024/02/Warren-Towers-EPNF.pdf",
+      "publisher": "Boston University / MDS Architects",
+      "publication": "2024 Expanded Project Notification Form, drawings and photographs credited 2023",
+      "localCopy": "output/bu-comm-ave-20261024/references/warren-epnf-2024.pdf",
+      "evidence": [
+        {"pdfPage": 23, "figure": "1-3", "status": "Existing-condition photographs", "supports": "Tall recessed north entrance, four glazed entrance doors, narrow sidelights, tall upper glazing, masonry reveals, curved blue-green canopy on either side, small ventilation grilles above the canopy."},
+        {"pdfPage": 38, "figure": "2-2", "status": "Renovation planning floor plan", "supports": "Ground-floor commercial edge and entrance/escalator zone north of the garage; does not provide surveyed door/frame dimensions."},
+        {"pdfPage": 64, "figure": "3-10", "status": "Proposed north elevation retaining the existing podium openings and canopy under this 2024 proposal", "supports": "Relative arrangement of the broad entrance slightly east of centre, separate retail groups, fourth-floor ribbon and vents; not used as proof of completed future cladding."}
+      ]
+    },
+    {
+      "url": "https://www.bu.edu/cpo/warren-faq/",
+      "publisher": "Boston University Campus Planning & Operations",
+      "status": "Current renovation FAQ, checked 2026-10-24",
+      "supports": "Ground-level retail and building entrances are distinct from upper residential/common floors. Future new storefronts/canopy and sidewalk regrading are renovation work, not assumed to be the existing completed appearance."
+    }
+  ],
+  "confirmedFeatures": [
+    "Commonwealth north frontage is not three continuous parking-window rows.",
+    "Main entrance is a tall recessed glazed opening with four ground-level doors.",
+    "Curved canopy is interrupted at the tall entrance and covers shops on both sides.",
+    "Narrow grille openings and a separate fourth-floor window ribbon sit above the ground-floor edge."
+  ],
+  "authoredApproximations": [
+    "Entrance centre at 55.1% of the GIS frontage length measured from the west, aperture width 12.5m and top 9.5m are scaled from the elevation/photo, not surveyed coordinates.",
+    "Retail zone positions follow the drawing; subdivision into bays, shop door widths, mullions, grille sections and exact material colours are photograph-based approximations. No unverified current tenant names are applied.",
+    "Canopy is approximated by a quarter-ellipse 2.65m deep and 2.12m high above a 3.53m outer edge. Its glazing and rib dimensions have not been measured.",
+    "The entrance mural visible in the reference photo is not reproduced; plain glazing does not claim the current artwork or internal escalators are modeled.",
+    "Third/fourth-floor and tower relationships outside the north podium correction retain the existing model and still require a separate fidelity pass."
+  ],
+  "preserved": [
+    "Original Boston GIS building outline and closed exterior wall collision",
+    "Source DEM and existing rigid building foundation anchor",
+    "Three upper tower shapes and heights, roof equipment and other podium facades",
+    "Existing CDS and Questrom assets"
+  ],
+  "mobileLOD": "Same true north facade apertures, entrance, glazing, ventilation grilles and curved canopy. Canopy cross-section reduces from 9 to 6 strips and ribs from approximately 3.15m to 6.3m spacing. No texture downloads added.",
+  "geometry": {
+    "isolatedWarrenFull": {"beforeTriangles": 69229, "afterTriangles": 77373, "beforeBatches": 11, "afterBatches": 13},
+    "isolatedWarrenMobile": {"beforeTriangles": 9843, "afterTriangles": 16469, "beforeBatches": 10, "afterBatches": 13},
+    "closedBuildingColliders": 1
+  },
+  "checks": {
+    "tests": ["tests/bu-warren-frontage.test.ts", "tests/bu-district-realism.test.ts"],
+    "result": "21 targeted tests and TypeScript typecheck passed; runtime screenshots remain a separate visual acceptance step."
+  }
+}

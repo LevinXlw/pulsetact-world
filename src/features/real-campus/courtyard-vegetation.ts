@@ -70,35 +70,46 @@ function canvasTexture(width:number, height:number, draw:(ctx:CanvasRenderingCon
   return texture;
 }
 
-/** One twig with rounded ovate leaves. Holes are genuine alpha cutouts, never
- * opaque disks or the previous triangular blades. It is shared by every tree.
+/** A small branching spray of individually veined elm-like leaves. The dense
+ * interior and open tips give overlapping sprays a soft, irregular silhouette.
+ * Its alpha cutout is shared by every tree, including the shadow pass.
  */
 function broadleafTexture() {
-  return canvasTexture(256, 256, context => {
-    context.clearRect(0, 0, 256, 256);
-    context.strokeStyle = '#a29c69'; context.lineWidth = 2;
-    context.beginPath(); context.moveTo(123, 249);
-    context.bezierCurveTo(130, 173, 130, 93, 147, 20); context.stroke();
-    const leaves = [
-      [122, 208, -2.54, 58, 27], [128, 191, -.57, 63, 30],
-      [130, 151, -2.61, 70, 33], [133, 140, -.53, 67, 32],
-      [136, 96, -2.56, 65, 29], [140, 86, -.56, 61, 27],
-      [144, 49, -2.34, 46, 24], [146, 34, -1.43, 31, 18],
-    ];
-    for (let i = 0; i < leaves.length; i++) {
-      const [x, y, angle, length, width] = leaves[i];
+  return canvasTexture(512, 512, context => {
+    const rng = random(6931);
+    context.clearRect(0, 0, 512, 512);
+    context.strokeStyle = '#8a8960'; context.lineWidth = 2.2;
+    context.beginPath(); context.moveTo(246, 508);
+    context.bezierCurveTo(252, 367, 260, 191, 282, 40); context.stroke();
+    const leaves:number[][] = [];
+    for (let tier = 0; tier < 7; tier++) for (const side of [-1, 1]) {
+      const y = 433 - tier * 54 + rng() * 17, x = 249 + tier * 4;
+      const angle = side < 0 ? -2.86 + rng() * .22 : -.40 - rng() * .24;
+      const length = (114 + Math.sin(tier / 7 * Math.PI) * 27) * (tier === 6 ? .76 : 1);
+      const dx = Math.cos(angle), dy = Math.sin(angle);
+      context.beginPath(); context.moveTo(x, y);
+      context.quadraticCurveTo(x + dx * length * .5, y + dy * length * .5 + 5, x + dx * length, y + dy * length);
+      context.stroke();
+      for (let leaf = 0; leaf < 3; leaf++) {
+        const along = .30 + leaf * .28;
+        const turn = leaf === 2 ? 0 : (leaf % 2 ? 1 : -1) * .56;
+        leaves.push([x + dx * length * along, y + dy * length * along, angle + turn, 52 + rng() * 21, 18 + rng() * 7]);
+      }
+    }
+    leaves.push([282, 69, -1.43, 58, 23]);
+    for (const [x, y, angle, length, width] of leaves) {
       context.save(); context.translate(x, y); context.rotate(angle);
       const shade = context.createLinearGradient(0, -width, length, width);
-      shade.addColorStop(0, '#d1d6b6'); shade.addColorStop(.48, '#e0e3c7'); shade.addColorStop(1, '#b4bf94');
+      shade.addColorStop(0, '#9daf76'); shade.addColorStop(.46, '#bdc991'); shade.addColorStop(1, '#819c63');
       context.fillStyle = shade;
       context.beginPath(); context.moveTo(0, 0);
-      context.bezierCurveTo(length * .16, -width * .95, length * .73, -width * 1.13, length, 0);
-      context.bezierCurveTo(length * .76, width * .86, length * .25, width * 1.12, 0, 0);
+      context.bezierCurveTo(length * .16, -width * .85, length * .66, -width * 1.06, length, 0);
+      context.bezierCurveTo(length * .76, width * .73, length * .22, width, 0, 0);
       context.fill();
-      context.strokeStyle = '#9fab80'; context.lineWidth = .8;
+      context.strokeStyle = '#768d56'; context.lineWidth = 1;
       context.beginPath(); context.moveTo(1, 0); context.lineTo(length * .91, 0); context.stroke();
-      context.globalAlpha = .42; context.lineWidth = .6;
-      for (let vein = .25; vein < .85; vein += .2) {
+      context.globalAlpha = .35; context.lineWidth = .6;
+      for (let vein = .18; vein < .9; vein += .14) {
         const veinWidth = width * Math.sin(vein * Math.PI) * .71;
         context.beginPath(); context.moveTo(length * vein, 0);
         context.lineTo(length * (vein + .16), -veinWidth);
@@ -163,44 +174,48 @@ function treeStructure(tree:CourtyardTreeAnchor, index:number) {
     branches.push({a:new Vector3(Math.cos(angle) * .22, .23, Math.sin(angle) * .22),
       b:new Vector3(Math.cos(angle) * (.75 + rng() * .25), -.045, Math.sin(angle) * (.75 + rng() * .25)), radius:.16});
   }
-  // Fewer, overlapping deep lobes hold the same leaf budget more densely.
-  // Different fork elevations and bent limbs avoid a repeated radial V frame.
-  const count = tree.hero ? 5 + index % 3 : 5;
+  // Lower limbs bend before turning outward; smaller lateral twigs connect
+  // the leaf sprays back to their parent instead of leaving a bare V frame.
+  const count = tree.hero ? 6 + index % 2 : 5;
   const elbows:Vector3[] = [];
   for (let j = 0; j < count; j++) {
     const angle = j / count * TWO_PI + (rng() - .5) * 1.05 + index * .73;
-    const spread = (tree.hero ? 3.1 : 2.6) + rng() * 1.8;
+    const spread = (tree.hero ? 3.0 : 2.5) + rng() * 1.6;
     const start = trunk[3].clone().multiplyScalar(.65 + rng() * .35);
-    const tip = new Vector3(lean.x + Math.cos(angle) * spread, h * (.58 + rng() * .20), lean.z + Math.sin(angle) * spread);
-    const elbow = start.clone().lerp(tip, .41 + rng() * .23);
-    elbow.y += .9 + rng() * 1.15;
+    const tip = new Vector3(lean.x + Math.cos(angle) * spread, h * (.61 + rng() * .17), lean.z + Math.sin(angle) * spread);
+    const elbow = start.clone().lerp(tip, .42 + rng() * .18);
+    elbow.y += .8 + rng() * 1.0;
     elbow.x += Math.sin(angle) * (rng() - .5) * 1.15;
     elbow.z += Math.cos(angle) * (rng() - .5) * 1.15;
     elbows.push(elbow);
-    branches.push({a:start, b:elbow, radius:baseRadius * (.40 + rng() * .14)}, {a:elbow, b:tip, radius:baseRadius * .20});
-    lobes.push({center:tip.clone().add(new Vector3(0, -.45 + rng() * .6, 0)), width:(tree.hero ? 2.55 : 2.05) + rng() * .62, height:(tree.hero ? 3.05 : 2.5) + rng() * .9, angle});
+    const shoulder = start.clone().lerp(elbow, .53);
+    shoulder.x += Math.sin(angle) * .20; shoulder.z -= Math.cos(angle) * .20;
+    branches.push({a:start, b:shoulder, radius:baseRadius * (.33 + rng() * .12)}, {a:shoulder, b:elbow, radius:baseRadius * .27}, {a:elbow, b:tip, radius:baseRadius * .16});
+    lobes.push({center:tip.clone().add(new Vector3(0, -.3 + rng() * .6, 0)), width:(tree.hero ? 2.45 : 2.0) + rng() * .55, height:(tree.hero ? 2.9 : 2.4) + rng() * .7, angle});
     for (const side of [-1, 1]) {
-      const twigStart = elbow.clone().lerp(tip, .55);
-      const twigTip = tip.clone().add(new Vector3(Math.cos(angle + side * .95) * 1.4, .7 + rng(), Math.sin(angle + side * .95) * 1.4));
-      branches.push({a:twigStart, b:twigTip, radius:.048});
+      const twigStart = elbow.clone().lerp(tip, .36 + rng() * .24);
+      const twigTip = tip.clone().add(new Vector3(Math.cos(angle + side * .95) * 1.2, .35 + rng() * 1.1, Math.sin(angle + side * .95) * 1.2));
+      branches.push({a:twigStart, b:twigTip, radius:.033 + rng() * .012});
       if (tree.hero) {
         const end = twigTip.clone().add(new Vector3(Math.cos(angle + side * 1.5) * .8, .6, Math.sin(angle + side * 1.5) * .8));
-        branches.push({a:twigTip, b:end, radius:.017});
+        branches.push({a:twigTip, b:end, radius:.013});
       }
     }
   }
   const leader = new Vector3(lean.x * 1.8 + Math.sin(index * 1.9) * 1.2, h * (.79 + rng() * .06), lean.z * 1.8 + Math.cos(index * 1.7) * 1.2);
   branches.push({a:elbows[index % elbows.length], b:leader, radius:baseRadius * .17});
-  lobes.push({center:leader, width:tree.hero ? 2.8 : 2.3, height:tree.hero ? 3.15 : 2.65, angle:rng() * TWO_PI});
+  lobes.push({center:leader, width:tree.hero ? 2.65 : 2.15, height:tree.hero ? 3.0 : 2.5, angle:rng() * TWO_PI});
   return {branches, lobes};
 }
 
 function leafGeometry() {
-  const geometry = new PlaneGeometry(1, 1, 2, 2);
+  // A crease down the twig gives two differently lit leaf planes with only
+  // four triangles; doubling the vertical subdivision adds no useful detail.
+  const geometry = new PlaneGeometry(1, 1, 2, 1);
   const position = geometry.getAttribute('position');
   for (let i = 0; i < position.count; i++) {
     // A gently cupped twig catches light across its width.
-    position.setZ(i, Math.abs(position.getX(i)) * .13);
+    position.setZ(i, Math.abs(position.getX(i)) * .21);
   }
   geometry.computeVertexNormals();
   return geometry;
@@ -240,12 +255,12 @@ export function createCourtyardVegetation({source, manifest, windTime = {value:0
   result.userData.collision = 'none';
   const anchors = courtyardTreeAnchors(source, manifest);
   const leaves = broadleafTexture(), bark = barkTexture();
-  const foliageMaterial = new MeshStandardMaterial({name:'courtyardBroadleaf', color:'white', map:leaves, roughness:.88, metalness:0, side:DoubleSide, alphaTest:.4});
+  const foliageMaterial = new MeshStandardMaterial({name:'courtyardBroadleaf', color:'white', map:leaves, roughness:.96, metalness:0, side:DoubleSide, alphaTest:.38});
   foliageMaterial.alphaToCoverage = true;
   windMaterial(foliageMaterial, windTime);
-  const shadowMaterial = new MeshDepthMaterial({map:leaves, alphaTest:.4, depthPacking:RGBADepthPacking, side:DoubleSide});
+  const shadowMaterial = new MeshDepthMaterial({map:leaves, alphaTest:.38, depthPacking:RGBADepthPacking, side:DoubleSide});
   windMaterial(shadowMaterial, windTime);
-  const barkMaterial = new MeshStandardMaterial({name:'courtyardBark', map:bark, roughness:1, color:'#a99f8b'});
+  const barkMaterial = new MeshStandardMaterial({name:'courtyardBark', map:bark, roughness:1, color:'#d6cebc'});
   const branchGeometry = new CylinderGeometry(.6, 1, 1, 10, 1);
   const collisionGeometry = new CylinderGeometry(.4, .47, 2, 8, 1);
   const foliageGeometry = leafGeometry();
@@ -267,7 +282,7 @@ export function createCourtyardVegetation({source, manifest, windTime = {value:0
       color.setHSL(.105 + rng() * .018, .095 + rng() * .055, .72 + rng() * .18);
       limbs.setColorAt(branchIndex++, color);
     }
-    const cardCount = tree.hero ? 1650 : index < 22 ? 820 : 340;
+    const cardCount = tree.hero ? 1900 : index < 22 ? 880 : 360;
     cards += cardCount;
     const crown = new InstancedMesh(foliageGeometry, foliageMaterial, cardCount);
     crown.name = `Broadleaf crown ${index + 1}`; crown.castShadow = index < 22; crown.receiveShadow = true;
@@ -276,19 +291,24 @@ export function createCourtyardVegetation({source, manifest, windTime = {value:0
     const lod = new LOD(); lod.name = `Existing tree ${index + 1}`; lod.position.set(tree.x, tree.y + .04, tree.z);
     for (let card = 0; card < cardCount; card++) {
       const lobe = structure.lobes[card % structure.lobes.length];
-      const angle = rng() * TWO_PI, vertical = rng() * 2 - 1, radius = Math.cbrt(rng()), ring = Math.sqrt(1 - vertical * vertical);
-      const spreadX = Math.cos(angle) * ring * radius * lobe.width;
-      const spreadZ = Math.sin(angle) * ring * radius * lobe.width * .8;
+      // Concentrate sprays toward each branch while keeping a ragged outer
+      // edge. A lightly corrugated envelope breaks the smooth ellipsoid form.
+      const angle = rng() * TWO_PI, vertical = rng() * 2 - 1, radius = Math.pow(rng(), .43), ring = Math.sqrt(1 - vertical * vertical);
+      const contour = .86 + Math.sin(angle * 3 + lobe.angle) * .08 + Math.cos(vertical * 8 + index) * .06;
+      const spreadX = Math.cos(angle) * ring * radius * lobe.width * contour;
+      const spreadZ = Math.sin(angle) * ring * radius * lobe.width * .85 * contour;
       position.set(lobe.center.x + spreadX, lobe.center.y + vertical * radius * lobe.height, lobe.center.z + spreadZ);
       // Rotate complete twigs in 3D; no camera-facing billboards.
       rotation.setFromAxisAngle(UP, rng() * TWO_PI);
-      rotation.multiply(new Quaternion().setFromAxisAngle(new Vector3(1, 0, 0), (rng() - .5) * Math.PI));
+      rotation.multiply(new Quaternion().setFromAxisAngle(new Vector3(1, 0, 0), -.85 + (rng() - .5) * 1.8));
       rotation.multiply(new Quaternion().setFromAxisAngle(new Vector3(0, 0, 1), (rng() - .5) * Math.PI));
-      const size = (tree.hero ? .82 : .95) + rng() * .4;
-      scale.set(size * (.8 + rng() * .25), size, size);
+      const size = (tree.hero ? 1.05 : 1.13) + rng() * .35;
+      scale.set(size * (.85 + rng() * .20), size, size);
       crown.setMatrixAt(card, matrix.compose(position, rotation, scale));
       const outer = radius > .68, autumn = index % 5 === 3 && rng() < .13;
-      color.setHSL(autumn ? .135 + rng() * .035 : .22 + rng() * .045, autumn ? .38 : .29 + rng() * .12, (outer ? .31 : .26) + rng() * .12);
+      // The atlas supplies the leaf colour; neutral, lighter instance tints
+      // preserve shaded green detail instead of multiplying two dark greens.
+      color.setHSL(autumn ? .12 + rng() * .025 : .235 + rng() * .025, autumn ? .34 : .26 + rng() * .14, (outer ? .48 : .37) + rng() * .12);
       crown.setColorAt(card, color);
     }
     crown.instanceMatrix.needsUpdate = true;
@@ -366,7 +386,7 @@ export function createCourtyardVegetation({source, manifest, windTime = {value:0
   result.userData.windTime = windTime;
   result.userData.replacesLegacyVegetation = true;
   result.userData.bounds = new Box3().setFromObject(result);
-  result.userData.stats = {trees:anchors.length, heroTrees:anchors.filter(tree => tree.hero).length, branches:branchCount, leafCards:cards, grassClumps:clumps.length, lowQuality, legacyVegetationDownloadOmitted:true};
+  result.userData.stats = {trees:anchors.length, heroTrees:anchors.filter(tree => tree.hero).length, branches:branchCount, leafCards:cards, leafTriangles:cards * foliageGeometry.index!.count / 3, grassClumps:clumps.length, lowQuality, legacyVegetationDownloadOmitted:true};
   result.userData.treeAnchors = anchors;
   result.userData.setQuality = (quality:'standard'|'low') => {
     const low = quality === 'low';

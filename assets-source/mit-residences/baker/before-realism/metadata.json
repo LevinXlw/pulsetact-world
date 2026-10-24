@@ -1,0 +1,177 @@
+{
+  "id": "baker",
+  "name": "Baker House / W7",
+  "axes": "Blender east,north,up; glTF east,up,south; identity runtime transform",
+  "source": {
+    "modelId": "CAM_TZTMU-B3O9W-LFC4E",
+    "sourceName": "Baker House, Building W7",
+    "tile": "F4",
+    "modelDate": "2018-04-12",
+    "modelSource": "2018 Aerial Imagery by WSP",
+    "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+    "x": -300.604,
+    "z": 279.834,
+    "boundsXZ": {
+      "minX": -351.15,
+      "maxX": -250.059,
+      "minZ": 245.406,
+      "maxZ": 314.263
+    },
+    "statePlaneFeet": {
+      "easting": 765439.580107,
+      "northing": 2955248.985265
+    },
+    "catalogLatLon": {
+      "lat": 42.3566805584502,
+      "lon": -71.0960222213587
+    },
+    "inRuntimeManifest": true,
+    "runtimeCatalogPositionXZ": [
+      -325.931,
+      275.852
+    ],
+    "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+    "sourceEntry": "models/CAM_TZTMU-B3O9W-LFC4E_OBJ/CAM_TZTMU-B3O9W-LFC4E_OBJ.obj"
+  },
+  "sourceBounds": {
+    "x": [
+      -351.14984130859375,
+      -250.05892944335938
+    ],
+    "z": [
+      245.4055938720703,
+      314.26251220703125
+    ],
+    "y": [
+      2.671339988708496,
+      26.34473991394043
+    ]
+  },
+  "groundY": 2.671339988708496,
+  "mainRoofY": 22.6447399542799,
+  "diningRoofY": 8.64474,
+  "floorSpacingM": 3.02,
+  "windowRecessM": 0.28,
+  "scope": "Exterior only; no modeled accessible interior",
+  "sources": [
+    {
+      "url": "https://baker.mit.edu/about/",
+      "use": "six floors, serpentine river frontage, suspended stairs, dining pavilion"
+    },
+    {
+      "url": "https://listart.mit.edu/art-artists/baker-house-1949",
+      "use": "north stair tile cladding and window grouping"
+    },
+    {
+      "url": "https://news.mit.edu/2012/residential-hall-security-review-report",
+      "local": "references/north-mit-news.jpg",
+      "use": "north stair underside and glazing"
+    },
+    {
+      "local": "output/design/mit-20261021/references/baker.webp",
+      "use": "south shape, window proportions, roofing, dining skylights"
+    }
+  ],
+  "camerasBlender": {
+    "south-overview": {
+      "eye": [
+        -284,
+        -407,
+        77
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 122
+    },
+    "north-stairs": {
+      "eye": [
+        -308,
+        -164,
+        51
+      ],
+      "target": [
+        -302,
+        -275,
+        13
+      ],
+      "scale": 113
+    },
+    "south-west": {
+      "eye": [
+        -409,
+        -351,
+        57
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 124
+    },
+    "window-close": {
+      "eye": [
+        -290,
+        -304,
+        4.37134
+      ],
+      "target": [
+        -291,
+        -277,
+        11.5
+      ],
+      "scale": 31,
+      "perspective": true
+    },
+    "north-entry-walk": {
+      "eye": [
+        -277,
+        -230,
+        4.37134
+      ],
+      "target": [
+        -294,
+        -251,
+        8.5
+      ],
+      "scale": 31,
+      "perspective": true
+    }
+  },
+  "approachPoints": [
+    {
+      "label": "North entry approach, approximate",
+      "x": -290,
+      "y": 2.671339988708496,
+      "z": 247
+    },
+    {
+      "label": "Memorial Drive facade viewpoint",
+      "x": -304,
+      "y": 2.671339988708496,
+      "z": 308
+    }
+  ],
+  "assumptions": [
+    "Window bay widths, frames, pergola dimensions and rooflight counts approximated from photographs.",
+    "Measured source supports overall outline and elevation; south curved elbows are smoothed within the source footprint tolerance.",
+    "North stair bottom slopes are photo-informed reconstruction; invisible original measured collision envelope intentionally blocks exterior entry."
+  ],
+  "outputs": {
+    "full": {
+      "bytes": 5704364,
+      "triangles": 37058,
+      "drawCalls": 12,
+      "meshes": 12
+    },
+    "mobile": {
+      "bytes": 3651048,
+      "triangles": 35858,
+      "drawCalls": 12,
+      "meshes": 12
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "retrieved": "2026-10-15",
+  "source": "https://gis.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2",
+  "sourceSpatialReference": "NAD83 / Massachusetts Mainland (US feet); query returned WGS84",
+  "coordinates": "Shared MIT/Boston local metres, x east / z south; geographic origin 42.35915,-71.09205",
+  "queryCount": 1488,
+  "selectedCount": 458,
+  "universityOwnedOrNamed": 277,
+  "contextCount": 181,
+  "scope": "Charles River Campus, West Campus and South Campus vicinity; not Medical Campus or Fenway Campus",
+  "heightPolicy": "Use per-footprint BUILDING_HEIGHT_2010 in US feet where available. New TOP_GROUND_LEVEL values are repeated across many parcel joins and do not reliably represent each roof. Reviewed towers/arenas use individually checked top/2010 values. Facades and interior mass subdivisions remain authored approximations.",
+  "groundPolicy": "BASE_ELEVATION preserved in metres NAVD88; not itself a complete terrain surface.",
+  "references": [
+    "https://maps.bu.edu/?id=647",
+    "https://www.bu.edu/sargent/files/2013/11/BUmap.pdf",
+    "https://www.bu.edu/parentsprogram/files/2020-boston-university-calendar-ISSUU.pdf",
+    "https://www.bu.edu/cpo/what-we-do/buildings/",
+    "https://www.bu.edu/housing/residence/large-traditional-style-residences/danielsen-hall/",
+    "https://www.bu.edu/reservations/25live/building-codes/",
+    "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf",
+    "https://www.bu.edu/community/files/2012/03/New-Balance-Field-PNF.pdf",
+    "https://www.bu.edu/commencement/files/2025/05/CMCT_RedBook2025_Final.pdf",
+    "https://www.bu.edu/cpo/project/center-for-integrated-life-sciences-engineering/",
+    "https://www.bu.edu/articles/2017/new-joan-edgar-booth-theatre-opens/",
+    "https://www.bu.edu/cpo/project/yawkey-center-for-student-services/"
+  ],
+  "notes": [
+    "City data has no guarantee of currency. Addresses and building IDs repeat across multiple shapes, so the OBJECTID keys are retained.",
+    "Context footprints do not imply BU ownership. Ownership comes from source PART_CONTACT or a positively identified BU facility.",
+    "Existing Marsh/STH, Castle and Questrom authored landmark renderers are retained and marked custom. CDS postdates the source survey and remains in its existing authored renderer.",
+    "The narrow East Campus extension includes Danielsen Hall at 512 Beacon Street, its separate City footprint wing, nearby BU-owned parcels, and Beacon Street row-house context. It does not model all of Back Bay.",
+    "Counts are building components, not independent university buildings: Law/Rich/Claflin/Sleeper tower components share source footprints with their lower connected buildings.",
+    "Kilachand Center, Booth Theatre and Yawkey Center are authored approximate envelopes, absent from the older Boston source geometry; Booth is also outside Boston in Brookline. Their heights are estimates informed by documented floor counts, not measurements. Ground elevation is null so they do not masquerade as terrain observations.",
+    "Nickerson, New Balance and softball field centres/orientations are manually interpreted from official BU plans. The New Balance envelope includes the field-top Langsam Garage block."
+  ],
+  "uniqueCityFootprints": 451,
+  "sourceExtracts": [
+    {
+      "file": "boston-buildings-bu-area.json",
+      "count": 1380,
+      "bounds": "-71.134,42.344,-71.093,42.3565"
+    },
+    {
+      "file": "boston-buildings-bu-east.json",
+      "count": 148,
+      "bounds": "-71.0945,42.3494,-71.0895,42.3515"
+    }
+  ],
+  "authoredModernEnvelopes": [
+    "Rajen Kilachand Center for Integrated Life Sciences & Engineering",
+    "Joan & Edgar Booth Theatre / CFA Production Center",
+    "Yawkey Center for Student Services / Marciano Commons"
+  ],
+  "authoredEnvelopeReview": {
+    "reviewed": "2026-10-16",
+    "sources": [
+      "https://www.bu.edu/parentsprogram/files/2020-boston-university-calendar-ISSUU.pdf",
+      "https://www.bu.edu/cpo/project/booth-theatre-and-cfa-production-center/",
+      "https://www.bu.edu/cfa/venues-facilities/joan-edgar-booth-theatre/",
+      "https://www.bu.edu/cpo/project/yawkey-center-for-student-services/"
+    ],
+    "notes": [
+      "Booth is in Brookline, beyond the Boston footprint survey. Its previously authored envelope overlapped Commonwealth Avenue. The corrected approximate envelope sits south of the avenue, east of the main CFA block, with the documented plaza and Dummer Street buffer. This is interpreted from BU map/site descriptions, not a recovered Brookline survey.",
+      "Yawkey retains the documented Bay State/Deerfield site while its approximate north edge is set back from Bay State and its west/south sides are clipped clear of neighboring surveyed facades.",
+      "Kilachand Center retains its existing street-clear envelope. No City footprint or MassGIS road is translated. Brookline GIS query was attempted but its live server was unreachable on the review date."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "reviewed": "2026-10-17",
+  "scope": "Marsh/STH/CAS, GSU/Mugar/Redstone/Pappas and their Charles River frontage; not a completed reconstruction of the whole Charles River Campus",
+  "architecture": [
+    "landmark-assembly-2026.json",
+    "sert-assembly-2026.json"
+  ],
+  "riverfront": {
+    "evidence": "river-core-2026.json",
+    "basis": "Existing MassGIS/MassDOT road axes and widths, MassDEP hydrographic south-bank vertices, and separately authored pedestrian connections",
+    "limitations": "Hydrography is generalized 1:25,000 mapping. Bridge switchbacks, clear heights and walking-path offsets are interpreted geometry, not as-built surveys."
+  },
+  "terrain": {
+    "source": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+    "archive": "terrain/terrain-samples.json",
+    "sourceRasterId": 45630,
+    "sourceProject": "MA_NE_CMGP_Sandy_Z19_2013",
+    "verticalDatum": "NAVD88 metres",
+    "samples": 13629,
+    "sampleSpacingMetres": 6,
+    "runtimeLatticeMetres": 12,
+    "activeBounds": {"minX": -1608, "maxX": -624, "minZ": 780, "maxZ": 1080},
+    "edgeBlendMetres": 48,
+    "limitations": [
+      "The source is a 2013 bare-earth survey, not a 2026 site survey.",
+      "Building ground-floor levels are inferred from sampled entrance approaches, not architectural as-built elevations.",
+      "Runtime interpolation does not resolve individual stair treads, curbs, retaining walls or bridge decks; these require separate geometry.",
+      "Outside the core, existing building-base interpolation and the Mass Pike cut remain in use.",
+      "Added basement/plinth walls close the gap below rigid buildings; their finishes and openings are approximate."
+    ]
+  },
+  "verificationPolicy": "Route and collision checks verify playability only. Architectural footprint comparisons, official plan references and source elevation spot checks are separate evidence for fidelity.",
+  "deliveryVerification": {
+    "date": "2026-10-17",
+    "url": "https://world.pulsetact.ai/",
+    "workerVersion": "00fcdabd-80d9-4a57-97af-c710b279b070",
+    "healthVersionConfirmed": true,
+    "unitTests": {"passed": 244, "files": 47},
+    "build": "npm run build:cloudflare passed, including TypeScript and the 25 MiB per-file asset limit",
+    "riverCollision": {"desktopRoutes": 14, "mobileRoutes": 14, "samplesPerPlatform": 12102, "failures": 0},
+    "fixedViews": {"count": 12, "report": "output/bu-core-20261017/visual-report.json", "consoleErrors": 0, "nonFiniteGeometry": 0},
+    "productionMobile": {"destinations": 29, "report": "output/bu-full-campus/production-mobile/report.json", "status": "passed", "checks": ["arrival and visit stamps", "touch movement", "HD material opt-in", "save reload", "safe low-quality reload", "map viewport"]},
+    "mobileBostonAsset": {"bytes": 26144528, "triangles": 651008},
+    "browserWalk": "MIT bridge approach, Bay State bridge, riverside walk, Silber bridge, Beach-to-Marsh and Questrom walking/stamp/reload assertions passed in the full run. Its final settings-close locator was obsolete because quality selection closes the panel automatically; the corrected remaining quality/map/capture flow passed in --capture-only mode. The full walk log remains in output/questrom-modeling/report.json and the passing tail in output/questrom-modeling/final/report.json.",
+    "mobileLimit": "Mobile browser checks use touch Chromium emulation, not a physical iPhone/Safari crash test."
+  }
+}

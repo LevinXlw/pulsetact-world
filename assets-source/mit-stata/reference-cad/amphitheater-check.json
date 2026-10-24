@@ -1,0 +1,368 @@
+{
+  "full": {
+    "reference": "https://azahner.com/wp-content/uploads/2025/11/2_mit-stata-center-photo-c-zahner-1039.jpg",
+    "referenceCredit": "A. Zahner Company",
+    "coordinateFrame": "Blender east/north/up metres; Three x,y,z = X,Z,-Y",
+    "sourceReplacedFaceCount": 94,
+    "sourceComponents": {
+      "fan": 30,
+      "innerWall": 28,
+      "outerWall": 32,
+      "sides": 4
+    },
+    "sourceReplacedFaces": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      1286,
+      1287,
+      1288,
+      1289,
+      1290,
+      1291
+    ],
+    "sourceBounds": [
+      [
+        156.75576782226562,
+        244.91859436035156,
+        2.9319398403167725
+      ],
+      [
+        177.6563720703125,
+        278.46539306640625,
+        8.555439949035645
+      ]
+    ],
+    "sourceArcFits": {
+      "inner": {
+        "center": [
+          173.74476623535156,
+          261.57623291015625
+        ],
+        "meanRadius": 4.7634789759825,
+        "angleDegrees": [
+          50.231233384745316,
+          302.3008025336401
+        ]
+      },
+      "outer": {
+        "center": [
+          173.63262939453125,
+          261.6329345703125
+        ],
+        "meanRadius": 16.837113206179772,
+        "angleDegrees": [
+          76.18866562788604,
+          273.96745595466297
+        ]
+      }
+    },
+    "sourceElevations": {
+      "stage": 2.4384398460388184,
+      "innerRim": 2.9319398403167725,
+      "outerRim": 8.555439949035645
+    },
+    "photoEstimatedSeatingRows": 12,
+    "stairStepsPerAisle": 36,
+    "maximumStairRise": 0.1704090942036025,
+    "photoEstimatedAisleWidth": 1.35,
+    "outerStairSourceCornersPreserved": 1,
+    "aisleOuterEndpoints": [
+      [
+        163.03578186035156,
+        274.4461975097656,
+        8.555439949035645
+      ],
+      [
+        159.82522583007812,
+        252.0967254638672,
+        8.555439949035645
+      ]
+    ],
+    "limitations": [
+      "Tier count, aisle positions and railing detail are photo-guided estimates.",
+      "Trees and landscaping are handled by the courtyard site module.",
+      "The source outer polygon and existing patch-0 platform are preserved."
+    ],
+    "triangles": 10809,
+    "trianglesByMaterial": {
+      "curb": 6265,
+      "brick": 2552,
+      "paving": 88,
+      "frame": 1904
+    },
+    "nonfinite": 0,
+    "degenerate": 0,
+    "downwardTreads": 0,
+    "stairRayMisses": 0,
+    "maximumStairRayHeightError": 3.467906606324789e-07
+  },
+  "mobile": {
+    "reference": "https://azahner.com/wp-content/uploads/2025/11/2_mit-stata-center-photo-c-zahner-1039.jpg",
+    "referenceCredit": "A. Zahner Company",
+    "coordinateFrame": "Blender east/north/up metres; Three x,y,z = X,Z,-Y",
+    "sourceReplacedFaceCount": 94,
+    "sourceComponents": {
+      "fan": 30,
+      "innerWall": 28,
+      "outerWall": 32,
+      "sides": 4
+    },
+    "sourceReplacedFaces": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      1286,
+      1287,
+      1288,
+      1289,
+      1290,
+      1291
+    ],
+    "sourceBounds": [
+      [
+        156.75576782226562,
+        244.91859436035156,
+        2.9319398403167725
+      ],
+      [
+        177.6563720703125,
+        278.46539306640625,
+        8.555439949035645
+      ]
+    ],
+    "sourceArcFits": {
+      "inner": {
+        "center": [
+          173.74476623535156,
+          261.57623291015625
+        ],
+        "meanRadius": 4.7634789759825,
+        "angleDegrees": [
+          50.231233384745316,
+          302.3008025336401
+        ]
+      },
+      "outer": {
+        "center": [
+          173.63262939453125,
+          261.6329345703125
+        ],
+        "meanRadius": 16.837113206179772,
+        "angleDegrees": [
+          76.18866562788604,
+          273.96745595466297
+        ]
+      }
+    },
+    "sourceElevations": {
+      "stage": 2.4384398460388184,
+      "innerRim": 2.9319398403167725,
+      "outerRim": 8.555439949035645
+    },
+    "photoEstimatedSeatingRows": 12,
+    "stairStepsPerAisle": 36,
+    "maximumStairRise": 0.1704090942036025,
+    "photoEstimatedAisleWidth": 1.35,
+    "outerStairSourceCornersPreserved": 1,
+    "aisleOuterEndpoints": [
+      [
+        163.03578186035156,
+        274.4461975097656,
+        8.555439949035645
+      ],
+      [
+        159.82522583007812,
+        252.0967254638672,
+        8.555439949035645
+      ]
+    ],
+    "limitations": [
+      "Tier count, aisle positions and railing detail are photo-guided estimates.",
+      "Trees and landscaping are handled by the courtyard site module.",
+      "The source outer polygon and existing patch-0 platform are preserved."
+    ],
+    "triangles": 6870,
+    "trianglesByMaterial": {
+      "curb": 3745,
+      "brick": 1712,
+      "paving": 53,
+      "frame": 1360
+    },
+    "nonfinite": 0,
+    "degenerate": 0,
+    "downwardTreads": 0,
+    "stairRayMisses": 0,
+    "maximumStairRayHeightError": 3.467906606324789e-07
+  }
+}

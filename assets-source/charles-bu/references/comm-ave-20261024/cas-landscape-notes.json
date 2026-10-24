@@ -1,0 +1,16 @@
+{
+  "scope": "CAS north side of Commonwealth Avenue, world X approximately -1140 to -975; authored landscape only",
+  "photo": "cas-sidewalk-2024.jpg",
+  "photoUrl": "https://www.bu.edu/files/2024/10/crop-24-1573-CAMBEAUTY-005.jpg",
+  "sourcePage": "https://www.bu.edu/articles/2024/guide-to-commonwealth-ave-shops-dining/",
+  "credit": "Kate Kotlyar (COM’26), Boston University; reference only, not redistributed as a game texture",
+  "observed": ["Broad low gray granite planter edges", "Black benches recessed into curb-side planter edges and facing the walk", "Shrubs and two irregular rows of mature trees", "Clear continuous concrete central walk and transverse building entry gaps"],
+  "surveyBasis": ["Existing MassGIS north carriageway segments massgis-360819-0 and massgis-360817-0", "City of Boston CAS-east footprint and surveyed CAS-west wing split in bu-landmark-layout"],
+  "estimated": "Bed intervals, species, tree sizes, bench positions, local edge dimensions and generous facade-entry exclusions are photo-guided estimates, not measured or individually identified in the one photograph.",
+  "walk": "Retain existing navigation at depth 2.7 m from north outside carriageway edge. Reserved open band depth 1.85–5.25 m. Entry exclusions are 8–13 m wide, never below 3 m.",
+  "ground": "Soil/paving terrain-draped to existing BU DEM; granite tops approximately terrain+0.28 m (0.175 m above sidewalk). Ground meshes returned, no new collision walls.",
+  "lod": "Same bed/bench/tree coordinates at desktop and mobile. Shrubs use curved leaf cards with a locally generated 256px desktop / 128px mobile alpha-cutout foliage texture and matching depth material. Mobile reduces leaf clusters, tube sides and tree detail; no new remotely loaded textures.",
+  "replacement": "buCASLandscapeReplaces selects only old tree roots/pits in the bounded north-frontage band. Do not use it to erase existing road, sidewalk, building, or entrance geometry.",
+  "visualReview": "Actual desktop and mobile resource loaders captured at identical fixed cameras, with an additional desktop walking-eye-height CAS view, in output/bu-comm-ave-20261024. Opaque shrub shells were replaced after the first visual check. Bed and walk relationships are improved, but procedural tree crowns and foliage still fall short of the real photo; this is a partial pass, not final realism acceptance.",
+  "remaining": "Photo does not identify every door or plant position; tree size and placement remain estimates. No geometry changes to Marsh Plaza, CDS plaza, south carriageway or Bay State Road. Automated geometry checks do not establish realism."
+}

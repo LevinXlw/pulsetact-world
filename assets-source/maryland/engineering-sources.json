@@ -1,0 +1,28 @@
+{
+  "retrieved": "2026-10-15",
+  "scope": "Glenn L. Martin Hall (088), Jeong H. Kim Engineering Building (225), E. A. Fernandez IDEA Factory (228), A. James Clark Hall (429)",
+  "geometry": "Horizontal building rings come from UMD_FULL_BUILDINGS, aligned to the shared Facilities GIS street transform. Floors, facade articulation and roof plant remain authored visual approximations; this is not a measured BIM or interior reconstruction.",
+  "references": [
+    {
+      "building": "088",
+      "urls": ["https://facilities.umd.edu/info-resources/building-inventory/bldg-088", "https://clarknet.eng.umd.edu/sites/default/files/images/egr-maps/bldg088/firstfloor.png"],
+      "observations": ["Long red-brick classroom wing with repeated inset windows and pale lintels/sills", "Two projecting pale-stone entrance bays visible in the public floor plan", "Flat parapet and tall narrow stone entrance piers"]
+    },
+    {
+      "building": "225",
+      "urls": ["https://facilities.umd.edu/info-resources/building-inventory/bldg-225", "https://eng.umd.edu/facilities/kim-building", "https://clarknet.eng.umd.edu/sites/default/files/images/egr-maps/kim/keb-1-2017.png"],
+      "observations": ["Three occupied levels around an irregular L-shaped laboratory footprint", "Glazed south rotunda with full-height white piers and a deep white crown", "Red-brick laboratory wings, white upper horizontal elements and projecting solar shades"]
+    },
+    {
+      "building": "429",
+      "urls": ["https://eng.umd.edu/facilities/clark-hall", "https://eng.umd.edu/sites/clark.umd.edu/files/internal-hero-images/1440x535_clarkhall01_1.jpg", "https://clarknet.eng.umd.edu/sites/default/files/images/egr-maps/bldg429/clarkhall-1.png"],
+      "observations": ["Long narrow laboratory volume with brick vertical ends", "Continuous upper laboratory glazing protected by closely spaced horizontal bronze-toned sunshades", "Glazed ground-level public space with pink-toned accent glazing at the south entry"]
+    },
+    {
+      "building": "228",
+      "urls": ["https://eng.umd.edu/facilities/idea-factory", "https://ideafactory.umd.edu/the-building", "https://clarknet.eng.umd.edu/sites/default/files/images/egr-maps/bldg228/idea-factory-2.png", "https://hfurrer.com/portfolio-item/university-of-maryland-e-a-fernandez-idea-factory/"],
+      "observations": ["Pale solid upper research volume above two glazed public levels", "Large dichroic window with a contrasting deep reveal and irregular subdivision", "Second-floor terrace and a skybridge connect to the Kim Building; bridge construction is conditional on corrected adjacent footprints"]
+    }
+  ],
+  "source_media": "Downloaded reference photographs and plans remain outside public/ and are not shipped as game textures. All in-game architectural geometry and materials are procedurally authored."
+}

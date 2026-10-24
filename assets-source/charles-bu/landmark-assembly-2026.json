@@ -1,0 +1,40 @@
+{
+  "updated": "2026-10-17",
+  "scope": "Structural correction of the connected Marsh Chapel / School of Theology / western CAS compound, plus integration of rigid custom landmarks with shared BU terrain",
+  "references": [
+    {
+      "url": "https://gis.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2",
+      "authority": "City of Boston DOIT.buildings",
+      "objectIds": [9741, 1842],
+      "localRecord": "src/features/world/bu-full-layout.ts: marsh-sth and cas-east",
+      "evidence": "Object 9741 contains the chapel's narrow north projection, both connecting wings, School of Theology and western CAS street frontage. Its eastern edge shares the line x=-1120.444, z=976.936..998.812 with object 1842 in the project's metre frame. The generic renderer suppressed the whole compound because custom=true, while the custom renderer only supplied a broad chapel and detached rectangular STH block.",
+      "limits": "Municipal footprint with no guarantee of current architectural accuracy. The 22.987 m source roof height belongs to the compound, not independently surveyed heights of each wing or the chapel ridge. This is not an as-built plan or a bare-earth terrain source."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2025/photo-gallery-marsh-chapels-history/",
+      "image": "https://www.bu.edu/files/2025/09/25-1376-STOCK-006-feat.jpg",
+      "authority": "Boston University Photography / BU Today, September 2025",
+      "evidence": "The facade is connected to low side wings; the central entrance is raised above the plaza. Free at Last stands west of the entrance axis, while the open central plaza and steps remain clear.",
+      "limits": "A frontal photograph constrains relative arrangement, not exact plan dimensions, connector roof heights or the sculpture's measured coordinates."
+    }
+  ],
+  "implementation": [
+    "Partition the actual city9741 ring into chapel, west wing, west link, east link and western CAS. No convex hull or enclosing rectangle. The four wing meshes and five collision rings jointly cover the original footprint without filling its plaza recesses.",
+    "Replace the detached 87x24 m STH rectangle and invented roof towers with its real recessed wing outline. Restore the omitted western CAS facade through the shared city1842 junction.",
+    "Extend plaza paving to the real inward-facing wing returns and chapel threshold using the inverse courtyard boundary of city9741. The open southern edge retains the existing Commonwealth Avenue approach limit; it is not a separate surveyed paving polygon.",
+    "Remove the invented five-metre-wide chapel side aisles. Fit the retained detailed nave, facade and roof horizontally to the narrow central GIS projection; collision follows the exact source ring.",
+    "Move the interpretive Free at Last monument to the west side of the entrance. The authored offset is not presented as a surveyed coordinate.",
+    "Use the chapel entrance foot at [-1183.101038894,967.863759439] as the common Marsh/STH/CAS foundation sample (about 4.439 m with the integrated USGS DEM). The previous CAS-junction sample was about 0.48 m too low and buried the lowest treads. Each other custom landmark uses its own terrain sample. World-ground meshes are draped, while level chapel stair treads are fixed to the building foundation and joined to the terrain by a short apron.",
+    "Extend visible masonry and collision down from each rigid building edge to sampled terrain where the ground falls below its base, with a small buried overlap. Only footprint edge walls are added; no courtyard-wide flattening or wall/roof deformation. Questrom foundations use the stepped tier union instead of its legacy rectangular collision proxy.",
+    "Keep per-vertex foundation/yaw material attributes so merged buildings retain the correct shader frame. No added runtime images, textures, GLBs or lights."
+  ],
+  "remainingApproximations": [
+    "The connector height is authored at 8.5 m from its lower appearance in the official front photo. Individual wing roof elevations and the exact parapet sections remain unverified.",
+    "Retained chapel facade detail uses a horizontal fit x=0.85, z=0.82 with offset (-1.8,3.9) in the original chapel-local frame. This aligns the footprint scale; it does not make the retained sculpture, tracery, stair count or buttress spacing a measured reconstruction.",
+    "Window positions on restored wings are procedural, following their real boundary segments. The low connecting wings are treated as closed exterior volumes; unverified interior or through-building passageways are not invented.",
+    "The memorial's local offset (-14,42) is a photo-based correction from the previously incorrect on-axis location. Its fifty-dove model remains interpretive.",
+    "A common base avoids discontinuity where CAS joins Marsh/STH, but the terrain around a long attached compound can vary. Entrance thresholds and service-side foundation exposures should be checked against the final DEM and runtime captures."
+  ],
+  "validationIntent": "Independent audit points in both former missing connectors and the missing CAS frontage must be occupied. A metre-space grid compares all five collision volumes with the original city9741 polygon, also checking the plaza recesses and approaches remain open. Verify the shared CAS edge, two recessed portals, level 15 cm stair risers using the highest actual ground ray, rigid sampled foundations, visible/collision closure below the north nave base, memorial offset, arrival clearance, merged mesh count and mobile geometry budget.",
+  "validationAfterDEM": "Seven landmark tests and two lawn tests pass. Turf roots follow actual triangle-sampled hillside heights and retain path-exclusion checks; the former fixed 5.254 m assertion was removed. TypeScript passes. About 108k visible triangles in twenty material batches; final mobile byte budget and runtime cameras remain integration checks."
+}

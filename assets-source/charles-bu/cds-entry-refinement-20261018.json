@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "scope": "CDS exterior public ground floor and approach; no interior, footprint, tower, podium, or collision-envelope change",
+  "primarySources": [
+    {
+      "url": "https://www.bu.edu/cpo/files/2019/12/19.12.03_Student-Town-Hall-Slide-Deck-_v1.pdf",
+      "publisher": "Boston University / KPMB",
+      "date": "2019-12-03",
+      "localReference": "output/bu-cds-reference-08.png",
+      "evidence": "Ground landscape plan establishes a paved public edge around the western tower and eastern podium. It is a planning presentation, not an as-built door or threshold survey."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2022/architects-of-bu-data-science-building-explain-their-design/",
+      "publisher": "Boston University",
+      "evidence": "Architect discussion describes the transparent public and collaborative spaces addressing the street and the eastern arrival stair. Supports an articulated glazed ground edge rather than the former blank dark box."
+    },
+    {
+      "url": "https://www.bu.edu/cpo/project/center-for-computing-data-sciences/",
+      "publisher": "Boston University Campus Planning & Operations",
+      "evidence": "Project identity and completed building context. Not used as a measured entrance plan."
+    }
+  ],
+  "existingModelRetained": {
+    "anchor": [-905.6183790617797, 1009.5274712685496],
+    "yawRadians": -0.145,
+    "foundation": "Rigid building base from buElevation(anchor); new paving uses the shared bare-earth DEM without changing it",
+    "groundEnvelope": "Existing two blocks, including concave union and both collision meshes, retained exactly",
+    "podiumColumnLocalX": [14, 28, 42, 53],
+    "upperFloors": "Unchanged"
+  },
+  "authoredInterpretation": {
+    "doorAxesLocalX": [30.2, 44.2],
+    "doorPlaneLocalZ": 19.068,
+    "doorPlacement": "Authored axes moved 2.2 m east from the prior x28/42 positions to keep the retained canopy columns outside the door landings. Nearest column clears the 2.9 m opening edge by 0.58 m and the 3.2 m landing edge by 0.43 m. Neither axis is claimed to be a measured as-built main entrance.",
+    "doorWidthMeters": 2.9,
+    "doorPaneRecessMeters": 0.22,
+    "glazingRecessMeters": 0.04,
+    "backingRecessMeters": 0.45,
+    "details": "Glazing subdivisions, transom height, frame dimensions and threshold geometry are restrained authored approximations, not survey dimensions. Opaque backing closes the exterior; no invented lobby is supplied.",
+    "paving": "L-shaped infill closes only the 8.48 m western gap and 3.43 m eastern gap to the existing apron beginning local z=22.5. BU_PUBLIC_FRONTAGES omits custom CDS so no auto-frontage overlaps this infill. Paving is draped at terrain +0.039 m.",
+    "landing": "Two 3.2 m wide short approaches join the rigid +0.15 m sill top to the terrain apron. A 0.42 m deep level threshold prevents a suspended sill lip; ground outside this narrow approach remains unflattened."
+  },
+  "validation": {
+    "tests": "tests/bu-cds-entry.test.ts; tests/bu-landmark-realism.test.ts; tests/bu-marsh-detail.test.ts",
+    "rays": "Exterior glazing precedes backing on both exposed tower faces; double-door glass lies behind projecting jambs; visible geometry rays along both door centerlines and leaves reach the doors before any column; all approaches remain outside closed wall collision; ground heights follow DEM and meet door sills continuously.",
+    "visibleTrianglesBefore": 109710,
+    "visibleTrianglesAfter": 110302,
+    "triangleDelta": 592,
+    "visibleBatchesBeforeAndAfter": 21,
+    "groundBatchesBeforeAndAfter": 6,
+    "collisionMeshesBeforeAndAfter": 24,
+    "visualReview": "Parent task performs fixed-camera desktop screenshots and integrated mobile bake. This source note does not claim screenshot or mobile validation before those checks occur."
+  }
+}

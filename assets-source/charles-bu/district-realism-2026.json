@@ -1,0 +1,117 @@
+{
+  "reviewed": "2026-10-17",
+  "scope": "Charles River Campus district exterior architecture; East/Central/West/South. Fenway and Medical Campus are outside this pass.",
+  "geometrySource": "Existing BU_FULL_BUILDINGS City of Boston GIS coordinates and heights. No parcel, city footprint, tower height or walking collider was moved in this pass.",
+  "implementation": "src/features/world/bu-full-campus.ts",
+  "changes": [
+    {
+      "ids": [
+        "warren-towers",
+        "warren-services"
+      ],
+      "evidence": "BU documents three 14-floor residential towers over a four-floor podium, with parking and common/dining space in the podium. Official exterior photographs show pale brick and a regular window rhythm.",
+      "model": "Three separated high masses with low intervening roof gaps, buff brick, open dark parking slots, a distinct fourth-floor band. The separate service-wing GIS record is now a low garage rather than incorrectly dispatching to another three-tower model.",
+      "sources": [
+        "https://www.bu.edu/articles/2022/video-tour-of-warren-towers/",
+        "https://www.bu.edu/community/files/2024/02/Warren-Towers-EPNF.pdf",
+        "https://www.bu.edu/housing/files/2024/05/IMG_1297-scaled.jpg"
+      ],
+      "limitation": "Permanent recognizable exterior based on pre-construction references. The phased 2025–2028 renovation scaffolding and temporary closures are not simulated; exact tower sub-footprints remain authored within the original combined GIS outline."
+    },
+    {
+      "ids": [
+        "claflin-hall",
+        "sleeper-hall",
+        "rich-hall"
+      ],
+      "evidence": "BU publishes floor plans through floor 13 for each hall. Claflin's official exterior photo shows a concrete frame around paired windows and largely blank buff-brick end walls.",
+      "model": "One ground lobby level and twelve upper window rows, continuous recessed panes with exposed concrete piers/spandrels, narrow central end-wall bays and buff brick. Existing individual tower orientations and heights are retained.",
+      "sources": [
+        "https://www.bu.edu/housing/residence/large-traditional-style-residences/claflin-hall/",
+        "https://www.bu.edu/housing/residence/large-traditional-style-residences/sleeper-hall/",
+        "https://www.bu.edu/housing/residence/large-traditional-style-residences/rich-hall/",
+        "https://www.bu.edu/housing/files/2022/02/IMG_8980-1200x826.jpg"
+      ],
+      "limitation": "Facade-family treatment inferred from official exterior photographs; opening dimensions, the precise bay count and internal floor elevations are not surveyed."
+    },
+    {
+      "ids": [
+        "stuvi-south-tower",
+        "stuvi-north-tower",
+        "stuvi-north-core",
+        "stuvi-north-connectors"
+      ],
+      "evidence": "BU identifies a 19-floor south tower and 26-floor north tower with an upper lounge. The university's exterior image shows brick faces, vertical glazing strips, glazed ends and a pale metal-clad service crown.",
+      "model": "Each separate GIS mass receives the Student Village envelope rather than generic brick academic windows. Brick faces are divided by glazing strips; exposed ends are glazed; the north crown has a continuous lounge band and the service core has upper louvers. Existing north/south height differences remain intact.",
+      "sources": [
+        "https://www.bu.edu/articles/2006/student-village-2-seeks-approval/",
+        "https://www.bu.edu/housing/residence/student-village/33-harry-agganis-way/",
+        "https://www.bu.edu/files/2023/02/StuVi-II-17-1129-STOCK-027-feat-crop-copy-1600x1200.jpg"
+      ],
+      "limitation": "The shared family uses approximate bay spacing. Facade details are not an as-built model, and GIS core/connector records retain their individual reported roof heights."
+    },
+    {
+      "ids": [
+        "law-tower",
+        "gsu-mugar"
+      ],
+      "evidence": "BU describes its 17-floor Brutalist Law Tower and five-floor Redstone addition. Official GSU and Mugar photographs show exposed concrete framing, deep window reveals, glazed lower connections and substantial beams.",
+      "model": "Law receives projecting window sun hoods and continuous vertical fins around recessed panes. The GSU/Mugar combined footprint has a distinct western glazed union treatment, deeper library bays and exposed concrete beams instead of a shared generic facade.",
+      "sources": [
+        "https://www.bu.edu/law/about/law-school-complex/",
+        "https://www.bu.edu/meetatbu/campus-venues/george-sherman-union/",
+        "https://www.bu.edu/meetatbu/files/2023/01/GSU_Exterior_0004.jpg",
+        "https://www.bu.edu/cpo/files/2012/10/MG_9844.jpg"
+      ],
+      "limitation": "The large GSU/Mugar GIS record still lacks surveyed independent wing roof elevations. This pass improves facade identity while retaining that envelope; the precise multi-level roofscape remains future work."
+    },
+    {
+      "ids": [
+        "agganis",
+        "fitrec"
+      ],
+      "evidence": "BU's account of CannonDesign's work distinguishes the outward-looking glazed recreation center from the enclosed arena bowl, and describes the brick/stone/glass exterior and entrance rotunda. Agganis' official visitor document shows the brick street frontage.",
+      "model": "Retains the curved GIS frontage, adds broad south-facing public glazing, structural frames, shallow canopy and a brick arena street elevation while keeping the bowl opaque. FitRec's tall glazing has horizontal screening bands.",
+      "sources": [
+        "https://www.bu.edu/bridge/archive/2005/04-01/architect.html",
+        "https://www.agganisarena.com/files/2022/10/Teaching-Story-BU-Hockey-Agganis-Arena.pdf"
+      ],
+      "limitation": "No arena/gym interiors or exact curtain-wall shop drawings are included. Ground datum and terrain remain the project's existing terrain model."
+    },
+    {
+      "family": "Bay State Road and South Campus brownstones",
+      "evidence": "Official BU exterior photographs of Bay State Road, 183/192 Bay State Road and 44 Buswell Street show mixed red/umber brick and brown/sandstone, substantial stone lower storeys, raised stone stoops, recessed timber or glazed arched entries, dark iron balconies and planted front parcels. The existing GIS already contains narrow attached lots and their bowed fronts.",
+      "model": "Stable parcel masonry palette; stone lower storeys with real window openings; raised arched timber entries and individually stepped stone stoops; shallow iron balconies on mapped front bow facets; varied cornice/corbel rhythms, chimney pots and small fenced shrub gardens split around the door route. Shared party walls retain their exact envelope but omit hidden window/trim geometry. Stoops and gardens are restricted to the gap before the surveyed road and sidewalk boundary.",
+      "sources": [
+        "https://www.bu.edu/realestate/our-neighborhoods/bay-state-road/",
+        "https://www.bu.edu/meetatbu/summer/residence-halls-adult/brownstones/",
+        "https://www.bu.edu/community/files/2012/09/BU-IMP-1-17-13.pdf",
+        "https://www.bu.edu/meetatbu/files/2023/02/Brownstone_Exterior2_0004-1024x683.jpg",
+        "https://www.bu.edu/housing/residence/central-campus-traditional-brownstones/192-bay-state-road/",
+        "https://www.bu.edu/housing/residence/south-campus-traditional-brownstones/44-buswell-street/",
+        "https://www.bu.edu/cpo/project/graduate-brownstone-renovations/"
+      ],
+      "limitation": "A reference-based neighborhood family rather than a house-by-house facade survey: exact individual palette, window/door placement, ornament and garden planting are authored approximations. No invented mansard roof style is applied; surveyed building heights, footprint bows, street boundaries and collision stay intact."
+    }
+  ],
+  "geometryPolicy": {
+    "facades": "Near-collinear survey edges are joined only within 0.015 m for continuous window layout. Roof and collision retain all original footprint points.",
+    "batching": "Existing 260 m spatial/material batches retained; no added downloaded runtime textures.",
+    "offlineMobile": "Optional buildingIds/includeSpaces/signage/detail parameters allow the same authored skyline to be baked offline. Mobile detail substitutes planar window panes for extruded openings while preserving silhouettes, tower gaps, structural piers and GIS collision. Runtime phones still load the prebuilt mobile asset.",
+    "mobileSignatureIds": [
+      "warren-services",
+      "warren-towers",
+      "stuvi-one",
+      "stuvi-south-tower",
+      "stuvi-north-tower",
+      "stuvi-north-core",
+      "stuvi-north-connectors",
+      "law-tower"
+    ],
+    "mobileSignatureTriangles": 64107,
+    "brownstoneMobile": "Compact selected mobile houses retain contrasting masonry, stone storey, entry, simple stoop, cornice and chimney silhouette; fine balcony pickets, cornice brackets and garden vegetation are omitted. Root selects the baked houses within the full mobile campus budget.",
+    "sportsSurfaces": "Field grounds and white paint are tessellated onto the same 12 m terrain lattice. Turf uses neutral polygon offset; paint alone uses the shared marking bias with depth test/write preserved. New Balance retains its 4 m authored garage deck offset. The separate street module excludes public path overlays from sports footprints.",
+    "materialCoordinates": "Each batch retains per-vertex campusBaseHeight and campusYaw so BU masonry shader bonds follow each individual GIS facade and weathering begins at its foundation, even after spatial merging."
+  },
+  "rights": "References were inspected for architectural evidence. No source photographs, floor-plan graphics or branded texture imagery are redistributed. Model geometry and material shaders are original project work. GIS attribution remains in the existing campus source manifest."
+}

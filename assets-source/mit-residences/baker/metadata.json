@@ -1,0 +1,706 @@
+{
+  "id": "baker",
+  "name": "Baker House / W7",
+  "axes": "Blender east,north,up; glTF east,up,south; identity runtime transform",
+  "source": {
+    "modelId": "CAM_TZTMU-B3O9W-LFC4E",
+    "sourceName": "Baker House, Building W7",
+    "tile": "F4",
+    "modelDate": "2018-04-12",
+    "modelSource": "2018 Aerial Imagery by WSP",
+    "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+    "x": -300.604,
+    "z": 279.834,
+    "boundsXZ": {
+      "minX": -351.15,
+      "maxX": -250.059,
+      "minZ": 245.406,
+      "maxZ": 314.263
+    },
+    "statePlaneFeet": {
+      "easting": 765439.580107,
+      "northing": 2955248.985265
+    },
+    "catalogLatLon": {
+      "lat": 42.3566805584502,
+      "lon": -71.0960222213587
+    },
+    "inRuntimeManifest": true,
+    "runtimeCatalogPositionXZ": [
+      -325.931,
+      275.852
+    ],
+    "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+    "sourceEntry": "models/CAM_TZTMU-B3O9W-LFC4E_OBJ/CAM_TZTMU-B3O9W-LFC4E_OBJ.obj"
+  },
+  "sourceBounds": {
+    "x": [
+      -351.14984130859375,
+      -250.05892944335938
+    ],
+    "z": [
+      245.4055938720703,
+      314.26251220703125
+    ],
+    "y": [
+      2.671339988708496,
+      26.34473991394043
+    ]
+  },
+  "groundY": 2.671339988708496,
+  "mainRoofY": 22.6447399542799,
+  "diningRoofY": 8.64474,
+  "floorSpacingM": 3.02,
+  "windowRecessM": 0.28,
+  "scope": "Exterior only; no modeled accessible interior",
+  "sources": [
+    {
+      "url": "https://baker.mit.edu/about/",
+      "use": "six floors, serpentine river frontage, suspended stairs, dining pavilion"
+    },
+    {
+      "url": "https://listart.mit.edu/art-artists/baker-house-1949",
+      "use": "north stair tile cladding and window grouping"
+    },
+    {
+      "url": "https://news.mit.edu/2012/residential-hall-security-review-report",
+      "local": "references/north-mit-news.jpg",
+      "use": "north stair underside and glazing"
+    },
+    {
+      "local": "output/design/mit-20261021/references/baker.webp",
+      "use": "south shape, window proportions, roofing, dining skylights"
+    },
+    {
+      "url": "https://mitguidetoresidences.mit.edu/sites/default/files/header-background/7676815734_894a64a1c9_o.jpg",
+      "local": "assets-source/mit-residences/references/baker-mit-guide.jpg",
+      "use": "North stair stepped glazing and entrance canopy/door details"
+    },
+    {
+      "local": "assets-source/mit-residences/references/baker-north-entry-registered.png",
+      "use": "Registered orthophotography: oblique street edge, forecourt paving and separate planting island"
+    }
+  ],
+  "camerasBlender": {
+    "south-overview": {
+      "eye": [
+        -284,
+        -407,
+        77
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 122
+    },
+    "north-stairs": {
+      "eye": [
+        -308,
+        -164,
+        51
+      ],
+      "target": [
+        -302,
+        -275,
+        13
+      ],
+      "scale": 113
+    },
+    "south-west": {
+      "eye": [
+        -409,
+        -351,
+        57
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 124
+    },
+    "window-close": {
+      "eye": [
+        -290,
+        -304,
+        4.37134
+      ],
+      "target": [
+        -291,
+        -277,
+        11.5
+      ],
+      "scale": 31,
+      "perspective": true
+    },
+    "north-entry-walk": {
+      "eye": [
+        -277,
+        -230,
+        4.37134
+      ],
+      "target": [
+        -294,
+        -251,
+        8.5
+      ],
+      "scale": 31,
+      "perspective": true
+    },
+    "north-court-detail": {
+      "eye": [
+        -281.1123046875,
+        -229.52734375,
+        7.471340179443359
+      ],
+      "target": [
+        -291.2901916503906,
+        -246.77294921875,
+        3.921339988708496
+      ],
+      "scale": 31,
+      "perspective": true
+    },
+    "north-court-plan": {
+      "eye": [
+        -290.8255615234375,
+        -245.88743591308594,
+        37.67134094238281
+      ],
+      "target": [
+        -290.8255615234375,
+        -245.88743591308594,
+        2.671339988708496
+      ],
+      "scale": 41
+    }
+  },
+  "approachPoints": [
+    {
+      "label": "North entry approach, approximate",
+      "x": -290,
+      "y": 2.671339988708496,
+      "z": 247
+    },
+    {
+      "label": "Memorial Drive facade viewpoint",
+      "x": -304,
+      "y": 2.671339988708496,
+      "z": 308
+    }
+  ],
+  "assumptions": [
+    "Window bay widths, frames, pergola dimensions and rooflight counts approximated from photographs.",
+    "Measured source supports overall outline and elevation; south curved elbows are smoothed within the source footprint tolerance.",
+    "North stair bottom slopes are photo-informed reconstruction; invisible original measured collision envelope intentionally blocks exterior entry."
+  ],
+  "outputs": {
+    "full": {
+      "bytes": 7728244,
+      "triangles": 110085,
+      "drawCalls": 23,
+      "meshes": 23
+    },
+    "mobile": {
+      "bytes": 3165304,
+      "triangles": 53935,
+      "drawCalls": 20,
+      "meshes": 20
+    }
+  },
+  "revision": "2026-10-24-north-entry",
+  "qualityStatus": "Stage iteration; offline model inspected, in-game visual acceptance still required",
+  "changes": [
+    "Planar three-dimensional aluminium frame extrusions, asymmetric sash lights and solid sloped projecting sills.",
+    "Separate semitransparent glass, recessed shading backing and varied roller blinds; no accessible interior is claimed.",
+    "225 x 75 mm water-struck brick coursing with warped mortar edges, normal relief and an independent roughness map.",
+    "North stair lower window sequence follows rising flights; source main envelope and base elevation retained.",
+    "Moon Garden light scoops have bell profiles, stems, flashing bases and full-detail guards.",
+    "Roof weathering and lap seams; unsupported repetitive rooftop room windows replaced with limited service vents.",
+    "North entry brick court clipped exactly to existing terrain triangles, with the separate central tree island and oblique Amherst street edge.",
+    "Measured retaining-wall centerline rebuilt as brick with a cap; unequal raised planting beds retain ground/wall collision roles.",
+    "Four solid 150 mm risers, top landing and aligned door/canopy elevation above the actual campus terrain."
+  ],
+  "lodPolicy": {
+    "full": "Complete outer frame extrusions, highlight lips, gasket strips, sill end caps and rooflight guards. North entrance court, soil, retaining walls and continuous steps are fully present.",
+    "mobile": "Preserves silhouette, recess, glazing, blind depth, frame inner return and sloped sill; omits narrow highlight lips, gaskets, sill ends and rooflight guards. Same north court ground and wall geometry; only narrow stair nosing detail is omitted."
+  },
+  "exportOptimization": "Only unit normals are quantized to aligned normalized signed bytes using KHR_mesh_quantization; positions, UVs and collision geometry are preserved.",
+  "knownGaps": [
+    "Individual room window positions and some north-brick opening groups remain photograph-informed approximations, not an exact facade survey.",
+    "Terracotta tile joints and limestone surface aging are not yet individually resolved.",
+    "Glass uses PBR alpha blending with a shallow shading backing; the runtime environment must supply reflections and lighting, and full physical transmission is not modeled.",
+    "North entrance appendage retains the survey volume; detailed as-built lobby footprint remains uncertain.",
+    "Trees and shrubs are supplied by the integrated scene. Street-side court and planted-island boundaries are orthophoto estimates; original building and measured wall centerlines are retained. Game-level contact and lighting still require integrated review."
+  ],
+  "offlineEvidence": {
+    "before": "before-realism/",
+    "after": [
+      "south-overview.png",
+      "north-stairs.png",
+      "south-west.png",
+      "window-close.png",
+      "north-entry-walk.png",
+      "north-court-detail.png",
+      "north-court-plan.png"
+    ],
+    "kind": "Actual Blender model renders with a neutral preview ground, excluded from both GLBs.",
+    "beforeNorthCourt": "before-entry-20261024/"
+  },
+  "northCourt": {
+    "basis": "Registered 2025 orthophotography, 2018 source retaining-wall centerlines, and MIT Guide north entrance photograph; landscape boundaries are photo/orthophoto estimates, not a detailed as-built survey.",
+    "uncertainty": "Street-side edge and planting-island perimeter estimated at approximately 0.5\u20131.5 m from registered orthophotography; the long retaining wall centerline and elevation are tied to the retained GIS source.",
+    "terrainSource": "entry-terrain.json, snapshotted original 2025 orthophotography triangles",
+    "surfaceLiftM": 0.025,
+    "outerXZ": [
+      [
+        -300.1,
+        246.4
+      ],
+      [
+        -298.5,
+        244.2
+      ],
+      [
+        -286.5,
+        238.6
+      ],
+      [
+        -278.0,
+        234.65
+      ],
+      [
+        -272.0,
+        239.6
+      ],
+      [
+        -271.3,
+        241.3
+      ],
+      [
+        -278.7,
+        245.6
+      ],
+      [
+        -285.2,
+        250.0
+      ],
+      [
+        -290.539231,
+        250.871
+      ],
+      [
+        -291.453331,
+        252.3338
+      ],
+      [
+        -295.773231,
+        250.0672
+      ],
+      [
+        -299.4,
+        248.2
+      ]
+    ],
+    "treeIslandXZ": [
+      [
+        -299.0,
+        244.15
+      ],
+      [
+        -298.35,
+        243.0
+      ],
+      [
+        -296.5,
+        241.95
+      ],
+      [
+        -294.0,
+        241.25
+      ],
+      [
+        -292.3,
+        241.5
+      ],
+      [
+        -292.1,
+        242.5
+      ],
+      [
+        -293.2,
+        244.15
+      ],
+      [
+        -295.0,
+        245.5
+      ],
+      [
+        -297.0,
+        245.5
+      ],
+      [
+        -298.6,
+        244.9
+      ]
+    ],
+    "streetEdgeXZ": [
+      [
+        -298.5,
+        244.2
+      ],
+      [
+        -286.5,
+        238.6
+      ],
+      [
+        -278.0,
+        234.65
+      ]
+    ],
+    "longWallWorld": [
+      [
+        -271.603516,
+        3.77024,
+        241.687531
+      ],
+      [
+        -273.930908,
+        3.77024,
+        240.161453
+      ],
+      [
+        -274.108887,
+        3.77024,
+        240.113251
+      ],
+      [
+        -286.930023,
+        3.77024,
+        245.909943
+      ],
+      [
+        -287.080292,
+        3.77024,
+        246.04567
+      ],
+      [
+        -287.868835,
+        3.77024,
+        247.483978
+      ],
+      [
+        -287.872772,
+        3.77024,
+        247.685181
+      ],
+      [
+        -286.906525,
+        3.77024,
+        249.739288
+      ]
+    ],
+    "plantingPolygons": [
+      {
+        "id": "long-bed",
+        "world": [
+          [
+            -286.676575,
+            3.55,
+            249.645386
+          ],
+          [
+            -287.674011,
+            3.55,
+            247.586182
+          ],
+          [
+            -286.876648,
+            3.55,
+            246.152527
+          ],
+          [
+            -273.96228,
+            3.55,
+            240.393433
+          ],
+          [
+            -271.900513,
+            3.55,
+            241.780136
+          ],
+          [
+            -277.633087,
+            3.55,
+            246.03363
+          ],
+          [
+            -283.287811,
+            3.55,
+            249.277786
+          ],
+          [
+            -285.356445,
+            3.55,
+            248.700562
+          ]
+        ]
+      },
+      {
+        "id": "short-bed",
+        "world": [
+          [
+            -299.018707,
+            3.58,
+            250.848755
+          ],
+          [
+            -302.959229,
+            3.58,
+            248.781204
+          ],
+          [
+            -301.862732,
+            3.58,
+            246.691406
+          ],
+          [
+            -298.055054,
+            3.58,
+            248.68927
+          ]
+        ]
+      },
+      {
+        "id": "central-tree-island",
+        "world": [
+          [
+            -299.0,
+            3.045774,
+            244.150009
+          ],
+          [
+            -298.350006,
+            3.005052,
+            243.0
+          ],
+          [
+            -296.5,
+            2.99448,
+            241.949997
+          ],
+          [
+            -294.0,
+            2.998181,
+            241.25
+          ],
+          [
+            -292.299988,
+            3.019568,
+            241.5
+          ],
+          [
+            -292.100006,
+            3.032747,
+            242.5
+          ],
+          [
+            -293.200012,
+            3.039465,
+            244.150009
+          ],
+          [
+            -295.0,
+            3.054186,
+            245.5
+          ],
+          [
+            -297.0,
+            3.0654,
+            245.5
+          ],
+          [
+            -298.600006,
+            3.06381,
+            244.899994
+          ]
+        ]
+      }
+    ],
+    "plantingRootPoints": [
+      {
+        "id": "long-bed-east",
+        "sd": [
+          -10,
+          13
+        ],
+        "height": 3.55,
+        "world": [
+          -278.71814,
+          3.55,
+          244.335052
+        ]
+      },
+      {
+        "id": "long-bed-entry",
+        "sd": [
+          -6,
+          8
+        ],
+        "height": 3.55,
+        "world": [
+          -284.583282,
+          3.55,
+          246.904129
+        ]
+      },
+      {
+        "id": "short-bed",
+        "sd": [
+          7,
+          -1
+        ],
+        "height": 3.58,
+        "world": [
+          -300.276489,
+          3.58,
+          248.833679
+        ]
+      },
+      {
+        "id": "central-tree-island",
+        "sd": [
+          5.294969201087952,
+          6.030821800231934
+        ],
+        "height": 3.0166183425187993,
+        "world": [
+          -295.5,
+          3.016618,
+          243.399994
+        ]
+      }
+    ],
+    "doorThresholdWorld": [
+      -293.613281,
+      3.755696,
+      251.2005
+    ],
+    "doorRaiseM": 0.5343561105675514,
+    "stepCount": 4,
+    "stepRiseM": 0.15,
+    "stepGoingM": 0.31,
+    "stepWidthM": 4.4,
+    "stairsFootWorld": [
+      -292.196198,
+      3.155696,
+      248.499695
+    ],
+    "groundProbePoints": [
+      {
+        "label": "Door landing",
+        "world": [
+          -293.264832,
+          3.755696,
+          250.536362
+        ]
+      },
+      {
+        "label": "Riser 1 from toe",
+        "world": [
+          -292.268219,
+          3.305696,
+          248.636948
+        ]
+      },
+      {
+        "label": "Riser 2 from toe",
+        "world": [
+          -292.412231,
+          3.455696,
+          248.911453
+        ]
+      },
+      {
+        "label": "Riser 3 from toe",
+        "world": [
+          -292.556274,
+          3.605696,
+          249.185959
+        ]
+      },
+      {
+        "label": "Riser 4 from toe",
+        "world": [
+          -292.700317,
+          3.755696,
+          249.460464
+        ]
+      },
+      {
+        "label": "Paved approach d=4",
+        "world": [
+          -291.754791,
+          3.110322,
+          247.658463
+        ]
+      },
+      {
+        "label": "Paved approach d=8",
+        "world": [
+          -289.896332,
+          3.080147,
+          244.116409
+        ]
+      },
+      {
+        "label": "Paved approach d=12",
+        "world": [
+          -288.037842,
+          3.028346,
+          240.574371
+        ]
+      },
+      {
+        "label": "long-bed-east soil",
+        "world": [
+          -278.71814,
+          3.55,
+          244.335052
+        ]
+      },
+      {
+        "label": "long-bed-entry soil",
+        "world": [
+          -284.583282,
+          3.55,
+          246.904129
+        ]
+      },
+      {
+        "label": "short-bed soil",
+        "world": [
+          -300.276489,
+          3.58,
+          248.833679
+        ]
+      },
+      {
+        "label": "central-tree-island soil",
+        "world": [
+          -295.5,
+          3.016618,
+          243.399994
+        ]
+      }
+    ],
+    "extras": {
+      "ground": "mitResidenceGround:true",
+      "retainingWalls": "mitResidenceWall:true",
+      "siteMarker": "bakerNorthCourt:true",
+      "buildingCollider": "mitResidenceCollisionOnly:true and mitResidenceWall:true"
+    }
+  }
+}

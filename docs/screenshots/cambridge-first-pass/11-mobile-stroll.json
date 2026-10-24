@@ -1,4 +1,5 @@
 {
+  "people": [],
   "campus": "mit",
   "vegetationStatus": "ready",
   "quality": "standard",
@@ -27,6 +28,6 @@
     "walls": 22682,
     "roofs": 7156
   },
-  "calls": 6,
-  "triangles": 1060
+  "calls": 165,
+  "triangles": 2339141
 }

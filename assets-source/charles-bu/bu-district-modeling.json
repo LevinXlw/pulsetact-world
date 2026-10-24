@@ -1,0 +1,49 @@
+{
+  "scope": "Boston University Charles River Campus outdoor building and sports models, including South Campus",
+  "method": "City of Boston GIS footprint outlines remain in the shared unscaled MIT geographic coordinate frame. Exterior facade details are original procedural geometry inspired by official BU references. Interiors, small facade measurements, tower sub-footprints, equipment and seating are illustrative, not surveyed.",
+  "modelFeatures": [
+    "Real footprint perimeter and courtyard voids, rather than axis-aligned placeholder boxes",
+    "Cut masonry openings with recessed glazing, projecting sills and cornices",
+    "Separate low podium and high tower silhouettes where the GIS records combine a complex",
+    "Different envelope treatment for historic houses, academic buildings, sports halls, residences and garages",
+    "Spatial material batches for frustum culling and reduced draw calls"
+  ],
+  "references": [
+    {
+      "building": "Warren Towers",
+      "evidence": "Three 14-storey residential towers over a four-storey podium; 18 total stories. The model represents the recognizable permanent exterior and does not simulate the phased 2025–2028 construction site.",
+      "urls": ["https://www.bu.edu/community/files/2024/02/Warren-Towers-EPNF.pdf", "https://www.bu.edu/articles/2026/whats-happening-at-warren-towers/"]
+    },
+    {
+      "building": "Law Tower and Redstone Building",
+      "evidence": "17-storey Brutalist tower and five-storey Redstone building. Concrete floor edges and vertical shading fins characterize the tower.",
+      "urls": ["https://www.bu.edu/law/about/law-school-complex/", "https://www.bu.edu/articles/2015/architectural-icon-gets-makeover/"]
+    },
+    {
+      "building": "Student Village II",
+      "evidence": "26-storey north tower and 19-storey south tower at 33 Harry Agganis Way.",
+      "urls": ["https://www.bu.edu/housing/residence/student-village/33-harry-agganis-way/"]
+    },
+    {
+      "building": "Student Village I",
+      "evidence": "10 Buick Street apartment residence, with event space on the 18th floor; distinct high and lower connected wings.",
+      "urls": ["https://www.bu.edu/housing/residence/student-village/10-buick-street/", "https://www.bu.edu/meetatbu/summer/residence-halls-adult/10-buick-street/"]
+    },
+    {
+      "building": "College of Fine Arts",
+      "evidence": "855 Commonwealth Avenue; restored masonry facade and street-level arched windows.",
+      "urls": ["https://www.bu.edu/cpo/project/cfa-facade/"]
+    },
+    {
+      "building": "Photonics Center",
+      "evidence": "Nine-storey laboratory building at 8 Saint Mary's Street.",
+      "urls": ["https://www.bu.edu/research/centers-institutes/photonics-center/", "https://www.bu.edu/photonics/about/contact/"]
+    },
+    {
+      "building": "Nickerson Field",
+      "evidence": "BU Athletics publishes a 72 by 116 yard soccer playing area, reproduced as 65.8368 by 106.0704 metres. Grandstand details are authored approximations; they are not a seat-by-seat reconstruction.",
+      "urls": ["https://goterriers.com/sports/2016/6/13/facilities-nickerson-html", "https://www.bu.edu/fitrec/visit-us/facilities/"]
+    }
+  ],
+  "licensing": "No external building photographs or branded texture files are redistributed. Model geometry and generated nameplates are original project assets. GIS attribution and retrieval are documented separately in bu-campus-source.json."
+}

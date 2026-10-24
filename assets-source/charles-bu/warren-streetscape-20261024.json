@@ -1,0 +1,45 @@
+{
+  "title": "Warren Towers existing Commonwealth Avenue sidewalk and central entrance approach",
+  "date": "2026-10-24",
+  "scope": "North frontage only; continuous existing-condition hardscape replaces a procedural grass gap. Building envelope, facade, doors, road widths, global DEM, travel routes and existing colliders are unchanged.",
+  "sources": [
+    {
+      "url": "https://www.bu.edu/community/files/2024/02/Warren-Towers-EPNF.pdf",
+      "publisher": "Boston University / MDS, February 2024",
+      "localText": "output/bu-comm-ave-20261024/references/warren-epnf-2024.txt",
+      "localPhoto": "output/bu-comm-ave-20261024/references/warren-p23.png",
+      "evidence": [
+        "Figure 1-3 existing-condition photographs show light gray continuous hardscape reaching the four central doors and storefronts, with individual street-tree pits rather than a continuous grass strip against the building.",
+        "Public Realm describes an existing 20 ft sidewalk, approximately 10 ft sheltered by the vaulted canopy.",
+        "Section 3.6.1 describes the existing approximately 8 ft furnishing zone, 16 inch permeable paver edge, street trees in pits (some with grates), raised granite planters with plant guards, and other street furnishings."
+      ]
+    },
+    {
+      "url": "https://www.bu.edu/cpo/warren-faq/",
+      "publisher": "Boston University Campus Planning & Operations",
+      "evidence": "Renovation FAQ describes future sidewalk regrading, new planters, and new canopies/storefront work; this pass does not claim that proposed renovation geometry is completed."
+    }
+  ],
+  "surveyBacked": {
+    "buildingFootprint": "BU_FULL_BUILDINGS warren-towers, City source vertices preserved",
+    "northEdge": [[-1060.196, 1064.904], [-895.7, 1090.705]],
+    "street": "BU_ROAD_EDGES Commonwealth south carriageway, existing 10.2 m model width; perpendicular intersections with the actual piecewise road segments, not an endpoint projection",
+    "elevation": "buElevation shared DEM and existing Warren rigid threshold base; no change to source terrain"
+  },
+  "authoredOrEstimated": {
+    "entry": "Same 55.1% from west anchor and 12.5 m opening as current photograph-calibrated facade; not an independently surveyed door center.",
+    "pavers": "0.4064 m strip width follows the EPNF existing 16 inch description; individual brick module, color, and exact current paving subdivision are estimates.",
+    "surface": "Concrete 0.118 m above existing terrain avoids overlap with old +0.102/+0.105 m infill; this is the existing game's road surface convention, not a new physical survey height.",
+    "entryTransition": "Last 2.4 m blends locally to the current facade's base+0.20 m stone threshold, with a 1 m lateral blend. It is a playable join, not a surveyed accessibility reconstruction.",
+    "trees": "Four accepted existing procedural tree positions and square pits are retained without relocation or duplication; this is not a verified contemporary tree inventory.",
+    "unresolvedScale": "The retained GIS/model road-to-facade gap is about 7–8 m locally, whereas the EPNF reports a 20 ft (6.096 m) sidewalk. This pass does not move the surveyed building footprint or established road/navigation geometry to conceal that discrepancy.",
+    "excluded": "Temporary 2026 works, future proposed planter enlargements, and unverified bench/bike-rack positions are not invented."
+  },
+  "integration": {
+    "factory": "createBUWarrenStreetscape({mobile})",
+    "returns": ["group", "ground", "walls (empty)", "trees (empty)", "dispose"],
+    "oldTreeSelector": "None needed on desktop. The mobile builder explicitly retains these four existing street trees because generic tree stride may omit them; the helper itself does not emit trees.",
+    "mobileTreePits": "The mobile bake discards the old street-detail group, so the helper restores only these four pit sites in two extra soil/granite batches. Soil sits at terrain+0.112 m, avoiding the retained old terrain+0.105 m sidewalk; frames extend from +0.11 to +0.15 m. Their 0.965 m exterior half-width fits the same paving cutouts. They are low ground surfaces, not new blocking walls.",
+    "quality": "Desktop/mobile share identical main paving buffers (2 spatially bounded material batches); mobile adds 2 bounded tree-pit batches and uses the existing no-texture material pipeline."
+  }
+}

@@ -1,0 +1,87 @@
+/* Touch controls follow the input device, including tablets and landscape phones. */
+@media (any-pointer: coarse) {
+  .pw-world { min-height: 100dvh; }
+  .pw-keys { display: none; }
+  .pw-mobile-pad {
+    display: grid;
+    position: absolute;
+    left: max(20px, env(safe-area-inset-left));
+    bottom: calc(96px + env(safe-area-inset-bottom));
+    grid-template-columns: repeat(3, 44px);
+    grid-template-rows: repeat(2, 44px);
+    gap: 4px;
+    z-index: 4;
+  }
+  .pw-mobile-pad button {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid #fff9e660;
+    border-radius: 9px;
+    background: #254936c4;
+    color: #fffbe9;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .pw-mobile-pad button:active { background: #527758ef; }
+  .pw-mobile-pad button:first-child { grid-column: 2; }
+  .pw-mobile-pad button:nth-child(2),
+  .pw-mobile-pad button:nth-child(3),
+  .pw-mobile-pad button:nth-child(4) { grid-row: 2; }
+  .pw-bottom {
+    left: max(15px, env(safe-area-inset-left));
+    right: max(15px, env(safe-area-inset-right));
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    justify-content: center;
+  }
+  .pw-dock { position: static; transform: none; }
+  .pw-dock button { min-height: 49px; }
+  .pw-interaction { bottom: calc(208px + env(safe-area-inset-bottom)); max-width: calc(100% - 32px); white-space: normal; }
+  .pw-presence { position: absolute; right: 0; bottom: 78px; }
+  .pw-emote { display: none; }
+}
+
+@media (any-pointer: coarse) and (min-width: 651px) {
+  .pw-topbar { height: 84px; padding: 20px 24px; gap: 15px; }
+  .pw-location > span { display: none; }
+  .pw-location > div { margin-top: 0; gap: 9px; font-size: 9px; }
+  .pw-location i { width: 15px; }
+  .pw-chapter { left: 24px; top: 105px; }
+  .pw-chapter h1 { font-size: 29px; }
+  .pw-chapter > span { font-size: 8px; letter-spacing: 1.5px; }
+  .pw-chapter .pw-rule { margin: 14px 0; }
+  .pw-tools { right: 24px; top: 108px; }
+}
+
+@media (any-pointer: coarse) and (max-height: 550px) and (orientation: landscape) {
+  .pw-topbar { height: 62px; padding: 12px max(20px, env(safe-area-inset-right)) 12px max(20px, env(safe-area-inset-left)); }
+  .pw-wordmark strong { font-size: 23px; }
+  .pw-wordmark > svg { width: 24px; height: 24px; }
+  .pw-wordmark small { font-size: 7px; letter-spacing: 3px; margin-top: 0; }
+  .pw-location { display: none; }
+  .pw-profile { padding: 4px 10px 4px 4px; gap: 7px; }
+  .pw-profile .pw-avatar-dot { width: 28px; height: 28px; }
+  .pw-profile > span:last-child { font-size: 10px; }
+  .pw-profile small { font-size: 8px; }
+  .pw-chapter { left: max(20px, env(safe-area-inset-left)); top: 73px; }
+  .pw-chapter > span, .pw-chapter > p, .pw-chapter .pw-rule { display: none; }
+  .pw-chapter h1 { font-size: 23px; margin: 0 0 10px; }
+  .pw-objective { max-width: 235px; gap: 8px; }
+  .pw-objective strong { font-size: 11px; }
+  .pw-objective small, .pw-objective em { font-size: 9px; margin-top: 3px; }
+  .pw-tools { top: 76px; right: max(20px, env(safe-area-inset-right)); gap: 7px; }
+  .pw-round { width: 36px; height: 36px; }
+  .pw-mobile-pad { bottom: calc(20px + env(safe-area-inset-bottom)); }
+  .pw-bottom { bottom: calc(20px + env(safe-area-inset-bottom)); }
+  .pw-interaction { bottom: calc(99px + env(safe-area-inset-bottom)); max-width: calc(100% - 360px); padding: 9px 13px; font-size: 11px; }
+  .pw-interaction small { font-size: 9px; }
+  .pw-presence { bottom: 0; font-size: 9px; padding: 7px 9px; }
+  .pw-toast { top: 64px; font-size: 11px; padding: 8px 13px; }
+  .pw-choosing .pw-intro { top: 65px; bottom: 20px; transform: none; max-height: calc(100dvh - 85px); padding: 20px; }
+  .pw-preview-note { bottom: 8px; font-size: 8px; }
+  .pw-overlay { padding: 10px; }
+  .pw-panel { max-height: calc(100dvh - 20px); padding: 20px; }
+  .pw-world .pw-lesson-shell, .pw-lesson-shell .optics-dialog { max-height: calc(100dvh - 20px); }
+}

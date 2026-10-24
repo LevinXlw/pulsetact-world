@@ -1,0 +1,368 @@
+{
+  "source": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\characters\\sakurada\\sakurada-animated.glb",
+  "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\characters\\sakurada\\sakurada-optimized.glb",
+  "sourceSha256": "fa17f6168a6e809f9b9ea8efcf1eda21ff190ee9b164da4abb2b7ddaa1ccf924",
+  "outputSha256": "0d69b37aa0c5dc9ab3e485176e08c5202de5d9853b1e86784c85f0dfd64245f8",
+  "beforeBytes": 19834960,
+  "afterBytes": 6963728,
+  "savedBytes": 12871232,
+  "sourceImageCount": 29,
+  "runtimeImageCount": 17,
+  "removedImages": [
+    "Shader_NoneNormal",
+    "Shader_NoneBlack",
+    "Shader_NoneBlack",
+    "M00_000_00_Face_00_nml",
+    "Matcap_Rim",
+    "M00_000_00_Face_00_out",
+    "M00_001_00_Body_00_nml",
+    "M00_000_HairBack_00_nml",
+    "Matcap_RimHair",
+    "F00_000_Hair_00_nml",
+    "F00_000_Hair_00_spe",
+    "Thumbnail"
+  ],
+  "beforeRuntimeRgbaMiB": 61.25,
+  "afterRuntimeRgbaMiB": 14.0,
+  "beforeRuntimeRgbaWithMipsMiB": 81.6667,
+  "afterRuntimeRgbaWithMipsMiB": 18.6667,
+  "copyrightMeta": {
+    "version": "",
+    "author": "VRoidプロジェクト",
+    "contactInformation": "",
+    "reference": "",
+    "title": "桜田 史利矢",
+    "allowedUserName": "Everyone",
+    "violentUssageName": "Allow",
+    "sexualUssageName": "Allow",
+    "commercialUssageName": "Allow",
+    "otherPermissionUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow",
+    "licenseName": "Other",
+    "otherLicenseUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  },
+  "textures": [
+    {
+      "name": "M00_000_FaceBrow_00",
+      "beforeDimensions": [
+        1024,
+        256
+      ],
+      "afterDimensions": [
+        512,
+        128
+      ],
+      "beforeEncodedBytes": 26687,
+      "afterEncodedBytes": 8997,
+      "beforeRgbaBytes": 1048576,
+      "afterRgbaBytes": 262144,
+      "beforeRgbaMipBytes": 1398108,
+      "afterRgbaMipBytes": 349532,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_FaceMouth_00",
+      "beforeDimensions": [
+        512,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 120266,
+      "afterEncodedBytes": 120266,
+      "beforeRgbaBytes": 1048576,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 1398100,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": true
+    },
+    {
+      "name": "M00_000_EyeIris_00",
+      "beforeDimensions": [
+        1024,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        256
+      ],
+      "beforeEncodedBytes": 190084,
+      "afterEncodedBytes": 61770,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_EyeHighlight_00",
+      "beforeDimensions": [
+        1024,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        256
+      ],
+      "beforeEncodedBytes": 28314,
+      "afterEncodedBytes": 14575,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_EyeWhite_00",
+      "beforeDimensions": [
+        1024,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        256
+      ],
+      "beforeEncodedBytes": 163303,
+      "afterEncodedBytes": 67967,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_Face_00",
+      "beforeDimensions": [
+        1024,
+        1024
+      ],
+      "afterDimensions": [
+        1024,
+        1024
+      ],
+      "beforeEncodedBytes": 608427,
+      "afterEncodedBytes": 608427,
+      "beforeRgbaBytes": 4194304,
+      "afterRgbaBytes": 4194304,
+      "beforeRgbaMipBytes": 5592404,
+      "afterRgbaMipBytes": 5592404,
+      "unchangedPixelData": true
+    },
+    {
+      "name": "M00_000_FaceEyelash_00",
+      "beforeDimensions": [
+        1024,
+        256
+      ],
+      "afterDimensions": [
+        512,
+        128
+      ],
+      "beforeEncodedBytes": 30557,
+      "afterEncodedBytes": 10815,
+      "beforeRgbaBytes": 1048576,
+      "afterRgbaBytes": 262144,
+      "beforeRgbaMipBytes": 1398108,
+      "afterRgbaMipBytes": 349532,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_FaceEyeline_00",
+      "beforeDimensions": [
+        1024,
+        256
+      ],
+      "afterDimensions": [
+        512,
+        128
+      ],
+      "beforeEncodedBytes": 52548,
+      "afterEncodedBytes": 17388,
+      "beforeRgbaBytes": 1048576,
+      "afterRgbaBytes": 262144,
+      "beforeRgbaMipBytes": 1398108,
+      "afterRgbaMipBytes": 349532,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_000_00_EyeExtra_01",
+      "beforeDimensions": [
+        1024,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        256
+      ],
+      "beforeEncodedBytes": 98283,
+      "afterEncodedBytes": 33136,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_001_Body_00",
+      "beforeDimensions": [
+        2048,
+        2048
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 1739406,
+      "afterEncodedBytes": 202396,
+      "beforeRgbaBytes": 16777216,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 22369620,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_001_Tops_01",
+      "beforeDimensions": [
+        2048,
+        2048
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 2601557,
+      "afterEncodedBytes": 264295,
+      "beforeRgbaBytes": 16777216,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 22369620,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_001_Accessory_01",
+      "beforeDimensions": [
+        256,
+        256
+      ],
+      "afterDimensions": [
+        256,
+        256
+      ],
+      "beforeEncodedBytes": 46655,
+      "afterEncodedBytes": 46655,
+      "beforeRgbaBytes": 262144,
+      "afterRgbaBytes": 262144,
+      "beforeRgbaMipBytes": 349524,
+      "afterRgbaMipBytes": 349524,
+      "unchangedPixelData": true
+    },
+    {
+      "name": "M00_001_Bottoms_01",
+      "beforeDimensions": [
+        1024,
+        1024
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 734146,
+      "afterEncodedBytes": 238512,
+      "beforeRgbaBytes": 4194304,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 5592404,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "M00_001_Shoes_01",
+      "beforeDimensions": [
+        512,
+        512
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 114662,
+      "afterEncodedBytes": 114662,
+      "beforeRgbaBytes": 1048576,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 1398100,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": true
+    },
+    {
+      "name": "M00_000_HairBack_00",
+      "beforeDimensions": [
+        1024,
+        1024
+      ],
+      "afterDimensions": [
+        512,
+        512
+      ],
+      "beforeEncodedBytes": 366352,
+      "afterEncodedBytes": 119779,
+      "beforeRgbaBytes": 4194304,
+      "afterRgbaBytes": 1048576,
+      "beforeRgbaMipBytes": 5592404,
+      "afterRgbaMipBytes": 1398100,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "F00_000_Hair_00_01",
+      "beforeDimensions": [
+        512,
+        1024
+      ],
+      "afterDimensions": [
+        256,
+        512
+      ],
+      "beforeEncodedBytes": 142238,
+      "afterEncodedBytes": 67142,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    },
+    {
+      "name": "F00_000_Hair_00_02",
+      "beforeDimensions": [
+        512,
+        1024
+      ],
+      "afterDimensions": [
+        256,
+        512
+      ],
+      "beforeEncodedBytes": 142238,
+      "afterEncodedBytes": 67142,
+      "beforeRgbaBytes": 2097152,
+      "afterRgbaBytes": 524288,
+      "beforeRgbaMipBytes": 2796204,
+      "afterRgbaMipBytes": 699052,
+      "unchangedPixelData": false
+    }
+  ],
+  "preservation": {
+    "meshes": true,
+    "skins": true,
+    "nodes": true,
+    "animations": true,
+    "scenes": true,
+    "scene": true,
+    "allNonImageBufferViewBytes": true,
+    "accessorsExceptBufferViewRelocation": true,
+    "VRMC_vrmLicenseMeta": true,
+    "VRMLicenseMeta": true,
+    "inputFileUnchanged": true
+  },
+  "budgets": {
+    "under8MB": true,
+    "under32MiBIncludingMips": true
+  }
+}

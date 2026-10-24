@@ -1,0 +1,398 @@
+{
+  "coordinateSystem": "Three.js X east / Y up / Z south, metres; XZ paths only; retain surveyed ground Y",
+  "status": "Approximate visual centerline correction from registered Cambridge 2025 G4/F4 orthophoto and GISGroundplan; not surveyed centerlines. About 1-2 m plan tolerance. Bridge-hidden spans interpolated between visible portals.",
+  "sourceFiles": [
+    "assets-source/cambridge-gis/mit/F4/CAMB3D_F-4_2025_OrthoPhoto_JPG.zip",
+    "assets-source/cambridge-gis/mit/G4/CAMB3D_G-4_2025_OrthoPhoto_JPG.zip",
+    "assets-source/cambridge-gis/mit/G4/CAMB3D_G-4_2025_GISGroundplan_JPG.zip"
+  ],
+  "replaceMemorialCarriagewayTailFromX": -180,
+  "northMainCenterXZ": [
+    [
+      -180,
+      263.3
+    ],
+    [
+      -160,
+      257.8
+    ],
+    [
+      -140,
+      251.2
+    ],
+    [
+      -120,
+      242.9
+    ],
+    [
+      -100,
+      233.7
+    ],
+    [
+      -80,
+      224.5
+    ],
+    [
+      -60,
+      215.4
+    ],
+    [
+      -40,
+      206.3
+    ],
+    [
+      -20,
+      197.1
+    ],
+    [
+      0,
+      187.9
+    ],
+    [
+      20,
+      178.7
+    ],
+    [
+      40,
+      169.5
+    ]
+  ],
+  "southMainCenterXZ": [
+    [
+      -180,
+      285.5
+    ],
+    [
+      -160,
+      272.5
+    ],
+    [
+      -140,
+      259.5
+    ],
+    [
+      -120,
+      249.9
+    ],
+    [
+      -100,
+      240.8
+    ],
+    [
+      -80,
+      231.8
+    ],
+    [
+      -60,
+      222.7
+    ],
+    [
+      -40,
+      213.6
+    ],
+    [
+      -20,
+      204.5
+    ],
+    [
+      0,
+      195.4
+    ],
+    [
+      20,
+      186.3
+    ],
+    [
+      40,
+      177.2
+    ]
+  ],
+  "widthStations": [
+    {
+      "x": -180,
+      "width": 9.5
+    },
+    {
+      "x": -160,
+      "width": 8.0
+    },
+    {
+      "x": -140,
+      "width": 7.0
+    },
+    {
+      "x": 40,
+      "width": 7.0
+    }
+  ],
+  "layoutNotes": [
+    "Two separate two-lane main carriageways continue beneath Mass Ave; do not join into one broad surface.",
+    "After the broad western median closes, a narrow central divider remains. Keep the campus-side surface ramp and river-side surface slip road distinct from the main underpass.",
+    "Replace old tail points, do not append to old north [-80,220.5]: it lies close to the source north retaining wall.",
+    "The Mass Ave bridge deck occludes the roads; keep source height and do not sample the upper bridge as underpass road Y.",
+    "Stop this extension at X40; eastern merging curves beyond are outside this local correction."
+  ],
+  "wallSelection": [
+    {
+      "id": "north_underpass_retaining_wall",
+      "sourceNode": 0,
+      "sourceMesh": 0,
+      "sourcePrimitive": 0,
+      "sourceMaterial": "Cambridge buildings (untextured)",
+      "triangleOrdinals": [
+        11416,
+        11417,
+        11418,
+        11419,
+        11420,
+        11421,
+        11422,
+        11423,
+        11424,
+        11425,
+        11426,
+        11427
+      ],
+      "triangleCount": 12,
+      "bounds": {
+        "min": [
+          -137.5433349609375,
+          -4.004459857940674,
+          212.6226043701172
+        ],
+        "max": [
+          -63.523231506347656,
+          3.0587399005889893,
+          247.3397979736328
+        ]
+      },
+      "sourceVertices": [
+        [
+          -137.5433349609375,
+          -4.004459857940674,
+          246.50909423828125
+        ],
+        [
+          -137.5433349609375,
+          3.0587399005889893,
+          246.50909423828125
+        ],
+        [
+          -137.16102600097656,
+          -4.004459857940674,
+          247.3397979736328
+        ],
+        [
+          -137.16102600097656,
+          3.0587399005889893,
+          247.3397979736328
+        ],
+        [
+          -63.917232513427734,
+          -4.004459857940674,
+          212.6226043701172
+        ],
+        [
+          -63.917232513427734,
+          3.0587399005889893,
+          212.6226043701172
+        ],
+        [
+          -63.523231506347656,
+          -4.004459857940674,
+          213.44790649414062
+        ],
+        [
+          -63.523231506347656,
+          3.0587399005889893,
+          213.44790649414062
+        ]
+      ],
+      "selection": "Require source material match; triangle all three vertices match sourceVertices within 0.002 m. triangleOrdinals valid only for this current GLB. Preserve geometry and collision; recolor exposed concrete faces only."
+    },
+    {
+      "id": "south_underpass_retaining_wall",
+      "sourceNode": 0,
+      "sourceMesh": 0,
+      "sourcePrimitive": 0,
+      "sourceMaterial": "Cambridge buildings (untextured)",
+      "triangleOrdinals": [
+        25601,
+        25602,
+        25603,
+        25604,
+        25605,
+        25606,
+        25607,
+        25608,
+        25609,
+        25610,
+        25611,
+        25612
+      ],
+      "triangleCount": 12,
+      "bounds": {
+        "min": [
+          -131.99513244628906,
+          -4.015560150146484,
+          226.5738067626953
+        ],
+        "max": [
+          -58.304229736328125,
+          3.272239923477173,
+          260.69989013671875
+        ]
+      },
+      "sourceVertices": [
+        [
+          -131.99513244628906,
+          -4.015560150146484,
+          259.8669128417969
+        ],
+        [
+          -131.99513244628906,
+          3.272239923477173,
+          259.8669128417969
+        ],
+        [
+          -131.61773681640625,
+          -4.015560150146484,
+          260.69989013671875
+        ],
+        [
+          -131.61773681640625,
+          3.272239923477173,
+          260.69989013671875
+        ],
+        [
+          -58.68123245239258,
+          -4.015560150146484,
+          226.5738067626953
+        ],
+        [
+          -58.68123245239258,
+          3.272239923477173,
+          226.5738067626953
+        ],
+        [
+          -58.304229736328125,
+          -4.015560150146484,
+          227.40679931640625
+        ],
+        [
+          -58.304229736328125,
+          3.272239923477173,
+          227.40679931640625
+        ]
+      ],
+      "selection": "Require source material match; triangle all three vertices match sourceVertices within 0.002 m. triangleOrdinals valid only for this current GLB. Preserve geometry and collision; recolor exposed concrete faces only."
+    }
+  ],
+  "maseehSouthCourt": {
+    "basis": "Cambridge 2025 registered orthophoto for plan placement plus MIT/Bruce Myren south front photo for tree scale/fence type. Tree positions are approximate crown/trunk-region estimates, not surveyed trunk locations. Do not shift walk line to fit trees; omit/adjust any candidate whose trunk overlaps actual source wall or paving.",
+    "trees": [
+      {
+        "id": "west_planting_tree",
+        "xz": [
+          -119.0,
+          181.8
+        ],
+        "heightRangeM": [
+          11,
+          14
+        ],
+        "crownRadiusRangeM": [
+          4,
+          5.5
+        ],
+        "confidence": "medium-low; west planting strip beside entry forecourt"
+      },
+      {
+        "id": "west_court_mature_tree",
+        "xz": [
+          -108.3,
+          195.7
+        ],
+        "heightRangeM": [
+          15,
+          18
+        ],
+        "crownRadiusRangeM": [
+          5,
+          7
+        ],
+        "confidence": "medium-low; central lawn, approx 2.7m from authored walk center"
+      },
+      {
+        "id": "east_court_mature_tree",
+        "xz": [
+          -99.5,
+          194.7
+        ],
+        "heightRangeM": [
+          14,
+          18
+        ],
+        "crownRadiusRangeM": [
+          5,
+          7
+        ],
+        "confidence": "medium; visible leafless crown region on 2025 ortho"
+      }
+    ],
+    "treePlacementConstraints": {
+      "minTrunkDistanceToWalkCenterM": 2.0,
+      "minTrunkDistanceToBuildingM": 1.5,
+      "maxTrunkRadiusM": 0.55,
+      "neverPlaceOnAuthoredWalk": true
+    },
+    "frontFence": {
+      "kind": "dark iron vertical pickets on low light stone base, with light stone piers",
+      "heightEstimateM": [
+        1.1,
+        1.4
+      ],
+      "segmentsXZ": [
+        [
+          [
+            -122,
+            213.2
+          ],
+          [
+            -108.2,
+            207.0
+          ]
+        ],
+        [
+          [
+            -105.4,
+            205.8
+          ],
+          [
+            -82.5,
+            195.5
+          ]
+        ]
+      ],
+      "pedestrianOpening": {
+        "centerXZ": [
+          -106.8,
+          206.4
+        ],
+        "edgePointsXZ": [
+          [
+            -108.2,
+            207.0
+          ],
+          [
+            -105.4,
+            205.8
+          ]
+        ],
+        "widthApproxM": 3.05
+      },
+      "confidence": "medium for boundary line from ortho; low-medium for exact gate edges under trees. Keep authored route open and allow about 1-2m adjustment."
+    },
+    "courtGroundNote": "Upper courtyard close to recessed south entrance is a broad pale hardscape terrace, not uninterrupted lawn. Central/lower court remains lawn. Existing narrow west-side route may remain; do not pave the whole court."
+  }
+}

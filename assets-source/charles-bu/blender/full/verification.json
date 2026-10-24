@@ -1,0 +1,1017 @@
+{
+  "passed": true,
+  "triangles": 24730,
+  "primitives": 12,
+  "pbrBytes": 5283612,
+  "mobileBytes": 3821488,
+  "images": [
+    {
+      "name": "metal-normal",
+      "width": 512,
+      "height": 512,
+      "bytes": 4515
+    },
+    {
+      "name": "metal-basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 227366
+    },
+    {
+      "name": "metal-orm",
+      "width": 512,
+      "height": 512,
+      "bytes": 112634
+    },
+    {
+      "name": "stone-normal",
+      "width": 512,
+      "height": 512,
+      "bytes": 310577
+    },
+    {
+      "name": "stone-basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 240297
+    },
+    {
+      "name": "stone-orm",
+      "width": 512,
+      "height": 512,
+      "bytes": 129050
+    },
+    {
+      "name": "concrete-normal",
+      "width": 512,
+      "height": 512,
+      "bytes": 86273
+    },
+    {
+      "name": "concrete-basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 227366
+    },
+    {
+      "name": "concrete-orm",
+      "width": 512,
+      "height": 512,
+      "bytes": 121849
+    }
+  ],
+  "checks": [
+    {
+      "name": "PBR asset matches finished manifest hash",
+      "passed": true
+    },
+    {
+      "name": "Mobile source matches finished manifest hash",
+      "passed": true
+    },
+    {
+      "name": "Full PBR asset below 10 MiB",
+      "passed": true
+    },
+    {
+      "name": "Mobile source contains no image loader inputs",
+      "passed": true
+    },
+    {
+      "name": "Mobile source retains exact PBR meshes and node transforms",
+      "passed": true
+    },
+    {
+      "name": "Mobile source retains all geometry accessors",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 0 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 1 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 2 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 3 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 4 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 5 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 6 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 7 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 8 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 9 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 10 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 11 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 12 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 13 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 14 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 15 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 16 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 17 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 18 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 19 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 20 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 21 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 22 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 23 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 24 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 25 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 26 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 27 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 28 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 29 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 30 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 31 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 32 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 33 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 34 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 35 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 36 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 37 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 38 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 39 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 40 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 41 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 42 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 43 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 44 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 45 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 46 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 47 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 48 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 49 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 50 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 51 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 52 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 53 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 54 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 55 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 56 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 57 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessor 58 is byte-value identical",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: unit normals",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 metal construction: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: unit normals",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "CDS pass2 \u00b7 column contact: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4 \u00b7 bounded near-ground finishing: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2 \u00b7 bounded near-ground finishing: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: PBR geometry attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: triangle indices",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: attribute counts",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: finite buffers",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "At most 20 draw calls",
+      "passed": true
+    },
+    {
+      "name": "Exported triangle count matches measured full building",
+      "passed": true
+    },
+    {
+      "name": "Asset contains the full-height CDS tower, not the clipped study",
+      "passed": true
+    },
+    {
+      "name": "Source site envelope is preserved",
+      "passed": true
+    },
+    {
+      "name": "Only the four identified old 12-triangle handles were removed",
+      "passed": true
+    },
+    {
+      "name": "Closed-door finishing uses the two reviewed entry-detail batches",
+      "passed": true
+    },
+    {
+      "name": "Runtime door preparation revision is embedded",
+      "passed": true
+    },
+    {
+      "name": "Only documented static leaves, hardware, center posts and backing planes are selected",
+      "passed": true
+    },
+    {
+      "name": "Four complete moving hardware sets and two precise backing openings",
+      "passed": true
+    },
+    {
+      "name": "Door preparation reduces static geometry by 2620 triangles",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: metal-normal",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: metal-basecolor",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: metal-orm",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: stone-normal",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: stone-basecolor",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: stone-orm",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: concrete-normal",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: concrete-basecolor",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG: concrete-orm",
+      "passed": true
+    },
+    {
+      "name": "Valid PNG signature",
+      "passed": true
+    },
+    {
+      "name": "Bounded shared texture resolution",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: reviewed dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no invented interior transmission",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: reviewed glass tint scale",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: reviewed dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no invented interior transmission",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: reviewed glass tint scale",
+      "passed": true
+    },
+    {
+      "name": "grass \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "grass \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "grass \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "grass \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: identical mobile base tint",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: no mobile material texture references",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: baked base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "Previous review asset unchanged: cds-ground.blend",
+      "passed": true
+    },
+    {
+      "name": "Previous review asset unchanged: cds-ground.blend",
+      "passed": true
+    },
+    {
+      "name": "Previous review asset unchanged: cds-ground.glb",
+      "passed": true
+    },
+    {
+      "name": "Previous review asset unchanged: cds-ground.glb",
+      "passed": true
+    }
+  ]
+}

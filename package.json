@@ -1,1 +1,40 @@
-{"name":"pulsetact-campus-explorer","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"tsc -b && vite build","typecheck":"tsc -b","test":"vitest run","test:e2e":"playwright test"},"dependencies":{"@react-three/fiber":"9.1.2","3d-tiles-renderer":"0.4.24","lucide-react":"0.511.0","react":"19.0.0","react-dom":"19.0.0","react-router-dom":"7.6.2","three":"0.176.0","zod":"3.25.49","zustand":"5.0.5"},"devDependencies":{"@playwright/test":"1.52.0","@types/node":"^22.15.29","@types/react":"19.0.12","@types/react-dom":"19.0.4","@types/three":"0.176.0","@vitejs/plugin-react":"4.4.1","typescript":"5.8.3","vite":"6.3.5","vitest":"3.2.1"}}
+{
+  "name": "pulsetact-campus-explorer",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "start": "node server/serve-world.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build:cloudflare": "npm run build && node scripts/prepare-cloudflare.mjs",
+    "deploy:cloudflare": "npm run build:cloudflare && wrangler deploy",
+    "preview:cloudflare": "wrangler dev --ip 127.0.0.1 --port 8791 --local-protocol https"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.1.2",
+    "3d-tiles-renderer": "0.4.24",
+    "lucide-react": "0.511.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.6.2",
+    "three": "0.176.0",
+    "zod": "3.25.49",
+    "zustand": "5.0.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.52.0",
+    "@types/node": "^22.15.29",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "@types/three": "0.176.0",
+    "@vitejs/plugin-react": "4.4.1",
+    "typescript": "5.8.3",
+    "vite": "6.4.4",
+    "vitest": "3.2.1",
+    "wrangler": "4.151.0"
+  }
+}

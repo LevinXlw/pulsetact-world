@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "campus": "umd",
+  "bytes": 8916964,
+  "triangles": 250587,
+  "meshes": 10,
+  "visibleMeshes": 10,
+  "textures": 0,
+  "grid": {
+    "minX": -1381.25,
+    "minZ": -1793.75,
+    "columns": 410,
+    "rows": 421,
+    "cell": 6.25
+  },
+  "heightBytes": 690440
+}

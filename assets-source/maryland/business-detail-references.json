@@ -1,0 +1,56 @@
+{
+  "retrieved": "2026-10-15",
+  "buildingId": "039",
+  "building": "Van Munching Hall, Robert H. Smith School of Business",
+  "sources": [
+    {
+      "url": "https://facilities.umd.edu/info-resources/building-inventory/bldg-039",
+      "title": "UMD Facilities: Building 039",
+      "use": "Building identity, 1992 construction, 2011 renovation, official exterior photograph.",
+      "photo": "https://facilities.umd.edu/sites/default/files/UMDBuildings/039.jpg",
+      "localReference": "business-official-exterior.jpg"
+    },
+    {
+      "url": "https://www.rhsmith.umd.edu/about/location",
+      "title": "Smith School: Location and virtual tour",
+      "use": "1993 occupation, 2002 South Wing, 2008 North Wing, stone gateway, clock tower, landscaped brick paths."
+    },
+    {
+      "url": "https://www.rhsmith.umd.edu/news/smith-school-deans-tour-north-wing-construction",
+      "title": "Smith School Deans Tour North Wing Construction",
+      "use": "The 2007 article explicitly describes four floors in the new north addition."
+    },
+    {
+      "url": "https://www.flickr.com/photos/umdarboretumandbotanicalgarden/6190303842",
+      "title": "Van Munching Hall and Mayer Mall",
+      "credit": "University of Maryland Arboretum and Botanical Garden, Sam Bahr, September 27 2011",
+      "use": "Overall exterior massing, broad pale spandrels, paired tall windows, metal gable roof lanterns, east-side lawn and freestanding brick clock tower; photograph taken from Mowatt Lane garage.",
+      "localReference": "business-mayer-mall-reference.jpg"
+    },
+    {
+      "url": "https://msa.maryland.gov/msa/mdmanual/25univ/umcp/html/umcps.html",
+      "title": "Maryland State Archives: University of Maryland schools",
+      "credit": "Diane F. Evartt, August 2003",
+      "use": "Earlier exterior photograph corroborates red brick, broad white stone bands, glass-topped rooftop pavilions.",
+      "localReference": "business-south-wing-reference.jpg"
+    },
+    {
+      "url": "https://arboretum.umd.edu/testudo",
+      "title": "UMD Arboretum: Testudo",
+      "use": "Testudo sculpture is in the west-side courtyard of Van Munching Hall."
+    },
+    {
+      "url": "https://www.rhsmith.umd.edu/news/van-munching-hall-site-improvements",
+      "title": "Van Munching Hall: Site Improvements",
+      "use": "Southwest campus gateway and pedestrian connection to Mowatt Lane garage."
+    }
+  ],
+  "implementation": {
+    "footprint": "Live UMD_FULL_BUILDINGS sourceBuildingId 039; same transform as roads and DEM; no enclosing rectangle is substituted. Optional future interior rings are preserved in roof and collision.",
+    "massings": "Four-storey outer wings, differentiated roof elevations, shallow floor band relief, punched and recessed grouped glazing, metal gable lanterns, explicit roof-step closures.",
+    "heights": "17.8 / 16.5 / 18.2 metre main roof heights and roof lanterns are authored visual estimates, not surveyed measurements.",
+    "landscape": "Mayer Mall eastern arrival path, freestanding clock tower, seating and a west-side Testudo representation. Positions are relative to the corrected footprint and visually inferred rather than a detailed landscape survey.",
+    "terrain": "Outdoor paving follows the shared DEM. Building is rigid and horizontal with a foundation skirt; open courts retain the shared ground field.",
+    "rights": "Reference photographs are retained only in assets-source for architectural inspection, not distributed under public/assets or used as game textures. Copyright remains with the listed photographers and organizations. Runtime meshes/materials are original code-generated approximations."
+  }
+}

@@ -1,0 +1,10 @@
+<html>
+<title>Site temporarily offline</title>
+<body>
+<p>
+This website is temporarily offline as a mitigation/prevention for
+the set of PHP exploits announced 2026/10/21. If you are the MIT
+owner of this site you should be hearing from us within a few days;
+you may reach out at ops-help@mit.edu if you have not.
+</body>
+</html>

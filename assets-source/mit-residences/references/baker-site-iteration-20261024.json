@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-24",
+  "scope": "Baker north entrance court, Amherst frontage and east walking connection; Maseeh residence tree refinement",
+  "references": [
+    {"local":"baker-mit-guide.jpg","source":"https://mitguidetoresidences.mit.edu/sites/default/files/header-background/7676815734_894a64a1c9_o.jpg","use":"Entry stairs, unequal planted terraces, brickwork and foreground tree island"},
+    {"local":"baker-north-entry-registered.png","use":"2025 orthophoto registered in the existing Cambridge survey/world frame; paving and street edge estimates"},
+    {"local":"baker-north-source-components.json","use":"Four complete low survey components, 180 triangles, replaced by authored planter shells; no neighbouring building component removed"},
+    {"local":"../baker/entry-layout.json","use":"Final exported court outline, soil levels, stairs, planting root anchors"}
+  ],
+  "amherstStreet": {"widthM":5.5,"centerXZ":[[-360,266.4],[-340,257.2],[-320,248],[-300,238.9],[-280,229.7],[-263,222]],"uncertainty":"Orthophoto eye tracing, approximately 1–2 m. Westmost extension follows the same registered street axis."},
+  "southSidewalk": {"widthM":2.8,"centerXZ":[[-360,270.3],[-340,261.1],[-320,251.9],[-300,242.8],[-286.5,236.6],[-280,233.6],[-263,225.9]]},
+  "eastConnection": {"basis":"Orthophoto direction with the final route offset outside retained survey walls; actual ground and collision checks on both profiles","centerXZ":[[-240,271.1],[-236.5,269],[-234.5,264],[-239,251],[-243.5,238],[-247,228],[-251,225],[-255,226],[-263,225.9]]},
+  "paving": "Original surveyed triangles retained. The new street and sidewalks project only onto the original terrain, not planter soil. Sidewalks sit 15 mm above the resurfaced street to prevent overlapping surfaces at estimated edges. Physical kerb cross-sections remain simplified.",
+  "landscape": "Baker: 3 photo-informed trees and 14 shrubs on the exported soil surfaces. Individual species, limbs, spread and shrub locations are approximated. This is not a vegetation survey. Maseeh anchors unchanged.",
+  "knownGaps": ["Baker main stair profile and window sequencing still need further architectural comparison", "Neighbouring buildings remain survey shells", "Soil surface and planted species lack detailed real-scene textures", "North entrance is an exterior model, not an accessible dorm interior"],
+  "review": "output/mit-realism-20261024/review.html",
+  "deployment": "Local only"
+}

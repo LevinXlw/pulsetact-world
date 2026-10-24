@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "scope": "First implemented BU core refinement following the v2/v3 design review: Marsh, Law/Sert, near-ground finishes and core kerbs",
+  "references": [
+    "https://www.bu.edu/articles/2025/photo-gallery-marsh-chapels-history/",
+    "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf"
+  ],
+  "referenceLimits": [
+    "Marsh details are photo-interpreted proportions, not measured facade dimensions.",
+    "Law/Sert hierarchy uses the 2012 renovation PNF; it is not a current as-built survey.",
+    "Existing GIS footprints, source building heights, navigation colliders and DEM remain unchanged.",
+    "Paving dimensions and kerb ramp profiles are authored construction detail, not surveyed individual slabs or ramps."
+  ],
+  "changes": {
+    "marsh": "Stone niche around narrow dark glazing, smaller lower lights, paired metal-framed doors, flush stair nosings, round central handrail, recessed plaza-facing connecting-wing windows; roof soffit pulled back behind the niche.",
+    "sert": "Law solid crown and core walls, recessed window fields, distinct south/north hierarchy, Butler entrance; Mugar deep fins restricted to south/east faces; cast-concrete finish replaces false masonry joints.",
+    "ground": "Concrete sidewalks, stone courtyard slabs, rose-granite plaza and brick entrance paving have distinct metre-scale joints; University Road / Marsh / Sert core kerbs have terrain-following vertical faces and lowered crossings.",
+    "mobile": "Signed normalized Int8 normals stored with four-byte stride; backward-compatible zero-copy decoder. No position or collision quantization change."
+  },
+  "geometry": {
+    "marshLandmarkTrianglesBefore": 107967,
+    "marshLandmarkTrianglesAfter": 109710,
+    "lawAndSertDesktopTrianglesRemoved": 12114,
+    "lawAndSertMobileTrianglesRemoved": 8448,
+    "streetsTrianglesBefore": 392212,
+    "streetsTrianglesAfter": 393722
+  },
+  "mobileBoston": {
+    "bytesBefore": 26148160,
+    "bytesAfter": 23542684,
+    "trianglesBefore": 651088,
+    "trianglesAfter": 644383,
+    "assetLimitBytes": 26214400,
+    "normalAngularErrorMaxDegreesOnPreviousBake": 0.369
+  },
+  "validation": {
+    "unitTests": "51 files / 263 tests passed; subsequently added 2 Int8 tests and reran the decoder file, 20/20 passed (265 total covered).",
+    "build": "npm run build:cloudflare passed: 95 assets, 136.79 MiB staged; not deployed in this pass.",
+    "fixedViews": "6 same-camera before/after captures; no page/GLSL errors or invalid geometry vertices.",
+    "mobilePlay": "29 BU destinations, touch movement, HD opt-in, save persistence, low-quality reload and viewport fit passed.",
+    "mobileBudget": "Touch Chromium: JS heap peak 79.36 MiB, backing storage peak 71.76 MiB; no desktop MIT/detail GLBs requested. This is not a physical iPhone test.",
+    "comparisonReport": "6 image pairs, comparison slider and 390px layout passed."
+  },
+  "artifacts": {
+    "comparison": "output/bu-implementation-20261018/review.html",
+    "baseline": "output/bu-implementation-20261018/baseline/visual-report.json",
+    "result": "output/bu-implementation-20261018/result/visual-report.json",
+    "mobilePlay": "output/bu-full-campus/local-mobile/report.json",
+    "mobileBudget": "output/mobile-budget/local/report.json"
+  }
+}

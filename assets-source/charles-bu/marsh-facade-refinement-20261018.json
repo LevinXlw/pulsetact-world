@@ -1,0 +1,29 @@
+{
+  "updated": "2026-10-18",
+  "scope": "Marsh entrance and plaza-facing low connecting-wing facade detail; no footprint, source terrain or campus expansion changes",
+  "primaryReference": {
+    "url": "https://www.bu.edu/articles/2025/photo-gallery-marsh-chapels-history/",
+    "image": "https://www.bu.edu/files/2025/09/25-1376-STOCK-006-feat.jpg",
+    "localImage": "output/marsh-2025-reference.jpg",
+    "authority": "Boston University Photography / BU Today, 2025",
+    "observations": [
+      "The large central pointed arch encloses a broad pale stone niche, with three substantially narrower dark lancets and smaller lower lights.",
+      "Two pointed door portals contain paired metal-framed doors. The two doors share a raised entrance stair with a central rail and solid stone side cheeks.",
+      "The front pinnacles have stepped stone profiles; the gable has a continuous shallow decorative band. Detailed heraldic sculpture is not resolved by this model."
+    ]
+  },
+  "changes": [
+    "Replace the former full-width dark main-window field with an actual pierced inner stone niche and narrower three-light dark glazing. Keep the outer arch and fitted nave envelope.",
+    "Use a non-emissive, rough, non-metallic stained-glass finish locally, rather than the common blue reflective campus-glass treatment.",
+    "Model the paired entrance door frames and recessed panels; retain both existing portal apertures and threshold elevations.",
+    "Add flush step-front nosings, round central rails and stone side-cheek infill. Retain the eight existing 15 cm walking treads and the shared DEM apron.",
+    "Replace only plaza-facing low connector exterior wall triangles with perforated masonry and 26 cm recessed panes. Keep the original GIS collision ring, caps, other elevations and attached CAS boundary.",
+    "Use the shared granite paving style for the existing rose-coloured plaza finish. Its exact slab pattern remains an authored interpretation."
+  ],
+  "limits": [
+    "Facade dimensions, fine tracery, door joinery and finial profiles are interpreted from one frontal photograph, not architectural survey measurements.",
+    "The v3 generated near-detail board supplies only a construction-quality target; it is not used as evidence of BU dimensions or ornament.",
+    "The existing window positions on STH/CAS and the low connector wings remain procedural. Only the visible depth hierarchy of the plaza-facing connector openings is changed.",
+    "No heraldic emblems, doorway sculpture, readable inscriptions or interiors are invented. Public navigation and the source DEM are unchanged."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "questrom-full",
+  "units": "metres",
+  "toWorld": [
+    0.9895059058723947,
+    0,
+    0.1444924297105264,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -0.1444924297105264,
+    0,
+    0.9895059058723947,
+    0,
+    -627.4573827557324,
+    5.035234103047126,
+    1062.433554652147,
+    1
+  ],
+  "frame": {
+    "anchor": [
+      -627.4573827557324,
+      5.035234103047126,
+      1062.433554652147
+    ],
+    "yaw": -0.145
+  },
+  "bounds": {
+    "min": [
+      -47.999996185302734,
+      -1.7338167428970337,
+      -20.319957733154297
+    ],
+    "max": [
+      56.00003433227539,
+      50.51000213623047,
+      37.00005340576172
+    ]
+  },
+  "bytes": 5334840,
+  "sha256": "726a01703bb5ef59f641d0720a88b63a1d4a6bf2b8c8e349468e040d3296b22f",
+  "triangles": 44262,
+  "meshes": [
+    {
+      "name": "BU architecture · inset",
+      "finish": "inset",
+      "ground": false,
+      "triangles": 2080
+    },
+    {
+      "name": "BU architecture · stone",
+      "finish": "stone",
+      "ground": false,
+      "triangles": 7690
+    },
+    {
+      "name": "BU architecture · roof",
+      "finish": "roof",
+      "ground": false,
+      "triangles": 72
+    },
+    {
+      "name": "BU architecture · trim",
+      "finish": "trim",
+      "ground": false,
+      "triangles": 6756
+    },
+    {
+      "name": "BU architecture · glass",
+      "finish": "glass",
+      "ground": false,
+      "triangles": 812
+    },
+    {
+      "name": "BU architecture · glassLight",
+      "finish": "glassLight",
+      "ground": false,
+      "triangles": 218
+    },
+    {
+      "name": "BU architecture · frame",
+      "finish": "frame",
+      "ground": false,
+      "triangles": 16616
+    },
+    {
+      "name": "BU architecture · glassShade",
+      "finish": "glassShade",
+      "ground": false,
+      "triangles": 1010
+    },
+    {
+      "name": "BU architecture · brick",
+      "finish": "brick",
+      "ground": false,
+      "triangles": 8280
+    },
+    {
+      "name": "BU architecture · wood",
+      "finish": "wood",
+      "ground": false,
+      "triangles": 24
+    },
+    {
+      "name": "BU ground · paving",
+      "finish": "paving",
+      "ground": true,
+      "triangles": 364
+    },
+    {
+      "name": "BU ground · stone",
+      "finish": "stone",
+      "ground": true,
+      "triangles": 220
+    },
+    {
+      "name": "BU ground · brickLight",
+      "finish": "brickLight",
+      "ground": true,
+      "triangles": 98
+    },
+    {
+      "name": "BU ground · inset",
+      "finish": "inset",
+      "ground": true,
+      "triangles": 22
+    }
+  ],
+  "collision": {
+    "ground": 4,
+    "walls": 4
+  },
+  "note": "Complete explicitly owned Questrom exterior: stepped masonry wings, roof, glass entrance slot, canopy, draped entry paving and terrain foundation skirts. Local origin is the original Questrom anchor and rigid base; horizontal frame is yaw -0.145, with no crop or additional translation. Runtime canvas inscription is deliberately excluded and remains a separate scene extra. Existing windows and dimensions are authored approximations, not an architectural survey."
+}

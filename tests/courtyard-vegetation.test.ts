@@ -47,6 +47,9 @@ it('keeps detailed vegetation out of collision and preserves layout when quality
   const stats = vegetation.userData.stats;
   expect(stats.trees).toBe(manifest.trees.length);
   expect(stats.leafCards).toBeLessThan(55000);
+  // Denser crowns must stay below the previous 371k-triangle leaf budget.
+  // This protects the full layout, even when every near LOD is visible.
+  expect(stats.leafTriangles).toBeLessThan(230000);
   expect(stats.grassClumps).toBeGreaterThan(100);
   expect(stats.grassClumps).toBeLessThan(400);
   expect(vegetation.userData.bounds.isEmpty()).toBe(false);

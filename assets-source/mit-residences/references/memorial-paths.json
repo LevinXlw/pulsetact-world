@@ -1,0 +1,532 @@
+{
+  "createdAt": "2026-10-23",
+  "purpose": "Memorial Drive corridor and campus-side walking connections from Maseeh to Baker; engineering reference, no runtime changes.",
+  "coordinateSystem": {
+    "axes": "XZ metres; X east positive, Z south positive; Y deliberately omitted",
+    "crs": "EPSG:2249, NAD83 Massachusetts Mainland US survey feet",
+    "originStatePlaneFeet": [
+      766425.8129794697,
+      2956167.074144031
+    ],
+    "metresPerUSSurveyFoot": 0.3048006096012192,
+    "sourceObjOffsetFeet": [
+      731100,
+      2902900
+    ],
+    "formulas": {
+      "x": "(stateplane_easting - 766425.8129794697) * 1200/3937",
+      "z": "-(stateplane_northing - 2956167.074144031) * 1200/3937",
+      "pixelToStateplane": "JGW [A,D,B,E,C,F]: easting=A*column+B*row+C; northing=D*column+E*row+F. C/F locate pixel centre; no OBJ offset is applied to JGW coordinates."
+    },
+    "projectionSource": "output/design/mit-20261021/campus-points.json"
+  },
+  "sourceFiles": [
+    "assets-source/cambridge-gis/mit/F4/CAMB3D_F-4_2025_GISGroundplan_JPG.zip",
+    "assets-source/cambridge-gis/mit/G4/CAMB3D_G-4_2025_GISGroundplan_JPG.zip",
+    "assets-source/cambridge-gis/mit/F4/CAMB3D_F-4_2025_OrthoPhoto_JPG.zip",
+    "assets-source/cambridge-gis/mit/G4/CAMB3D_G-4_2025_OrthoPhoto_JPG.zip"
+  ],
+  "sourceJgw": {
+    "F4Groundplan": [
+      0.4999999842494726,
+      0,
+      0,
+      -0.4999999842494726,
+      761100.2500393013,
+      2957899.7501398106
+    ],
+    "G4Groundplan": [
+      0.5000000170588493,
+      0,
+      0,
+      -0.5000000170588493,
+      766100.2498818125,
+      2957899.7501397943
+    ],
+    "F4Ortho": [
+      0.5714285534279687,
+      0,
+      0,
+      -0.5714285534279687,
+      761100.285753586,
+      2957899.714425526
+    ],
+    "G4Ortho": [
+      0.5714285909243992,
+      0,
+      0,
+      -0.5714285909243992,
+      766100.2855960994,
+      2957899.714425507
+    ]
+  },
+  "accuracy": {
+    "horizontal": "Approximately 1–2 m visual centreline tracing against registered map pixels; not engineering survey.",
+    "width": "Approximate usable strip widths, inferred from GIS curbs; intersections and flare widths require local widening.",
+    "height": "No heights inferred from raster. Runtime must sample appropriate ground; Mass Ave mainline underpass must not be flattened onto surface-street height."
+  },
+  "paths": [
+    {
+      "id": "memorial-campus-side-main-carriageway",
+      "kind": "road",
+      "approximateWidthM": 9.5,
+      "laneCount": 2,
+      "pointsXZ": [
+        [
+          -360,
+          336
+        ],
+        [
+          -340,
+          327
+        ],
+        [
+          -320,
+          318
+        ],
+        [
+          -300,
+          309.8
+        ],
+        [
+          -280,
+          300.6
+        ],
+        [
+          -260,
+          291.3
+        ],
+        [
+          -240,
+          281.6
+        ],
+        [
+          -220,
+          273.6
+        ],
+        [
+          -200,
+          268.5
+        ],
+        [
+          -180,
+          263.3
+        ],
+        [
+          -160,
+          256.8
+        ],
+        [
+          -140,
+          247.7
+        ],
+        [
+          -120,
+          238.8
+        ],
+        [
+          -100,
+          229.8
+        ],
+        [
+          -80,
+          220.5
+        ]
+      ],
+      "confidence": "high corridor, approximate centreline",
+      "notes": "Two-lane northern/campus-side main carriageway. Keep separate from the street-level access ramp near Mass Ave."
+    },
+    {
+      "id": "memorial-river-side-main-carriageway",
+      "kind": "road",
+      "approximateWidthM": 9.5,
+      "laneCount": 2,
+      "pointsXZ": [
+        [
+          -360,
+          371
+        ],
+        [
+          -340,
+          362
+        ],
+        [
+          -320,
+          353
+        ],
+        [
+          -300,
+          344
+        ],
+        [
+          -280,
+          335
+        ],
+        [
+          -260,
+          326
+        ],
+        [
+          -240,
+          317
+        ],
+        [
+          -220,
+          307.8
+        ],
+        [
+          -200,
+          297.5
+        ],
+        [
+          -180,
+          285.5
+        ],
+        [
+          -160,
+          272.5
+        ],
+        [
+          -140,
+          261.5
+        ],
+        [
+          -120,
+          252.5
+        ],
+        [
+          -100,
+          243.5
+        ],
+        [
+          -80,
+          234.7
+        ]
+      ],
+      "confidence": "high corridor, approximate centreline",
+      "notes": "Southern/riverside main carriageway. Remains on land. A separate narrow river-edge surface lane branches eastward near Mass Ave; not included in this requested mainline trace."
+    },
+    {
+      "id": "memorial-campus-side-surface-ramp",
+      "kind": "road",
+      "approximateWidthM": 4,
+      "laneCount": 1,
+      "pointsXZ": [
+        [
+          -220,
+          265.5
+        ],
+        [
+          -200,
+          257.7
+        ],
+        [
+          -180,
+          249.1
+        ],
+        [
+          -160,
+          240.2
+        ],
+        [
+          -140,
+          231.2
+        ],
+        [
+          -120,
+          222.1
+        ],
+        [
+          -100,
+          213
+        ],
+        [
+          -80,
+          203.9
+        ],
+        [
+          -68,
+          198.5
+        ]
+      ],
+      "confidence": "high corridor, approximate centreline",
+      "notes": "Narrow street-level branch adjoining the campus sidewalk as main Memorial lanes descend toward the Mass Ave underpass. Do not draw a solid paved band across the median/gore."
+    },
+    {
+      "id": "campus-sidewalk-baker-to-danforth",
+      "kind": "sidewalk",
+      "approximateWidthM": 3.2,
+      "pointsXZ": [
+        [
+          -350,
+          321.7
+        ],
+        [
+          -325,
+          310.6
+        ],
+        [
+          -300,
+          299
+        ],
+        [
+          -275,
+          287.8
+        ],
+        [
+          -250,
+          275.8
+        ],
+        [
+          -240,
+          271.1
+        ],
+        [
+          -235,
+          269
+        ],
+        [
+          -232,
+          267.6
+        ],
+        [
+          -230,
+          266.4
+        ]
+      ],
+      "confidence": "high",
+      "notes": "White GIS sidewalk, independently checked against the 2025 orthophoto."
+    },
+    {
+      "id": "danforth-crosswalk",
+      "kind": "crosswalk",
+      "approximateWidthM": 3,
+      "pointsXZ": [
+        [
+          -230,
+          266.4
+        ],
+        [
+          -220,
+          262
+        ]
+      ],
+      "confidence": "high",
+      "notes": "Actual zebra crosswalk across Danforth Street at Memorial. This segment crosses a road; it is not raised sidewalk."
+    },
+    {
+      "id": "campus-sidewalk-danforth-to-maseeh",
+      "kind": "sidewalk",
+      "approximateWidthM": 3.2,
+      "pointsXZ": [
+        [
+          -220,
+          262
+        ],
+        [
+          -218,
+          261.2
+        ],
+        [
+          -210,
+          257.6
+        ],
+        [
+          -190,
+          249
+        ],
+        [
+          -170,
+          239.9
+        ],
+        [
+          -150,
+          230.7
+        ],
+        [
+          -130,
+          221.6
+        ],
+        [
+          -110,
+          212.3
+        ],
+        [
+          -90,
+          202.9
+        ],
+        [
+          -75,
+          196.1
+        ]
+      ],
+      "confidence": "high",
+      "notes": "Separate from the carriageway by the mapped planting/utility strip toward Maseeh."
+    },
+    {
+      "id": "maseeh-river-court-to-campus-sidewalk",
+      "kind": "courtyard-walk",
+      "approximateWidthM": 2.4,
+      "pointsXZ": [
+        [
+          -112.2,
+          171.6
+        ],
+        [
+          -112.4,
+          176.6
+        ],
+        [
+          -116.2,
+          181.8
+        ],
+        [
+          -116.2,
+          184
+        ],
+        [
+          -113.6,
+          190
+        ],
+        [
+          -109.5,
+          199.3
+        ],
+        [
+          -107.1,
+          205
+        ],
+        [
+          -106,
+          210.5
+        ]
+      ],
+      "confidence": "medium",
+      "notes": "Starts at authored safe exterior point, follows paved courtyard and path along the west/left edge of the front lawn to the Memorial sidewalk. Court steps/landings require terrain or authored step handling; do not level the whole route."
+    }
+  ],
+  "campusSidewalkCenterlineXZ": [
+    [
+      -350,
+      321.7
+    ],
+    [
+      -325,
+      310.6
+    ],
+    [
+      -300,
+      299
+    ],
+    [
+      -275,
+      287.8
+    ],
+    [
+      -250,
+      275.8
+    ],
+    [
+      -240,
+      271.1
+    ],
+    [
+      -235,
+      269
+    ],
+    [
+      -232,
+      267.6
+    ],
+    [
+      -230,
+      266.4
+    ],
+    [
+      -220,
+      262
+    ],
+    [
+      -218,
+      261.2
+    ],
+    [
+      -210,
+      257.6
+    ],
+    [
+      -190,
+      249
+    ],
+    [
+      -170,
+      239.9
+    ],
+    [
+      -150,
+      230.7
+    ],
+    [
+      -130,
+      221.6
+    ],
+    [
+      -110,
+      212.3
+    ],
+    [
+      -90,
+      202.9
+    ],
+    [
+      -75,
+      196.1
+    ]
+  ],
+  "recommendedViewingPoints": [
+    {
+      "id": "baker-south-wave-view",
+      "xz": [
+        -305,
+        301.3
+      ],
+      "lookTowardXZ": [
+        -305,
+        283
+      ],
+      "surface": "Confirmed campus-side sidewalk",
+      "notes": "No new paved link through the dining pavilion front lawn is claimed."
+    },
+    {
+      "id": "maseeh-river-front-view",
+      "xz": [
+        -106,
+        210.5
+      ],
+      "lookTowardXZ": [
+        -113,
+        176
+      ],
+      "surface": "Confirmed campus-side sidewalk",
+      "notes": "Outside the courtyard, between the building and the campus-side surface ramp."
+    }
+  ],
+  "omittedConnections": [
+    {
+      "id": "baker-dining-to-sidewalk",
+      "reason": "Orthophoto shows lawn/hedge between the dining pavilion perimeter and the sidewalk, without a clearly identifiable independent direct paved path. No fabricated connector supplied. Use the confirmed sidewalk viewing point."
+    }
+  ],
+  "validation": {
+    "mapCrop": "assets-source/mit-residences/references/memorial-paths-map.png",
+    "mapBoundsXZ": [
+      -390,
+      110,
+      -50,
+      385
+    ],
+    "northUp": true,
+    "checked": "JGW registration, F4/G4 seam, source OBJ-derived Baker/Maseeh anchors, campus sidewalk white-map pixels, Danforth zebra crossing, orthophoto courtyard paving, and all supplied lines remaining north of the river.",
+    "runtimeNotChanged": true
+  }
+}

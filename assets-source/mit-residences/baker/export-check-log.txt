@@ -1,0 +1,78 @@
+01:44:12 | INFO: Data are loaded, start creating Blender stuff
+01:44:12 | INFO: Blender create Mesh node Baker roof
+01:44:12 | INFO: Blender create Mesh node Baker brick
+01:44:12 | INFO: Blender create Mesh node Baker reveal
+01:44:12 | INFO: Blender create Mesh node Baker roomWarm
+01:44:12 | INFO: Blender create Mesh node Baker gasket
+01:44:12 | INFO: Blender create Mesh node Baker shadeDark
+01:44:12 | INFO: Blender create Mesh node Baker glassLight
+01:44:12 | INFO: Blender create Mesh node Baker frame
+01:44:12 | INFO: Blender create Mesh node Baker frameLip
+01:44:12 | INFO: Blender create Mesh node Baker stone
+01:44:12 | INFO: Blender create Mesh node Baker room
+01:44:12 | INFO: Blender create Mesh node Baker shade
+01:44:12 | INFO: Blender create Mesh node Baker glass
+01:44:12 | INFO: Blender create Mesh node Baker coping
+01:44:12 | INFO: Blender create Mesh node Baker tile
+01:44:12 | INFO: Blender create Mesh node Baker dark
+01:44:12 | INFO: Blender create Mesh node Baker door
+01:44:12 | INFO: Blender create Mesh node Baker north court ground paver
+01:44:12 | INFO: Blender create Mesh node Baker north court ground stone
+01:44:12 | INFO: Blender create Mesh node Baker north court ground soil
+01:44:12 | INFO: Blender create Mesh node Baker north court retaining wall brick
+01:44:12 | INFO: Blender create Mesh node Baker north court stair nosing coping
+01:44:12 | INFO: Blender create Mesh node Baker collision survey
+01:44:12 | INFO: glTF import finished in 0.18s
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Fra:1 Mem:35.49M (Peak 35.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Baker roof
+Fra:1 Mem:35.49M (Peak 35.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Baker frame
+Fra:1 Mem:35.50M (Peak 35.50M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Baker glass
+Fra:1 Mem:37.66M (Peak 37.66M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Baker door
+Fra:1 Mem:37.66M (Peak 37.66M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Inspection-only neutral ground
+Fra:1 Mem:56.95M (Peak 75.83M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:56.84M (Peak 75.83M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading court-normal-512
+Fra:1 Mem:56.84M (Peak 75.83M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading court-color-512
+Fra:1 Mem:70.18M (Peak 75.87M) | Time:00:00.05 | Mem:15.00M, Peak:15.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:70.18M (Peak 75.87M) | Time:00:00.05 | Mem:15.00M, Peak:15.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:70.18M (Peak 75.87M) | Time:00:00.05 | Mem:15.00M, Peak:15.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:70.18M (Peak 75.87M) | Time:00:00.05 | Mem:15.00M, Peak:15.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.01M, Peak:15.01M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:70.28M (Peak 75.87M) | Time:00:00.05 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:70.65M (Peak 75.87M) | Time:00:00.06 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:70.65M (Peak 75.87M) | Time:00:00.06 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:74.75M (Peak 75.87M) | Time:00:00.06 | Mem:15.02M, Peak:15.02M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:74.74M (Peak 75.87M) | Time:00:00.06 | Mem:19.11M, Peak:19.11M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:74.74M (Peak 75.87M) | Time:00:00.06 | Mem:19.11M, Peak:19.11M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:74.74M (Peak 75.87M) | Time:00:00.06 | Mem:22.46M, Peak:22.46M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:74.74M (Peak 75.87M) | Time:00:00.06 | Mem:26.11M, Peak:29.46M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:74.74M (Peak 75.87M) | Time:00:00.06 | Mem:26.11M, Peak:29.46M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:26.11M, Peak:29.46M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.08M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.08M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.08M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.08M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.08M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.08M, Peak:35.16M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:83.71M (Peak 83.71M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:83.72M (Peak 83.72M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:83.72M (Peak 83.72M) | Time:00:00.06 | Mem:35.16M, Peak:35.16M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:200.10M (Peak 200.10M) | Time:00:00.31 | Remaining:00:11.53 | Mem:151.14M, Peak:151.14M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:248.93M (Peak 322.18M) | Time:00:10.39 | Mem:151.14M, Peak:151.14M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:248.93M (Peak 322.18M) | Time:00:10.39 | Mem:151.14M, Peak:151.14M | Scene, ViewLayer | Finished
+Saved: 'C:\Users\xieli\Desktop\projects\pulsetact-world\assets-source\mit-residences\baker\exported-north-court.png'
+Time: 00:10.60 (Saving: 00:00.20)
+
+
+Blender quit

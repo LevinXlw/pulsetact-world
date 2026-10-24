@@ -1,0 +1,58 @@
+{
+  "reviewed": "2026-10-24",
+  "scope": "Existing five BU Green Line B platforms and Commonwealth median. Architectural scenery, not live MBTA arrivals or a reconstruction of temporary works.",
+  "sources": [
+    {
+      "url": "https://www.masbuildingandbridge.com/mbta-green-line-b-branch-station-consolidation",
+      "publisher": "MAS Building & Bridge, project contractor",
+      "supports": "Four 225-foot low-level platforms and 150-foot steel canopies, accessible walks, signage, benches and lighting. These lengths were already represented and are unchanged."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2021/new-t-stops-now-open-along-west-campus/",
+      "image": "https://www.bu.edu/files/2021/11/21-1569-TSTOP-018-feat-1600x1200.jpg",
+      "localReference": "output/bu-comm-ave-20261024/references/amory-bu-opening-2021.jpg",
+      "publisher": "Boston University / Cydney Scott",
+      "supports": "Amory and Babcock replaced the previous four-stop arrangement in November 2021. Inspected opening photo: white curved canopy ribs, pale structural posts on concrete bases, long yellow tactile edge, rusty rail sides and overhead contact-wire/support infrastructure."
+    },
+    {
+      "url": "https://www.bu.edu/summer/high-school-programs/admitted-students/what-to-bring/",
+      "image": "https://www.bu.edu/summer/files/2024/11/what-to-bring-2024-hero-1200x500.jpg",
+      "localReference": "output/bu-comm-ave-20261024/references/amory-bu-summer-2024.jpg",
+      "publisher": "Boston University Summer Term",
+      "supports": "Inspected pedestrian-height Amory photograph: repeated white ribs, narrow weather cover, timber slat benches, transparent/blue/green panel families, platform paving and fine stone ballast."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2023/celebrating-mlk-on-boston-common/",
+      "image": "https://www.bu.edu/files/2021/11/feat-21-1308-DUSK-069.jpg",
+      "localReference": "output/bu-comm-ave-20261024/references/central-bu-dusk-2021.jpg",
+      "publisher": "Boston University",
+      "supports": "Inspected elevated Central photograph: short shallow-wave metal shelter roofs, dark red structural frame and subdivided glass backs. Distinct from the continuous white Amory/Babcock structures."
+    },
+    {
+      "url": "https://www.buacademy.org/admission/",
+      "image": "https://www.buacademy.org/files/2024/07/BUA-Marketing-Fall-2023-7819-2048x1366.jpg",
+      "localReference": "output/bu-comm-ave-20261024/references/central-bu-academy-2023.jpg",
+      "publisher": "Boston University Academy",
+      "supports": "Inspected standing-height Central photograph: green upper station name band, white lower route band and dark frame. The former 5.2m all-green floating plate was not a plausible equivalent."
+    }
+  ],
+  "retained": "All five existing source stop positions, shared platform dimensions and access ramps, median axes, 1.435m gauge, terrain, track head +0.192m, travel paths and all ground/wall collision remain. Existing runtime contact wires remain the sole wire geometry.",
+  "implementation": {
+    "singleOwner": "createBUTransitDetail({mobile}) is called only by bu-green-line runtime. The street constructor supplies platform surfaces, ramps, rail profile, sleepers and ballast; no second shelter/nameplate remains there.",
+    "modern": "Thin curved weather shell, dense tapered ribs, white posts on concrete feet, framed translucent panes, restrained blue/green material fields and wooden slat benches. Exact public artwork is not reproduced.",
+    "older": "Retain short shelter category at East/Central/Blandford, with red frame and shallow-wave metal roof; Central photos establish the family, not a complete current survey of each old stop.",
+    "rail": "Separate polished head and oxidised web/foot. Sleeper tops lowered from +0.152m to +0.107m to meet the foot instead of engulfing the web; ballast +0.073m and rail heads +0.192m unchanged. These are visual details, not additional walkable rails.",
+    "surfaces": "Procedural world-metre stone color/normal relief and tactile domes; no texture request or added collision displacement. Tactile strip width is a photo estimate of 0.55m inside the existing platform; upper walking height remains +0.199m.",
+    "mobile": "Same platform/roof outline and posts, fewer intermediate ribs/curve segments and one bench per modern platform. No baked texture payload. Station groups are merged by material; transparent screens remain separately sortable per platform."
+  },
+  "estimatedNotSurveyed": [
+    "Canopy rise, rib shape/pitch, support spacing, frame sections, concrete bases, bench construction and panel placement.",
+    "Station nameplate 2.15m by 0.46m and font; route band intentionally says only GREEN LINE B rather than claiming live destinations.",
+    "Track section, sleeper exposure, ballast stone size and tactile dome details. They are not construction dimensions or accessibility compliance claims.",
+    "Modern windscreen color fields represent material families, not the original artwork or exact panel inventory."
+  ],
+  "remainingGaps": [
+    "Full intertrack and road-side safety fencing, electronic arrival signs, complete electrical fittings and every platform furnishing are not yet reconstructed.",
+    "No new MBTA surveyed shelter dimensions were obtained. These referenced, bounded architectural improvements are not a claim of complete station fidelity."
+  ]
+}

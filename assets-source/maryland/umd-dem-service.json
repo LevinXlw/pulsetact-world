@@ -1,0 +1,311 @@
+{
+  "currentVersion": 11.3,
+  "serviceDescription": "The lidar project called for the Planning, Acquisition, processing and derivative products of lidar data to be collected at a nominal pulse spacing (NPS) of 0.35 meters. Project specifications are based on the U.S. Geological Survey National Geospatial Program Base Lidar Specification, Version 2.1. The data was developed based on a horizontal projection/datum of NAD83 (HARN), State Plane, Feet and vertical datum of NAVD88 (GEOID12B), Feet. Lidar data was delivered as processed Classified LAS 1.4 files, formatted to 1374 individual 6000 ft x 4000 ft tiles, as tiled intensity rasters, and as tiled bare-earth DEMs; all tiled to the same 6000 ft x 4000 ft schema. Ground Conditions: Lidar was collected in late 2020 to early 2021, while no snow was on the ground and rivers were at or below normal levels. In order to post process the lidar data to meet task order specifications and meet ASPRS vertical accuracy guidelines, Sanborn Map Company, Inc., utilized a total of 10 ground control points that were used to calibrate the lidar to known ground locations established throughout the project area. An additional 120 independent accuracy check points, 120 in Bare Earth and Urban landcovers (120 NVA points), were used to assess the vertical accuracy of the data. These check points were not used to calibrate or post process the data.",
+  "name": "PrinceGeorges/MD_princegeorges_dem_m",
+  "description": "The lidar project called for the Planning, Acquisition, processing and derivative products of lidar data to be collected at a nominal pulse spacing (NPS) of 0.35 meters. Project specifications are based on the U.S. Geological Survey National Geospatial Program Base Lidar Specification, Version 2.1. The data was developed based on a horizontal projection/datum of NAD83 (HARN), State Plane, Feet and vertical datum of NAVD88 (GEOID12B), Feet. Lidar data was delivered as processed Classified LAS 1.4 files, formatted to 1374 individual 6000 ft x 4000 ft tiles, as tiled intensity rasters, and as tiled bare-earth DEMs; all tiled to the same 6000 ft x 4000 ft schema. Ground Conditions: Lidar was collected in late 2020 to early 2021, while no snow was on the ground and rivers were at or below normal levels. In order to post process the lidar data to meet task order specifications and meet ASPRS vertical accuracy guidelines, Sanborn Map Company, Inc., utilized a total of 10 ground control points that were used to calibrate the lidar to known ground locations established throughout the project area. An additional 120 independent accuracy check points, 120 in Bare Earth and Urban landcovers (120 NVA points), were used to assess the vertical accuracy of the data. These check points were not used to calibrate or post process the data.",
+  "extent": {
+    "xmin": 1288413,
+    "ymin": 316125,
+    "xmax": 1409064,
+    "ymax": 533460,
+    "spatialReference": {
+      "wkid": 2893,
+      "latestWkid": 2893,
+      "vcsWkid": 105703,
+      "latestVcsWkid": 6360
+    }
+  },
+  "initialExtent": {
+    "xmin": 1288413,
+    "ymin": 316125,
+    "xmax": 1409064,
+    "ymax": 533460,
+    "spatialReference": {
+      "wkid": 2893,
+      "latestWkid": 2893,
+      "vcsWkid": 105703,
+      "latestVcsWkid": 6360
+    }
+  },
+  "fullExtent": {
+    "xmin": 1288413,
+    "ymin": 316125,
+    "xmax": 1409064,
+    "ymax": 533460,
+    "spatialReference": {
+      "wkid": 2893,
+      "latestWkid": 2893,
+      "vcsWkid": 105703,
+      "latestVcsWkid": 6360
+    }
+  },
+  "sortableFields": "MinPS,MaxPS,LowPS,HighPS,CenterX,CenterY,ZOrder,Shape_Length,Shape_Area",
+  "heightModelInfo": {
+    "heightModel": "gravity_related_height",
+    "vertCRS": "NAVD88_height_(ftUS)",
+    "heightUnit": "us-foot"
+  },
+  "bandCount": 1,
+  "pixelType": "F32",
+  "minValues": [
+    -0.40325039625167847
+  ],
+  "maxValues": [
+    144.10487365722656
+  ],
+  "meanValues": [
+    44.520486379944046
+  ],
+  "stdvValues": [
+    23.27251423204781
+  ],
+  "hasMultidimensions": false,
+  "pixelSizeX": 1,
+  "pixelSizeY": 1,
+  "meanPixelSize": 0.30480060960121924,
+  "datasetFormat": "AMD",
+  "uncompressedSize": 104886740340,
+  "blockWidth": 2048,
+  "blockHeight": 256,
+  "compressionType": "None",
+  "bandNames": [
+    "Band_1"
+  ],
+  "allowCopy": true,
+  "allowAnalysis": true,
+  "itemAccess": false,
+  "inspectionCapabilities": "",
+  "minPixelSize": 0,
+  "maxPixelSize": 0,
+  "copyrightText": "",
+  "serviceDataType": "esriImageServiceDataTypeGeneric",
+  "serviceSourceType": "esriImageServiceSourceTypeMosaicDataset",
+  "objectIdField": "OBJECTID",
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "domain": null
+    },
+    {
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry",
+      "alias": "Shape",
+      "domain": null
+    },
+    {
+      "name": "Name",
+      "type": "esriFieldTypeString",
+      "alias": "Name",
+      "domain": null,
+      "length": 200
+    },
+    {
+      "name": "MinPS",
+      "type": "esriFieldTypeDouble",
+      "alias": "MinPS",
+      "domain": null
+    },
+    {
+      "name": "MaxPS",
+      "type": "esriFieldTypeDouble",
+      "alias": "MaxPS",
+      "domain": null
+    },
+    {
+      "name": "LowPS",
+      "type": "esriFieldTypeDouble",
+      "alias": "LowPS",
+      "domain": null
+    },
+    {
+      "name": "HighPS",
+      "type": "esriFieldTypeDouble",
+      "alias": "HighPS",
+      "domain": null
+    },
+    {
+      "name": "Category",
+      "type": "esriFieldTypeInteger",
+      "alias": "Category",
+      "domain": {
+        "type": "codedValue",
+        "name": "MosaicCatalogItemCategoryDomain",
+        "description": "Catalog item categories.",
+        "codedValues": [
+          {
+            "name": "Unknown",
+            "code": 0
+          },
+          {
+            "name": "Primary",
+            "code": 1
+          },
+          {
+            "name": "Overview",
+            "code": 2
+          },
+          {
+            "name": "Unprocessed Overview",
+            "code": 3
+          },
+          {
+            "name": "Partial Overview",
+            "code": 4
+          },
+          {
+            "name": "Inactive",
+            "code": 5
+          },
+          {
+            "name": "Uploaded",
+            "code": 253
+          },
+          {
+            "name": "Incomplete",
+            "code": 254
+          },
+          {
+            "name": "Custom",
+            "code": 255
+          }
+        ],
+        "mergePolicy": "esriMPTDefaultValue",
+        "splitPolicy": "esriSPTDefaultValue"
+      }
+    },
+    {
+      "name": "Tag",
+      "type": "esriFieldTypeString",
+      "alias": "Tag",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "GroupName",
+      "type": "esriFieldTypeString",
+      "alias": "GroupName",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "ProductName",
+      "type": "esriFieldTypeString",
+      "alias": "ProductName",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "CenterX",
+      "type": "esriFieldTypeDouble",
+      "alias": "CenterX",
+      "domain": null
+    },
+    {
+      "name": "CenterY",
+      "type": "esriFieldTypeDouble",
+      "alias": "CenterY",
+      "domain": null
+    },
+    {
+      "name": "ZOrder",
+      "type": "esriFieldTypeInteger",
+      "alias": "ZOrder",
+      "domain": null
+    },
+    {
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape_Length",
+      "domain": null
+    },
+    {
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape_Area",
+      "domain": null
+    }
+  ],
+  "capabilities": "Image,Metadata,Catalog",
+  "defaultMosaicMethod": "Northwest",
+  "allowedMosaicMethods": "NorthWest,Center,LockRaster,ByAttribute,Nadir,Viewpoint,Seamline,None",
+  "sortField": "",
+  "sortValue": null,
+  "sortAscending": true,
+  "mosaicOperator": "First",
+  "maxDownloadSizeLimit": 2048,
+  "defaultCompressionQuality": 75,
+  "defaultResamplingMethod": "Bilinear",
+  "maxImageHeight": 4100,
+  "maxImageWidth": 15000,
+  "maxRecordCount": 1000,
+  "maxDownloadImageCount": 20,
+  "maxMosaicImageCount": 20,
+  "allowRasterFunction": true,
+  "rasterFunctionInfos": [
+    {
+      "name": "None",
+      "description": "Make a Raster or Raster Dataset into a Function Raster Dataset.",
+      "help": ""
+    },
+    {
+      "name": "Aspect",
+      "description": "Shows which direction a pixel is facing, where 0 is due north and angles increase clockwise to 360.",
+      "help": ""
+    },
+    {
+      "name": "DEM_ft",
+      "description": "Reprojects raster to WKID 6488.",
+      "help": ""
+    },
+    {
+      "name": "Hillshade",
+      "description": "Creates a 3D representation of the surface, with the sun's relative position taken into account for shading the image.",
+      "help": ""
+    },
+    {
+      "name": "Shaded_Relief_RGB",
+      "description": "Creates a multiband, color coded, 3D representation of the surface, with the sun's relative position taken into account for shading the image.",
+      "help": ""
+    },
+    {
+      "name": "Slope (ft)",
+      "description": "Calculates the rate of change from one pixel value to its neighbors.",
+      "help": ""
+    }
+  ],
+  "rasterTypeInfos": [
+    {
+      "name": "Raster Dataset",
+      "description": "Supports all ArcGIS Raster Datasets",
+      "help": ""
+    }
+  ],
+  "mensurationCapabilities": "",
+  "hasHistograms": true,
+  "hasColormap": false,
+  "hasRasterAttributeTable": false,
+  "minScale": 0,
+  "maxScale": 0,
+  "exportTilesAllowed": false,
+  "supportsStatistics": true,
+  "supportsAdvancedQueries": true,
+  "editFieldsInfo": null,
+  "ownershipBasedAccessControlForRasters": null,
+  "allowComputeTiePoints": false,
+  "useStandardizedQueries": true,
+  "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true
+  },
+  "spatialReference": {
+    "wkid": 2893,
+    "latestWkid": 2893,
+    "vcsWkid": 105703,
+    "latestVcsWkid": 6360
+  }
+}

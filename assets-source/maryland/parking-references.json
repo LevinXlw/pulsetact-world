@@ -1,0 +1,18 @@
+{
+  "reviewed": "2026-10-15",
+  "scope": "Outdoor stylized parking structures. Campus GIS footprints are retained. Visible deck counts, dimensions, facade rhythm and ramp positions are authored approximations informed by public Facilities photographs, not surveyed construction models. No floor plans or access-controlled material used.",
+  "confirmedGarages": [
+    {"id":"179","name":"Union Lane Parking Garage","reference":"https://facilities.umd.edu/node/393","image":"https://facilities.umd.edu/sites/default/files/UMDBuildings/179.jpg","features":"Open decks, exposed concrete structure and red brick parapets; the official approach description places the Fieldhouse Drive entry downhill from STAMP."},
+    {"id":"202","name":"Regents Drive Parking Garage","reference":"https://facilities.umd.edu/node/400","image":"https://facilities.umd.edu/sites/default/files/styles/optimized/public/UMDBuildings/202.jpg?itok=7XkOWuT3","features":"Brick/concrete open parking bays, glazed stair enclosure; the model preserves the surveyed irregular perimeter but does not reproduce the circular ramp tower in detail."},
+    {"id":"218","name":"Stadium Drive Parking Garage","reference":"https://transportation.umd.edu/sites/default/files/2024-10/Basketball%20Parking%20Map.pdf","features":"Distinctive crescent-shaped footprint from official Facilities rooflines; slab and parapet geometry follow this shape rather than an enclosing rectangle."},
+    {"id":"403","name":"Terrapin Trail Parking Garage","reference":"https://transportation.umd.edu/sites/default/files/2024-10/Basketball%20Parking%20Map.pdf","features":"Long open parking decks near XFINITY and the Wooded Hillock; exact facade details are approximate."},
+    {"id":"404","name":"Mowatt Lane Parking Garage","reference":"https://facilities.umd.edu/node/524","image":"https://facilities.umd.edu/sites/default/files/UMDBuildings/404.jpg","features":"Repeated open bays, brick piers and horizontal concrete floor edges; modeled as six parking levels including the rooftop, with authored floor-to-floor height."}
+  ],
+  "sources": [
+    {"url":"https://fellercenter.umd.edu/directions/union","supports":"Campus Drive climbs uphill to STAMP; Union Lane Garage vehicle entrance is on Fieldhouse Drive, followed by an uphill walk to STAMP."},
+    {"url":"https://transportation.umd.edu/sites/default/files/2024-10/Basketball%20Parking%20Map.pdf","supports":"Official named locations for all five campus garages."},
+    {"url":"https://facilities.umd.edu/services/fleet-services/locations-contacts","supports":"Regents Drive garage identity and ground floor Fleet Services office."},
+    {"url":"https://transportation.umd.edu/about-us/updates/union-lane-garage-partially-open-visitors-2018-09-19","supports":"Public exterior photograph and open rooftop parking at Union Lane."},
+    {"url":"https://api.drum.lib.umd.edu/server/api/core/bitstreams/a67fe57d-3351-4a6b-bd8a-c2ed2097562d/content","supports":"UMD-hosted architectural thesis describes Mowatt as six levels. This contextual source is not a current structural survey."}
+  ]
+}

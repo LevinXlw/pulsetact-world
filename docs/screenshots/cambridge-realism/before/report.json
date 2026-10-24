@@ -1,0 +1,499 @@
+{
+  "stage": "before",
+  "checkedAt": "2026-10-06T02:48:01.164Z",
+  "captures": [
+    {
+      "name": "entry",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 1.5773000001907354,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              50.87776478686983,
+              3.910632490095793,
+              51.53373508854543
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 1.5773000001907354,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          58.990905,
+          5.591477772161989,
+          65.301177
+        ],
+        "cameraGroundHeight": 3.9414777721619885,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 176,
+        "triangles": 2484136
+      }
+    },
+    {
+      "name": "people",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 0.5017000479698193,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              52.304454338637726,
+              3.9052036786539475,
+              50.87543308084203
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 2.801700000286103,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          60.88513124349854,
+          5.593470664024827,
+          59.13813619560016
+        ],
+        "cameraGroundHeight": 3.9257088940224776,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.7862976562140751,
+          -0.08289664630727607,
+          -0.6122614979428795
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 168,
+        "triangles": 2393224
+      }
+    },
+    {
+      "name": "facade",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 1.712600048065187,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              53.71541348453549,
+              3.8980585754365507,
+              50.22438938504921
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 4.01260000038147,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          -2.6774370999999952,
+          5.993107126946329,
+          34.2848127
+        ],
+        "cameraGroundHeight": 4.343107126946336,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.792160694734627,
+          0.3884134981080218,
+          -0.47076149821862356
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 118,
+        "triangles": 2065200
+      }
+    },
+    {
+      "name": "portico",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 0.6203000957965862,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.12264394157885,
+              3.894033178047607,
+              49.57506617803121
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 5.220300000429151,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          1.2390376000000032,
+          5.905543479364576,
+          -19.284402200000006
+        ],
+        "cameraGroundHeight": 4.255543479364576,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          0.46315250286567616,
+          0.2626269216759218,
+          -0.8464731886482224
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 140,
+        "triangles": 2221622
+      }
+    },
+    {
+      "name": "trees",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 1.8155000956058507,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              56.515309207723924,
+              3.890307326486891,
+              48.93246363031784
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 6.415500000238422,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          15.132259400000008,
+          6.0325080242351055,
+          37.080284199999994
+        ],
+        "cameraGroundHeight": 4.382508024235108,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.8786993486625745,
+          0.43863342335824795,
+          -0.18838305277543305
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 134,
+        "triangles": 2121690
+      }
+    },
+    {
+      "name": "low",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 1.49820014333725,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              58.815749320249935,
+              3.8836672413560223,
+              47.84921209234471
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 8.398200000286108,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "low",
+        "ambientOcclusion": false,
+        "presentation": true,
+        "cameraPosition": [
+          58.34831507284924,
+          5.589813956519288,
+          63.908539564388505
+        ],
+        "cameraGroundHeight": 3.939813956519288,
+        "fov": 48,
+        "position": [
+          58.34831507284924,
+          3.939813956519288,
+          63.908539564388505
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 56,
+        "triangles": 812160
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:5173/real/mit",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx?t=1791171462267",
+    "http://127.0.0.1:5173/@react-refresh",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/App.tsx?t=1791171462267",
+    "http://127.0.0.1:5173/src/styles.css",
+    "http://127.0.0.1:5173/src/services/webmcp.ts",
+    "http://127.0.0.1:5173/src/components/AppBoundary.tsx",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-YJYY6GXC.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-G3PMV62Z.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/domain.ts",
+    "http://127.0.0.1:5173/src/state/store.ts",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/lucide-react.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/content/campuses.ts",
+    "http://127.0.0.1:5173/src/content/dialogues.ts",
+    "http://127.0.0.1:5173/src/services/saveRepository.ts",
+    "http://127.0.0.1:5173/src/services/photoRepository.ts",
+    "http://127.0.0.1:5173/src/components/Modal.tsx",
+    "http://127.0.0.1:5173/src/features/Activities.tsx",
+    "http://127.0.0.1:5173/src/features/Journal.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/zustand.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-LZQLY3ZQ.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-3M4ZFO5U.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/zod.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-THUVLC43.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/features/real-campus/RealCampusPage.tsx?t=1791171462267",
+    "http://127.0.0.1:5173/favicon.svg",
+    "http://127.0.0.1:5173/src/features/real-campus/inspection.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/story-dialogues.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/local-data.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/real-campus.css",
+    "http://127.0.0.1:5173/src/features/real-campus/BuildingCoverage.tsx",
+    "http://127.0.0.1:5173/data/campuses/mit/manifest.json",
+    "http://127.0.0.1:5173/data/killian/detail-manifest.json",
+    "http://127.0.0.1:5173/data/killian/environment.json",
+    "http://127.0.0.1:5173/src/features/real-campus/LocalCampusScene.tsx?t=1791171462267",
+    "http://127.0.0.1:5173/src/features/real-campus/RealismEffects.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/@react-three_fiber.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_loaders_GLTFLoader__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_controls_OrbitControls__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/world/Character.tsx",
+    "http://127.0.0.1:5173/src/features/real-campus/RealisticPerson.tsx",
+    "http://127.0.0.1:5173/src/features/real-campus/CampusPeople.tsx?t=1791171462267",
+    "http://127.0.0.1:5173/src/features/real-campus/campus-people.ts?t=1791171462267",
+    "http://127.0.0.1:5173/src/features/real-campus/portico.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/killian-detail.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/traversal.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/campus-surfaces.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/environment.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/CampusSky.tsx",
+    "http://127.0.0.1:5173/src/features/real-campus/campus-collision.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/stroll-controls.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/courtyard-lighting.ts",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_postprocessing_EffectComposer__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_postprocessing_RenderPass__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_postprocessing_SSAOPass__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_postprocessing_OutputPass__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-VSIU4DYZ.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-JWBF4WSZ.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-JLMRXOOE.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-4K7CIPAZ.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/world/Buildings.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/three_examples_jsm_utils_SkeletonUtils__js.js?v=6d9451bd",
+    "http://127.0.0.1:5173/src/features/real-campus/local-assets.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/courtyard-vegetation.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/surface-finish.ts",
+    "http://127.0.0.1:5173/src/features/real-campus/portico-finish.ts",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-BCLAEBBY.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NY4Z4LNU.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-FGRCSUBR.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-IXPZ6VVB.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-XSXFUJAJ.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-64TQ7XSE.js?v=6d9451bd",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-Q5B56BVT.js?v=6d9451bd",
+    "http://127.0.0.1:5173/data/campuses/mit/campus.glb",
+    "blob:http://127.0.0.1:5173/2e040438-6038-4ee4-867c-e03408ef6b30",
+    "http://127.0.0.1:5173/data/killian/detail.glb.gz",
+    "http://127.0.0.1:5173/data/killian/leafy_grass-color.jpg",
+    "http://127.0.0.1:5173/data/killian/leafy_grass-normal.jpg",
+    "http://127.0.0.1:5173/data/killian/leafy_grass-roughness.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_wall_001-color.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_wall_001-normal.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_wall_001-roughness.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_pavement-color.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_pavement-normal.jpg",
+    "http://127.0.0.1:5173/data/killian/concrete_pavement-roughness.jpg",
+    "http://127.0.0.1:5173/assets/people/nathan.glb",
+    "http://127.0.0.1:5173/assets/people/sophia.glb",
+    "blob:http://127.0.0.1:5173/89e0fbba-972e-4d7b-b10b-9e8bd47f708b",
+    "blob:http://127.0.0.1:5173/3ca6c308-df3a-4208-8899-3e4d99bc5ab3",
+    "blob:http://127.0.0.1:5173/8707981a-aba2-4ad2-ad83-653b5e7505e6",
+    "blob:http://127.0.0.1:5173/247981c8-6875-44a4-8a75-d421c23f4429",
+    "blob:http://127.0.0.1:5173/16ad1a47-6662-42ee-9706-43011c1ed438",
+    "blob:http://127.0.0.1:5173/9e7c4815-0e20-40d2-af25-1db0e5f9c650"
+  ]
+}

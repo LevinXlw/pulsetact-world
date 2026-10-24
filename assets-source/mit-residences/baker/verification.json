@@ -1,0 +1,176 @@
+{
+  "full": {
+    "bytes": 7728244,
+    "triangles": 110085,
+    "drawCalls": 23,
+    "boundsMin": [
+      -351.1818542480469,
+      2.671339988708496,
+      234.64999389648438
+    ],
+    "boundsMax": [
+      -250.02232360839844,
+      26.514739990234375,
+      314.2944641113281
+    ],
+    "colliderExtras": {
+      "mitResidenceWall": true,
+      "mitResidenceCollisionOnly": true,
+      "mitResidence": "baker"
+    },
+    "groundMeshCount": 3,
+    "retainingWallMeshCount": 1,
+    "northCourtGroundProbes": [
+      {
+        "label": "Door landing",
+        "expectedY": 3.755696,
+        "actualY": 3.7556960582733154
+      },
+      {
+        "label": "Riser 1 from toe",
+        "expectedY": 3.305696,
+        "actualY": 3.3056960105895996
+      },
+      {
+        "label": "Riser 2 from toe",
+        "expectedY": 3.455696,
+        "actualY": 3.4556961059570312
+      },
+      {
+        "label": "Riser 3 from toe",
+        "expectedY": 3.605696,
+        "actualY": 3.605696201324463
+      },
+      {
+        "label": "Riser 4 from toe",
+        "expectedY": 3.755696,
+        "actualY": 3.7556960582733154
+      },
+      {
+        "label": "Paved approach d=4",
+        "expectedY": 3.110322,
+        "actualY": 3.1103218431552113
+      },
+      {
+        "label": "Paved approach d=8",
+        "expectedY": 3.080147,
+        "actualY": 3.080147417906182
+      },
+      {
+        "label": "Paved approach d=12",
+        "expectedY": 3.028346,
+        "actualY": 3.0283460953183976
+      },
+      {
+        "label": "long-bed-east soil",
+        "expectedY": 3.55,
+        "actualY": 3.549999952316284
+      },
+      {
+        "label": "long-bed-entry soil",
+        "expectedY": 3.55,
+        "actualY": 3.549999952316284
+      },
+      {
+        "label": "short-bed soil",
+        "expectedY": 3.58,
+        "actualY": 3.5799999237060547
+      },
+      {
+        "label": "central-tree-island soil",
+        "expectedY": 3.016618,
+        "actualY": 3.016618313150858
+      }
+    ],
+    "embeddedImageCount": 6,
+    "metadataMatchesBinary": true,
+    "quantizedNormalsAligned": true
+  },
+  "mobile": {
+    "bytes": 3165304,
+    "triangles": 53935,
+    "drawCalls": 20,
+    "boundsMin": [
+      -351.1818542480469,
+      2.671339988708496,
+      234.64999389648438
+    ],
+    "boundsMax": [
+      -250.02232360839844,
+      26.514739990234375,
+      314.2944641113281
+    ],
+    "colliderExtras": {
+      "mitResidenceWall": true,
+      "mitResidenceCollisionOnly": true,
+      "mitResidence": "baker"
+    },
+    "groundMeshCount": 3,
+    "retainingWallMeshCount": 1,
+    "northCourtGroundProbes": [
+      {
+        "label": "Door landing",
+        "expectedY": 3.755696,
+        "actualY": 3.7556960582733154
+      },
+      {
+        "label": "Riser 1 from toe",
+        "expectedY": 3.305696,
+        "actualY": 3.3056960105895996
+      },
+      {
+        "label": "Riser 2 from toe",
+        "expectedY": 3.455696,
+        "actualY": 3.4556961059570312
+      },
+      {
+        "label": "Riser 3 from toe",
+        "expectedY": 3.605696,
+        "actualY": 3.605696201324463
+      },
+      {
+        "label": "Riser 4 from toe",
+        "expectedY": 3.755696,
+        "actualY": 3.7556960582733154
+      },
+      {
+        "label": "Paved approach d=4",
+        "expectedY": 3.110322,
+        "actualY": 3.1103218431552113
+      },
+      {
+        "label": "Paved approach d=8",
+        "expectedY": 3.080147,
+        "actualY": 3.080147417906182
+      },
+      {
+        "label": "Paved approach d=12",
+        "expectedY": 3.028346,
+        "actualY": 3.0283460953183976
+      },
+      {
+        "label": "long-bed-east soil",
+        "expectedY": 3.55,
+        "actualY": 3.549999952316284
+      },
+      {
+        "label": "long-bed-entry soil",
+        "expectedY": 3.55,
+        "actualY": 3.549999952316284
+      },
+      {
+        "label": "short-bed soil",
+        "expectedY": 3.58,
+        "actualY": 3.5799999237060547
+      },
+      {
+        "label": "central-tree-island soil",
+        "expectedY": 3.016618,
+        "actualY": 3.016618313150858
+      }
+    ],
+    "embeddedImageCount": 6,
+    "metadataMatchesBinary": true,
+    "quantizedNormalsAligned": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "updated": "2026-10-17",
+  "scope": "Charles River Campus custom landmark exteriors; CDS and Marsh Plaza refinement",
+  "assetPolicy": "Original procedural meshes only. Reference PDF images are not embedded in runtime assets. Existing Questrom and Castle refinements are retained.",
+  "references": [
+    {"url": "https://www.structuremag.org/article/boston-university/", "author": "Nathan C. Roy, project structural engineer, LeMessurier", "evidence": "305-foot tower; 115-foot square typical floor plates; 23-foot structural bay offsets; east podium 70 by 170 feet; stacked two- or three-story neighborhoods."},
+    {"url": "https://www.bu.edu/cpo/files/2019/12/19.12.03_Student-Town-Hall-Slide-Deck-_v1.pdf", "author": "Boston University / KPMB Architects, 3 December 2019", "pages": [8,9,10,11,13], "evidence": "Landscape plan establishes the long east podium along Commonwealth Avenue, courtyard to its north, and covered public edge. Facade diagrams distinguish diagonal louvers from vertical sawtooth fins. Terrace diagram shows L7 west, L10 north, L12 east, L15 south and upper sky court."},
+    {"url": "https://www.bu.edu/articles/2022/bu-unveils-center-for-computing-data-sciences/", "evidence": "Completed center at 665 Commonwealth Avenue; 19 stories and 305 feet; opened December 2022."},
+    {"url": "https://www.greenengineer.com/case-study/bu-computing-data-sciences-center", "author": "Project sustainability consultant", "evidence": "As-built enclosure uses diagonal louvers and sawtooth shading fins, confirming this characteristic was retained beyond design drawings."},
+    {"url": "https://www.bu.edu/today/projects/marshchapel/", "evidence": "Marsh Plaza resurfaced in rose granite in 2001; Free at Last by Sergio Castillo depicts fifty doves in an upward arc; the unbuilt Bell tower must not be included."}
+  ],
+  "changes": [
+    "CDS arbitrary variable-size glass boxes replaced by a shared 35.052 m square plate and 7.0104 m structural shifts, retaining the documented 92.964 m maximum height.",
+    "Added the previously absent long eastern podium, recessed lower glazing, covered entrance edge, exterior shading fins, planted terrace strips, parapet rails and open upper court.",
+    "Added a lightweight map footprint matching the union of the two ground-level colliders, excluding overhead cantilevers; no Three.js imports in map data.",
+    "Marsh Plaza now has flush rose-granite paving and joints, plus an original simplified fifty-dove memorial silhouette and compact plinth collider clear of the arrival point."
+  ],
+  "accuracyLimits": [
+    "CDS location uses the existing georeferenced anchor. Precise floor heights, podium height, glazing divisions, fin spacing and court enclosure are authored approximations; structural dimensions and overall height are documented, not the entire reconstructed envelope.",
+    "The 2019 design PDF is not an as-built survey. The implementation follows its recognizable massing/facade character while preserving safe ground-level navigation; interiors, detailed structure and exact landscape planting are not reconstructed.",
+    "Free at Last is an interpretive low-poly silhouette, not a scanned or exact replica of the sculpture. Memorial placement and proportions are approximate.",
+    "Existing custom buildings remain on the 5.2 m scene datum; this refinement does not claim surveyed local elevation."
+  ],
+  "october17FacadeRefinement": {
+    "references": [
+      {"url": "https://www.bu.edu/articles/2025/photo-gallery-marsh-chapels-history/", "evidence": "2025 frontal exterior photo establishes two paired rectangular door sets inside pointed portals, triple narrow lancets, upper circular tracery, broad nested arch surround, shielded gable coping and central stair approach."},
+      {"url": "https://www.bu.edu/files/2025/09/25-1376-STOCK-006-feat.jpg", "use": "Reference inspection only; not a runtime texture."},
+      {"url": "https://www.bu.edu/files/2025/09/1-14-11-4375-BLUEPRINTS-011-vert-768x1024.jpg", "evidence": "Original Cram & Ferguson section supports the raised entrance/sanctuary and Gothic roof profile. Drawing is marked incomplete, not for construction; no surveyed dimensions are asserted from it."},
+      {"url": "https://www.bu.edu/files/2013/04/h_97-2661B-6.jpg", "evidence": "Questrom exterior photograph shows paired office windows, broad masonry piers between pairs and taller uppermost glazing."},
+      {"url": "https://www.bu.edu/online/files/2025/05/BUQ-externals-5712-2048x1365.jpg", "evidence": "Entrance stonework has projecting dressed bands and dark joints around glass doors; used for simplified shallow relief."}
+    ],
+    "changes": [
+      "Replaced the flat south nave face with an extruded wall containing real portal and window apertures. The previous three invented pointed wood doors are now two recessed pairs of paneled rectangular doors.",
+      "Added three dark lancets, nested reveals, simplified round tracery, fine pane divisions, gable coping and shallow shield panels.",
+      "Central stone stair has eight 0.15 m risers represented by actual ground meshes. The two side approaches and existing Marsh arrival remain at plaza level.",
+      "Questrom window centres now form pairs with broad brick piers; the ninth-floor glazing is taller. Added restrained upper shadow courses and shallow entrance stone relief.",
+      "Custom landmarks opt into the shared BU material profile using the 5.2 m base datum. Ground material depth layers use the shared neutral surface convention."
+    ],
+    "limits": "Detail dimensions, pane patterns, stair count, relief and shield designs are authored approximations. No sculptural figure, heraldic artwork, exact stained-glass composition or interior is copied. Existing building footprints and collision envelopes are preserved.",
+    "validation": "Four landmark tests and two lawn placement tests pass, including direct rays proving both portals are recessed, all eight stair risers have a 0.15 m rise, side approaches remain level, map/collision footprint alignment and arrival clearance. TypeScript passes. Browser capture is performed by the integrating agent."
+  },
+  "geometry": {"beforeTriangles": 69724, "october16Triangles": 88420, "afterTriangles": 92241, "visibleMergedMeshesBefore": 15, "visibleMergedMeshesAfter": 20, "invisibleCollisionMeshesBefore": 10, "invisibleCollisionMeshesAfter": 12, "notes": "Counts from Node SSR without browser-only Questrom canvas sign. October17 adds 3,821 triangles and no batches or collision proxies. No runtime texture download or new external GLB. Material batches remain shared."}
+}

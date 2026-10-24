@@ -1,0 +1,19 @@
+Sakurada Fumiriya / 桜田 史利矢
+Author: VRoid Project / pixiv Inc.
+
+The official character FAQ identifies this character as CC0:
+https://vroid.pixiv.help/hc/en-us/articles/360014788554-Sakurada-Fumiriya
+https://creativecommons.org/publicdomain/zero/1.0/
+
+This particular downloaded VRoid Hub version embeds licenseName "Other" and
+a model-specific Hub license permitting corporate and individual commercial
+use, modification, redistribution, and avatar use. Attribution is not required.
+Its original author and license fields remain embedded in sakurada.glb.
+The complete embedded conditions URL, metadata, source links and checksums are
+recorded in SOURCE.json. The metadata has not been relabeled as CC0.
+
+Added animations: Quaternius Universal Animation Library Standard, CC0.
+https://quaternius.com/packs/universalanimationlibrary.html
+
+This is a converted community-mirror copy of the official model, not a model
+downloaded directly through an authenticated VRoid Hub session.

@@ -1,0 +1,1148 @@
+{
+ "currentVersion": 11.3,
+ "cimVersion": "3.3.0",
+ "id": 30,
+ "name": "LandscapeCover",
+ "type": "Feature Layer",
+ "description": "Status:Contact:Intended Use:Supplemental Information:Fields: (7/5/11)OBJECTID:Shape:Shape_Length:Shape_Area:Type:Name:AssociatedSpaceNum:Over:Under:IsHistoric:UASiteID:EmergAccess:",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857,
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -20037700,
+  "falseY": -30241100,
+  "xyUnits": 10000,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "uniqueValue",
+   "field1": "Type",
+   "uniqueValueGroups": [
+    {
+     "heading": "Type",
+     "classes": [
+      {
+       "label": "Amenity Feature Water",
+       "description": "Amenity Feature Water",
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         220,
+         227,
+         232,
+         255
+        ],
+        "outline": null
+       },
+       "values": [
+        [
+         "23"
+        ]
+       ]
+      },
+      {
+       "label": "Pool Water",
+       "description": "Pool Water",
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         220,
+         227,
+         232,
+         255
+        ],
+        "outline": null
+       },
+       "values": [
+        [
+         "22"
+        ]
+       ]
+      },
+      {
+       "label": "Sand",
+       "description": "Sand",
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         240,
+         239,
+         227,
+         255
+        ],
+        "outline": null
+       },
+       "values": [
+        [
+         "8"
+        ]
+       ]
+      },
+      {
+       "label": "Turf Grass - Athletic Field",
+       "description": "Turf Grass - Athletic Field",
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         232,
+         235,
+         232,
+         255
+        ],
+        "outline": null
+       },
+       "values": [
+        [
+         "15"
+        ]
+       ]
+      },
+      {
+       "label": "Turf Grass: Artificial - Athletic Field",
+       "description": "Turf Grass: Artificial - Athletic Field",
+       "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+         232,
+         235,
+         232,
+         255
+        ],
+        "outline": null
+       },
+       "values": [
+        [
+         "16"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "uniqueValueInfos": [
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       227,
+       232,
+       255
+      ],
+      "outline": null
+     },
+     "value": "23",
+     "label": "Amenity Feature Water"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       220,
+       227,
+       232,
+       255
+      ],
+      "outline": null
+     },
+     "value": "22",
+     "label": "Pool Water"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       240,
+       239,
+       227,
+       255
+      ],
+      "outline": null
+     },
+     "value": "8",
+     "label": "Sand"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       232,
+       235,
+       232,
+       255
+      ],
+      "outline": null
+     },
+     "value": "15",
+     "label": "Turf Grass - Athletic Field"
+    },
+    {
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       232,
+       235,
+       232,
+       255
+      ],
+      "outline": null
+     },
+     "value": "16",
+     "label": "Turf Grass: Artificial - Athletic Field"
+    }
+   ],
+   "fieldDelimiter": ",",
+   "authoringInfo": {
+    "colorRamp": {
+     "type": "multipart",
+     "colorRamps": [
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        184,
+        118,
+        156,
+        255
+       ],
+       "toColor": [
+        184,
+        118,
+        156,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        108,
+        242,
+        85,
+        255
+       ],
+       "toColor": [
+        108,
+        242,
+        85,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        103,
+        245,
+        245,
+        255
+       ],
+       "toColor": [
+        103,
+        245,
+        245,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        222,
+        175,
+        89,
+        255
+       ],
+       "toColor": [
+        222,
+        175,
+        89,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        85,
+        95,
+        237,
+        255
+       ],
+       "toColor": [
+        85,
+        95,
+        237,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        62,
+        130,
+        75,
+        255
+       ],
+       "toColor": [
+        62,
+        130,
+        75,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        51,
+        105,
+        130,
+        255
+       ],
+       "toColor": [
+        51,
+        105,
+        130,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        242,
+        85,
+        98,
+        255
+       ],
+       "toColor": [
+        242,
+        85,
+        98,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        133,
+        105,
+        78,
+        255
+       ],
+       "toColor": [
+        133,
+        105,
+        78,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        140,
+        157,
+        245,
+        255
+       ],
+       "toColor": [
+        140,
+        157,
+        245,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        220,
+        89,
+        235,
+        255
+       ],
+       "toColor": [
+        220,
+        89,
+        235,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        205,
+        242,
+        160,
+        255
+       ],
+       "toColor": [
+        205,
+        242,
+        160,
+        255
+       ]
+      },
+      {
+       "type": "algorithmic",
+       "algorithm": "esriCIELabAlgorithm",
+       "fromColor": [
+        78,
+        55,
+        128,
+        255
+       ],
+       "toColor": [
+        78,
+        55,
+        128,
+        255
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -1.2475369096900001E7,
+  "ymin": 3706530.2184000015,
+  "xmax": -1.22723368547E7,
+  "ymax": 3955626.827699998,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857,
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -20037700,
+   "falseY": -30241100,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "Label",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "Shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "Type",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Type",
+   "domain": {
+    "type": "codedValue",
+    "name": "dmnLsCovTypeInt",
+    "description": "Coded value domain of landscape cover types.",
+    "codedValues": [
+     {
+      "name": "Landscaped",
+      "code": 1
+     },
+     {
+      "name": "Open Turf",
+      "code": 2
+     },
+     {
+      "name": "Turf with Landscape",
+      "code": 3
+     },
+     {
+      "name": "Open Gravel",
+      "code": 5
+     },
+     {
+      "name": "Open Soil",
+      "code": 6
+     },
+     {
+      "name": "Water",
+      "code": 7
+     },
+     {
+      "name": "Sand",
+      "code": 8
+     },
+     {
+      "name": "Unknown",
+      "code": 9
+     },
+     {
+      "name": "Annuals",
+      "code": 4
+     },
+     {
+      "name": "Vegetable Growing Beds",
+      "code": 10
+     },
+     {
+      "name": "Agricultural Field Crops",
+      "code": 11
+     },
+     {
+      "name": "Livestock Grazing",
+      "code": 12
+     },
+     {
+      "name": "Turf Grass",
+      "code": 13
+     },
+     {
+      "name": "Turf Grass: Artificial",
+      "code": 14
+     },
+     {
+      "name": "Turf Grass - Athletic Field",
+      "code": 15
+     },
+     {
+      "name": "Turf Grass: Artificial - Athletic Field",
+      "code": 16
+     },
+     {
+      "name": "Vegetative Ground Cover",
+      "code": 17
+     },
+     {
+      "name": "Organic Mulch",
+      "code": 18
+     },
+     {
+      "name": "Rip Rap Rock",
+      "code": 19
+     },
+     {
+      "name": "Rock Mulch",
+      "code": 20
+     },
+     {
+      "name": "Soil",
+      "code": 21
+     },
+     {
+      "name": "Pool Water",
+      "code": 22
+     },
+     {
+      "name": "Amenity Feature Water",
+      "code": 23
+     },
+     {
+      "name": "Livestock Pasture",
+      "code": 24
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "AssociatedSpaceNum",
+   "type": "esriFieldTypeDouble",
+   "alias": "AssociatedSpaceNum",
+   "domain": null
+  },
+  {
+   "name": "IsHistoric",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "IsHistoric",
+   "domain": {
+    "type": "codedValue",
+    "name": "dmnYesNo",
+    "description": "Universal domain",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": 1
+     },
+     {
+      "name": "No",
+      "code": 2
+     },
+     {
+      "name": "Unknown",
+      "code": 3
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "UASiteID",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "UASiteID",
+   "domain": null
+  },
+  {
+   "name": "EmergAccess",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "EmergAccess",
+   "domain": {
+    "type": "codedValue",
+    "name": "dmnEmergeAccess",
+    "description": "Kind of vehicle access to transportation features in emergencies",
+    "codedValues": [
+     {
+      "name": "Unknown",
+      "code": 1
+     },
+     {
+      "name": "Open",
+      "code": 2
+     },
+     {
+      "name": "Access Over Curb",
+      "code": 3
+     },
+     {
+      "name": "Locked Gate",
+      "code": 4
+     },
+     {
+      "name": "Removable Bollard",
+      "code": 5
+     },
+     {
+      "name": "Gate Arm",
+      "code": 6
+     },
+     {
+      "name": "Not Accessible to Vehicles",
+      "code": 7
+     },
+     {
+      "name": "Not Applicable",
+      "code": 8
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "OverType",
+   "type": "esriFieldTypeInteger",
+   "alias": "OverType",
+   "domain": {
+    "type": "codedValue",
+    "name": "Over",
+    "description": "Universal domain",
+    "codedValues": [
+     {
+      "name": "Over Occupied Space",
+      "code": 1
+     },
+     {
+      "name": "Over Exterior Surface",
+      "code": 2
+     },
+     {
+      "name": "Not Applicable",
+      "code": 3
+     },
+     {
+      "name": "Unknown",
+      "code": 4
+     },
+     {
+      "name": "Over Exterior Roof",
+      "code": 5
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "UnderType",
+   "type": "esriFieldTypeInteger",
+   "alias": "UnderType",
+   "domain": {
+    "type": "codedValue",
+    "name": "Under",
+    "description": "Universal domain",
+    "codedValues": [
+     {
+      "name": "Under Occupied Space",
+      "code": 1
+     },
+     {
+      "name": "Under Exterior Surface",
+      "code": 2
+     },
+     {
+      "name": "Not Applicable",
+      "code": 3
+     },
+     {
+      "name": "Unknown",
+      "code": 4
+     },
+     {
+      "name": "Under Exterior Roof",
+      "code": 5
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "Shape_Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Length",
+   "domain": null
+  },
+  {
+   "name": "Shape_Area",
+   "type": "esriFieldTypeDouble",
+   "alias": "Shape_Area",
+   "domain": null
+  },
+  {
+   "name": "Label",
+   "type": "esriFieldTypeString",
+   "alias": "Name",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "EGISID",
+   "type": "esriFieldTypeInteger",
+   "alias": "EGISID",
+   "domain": null
+  },
+  {
+   "name": "Sustainability",
+   "type": "esriFieldTypeString",
+   "alias": "Sustainability",
+   "length": 5,
+   "domain": {
+    "type": "codedValue",
+    "name": "Y/N",
+    "description": "yes/no",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": "Yes"
+     },
+     {
+      "name": "No",
+      "code": "No"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDuplicate"
+   }
+  },
+  {
+   "name": "Updated",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Updated",
+   "domain": {
+    "type": "codedValue",
+    "name": "dmnYesNo",
+    "description": "Universal domain",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": 1
+     },
+     {
+      "name": "No",
+      "code": 2
+     },
+     {
+      "name": "Unknown",
+      "code": 3
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "Field_Work_Required",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Field_Work_Required",
+   "domain": {
+    "type": "codedValue",
+    "name": "dmnYesNo",
+    "description": "Universal domain",
+    "codedValues": [
+     {
+      "name": "Yes",
+      "code": 1
+     },
+     {
+      "name": "No",
+      "code": 2
+     },
+     {
+      "name": "Unknown",
+      "code": 3
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "Comments",
+   "type": "esriFieldTypeString",
+   "alias": "Comments",
+   "length": 300,
+   "domain": null
+  },
+  {
+   "name": "LandscapeZone",
+   "type": "esriFieldTypeString",
+   "alias": "LandscapeZone",
+   "length": 255,
+   "domain": {
+    "type": "codedValue",
+    "name": "LandscapeZone",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Open Space",
+      "code": "Open Space"
+     },
+     {
+      "name": "Building Culture",
+      "code": "Building Culture"
+     },
+     {
+      "name": "Athletics",
+      "code": "Athletics"
+     },
+     {
+      "name": "Agriculture",
+      "code": "Agriculture"
+     },
+     {
+      "name": "Garden",
+      "code": "Garden"
+     },
+     {
+      "name": "Other",
+      "code": "Other"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "LandscapeCoverType",
+   "type": "esriFieldTypeString",
+   "alias": "LandscapeCoverType",
+   "length": 255,
+   "domain": {
+    "type": "codedValue",
+    "name": "LandscapeCoverType",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Rip Rap",
+      "code": "Rip Rap"
+     },
+     {
+      "name": "Rock Mulch",
+      "code": "Rock Mulch"
+     },
+     {
+      "name": "Sand",
+      "code": "Sand"
+     },
+     {
+      "name": "Soil",
+      "code": "Soil"
+     },
+     {
+      "name": "Water",
+      "code": "Water"
+     },
+     {
+      "name": "Turf",
+      "code": "Turf"
+     },
+     {
+      "name": "Crop Field",
+      "code": "Crop Field"
+     },
+     {
+      "name": "Pasture",
+      "code": "Pasture"
+     },
+     {
+      "name": "Unverified",
+      "code": "Unverified"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "LandscapeCoverDetailType",
+   "type": "esriFieldTypeString",
+   "alias": "LandscapeCoverDetailType",
+   "length": 255,
+   "domain": {
+    "type": "codedValue",
+    "name": "LandscapeCoverDetailType",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Artificial",
+      "code": "Artificial"
+     },
+     {
+      "name": "Natural",
+      "code": "Natural"
+     },
+     {
+      "name": "Pool Water",
+      "code": "Pool Water"
+     },
+     {
+      "name": "Water Feature",
+      "code": "Water Feature"
+     },
+     {
+      "name": "Artificial Pond",
+      "code": "Artificial Pond"
+     },
+     {
+      "name": "Natural Pond",
+      "code": "Natural Pond"
+     },
+     {
+      "name": "Undisturbed",
+      "code": "Undisturbed"
+     },
+     {
+      "name": "Disturbed",
+      "code": "Disturbed"
+     },
+     {
+      "name": "Garden Soil",
+      "code": "Garden Soil"
+     },
+     {
+      "name": "Improved Landscape",
+      "code": "Improved Landscape"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "LandscapePlantType",
+   "type": "esriFieldTypeString",
+   "alias": "LandscapePlantType",
+   "length": 255,
+   "domain": {
+    "type": "codedValue",
+    "name": "LandscapePlantType",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Flower Bed",
+      "code": "Flower Bed"
+     },
+     {
+      "name": "Vegetable Garden",
+      "code": "Vegetable Garden"
+     },
+     {
+      "name": "Shrub",
+      "code": "Shurb"
+     },
+     {
+      "name": "Tree",
+      "code": "Tree"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "LandscapePlantDetailType",
+   "type": "esriFieldTypeString",
+   "alias": "LandscapePlantDetailType",
+   "length": 255,
+   "domain": {
+    "type": "codedValue",
+    "name": "LandscapePlantDetailType",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Perennial",
+      "code": "Perennial"
+     },
+     {
+      "name": "Annual",
+      "code": "Annual"
+     },
+     {
+      "name": "Biennial",
+      "code": "Biennial"
+     },
+     {
+      "name": "Mixture",
+      "code": "Mixture"
+     },
+     {
+      "name": "Seasonal",
+      "code": "Seasonal"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  }
+ ],
+ "geometryField": {
+  "name": "Shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "FDO_OBJECTID",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "FDO_Shape",
+   "fields": "Shape",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": false,
+  "supportsCurrentUserQueries": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "Shape_Area",
+  "shapeLengthFieldName": "Shape_Length",
+  "units": "esriMeters",
+  "mapUnits": {"uwkid": 9001}
+ },
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

@@ -1,0 +1,52 @@
+{
+  "reviewed": "2026-10-17",
+  "scope": "Representative Green Line B surface service along the existing BU Commonwealth Avenue median. This is campus scenery, not a real-time transit service or a reconstruction of every current work-zone change.",
+  "sources": [
+    {
+      "url": "https://api-v3.mbta.com/stops?filter[route]=Green-B",
+      "publisher": "MBTA V3 API",
+      "localEvidence": "assets-source/charles-bu/bu-mbta-stops.json, fetched by scripts/prepare-bu-streets.mjs",
+      "supports": "Existing stop identifiers, names, latitude and longitude: Blandford Street, Boston University East, Boston University Central, Amory Street and Babcock Street. The cached route's downtown end is Government Center.",
+      "reviewLimit": "The live website/API could not be reread through the web tool during this pass. Existing cached official records are retained; no new live timetable, temporary closure or route-terminal claim is made."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2021/new-t-stops-now-open-along-west-campus/",
+      "publisher": "Boston University",
+      "published": "2021-11-15",
+      "supports": "Amory and Babcock replaced the former four-stop West Campus arrangement in November 2021. Official university photograph of an eastbound green trolley at Amory and article describe the longer, accessible platforms, canopies, lighting and signs."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2021/mbta-b-branch-station-consolidation-to-begin-february-15/",
+      "publisher": "Boston University",
+      "supports": "Existing modern station design references: 225-foot platforms and 150-foot canopies; unchanged in this implementation."
+    },
+    {
+      "url": "https://www.cafmobility.com/en/press-room/us-city-boston-approves-102-lrv-contract-caf-group/",
+      "publisher": "CAF",
+      "published": "2022-09-02",
+      "supports": "CAF confirms that 24 Type 9 LRVs supplied under the 2014 order operate on Boston's Green Line. Used for the choice of modern articulated Green Line vehicle family; no manufacturer drawing or exact mesh is reproduced."
+    },
+    {
+      "url": "https://bc.mbta.com/business_center/bidding_solicitations/pdf/DB%20Outreach%20Meeting%20A26CN05%20%20DB%20Green%20Line%20B%20Branch%20Short%20Term%20Accessibility%20Improvements.pdf",
+      "publisher": "MBTA",
+      "supports": "Search-indexed official presentation describes short-term station accessibility and track work including Blandford. Temporary construction/service changes are intentionally outside this representative campus service.",
+      "reviewLimit": "Direct PDF fetch returned 403; engineering dimensions were not inferred from it."
+    }
+  ],
+  "geometry": {
+    "track": "Use the unchanged existing median derived between the two MassGIS carriageway axes. Vehicle lane centers at ±1.7325 m match the modeled rail heads at ±1.015 / ±2.45 m (1.435 m gauge). Mobile's adjacent-vertex normals are also used by the vehicle paths; no spline overshoot or relocated roadway.",
+    "vehicle": "Authored three-section approximation inspired by Boston's modern articulated green/silver LRVs: 21.7 m car length, 2.64 m width, tapered cabs, chamfered roof, black glazing, sliding doors, three separately aligned bogies and one pantograph. These are bounded model dimensions, not engineering-survey measurements or a manufacturer-accurate Type 9 replica. Two cars carry illustrative fleet numbers 3912 and 3908.",
+    "platformClearance": "Existing modern platform center offset 4.1 m was too close for a 2.64 m car. Use shared 4.4 m modern / 4.2 m older offsets, preserving source station anchor/length, so both platform edge and canopy clear the vehicle envelope.",
+    "elevation": "Each body section and each bogie independently samples the existing buElevation at its own arc-length position and support endpoints. Rail height remains terrain +0.192 m. No terrain or roadway elevation is changed.",
+    "staticRuntimeDetails": "Contact wires, platform back screens/benches, T/B signs and mobile canopies/supports are bounded authored detail. Existing desktop shelters remain. No new collision fences or ground surfaces are introduced."
+  },
+  "operation": {
+    "description": "One car per direction; right-hand running. Analytic 0.85 m/s² acceleration/braking, maximum 9 m/s, 13-second stops with platform-side doors. Values are authored for the walking experience, not an MBTA timetable. Each car fades out at the cropped line endpoint before resetting offstage; the model does not invent a loop or reverse the vehicle onto the wrong track.",
+    "limits": "No boarding, driving, passenger simulation, live arrivals, fare collection, traffic-signal interlocking, moving collision or real closure schedule. Existing pedestrian crossings remain traversable."
+  },
+  "runtime": {
+    "interface": "createBUGreenLine({quality:'desktop'|'mobile', reducedMotion?:boolean}) returns {group,update(deltaSeconds),dispose()}.",
+    "mobile": "Dynamic service is excluded from boston.glb. Rigid details are merged per articulated section/material; mobile uses lower wheel segment count, no body shadows and omits decorative side trim. Both directions and all five stop calls are preserved.",
+    "resources": "dispose is idempotent and frees owned geometry, materials and CanvasTextures; no texture/network asset download is required."
+  }
+}

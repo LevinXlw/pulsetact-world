@@ -1,0 +1,54 @@
+{
+  "reviewedAt": "2026-10-15",
+  "assetPolicy": "Original procedural models. Official photographs are visual references only; no photograph or downloaded mesh is shipped in the world assets.",
+  "accuracy": "A playable, flattened outdoor interpretation of three neighbourhoods around McKeldin Mall. Relative campus directions are preserved; distances, footprints, facades and gardens are simplified rather than surveyed. Building interiors are not included.",
+  "coordinateSystem": "Metres. East +x, south +z, McKeldin Mall centre [0,0].",
+  "map": {
+    "url": "https://umdconf.umd.edu/drupal/current_map.pdf",
+    "publisher": "University of Maryland Conferences & Visitor Services / Facilities Management",
+    "copyrightYearOnMap": 2025,
+    "locations": "Stamp northwest of the mall; Reckord Armory east/northeast; Memorial Chapel southeast. The in-game neighbourhood layout compresses distances."
+  },
+  "landmarks": [
+    {
+      "name": "Adele H. Stamp Student Union",
+      "position": [-185, -236],
+      "footprint": {"width":92,"depth":64,"yaw":0},
+      "arrival": [-185,-182],
+      "sources": ["https://stamp.umd.edu/", "https://umd.edu/student-life"],
+      "interpretation": "Broad red-brick student union with lower central mass, taller end pavilions, a stone-framed glazed entry, sheltered forecourt, bicycle stands, seating and planters. Facade dimensions are authored, not measured."
+    },
+    {
+      "name": "Reckord Armory",
+      "position": [230,-140],
+      "footprint": {"width":42,"depth":84,"yaw":0},
+      "arrival": [174,-140],
+      "sources": [
+        "https://facilities.umd.edu/info-resources/building-inventory/bldg-078",
+        "https://facilities.umd.edu/sites/default/files/styles/optimized/public/UMDBuildings/078.jpg?itok=KLPHDz7h",
+        "https://arch.umd.edu/about/news-and-events/news/new-exhibit-frames-architectures-unsung-hero"
+      ],
+      "interpretation": "Long white columned front, substantial molded entablature, triangular pediment with round window, red-brick hall and broad ceremonial stair. Main dimensions are compressed for the outdoor walk."
+    },
+    {
+      "name": "Memorial Chapel",
+      "position": [110,220],
+      "footprint": {"width":30,"depth":64,"yaw":0},
+      "gardenWing": {"x":78,"z":234,"width":34,"depth":24},
+      "arrival": [110,145],
+      "sources": [
+        "https://stamp.umd.edu/visit/memorial_chapel",
+        "https://cvs.umd.edu/campus-attractions",
+        "https://arch.umd.edu/about/news-and-events/news/new-exhibit-frames-architectures-unsung-hero",
+        "https://arch.umd.edu/sites/default/files/inline-images/MemorialChapel_Details_06032026_DS_2011_web.jpg",
+        "https://stamp.umd.edu/sites/default/files/styles/optimized/public/2025-06/1920x640_Hero_Images_Memorial%20Chapel%20Hero.jpg?itok=d2YxUAUf"
+      ],
+      "interpretation": "Red-brick nave and arched windows, a four-column front with layered moldings, clock tower, louvered belfry and slender steeple. The adjoining wing and quiet circular garden are simplified outdoor compositions."
+    }
+  ],
+  "construction": {
+    "facades": "Extruded wall shells contain actual window and door openings. Glass and wood panels sit behind 0.65-metre reveals with separate jambs, sills, transoms and muntins.",
+    "geometry": "Repeated parts are merged by material and ground/detail role. No downloaded models and no individually modeled brick walls.",
+    "playability": "Six-metre or wider main pedestrian loop, separate low stair ground surfaces, invisible building and furniture collision, and lawn-only grass footprints."
+  }
+}

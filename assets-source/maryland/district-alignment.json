@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-15",
+  "source": "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/2",
+  "coordinateSystem": "Existing road/DEM frame, x=1.65 and z=1.7 applied to ALL vertices; no independent centroid spacing or greedy relocation in corrected districts.",
+  "limitations": "Roofline topology from public GIS snapshot. Heights and facade detail remain authored. Other campus districts retain the earlier adapted layout.",
+  "changed": [
+    {
+      "id": "039",
+      "name": "Van Munching Hall",
+      "areaBefore": 10381.78,
+      "areaAfter": 10381.78,
+      "vertices": 168,
+      "holes": 0
+    },
+    {
+      "id": "081",
+      "name": "Wind Tunnel Building",
+      "areaBefore": 2620.38,
+      "areaAfter": 2620.38,
+      "vertices": 11,
+      "holes": 0
+    },
+    {
+      "id": "088",
+      "name": "Martin Hall",
+      "areaBefore": 5014.41,
+      "areaAfter": 5014.41,
+      "vertices": 42,
+      "holes": 0
+    },
+    {
+      "id": "089",
+      "name": "Engineering Laboratory Building",
+      "areaBefore": 5499.83,
+      "areaAfter": 5499.83,
+      "vertices": 12,
+      "holes": 0
+    },
+    {
+      "id": "090",
+      "name": "Chemical & Nuclear Engineering Building",
+      "areaBefore": 5548.27,
+      "areaAfter": 5548.27,
+      "vertices": 37,
+      "holes": 1
+    },
+    {
+      "id": "091",
+      "name": "Chemistry Building",
+      "areaBefore": 13509.81,
+      "areaAfter": 13509.81,
+      "vertices": 46,
+      "holes": 1
+    },
+    {
+      "id": "093",
+      "name": "Engineering Annex",
+      "areaBefore": 1484.2,
+      "areaAfter": 1484.2,
+      "vertices": 21,
+      "holes": 0
+    },
+    {
+      "id": "115",
+      "name": "A.V. Williams Building",
+      "areaBefore": 8353.36,
+      "areaAfter": 8353.36,
+      "vertices": 25,
+      "holes": 0
+    },
+    {
+      "id": "142",
+      "name": "Animal Sciences/Agricultural Engineering Building",
+      "areaBefore": 18635.25,
+      "areaAfter": 18635.25,
+      "vertices": 57,
+      "holes": 1
+    },
+    {
+      "id": "223",
+      "name": "Energy Research Facility",
+      "areaBefore": 5817.68,
+      "areaAfter": 5817.68,
+      "vertices": 39,
+      "holes": 0
+    },
+    {
+      "id": "225",
+      "name": "Kim Engineering Building",
+      "areaBefore": 7688.75,
+      "areaAfter": 7688.75,
+      "vertices": 59,
+      "holes": 0
+    },
+    {
+      "id": "296",
+      "name": "Biomolecular Sciences Building",
+      "areaBefore": 1841.39,
+      "areaAfter": 1841.39,
+      "vertices": 16,
+      "holes": 0
+    },
+    {
+      "id": "382",
+      "name": "Neutral Buoyancy Research Facility",
+      "areaBefore": 860.12,
+      "areaAfter": 860.12,
+      "vertices": 4,
+      "holes": 0
+    },
+    {
+      "id": "404",
+      "name": "Mowatt Lane Parking Garage",
+      "areaBefore": 10732.88,
+      "areaAfter": 10732.88,
+      "vertices": 14,
+      "holes": 0
+    },
+    {
+      "id": "406",
+      "name": "Computer Science Instructional Center",
+      "areaBefore": 1572.23,
+      "areaAfter": 1572.23,
+      "vertices": 33,
+      "holes": 0
+    },
+    {
+      "id": "429",
+      "name": "A. James Clark Hall",
+      "areaBefore": 4697.85,
+      "areaAfter": 4697.85,
+      "vertices": 15,
+      "holes": 0
+    },
+    {
+      "id": "432",
+      "name": "Brendan Iribe Center",
+      "areaBefore": 6280.09,
+      "areaAfter": 6280.09,
+      "vertices": 55,
+      "holes": 0
+    }
+  ],
+  "rerouted": 3
+}

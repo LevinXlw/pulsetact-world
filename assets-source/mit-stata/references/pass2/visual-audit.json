@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-22",
+  "scope": "Visual reference audit and conservative curved-Twin shaping only. Source coordinates are GIS model coordinates; photographic shape controls are authored estimates, not measurements.",
+  "supersedes": "Earlier references/reference-audit.json entrance interpretations: do not treat center of either service canopy as a pedestrian double-door portal.",
+  "coordinate_frame": {
+    "blender": "X east, Y north, Z up, metres",
+    "three": "(X, Z, -Y)"
+  },
+  "orientation": {
+    "Gates": "Main Street / northeast end",
+    "Dreyfoos": "Massachusetts Avenue / southwest end",
+    "source": "https://www.csail.mit.edu/about/visit-csail"
+  },
+  "observations": [
+    {
+      "patches": [
+        5
+      ],
+      "confidence": "high",
+      "sources": [
+        "facilities-1.jpg",
+        "../reference-audit.json"
+      ],
+      "observation": "Main Vassar Gates brick face has 4 columns and 8 visible window rows: 6 regular upper rows plus 2 more widely spaced base rows. Trees hide the base in many daytime photos.",
+      "action": "Use 4 by 8 total, not 4 by 9 plus rooftop windows."
+    },
+    {
+      "patches": [
+        117,
+        139
+      ],
+      "confidence": "high",
+      "sources": [
+        "facilities-1.jpg"
+      ],
+      "observation": "Roof caps are blind masonry/parapet regions.",
+      "action": "Do not add an extra repeated office window row."
+    },
+    {
+      "patches": [
+        78
+      ],
+      "confidence": "high",
+      "sources": [
+        "zahner-0995.jpg",
+        "zahner-rendered.jpg"
+      ],
+      "observation": "Upper folded wing adjoining patch 38 is silver metal, not a brick column."
+    },
+    {
+      "patches": [
+        20,
+        28
+      ],
+      "confidence": "high for inclination; medium for patch-specific outline; low for any numeric angle",
+      "sources": [
+        "zahner-0995.jpg",
+        "zahner-rendered.jpg"
+      ],
+      "observation": "Lower silver folded group narrows at its base and opens at its shoulder. Source vertical prisms omit this inclination. A photo-screen edge slope is not a world-space tilt measurement."
+    },
+    {
+      "patches": [
+        38,
+        42,
+        54,
+        62,
+        64,
+        76,
+        78
+      ],
+      "confidence": "high for broken/leaning form; medium for source patch correspondence",
+      "sources": [
+        "zahner-0995.jpg",
+        "zahner-rendered.jpg"
+      ],
+      "observation": "Upper silver cluster has several different leaned wings, waist breaks and deep returns, rather than a uniform vertical extrusion."
+    },
+    {
+      "patches": [
+        32,
+        26,
+        34,
+        41
+      ],
+      "confidence": "high for count in visible photograph; medium for source subdivision",
+      "sources": [
+        "csail-exterior.jpg",
+        "facilities-2.jpg"
+      ],
+      "observation": "Near Gates rear brick block: broad face 3 columns by 7 rows (upper patch 32 about 4 rows, lower patch 26 about 3). Narrow return patches 34 and 41 show a single column. Source belt/setback is visible in the photograph."
+    },
+    {
+      "patches": [
+        16
+      ],
+      "confidence": "medium-high",
+      "sources": [
+        "csail-exterior.jpg",
+        "zahner-1039.jpg"
+      ],
+      "observation": "Adjacent tall narrow silver fold is not brick. The source 12.65m-wide vertical face compresses a folded narrow window spine; changing color alone does not reproduce its outline. Farther rear broad patch 12 remains brick."
+    },
+    {
+      "patches": [
+        164
+      ],
+      "confidence": "high",
+      "sources": [
+        "zahner-twins.jpg",
+        "zahner-rendered.jpg"
+      ],
+      "observation": "Part of the high Twin outer curved body, continuous with 152/154. It should be silver and not a blind brick service box."
+    },
+    {
+      "patches": [
+        186
+      ],
+      "confidence": "high for service function, medium for source-plane alignment",
+      "sources": [
+        "zahner-0995.jpg"
+      ],
+      "observation": "Double angular silver canopy covers a garage/service ramp. Sign explicitly refers to parking and loading dock. This is not evidence for a central Gates pedestrian double-door entrance."
+    },
+    {
+      "patches": [
+        132
+      ],
+      "confidence": "high for vehicle opening, medium for source-plane alignment",
+      "sources": [
+        "zahner-giraffe.jpg",
+        "lids-dreyfoos-entry.jpg"
+      ],
+      "observation": "Central space under blue/silver Dreyfoos canopy is a vehicle passage with DO NOT ENTER sign and car. Tall glazing is to the side. Several offset sloped canopy plates and massive leaning round columns are visible.",
+      "uncertainty": "Do not call this the loading dock; that label is explicitly visible at the Gates service canopy. Official LIDS identifies the entrance zone, not a central glass door."
+    },
+    {
+      "patches": [],
+      "confidence": "high",
+      "sources": [
+        "zahner-0894.jpg",
+        "zahner-cad.jpg"
+      ],
+      "observation": "Silver wall windows are projecting metal boxes. Nearly plumb glazing against sloping skin creates deep wedge-like side/head/sill returns."
+    },
+    {
+      "patches": [],
+      "confidence": "high",
+      "sources": [
+        "zahner-0903.jpg"
+      ],
+      "observation": "Low curved rear roof is mirror polished with strong distorted reflections, distinct from the pale brushed/paneled high facades."
+    }
+  ],
+  "twins": {
+    "module": "../../twins-controls.py",
+    "validation": "twins-validation.json",
+    "sources": [
+      "zahner-twins.jpg",
+      "zahner-rendered.jpg",
+      "mit-hacks-vassar.jpg"
+    ],
+    "high": {
+      "approx_source_center_xy": [
+        102.5,
+        305.6
+      ],
+      "source_top_z": 33.81,
+      "observation": "Narrow upper neck over broader lower body; small eccentric lean. These numbers locate the source cage, not photographed dimensions."
+    },
+    "low": {
+      "approx_source_center_xy": [
+        87.33,
+        301.7
+      ],
+      "source_top_z": 27.04,
+      "observation": "Waisted body and outward-flaring sloping upper rim. It must not use the same monotonic taper as the high Twin."
+    },
+    "authoring": "At most approximately one metre sampled displacement. Fixed base below Z=4; no height changes. High body opens gently toward Vassar while its attachment chord stays fixed. A neutral height band preserves adjoining roof seams. Free neck gradually tapers and leans. Low body narrows through its middle then opens at its rim.",
+    "integration": "Use mapper_for(p) on selected patches and mapper_for({faces:[f]}) on fallback source triangles. Split at the returned callable.split_levels before mapping wall, cap and collision polygons. Apply the same function to boxed-window back surfaces; root retains upright glazing. Silver assignment for patch 164 must be corrected by the builder.",
+    "continuity": "One position-only map shared by all selected patches and fallback faces. Per-height map is affine in XY, helping horizontal joins remain collinear. The selected/unselected boundary vertices tested unchanged."
+  },
+  "limitations": [
+    "Public photos support major massing, materials and the visible window pattern; they do not establish rear elevation window-by-window precision or hidden joins.",
+    "No camera calibration or photogrammetric reconstruction was performed. Tilt, radius, taper and offsets are deliberately conservative authored estimates.",
+    "The 2001 CSAIL model at https://people.csail.mit.edu/psz/stata/Default.html is preconstruction context, not as-built evidence.",
+    "True Gates pedestrian door source patch remains unresolved; the verified service opening must not be relabeled as that door.",
+    "Twins geometry checks use Python arithmetic with a tuple-backed mathutils.Vector stub. Native Blender build/render verification belongs to root integration."
+  ]
+}

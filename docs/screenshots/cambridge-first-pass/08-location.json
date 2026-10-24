@@ -1,4 +1,48 @@
 {
+  "people": [
+    {
+      "person": "nathan",
+      "ready": true,
+      "clip": "Idle",
+      "time": 3.8067000000476834,
+      "paused": true,
+      "reduced": false,
+      "poseOnly": false,
+      "position": [
+        16.742,
+        4.428222797599801,
+        55.459
+      ]
+    },
+    {
+      "person": "nathan",
+      "ready": true,
+      "clip": "Idle",
+      "time": 3.8067000000476834,
+      "paused": true,
+      "reduced": false,
+      "poseOnly": false,
+      "position": [
+        20.742,
+        4.403651360064316,
+        57.459
+      ]
+    },
+    {
+      "person": "sophia",
+      "ready": true,
+      "clip": "Idle",
+      "time": 4.5067000000476805,
+      "paused": true,
+      "reduced": false,
+      "poseOnly": false,
+      "position": [
+        4.878,
+        4.227375751662237,
+        -22.547
+      ]
+    }
+  ],
   "campus": "mit",
   "vegetationStatus": "ready",
   "quality": "standard",
@@ -27,6 +71,6 @@
     "walls": 22682,
     "roofs": 7156
   },
-  "calls": 304,
-  "triangles": 2362155
+  "calls": 191,
+  "triangles": 2601948
 }

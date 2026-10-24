@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-10-15",
+  "sources": [
+    {
+      "url": "https://stamp.umd.edu/visit/directions-parking",
+      "title": "STAMP · Directions & Parking",
+      "supports": "Campus Drive rises from the eastern campus toward STAMP; the student union fronts the Campus Drive / Union Lane intersection. Union Lane Garage serves this entrance."
+    },
+    {
+      "url": "https://fellercenter.umd.edu/directions/union",
+      "title": "Feller Center · Directions to Union Lane Garage",
+      "supports": "Turn from Campus Drive onto Union Lane, then left onto Fieldhouse Drive; the garage vehicle entrance is on Fieldhouse Drive. The walking exit rises toward STAMP."
+    },
+    {
+      "url": "https://stamp.umd.edu/visit/accessibility_resources",
+      "title": "STAMP · Accessibility Resources",
+      "supports": "Union Lane Garage lies west of STAMP; curb cuts connect the sidewalks and accessible building entrances."
+    },
+    {
+      "url": "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/0",
+      "title": "Maryland iMAP · UMD Roads",
+      "supports": "Existing campus pavement polygons, preserved and draped onto the shared campus terrain."
+    }
+  ],
+  "implementation": {
+    "factory": "src/features/world/maryland-streetscape.ts",
+    "pavement": "src/features/world/maryland-campus-paving.ts",
+    "scope": "Campus Drive hill at STAMP, Union Lane and the Fieldhouse Drive parking garage connection; layered road, verge, sidewalk, curb cuts, crossings, tree pockets and restrained street furniture.",
+    "limitations": "Centre lines and furniture positions are authored to the existing compressed game coordinate frame. This is an exterior reconstruction, not surveyed as-built roadway geometry or a depiction of the 2026 Purple Line construction closures. Street widths, planting and material treatments are authored."
+  }
+}

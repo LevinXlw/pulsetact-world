@@ -1,0 +1,673 @@
+{
+  "version": 1,
+  "blender": "4.5.9 LTS",
+  "createdUTC": "2026-10-18T17:06:38Z",
+  "elapsedSeconds": 1.43,
+  "engine": "Cycles CPU",
+  "bakeSamples": 16,
+  "samples": [
+    {
+      "id": "bay-state-192",
+      "input": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\input\\bay-state-192.glb",
+      "inputSHA256": "6ca2bda5d43a7ce83d3cff7448d33ce8a8851b538a254049875d411b40c80ce5",
+      "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality\\bay-state-192.glb",
+      "bytes": 4270864,
+      "before": {
+        "objects": 8,
+        "vertices": 9951,
+        "triangles": 3317,
+        "blenderBoundsMetres": {
+          "min": [
+            -4.415421485900879,
+            -9.121593475341797,
+            -1.139658808708191
+          ],
+          "max": [
+            4.404097557067871,
+            9.392810821533203,
+            14.712000846862793
+          ]
+        }
+      },
+      "after": {
+        "objects": 8,
+        "vertices": 10849,
+        "triangles": 20021,
+        "blenderBoundsMetres": {
+          "min": [
+            -4.409351348876953,
+            -9.120871543884277,
+            -1.139658808708191
+          ],
+          "max": [
+            4.402444362640381,
+            9.39234447479248,
+            14.712000846862793
+          ]
+        }
+      },
+      "envelopeMaxDriftMetres": 0.006070137023925781,
+      "envelopeOutwardExpansionMetres": 0,
+      "cleanup": [
+        {
+          "object": "BU district -4:3:architecture:brownstone",
+          "inputVertices": 282,
+          "outputVertices": 94,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU district -4:3:architecture:stone",
+          "inputVertices": 6570,
+          "outputVertices": 8380,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 142,
+          "bevelEdges": 1704,
+          "bevelWidthMetres": [
+            0.013000011444091797,
+            0.015
+          ]
+        },
+        {
+          "object": "BU district -4:3:architecture:glass",
+          "inputVertices": 198,
+          "outputVertices": 84,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU district -4:3:architecture:frame",
+          "inputVertices": 306,
+          "outputVertices": 156,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU district -4:3:architecture:brick",
+          "inputVertices": 1206,
+          "outputVertices": 278,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU district -4:3:architecture:trim",
+          "inputVertices": 1152,
+          "outputVertices": 1792,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 32,
+          "bevelEdges": 384,
+          "bevelWidthMetres": [
+            0.015,
+            0.015
+          ]
+        },
+        {
+          "object": "BU district -4:3:architecture:roof",
+          "inputVertices": 93,
+          "outputVertices": 33,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU district -4:3:architecture:brickDark",
+          "inputVertices": 144,
+          "outputVertices": 32,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        }
+      ],
+      "materials": [
+        {
+          "name": "brownstone \u00b7 Blender PBR",
+          "source": "brownstone",
+          "family": "stone",
+          "baseTintLinear": [
+            0.30946892499923706,
+            0.16826939582824707,
+            0.10702310502529144
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.30946892499923706,
+            0.16826939582824707,
+            0.10702310502529144
+          ]
+        },
+        {
+          "name": "stone \u00b7 Blender PBR",
+          "source": "stone",
+          "family": "stone",
+          "baseTintLinear": [
+            0.5711248517036438,
+            0.4910208582878113,
+            0.37123769521713257
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.5711248517036438,
+            0.4910208582878113,
+            0.37123769521713257
+          ]
+        },
+        {
+          "name": "glass \u00b7 Blender PBR",
+          "source": "glass",
+          "family": "glass",
+          "baseTintLinear": [
+            0.13286831974983215,
+            0.2581828534603119,
+            0.26635560393333435
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.13286831974983215,
+            0.2581828534603119,
+            0.26635560393333435
+          ]
+        },
+        {
+          "name": "frame \u00b7 Blender PBR",
+          "source": "frame",
+          "family": "metal",
+          "baseTintLinear": [
+            0.15896083414554596,
+            0.18447498977184296,
+            0.17144110798835754
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.15896083414554596,
+            0.18447498977184296,
+            0.17144110798835754
+          ]
+        },
+        {
+          "name": "brick \u00b7 Blender PBR",
+          "source": "brick",
+          "family": "brick",
+          "baseTintLinear": [
+            0.3967552185058594,
+            0.17144110798835754,
+            0.1119324266910553
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.3967552185058594,
+            0.17144110798835754,
+            0.1119324266910553
+          ]
+        },
+        {
+          "name": "trim \u00b7 Blender PBR",
+          "source": "trim",
+          "family": "stone",
+          "baseTintLinear": [
+            0.7230551242828369,
+            0.6307571530342102,
+            0.4793201684951782
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.7230551242828369,
+            0.6307571530342102,
+            0.4793201684951782
+          ]
+        },
+        {
+          "name": "roof \u00b7 Blender PBR",
+          "source": "roof",
+          "family": "concrete",
+          "baseTintLinear": [
+            0.13013647496700287,
+            0.177888423204422,
+            0.17144110798835754
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.13013647496700287,
+            0.177888423204422,
+            0.17144110798835754
+          ]
+        },
+        {
+          "name": "brickDark \u00b7 Blender PBR",
+          "source": "brickDark",
+          "family": "brick",
+          "baseTintLinear": [
+            0.22696587443351746,
+            0.08650045841932297,
+            0.05612849071621895
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.22696587443351746,
+            0.08650045841932297,
+            0.05612849071621895
+          ]
+        }
+      ],
+      "textureFamilies": [
+        "brick",
+        "concrete",
+        "glass",
+        "metal",
+        "stone"
+      ],
+      "embeddedImages": 12,
+      "exportedMaterials": 8,
+      "exportTangentRepair": {
+        "vertices": 0,
+        "meshes": []
+      },
+      "uv": "Metre-density box projection, repeat wrapping; original GIS massing and openings retained.",
+      "glass": "Opaque dielectric, roughness .16, transmission 0, emission 0; no fictional visible interiors.",
+      "glassTint": "Original linear source glass colour retained."
+    },
+    {
+      "id": "cds-ground",
+      "input": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\input\\cds-ground.glb",
+      "inputSHA256": "7ca6e37c96f11140f702db86274d4ebfeb913f659e3b2f2c51f73e18f0d129c1",
+      "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality\\cds-ground.glb",
+      "bytes": 1250884,
+      "before": {
+        "objects": 7,
+        "vertices": 2460,
+        "triangles": 820,
+        "blenderBoundsMetres": {
+          "min": [
+            -13.75,
+            -4.349999904632568,
+            -0.4325636625289917
+          ],
+          "max": [
+            13.75,
+            4.349999904632568,
+            7.5
+          ]
+        }
+      },
+      "after": {
+        "objects": 7,
+        "vertices": 1483,
+        "triangles": 2356,
+        "blenderBoundsMetres": {
+          "min": [
+            -13.75,
+            -4.349999904632568,
+            -0.4325636625289917
+          ],
+          "max": [
+            13.75,
+            4.349999904632568,
+            7.5
+          ]
+        }
+      },
+      "envelopeMaxDriftMetres": 0.0,
+      "envelopeOutwardExpansionMetres": 0,
+      "cleanup": [
+        {
+          "object": "BU architecture \u00b7 stone",
+          "inputVertices": 102,
+          "outputVertices": 36,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU architecture \u00b7 trim",
+          "inputVertices": 72,
+          "outputVertices": 112,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 2,
+          "bevelEdges": 24,
+          "bevelWidthMetres": [
+            0.015,
+            0.015
+          ]
+        },
+        {
+          "object": "BU architecture \u00b7 glass",
+          "inputVertices": 54,
+          "outputVertices": 26,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU architecture \u00b7 frame",
+          "inputVertices": 1200,
+          "outputVertices": 1008,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 14,
+          "bevelEdges": 168,
+          "bevelWidthMetres": [
+            0.0035027027130126957,
+            0.008
+          ]
+        },
+        {
+          "object": "BU architecture \u00b7 bronze",
+          "inputVertices": 519,
+          "outputVertices": 153,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU architecture \u00b7 glassShade",
+          "inputVertices": 48,
+          "outputVertices": 26,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        },
+        {
+          "object": "BU ground \u00b7 paving",
+          "inputVertices": 465,
+          "outputVertices": 122,
+          "duplicatesRemoved": 0,
+          "subPixelFacesRemoved": 0,
+          "closedComponentsBevelled": 0,
+          "bevelEdges": 0,
+          "bevelWidthMetres": []
+        }
+      ],
+      "materials": [
+        {
+          "name": "stone.001 \u00b7 Blender PBR",
+          "source": "stone.001",
+          "family": "stone",
+          "baseTintLinear": [
+            0.5840784311294556,
+            0.5088813304901123,
+            0.40724021196365356
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.5840784311294556,
+            0.5088813304901123,
+            0.40724021196365356
+          ]
+        },
+        {
+          "name": "trim.001 \u00b7 Blender PBR",
+          "source": "trim.001",
+          "family": "stone",
+          "baseTintLinear": [
+            0.7605245113372803,
+            0.6795424818992615,
+            0.520995557308197
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.7605245113372803,
+            0.6795424818992615,
+            0.520995557308197
+          ]
+        },
+        {
+          "name": "glass.001 \u00b7 Blender PBR",
+          "source": "glass.001",
+          "family": "glass",
+          "baseTintLinear": [
+            0.02442775517702103,
+            0.05163657069206238,
+            0.05409955978393555
+          ],
+          "glassTintScale": 0.2,
+          "originalBaseTintLinear": [
+            0.12213877588510513,
+            0.2581828534603119,
+            0.27049779891967773
+          ]
+        },
+        {
+          "name": "frame.001 \u00b7 Blender PBR",
+          "source": "frame.001",
+          "family": "metal",
+          "baseTintLinear": [
+            0.31398871541023254,
+            0.3277781009674072,
+            0.26635560393333435
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.31398871541023254,
+            0.3277781009674072,
+            0.26635560393333435
+          ]
+        },
+        {
+          "name": "bronze \u00b7 Blender PBR",
+          "source": "bronze",
+          "family": "metal",
+          "baseTintLinear": [
+            0.32314321398735046,
+            0.19806931912899017,
+            0.12743768095970154
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.32314321398735046,
+            0.19806931912899017,
+            0.12743768095970154
+          ]
+        },
+        {
+          "name": "glassShade \u00b7 Blender PBR",
+          "source": "glassShade",
+          "family": "glass",
+          "baseTintLinear": [
+            0.0068679615855216985,
+            0.015637484192848206,
+            0.018168342113494874
+          ],
+          "glassTintScale": 0.2,
+          "originalBaseTintLinear": [
+            0.03433980792760849,
+            0.07818742096424103,
+            0.09084171056747437
+          ]
+        },
+        {
+          "name": "paving \u00b7 Blender PBR",
+          "source": "paving",
+          "family": "stone",
+          "baseTintLinear": [
+            0.6239603757858276,
+            0.520995557308197,
+            0.3613067865371704
+          ],
+          "glassTintScale": 1,
+          "originalBaseTintLinear": [
+            0.6239603757858276,
+            0.520995557308197,
+            0.3613067865371704
+          ]
+        }
+      ],
+      "textureFamilies": [
+        "glass",
+        "metal",
+        "stone"
+      ],
+      "embeddedImages": 6,
+      "exportedMaterials": 7,
+      "exportTangentRepair": {
+        "vertices": 10,
+        "meshes": [
+          {
+            "mesh": "Mesh_3.001",
+            "vertices": 5,
+            "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+          },
+          {
+            "mesh": "Mesh_6.001",
+            "vertices": 5,
+            "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+          }
+        ]
+      },
+      "uv": "Metre-density box projection, repeat wrapping; original GIS massing and openings retained.",
+      "glass": "Opaque dielectric, roughness .16, transmission 0, emission 0; no fictional visible interiors.",
+      "glassTint": "CDS glass and glassShade linear source colour multiplied by .2; all 192 Bay State glass colours remain unchanged."
+    }
+  ],
+  "totalGLBBytes": 5521748,
+  "limitBytes": 10485760,
+  "withinBudget": true,
+  "textures": {
+    "brick": {
+      "repeatMetres": [
+        2.3,
+        1.2
+      ],
+      "maps": {
+        "basecolor": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\brick-basecolor.png",
+          "bytes": 257603,
+          "size": 1024
+        },
+        "normal": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\brick-normal.png",
+          "bytes": 408098,
+          "size": 512
+        },
+        "orm": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\brick-orm.png",
+          "bytes": 119454,
+          "size": 512
+        }
+      }
+    },
+    "stone": {
+      "repeatMetres": [
+        2.8,
+        1.4
+      ],
+      "maps": {
+        "basecolor": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\stone-basecolor.png",
+          "bytes": 240297,
+          "size": 1024
+        },
+        "normal": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\stone-normal.png",
+          "bytes": 310577,
+          "size": 512
+        },
+        "orm": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\stone-orm.png",
+          "bytes": 129049,
+          "size": 512
+        }
+      }
+    },
+    "concrete": {
+      "repeatMetres": [
+        2.0,
+        2.0
+      ],
+      "maps": {
+        "basecolor": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\concrete-basecolor.png",
+          "bytes": 227366,
+          "size": 1024
+        },
+        "normal": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\concrete-normal.png",
+          "bytes": 86273,
+          "size": 512
+        },
+        "orm": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\concrete-orm.png",
+          "bytes": 121830,
+          "size": 512
+        }
+      }
+    },
+    "wood": {
+      "repeatMetres": [
+        0.5,
+        2.0
+      ],
+      "maps": {
+        "basecolor": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\wood-basecolor.png",
+          "bytes": 198040,
+          "size": 1024
+        },
+        "normal": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\wood-normal.png",
+          "bytes": 4515,
+          "size": 512
+        },
+        "orm": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\wood-orm.png",
+          "bytes": 129052,
+          "size": 512
+        }
+      }
+    },
+    "metal": {
+      "repeatMetres": [
+        1.0,
+        1.0
+      ],
+      "maps": {
+        "basecolor": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\metal-basecolor.png",
+          "bytes": 227366,
+          "size": 1024
+        },
+        "normal": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\metal-normal.png",
+          "bytes": 4515,
+          "size": 512
+        },
+        "orm": {
+          "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\textures\\metal-orm.png",
+          "bytes": 112632,
+          "size": 512
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Source massing is the current project model, not a new as-built survey.",
+    "Masonry bonds, weathering, grain and sub-centimetre relief are authored PBR approximations.",
+    "UV seams can occur where box-projection axes change on curved surfaces.",
+    "No campus-wide runtime replacement or deployment is performed by this script."
+  ]
+}

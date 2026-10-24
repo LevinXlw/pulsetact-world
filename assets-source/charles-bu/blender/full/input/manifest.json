@@ -1,0 +1,104 @@
+{
+  "id": "cds-full",
+  "units": "metres",
+  "toWorld": [
+    0.9895059058723947,
+    0,
+    0.1444924297105264,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -0.1444924297105264,
+    0,
+    0.9895059058723947,
+    0,
+    -873.2995578152193,
+    4.478491176840529,
+    1035.621125539902,
+    1
+  ],
+  "bounds": {
+    "min": [
+      -64.25,
+      -2.5488414764404297,
+      -42.753421783447266
+    ],
+    "max": [
+      22.75004005432129,
+      92.96399688720703,
+      12.350085258483887
+    ]
+  },
+  "bytes": 2727448,
+  "sha256": "051e27cd475890a6fe750b9d95e9a8baa9e6f19df499df92eec4d147b6a5c0bc",
+  "triangles": 22590,
+  "meshes": [
+    {
+      "name": "BU architecture · stone",
+      "finish": "stone",
+      "ground": false,
+      "triangles": 270
+    },
+    {
+      "name": "BU architecture · roof",
+      "finish": "roof",
+      "ground": false,
+      "triangles": 84
+    },
+    {
+      "name": "BU architecture · trim",
+      "finish": "trim",
+      "ground": false,
+      "triangles": 48
+    },
+    {
+      "name": "BU architecture · glass",
+      "finish": "glass",
+      "ground": false,
+      "triangles": 96
+    },
+    {
+      "name": "BU architecture · frame",
+      "finish": "frame",
+      "ground": false,
+      "triangles": 7076
+    },
+    {
+      "name": "BU architecture · bronze",
+      "finish": "bronze",
+      "ground": false,
+      "triangles": 14376
+    },
+    {
+      "name": "BU architecture · glassShade",
+      "finish": "glassShade",
+      "ground": false,
+      "triangles": 44
+    },
+    {
+      "name": "BU architecture · grass",
+      "finish": "grass",
+      "ground": false,
+      "triangles": 60
+    },
+    {
+      "name": "BU architecture · paving",
+      "finish": "paving",
+      "ground": false,
+      "triangles": 60
+    },
+    {
+      "name": "BU ground · paving",
+      "finish": "paving",
+      "ground": true,
+      "triangles": 476
+    }
+  ],
+  "collision": {
+    "ground": 1,
+    "walls": 4
+  },
+  "note": "Complete explicitly owned CDS geometry including tower, east podium, crown, terraces, sloped paving and foundation skirts. Uses the reviewed ground-sample coordinate frame; no spatial clipping."
+}

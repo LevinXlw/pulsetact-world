@@ -1,0 +1,36 @@
+{
+  "implementation": [
+    "../shape-controls.py",
+    "../twins-controls.py"
+  ],
+  "primary_photo_sources": [
+    "https://azahner.com/projects/mit-stata/",
+    "https://www.mit.edu/~lids/about-lids/directions-lids-offices.html",
+    "https://web.mit.edu/facilities/construction/completed/stata.html"
+  ],
+  "local_photos": [
+    "../references/pass2/zahner-0995.jpg",
+    "../references/pass2/zahner-giraffe.jpg",
+    "../references/pass2/zahner-twins.jpg",
+    "../references/pass2/zahner-rendered.jpg"
+  ],
+  "changes": [
+    "Gates: replace endpoint-only extrusions with shared columns evaluated at multiple heights. Distinct narrowed lower apron, leaning rear shoulder, central undercut and upper box, pitched crowns with a raised front ridge and lowered valleys.",
+    "Dreyfoos: lower two-row apron, recessed main shaft, separate upper projecting box, and a third return facet on patch 67. Keep patch 33 main two-column face intact. The return facet fades to the source roof edge while the shared main ridge raises the crown.",
+    "Twins: increase low-body waist and asymmetric flared rim. The high body compresses its exposed shoulder toward a narrower neck; pin the rear attachment chord and roof seam height band. Increase neck taper and eccentric lean.",
+    "Every incident grouped or ungrouped face uses the same control columns; original T-junction points inherit exact endpoint-interpolated XY profiles to avoid artificial diagonal kinks."
+  ],
+  "builder_contract": "Use shape.surface_mapper on fallback faces as well as patches. Split at callable.split_levels and callable.split_planes before mapping. Window returns and collisions need identical cuts. giraffe_mapper intentionally returns None because surface_mapper now owns those surfaces.",
+  "window_handoffs": [
+    "Gates central fold Z29..30.4 should remain between window rows.",
+    "Dreyfoos upper fold Z30..31.3 should remain below the upper-row sill (suggest >=31.5).",
+    "Gates principal upper silver wings show approximately six rows, not a universal seven-row grid.",
+    "Dreyfoos metal apron starts above the blue canopy; generic lower office-window rows should not fill the service/glazed base."
+  ],
+  "validation": "Native Blender 4.5.9 source-shell diagnostic, not the full asset build. See front-geometry-check.json. Shared source edges sampled at seven positions, including duplicate-position welded edges. No detected seam above 2 mm, nonfinite coordinate, new degenerate triangle, or source-normal reversal after section clipping.",
+  "limits": "Photographs guide authored dimensions and silhouette. This is not an exact CAD replacement, complete photogrammetry, or proof of every hidden facade/window. The source has existing overlaps and unobserved rear geometry. No full-model self-intersection or as-built dimensional certification is claimed.",
+  "diagnostics": [
+    "front-gates-shape.png",
+    "front-dreyfoos-shape.png"
+  ]
+}

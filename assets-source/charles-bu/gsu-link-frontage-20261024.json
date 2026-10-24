@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-24",
+  "scope": "Existing GSU–Mugar Link south window wall, entrance and its immediate Commonwealth Avenue courtyard strip",
+  "primarySources": [
+    {
+      "url": "https://www.bu.edu/reservations/gsu/",
+      "imageUrl": "https://www.bu.edu/reservations/files/2023/08/GSU_Exterior_0008.jpg",
+      "localReference": "output/bu-comm-ave-20261024-pass2/references/bu-gsu-exterior-2023.jpg",
+      "kind": "BU published existing-condition exterior photograph, 2023 upload",
+      "supports": [
+        "The Link front is a tall window wall with a complete upper glazed row, shallow lower upper-row lights, deep concrete piers and horizontal bands.",
+        "Three pairs of silver-framed entrance doors below a glazed transom zone.",
+        "Building name GEORGE SHERMAN UNION appears as pale letters on the concrete band; the previous combined GSU–Mugar plaque was not supported.",
+        "The immediate courtyard has red-brick panels divided by pale rectangular stone bands."
+      ]
+    },
+    {
+      "url": "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf",
+      "localReference": "output/bu-survey/law-plan.pdf",
+      "section": "4.3 and 4.3.4, existing GSU–Mugar connector and exterior",
+      "kind": "Official planning document describing existing building conditions",
+      "supports": [
+        "One occupied connector storey does not imply a single-storey exterior window height.",
+        "Section 4.3.4 explicitly describes the original south main entrance as a two-storey-high window wall leading into the Link."
+      ]
+    },
+    {
+      "url": "https://www.bu.edu/today/close-ups/2012/new-portal-for-library-patrons/",
+      "kind": "Official BU account of Mugar entry restoration inside the Link",
+      "supports": ["Retain the common exterior entry and avoid inventing a new Mugar street door."]
+    }
+  ],
+  "secondaryContextNotUsedAsAsBuilt": {
+    "url": "https://www.klopfermartin.com/projects/boston-university-mugar-library",
+    "status": "Construction Documents on source page",
+    "note": "Existing-site photographs and an annotated aerial offer context. Proposed landscape/rendering was not treated as evidence of installed conditions."
+  },
+  "implemented": {
+    "linkRoofHeightAboveSharedFoundation": 7.4,
+    "previousHeight": 4.15,
+    "heightStatus": "Photo estimate supported by documented two-storey-high window wall, not surveyed height",
+    "occupiedStoreys": 1,
+    "doorPairs": 3,
+    "doorLeaves": 6,
+    "retainedDoorClearSpan": 6.9,
+    "doorLeafHeight": 2.65,
+    "southFacadeLocalZ": 74.54,
+    "retainedEntryAxisLocal": [-12.52, 74.534],
+    "retainedArrivalLocal": [-12.52, 91],
+    "glassRecess": 0.45,
+    "doorGlassRecess": 0.55,
+    "concreteBeltCentreAboveFoundation": 4.13,
+    "courtGrid": {
+      "xSpacing": 4,
+      "zSpacing": 3.6,
+      "stoneBandWidth": 0.22,
+      "documentedBrickStripLocalX": [-22.4, -0.25],
+      "surfaceElevation": "Original source DEM + 0.155m; partitioned surfaces, no overlay and no raised platform",
+      "status": "Pattern based on photograph, grid dimensions and phase estimated. Existing larger eastern Mugar and Redstone forecourts are not reinterpreted."
+    },
+    "preserved": [
+      "All source footprint XY coordinates, common foundation anchor and closed-building collision footprint.",
+      "Existing horizontal entrance axis, occupied floor sill, graded final approach and navigation passages.",
+      "All other Sert volumes and their heights; no new occupied upper Link floor or interior.",
+      "CDS and Questrom GLBs, campus terrain and street geometry."
+    ],
+    "omittedUncertainItems": [
+      "Temporary class banners from the 2023 photograph.",
+      "Exact placement of courtyard trees, planters and low benches has not been surveyed; no new furniture was placed in pedestrian routes.",
+      "The complete GSU and Mugar facade families outside the Link remain their previous reconstructions, not fully matched to this photograph."
+    ]
+  },
+  "geometry": {
+    "full": {"beforeTriangles": 58176, "afterTriangles": 60190, "deltaTriangles": 2014},
+    "mobile": {"beforeTriangles": 20760, "afterTriangles": 22702, "deltaTriangles": 1942},
+    "visibleBatches": {"before": 13, "after": 15},
+    "closedWallColliders": {"before": 14, "after": 14},
+    "report": "output/bu-comm-ave-20261024-pass2/sert-geometry-report.json",
+    "note": "Full/mobile use the same tall window wall and pavement pattern. Mobile omits small door pull mounting blocks. Signage is runtime-only and excluded from these geometry counts."
+  },
+  "validation": {
+    "tests": ["tests/bu-link-entry.test.ts", "tests/bu-district-realism.test.ts", "tests/bu-sert-navigation.test.ts"],
+    "checks": ["actual visible ray depths through doors, side and upper glazing", "concrete belt and exact closed collider footprint/height", "single brick/stone surface at unchanged DEM height", "continuous graded door approach", "navigation corridor and shared entry reachability", "bounded desktop/mobile geometry"],
+    "result": "29 focused tests passed; TypeScript build passed. Runtime visual acceptance is performed separately by the parent integration task."
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "purpose": "Low-memory phone variants of the original campus avatars",
+  "generator": "scripts/prepare-mobile-characters.py",
+  "modifications": [
+    "Face albedos resized to at most 512px; remaining albedos to at most 256px, retaining aspect ratio and alpha.",
+    "Byte-identical bufferView payloads share aligned buffer ranges without changing accessor or bufferView indices.",
+    "No mesh, skeleton, morph target, animation, material, texture binding or license metadata removed."
+  ],
+  "budgetNote": "RGBA estimates count every image separately, conservatively, including exact full mip chains. Real GPU allocation depends on the browser and sharing.",
+  "models": [
+    {
+      "id": "pixiv",
+      "source": "public/assets/characters/pixiv/character.glb",
+      "sourceMetadata": "public/assets/characters/pixiv/SOURCE.json",
+      "sourceSha256": "d9b10bce7836979826b28e94555ac7ba4d88c4f83a1897f3ee2a16d7995c7d49",
+      "file": "pixiv.glb",
+      "sha256": "9b7fe377ff754e7e7dcb4fb37f7d03616433e3898c277a25c97d24e04c7e6d8c",
+      "beforeBytes": 5622828,
+      "afterBytes": 3309176,
+      "beforeDecodedRgbaBytes": 14155776,
+      "afterDecodedRgbaBytes": 3145728,
+      "beforeRgbaMipBytes": 18874380,
+      "afterRgbaMipBytes": 4194316,
+      "unchangedCounts": {
+        "meshes": 3,
+        "accessors": 1117,
+        "bufferViews": 1292,
+        "nodes": 172,
+        "skins": 3,
+        "animations": 5,
+        "materials": 13,
+        "textures": 13,
+        "images": 13
+      },
+      "animations": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Sprint",
+        "Seated"
+      ],
+      "validation": {
+        "allNonImageBufferViewsByteIdentical": true,
+        "allAccessorsSkinAnimationMeshAndMaterialDescriptorsIdentical": true,
+        "allBufferViewOffsetsFourByteAligned": true,
+        "embeddedLicenseMetadataPreserved": true
+      },
+      "images": [
+        {
+          "index": 0,
+          "name": "Body_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 88870,
+          "afterBytes": 27601,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 1,
+          "name": "Bottoms_01",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 44191,
+          "afterBytes": 8514,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 2,
+          "name": "Shoes_01",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 105061,
+          "afterBytes": 38379,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 3,
+          "name": "Tops_01",
+          "before": [
+            256,
+            512
+          ],
+          "after": [
+            128,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 21609,
+          "afterBytes": 5670,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 4,
+          "name": "HairBack_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 54566,
+          "afterBytes": 14591,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 5,
+          "name": "FaceMouth_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 40655,
+          "afterBytes": 10298,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 6,
+          "name": "EyeIris_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 31622,
+          "afterBytes": 9492,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 7,
+          "name": "Face_00",
+          "before": [
+            1024,
+            1024
+          ],
+          "after": [
+            512,
+            512
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 142098,
+          "afterBytes": 35694,
+          "beforeRgbaMipBytes": 5592404,
+          "afterRgbaMipBytes": 1398100
+        },
+        {
+          "index": 8,
+          "name": "EyeWhite_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 45720,
+          "afterBytes": 12501,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 9,
+          "name": "FaceEyeline_00",
+          "before": [
+            512,
+            128
+          ],
+          "after": [
+            256,
+            64
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 9216,
+          "afterBytes": 4297,
+          "beforeRgbaMipBytes": 349532,
+          "afterRgbaMipBytes": 87388
+        },
+        {
+          "index": 10,
+          "name": "FaceBrow_00",
+          "before": [
+            512,
+            128
+          ],
+          "after": [
+            256,
+            64
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 1279,
+          "afterBytes": 209,
+          "beforeRgbaMipBytes": 349532,
+          "afterRgbaMipBytes": 87388
+        },
+        {
+          "index": 11,
+          "name": "EyeHighlight_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 2354,
+          "afterBytes": 325,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 12,
+          "name": "Hair_00",
+          "before": [
+            512,
+            1024
+          ],
+          "after": [
+            128,
+            256
+          ],
+          "alphaPreserved": false,
+          "beforeBytes": 131731,
+          "afterBytes": 12459,
+          "beforeRgbaMipBytes": 2796204,
+          "afterRgbaMipBytes": 174764
+        }
+      ]
+    },
+    {
+      "id": "sakurada",
+      "source": "public/assets/characters/sakurada/sakurada.glb",
+      "sourceMetadata": "public/assets/characters/sakurada/SOURCE.json",
+      "sourceSha256": "d23e4d65a2a9c4827599009b958b6b1e437ea79ecba00e6be1740baf51399f76",
+      "file": "sakurada.glb",
+      "sha256": "0f4418a90f9256c9e7df2d7e3b7b59a739ca5ccf548c7033e34d69dc11b7dc99",
+      "beforeBytes": 7148468,
+      "afterBytes": 4657368,
+      "beforeDecodedRgbaBytes": 14680064,
+      "afterDecodedRgbaBytes": 3866624,
+      "beforeRgbaMipBytes": 19573436,
+      "afterRgbaMipBytes": 5155516,
+      "unchangedCounts": {
+        "meshes": 3,
+        "accessors": 475,
+        "bufferViews": 492,
+        "nodes": 122,
+        "skins": 3,
+        "animations": 5,
+        "materials": 17,
+        "textures": 17,
+        "images": 17
+      },
+      "animations": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Sprint",
+        "Seated"
+      ],
+      "validation": {
+        "allNonImageBufferViewsByteIdentical": true,
+        "allAccessorsSkinAnimationMeshAndMaterialDescriptorsIdentical": true,
+        "allBufferViewOffsetsFourByteAligned": true,
+        "embeddedLicenseMetadataPreserved": true
+      },
+      "images": [
+        {
+          "index": 0,
+          "name": "M00_000_FaceBrow_00",
+          "before": [
+            512,
+            128
+          ],
+          "after": [
+            256,
+            64
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 8997,
+          "afterBytes": 3876,
+          "beforeRgbaMipBytes": 349532,
+          "afterRgbaMipBytes": 87388
+        },
+        {
+          "index": 1,
+          "name": "M00_000_FaceMouth_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 120266,
+          "afterBytes": 26832,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 2,
+          "name": "M00_000_EyeIris_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 61770,
+          "afterBytes": 16767,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 3,
+          "name": "M00_000_EyeHighlight_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 14575,
+          "afterBytes": 3186,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 4,
+          "name": "M00_000_EyeWhite_00",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 67967,
+          "afterBytes": 16461,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 5,
+          "name": "M00_000_Face_00",
+          "before": [
+            1024,
+            1024
+          ],
+          "after": [
+            512,
+            512
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 608427,
+          "afterBytes": 129040,
+          "beforeRgbaMipBytes": 5592404,
+          "afterRgbaMipBytes": 1398100
+        },
+        {
+          "index": 6,
+          "name": "M00_000_FaceEyelash_00",
+          "before": [
+            512,
+            128
+          ],
+          "after": [
+            256,
+            64
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 10815,
+          "afterBytes": 4290,
+          "beforeRgbaMipBytes": 349532,
+          "afterRgbaMipBytes": 87388
+        },
+        {
+          "index": 7,
+          "name": "M00_000_FaceEyeline_00",
+          "before": [
+            512,
+            128
+          ],
+          "after": [
+            256,
+            64
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 17388,
+          "afterBytes": 6542,
+          "beforeRgbaMipBytes": 349532,
+          "afterRgbaMipBytes": 87388
+        },
+        {
+          "index": 8,
+          "name": "M00_000_00_EyeExtra_01",
+          "before": [
+            512,
+            256
+          ],
+          "after": [
+            256,
+            128
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 33136,
+          "afterBytes": 8197,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 9,
+          "name": "M00_001_Body_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 202396,
+          "afterBytes": 63559,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 10,
+          "name": "M00_001_Tops_01",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 264295,
+          "afterBytes": 71417,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 11,
+          "name": "M00_001_Accessory_01",
+          "before": [
+            256,
+            256
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 46655,
+          "afterBytes": 32258,
+          "beforeRgbaMipBytes": 349524,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 12,
+          "name": "M00_001_Bottoms_01",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 238512,
+          "afterBytes": 61343,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 13,
+          "name": "M00_001_Shoes_01",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 114662,
+          "afterBytes": 30796,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 14,
+          "name": "M00_000_HairBack_00",
+          "before": [
+            512,
+            512
+          ],
+          "after": [
+            256,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 119779,
+          "afterBytes": 38673,
+          "beforeRgbaMipBytes": 1398100,
+          "afterRgbaMipBytes": 349524
+        },
+        {
+          "index": 15,
+          "name": "F00_000_Hair_00_01",
+          "before": [
+            256,
+            512
+          ],
+          "after": [
+            128,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 67142,
+          "afterBytes": 14920,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        },
+        {
+          "index": 16,
+          "name": "F00_000_Hair_00_02",
+          "before": [
+            256,
+            512
+          ],
+          "after": [
+            128,
+            256
+          ],
+          "alphaPreserved": true,
+          "beforeBytes": 67142,
+          "afterBytes": 14920,
+          "beforeRgbaMipBytes": 699052,
+          "afterRgbaMipBytes": 174764
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1048 @@
+{
+  "id": "cds-full",
+  "createdUTC": "2026-10-18T18:42:27Z",
+  "blender": "4.5.9 LTS",
+  "input": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\full\\input\\cds-full.glb",
+  "inputSHA256": "051e27cd475890a6fe750b9d95e9a8baa9e6f19df499df92eec4d147b6a5c0bc",
+  "inputManifest": {
+    "id": "cds-full",
+    "units": "metres",
+    "toWorld": [
+      0.9895059058723947,
+      0,
+      0.1444924297105264,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -0.1444924297105264,
+      0,
+      0.9895059058723947,
+      0,
+      -873.2995578152193,
+      4.478491176840529,
+      1035.621125539902,
+      1
+    ],
+    "bounds": {
+      "min": [
+        -64.25,
+        -2.5488414764404297,
+        -42.753421783447266
+      ],
+      "max": [
+        22.75004005432129,
+        92.96399688720703,
+        12.350085258483887
+      ]
+    },
+    "bytes": 2727448,
+    "sha256": "051e27cd475890a6fe750b9d95e9a8baa9e6f19df499df92eec4d147b6a5c0bc",
+    "triangles": 22590,
+    "meshes": [
+      {
+        "name": "BU architecture \u00b7 stone",
+        "finish": "stone",
+        "ground": false,
+        "triangles": 270
+      },
+      {
+        "name": "BU architecture \u00b7 roof",
+        "finish": "roof",
+        "ground": false,
+        "triangles": 84
+      },
+      {
+        "name": "BU architecture \u00b7 trim",
+        "finish": "trim",
+        "ground": false,
+        "triangles": 48
+      },
+      {
+        "name": "BU architecture \u00b7 glass",
+        "finish": "glass",
+        "ground": false,
+        "triangles": 96
+      },
+      {
+        "name": "BU architecture \u00b7 frame",
+        "finish": "frame",
+        "ground": false,
+        "triangles": 7076
+      },
+      {
+        "name": "BU architecture \u00b7 bronze",
+        "finish": "bronze",
+        "ground": false,
+        "triangles": 14376
+      },
+      {
+        "name": "BU architecture \u00b7 glassShade",
+        "finish": "glassShade",
+        "ground": false,
+        "triangles": 44
+      },
+      {
+        "name": "BU architecture \u00b7 grass",
+        "finish": "grass",
+        "ground": false,
+        "triangles": 60
+      },
+      {
+        "name": "BU architecture \u00b7 paving",
+        "finish": "paving",
+        "ground": false,
+        "triangles": 60
+      },
+      {
+        "name": "BU ground \u00b7 paving",
+        "finish": "paving",
+        "ground": true,
+        "triangles": 476
+      }
+    ],
+    "collision": {
+      "ground": 1,
+      "walls": 4
+    },
+    "note": "Complete explicitly owned CDS geometry including tower, east podium, crown, terraces, sloped paving and foundation skirts. Uses the reviewed ground-sample coordinate frame; no spatial clipping."
+  },
+  "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-cds\\cds-full.glb",
+  "sha256": "12667506e53feeb2bf5545ea2fbc03915a54e9f529c8bfcfb78fb776a5838820",
+  "bytes": 5283612,
+  "before": {
+    "objects": 10,
+    "vertices": 67770,
+    "triangles": 22590,
+    "blenderBoundsMetres": {
+      "min": [
+        -64.25,
+        -12.350085258483887,
+        -2.5488414764404297
+      ],
+      "max": [
+        22.75004005432129,
+        42.753421783447266,
+        92.96399688720703
+      ]
+    }
+  },
+  "after": {
+    "objects": 12,
+    "vertices": 69498,
+    "triangles": 24730,
+    "blenderBoundsMetres": {
+      "min": [
+        -64.25,
+        -12.350085258483887,
+        -2.5488414764404297
+      ],
+      "max": [
+        22.75004005432129,
+        42.753421783447266,
+        92.96399688720703
+      ]
+    }
+  },
+  "triangleDelta": 2140,
+  "primitives": 12,
+  "materials": [
+    {
+      "name": "stone \u00b7 Blender PBR",
+      "source": "stone",
+      "family": "stone",
+      "baseTintLinear": [
+        0.5840784311294556,
+        0.5088813304901123,
+        0.40724021196365356
+      ]
+    },
+    {
+      "name": "roof \u00b7 Blender PBR",
+      "source": "roof",
+      "family": "concrete",
+      "baseTintLinear": [
+        0.09305896610021591,
+        0.13563333451747894,
+        0.1441284716129303
+      ]
+    },
+    {
+      "name": "trim \u00b7 Blender PBR",
+      "source": "trim",
+      "family": "stone",
+      "baseTintLinear": [
+        0.7605245113372803,
+        0.6795424818992615,
+        0.520995557308197
+      ]
+    },
+    {
+      "name": "glass \u00b7 Blender PBR",
+      "source": "glass",
+      "family": "glass",
+      "baseTintLinear": [
+        0.02442775517702103,
+        0.05163657069206238,
+        0.05409955978393555
+      ]
+    },
+    {
+      "name": "frame \u00b7 Blender PBR",
+      "source": "frame",
+      "family": "metal",
+      "baseTintLinear": [
+        0.31398871541023254,
+        0.3277781009674072,
+        0.26635560393333435
+      ]
+    },
+    {
+      "name": "bronze \u00b7 Blender PBR",
+      "source": "bronze",
+      "family": "metal",
+      "baseTintLinear": [
+        0.32314321398735046,
+        0.19806931912899017,
+        0.12743768095970154
+      ]
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR",
+      "source": "glassShade",
+      "family": "glass",
+      "baseTintLinear": [
+        0.0068679615855216985,
+        0.015637484192848206,
+        0.018168342113494874
+      ]
+    },
+    {
+      "name": "grass \u00b7 Blender PBR",
+      "source": "grass",
+      "family": "plain",
+      "baseTintLinear": [
+        0.1946178376674652,
+        0.31398871541023254,
+        0.109461709856987
+      ]
+    },
+    {
+      "name": "paving \u00b7 Blender PBR",
+      "source": "paving",
+      "family": "stone",
+      "baseTintLinear": [
+        0.6239603757858276,
+        0.520995557308197,
+        0.3613067865371704
+      ]
+    }
+  ],
+  "embeddedImages": 9,
+  "tangentRepairs": {
+    "vertices": 18,
+    "meshes": [
+      {
+        "mesh": "Mesh_9",
+        "vertices": 18,
+        "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+      }
+    ]
+  },
+  "mobileOfflineSource": {
+    "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\full\\cds-mobile-source.glb",
+    "sha256": "dbec5aa24d91257fc1a923fb9fe23e0cc20b691da4b182222d3e11e6fd031fa9",
+    "bytes": 3821488,
+    "images": 0,
+    "textures": 0
+  },
+  "outwardExpansionMetres": 0,
+  "protectedSurfaceGeometrySHA256": {
+    "BU architecture \u00b7 glass": "dad34e9ea0869dc02dc3ee9c83b1055843725f9a625870afad4d5dd80c92b0ac",
+    "BU architecture \u00b7 glassShade": "d5e7810c0fbeb7453fec410fe9132a39b341ecc9ccecc4a6c9e65cae65f8b70d",
+    "BU architecture \u00b7 paving": "d2eb3010fc6c59b5245e5d154b26063d3a170af3cd86e2d382719e342983a55c",
+    "BU ground \u00b7 paving": "fac1781a999b582fe023c1ab143c43ba152428a619b938379502dafc5568d9e2"
+  },
+  "allUpperSourceFacesRetainedAboveMetres": 7.5,
+  "sourceFacesRetainedOutsideExplicitHandlesAndBevelSelections": false,
+  "removedOldHandles": [
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -5.737508773803711,
+          2.1419694423675537,
+          0.8700000047683716
+        ],
+        "max": [
+          -5.702481746673584,
+          2.2220373153686523,
+          1.4299999475479126
+        ],
+        "dimensions": [
+          0.03502702713012695,
+          0.08006787300109863,
+          0.559999942779541
+        ]
+      },
+      "triangles": 12
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -5.397522926330566,
+          2.1419594287872314,
+          0.8700000047683716
+        ],
+        "max": [
+          -5.362478256225586,
+          2.2220184803009033,
+          1.4299999475479126
+        ],
+        "dimensions": [
+          0.03504467010498047,
+          0.08005905151367188,
+          0.559999942779541
+        ]
+      },
+      "triangles": 12
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.262487411499023,
+          2.141972541809082,
+          0.8700000047683716
+        ],
+        "max": [
+          8.297532081604004,
+          2.222031593322754,
+          1.4299999475479126
+        ],
+        "dimensions": [
+          0.03504467010498047,
+          0.08005905151367188,
+          0.559999942779541
+        ]
+      },
+      "triangles": 12
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.602490425109863,
+          2.1419694423675537,
+          0.8700000047683716
+        ],
+        "max": [
+          8.637517929077148,
+          2.2220373153686523,
+          1.4299999475479126
+        ],
+        "dimensions": [
+          0.035027503967285156,
+          0.08006787300109863,
+          0.559999942779541
+        ]
+      },
+      "triangles": 12
+    }
+  ],
+  "reviewedEntry": {
+    "blend": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\pass2\\cds-ground.blend",
+    "sha256": "e6101368876f97d3ef968bdd365a3bf20d70c8f326e3ec2c66bc4cd67aa614f1",
+    "tag": "cds-construction-20261019-v1",
+    "objects": [
+      "CDS pass2 \u00b7 metal construction",
+      "CDS pass2 \u00b7 column contact"
+    ],
+    "triangles": 4040,
+    "evidence": "pass2/manifest.json samples[cds-ground].detail"
+  },
+  "boundedBevels": [
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -21.920013427734375,
+          0.5299677848815918,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -21.580020904541016,
+          0.8700161576271057,
+          5.519999980926514
+        ],
+        "dimensions": [
+          0.3399925231933594,
+          0.3400483727455139,
+          5.519999851462117
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -7.920017242431641,
+          0.5299676656723022,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -7.580007076263428,
+          0.8700294494628906,
+          5.519999980926514
+        ],
+        "dimensions": [
+          0.3400101661682129,
+          0.3400617837905884,
+          5.519999851462117
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          6.079996585845947,
+          0.5299809575080872,
+          1.294643965366049e-07
+        ],
+        "max": [
+          6.419989109039307,
+          0.8700293302536011,
+          5.519999980926514
+        ],
+        "dimensions": [
+          0.3399925231933594,
+          0.3400483727455139,
+          5.519999851462117
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          17.080005645751953,
+          0.529977023601532,
+          1.294643965366049e-07
+        ],
+        "max": [
+          17.420015335083008,
+          0.8700388073921204,
+          5.519999980926514
+        ],
+        "dimensions": [
+          0.3400096893310547,
+          0.3400617837905884,
+          5.519999851462117
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -21.77920150756836,
+          42.08618927001953,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -21.67918586730957,
+          42.28622055053711,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.10001564025878906,
+          0.20003128051757812,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -21.824216842651367,
+          21.36798667907715,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -21.624177932739258,
+          21.468002319335938,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.20003890991210938,
+          0.10001564025878906,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          19.507980346679688,
+          21.322999954223633,
+          1.294643965366049e-07
+        ],
+        "max": [
+          19.608030319213867,
+          21.52298927307129,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.10004997253417969,
+          0.19998931884765625,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          19.4630069732666,
+          2.0319414138793945,
+          1.294643965366049e-07
+        ],
+        "max": [
+          19.662996292114258,
+          2.1320271492004395,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.19998931884765625,
+          0.10008573532104492,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -7.037525653839111,
+          1.9619778394699097,
+          0.10000003129243851
+        ],
+        "max": [
+          -6.962515830993652,
+          2.362049102783203,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.07500982284545898,
+          0.40007126331329346,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -4.137526512145996,
+          1.9619389772415161,
+          0.10000003129243851
+        ],
+        "max": [
+          -4.062509536743164,
+          2.3620364665985107,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.07501697540283203,
+          0.40009748935699463,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -5.582484722137451,
+          2.2119736671447754,
+          0.10000003129243851
+        ],
+        "max": [
+          -5.517470836639404,
+          2.3120293617248535,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.06501388549804688,
+          0.10005569458007812,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -7.000029563903809,
+          1.962012529373169,
+          2.759999990463257
+        ],
+        "max": [
+          -4.10001277923584,
+          2.362001895904541,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          2.9000167846679688,
+          0.39998936653137207,
+          0.09000015258789062
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -7.000029563903809,
+          1.962012529373169,
+          0.10000003129243851
+        ],
+        "max": [
+          -4.10001277923584,
+          2.362001895904541,
+          0.15000022947788239
+        ],
+        "dimensions": [
+          2.9000167846679688,
+          0.39998936653137207,
+          0.05000019818544388
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          6.9624810218811035,
+          1.9619501829147339,
+          0.10000003129243851
+        ],
+        "max": [
+          7.037490367889404,
+          2.3620216846466064,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.07500934600830078,
+          0.40007150173187256,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          9.862476348876953,
+          1.9620059728622437,
+          0.10000003129243851
+        ],
+        "max": [
+          9.93749713897705,
+          2.361982822418213,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.07502079010009766,
+          0.39997684955596924,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.41747760772705,
+          2.212031841278076,
+          0.10000003129243851
+        ],
+        "max": [
+          8.482491493225098,
+          2.31196665763855,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          0.06501388549804688,
+          0.09993481636047363,
+          2.750000111758709
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          6.999983787536621,
+          1.961958646774292,
+          2.759999990463257
+        ],
+        "max": [
+          9.89999008178711,
+          2.362030029296875,
+          2.8500001430511475
+        ],
+        "dimensions": [
+          2.9000062942504883,
+          0.400071382522583,
+          0.09000015258789062
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          6.999983787536621,
+          1.961958646774292,
+          0.10000003129243851
+        ],
+        "max": [
+          9.89999008178711,
+          2.362030029296875,
+          0.15000022947788239
+        ],
+        "dimensions": [
+          2.9000062942504883,
+          0.400071382522583,
+          0.05000019818544388
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -31.10801887512207,
+          1.976954698562622,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -31.007976531982422,
+          2.1770551204681396,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.10004234313964844,
+          0.20010042190551758,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -31.163021087646484,
+          7.079163074493408,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -30.962980270385742,
+          7.1792402267456055,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.2000408172607422,
+          0.10007715225219727,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -31.153030395507812,
+          2.082026958465576,
+          2.805000066757202
+        ],
+        "max": [
+          -30.97298240661621,
+          7.12925910949707,
+          2.8950002193450928
+        ],
+        "dimensions": [
+          0.18004798889160156,
+          5.047232151031494,
+          0.09000015258789062
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -31.153030395507812,
+          2.082026958465576,
+          5.485000133514404
+        ],
+        "max": [
+          -30.97298240661621,
+          7.12925910949707,
+          5.575000286102295
+        ],
+        "dimensions": [
+          0.18004798889160156,
+          5.047232151031494,
+          0.09000015258789062
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -56.83121871948242,
+          7.024177551269531,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -56.731201171875,
+          7.224208831787109,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.10001754760742188,
+          0.20003128051757812,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -56.88621520996094,
+          42.13119888305664,
+          1.294643965366049e-07
+        ],
+        "max": [
+          -56.68617248535156,
+          42.23121643066406,
+          5.599999904632568
+        ],
+        "dimensions": [
+          0.200042724609375,
+          0.10001754760742188,
+          5.599999775168172
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    }
+  ],
+  "bevelAddedTriangles": 768,
+  "previousAssetsUnchangedSHA256": {
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\cds-ground.blend": "ae4262d7886cfdf214fc582647721a420607fe399a206527f2c959bf4d64e65a",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\pass2\\cds-ground.blend": "e6101368876f97d3ef968bdd365a3bf20d70c8f326e3ec2c66bc4cd67aa614f1",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality\\cds-ground.glb": "ccf3bc21f0088f6d0c52753c1978821b1f201561812fd7c9071b2745a50f71ac",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality-pass2\\cds-ground.glb": "4c03996886cf8c5f952e012029952b50ba3b172d154a7d4936cc10272b0b7824"
+  },
+  "reusedTexturesSHA256": {
+    "textures\\brick-basecolor.png": "92a8842e064539bbf66464b92e517be73e8972e40d84ec64e54e8bd6544e5e2b",
+    "textures\\brick-normal.png": "fb64e1d69f5515a42939eb67f640f7434da1137568c5cfe9d84d200ce1a8a4bf",
+    "textures\\brick-orm.png": "b816813a370bd7c16bf9ea37b0182446c8c1502d7bddf9dffda2d13cadd3b458",
+    "textures\\stone-basecolor.png": "8937a856a9cfee468c90fc9bf5e80bc4aed44cfeb125835ae8a110e1559ae6e2",
+    "textures\\stone-normal.png": "a7c9d5b21a032ef1ef28ca55c63885ae1580b9dd85bd6e393adefd07f267484f",
+    "textures\\stone-orm.png": "5025f66f3fe2dcc9b4cb957eb10233cba24eb9d3a2ca148063ac2c770a65e0b8",
+    "textures\\concrete-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "textures\\concrete-normal.png": "90f9ca2388f8ab63374c0a48dce6ea9851a9d3e12908c4d7bfba4cdefc823a96",
+    "textures\\concrete-orm.png": "efece217feef189e1735b00e805370ad0f9b20cb234da3067f261588fe9784b0",
+    "textures\\wood-basecolor.png": "2b1bab381396e0b887d2df39b3df92661d91e05536f61486e3af52fa280150ec",
+    "textures\\wood-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "textures\\wood-orm.png": "2d73c732ad0ea4f747ff9951cf7a748ab95ec0df6f7b7f5ff8ffcf70ba2771c6",
+    "textures\\metal-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "textures\\metal-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "textures\\metal-orm.png": "7687a638362439539fad3840547c125d4d3ee21b7eed094d3654ffc6c564060b"
+  },
+  "limitations": [
+    "Existing authored building massing/entrance axes are preserved; this is not a new as-built survey.",
+    "Fine entry hardware and bevel dimensions remain the reviewed construction approximations.",
+    "Opaque dielectric glazing is an exterior PBR approximation with no invented interior or transmission.",
+    "Global scene lighting/environment is configured by Three.js, not baked into this asset.",
+    "Full-source geographic transform remains in inputManifest; mesh coordinates are metre-scale sample-local coordinates."
+  ],
+  "runtimeDoorPreparation": {
+    "revision": "cds-runtime-door-openings-20261020-v1",
+    "inputSHA256": "4cc94922dd7afe6132774218085fcd0d05601ec6db05ab0f1d775056b76547ac",
+    "beforeTriangles": 27350,
+    "afterTriangles": 24730,
+    "removedTriangles": {
+      "moving-hardware": 2544,
+      "center-post": 88,
+      "backing-source-triangle": 2,
+      "leaf-pane": 8
+    },
+    "newBackingTriangles": 22,
+    "changedMeshes": [
+      {
+        "mesh": "CDS pass2 \u00b7 metal construction",
+        "removedTriangles": {
+          "moving-hardware": 2544
+        },
+        "retainedTriangles": 1408
+      },
+      {
+        "mesh": "BU architecture \u00b7 frame",
+        "removedTriangles": {
+          "center-post": 88
+        },
+        "retainedTriangles": 7580
+      },
+      {
+        "mesh": "BU architecture \u00b7 glassShade",
+        "removedTriangles": {
+          "backing-source-triangle": 2,
+          "leaf-pane": 8
+        },
+        "retainedTriangles": 56
+      }
+    ],
+    "movingDetailParts": 36,
+    "doors": [
+      {
+        "id": "west",
+        "originalLocalCenter": [
+          30.2,
+          0,
+          18.848
+        ],
+        "clearWidthBetweenJambs": 2.825,
+        "backingOpening": {
+          "width": 2.825,
+          "bottom": 0.1,
+          "top": 2.85
+        },
+        "leafCenters": [
+          29.474999999999998,
+          30.925
+        ],
+        "leafWidth": 1.37,
+        "leafBottom": 0.15,
+        "leafTop": 2.8,
+        "interiorCenter": [
+          30.2,
+          0,
+          19.068
+        ]
+      },
+      {
+        "id": "east",
+        "originalLocalCenter": [
+          44.2,
+          0,
+          18.848
+        ],
+        "clearWidthBetweenJambs": 2.825,
+        "backingOpening": {
+          "width": 2.825,
+          "bottom": 0.1,
+          "top": 2.85
+        },
+        "leafCenters": [
+          43.475,
+          44.925000000000004
+        ],
+        "leafWidth": 1.37,
+        "leafBottom": 0.15,
+        "leafTop": 2.8,
+        "interiorCenter": [
+          44.2,
+          0,
+          19.068
+        ]
+      }
+    ],
+    "unchanged": [
+      "node transforms",
+      "materials and baked image bytes",
+      "all ground/terrain/paving",
+      "all triangles outside the explicit static leaves/hardware/center posts and the two backing source triangles",
+      "all upper-storey geometry",
+      "existing exterior collision"
+    ],
+    "scope": "Exterior GLB only. Interior already has corresponding holes; runtime supplies animated leaves. Door axes and dimensions retain the authored model, not an as-built survey.",
+    "editableSource": "cds-full.blend retains the closed-door source. build-cds-full.py runs this exact postprocess on its export."
+  },
+  "afterClosedDoorBlenderFinishing": {
+    "objects": 12,
+    "vertices": 69498,
+    "triangles": 27350,
+    "blenderBoundsMetres": {
+      "min": [
+        -64.25,
+        -12.350085258483887,
+        -2.5488414764404297
+      ],
+      "max": [
+        22.75004005432129,
+        42.753421783447266,
+        92.96399688720703
+      ]
+    }
+  },
+  "sourceFacesRetainedOutsideExplicitSelections": "Handles, bounded bevels, and runtimeDoorPreparation selections",
+  "protectedSurfaceGeometrySHA256Scope": "Closed-door Blender source before explicit runtime door export preparation"
+}

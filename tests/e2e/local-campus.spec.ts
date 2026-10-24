@@ -1,5 +1,7 @@
 import {test,expect,type Page} from '@playwright/test';
 import {mkdir,writeFile} from 'node:fs/promises';
+import {authenticateContext} from '../../scripts/test-auth.mjs';
+test.beforeEach(async({context,baseURL})=>{await authenticateContext(context,baseURL);});
 type LocalState={mode:string;quality:string;fov:number;cameraPosition:number[];cameraGroundHeight:number;position:number[];cameraForward:number[];calls:number;triangles:number};
 const screenshotRoot='docs/screenshots/cambridge-first-pass';
 const campusState=(page:Page)=>page.evaluate(()=>(window as unknown as {__localCampus:LocalState}).__localCampus);

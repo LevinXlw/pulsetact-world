@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-18",
+  "scope": "Second BU core implementation pass: GSU-Mugar Link entrance, approach and arrival routes; Bay State/Silber kerb continuity",
+  "references": [
+    "https://www.bu.edu/reservations/gsu/",
+    "https://www.bu.edu/library/find-access/borrowing/bu-libraries-2-go/",
+    "https://www.bu.edu/today/close-ups/2012/new-portal-for-library-patrons/",
+    "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf"
+  ],
+  "evidenceLimits": [
+    "Current BU text identifies The Link as the front entrance, with Mugar to the right and Food Hall to the left; the library identifies its Commonwealth-facing entrance.",
+    "The entry anchor is the centre of the existing GIS Link south edge. Door width, leaf count, sign, frames, thresholds and individual paving dimensions are authored approximations, not a facade survey.",
+    "The 2012 PNF supports the forecourt and brick paving relationship; it is not a current as-built record. New approach paving preserves the existing DEM.",
+    "Building footprints, heights and occupied-volume collision remain unchanged. Interiors are not implemented.",
+    "Kerb faces and lowered entry profiles are authored detail around existing GIS roads and footbridge paths. The mobile scene retains its existing lightweight street representation."
+  ],
+  "changes": {
+    "entry": "Recessed glazed Link door group, narrow head, frames and shared sign; removed misleading large GSU/Mugar facade entry labels.",
+    "ground": "Connected the approximately 11m former grass gap with brick approach paving. A local 1.6m landing reaches the door sill above the surrounding grade without moving the Sert foundation.",
+    "navigation": "Mugar and GSU outdoor arrivals face the Link; new guide branch ends outside its closed doors. Bidirectional links to Law and Pappas remain unobstructed.",
+    "street": "Extended physical kerb faces along selected Bay State/Silber segments and their Commonwealth junction; lowered kerbs at cross streets and existing bridge landings.",
+    "mobile": "Rebaked Boston; brick ground uses XZ projection in HD and concrete no longer receives masonry joints. No new texture or rendering pass."
+  },
+  "geometry": {
+    "sertDesktopTrianglesBefore": 57946,
+    "sertDesktopTrianglesAfter": 58176,
+    "sertMobileTrianglesBefore": 20602,
+    "sertMobileTrianglesAfter": 20760,
+    "streetsTrianglesBefore": 393722,
+    "streetsTrianglesAfter": 396497,
+    "streetTriangleLimit": 400000
+  },
+  "mobileBoston": {
+    "bytesBefore": 23542684,
+    "bytesAfter": 23550096,
+    "trianglesBefore": 644383,
+    "trianglesAfter": 644557,
+    "visibleMeshes": 184,
+    "textures": 0,
+    "assetLimitBytes": 26214400
+  },
+  "validation": {
+    "unitTests": "92 relevant tests passed across navigation, arrival, geography, streets, architecture, entrance ground rays and mobile decoding; not a complete repository suite in this pass.",
+    "build": "npm run build:cloudflare passed, including TypeScript. 95 assets / 136.80 MiB staged, not deployed.",
+    "fixedViews": "8 same-camera before/after captures; zero page/shader errors or invalid geometry vertices.",
+    "mobilePlay": "Touch Chromium: all 29 BU destinations, movement, HD switch, Link HD rendering, save persistence, safe low-quality reload and viewport fit passed.",
+    "mobileBudget": "Touch Chromium observed heap peak 76.99 MiB and backing storage 71.74 MiB; no desktop MIT/detail GLBs. Not a physical iPhone stability test.",
+    "comparisonReport": "6 image pairs, slider, image loading and 390px layout passed."
+  },
+  "artifacts": {
+    "comparison": "output/bu-implementation-20261018-pass2/review.html",
+    "baseline": "output/bu-implementation-20261018-pass2/baseline/visual-report.json",
+    "result": "output/bu-implementation-20261018-pass2/result/visual-report.json",
+    "mobilePlay": "output/bu-implementation-20261018-pass2/mobile/report.json",
+    "mobileBudget": "output/bu-implementation-20261018-pass2/mobile-budget.json"
+  }
+}

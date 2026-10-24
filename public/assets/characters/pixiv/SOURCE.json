@@ -1,0 +1,24 @@
+{
+  "name": "VRM1_Constraint_Twist_Sample",
+  "displayName": "白 T · 休闲漫游者",
+  "authors": ["pixiv Inc."],
+  "copyright": "(c) 2022 pixiv Inc.",
+  "source": "https://github.com/pixiv/three-vrm/blob/1b4fc0cc7ef39a49d62bb7a66dcfeca8f65316f7/packages/three-vrm/examples/models/VRM1_Constraint_Twist_Sample.vrm",
+  "sourceLicense": "https://github.com/vrm-c/vrm-specification/blob/master/samples/VRM1_Constraint_Twist_Sample/README.md",
+  "license": "VRM Public License 1.0 (embedded permission settings apply; not CC0 or MIT)",
+  "licenseUrl": "https://vrm.dev/licenses/1.0/",
+  "permissions": {
+    "avatarPermission": "everyone",
+    "commercialUsage": "corporation",
+    "creditNotation": "unnecessary",
+    "allowRedistribution": true,
+    "modification": "allowModificationRedistribution",
+    "allowAntisocialOrHateUsage": false
+  },
+  "localSource": "marathon/public/models/runner.glb",
+  "sha256": "d9b10bce7836979826b28e94555ac7ba4d88c4f83a1897f3ee2a16d7995c7d49",
+  "originalSha256": "12c2b97e95e700783a6a550dc0eee2d7880aeedccef9ae67bc4c5a2f0f2631a2",
+  "modifications": ["Original VRM constraints baked for standard glTF playback", "Retargeted Quaternius animations", "Textures resized and unused maps removed", "Runtime toon materials; original outfit and textures retained"],
+  "animations": {"author": "Quaternius", "pack": "Universal Animation Library", "source": "https://quaternius.com/packs/universalanimationlibrary.html", "license": "CC0 1.0", "clips": ["Idle", "Walk", "Run", "Sprint", "Seated"]},
+  "importedAt": "2026-10-11"
+}

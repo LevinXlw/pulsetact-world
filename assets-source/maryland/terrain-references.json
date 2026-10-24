@@ -1,0 +1,24 @@
+{
+  "dataset": "Maryland iMAP Prince George's County bare-earth LiDAR DEM",
+  "service": "https://mdgeodata.md.gov/lidar/rest/services/PrinceGeorges/MD_princegeorges_dem_m/ImageServer",
+  "acquisition": "Late 2020 to early 2021, per the service's archived metadata",
+  "metadataSnapshot": "umd-dem-service.json",
+  "samples": "umd-terrain-samples.json",
+  "sampleCount": 11243,
+  "regularGrid": {"columns":105,"rows":107,"spacingInGameUnits":25},
+  "additionalLandmarkSamples": 8,
+  "verticalDatum": "NAVD88; raster values in meters, independently checked at McKeldin Library with USGS EPQS",
+  "unitVerification": "USGS result and query URL are retained in umd-terrain-samples.json. The ArcGIS metadata retains native feet VCS information, so the units were not inferred solely from that field.",
+  "verificationDocs": "https://epqs.nationalmap.gov/v1/docs",
+  "campusSlopeEvidence": "https://fellercenter.umd.edu/directions/union",
+  "generator": "node scripts/prepare-maryland-terrain.mjs",
+  "adaptation": [
+    "Grid query coordinates invert the same McKeldin-to-Miller rotated/scaled frame as prepare-maryland-full-layout.mjs, including its 1.65 x and 1.7 z spacing expansion.",
+    "Runtime subtracts a 14 meter local datum; it does not amplify the vertical range.",
+    "A 3 by 3 weighted filter smooths survey micro-detail for walking. Existing building positions, some of which are deliberately displaced, receive authored level pads with softened transitions.",
+    "The legacy McKeldin, Miller and STAMP ground platforms use their actual source building-center elevations because the old central plan was compressed separately.",
+    "All draped surfaces conform to one 12.5 game unit triangular lattice. This avoids lawn and road interpenetration despite independently authored mesh tessellation.",
+    "Building heights, detailed steps, entrances and local retaining structures are authored, not measured by this bare-earth DEM.",
+    "This is a geographically informed game adaptation, not a 1:1 campus survey or a representation of all construction changes since the LiDAR flight."
+  ]
+}

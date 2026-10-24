@@ -1,0 +1,17 @@
+{
+  "title": "Natural Earth 1:110m land polygons",
+  "retrieved": "2026-10-15T01:00:50.510Z",
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+  "publisher": "Natural Earth / Nathaniel Vaughn Kelso",
+  "homepage": "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "usage": "Redistribution, modification and commercial use permitted; no attribution required. Credit retained voluntarily.",
+  "attribution": "Made with Natural Earth",
+  "originalSha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+  "originalBytes": 138160,
+  "runtimeBytes": 106656,
+  "featureCount": 127,
+  "modifications": "Discarded thematic properties and rounded WGS84 longitude/latitude to four decimal places; no geometry simplification beyond the source 1:110m scale.",
+  "limitations": "World-scale locator coastline only. Does not resolve Boston shoreline, inland rivers, campus streets or property boundaries."
+}

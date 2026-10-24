@@ -1,0 +1,282 @@
+{
+  "reviewedAt": "2026-10-23",
+  "scope": "Primary-source exterior reference audit for Baker House, Simmons Hall, and Maseeh Hall. Reference research only; no model/public files changed.",
+  "method": "Downloaded public image URLs exposed by official owner, architect, or foundation pages and visually inspected them. Geometry recommendations are visual interpretations unless a written source is identified. Local details can be estimated to preserve recognizable form.",
+  "buildings": {
+    "baker": {
+      "stories": 6,
+      "orientation": "Smooth serpentine residential facade faces south/Charles River and Memorial Drive. Angular stair/common-space facade faces north/athletic fields and Amherst Alley.",
+      "criticalShape": [
+        "Use the actual long serpentine room strip, not a straight slab with a wavy applied skin. Ends include substantial near-blind brick planes.",
+        "Low dining/Moon Garden pavilion projects toward the river from the central part of the slab; it has strong horizontal roof edges and ribbon glazing, unlike the dorm-room window rhythm.",
+        "North facade is strongly different: two terracotta-colored suspended stair wings form an approximate V when viewed from the athletic fields. Stair flights and short landing breaks define their lower edge; window groups step with the stairs. A recessed central linking wall has stacked horizontal window bands.",
+        "North western section (image right in baker-home.jpg) retains darker brick and irregular small windows. Do not cover the whole north facade in terracotta panels.",
+        "Flat roof has low light-colored service volumes and open pergola-like elements; no pitched roof."
+      ],
+      "windows": "South facade: six room-floor window rows following the wave, generally rectangular windows with larger upper glazing and a smaller lower sash strip. North: irregular groups and ribbon-like runs; never mirror the south grid.",
+      "materials": "Dark textured reddish-brown brick; warmer smooth terracotta/pink-red stair faces; pale concrete plinth/edges; light window frames; muted gray entrance canopy.",
+      "entrance": {
+        "confidence": "high for side and architectural relation; no surveyed point claimed",
+        "location": "North-side recessed courtyard at the bottom between the two sloping stair wings.",
+        "appearance": "Short wide dark gray flat canopy, narrow supports, recessed brown timber double doors, and a short flight of approach steps. The official Guide photograph explicitly captions this as the front entrance.",
+        "limitation": "The source model's approximately 17x16 m northern low appendage is not formally identified by these references. Do not equate its entire area to the small visible canopy."
+      },
+      "pitfalls": [
+        "Do not place the main door in the south dining pavilion by default.",
+        "Do not model the suspended stairs as two conventional rectangular stair towers.",
+        "baker-foundation-1949.jpg is a historical plan drawing, not a photograph."
+      ],
+      "sources": [
+        "https://listart.mit.edu/art-artists/baker-house-1949",
+        "https://baker.mit.edu/about/",
+        "https://mitguidetoresidences.mit.edu/index.php/residences/baker-house",
+        "https://www.alvaraalto.fi/en/alvar-aalto-foundation/alvar-aaltos-life/"
+      ]
+    },
+    "simmons": {
+      "stories": 10,
+      "orientation": "Main long photographed elevation faces Vassar Street/Briggs athletic fields. Architect's color elevation identifies it as south elevation. The main entrance plan has north up and the entrance at the east end near its south corner.",
+      "criticalShape": [
+        "Three high ten-story portions with two unequal lowered terrace roof lines; use the visibly unequal spans and terrace heights rather than three identical towers.",
+        "Five large-scale mass openings include terraces, corner recesses and lower openings. Some have a recessed colored/perforated backing wall and a few larger windows; they are not all completely through-cut voids.",
+        "Several large irregular atrium windows have sloping sides and rounded/curved lower corners, distinct from the rectilinear major recesses.",
+        "Street level includes long glazed/awning zones. The middle-right large exterior stair opening is separate from the main east-end door.",
+        "The short ends and return faces also carry the fine grid, with local larger recesses and solid/infilled cells."
+      ],
+      "windows": {
+        "longFacadeGrid": "116 columns by 31 rows, explicitly stated by MIT's 2022 projection-installation report.",
+        "roomRhythm": "Nine little square operable windows per single room, normally three by three; approximately three small-window rows per story, not one.",
+        "gridPitch": "40 inches (1.016 m), stated by structural engineer Guy Nordenson.",
+        "detail": "Deeply recessed glazing; silver-gray flat aluminum outer grid; colored jambs and heads inside the openings; narrow dark projecting sill edge. Some cells are deliberately filled for structural stress.",
+        "color": "Predominantly red/orange/yellow concentrations with selected blue/green cells; do not randomly color outer aluminum grid bars."
+      },
+      "dimensions": {
+        "structuralEngineer": "SGH's primary project description gives 385 ft long, 100 ft high, 54 ft wide (approximately 117.35 x 30.48 x 16.46 m).",
+        "discrepancy": "Steven Holl project narrative says 330 ft long. Prefer surveyed model envelope plus actual photo proportions; 116 x 40 in = 386.67 ft independently supports the longer grid envelope.",
+        "sources": [
+          "https://www.sgh.com/project/massachusetts-institute-of-technology-simmons-hall/",
+          "https://www.nordenson.com/archive/mit-simmons-hall-residence"
+        ],
+        "access": "SGH dimension text was accessible in web search extract; direct page returned 403. No restriction bypass was attempted."
+      },
+      "entrance": {
+        "confidence": "high for relative location in the official public plan, document dated 2013",
+        "location": "East end of the long building, near the southeast corner, opening onto the east-facing short wall in a small setback.",
+        "evidence": "Official floor-1 plan labels the rightmost lower end entrance as 1=Main Entrance. The prominent middle-right external stair is floor-2 egress, not the main ground-level entry.",
+        "source": "https://studentlife.mit.edu/app/uploads/2025/05/Residence-Hall-Security-Improvements_Simmons_1-2.pdf",
+        "localPlan": "simmons-public-entrance-plan.png"
+      },
+      "pitfalls": [
+        "Do not reduce the facade to ten tall window rows.",
+        "Do not treat all five large openings as empty tunnels.",
+        "Do not use the watercolor section as as-built exterior evidence.",
+        "Do not transpose the large stair opening and the main east-end door."
+      ],
+      "sources": [
+        "https://stevenholl.com/project/mit-simmons-hall/",
+        "https://web.mit.edu/facilities/construction/completed/simmons.html",
+        "https://architecture.mit.edu/news/mit-simmons-hall-interactive-canvas",
+        "https://listart.mit.edu/art-artists/simmons-hall-2002",
+        "https://www.nordenson.com/archive/mit-simmons-hall-residence"
+      ]
+    },
+    "maseeh": {
+      "stories": 7,
+      "orientation": "W1 at Massachusetts Avenue/Memorial Drive. River-facing front is south; the separately photographed Amherst Street entrance is north/campus side.",
+      "criticalShape": [
+        "South elevation has two projecting wing ends framing a recessed central courtyard, not one flat plane.",
+        "Each south wing has an inner faceted/octagonal tower capped by a dark ribbed copper cupola and an outer square crenellated corner. Preserve the separation and roof silhouette.",
+        "Faceted projecting window bays and limestone quoins articulate the vertical masonry. Stone horizontal bands interrupt the tall brick faces.",
+        "North entrance is crowned by a central stepped/curved ornamental brick gable with pale stone trim and finials.",
+        "River courtyard retains a separate recessed vestibule/canopy. Do not copy the north central gable directly onto the outer south wing fronts."
+      ],
+      "windows": "Mostly vertically proportioned white/light sash windows, some paired in stone surrounds. Preserve facade bay differences, prominent stone surrounds/bands, and projecting bay corners rather than a uniform window lattice.",
+      "materials": "Textured red-brown brick, warm pale limestone trim/quoins, light sashes. Cupola caps are dark aged copper with visible ribs and thin greenish finials/weather vanes; they are not bright solid-green cones.",
+      "entrance": {
+        "north": "Amherst Street entry: approach steps, dark bowed glass/metal canopy, recessed glass/door zone, large central stone arch flanked by smaller arches beneath the tall ornamental gable.",
+        "south": "Memorial Drive side: entrance set back within the courtyard between the two wings. Lower door detail is partly occluded by mature trees in the MIT full-front photograph.",
+        "sourceDistinction": "Existing output/design/mit-20261021/references/maseeh-2011.jpg depicts Amherst Street, per the official caption; it is not the Memorial Drive front.",
+        "architectNotes": "MDS renovation page distinguishes restored main entrance canopy and recreated courtyard vestibule canopy overlooking the river."
+      },
+      "pitfalls": [
+        "Do not make cupola drums cylindrical; the photos show faceted masonry.",
+        "Do not confuse current Ashdown NW35 with historic Ashdown/current Maseeh W1.",
+        "maseeh-river-overall.jpg is actually a roof/cupola close-up despite its filename."
+      ],
+      "sources": [
+        "https://news.mit.edu/2011/maseeh-hall-welcomed-0916",
+        "https://capitalprojects.mit.edu/projects/maseeh-hall-w1",
+        "https://www.mds-bos.com/mit-maseeh-hall-renovation"
+      ]
+    }
+  },
+  "images": [
+    {
+      "file": "../../../output/design/mit-20261021/references/baker.webp",
+      "kind": "photograph",
+      "view": "Elevated south/river-side overall",
+      "url": "https://listart.mit.edu/sites/default/files/styles/uncropped_100/public/media/images/2022-09/15681426078_65d6aaa0c6_o.jpg.webp?itok=vCkxmS5e",
+      "credit": "MIT Image Library; architecture copyright notice on MIT List page",
+      "viewed": true
+    },
+    {
+      "file": "baker-home.jpg",
+      "kind": "photograph",
+      "view": "North facade from athletic fields; both suspended stairs",
+      "url": "https://baker.mit.edu/_astro/home.BTHuVGcX.jpg",
+      "credit": "Baker site credits Maija Holma / Alvar Aalto Foundation",
+      "viewed": true
+    },
+    {
+      "file": "baker-mit-guide.jpg",
+      "kind": "photograph",
+      "view": "North front entrance close-up",
+      "url": "https://mitguidetoresidences.mit.edu/sites/default/files/header-background/7676815734_894a64a1c9_o.jpg",
+      "credit": "MIT Guide to Residences; individual photographer not stated on the viewed page",
+      "viewed": true
+    },
+    {
+      "file": "baker-foundation-1987.jpg",
+      "kind": "historical photograph",
+      "view": "River-side oblique; blind end, wave facade, dining pavilion",
+      "url": "https://www.alvaraalto.fi/wp-content/uploads/2020/11/mit-baker-dormitory-photo-teppo-jokinen-1987-@-alvar-aalto-foundation-L-1992.jpg",
+      "credit": "Teppo Jokinen, 1987 / Alvar Aalto Foundation",
+      "viewed": true
+    },
+    {
+      "file": "baker-foundation-1949.jpg",
+      "kind": "historical plan drawing",
+      "view": "Room strip, north circulation, south dining pavilion/skylights",
+      "url": "https://www.alvaraalto.fi/wp-content/uploads/2020/11/MIT-Baker-House-USA-1946-1949_42-147-988x659.jpg",
+      "credit": "Alvar Aalto Foundation",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-main.jpg",
+      "kind": "photograph",
+      "view": "Near-frontal full field-facing elevation at dusk",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/00027_2-20-03-scaled.jpg",
+      "credit": "Steven Holl Architects project gallery; individual image credit not specified in extracted page",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-view2.jpg",
+      "kind": "photograph",
+      "view": "Daylight field-facing facade; early site condition",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/0044_000881-scaled.jpg",
+      "credit": "Steven Holl Architects project gallery",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-view3.jpg",
+      "kind": "interior photograph",
+      "view": "Organic atrium/light opening, not exterior",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/00026_2-20-03-W-PROJECT-V.jpg",
+      "credit": "Steven Holl Architects project gallery",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-view4.jpg",
+      "kind": "photograph",
+      "view": "Exterior colored window reveal and aluminum panel close-up",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/0009_10-27-02-scaled.jpg",
+      "credit": "Steven Holl Architects project gallery",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-view5.jpg",
+      "kind": "photograph",
+      "view": "High-resolution oblique facade crop; inset back walls and irregular atrium windows",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/03-009-54B-scaled.jpg",
+      "credit": "Steven Holl Architects project gallery",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-view6.jpg",
+      "kind": "interior photograph",
+      "view": "Interior stair and concrete window grid, not exterior",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/00043_2-21-03-scaled.jpg",
+      "credit": "Steven Holl Architects project gallery",
+      "viewed": true
+    },
+    {
+      "file": "simmons-holl-lightair.jpg",
+      "kind": "concept watercolor",
+      "view": "Light/air section diagram, not as-built photograph",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/lightair.jpg",
+      "credit": "Steven Holl Architects",
+      "viewed": true
+    },
+    {
+      "file": "simmons-south-elevation.jpg",
+      "kind": "architect color elevation drawing",
+      "view": "Label: SOUTH ELEVATION AT NORTH WALL LINE A; corroborate with built photos",
+      "url": "https://stevenholl.com/wp-content/uploads/2010/01/Facade-Color-Pencil_South_WHOR.jpg",
+      "credit": "Steven Holl Architects",
+      "viewed": true
+    },
+    {
+      "file": "simmons-facilities-1.jpg",
+      "kind": "photograph",
+      "view": "Night oblique from right/east end of field-facing facade",
+      "url": "https://web.mit.edu/facilities/photos/construction/Projects/simmons/1_large.jpg",
+      "credit": "Andy Ryan / MIT Facilities",
+      "viewed": true
+    },
+    {
+      "file": "simmons-facilities-2.jpg",
+      "kind": "photograph",
+      "view": "Window reveal close-up",
+      "url": "https://web.mit.edu/facilities/photos/construction/Projects/simmons/2_large.jpg",
+      "credit": "Andy Ryan / MIT Facilities",
+      "viewed": true
+    },
+    {
+      "file": "simmons-facilities-3.jpg",
+      "kind": "photograph",
+      "view": "Daylight oblique from left/west end of field-facing facade",
+      "url": "https://web.mit.edu/facilities/photos/construction/Projects/simmons/3_large.jpg",
+      "credit": "Andy Ryan / MIT Facilities",
+      "viewed": true
+    },
+    {
+      "file": "simmons-facilities-4.jpg",
+      "kind": "interior photograph",
+      "view": "Dorm room, three window rows per floor",
+      "url": "https://web.mit.edu/facilities/photos/construction/Projects/simmons/4_large.jpg",
+      "credit": "Andy Ryan / MIT Facilities",
+      "viewed": true
+    },
+    {
+      "file": "maseeh-memorial-entry.jpg",
+      "kind": "photograph",
+      "view": "South Memorial Drive front: courtyard, projecting wings, twin cupolas",
+      "url": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201109/20110916094719-2.jpg?itok=HISPCskN",
+      "credit": "Bruce Myren / MIT News",
+      "viewed": true
+    },
+    {
+      "file": "maseeh-river-overall.jpg",
+      "kind": "photograph",
+      "view": "Roof and cupola close-up toward Harvard Bridge; not overall",
+      "url": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201109/20110916094719-1_0.jpg?itok=nOtKxZOD",
+      "credit": "Tom Gearty / MIT News",
+      "viewed": true
+    },
+    {
+      "file": "../../../output/design/mit-20261021/references/maseeh-2011.jpg",
+      "kind": "photograph",
+      "view": "North Amherst Street entrance",
+      "sourcePage": "https://news.mit.edu/2011/maseeh-hall-welcomed-0916",
+      "credit": "Bruce Myren / MIT News",
+      "viewed": true
+    }
+  ],
+  "limitations": [
+    "References are retained for visual research; no general image-reuse license is inferred.",
+    "No claim of exact as-built window-by-window fidelity for unphotographed rear walls.",
+    "Simmons public entrance plan is dated 2013; use it for exterior architectural position, not current operational policies.",
+    "Perry Dean Rogers/MDS Squarespace CDN images could not be retrieved even after an approved external retry; no unviewed image was treated as pixel evidence.",
+    "maseeh-capital-offline-response.txt is an offline HTML response, not an image."
+  ]
+}

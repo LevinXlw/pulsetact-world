@@ -1,0 +1,59 @@
+{
+  "scope": "Local MIT campus evaluation. Not published or offered as standalone asset downloads.",
+  "assets": [
+    {
+      "file": "nathan.glb",
+      "title": "Nathan Animated 003 — Walking",
+      "author": "Renderpeople GmbH",
+      "bytes": 4256840,
+      "sha256": "a31eef523349539e2178249d35317c8b64cfb018299583f173ab4a9e73ee9cf5",
+      "acquiredFrom": "https://renderpeople.com/sample/free/renderpeople_free_animated_people_FBX.zip",
+      "sourcePage": "https://renderpeople.com/free-3d-people/",
+      "acquiredAt": "2026-10-05",
+      "license": "Renderpeople website terms — local evaluation; public redistribution not cleared",
+      "licenseUrl": "https://renderpeople.com/general-terms-and-conditions/",
+      "alternateAuthorListing": {
+        "url": "https://sketchfab.com/models/143a2b1ea5eb4385ae90a73657aca3bc",
+        "publicMetadataLicense": "CC BY 4.0",
+        "note": "A separate publication of the same named model. This build was obtained from the vendor website, not this download channel."
+      },
+      "modifications": [
+        "Converted FBX to GLB with Blender 4.5 LTS",
+        "Diffuse and normal maps resized to 2048px; gloss converted to 1024px roughness",
+        "Bind frame excluded; horizontal root motion removed; loop endpoint matched; feet aligned to ground",
+        "Derived a neutral standing pose with subtle breathing from the walking motion"
+      ],
+      "triangles": 21506,
+      "clips": [
+        "Walk",
+        "Idle"
+      ]
+    },
+    {
+      "file": "sophia.glb",
+      "title": "Sophia Animated 003 — Idling",
+      "author": "Renderpeople GmbH",
+      "bytes": 4200988,
+      "sha256": "2150fb22214cb2e157440abc93728370e5bbb21c230582b1ee1c05bfb14f527f",
+      "acquiredFrom": "https://renderpeople.com/sample/free/renderpeople_free_animated_people_FBX.zip",
+      "sourcePage": "https://renderpeople.com/free-3d-people/",
+      "acquiredAt": "2026-10-05",
+      "license": "Renderpeople website terms — local evaluation; public redistribution not cleared",
+      "licenseUrl": "https://renderpeople.com/general-terms-and-conditions/",
+      "alternateAuthorListing": {
+        "url": "https://sketchfab.com/models/dc448c3be0e74f96a55fb475a13433cf",
+        "publicMetadataLicense": "CC BY 4.0",
+        "note": "A separate publication of the same named model. This build was obtained from the vendor website, not this download channel."
+      },
+      "modifications": [
+        "Converted FBX to GLB with Blender 4.5 LTS",
+        "Diffuse and normal maps resized to 2048px; gloss converted to 1024px roughness",
+        "Bind frame excluded; horizontal root motion removed; loop endpoint matched; feet aligned to ground"
+      ],
+      "triangles": 16475,
+      "clips": [
+        "Idle"
+      ]
+    }
+  ]
+}

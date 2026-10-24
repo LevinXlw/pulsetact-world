@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-19T13:37:55.094Z",
+  "checks": [
+    "Mobile has no images or textures",
+    "Actual exported desktop/mobile walk surfaces have identical canonical triangle positions",
+    "desktop header, finite attributes, index bounds and manifest hash",
+    "mobile header, finite attributes, index bounds and manifest hash",
+    "physics header, finite attributes, index bounds and manifest hash",
+    "Three exact physics role batches; ground triangles face upward",
+    "Both actual exported stairs sampled in both directions at <=10cm; rise <20cm and no torso-wall crossings",
+    "Spawn and all public anchors have correct support",
+    "Grand concrete has actual side walls and no buried first-floor fallback, including low seating terrace",
+    "Removed exterior overflow, floor selection and second-floor void protection",
+    "Both aligned door holes are open, with safety gate behind threshold"
+  ],
+  "stairResults": [
+    {
+      "name": "grand",
+      "direction": "up",
+      "samples": 284,
+      "maxRise": 0.15855547907089118
+    },
+    {
+      "name": "grand",
+      "direction": "down",
+      "samples": 284,
+      "maxRise": 0.15855547907089118
+    },
+    {
+      "name": "butterfly",
+      "direction": "up",
+      "samples": 263,
+      "maxRise": 0.1555557250976527
+    },
+    {
+      "name": "butterfly",
+      "direction": "down",
+      "samples": 263,
+      "maxRise": 0.1555557250976527
+    }
+  ],
+  "assets": {
+    "desktop": {
+      "bytes": 13608240,
+      "sha256": "f12f822e0c667e77027f90fc264257d003228242182e16ea5af8ac4a2edd2167",
+      "triangles": 134976
+    },
+    "mobile": {
+      "bytes": 1910008,
+      "sha256": "d65f3c4b7ae74e7c3296371e36dcb68e8ca24db835e55c233d944e552cbe3de9",
+      "triangles": 35440
+    },
+    "physics": {
+      "bytes": 354552,
+      "sha256": "fd5441ac34be2474f3fba6379f817e1bed34a1779ecc82e2088a67d639d9fc2d",
+      "triangles": 5872
+    }
+  },
+  "limitation": "Asset geometry and low-poly proxies only; runtime controller/input/lifecycle require separate integration testing."
+}

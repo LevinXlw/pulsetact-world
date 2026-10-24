@@ -1,0 +1,133 @@
+{
+  "converter": "Blender 4.5 LTS",
+  "models": [
+    {
+      "id": "nathan",
+      "file": "nathan.glb",
+      "bytes": 4256840,
+      "triangles": 21506,
+      "bones": 88,
+      "meshCount": 1,
+      "materialCount": 1,
+      "units": "metres",
+      "forward": "+Z",
+      "groundOffsetMetres": 0.041383,
+      "dimensionsMetres": [
+        0.595023,
+        1.898641,
+        1.078624
+      ],
+      "textures": {
+        "baseColor": [
+          2048,
+          2048
+        ],
+        "normal": [
+          2048,
+          2048
+        ],
+        "roughness": [
+          1024,
+          1024
+        ]
+      },
+      "clips": [
+        {
+          "name": "Walk",
+          "durationSeconds": 2.266667,
+          "frames": 69,
+          "source": "author motion; bind frame removed; loop endpoint matched",
+          "boundsBeforeGrounding": {
+            "min": [
+              -0.30323997139930725,
+              -0.5852559208869934,
+              -0.01356565859168768
+            ],
+            "max": [
+              0.29178330302238464,
+              0.4933677911758423,
+              1.8572580814361572
+            ]
+          }
+        },
+        {
+          "name": "Idle",
+          "durationSeconds": 4.0,
+          "frames": 121,
+          "source": "derived neutral standing pose and breathing",
+          "boundsBeforeGrounding": {
+            "min": [
+              -0.2920359671115875,
+              -0.20672698318958282,
+              -0.04138251766562462
+            ],
+            "max": [
+              0.2695944011211395,
+              0.13796347379684448,
+              1.8385851383209229
+            ]
+          }
+        }
+      ],
+      "exportedClips": [
+        "Walk",
+        "Idle"
+      ],
+      "sourceWalkingSpeedMetresPerSecond": 1.283276
+    },
+    {
+      "id": "sophia",
+      "file": "sophia.glb",
+      "bytes": 4200988,
+      "triangles": 16475,
+      "bones": 88,
+      "meshCount": 1,
+      "materialCount": 1,
+      "units": "metres",
+      "forward": "+Z",
+      "groundOffsetMetres": 0.013474,
+      "dimensionsMetres": [
+        0.96529,
+        1.719465,
+        0.738715
+      ],
+      "textures": {
+        "baseColor": [
+          2048,
+          2048
+        ],
+        "normal": [
+          2048,
+          2048
+        ],
+        "roughness": [
+          1024,
+          1024
+        ]
+      },
+      "clips": [
+        {
+          "name": "Idle",
+          "durationSeconds": 20.4,
+          "frames": 613,
+          "source": "author motion; bind frame removed; loop endpoint matched",
+          "boundsBeforeGrounding": {
+            "min": [
+              -0.3303389847278595,
+              -0.3825620114803314,
+              -0.013473769649863243
+            ],
+            "max": [
+              0.6349508166313171,
+              0.3561529517173767,
+              1.7059916257858276
+            ]
+          }
+        }
+      ],
+      "exportedClips": [
+        "Idle"
+      ]
+    }
+  ]
+}

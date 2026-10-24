@@ -1,0 +1,37 @@
+{
+  "before": {
+    "brick-basecolor.png": "92a8842e064539bbf66464b92e517be73e8972e40d84ec64e54e8bd6544e5e2b",
+    "brick-normal.png": "fb64e1d69f5515a42939eb67f640f7434da1137568c5cfe9d84d200ce1a8a4bf",
+    "brick-orm.png": "b816813a370bd7c16bf9ea37b0182446c8c1502d7bddf9dffda2d13cadd3b458",
+    "concrete-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "concrete-normal.png": "90f9ca2388f8ab63374c0a48dce6ea9851a9d3e12908c4d7bfba4cdefc823a96",
+    "concrete-orm.png": "efece217feef189e1735b00e805370ad0f9b20cb234da3067f261588fe9784b0",
+    "metal-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "metal-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "metal-orm.png": "7687a638362439539fad3840547c125d4d3ee21b7eed094d3654ffc6c564060b",
+    "stone-basecolor.png": "8937a856a9cfee468c90fc9bf5e80bc4aed44cfeb125835ae8a110e1559ae6e2",
+    "stone-normal.png": "a7c9d5b21a032ef1ef28ca55c63885ae1580b9dd85bd6e393adefd07f267484f",
+    "stone-orm.png": "5025f66f3fe2dcc9b4cb957eb10233cba24eb9d3a2ca148063ac2c770a65e0b8",
+    "wood-basecolor.png": "2b1bab381396e0b887d2df39b3df92661d91e05536f61486e3af52fa280150ec",
+    "wood-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "wood-orm.png": "2d73c732ad0ea4f747ff9951cf7a748ab95ec0df6f7b7f5ff8ffcf70ba2771c6"
+  },
+  "after": {
+    "brick-basecolor.png": "92a8842e064539bbf66464b92e517be73e8972e40d84ec64e54e8bd6544e5e2b",
+    "brick-normal.png": "fb64e1d69f5515a42939eb67f640f7434da1137568c5cfe9d84d200ce1a8a4bf",
+    "brick-orm.png": "b816813a370bd7c16bf9ea37b0182446c8c1502d7bddf9dffda2d13cadd3b458",
+    "concrete-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "concrete-normal.png": "90f9ca2388f8ab63374c0a48dce6ea9851a9d3e12908c4d7bfba4cdefc823a96",
+    "concrete-orm.png": "efece217feef189e1735b00e805370ad0f9b20cb234da3067f261588fe9784b0",
+    "metal-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "metal-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "metal-orm.png": "7687a638362439539fad3840547c125d4d3ee21b7eed094d3654ffc6c564060b",
+    "stone-basecolor.png": "8937a856a9cfee468c90fc9bf5e80bc4aed44cfeb125835ae8a110e1559ae6e2",
+    "stone-normal.png": "a7c9d5b21a032ef1ef28ca55c63885ae1580b9dd85bd6e393adefd07f267484f",
+    "stone-orm.png": "5025f66f3fe2dcc9b4cb957eb10233cba24eb9d3a2ca148063ac2c770a65e0b8",
+    "wood-basecolor.png": "2b1bab381396e0b887d2df39b3df92661d91e05536f61486e3af52fa280150ec",
+    "wood-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "wood-orm.png": "2d73c732ad0ea4f747ff9951cf7a748ab95ec0df6f7b7f5ff8ffcf70ba2771c6"
+  },
+  "allImagesUnchanged": true
+}

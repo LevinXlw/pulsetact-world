@@ -1,5 +1,8 @@
 import {localBinary} from './local-assets';
+import {createCampusWaterMaterial,CampusWaterMaterial} from '../world/campus-water';
 import {createCourtyardVegetation} from './courtyard-vegetation';
+import {createCourtyardGroundDetail} from './courtyard-ground-detail';
+import {createArchitecturalDetail} from './architectural-detail';
 import {finishPaving,finishLimestone,finishAsphalt} from './surface-finish';
 import {finishCourtyardGrass,finishPorticoGlass,finishPorticoStone} from './portico-finish';
 import {TextureLoader,RepeatWrapping,SRGBColorSpace,Mesh,MeshStandardMaterial,Vector2,Group,Texture,BufferGeometry,Material} from 'three';
@@ -12,6 +15,7 @@ export async function loadKillianDetail(signal:AbortSignal,options:{quality?:'st
  const core=await localBinary('/data/killian/detail.glb',manifest.delivery?'/data/killian/detail.glb.gz':undefined,signal);
  const result=await new GLTFLoader().parseAsync(core,'');
  const textureLoader=new TextureLoader(),loaded:Texture[]=[],waterTime={value:0};
+ const waterMaterials=new Map<Material,CampusWaterMaterial>();
  try{
   const pending=['leafy_grass','concrete_wall_001','concrete_pavement'].flatMap(name=>['color','normal','roughness'].map(async kind=>{const t=await textureLoader.loadAsync(`/data/killian/${name}-${kind}.jpg`);loaded.push(t);t.wrapS=t.wrapT=RepeatWrapping;t.anisotropy=8;if(kind==='color')t.colorSpace=SRGBColorSpace;return t;}));
   const results=await Promise.allSettled(pending);
@@ -33,7 +37,8 @@ export async function loadKillianDetail(signal:AbortSignal,options:{quality?:'st
     finishPorticoStone(m,['porticoWall','porticoStone'].includes(m.name)?'wall':['columnStone','columnTrim'].includes(m.name)?'column':['porticoFloor','steps','stepNosing'].includes(m.name)?'floor':'trim');
     m.normalScale.set(.025,.025);m.roughness=.83;
    }
-   if(['porticoGlass','doorGlass'].includes(m.name)){finishPorticoGlass(m);m.color.set('#8d9b9f');}
+   if(['porticoGlass','doorGlass'].includes(m.name)){finishPorticoGlass(m);m.color.set('#71807a');}
+   if(m.name==='porticoGlass'){m.color.set('#34464b');m.opacity=.78;m.metalness=.3;m.roughness=.10;}
    if(['courtyardWall','courtyardTrim','courtyardPlinth','courtCurb'].includes(m.name)){
     finishPorticoStone(m,m.name==='courtyardWall'?'wall':m.name==='courtCurb'?'floor':'trim');
     m.normalScale.set(.025,.025);m.roughness=.88;
@@ -51,18 +56,16 @@ export async function loadKillianDetail(signal:AbortSignal,options:{quality?:'st
    if(['steps','porticoFloor'].includes(m.name))m.color.set('white');
    if(m.name==='bridgeDeck'){m.map=null;m.normalMap=null;m.roughnessMap=null;m.color.set('#596166');m.roughness=.95;}
    if(m.name==='water'){
-    m.onBeforeCompile=shader=>{
-     shader.uniforms.waterTime=waterTime;
-     shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWaterPosition;').replace('#include <begin_vertex>','#include <begin_vertex>\nvWaterPosition=(modelMatrix*vec4(position,1.0)).xyz;');
-     shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWaterPosition; uniform float waterTime;').replace('#include <normal_fragment_begin>',`#include <normal_fragment_begin>
-      vec2 slope=vec2(.035*cos(vWaterPosition.x*.7+waterTime*.6),.025*sin(vWaterPosition.z*.83-waterTime*.4));
-      normal=normalize(mat3(viewMatrix)*vec3(-slope.x,1.0,-slope.y));`);
-    };m.customProgramCacheKey=()=> 'campus-water-ripples-v1';
+    let water=waterMaterials.get(m);
+    if(!water){water=createCampusWaterMaterial({name:'water',time:waterTime,quality:options.quality==='low'?'mobile-hd':'desktop'});waterMaterials.set(m,water);}
+    o.material=water;
    }
    if(m.name==='pavingJoint'){o.userData.collision='none';m.roughness=1;}
    if(['arterial','bridgeDeck'].includes(m.name)){m.normalMap=null;m.roughnessMap=null;m.roughness=.97;finishAsphalt(m);}
    if(m.name==='arterial'){m.polygonOffset=true;m.polygonOffsetFactor=-4;m.polygonOffsetUnits=-4;}if(m.name==='roadMarking'){m.polygonOffset=true;m.polygonOffsetFactor=-5;m.polygonOffsetUnits=-5;}if(['grass','pavement','road'].includes(m.name)){m.polygonOffset=true;m.polygonOffsetFactor=-2;m.polygonOffsetUnits=-2;}o.castShadow=!['grass','pavement','water','road','pavingJoint','courtCurb'].includes(m.name);o.receiveShadow=true;
   });
+  waterMaterials.forEach((_,old)=>old.dispose());
+  result.scene.userData.setWaterQuality=(quality:string)=>waterMaterials.forEach(m=>m.setQuality(quality==='low'?'mobile-hd':'desktop'));
   // All three texture sets are referenced by at least one mesh.
   result.scene.userData.porticoOpening=manifest.porticoOpening;
   result.scene.userData.courtyardFacades=manifest.courtyardFacades||[];
@@ -71,6 +74,10 @@ export async function loadKillianDetail(signal:AbortSignal,options:{quality?:'st
   result.scene.userData.porticoSample=manifest.porticoSample;
   result.scene.userData.environment=environment;result.scene.userData.sourceModels=manifest.sourceModels;
   result.scene.userData.waterTime=waterTime;
+  const architecture=createArchitecturalDetail(result.scene,manifest);
+  result.scene.add(architecture);result.scene.userData.architecture=architecture;
+  const groundDetail=createCourtyardGroundDetail(result.scene,options.quality==='low');
+  result.scene.add(groundDetail);result.scene.userData.groundDetail=groundDetail;
   // Shared instanced tree prototypes replace both the old trunk batch and the
   // 8.5 MB foliage download. Create them before onReady/probe capture so glass
   // always reflects the same complete courtyard that the visitor sees.

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-24",
+  "scope": "Small independent near-ground detail helper for the existing GSU Link forecourt",
+  "source": {
+    "url": "https://www.bu.edu/reservations/gsu/",
+    "imageUrl": "https://www.bu.edu/reservations/files/2023/08/GSU_Exterior_0008.jpg",
+    "localReference": "output/bu-comm-ave-20261024-pass2/references/bu-gsu-exterior-2023.jpg",
+    "verifiedVisibleFeatures": [
+      "Low pale concrete slab benches on short independent feet along the planted forecourt edge.",
+      "Shallow planted border below ground-floor windows, containing low shrubs.",
+      "Mature deciduous courtyard tree with a dark metal root grate, surrounded by the brick/stone pavement."
+    ],
+    "boundary": "The photograph verifies furniture and planting types, not the exact coordinates or tree species. In particular the small eastern bench position is an authored fitting of that typology, not a surveyed object."
+  },
+  "implementation": {
+    "module": "src/features/world/bu-link-court-detail.ts",
+    "factory": "createBULinkCourtDetail({mobile?: boolean})",
+    "return": ["group", "ground", "walls", "trees", "dispose"],
+    "frame": "Existing BU_SERT_FRAME / buSertPoint, x east, z south, coordinates in metres",
+    "planterLocal": {"x": -21.25, "z": 80.8, "width": 1.8, "depth": 8.0},
+    "benchLocals": [[-19.85,78.65],[-19.85,83.0],[-4.2,89.5]],
+    "benches": "Three low slab seats, each with two separate feet and an actual open underside; seat height 0.44m above its highest adjacent paving, not terrain-warped slabs.",
+    "treePitLocal": [-20.05,92.7],
+    "treePit": "One 1.12m radius soil patch with two thin iron rings and 24 open radial bars. Soil and rings are just above existing paving; no blanket ground replacement.",
+    "tree": {"radius": 3.25, "height": 11.2, "rootY": "source DEM at tree centre + 0.177m"},
+    "planting": "Nine low shrubs represented by separate shaped leaves in two material batches. Desktop 42 leaves each, phone 16 each. No opaque hedge boxes.",
+    "collision": "Low concrete, soil and grate are returned as actual support geometry; concrete is also wall geometry. No inflated invisible wall. The caller generates the tree/trunk collision at the same tree record.",
+    "preservedClearCorridor": {"centreX": -12.52, "width": 6.9, "localZ": [76.15,102]},
+    "ground": "All existing court paving, DEM, door sill and routes are unchanged. Shallow planted borders follow the existing terrain, bench feet reach local paving."
+  },
+  "estimatesAndLimits": [
+    "All furniture and tree positions, sections, mature tree size and shrub habit are photograph-based authored approximations, not a field survey.",
+    "Only one clearly supported courtyard tree is added; no speculative symmetric pair or new railings.",
+    "Tree foliage is created by the parent scene from the returned tree record. Its geometry is additional to the helper counts.",
+    "The small helper does not reconstruct all GSU/Mugar landscape or change the building facade."
+  ],
+  "geometry": {
+    "full": {"triangles": 2341, "batches": 5},
+    "mobile": {"triangles": 1405, "batches": 5},
+    "groundMeshes": 3,
+    "wallMeshes": 1,
+    "report": "output/bu-comm-ave-20261024-pass2/link-court-report.json"
+  },
+  "validation": {
+    "tests": ["tests/bu-link-court-detail.test.ts", "tests/bu-link-entry.test.ts", "tests/bu-sert-navigation.test.ts"],
+    "result": "17 focused tests and TypeScript build passed before scene integration",
+    "checks": [
+      "Every inspected new geometry triangle vertex lies outside actual existing Sert building collision.",
+      "6.9m-wide central corridor remains supported with no new furniture ground/wall intersections; entire arrival-to-door approach retained.",
+      "Visible seats match downward support rays; horizontal rays verify a real gap below the slab and solid feet.",
+      "Desktop/mobile furniture and support vertex arrays, tree records and root elevations match exactly.",
+      "Finite geometry, bounded batches/triangles and idempotent disposal."
+    ],
+    "visualQA": "Runtime screenshots remain the parent integration task; unit tests do not assert visual realism."
+  }
+}

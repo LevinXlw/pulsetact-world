@@ -1,0 +1,106 @@
+{
+  "prepared": "2026-10-15T12:23:20.080Z",
+  "publisher": "University of Arizona Planning, Design and Construction Enterprise GIS",
+  "service": "https://services.maps.arizona.edu/pdc/rest/services/SubtleCanvasTilesBridgesTechPark/MapServer",
+  "layers": {
+    "buildings": 21,
+    "walks": 34,
+    "streets": 37,
+    "landscape": 30
+  },
+  "origin": {
+    "longitude": -110.9534427559232,
+    "latitude": 32.231877399469894
+  },
+  "transform": {
+    "metresLon": 94165.20518824566,
+    "metresLat": 110905,
+    "axes": "east/south",
+    "horizontalScale": 1
+  },
+  "bounds": {
+    "minX": -370,
+    "maxX": 1030,
+    "minZ": -660,
+    "maxZ": 560
+  },
+  "scope": "Tucson main campus core plus McClelland Hall; not the medical campus or a cadastral boundary",
+  "limitations": [
+    "Building heights and facade details are authored estimates.",
+    "Ground uses USGS 3DEP 192×192 DEM samples, filtered and blended narrowly at building footprints; it is not a detailed curb/stair survey.",
+    "Subterranean ILC is not extruded above University Mall.",
+    "Footprint fragments smaller than 18 square metres are omitted; mapped exterior polygons simplified at 0.3m.",
+    "Route graph is generated through verified open space with paving preference; landscaping placement is illustrative."
+  ],
+  "counts": {
+    "buildings": 319,
+    "surfaces": 7037,
+    "paths": 14,
+    "points": 9
+  },
+  "places": [
+    {
+      "id": "arizona-old-main",
+      "position": [
+        -31.61,
+        -1
+      ]
+    },
+    {
+      "id": "arizona-mall",
+      "position": [
+        480,
+        8
+      ]
+    },
+    {
+      "id": "arizona-union",
+      "position": [
+        151.71,
+        -17.57
+      ]
+    },
+    {
+      "id": "arizona-library",
+      "position": [
+        414.49,
+        20.58
+      ]
+    },
+    {
+      "id": "arizona-bear-down",
+      "position": [
+        283.34,
+        80.31
+      ]
+    },
+    {
+      "id": "arizona-eller",
+      "position": [
+        -96.88,
+        -498.88
+      ]
+    },
+    {
+      "id": "arizona-enr2",
+      "position": [
+        -179.13,
+        354.4
+      ]
+    },
+    {
+      "id": "arizona-stadium",
+      "position": [
+        353.47,
+        337.52
+      ]
+    },
+    {
+      "id": "arizona-museum",
+      "position": [
+        -223.48,
+        71.82
+      ]
+    }
+  ]
+}

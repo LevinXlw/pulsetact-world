@@ -59,10 +59,12 @@ export function applyCampusSurfaces(base:Group,detail:Group,radius:number){
   const wall=stone!.clone();wall.name='Campus wall material';wall.color.setRGB(1.65,1.64,1.56);wall.side=o.material.side;
   wall.vertexColors=!!g.getAttribute('color');finishLimestone(wall);wall.normalScale.set(.045,.045);
   if(g.getAttribute('facade')){
-   const stoneFinish=wall.onBeforeCompile;wall.onBeforeCompile=(shader,renderer)=>{stoneFinish(shader,renderer);
+   const stoneFinish=wall.onBeforeCompile,stoneKey=wall.customProgramCacheKey();wall.onBeforeCompile=(shader,renderer)=>{stoneFinish(shader,renderer);
     shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nattribute vec4 facade; varying vec4 vFacade;').replace('#include <begin_vertex>','#include <begin_vertex>\nvFacade=facade;');
     shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec4 vFacade;');
-    shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
+    // The limestone finish establishes its albedo after map_fragment. Put the
+    // distant window layer after that finish, otherwise it is painted over.
+    shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>',`#include <color_fragment>
      if(vFacade.x>.5 && vFacade.y>2.0 && vFacade.z>2.0){
       vec2 grid=vec2(vMapUv.x*2.0/3.5+vFacade.w,vFacade.y/3.8);
       vec2 cell=fract(grid),aa=max(fwidth(grid),vec2(.004));
@@ -72,7 +74,7 @@ export function applyCampusSurfaces(base:Group,detail:Group,radius:number){
       float fade=1.0-smoothstep(250.0,800.0,length(vViewPosition));
       diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.085,.13,.155),pane*(1.0-mullion*.6)*fade*.88);
      }`);
-   };wall.customProgramCacheKey=()=> 'campus-background-facades-limestone-v2';
+   };wall.customProgramCacheKey=()=> `${stoneKey}-background-facades-v3`;
   }
   const roof=new MeshStandardMaterial({name:'Aerial roof projection',map:aerial!.map,roughness:1,side:o.material.side});
   roof.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>

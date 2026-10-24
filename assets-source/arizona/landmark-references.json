@@ -1,0 +1,18 @@
+{
+  "title": "Arizona Tucson landmark model reference record",
+  "retrieved": "2026-10-15",
+  "geometry": "Official University of Arizona Planning Design and Construction ground-level GIS footprints; same campus transform as roads and terrain. Old Main body's cruciform polygon is not an outer veranda roofline. ENR2 consists of five ground-level polygons with open passages. McClelland Hall's courtyard opens south and is part of the concave outer ring.",
+  "sources": [
+    {"building":"Old Main", "url":"https://businessaffairs.arizona.edu/historic-preservation", "image":"https://businessaffairs.arizona.edu/sites/default/files/2025-03/OldMain_2015-2.jpg", "used":"Inspected actual official exterior photo: rust-red central west entry tower, paired arched lights, mansard roof, small dormers, shaded wraparound pale wood veranda, masonry base and exterior staircase."},
+    {"building":"McClelland Hall / Eller", "url":"https://eller.arizona.edu/visit", "image":"https://eller.arizona.edu/sites/default/files/Visit-Header-Short2.jpg", "floorPlan":"https://eller.arizona.edu/sites/default/files/2025-08/mcclelland-1st-floor.png", "used":"Inspected official entrance photograph and labelled floor plan. Brick wings, tall metal entrance columns, recessed gridded glass, open Witt courtyard. Distinct from McClelland Park."},
+    {"building":"ENR2", "url":"https://news.arizona.edu/employee-news/enr2-turns-10-u-model-sustainability-marks-milestone", "image":"https://cdn.uanews.arizona.edu/s3fs-public/2025-09/ENR2-Building-3.jpg", "used":"Inspected official interior photograph: curved separate concrete volumes, five levels, rusted vertical fins, projecting open-air balconies, hanging vines, open canyon sky."},
+    {"building":"ENR2", "url":"https://air.arizona.edu/enr2", "used":"Confirms five-storey structure and open courtyard."}
+  ],
+  "limitations": [
+    "Floor heights, window placement, masonry colour, roof pitches, railing spacing and small landscape furniture are visual estimates, not measured surveys.",
+    "Old Main veranda is authored as an approximately 3.25-metre offset around the surveyed enclosed body; individual post positions are rhythmically spaced rather than matched to every tiny official column polygon.",
+    "ENR2 upper-storey balconies are interpretations of the official photo fitted to real ground-floor wings; upper-level outlines differ in reality. Only the ground canyon, not upper interior circulation, is presently playable.",
+    "Eller's interior rooms and building interior access are not implemented.",
+    "Downloaded photos are source references only. Runtime geometry uses original procedural surfaces rather than copying photo textures."
+  ]
+}

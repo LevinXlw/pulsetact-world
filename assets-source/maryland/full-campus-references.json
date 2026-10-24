@@ -1,0 +1,1396 @@
+{
+  "retrieved": "2026-10-15",
+  "scope": "Main College Park campus including west arts/golf landscape, north athletics and residential communities, engineering, south residence/business and Leonardtown. Excludes remote research facilities, Discovery District and outlying graduate housing.",
+  "sources": [
+    {
+      "url": "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/2",
+      "title": "UMD Buildings, Maryland iMAP",
+      "credit": "MD iMAP, University of Maryland Facilities Management",
+      "publishedMetadata": "September 2012; maintained roofline layer includes subsequent updates",
+      "use": "Building IDs, names, footprint topology. Public query/extract service; attribution retained. Snapshot is not current construction status."
+    },
+    {
+      "url": "https://umdconf.umd.edu/drupal/current_map.pdf",
+      "title": "2025 University of Maryland Campus Map",
+      "credit": "Conferences & Visitor Services / Facilities Management",
+      "use": "District adjacency, new landmark names and public campus coverage."
+    },
+    {
+      "url": "https://facilities.umd.edu/info-resources/building-inventory",
+      "title": "UMD Facilities Building Inventory",
+      "use": "Building-name reference"
+    }
+  ],
+  "adaptation": {
+    "anchor": "McKeldin and Miller Administration east-west axis",
+    "horizontalFootprintScale": 0.6957346865328318,
+    "centerSpacingX": 1.65,
+    "centerSpacingZ": 1.7,
+    "existingCoreLandmarksPreserved": 6,
+    "heights": "Authored visual approximations, not measured or surveyed",
+    "paths": 192,
+    "newerAuthoredBuildingIds": [
+      "434",
+      "435",
+      "436",
+      "228",
+      "433",
+      "438",
+      "secu"
+    ],
+    "modelCount": 150,
+    "fastTravelCount": 13
+  },
+  "buildings": [
+    {
+      "id": "umd-building-004",
+      "name": "Ritchie Coliseum",
+      "sourceBuildingId": "004",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-007",
+      "name": "Pocomoke Building",
+      "sourceBuildingId": "007",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-008",
+      "name": "Annapolis Hall",
+      "sourceBuildingId": "008",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-010",
+      "name": "Patuxent Building",
+      "sourceBuildingId": "010",
+      "layoutOffset": [
+        4.68,
+        23.54
+      ]
+    },
+    {
+      "id": "umd-building-014",
+      "name": "Harford Hall",
+      "sourceBuildingId": "014",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-015",
+      "name": "Calvert Hall",
+      "sourceBuildingId": "015",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-016",
+      "name": "Baltimore Hall",
+      "sourceBuildingId": "016",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-017",
+      "name": "Cecil Hall",
+      "sourceBuildingId": "017",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-021",
+      "name": "Prince George's Hall",
+      "sourceBuildingId": "021",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-022",
+      "name": "Kent Hall",
+      "sourceBuildingId": "022",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-023",
+      "name": "Washington Hall",
+      "sourceBuildingId": "023",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-026",
+      "name": "South Campus Dining Hall",
+      "sourceBuildingId": "026",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-029",
+      "name": "Frederick Hall",
+      "sourceBuildingId": "029",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-030",
+      "name": "Talbot Hall",
+      "sourceBuildingId": "030",
+      "layoutOffset": [
+        3.06,
+        7.39
+      ]
+    },
+    {
+      "id": "umd-building-031",
+      "name": "Garrett Hall",
+      "sourceBuildingId": "031",
+      "layoutOffset": [
+        29.56,
+        -12.25
+      ]
+    },
+    {
+      "id": "umd-building-032",
+      "name": "Montgomery Hall",
+      "sourceBuildingId": "032",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-036",
+      "name": "Plant Sciences Building",
+      "sourceBuildingId": "036",
+      "layoutOffset": [
+        7.8,
+        39.23
+      ]
+    },
+    {
+      "id": "umd-building-037",
+      "name": "Shoemaker Building",
+      "sourceBuildingId": "037",
+      "layoutOffset": [
+        -7.39,
+        -3.06
+      ]
+    },
+    {
+      "id": "umd-building-038",
+      "name": "LeFrak Hall",
+      "sourceBuildingId": "038",
+      "layoutOffset": [
+        0,
+        48
+      ]
+    },
+    {
+      "id": "umd-building-039",
+      "name": "Van Munching Hall",
+      "sourceBuildingId": "039",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-040",
+      "name": "Morrill Hall",
+      "sourceBuildingId": "040",
+      "layoutOffset": [
+        13.33,
+        19.96
+      ]
+    },
+    {
+      "id": "umd-building-042",
+      "name": "Tydings Hall",
+      "sourceBuildingId": "042",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-044",
+      "name": "Skinner Building",
+      "sourceBuildingId": "044",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-046",
+      "name": "Marie Mount Hall",
+      "sourceBuildingId": "046",
+      "layoutOffset": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-047",
+      "name": "Woods Hall",
+      "sourceBuildingId": "047",
+      "layoutOffset": [
+        -36.96,
+        -15.31
+      ]
+    },
+    {
+      "id": "umd-building-051",
+      "name": "Worcester Hall",
+      "sourceBuildingId": "051",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-052",
+      "name": "Clarence M. Mitchell, Jr. Building",
+      "sourceBuildingId": "052",
+      "layoutOffset": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-054",
+      "name": "Preinkert Hall",
+      "sourceBuildingId": "054",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-059",
+      "name": "Chincoteague Hall",
+      "sourceBuildingId": "059",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-060",
+      "name": "Anne Arundel Hall",
+      "sourceBuildingId": "060",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-061",
+      "name": "Queen Anne's Hall",
+      "sourceBuildingId": "061",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-062",
+      "name": "St. Mary's Hall",
+      "sourceBuildingId": "062",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-063",
+      "name": "Somerset Hall",
+      "sourceBuildingId": "063",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-064",
+      "name": "Dorchester Hall",
+      "sourceBuildingId": "064",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-065",
+      "name": "Carroll Hall",
+      "sourceBuildingId": "065",
+      "layoutOffset": [
+        -13.3,
+        -8.89
+      ]
+    },
+    {
+      "id": "umd-building-068",
+      "name": "Eppley Recreation Center",
+      "sourceBuildingId": "068",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-069",
+      "name": "Wicomico Hall",
+      "sourceBuildingId": "069",
+      "layoutOffset": [
+        7.8,
+        39.23
+      ]
+    },
+    {
+      "id": "umd-building-070",
+      "name": "Caroline Hall",
+      "sourceBuildingId": "070",
+      "layoutOffset": [
+        15.31,
+        36.96
+      ]
+    },
+    {
+      "id": "umd-building-071",
+      "name": "Lee Building",
+      "sourceBuildingId": "071",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-073",
+      "name": "H.J. Patterson Hall",
+      "sourceBuildingId": "073",
+      "layoutOffset": [
+        -53.21,
+        35.56
+      ]
+    },
+    {
+      "id": "umd-building-079",
+      "name": "Turner Hall",
+      "sourceBuildingId": "079",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-080",
+      "name": "Rossborough Inn",
+      "sourceBuildingId": "080",
+      "layoutOffset": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-081",
+      "name": "Wind Tunnel Building",
+      "sourceBuildingId": "081",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-082",
+      "name": "John S. Toll Physics Building",
+      "sourceBuildingId": "082",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-083",
+      "name": "J.M. Patterson Building",
+      "sourceBuildingId": "083",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-084",
+      "name": "William E. Kirwan Hall",
+      "sourceBuildingId": "084",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-085",
+      "name": "Institute for Physical Science & Technology",
+      "sourceBuildingId": "085",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-088",
+      "name": "Martin Hall",
+      "sourceBuildingId": "088",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-089",
+      "name": "Engineering Laboratory Building",
+      "sourceBuildingId": "089",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-090",
+      "name": "Chemical & Nuclear Engineering Building",
+      "sourceBuildingId": "090",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-091",
+      "name": "Chemistry Building",
+      "sourceBuildingId": "091",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-093",
+      "name": "Engineering Annex",
+      "sourceBuildingId": "093",
+      "layoutOffset": [
+        -31.39,
+        6.24
+      ]
+    },
+    {
+      "id": "umd-building-096",
+      "name": "Cambridge Hall",
+      "sourceBuildingId": "096",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-097",
+      "name": "Cambridge Community Center",
+      "sourceBuildingId": "097",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-098",
+      "name": "Centreville Hall",
+      "sourceBuildingId": "098",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-099",
+      "name": "Bel Air Hall",
+      "sourceBuildingId": "099",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-103",
+      "name": "Animal Science Service Building",
+      "sourceBuildingId": "103",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-108",
+      "name": "Horse Barn",
+      "sourceBuildingId": "108",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-109",
+      "name": "Sheep Barn",
+      "sourceBuildingId": "109",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-110",
+      "name": "Cattle Barn",
+      "sourceBuildingId": "110",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-115",
+      "name": "A.V. Williams Building",
+      "sourceBuildingId": "115",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-119",
+      "name": "Poultry Barn",
+      "sourceBuildingId": "119",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-121",
+      "name": "Chestertown Hall",
+      "sourceBuildingId": "121",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-122",
+      "name": "Cumberland Hall",
+      "sourceBuildingId": "122",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-140",
+      "name": "Health Center",
+      "sourceBuildingId": "140",
+      "layoutOffset": [
+        -36.96,
+        15.31
+      ]
+    },
+    {
+      "id": "umd-building-141",
+      "name": "Tawes Hall",
+      "sourceBuildingId": "141",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-142",
+      "name": "Animal Sciences/Agricultural Engineering Building",
+      "sourceBuildingId": "142",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-143",
+      "name": "Benjamin Building",
+      "sourceBuildingId": "143",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-144",
+      "name": "Biology-Psychology Building",
+      "sourceBuildingId": "144",
+      "layoutOffset": [
+        12.49,
+        62.77
+      ]
+    },
+    {
+      "id": "umd-building-145",
+      "name": "Architecture Building",
+      "sourceBuildingId": "145",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-146",
+      "name": "Parren J. Mitchell Art-Sociology Building",
+      "sourceBuildingId": "146",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-147",
+      "name": "Hornbake Library",
+      "sourceBuildingId": "147",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-156",
+      "name": "Arboretum Outreach Center",
+      "sourceBuildingId": "156",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-158",
+      "name": "Varsity Sports Teamhouse",
+      "sourceBuildingId": "158",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-159",
+      "name": "Bob \"Turtle\" Smith Stadium at Shipley Field",
+      "sourceBuildingId": "159",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-162",
+      "name": "Cole Student Activities Building",
+      "sourceBuildingId": "162",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-164",
+      "name": "University House",
+      "sourceBuildingId": "164",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-166",
+      "name": "Golf Course Club House",
+      "sourceBuildingId": "166",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-179",
+      "name": "Union Lane Parking Garage",
+      "sourceBuildingId": "179",
+      "layoutOffset": [
+        -4.68,
+        -23.54
+      ]
+    },
+    {
+      "id": "umd-building-202",
+      "name": "Regents Drive Parking Garage",
+      "sourceBuildingId": "202",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-218",
+      "name": "Stadium Drive Parking Garage",
+      "sourceBuildingId": "218",
+      "layoutOffset": [
+        -11.31,
+        11.31
+      ]
+    },
+    {
+      "id": "umd-building-223",
+      "name": "Energy Research Facility",
+      "sourceBuildingId": "223",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-224",
+      "name": "Atlantic Building",
+      "sourceBuildingId": "224",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-225",
+      "name": "Kim Engineering Building",
+      "sourceBuildingId": "225",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-226",
+      "name": "Edward St. John Learning & Teaching Center",
+      "sourceBuildingId": "226",
+      "layoutOffset": [
+        0,
+        -64
+      ]
+    },
+    {
+      "id": "umd-building-227",
+      "name": "Jull Hall",
+      "sourceBuildingId": "227",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-228",
+      "name": "E.A. Fernandez IDEA Factory",
+      "sourceBuildingId": "228",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-231",
+      "name": "Microbiology Building",
+      "sourceBuildingId": "231",
+      "layoutOffset": [
+        -6.65,
+        4.44
+      ]
+    },
+    {
+      "id": "umd-building-232",
+      "name": "Nyumburu Cultural Center",
+      "sourceBuildingId": "232",
+      "layoutOffset": [
+        -1.56,
+        7.85
+      ]
+    },
+    {
+      "id": "umd-building-233",
+      "name": "Susquehanna Hall",
+      "sourceBuildingId": "233",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-237",
+      "name": "Geology Building",
+      "sourceBuildingId": "237",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-238",
+      "name": "Leonardtown 238",
+      "sourceBuildingId": "238",
+      "layoutOffset": [
+        -1.56,
+        -7.85
+      ]
+    },
+    {
+      "id": "umd-building-239",
+      "name": "Leonardtown 239",
+      "sourceBuildingId": "239",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-240",
+      "name": "Leonardtown 240",
+      "sourceBuildingId": "240",
+      "layoutOffset": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-241",
+      "name": "Leonardtown 241",
+      "sourceBuildingId": "241",
+      "layoutOffset": [
+        0,
+        24
+      ]
+    },
+    {
+      "id": "umd-building-242",
+      "name": "Leonardtown 242",
+      "sourceBuildingId": "242",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-243",
+      "name": "Leonardtown 243",
+      "sourceBuildingId": "243",
+      "layoutOffset": [
+        -8.89,
+        -13.3
+      ]
+    },
+    {
+      "id": "umd-building-244",
+      "name": "Leonardtown 244",
+      "sourceBuildingId": "244",
+      "layoutOffset": [
+        -1.56,
+        7.85
+      ]
+    },
+    {
+      "id": "umd-building-245",
+      "name": "Leonardtown 245",
+      "sourceBuildingId": "245",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-246",
+      "name": "Leonardtown 246",
+      "sourceBuildingId": "246",
+      "layoutOffset": [
+        5.66,
+        5.66
+      ]
+    },
+    {
+      "id": "umd-building-247",
+      "name": "Leonardtown 247",
+      "sourceBuildingId": "247",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-249",
+      "name": "Leonardtown 249",
+      "sourceBuildingId": "249",
+      "layoutOffset": [
+        -7.39,
+        -3.06
+      ]
+    },
+    {
+      "id": "umd-building-250",
+      "name": "Leonardtown Community Center",
+      "sourceBuildingId": "250",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-251",
+      "name": "251 North / Denton Dining",
+      "sourceBuildingId": "251",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-252",
+      "name": "Denton Hall",
+      "sourceBuildingId": "252",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-253",
+      "name": "Easton Hall",
+      "sourceBuildingId": "253",
+      "layoutOffset": [
+        -3.06,
+        7.39
+      ]
+    },
+    {
+      "id": "umd-building-254",
+      "name": "Elkton Hall",
+      "sourceBuildingId": "254",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-255",
+      "name": "School of Public Health Building",
+      "sourceBuildingId": "255",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-256",
+      "name": "Ellicott Hall",
+      "sourceBuildingId": "256",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-257",
+      "name": "Ellicott Area Dining Hall",
+      "sourceBuildingId": "257",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-258",
+      "name": "Hagerstown Hall",
+      "sourceBuildingId": "258",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-259",
+      "name": "La Plata Hall",
+      "sourceBuildingId": "259",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-296",
+      "name": "Biomolecular Sciences Building",
+      "sourceBuildingId": "296",
+      "layoutOffset": [
+        24,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-309",
+      "name": "Indoor Practice Facility",
+      "sourceBuildingId": "309",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-338",
+      "name": "Chesapeake Building",
+      "sourceBuildingId": "338",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-360",
+      "name": "Xfinity Center",
+      "sourceBuildingId": "360",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-379",
+      "name": "Gossett Football Team House",
+      "sourceBuildingId": "379",
+      "layoutOffset": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-381",
+      "name": "Center for Young Children",
+      "sourceBuildingId": "381",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-382",
+      "name": "Neutral Buoyancy Research Facility",
+      "sourceBuildingId": "382",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-386",
+      "name": "Clarice Smith Performing Arts Center",
+      "sourceBuildingId": "386",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-388",
+      "name": "Kehoe Track at Ludwig Field",
+      "sourceBuildingId": "388",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-398",
+      "name": "Research Greenhouse",
+      "sourceBuildingId": "398",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-399",
+      "name": "Aquatic Center",
+      "sourceBuildingId": "399",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-403",
+      "name": "Terrapin Trail Parking Garage",
+      "sourceBuildingId": "403",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-404",
+      "name": "Mowatt Lane Parking Garage",
+      "sourceBuildingId": "404",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-406",
+      "name": "Computer Science Instructional Center",
+      "sourceBuildingId": "406",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-407",
+      "name": "Riggs Alumni Center",
+      "sourceBuildingId": "407",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-409",
+      "name": "Maryland Softball Stadium",
+      "sourceBuildingId": "409",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-413",
+      "name": "Bioscience Research Building",
+      "sourceBuildingId": "413",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-414",
+      "name": "Field Hockey & Lacrosse Complex",
+      "sourceBuildingId": "414",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-415",
+      "name": "Physical Sciences Complex",
+      "sourceBuildingId": "415",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-417",
+      "name": "Knight Hall",
+      "sourceBuildingId": "417",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-419",
+      "name": "Oakland Hall",
+      "sourceBuildingId": "419",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-425",
+      "name": "Prince Frederick Hall",
+      "sourceBuildingId": "425",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-428",
+      "name": "Wye Oak Building",
+      "sourceBuildingId": "428",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-429",
+      "name": "A. James Clark Hall",
+      "sourceBuildingId": "429",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-432",
+      "name": "Brendan Iribe Center",
+      "sourceBuildingId": "432",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-433",
+      "name": "Thurgood Marshall Hall",
+      "sourceBuildingId": "433",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-434",
+      "name": "Pyon-Chen Hall",
+      "sourceBuildingId": "434",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-435",
+      "name": "Johnson-Whittle Hall",
+      "sourceBuildingId": "435",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-436",
+      "name": "Yahentamitsi Dining Hall",
+      "sourceBuildingId": "436",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-438",
+      "name": "Stanley R. Zupnik Hall",
+      "sourceBuildingId": "438",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-799",
+      "name": "LEAFHouse",
+      "sourceBuildingId": "799",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-974",
+      "name": "South Campus Commons 5",
+      "sourceBuildingId": "974",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-975",
+      "name": "South Campus Commons 6",
+      "sourceBuildingId": "975",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-981",
+      "name": "South Campus Commons 7",
+      "sourceBuildingId": "981",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-996",
+      "name": "South Campus Commons 1",
+      "sourceBuildingId": "996",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-997",
+      "name": "South Campus Commons 2",
+      "sourceBuildingId": "997",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-998",
+      "name": "South Campus Commons 3",
+      "sourceBuildingId": "998",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "umd-building-secu",
+      "name": "SECU Stadium",
+      "sourceBuildingId": "secu",
+      "layoutOffset": [
+        0,
+        0
+      ]
+    }
+  ]
+}

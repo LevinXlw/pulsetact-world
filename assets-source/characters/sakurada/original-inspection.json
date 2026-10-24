@@ -1,0 +1,244 @@
+{
+  "file": "assets-source/characters/sakurada/original/Sakurada Fumiriya.vrm",
+  "bytes": 19589760,
+  "sha256": "a36e91b81518c59f6da0e3f34a176b79090a8c68cc6bd5fe03c1560744b283f3",
+  "meta": {
+    "version": "",
+    "author": "VRoidプロジェクト",
+    "contactInformation": "",
+    "reference": "",
+    "title": "桜田 史利矢",
+    "texture": 28,
+    "allowedUserName": "Everyone",
+    "violentUssageName": "Allow",
+    "sexualUssageName": "Allow",
+    "commercialUssageName": "Allow",
+    "otherPermissionUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow",
+    "licenseName": "Other",
+    "otherLicenseUrl": "https://hub.vroid.com/license?allowed_to_use_user=everyone&characterization_allowed_user=everyone&corporate_commercial_use=allow&credit=unnecessary&modification=allow&personal_commercial_use=profit&redistribution=allow&sexual_expression=allow&version=1&violent_expression=allow"
+  },
+  "triangles": 39548,
+  "primitives": 102,
+  "materials": 17,
+  "nodes": 122,
+  "skins": [
+    {
+      "joints": 117
+    },
+    {
+      "joints": 117
+    },
+    {
+      "joints": 117
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Face.baked",
+      "primitives": 10,
+      "morphTargets": 39
+    },
+    {
+      "name": "Body.baked",
+      "primitives": 9,
+      "morphTargets": 0
+    },
+    {
+      "name": "Hair001.baked",
+      "primitives": 83,
+      "morphTargets": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "M00_000_FaceBrow_00",
+      "bytes": 26687,
+      "width": 1024,
+      "height": 256
+    },
+    {
+      "name": "Shader_NoneNormal",
+      "bytes": 80,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "name": "Shader_NoneBlack",
+      "bytes": 81,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "name": "Shader_NoneBlack",
+      "bytes": 81,
+      "width": 8,
+      "height": 8
+    },
+    {
+      "name": "M00_000_FaceMouth_00",
+      "bytes": 120266,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "M00_000_EyeIris_00",
+      "bytes": 190084,
+      "width": 1024,
+      "height": 512
+    },
+    {
+      "name": "M00_000_EyeHighlight_00",
+      "bytes": 28314,
+      "width": 1024,
+      "height": 512
+    },
+    {
+      "name": "M00_000_EyeWhite_00",
+      "bytes": 163303,
+      "width": 1024,
+      "height": 512
+    },
+    {
+      "name": "M00_000_Face_00",
+      "bytes": 608427,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "M00_000_00_Face_00_nml",
+      "bytes": 322233,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "Matcap_Rim",
+      "bytes": 75681,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "M00_000_00_Face_00_out",
+      "bytes": 14108,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "M00_000_FaceEyelash_00",
+      "bytes": 30557,
+      "width": 1024,
+      "height": 256
+    },
+    {
+      "name": "M00_000_FaceEyeline_00",
+      "bytes": 52548,
+      "width": 1024,
+      "height": 256
+    },
+    {
+      "name": "M00_000_00_EyeExtra_01",
+      "bytes": 98283,
+      "width": 1024,
+      "height": 512
+    },
+    {
+      "name": "M00_001_Body_00",
+      "bytes": 1739406,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "M00_001_00_Body_00_nml",
+      "bytes": 3782372,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "M00_001_Tops_01",
+      "bytes": 2601557,
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "M00_001_Accessory_01",
+      "bytes": 46655,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "M00_001_Bottoms_01",
+      "bytes": 734146,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "M00_001_Shoes_01",
+      "bytes": 114662,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "M00_000_HairBack_00",
+      "bytes": 366352,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "M00_000_HairBack_00_nml",
+      "bytes": 280278,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "Matcap_RimHair",
+      "bytes": 39367,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "F00_000_Hair_00_01",
+      "bytes": 142238,
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "name": "F00_000_Hair_00_nml",
+      "bytes": 105128,
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "name": "F00_000_Hair_00_spe",
+      "bytes": 126661,
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "name": "F00_000_Hair_00_02",
+      "bytes": 142238,
+      "width": 512,
+      "height": 1024
+    },
+    {
+      "name": "Thumbnail",
+      "bytes": 2978854,
+      "width": 2048,
+      "height": 2048
+    }
+  ],
+  "expressionPresets": [
+    "neutral",
+    "a",
+    "i",
+    "u",
+    "e",
+    "o",
+    "blink",
+    "blink_l",
+    "blink_r",
+    "angry",
+    "fun",
+    "joy",
+    "sorrow",
+    "unknown"
+  ]
+}

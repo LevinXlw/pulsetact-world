@@ -1,0 +1,73 @@
+{
+  "reviewed": "2026-10-24",
+  "latestLinkCorrection": "assets-source/charles-bu/gsu-link-frontage-20261024.json; BU's existing-condition exterior photo and PNF two-storey-high window-wall description correct the previous 4.15m Link cap, retaining its footprint and single occupied storey.",
+  "scope": "GSU, Link, Mugar, Central Boiler Plant, Redstone, Pappas; outdoor massing only",
+  "sources": [
+    {
+      "url": "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf",
+      "title": "Boston University School of Law Project Notification Form / Expanded Environmental Notification Form, June 2012",
+      "used": [
+        "Figure 1-3 / PDF page 19: project site plan and Redstone addition in the former Law courtyard",
+        "Figures 1-6 to 1-8 / PDF pages 22-24: removal of 1982 southeast Mugar entry and restoration of original windows",
+        "Figure 3-2 / PDF page 46: ground-floor Redstone footprint, winter-garden atrium and retained central boiler plant",
+        "Figures 3-10, 3-11, 3-13 / PDF pages 54, 55, 57: north/south elevations and west-east section",
+        "Sections 4.3.3-4.3.6: Pappas three storeys, four north-facing scoop clerestories, elevated third-floor link; Mugar six-storey west block and stepped three-to-six-storey east block; single-storey boiler; GSU/Mugar Link",
+        "Section 7.4: new building steps from 76 feet to 98 feet above grade"
+      ]
+    },
+    {
+      "url": "https://www.bu.edu/cpo/project/law-school-expansion-renovation/",
+      "title": "BU Campus Planning & Operations: Law School Expansion & Renovation",
+      "used": "Five-storey Redstone opened 2014, west of Law Tower, limestone-compatible panels, glass atrium and regraded east-west pedestrian path; confirms built project rather than treating the 2012 proposal as current by itself"
+    },
+    {
+      "url": "https://www.bu.edu/law/about/law-school-complex/",
+      "title": "BU Law: Law Complex",
+      "used": "Robert T. Butler Atrium; entry forecourt off main east-west path; connection between old tower/Pappas and new entrance"
+    },
+    {
+      "url": "https://www.bu.edu/meetatbu/campus-venues/george-sherman-union/",
+      "title": "BU Events & Conferences: George Sherman Union",
+      "used": "Three occupied floors, river-facing Ziskind lounge and terrace, exterior/gallery references"
+    }
+  ],
+  "spatialBasis": {
+    "cityObjectId": 2322,
+    "lawTowerCityObjectId": 2322,
+    "sourceRecord": "BU_FULL_BUILDINGS gsu-mugar; shared pre-2014 GIS outline",
+    "frameOriginWorldXZ": [-1324.827, 867.156],
+    "frameYawRadians": -0.15750380714639708,
+    "method": "Keep original exterior GIS vertices for GSU, Link, Mugar and Pappas. Partition along axes registered to the site plan. Trace Redstone addition and its atrium separately against the existing Mugar/Law/Pappas anchors. Do not cover the east-west walkway or the ground-level route below the Pappas bridge."
+  },
+  "heightEvidence": {
+    "redstoneMainRoofMetres": 23.1648,
+    "redstoneMechanicalRoofMetres": 29.8704,
+    "redstoneSource": "76 and 98 feet above grade, PNF section 7.4",
+    "gsuRoofMetres": 17.92,
+    "gsuSource": "Existing reviewed GIS massing height retained",
+    "mugarRoofStepsMetres": [21.7, 18.3, 15.0, 11.7],
+    "mugarSource": "Estimated from six-to-three occupied storeys and the relative proportions in figure 3-13, not surveyed heights",
+    "linkRoofMetres": 7.4,
+    "linkHeightSource": "Photo estimate supported by BU Reservations GSU_Exterior_0008 and PNF section 4.3.4; not surveyed. Previous 4.15m cap omitted the upper window row.",
+    "pappasMainRoofMetres": 14.2,
+    "pappasVaultRiseMetres": 2.25,
+    "pappasBridgeBottomMetres": 8.8,
+    "otherSource": "Estimated section/elevation proportions. Exact Mugar/Pappas/GSU service-core dimensions, slab elevations, window spacing and vault radii are not available as surveyed values in this implementation."
+  },
+  "implementation": {
+    "layout": "src/features/world/bu-sert-layout.ts",
+    "geometry": "src/features/world/bu-full-campus.ts",
+    "collision": "One height-aware collider per part; Pappas bridge is elevated, not a ground-level wall; GIS combined shell is suppressed",
+    "navigation": "BU_SERT_GROUND_PARTS feeds BU_GROUND_BUILDINGS for navigation, street-tree occupancy and public frontages. BU_MAP_BUILDINGS uses corresponding massing footprints with elevated passages identified separately. The former combined GSU outline is suppressed. Public passages and Mugar entrance paths join the campus guide graph; Beach-to-Marsh circulation follows the exterior of the restored STH/CAS footprint.",
+    "terrain": "Shared planar foundation sampled at the Mugar south threshold, world XZ [-1329.3179982208444, 952.8118283771768], approximately 4.497 metres in the current BU DEM. Ground-level exterior walls extend down to sampled terrain, including the lower river-facing sides; the occupied floors remain planar. Forecourts and public passages follow the BU terrain lattice. A local 5.2-metre-wide, 13.9-metre-long atrium entrance ramp joins the terrain-following forecourt to the shared floor without flattening the whole courtyard. Ordinary buildings in the DEM core receive the same terrain-following foundation walls, including CAS-east at the shared Marsh entrance datum.",
+    "mobile": "Same physical parts and stepped silhouettes; planar windows, reduced copings and louver/vault subdivisions; offline baking only"
+  },
+  "remainingApproximations": [
+    "Redstone perimeter is registered/traced from planning drawings; it is not an as-built survey or a separately acquired current municipal polygon.",
+    "Mugar/Pappas/Link occupied-floor heights and service cores are proportional estimates; Redstone 76/98-foot heights are the explicit published figures.",
+    "Window modules and roof enclosure details follow architectural families, not one-to-one window measurements.",
+    "The local atrium entrance ramp is an authored transition between the sampled ground and modeled threshold, not a surveyed as-built accessibility design.",
+    "The model provides exterior campus circulation; it does not recreate library/classroom interiors, elevators, or accessible interior routes.",
+    "No claim that all sub-part boundaries marked surveyed are measured: surveyed identifies clipped GIS exterior rings; internal partitions were authored from the referenced plan."
+  ]
+}

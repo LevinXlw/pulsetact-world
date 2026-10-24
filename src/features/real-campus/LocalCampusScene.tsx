@@ -6,6 +6,9 @@ import {Group,Mesh,Vector3,PerspectiveCamera,CubeCamera,WebGLCubeRenderTarget,PM
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import {Character} from '../../world/Character';
+import {RealisticPerson} from './RealisticPerson';
+import {CampusPeople} from './CampusPeople';
+import {campusWalkingSpeed} from './campus-people';
 import {useStore} from '../../state/store';
 import type {Position} from '../../types';
 import {insideCampus,localTargets,type CampusManifest} from './local-data';
@@ -24,6 +27,7 @@ function World(props:Props){
  const {data,mode,paused,onReady,onError,onPosition}=props;
  const {camera,gl,scene}=useThree(),[model,setModel]=useState<Group|null>(null),[walking,setWalking]=useState(false);
  const avatar=useStore(s=>s.save.profile.avatar),reduced=useStore(s=>s.save.settings.reducedMotion);
+ const realistic=!!props.detail&&data.campus==='mit';
  const actor=useRef<Group>(null),controls=useRef<OrbitControls|null>(null),keys=useRef(new Set<string>());
  const point=useRef(new Vector3(data.spawn[0],0,data.spawn[1])),ground=useRef<Mesh[]>([]),walls=useRef<Mesh[]>([]);
  const collision=useRef(new CampusCollision()),last=useRef(0),live=useRef(props);live.current=props;
@@ -44,7 +48,7 @@ function World(props:Props){
   }).catch(e=>{if(!abort.signal.aborted)onError(e instanceof Error?e.message:'模型加载失败');});
   return()=>{abort.abort();if(owned)disposeDetail(owned);ground.current=[];walls.current=[];collision.current.clear();};
  },[data.campus,props.detail]);
- useEffect(()=>{model?.userData.detailLayer?.userData.vegetation?.userData.setQuality?.(props.quality||'standard');},[model,props.quality]);
+ useEffect(()=>{const detail=model?.userData.detailLayer;detail?.userData.vegetation?.userData.setQuality?.(props.quality||'standard');detail?.userData.groundDetail?.userData.setQuality?.(props.quality||'standard');detail?.userData.setWaterQuality?.(props.quality||'standard');},[model,props.quality]);
  // Bake the loaded courtyard once. This probe has no network dependency or per-frame cost.
  useEffect(()=>{
   if(!model||data.campus!=='mit'||!props.detail)return;
@@ -54,10 +58,14 @@ function World(props:Props){
   probe.position.set(27,12,-4);
   const visible=glass.map(o=>o.visible);
   let reflection:ReturnType<PMREMGenerator['fromCubemap']>|undefined;
+  const previousEnvironment=scene.environment,previousIntensity=scene.environmentIntensity;
   try{glass.forEach(o=>{o.visible=false;});scene.updateMatrixWorld(true);probe.update(gl,scene);reflection=pmrem.fromCubemap(cube.texture);
-   materials.forEach(m=>{m.envMap=reflection!.texture;m.envMapIntensity=m.name==='glass'?1.4:1.1;if(m.name==='glass'){m.color.set('#2b3538');m.metalness=.05;m.roughness=.22;}m.needsUpdate=true;});
+   materials.forEach(m=>{m.envMap=reflection!.texture;m.envMapIntensity=m.name==='porticoGlass'?1.8:m.name==='glass'?1.4:1.1;if(m.name==='glass'){m.color.set('#2b3538');m.metalness=.05;m.roughness=.22;}m.needsUpdate=true;});
+   // The same local probe gives rough stone, bark and clothing a restrained sky
+   // contribution, so surfaces in shadow retain their material response.
+   scene.environment=reflection.texture;scene.environmentIntensity=.35;
   }finally{glass.forEach((o,i)=>{o.visible=visible[i];});cube.dispose();pmrem.dispose();}
-  return()=>{materials.forEach(m=>{m.envMap=null;});reflection?.dispose();};
+  return()=>{materials.forEach(m=>{m.envMap=null;});scene.environment=previousEnvironment;scene.environmentIntensity=previousIntensity;reflection?.dispose();};
  },[model,data.campus,props.detail,gl,scene]);
  useEffect(()=>{
   const c=new OrbitControls(camera,gl.domElement);controls.current=c;c.enableDamping=true;c.dampingFactor=.09;c.maxPolarAngle=Math.PI*.82;c.minDistance=7;c.maxDistance=650;
@@ -75,7 +83,7 @@ function World(props:Props){
  },[camera,gl]);
  useEffect(()=>{if(paused){keys.current.clear();speed.current=0;drag.current=null;}},[paused]);
  useEffect(()=>{
-  if(!model||!controls.current)return;const c=controls.current;c.enabled=mode!=='stroll'&&!paused;c.enablePan=mode==='orbit';c.minDistance=mode==='orbit'?(props.inspection==='sampledoor'?2:7):2.5;c.maxDistance=mode==='orbit'?650:12;desiredCamera.current=null;keys.current.clear();speed.current=0;drag.current=null;
+  if(!model||!controls.current)return;const c=controls.current;c.enabled=mode!=='stroll'&&!paused;c.enablePan=mode==='orbit';c.minDistance=mode==='orbit'?(['sampledoor','people','lawnedge'].includes(props.inspection||'')?2:7):2.5;c.maxDistance=mode==='orbit'?650:12;desiredCamera.current=null;keys.current.clear();speed.current=0;drag.current=null;
   if(previousMode.current==='walk')storyPoint.current=[point.current.x,point.current.z];
   if(previousMode.current==='stroll')strollPoint.current=[point.current.x,point.current.z];
   if(mode==='walk'){const p=storyPoint.current;point.current.set(p[0],height(...p)??0,p[1]);}
@@ -113,7 +121,7 @@ function World(props:Props){
   onReady({focus,home:()=>{const p=mode==='stroll'?strollStart(data.campus,data.spawn,!!props.detail):data.spawn;point.current.set(p[0],height(...p)??0,p[1]);focus(p);onPosition(p);},capture:()=>new Promise((resolve,reject)=>{gl.domElement.toBlob(b=>b?resolve(b):reject(new Error('照片生成失败')),'image/png');})});
  },[model,mode,props.inspection]);
  useFrame((_,delta)=>{
-  if(!model||!controls.current||!actor.current)return;if(model.userData.waterTime&&!reduced&&props.quality!=='low')model.userData.waterTime.value+=Math.min(delta,.05);const c=controls.current;let moving=false;
+  if(!model||!controls.current||!actor.current)return;if(model.userData.waterTime&&!reduced)model.userData.waterTime.value+=Math.min(delta,.05);const c=controls.current;let moving=false;
   const dt=Math.min(delta,.05),v=scratch.current;if(desiredCamera.current){camera.position.copy(desiredCamera.current);desiredCamera.current=null;}c.enabled=!paused&&mode!=='stroll';
   if(paused){keys.current.clear();speed.current=0;}
   if(mode==='stroll')applyStrollCamera();
@@ -122,7 +130,7 @@ function World(props:Props){
    if(dx||dz){
     const forward=v.forward;camera.getWorldDirection(forward);forward.y=0;forward.normalize();
     const direction=v.direction.copy(forward).multiplyScalar(dz).addScaledVector(v.right.set(-forward.z,0,forward.x),dx).normalize();
-    speed.current=approach(speed.current,k.has('shift')?traversal.runSpeed:traversal.walkSpeed,traversal.acceleration*dt);
+    speed.current=approach(speed.current,realistic&&mode==='walk'?(k.has('shift')?2.1:campusWalkingSpeed):(k.has('shift')?traversal.runSpeed:traversal.walkSpeed),traversal.acceleration*dt);
     const distance=dt*speed.current,next=v.next.copy(point.current).addScaledVector(direction,distance);
     v.origin.copy(point.current).y+=.9;
     const hit=collision.current.distance(v.origin,direction,distance+.5),y=height(next.x,next.z);v.position[0]=next.x;v.position[1]=next.z;
@@ -137,8 +145,8 @@ function World(props:Props){
    const hit=collision.current.distance(c.target,offset,distance,true);if(hit!==undefined)camera.position.copy(c.target).addScaledVector(offset,Math.max(.3,hit-.35));camera.lookAt(c.target);
   }
   if(camera instanceof PerspectiveCamera){const fov=mode!=='walk'?48:(!reduced&&speed.current>4?64:58);if(Math.abs(fov-camera.fov)>.001){camera.fov=mode==='stroll'?stroll.fov:camera.fov+(fov-camera.fov)*(1-Math.exp(-6*dt));camera.updateProjectionMatrix();}}
-  last.current+=delta;if(last.current>.25){last.current=0;props.onVegetationStatus?.(model.userData.detailLayer?.userData.vegetationStatus||'ready');onPosition([point.current.x,point.current.z]);if(import.meta.env.DEV)(window as unknown as {__localCampus:unknown}).__localCampus={campus:data.campus,vegetationStatus:model.userData.detailLayer?.userData.vegetationStatus||'ready',quality:props.quality||'standard',ambientOcclusion:!!scene.userData.realismRender,presentation:!!props.presentation,cameraPosition:camera.position.toArray(),cameraGroundHeight:height(camera.position.x,camera.position.z),fov:camera instanceof PerspectiveCamera?camera.fov:null,position:point.current.toArray(),cameraForward:camera.getWorldDirection(v.forward).toArray(),mode,openingTrianglesRemoved:model.userData.openingTrianglesRemoved||0,surfaceTriangles:model.userData.surfaceTriangles,calls:scene.userData.realismRender?.calls??gl.info.render.calls,triangles:scene.userData.realismRender?.triangles??gl.info.render.triangles};}
+  last.current+=delta;if(last.current>.25){last.current=0;props.onVegetationStatus?.(model.userData.detailLayer?.userData.vegetationStatus||'ready');onPosition([point.current.x,point.current.z]);if(import.meta.env.DEV)(window as unknown as {__localCampus:unknown}).__localCampus={people:scene.children.flatMap(root=>{const people:unknown[]=[];root.traverse(o=>{if(o.userData.realisticPerson)people.push({...o.userData.realisticPerson,position:o.getWorldPosition(new Vector3()).toArray()});});return people;}),campus:data.campus,vegetationStatus:model.userData.detailLayer?.userData.vegetationStatus||'ready',quality:props.quality||'standard',ambientOcclusion:!!scene.userData.realismRender,presentation:!!props.presentation,cameraPosition:camera.position.toArray(),cameraGroundHeight:height(camera.position.x,camera.position.z),fov:camera instanceof PerspectiveCamera?camera.fov:null,position:point.current.toArray(),cameraForward:camera.getWorldDirection(v.forward).toArray(),mode,openingTrianglesRemoved:model.userData.openingTrianglesRemoved||0,surfaceTriangles:model.userData.surfaceTriangles,calls:scene.userData.realismRender?.calls??gl.info.render.calls,triangles:scene.userData.realismRender?.triangles??gl.info.render.triangles};}
  });
- return <><hemisphereLight args={[courtyardLighting.fill.sky,courtyardLighting.fill.ground,props.detail&&data.campus==='mit'?courtyardLighting.fill.intensity:1.1]}/>{props.detail&&data.campus==='mit'?<directionalLight ref={sun} position={[...courtyardLighting.sun.offset]} intensity={courtyardLighting.sun.intensity} color={courtyardLighting.sun.color} castShadow shadow-mapSize={[4096,4096]} shadow-camera-left={-140} shadow-camera-right={140} shadow-camera-top={140} shadow-camera-bottom={-140} shadow-camera-near={1} shadow-camera-far={700} shadow-bias={-.00008} shadow-normalBias={.035}/>:<directionalLight position={[-70,150,85]} intensity={2.5} color="#fff0d7" castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-140} shadow-camera-right={140} shadow-camera-top={140} shadow-camera-bottom={-140} shadow-camera-near={1} shadow-camera-far={450} shadow-bias={-.0002} shadow-normalBias={.1}/>} {model&&<primitive object={model}/>}<group ref={actor} rotation={[0,Math.PI,0]}>{mode==='walk'&&<Character avatar={avatar} walking={walking} reduced={reduced}/>}</group>{model&&mode==='walk'&&!props.presentation&&localTargets(data).filter(t=>t.kind==='npc').map((t,i)=><group key={t.id} position={[t.position[0],height(...t.position)??0,t.position[1]]} rotation={[0,Math.atan2(point.current.x-t.position[0],point.current.z-t.position[1]),0]}><Character avatar={{outfit:i?'#537782':'#b68353',skin:'#d8ae89',hair:i?'long':'short'}}/><mesh position={[0,2.5,0]} rotation={[0,0,Math.PI/4]}><boxGeometry args={[.23,.23,.08]}/><meshBasicMaterial color="#ffe0a0"/></mesh></group>)}{mode==='walk'&&!props.presentation&&props.objective&&model&&<mesh position={[props.objective[0],(height(...props.objective)??0)+.12,props.objective[1]]} rotation={[-Math.PI/2,0,0]}><ringGeometry args={[.8,1,32]}/><meshBasicMaterial color="#ffcc70" side={2}/></mesh>}</>;
+ return <><hemisphereLight args={[courtyardLighting.fill.sky,courtyardLighting.fill.ground,props.detail&&data.campus==='mit'?courtyardLighting.fill.intensity:1.1]}/>{props.detail&&data.campus==='mit'?<directionalLight ref={sun} position={[...courtyardLighting.sun.offset]} intensity={courtyardLighting.sun.intensity} color={courtyardLighting.sun.color} castShadow shadow-mapSize={[4096,4096]} shadow-camera-left={-140} shadow-camera-right={140} shadow-camera-top={140} shadow-camera-bottom={-140} shadow-camera-near={1} shadow-camera-far={700} shadow-bias={-.00008} shadow-normalBias={.035}/>:<directionalLight position={[-70,150,85]} intensity={2.5} color="#fff0d7" castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-140} shadow-camera-right={140} shadow-camera-top={140} shadow-camera-bottom={-140} shadow-camera-near={1} shadow-camera-far={450} shadow-bias={-.0002} shadow-normalBias={.1}/>} {model&&<primitive object={model}/>}{model&&realistic&&mode!=='walk'&&<CampusPeople height={height} paused={paused} reduced={reduced}/>}<group ref={actor} rotation={[0,Math.PI,0]}>{mode==='walk'&&(realistic?<RealisticPerson person="nathan" walking={walking} paused={paused} reduced={reduced} playbackRate={walking?Math.max(.1,speed.current/campusWalkingSpeed):1}/>:<Character avatar={avatar} walking={walking} reduced={reduced}/>)}</group>{model&&mode==='walk'&&!props.presentation&&localTargets(data).filter(t=>t.kind==='npc').map((t,i)=><group key={t.id} position={[t.position[0],height(...t.position)??0,t.position[1]]} rotation={[0,Math.atan2(point.current.x-t.position[0],point.current.z-t.position[1]),0]}>{realistic?<RealisticPerson person={i?'sophia':'nathan'} walking={false} paused={paused} reduced={reduced} timeOffset={i*.7}/>:<Character avatar={{outfit:i?'#537782':'#b68353',skin:'#d8ae89',hair:i?'long':'short'}}/>}<mesh position={[0,2.5,0]} rotation={[0,0,Math.PI/4]}><boxGeometry args={[.23,.23,.08]}/><meshBasicMaterial color="#ffe0a0"/></mesh></group>)}{mode==='walk'&&!props.presentation&&props.objective&&model&&<mesh position={[props.objective[0],(height(...props.objective)??0)+.12,props.objective[1]]} rotation={[-Math.PI/2,0,0]}><ringGeometry args={[.8,1,32]}/><meshBasicMaterial color="#ffcc70" side={2}/></mesh>}</>;
 }
 export default function LocalCampusScene(props:Props){return <Canvas shadows={props.quality!=='low'} dpr={props.quality==='low'?.85:[1,1.5]} camera={{position:[100,220,190],near:.2,far:1800,fov:48}} gl={{antialias:true,preserveDrawingBuffer:true,toneMapping:ACESFilmicToneMapping,toneMappingExposure:props.detail&&props.data.campus==='mit'?courtyardLighting.exposure:1}}><color attach="background" args={[courtyardLighting.fog.color]}/>{props.detail&&props.data.campus==='mit'&&<fog attach="fog" args={[courtyardLighting.fog.color,courtyardLighting.fog.near,courtyardLighting.fog.far]}/>}{props.detail&&props.data.campus==='mit'&&<CampusSky/>}<World {...props}/>{props.detail&&props.data.campus==='mit'&&props.quality!=='low'&&<RealismEffects/>}</Canvas>;}

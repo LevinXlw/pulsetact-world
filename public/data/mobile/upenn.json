@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "campus": "upenn",
+  "bytes": 130416,
+  "triangles": 2548,
+  "meshes": 9,
+  "visibleMeshes": 9,
+  "textures": 0,
+  "grid": {
+    "minX": -175,
+    "minZ": -125,
+    "columns": 14,
+    "rows": 12,
+    "cell": 25
+  },
+  "heightBytes": 672
+}

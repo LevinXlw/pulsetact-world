@@ -1,0 +1,11 @@
+export type OpticsState = { stage: 0 | 1 | 2 | 3; mirrorA: number; mirrorB: number; prediction: null | 'equal' | 'double' | 'half' };
+export type OpticsPoint = { x: number; y: number };
+export type OpticsTrace = { segments: { from: OpticsPoint; to: OpticsPoint }[]; reflections: { mirrorId: 'A' | 'B'; point: OpticsPoint; incoming: OpticsPoint; outgoing: OpticsPoint; incidence: number; reflection: number }[]; receiver: OpticsPoint; reachedReceiver: boolean };
+export const initialOpticsState: Readonly<OpticsState>;
+export const opticsBoard: Readonly<{ width: number; height: number; source: OpticsPoint; mirrorA: OpticsPoint; mirrorB: OpticsPoint; mirrorHalfLength: number; receiverRadius: number }>;
+export function sanitizeOpticsState(value: unknown): OpticsState;
+export function reflectRay(direction: OpticsPoint, mirrorDegrees: number): OpticsPoint;
+export function mirrorEndpoints(center: OpticsPoint, degrees: number): [OpticsPoint, OpticsPoint];
+export function traceOptics(state: OpticsState): OpticsTrace;
+export function isOpticsSolved(state: OpticsState): boolean;
+export function opticsReducer(state: OpticsState, patch: Partial<OpticsState> | unknown): OpticsState;

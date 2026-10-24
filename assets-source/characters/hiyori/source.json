@@ -1,0 +1,34 @@
+{
+  "id": "hiyori",
+  "name": "Mizunashi Hiyori / 水無ひより",
+  "author": "ひみこ / HENGE",
+  "checkedOn": "2026-10-11",
+  "sourceUrl": "https://booth.pm/ja/items/6120660",
+  "downloadUrl": "https://booth.pm/downloadables/5195009?variation_id=10337954",
+  "archiveName": "Henge_MizunashiHiyori_20240922.zip",
+  "advertisedArchiveSizeMB": 67.2,
+  "priceJPY": 0,
+  "status": "download-requires-booth-login",
+  "blocker": "The official free-download link redirects to https://booth.pm/users/sign_in. The browser-session check timed out. No model archive has been downloaded and no access restrictions were bypassed.",
+  "alternativeSourceSearch": "Exact archive name, VRoid Hub, and GitHub searches did not establish an official alternative download.",
+  "license": {
+    "identifier": "CC0-1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "scope": ["CC0_FBX folder", "CC0_Texture folder"],
+    "evidence": "The creator's product description explicitly dedicates the 3D model in CC0_FBX and textures in CC0_Texture to the public domain.",
+    "thirdPartyComponentsExcluded": [
+      "lilToon shader package (separate MIT license)",
+      "External Emote package (separate terms; not bundled)",
+      "Unity animator controllers (separate CC0 source; not required for model conversion)"
+    ]
+  },
+  "advertisedFormats": ["FBX", "PNG or other texture files not yet verified", "Unitypackage"],
+  "advertisedRig": "Unity Humanoid compatible",
+  "downloadedFiles": [],
+  "sha256": null,
+  "convertedGlb": null,
+  "verifiedTriangles": null,
+  "verifiedEmbeddedTextures": null,
+  "verifiedSkeleton": null,
+  "nextStep": "Download the free official archive through a signed-in BOOTH session, place it in this directory, then extract and convert only CC0_FBX plus CC0_Texture. Inspect the archive ReadMe before conversion."
+}

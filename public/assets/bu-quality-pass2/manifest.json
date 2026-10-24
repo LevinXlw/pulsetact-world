@@ -1,0 +1,2645 @@
+{
+  "pass": 2,
+  "blender": "4.5.9 LTS",
+  "createdUTC": "2026-10-18T17:20:27Z",
+  "samples": [
+    {
+      "id": "bay-state-192",
+      "sourceBlend": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\bay-state-192.blend",
+      "sourceSHA256": "f5ef559fd6bb917df341569437baf4897b14eb9bbb971cb659cdd94fcf419602",
+      "baselineGLB": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality\\bay-state-192.glb",
+      "baselineSHA256": "2f03f847e20d9bd2c2116566044f6848b55824873378305a6bf5a3079491c8c6",
+      "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality-pass2\\bay-state-192.glb",
+      "sha256": "58fae048951f2fbc3f5806232d2f9412071ac45af4fbdffac46a723333da8e95",
+      "bytes": 4877684,
+      "before": {
+        "objects": 8,
+        "vertices": 10849,
+        "triangles": 20021,
+        "blenderBoundsMetres": {
+          "min": [
+            -4.409351348876953,
+            -9.120871543884277,
+            -1.139658808708191
+          ],
+          "max": [
+            4.402444362640381,
+            9.39234447479248,
+            14.712000846862793
+          ]
+        }
+      },
+      "after": {
+        "objects": 10,
+        "vertices": 13921,
+        "triangles": 25805,
+        "blenderBoundsMetres": {
+          "min": [
+            -4.409351348876953,
+            -9.120871543884277,
+            -1.139658808708191
+          ],
+          "max": [
+            4.402444362640381,
+            9.39234447479248,
+            14.712000846862793
+          ]
+        }
+      },
+      "outwardExpansionMetres": 0,
+      "protectedSurfacesUnchanged": [
+        "BU district -4:3:architecture:glass"
+      ],
+      "changedOriginalMeshes": [],
+      "detail": {
+        "id": "bay-state-192-window-joinery-v2",
+        "sourceObjectsUnchanged": true,
+        "sourceGeometryUVSHA256": "896b86a7315154f8ad43fbce2e071c65fe4454d47247a221ddd7c16279e959c7",
+        "sourceTriangles": 20021,
+        "addedTriangles": 5784,
+        "totalTriangles": 25805,
+        "newMeshBatches": 2,
+        "newMaterials": 0,
+        "newTextures": 0,
+        "boundsBeforeBlender": {
+          "min": [
+            -4.409351348876953,
+            -9.120871543884277,
+            -1.139658808708191
+          ],
+          "max": [
+            4.402444362640381,
+            9.39234447479248,
+            14.712000846862793
+          ]
+        },
+        "boundsAfterBlender": {
+          "min": [
+            -4.409351348876953,
+            -9.120871543884277,
+            -1.139658808708191
+          ],
+          "max": [
+            4.402444362640381,
+            9.39234447479248,
+            14.712000846862793
+          ]
+        },
+        "outwardEnvelopeExpansionMetres": 0.0,
+        "semanticParts": {
+          "outer-jamb": 18,
+          "outer-head-sill": 18,
+          "inner-sash-stile": 18,
+          "inner-sash-rail": 18,
+          "existing-axis-meeting-rail": 9,
+          "sloped-sill-insert": 9
+        },
+        "windows": [
+          {
+            "window": 1,
+            "widthAlongSourceArc": 0.9093708792585777,
+            "height": 2.267999768257141,
+            "centerBlender": [
+              -1.1055562496185303,
+              8.495656967163086,
+              1.8629999160766602
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7525766375320359
+          },
+          {
+            "window": 2,
+            "widthAlongSourceArc": 0.9013480504291521,
+            "height": 2.267999768257141,
+            "centerBlender": [
+              0.22686168551445007,
+              8.70837688446045,
+              1.8629999160766602
+            ],
+            "sourceFacets": 3,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7512534449562532
+          },
+          {
+            "window": 3,
+            "widthAlongSourceArc": 0.9098038721795733,
+            "height": 2.267999768257141,
+            "centerBlender": [
+              1.4619789123535156,
+              8.165910720825195,
+              1.8629999160766602
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7526473866562134
+          },
+          {
+            "window": 4,
+            "widthAlongSourceArc": 0.9093708792585777,
+            "height": 2.1200003623962402,
+            "centerBlender": [
+              -1.1055562496185303,
+              8.495656967163086,
+              5.868880271911621
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7468190314938888
+          },
+          {
+            "window": 5,
+            "widthAlongSourceArc": 0.9013480504291521,
+            "height": 2.1200003623962402,
+            "centerBlender": [
+              0.22686168551445007,
+              8.70837688446045,
+              5.868880271911621
+            ],
+            "sourceFacets": 3,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7455059620353862
+          },
+          {
+            "window": 6,
+            "widthAlongSourceArc": 0.9098038721795733,
+            "height": 2.1200003623962402,
+            "centerBlender": [
+              1.4619789123535156,
+              8.165910720825195,
+              5.868880271911621
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7468892393501552
+          },
+          {
+            "window": 7,
+            "widthAlongSourceArc": 0.9093708792585777,
+            "height": 2.119999885559082,
+            "centerBlender": [
+              -1.1055562496185303,
+              8.495656967163086,
+              10.084880828857422
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7468190116485174
+          },
+          {
+            "window": 8,
+            "widthAlongSourceArc": 0.9013480504291521,
+            "height": 2.119999885559082,
+            "centerBlender": [
+              0.22686168551445007,
+              8.70837688446045,
+              10.084880828857422
+            ],
+            "sourceFacets": 3,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7455059422249072
+          },
+          {
+            "window": 9,
+            "widthAlongSourceArc": 0.9098038721795733,
+            "height": 2.119999885559082,
+            "centerBlender": [
+              1.4619789123535156,
+              8.165910720825195,
+              10.084880828857422
+            ],
+            "sourceFacets": 4,
+            "existingMeetingRailFraction": 0.53,
+            "authoredOuterFrameWidth": 0.055,
+            "authoredSashBeadWidth": 0.02,
+            "unobstructedGlazingAreaRatioApprox": 0.7468892195029181
+          }
+        ],
+        "clearPaneRayChecks": [
+          {
+            "window": 1,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 1,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 1,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 1,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 1,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 1,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 2,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 3,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 4,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 5,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 6,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 7,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 8,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.28,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.25,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.47,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          },
+          {
+            "window": 9,
+            "leafHeightFraction": 0.77,
+            "arcWidthFraction": 0.75,
+            "originalGlassHit": true,
+            "newFrameBlocksClearPane": false,
+            "passed": true
+          }
+        ],
+        "newMeshChecks": [
+          {
+            "mesh": "BU192 refinement \u00b7 frame",
+            "nonManifoldEdges": 0,
+            "signedVolumeCubicMetres": 0.37312804226807156,
+            "degenerateTriangles": 0,
+            "finitePositionAndUV": true,
+            "passed": true
+          },
+          {
+            "mesh": "BU192 refinement \u00b7 stone",
+            "nonManifoldEdges": 0,
+            "signedVolumeCubicMetres": 0.034798359333559924,
+            "degenerateTriangles": 0,
+            "finitePositionAndUV": true,
+            "passed": true
+          }
+        ],
+        "dimensionsAreAuthored": true,
+        "sourceBasis": "Existing 192 glass boundaries, source 53% meeting-rail axes and recessed sill positions. Joinery widths/profile are design approximations, not surveyed details.",
+        "cornice": "Existing source cornice and its prior closed-component bevels retained; no unsupported new dentils or ornament."
+      },
+      "newMeshCount": 2,
+      "newNgonCapsTriangulatedForTangentExport": 0,
+      "embeddedImages": 12,
+      "exportedMaterials": 8,
+      "tangentRepairs": {
+        "vertices": 0,
+        "meshes": []
+      }
+    },
+    {
+      "id": "cds-ground",
+      "sourceBlend": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\cds-ground.blend",
+      "sourceSHA256": "ae4262d7886cfdf214fc582647721a420607fe399a206527f2c959bf4d64e65a",
+      "baselineGLB": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality\\cds-ground.glb",
+      "baselineSHA256": "ccf3bc21f0088f6d0c52753c1978821b1f201561812fd7c9071b2745a50f71ac",
+      "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-quality-pass2\\cds-ground.glb",
+      "sha256": "4c03996886cf8c5f952e012029952b50ba3b172d154a7d4936cc10272b0b7824",
+      "bytes": 1581856,
+      "before": {
+        "objects": 7,
+        "vertices": 1483,
+        "triangles": 2356,
+        "blenderBoundsMetres": {
+          "min": [
+            -13.75,
+            -4.349999904632568,
+            -0.4325636625289917
+          ],
+          "max": [
+            13.75,
+            4.349999904632568,
+            7.5
+          ]
+        }
+      },
+      "after": {
+        "objects": 9,
+        "vertices": 3419,
+        "triangles": 5964,
+        "blenderBoundsMetres": {
+          "min": [
+            -13.75,
+            -4.349999904632568,
+            -0.4325636625289917
+          ],
+          "max": [
+            13.75,
+            4.349999904632568,
+            7.5
+          ]
+        }
+      },
+      "outwardExpansionMetres": 0,
+      "protectedSurfacesUnchanged": [
+        "BU architecture \u00b7 glass",
+        "BU architecture \u00b7 glassShade",
+        "BU ground \u00b7 paving"
+      ],
+      "changedOriginalMeshes": [
+        "BU architecture \u00b7 frame"
+      ],
+      "detail": {
+        "revision": "cds-construction-20261019-v1",
+        "coordinates": "Blender Z-up metres; exterior toward -Y; follows actual source island positions",
+        "before": {
+          "meshObjects": 7,
+          "vertices": 1483,
+          "triangles": 2356
+        },
+        "after": {
+          "meshObjects": 9,
+          "vertices": 3419,
+          "triangles": 5964
+        },
+        "addedTriangles": 4040,
+        "removedTriangles": 432,
+        "triangleDelta": 3608,
+        "addedMeshBatches": 2,
+        "newMaterials": 0,
+        "newTextureImages": 0,
+        "reusedMaterials": [
+          "frame.001 \u00b7 Blender PBR",
+          "trim.001 \u00b7 Blender PBR"
+        ],
+        "detailCounts": {
+          "curtain-wall pressure cap": 8,
+          "outer jamb cap": 4,
+          "outer head cap": 2,
+          "door leaf stile": 8,
+          "door leaf bottom rail": 4,
+          "door leaf top rail": 4,
+          "round pull grip": 4,
+          "handle glass fixing rose": 8,
+          "handle standoff": 8,
+          "column foot junction": 8,
+          "column head junction": 8,
+          "flush threshold cap": 2,
+          "column contact extension": 2
+        },
+        "removedHandleEvidence": [
+          {
+            "object": "BU architecture \u00b7 frame",
+            "vertices": 56,
+            "bounds": {
+              "min": [
+                -5.737507343292236,
+                2.141975164413452,
+                0.8700000047683716
+              ],
+              "max": [
+                -5.702482223510742,
+                2.2220301628112793,
+                1.4299999475479126
+              ],
+              "dimensions": [
+                0.03502511978149414,
+                0.08005499839782715,
+                0.559999942779541
+              ]
+            }
+          },
+          {
+            "object": "BU architecture \u00b7 frame",
+            "vertices": 56,
+            "bounds": {
+              "min": [
+                -5.397521018981934,
+                2.141965866088867,
+                0.8700000047683716
+              ],
+              "max": [
+                -5.3624796867370605,
+                2.2220137119293213,
+                1.4299999475479126
+              ],
+              "dimensions": [
+                0.03504133224487305,
+                0.0800478458404541,
+                0.559999942779541
+              ]
+            }
+          },
+          {
+            "object": "BU architecture \u00b7 frame",
+            "vertices": 56,
+            "bounds": {
+              "min": [
+                8.262489318847656,
+                2.1419789791107178,
+                0.8700000047683716
+              ],
+              "max": [
+                8.297531127929688,
+                2.222026824951172,
+                1.4299999475479126
+              ],
+              "dimensions": [
+                0.03504180908203125,
+                0.0800478458404541,
+                0.559999942779541
+              ]
+            }
+          },
+          {
+            "object": "BU architecture \u00b7 frame",
+            "vertices": 56,
+            "bounds": {
+              "min": [
+                8.60249137878418,
+                2.141975164413452,
+                0.8700000047683716
+              ],
+              "max": [
+                8.637516975402832,
+                2.2220299243927,
+                1.4299999475479126
+              ],
+              "dimensions": [
+                0.035025596618652344,
+                0.08005475997924805,
+                0.559999942779541
+              ]
+            }
+          }
+        ],
+        "doorGroups": [
+          {
+            "centerX": -5.550000190734863,
+            "glazingY": 2.3019986152648926,
+            "originalOuterFrameWidthMetres": 2.9000027179718018,
+            "originalClearWidthBetweenJambsMetres": 2.8249893188476562,
+            "openingUnchanged": true
+          },
+          {
+            "centerX": 8.450004696846008,
+            "glazingY": 2.302005171775818,
+            "originalOuterFrameWidthMetres": 2.900001049041748,
+            "originalClearWidthBetweenJambsMetres": 2.824985980987549,
+            "openingUnchanged": true
+          }
+        ],
+        "columnGroundSamples": [
+          {
+            "x": -7.750012159347534,
+            "y": 0.6999985575675964,
+            "groundCornerZ": [
+              -0.1270456314086914,
+              -0.12972283363342285,
+              -0.1351165771484375,
+              -0.13243985176086426
+            ],
+            "sourceColumnBottomZ": 1.294643965366049e-07
+          },
+          {
+            "x": 6.249992847442627,
+            "y": 0.7000051438808441,
+            "groundCornerZ": [
+              -0.15749502182006836,
+              -0.156358003616333,
+              -0.15865373611450195,
+              -0.1597905158996582
+            ],
+            "sourceColumnBottomZ": 1.294643965366049e-07
+          }
+        ],
+        "checks": {
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "degenerateFaces": 0,
+          "nonFiniteVertices": 0,
+          "allUnreplacedSourceFacesAndUVsUnchanged": true,
+          "doorGlazingAndRampUnchanged": true,
+          "doorLeafApproachRaysClear": true,
+          "columnContactRaysClosed": true,
+          "thresholdTopZ": 0.153,
+          "noNewInterior": true
+        },
+        "parts": [
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -13.01085090637207,
+              2.001009225845337,
+              1.294643965366049e-07
+            ],
+            "max": [
+              -12.950850486755371,
+              2.0370092391967773,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.06000041961669922,
+              0.03600001335144043,
+              5.599999775168172
+            ],
+            "center": [
+              -12.98085069656372,
+              2.019009232521057,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -9.395456314086914,
+              2.0010063648223877,
+              1.294643965366049e-07
+            ],
+            "max": [
+              -9.335455894470215,
+              2.037006378173828,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.06000041961669922,
+              0.03600001335144043,
+              5.599999775168172
+            ],
+            "center": [
+              -9.365456104278564,
+              2.019006371498108,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -5.780001640319824,
+              2.0010123252868652,
+              2.8500001430511475
+            ],
+            "max": [
+              -5.720001220703125,
+              2.0370121002197266,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.06000041961669922,
+              0.03599977493286133,
+              2.749999761581421
+            ],
+            "center": [
+              -5.750001430511475,
+              2.019012212753296,
+              4.225000023841858
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -2.1645467281341553,
+              2.0010182857513428,
+              1.294643965366049e-07
+            ],
+            "max": [
+              -2.104546546936035,
+              2.037018299102783,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.06000018119812012,
+              0.03600001335144043,
+              5.599999775168172
+            ],
+            "center": [
+              -2.134546637535095,
+              2.019018292427063,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              1.4508564472198486,
+              2.000955104827881,
+              1.294643965366049e-07
+            ],
+            "max": [
+              1.5108565092086792,
+              2.0369551181793213,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.060000061988830566,
+              0.03600001335144043,
+              5.599999775168172
+            ],
+            "center": [
+              1.480856478214264,
+              2.018955111503601,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              5.066302299499512,
+              2.001021385192871,
+              1.294643965366049e-07
+            ],
+            "max": [
+              5.126302242279053,
+              2.0370213985443115,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.059999942779541016,
+              0.03600001335144043,
+              5.599999775168172
+            ],
+            "center": [
+              5.096302270889282,
+              2.0190213918685913,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              8.681705474853516,
+              2.000958204269409,
+              2.8500001430511475
+            ],
+            "max": [
+              8.741705894470215,
+              2.0369582176208496,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.06000041961669922,
+              0.03600001335144043,
+              2.749999761581421
+            ],
+            "center": [
+              8.711705684661865,
+              2.0189582109451294,
+              4.225000023841858
+            ]
+          },
+          {
+            "kind": "curtain-wall pressure cap",
+            "bevelMetres": 0.002,
+            "min": [
+              12.297151565551758,
+              2.0010247230529785,
+              1.294643965366049e-07
+            ],
+            "max": [
+              12.35715103149414,
+              2.03702449798584,
+              5.599999904632568
+            ],
+            "dimensions": [
+              0.05999946594238281,
+              0.03599977493286133,
+              5.599999775168172
+            ],
+            "center": [
+              12.32715129852295,
+              2.019024610519409,
+              2.8000000170484824
+            ]
+          },
+          {
+            "kind": "outer jamb cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -7.032520771026611,
+              1.9419804811477661,
+              0.10500003397464752
+            ],
+            "max": [
+              -6.967520713806152,
+              1.9619804620742798,
+              2.8450000286102295
+            ],
+            "dimensions": [
+              0.06500005722045898,
+              0.019999980926513672,
+              2.739999994635582
+            ],
+            "center": [
+              -7.000020742416382,
+              1.951980471611023,
+              1.4750000312924385
+            ]
+          },
+          {
+            "kind": "outer jamb cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -4.1325178146362305,
+              1.9419416189193726,
+              0.10500003397464752
+            ],
+            "max": [
+              -4.06751823425293,
+              1.9619415998458862,
+              2.8450000286102295
+            ],
+            "dimensions": [
+              0.06499958038330078,
+              0.019999980926513672,
+              2.739999994635582
+            ],
+            "center": [
+              -4.10001802444458,
+              1.9519416093826294,
+              1.4750000312924385
+            ]
+          },
+          {
+            "kind": "outer jamb cap",
+            "bevelMetres": 0.002,
+            "min": [
+              6.9674859046936035,
+              1.9419596195220947,
+              0.10500003397464752
+            ],
+            "max": [
+              7.032485485076904,
+              1.9619596004486084,
+              2.8450000286102295
+            ],
+            "dimensions": [
+              0.06499958038330078,
+              0.019999980926513672,
+              2.739999994635582
+            ],
+            "center": [
+              6.999985694885254,
+              1.9519596099853516,
+              1.4750000312924385
+            ]
+          },
+          {
+            "kind": "outer jamb cap",
+            "bevelMetres": 0.002,
+            "min": [
+              9.867486953735352,
+              1.9420086145401,
+              0.10500003397464752
+            ],
+            "max": [
+              9.932486534118652,
+              1.9620085954666138,
+              2.8450000286102295
+            ],
+            "dimensions": [
+              0.06499958038330078,
+              0.019999980926513672,
+              2.739999994635582
+            ],
+            "center": [
+              9.899986743927002,
+              1.952008605003357,
+              1.4750000312924385
+            ]
+          },
+          {
+            "kind": "outer head cap",
+            "bevelMetres": 0.002,
+            "min": [
+              -6.960021018981934,
+              1.9420126676559448,
+              2.7699999809265137
+            ],
+            "max": [
+              -4.140021324157715,
+              1.9620126485824585,
+              2.8400001525878906
+            ],
+            "dimensions": [
+              2.8199996948242188,
+              0.019999980926513672,
+              0.07000017166137695
+            ],
+            "center": [
+              -5.550021171569824,
+              1.9520126581192017,
+              2.805000066757202
+            ]
+          },
+          {
+            "kind": "outer head cap",
+            "bevelMetres": 0.002,
+            "min": [
+              7.039987087249756,
+              1.9419587850570679,
+              2.7699999809265137
+            ],
+            "max": [
+              9.859987258911133,
+              1.9619587659835815,
+              2.8400001525878906
+            ],
+            "dimensions": [
+              2.820000171661377,
+              0.019999980926513672,
+              0.07000017166137695
+            ],
+            "center": [
+              8.449987173080444,
+              1.9519587755203247,
+              2.805000066757202
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              -6.959980010986328,
+              2.25197172164917,
+              0.14999975264072418
+            ],
+            "max": [
+              -6.923980236053467,
+              2.301971673965454,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03599977493286133,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              -6.9419801235198975,
+              2.276971697807312,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              -5.626023292541504,
+              2.25197172164917,
+              0.14999975264072418
+            ],
+            "max": [
+              -5.590023517608643,
+              2.301971673965454,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03599977493286133,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              -5.608023405075073,
+              2.276971697807312,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf bottom rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              -6.923980236053467,
+              2.25197172164917,
+              0.14999975264072418
+            ],
+            "max": [
+              -5.626023292541504,
+              2.301971673965454,
+              0.28999975323677063
+            ],
+            "dimensions": [
+              1.297956943511963,
+              0.04999995231628418,
+              0.14000000059604645
+            ],
+            "center": [
+              -6.275001764297485,
+              2.276971697807312,
+              0.2199997529387474
+            ]
+          },
+          {
+            "kind": "door leaf top rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              -6.923980236053467,
+              2.25197172164917,
+              2.700000047683716
+            ],
+            "max": [
+              -5.626023292541504,
+              2.301971673965454,
+              2.799999952316284
+            ],
+            "dimensions": [
+              1.297956943511963,
+              0.04999995231628418,
+              0.09999990463256836
+            ],
+            "center": [
+              -6.275001764297485,
+              2.276971697807312,
+              2.75
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              -5.510015964508057,
+              2.251969575881958,
+              0.14999975264072418
+            ],
+            "max": [
+              -5.474016189575195,
+              2.301969528198242,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03599977493286133,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              -5.492016077041626,
+              2.2769695520401,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              -4.175981044769287,
+              2.251969575881958,
+              0.14999975264072418
+            ],
+            "max": [
+              -4.139981269836426,
+              2.301969528198242,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03599977493286133,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              -4.1579811573028564,
+              2.2769695520401,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf bottom rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              -5.474016189575195,
+              2.251969575881958,
+              0.14999975264072418
+            ],
+            "max": [
+              -4.175981044769287,
+              2.301969528198242,
+              0.28999975323677063
+            ],
+            "dimensions": [
+              1.2980351448059082,
+              0.04999995231628418,
+              0.14000000059604645
+            ],
+            "center": [
+              -4.824998617172241,
+              2.2769695520401,
+              0.2199997529387474
+            ]
+          },
+          {
+            "kind": "door leaf top rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              -5.474016189575195,
+              2.251969575881958,
+              2.700000047683716
+            ],
+            "max": [
+              -4.175981044769287,
+              2.301969528198242,
+              2.799999952316284
+            ],
+            "dimensions": [
+              1.2980351448059082,
+              0.04999995231628418,
+              0.09999990463256836
+            ],
+            "center": [
+              -4.824998617172241,
+              2.2769695520401,
+              2.75
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              7.040015697479248,
+              2.251991033554077,
+              0.14999975264072418
+            ],
+            "max": [
+              7.076015472412109,
+              2.3019909858703613,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03599977493286133,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              7.058015584945679,
+              2.2769910097122192,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              8.373990058898926,
+              2.251991033554077,
+              0.14999975264072418
+            ],
+            "max": [
+              8.409990310668945,
+              2.3019909858703613,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03600025177001953,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              8.391990184783936,
+              2.2769910097122192,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf bottom rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              7.076015472412109,
+              2.251991033554077,
+              0.14999975264072418
+            ],
+            "max": [
+              8.373990058898926,
+              2.3019909858703613,
+              0.28999975323677063
+            ],
+            "dimensions": [
+              1.2979745864868164,
+              0.04999995231628418,
+              0.14000000059604645
+            ],
+            "center": [
+              7.725002765655518,
+              2.2769910097122192,
+              0.2199997529387474
+            ]
+          },
+          {
+            "kind": "door leaf top rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              7.076015472412109,
+              2.251991033554077,
+              2.700000047683716
+            ],
+            "max": [
+              8.373990058898926,
+              2.3019909858703613,
+              2.799999952316284
+            ],
+            "dimensions": [
+              1.2979745864868164,
+              0.04999995231628418,
+              0.09999990463256836
+            ],
+            "center": [
+              7.725002765655518,
+              2.2769910097122192,
+              2.75
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              8.489997863769531,
+              2.2519545555114746,
+              0.14999975264072418
+            ],
+            "max": [
+              8.52599811553955,
+              2.301954507827759,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03600025177001953,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              8.507997989654541,
+              2.2769545316696167,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf stile",
+            "bevelMetres": 0.0025,
+            "min": [
+              9.824014663696289,
+              2.2519545555114746,
+              0.14999975264072418
+            ],
+            "max": [
+              9.860014915466309,
+              2.301954507827759,
+              2.799999952316284
+            ],
+            "dimensions": [
+              0.03600025177001953,
+              0.04999995231628418,
+              2.65000019967556
+            ],
+            "center": [
+              9.842014789581299,
+              2.2769545316696167,
+              1.4749998524785042
+            ]
+          },
+          {
+            "kind": "door leaf bottom rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              8.52599811553955,
+              2.2519545555114746,
+              0.14999975264072418
+            ],
+            "max": [
+              9.824014663696289,
+              2.301954507827759,
+              0.28999975323677063
+            ],
+            "dimensions": [
+              1.2980165481567383,
+              0.04999995231628418,
+              0.14000000059604645
+            ],
+            "center": [
+              9.17500638961792,
+              2.2769545316696167,
+              0.2199997529387474
+            ]
+          },
+          {
+            "kind": "door leaf top rail",
+            "bevelMetres": 0.0025,
+            "min": [
+              8.52599811553955,
+              2.2519545555114746,
+              2.700000047683716
+            ],
+            "max": [
+              9.824014663696289,
+              2.301954507827759,
+              2.799999952316284
+            ],
+            "dimensions": [
+              1.2980165481567383,
+              0.04999995231628418,
+              0.09999990463256836
+            ],
+            "center": [
+              9.17500638961792,
+              2.2769545316696167,
+              2.75
+            ]
+          },
+          {
+            "kind": "round pull grip",
+            "bevelMetres": 0.001,
+            "min": [
+              -5.735994338989258,
+              2.141975164413452,
+              0.8860000371932983
+            ],
+            "max": [
+              -5.7039947509765625,
+              2.1739752292633057,
+              1.4139999151229858
+            ],
+            "dimensions": [
+              0.03199958801269531,
+              0.032000064849853516,
+              0.5279998779296875
+            ],
+            "center": [
+              -5.71999454498291,
+              2.157975196838379,
+              1.149999976158142
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.74399471282959,
+              2.2939717769622803,
+              0.9110000133514404
+            ],
+            "max": [
+              -5.6959943771362305,
+              2.302971601486206,
+              0.9589999914169312
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04799997806549072
+            ],
+            "center": [
+              -5.71999454498291,
+              2.298471689224243,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.728994369506836,
+              2.157975196838379,
+              0.9259999990463257
+            ],
+            "max": [
+              -5.710994720458984,
+              2.294971466064453,
+              0.9440000057220459
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13699626922607422,
+              0.018000006675720215
+            ],
+            "center": [
+              -5.71999454498291,
+              2.226473331451416,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.74399471282959,
+              2.2939717769622803,
+              1.340999960899353
+            ],
+            "max": [
+              -5.6959943771362305,
+              2.302971601486206,
+              1.3890000581741333
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04800009727478027
+            ],
+            "center": [
+              -5.71999454498291,
+              2.298471689224243,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.728994369506836,
+              2.157975196838379,
+              1.3560000658035278
+            ],
+            "max": [
+              -5.710994720458984,
+              2.294971466064453,
+              1.3739999532699585
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13699626922607422,
+              0.017999887466430664
+            ],
+            "center": [
+              -5.71999454498291,
+              2.226473331451416,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "round pull grip",
+            "bevelMetres": 0.001,
+            "min": [
+              -5.395999908447266,
+              2.141965866088867,
+              0.8860000371932983
+            ],
+            "max": [
+              -5.36400032043457,
+              2.1739659309387207,
+              1.4139999151229858
+            ],
+            "dimensions": [
+              0.03199958801269531,
+              0.032000064849853516,
+              0.5279998779296875
+            ],
+            "center": [
+              -5.380000114440918,
+              2.157965898513794,
+              1.149999976158142
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.404000282287598,
+              2.2939696311950684,
+              0.9110000133514404
+            ],
+            "max": [
+              -5.355999946594238,
+              2.302969455718994,
+              0.9589999914169312
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04799997806549072
+            ],
+            "center": [
+              -5.380000114440918,
+              2.2984695434570312,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.388999938964844,
+              2.157965660095215,
+              0.9259999990463257
+            ],
+            "max": [
+              -5.371000289916992,
+              2.2949695587158203,
+              0.9440000057220459
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13700389862060547,
+              0.018000006675720215
+            ],
+            "center": [
+              -5.380000114440918,
+              2.2264676094055176,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.404000282287598,
+              2.2939696311950684,
+              1.340999960899353
+            ],
+            "max": [
+              -5.355999946594238,
+              2.302969455718994,
+              1.3890000581741333
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04800009727478027
+            ],
+            "center": [
+              -5.380000114440918,
+              2.2984695434570312,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              -5.388999938964844,
+              2.157965660095215,
+              1.3560000658035278
+            ],
+            "max": [
+              -5.371000289916992,
+              2.2949695587158203,
+              1.3739999532699585
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13700389862060547,
+              0.017999887466430664
+            ],
+            "center": [
+              -5.380000114440918,
+              2.2264676094055176,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "round pull grip",
+            "bevelMetres": 0.001,
+            "min": [
+              8.264010429382324,
+              2.1419789791107178,
+              0.8860000371932983
+            ],
+            "max": [
+              8.29601001739502,
+              2.1739790439605713,
+              1.4139999151229858
+            ],
+            "dimensions": [
+              0.03199958801269531,
+              0.032000064849853516,
+              0.5279998779296875
+            ],
+            "center": [
+              8.280010223388672,
+              2.1579790115356445,
+              1.149999976158142
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.256010055541992,
+              2.2939910888671875,
+              0.9110000133514404
+            ],
+            "max": [
+              8.304010391235352,
+              2.3029909133911133,
+              0.9589999914169312
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04799997806549072
+            ],
+            "center": [
+              8.280010223388672,
+              2.2984910011291504,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.271010398864746,
+              2.1579790115356445,
+              0.9259999990463257
+            ],
+            "max": [
+              8.289010047912598,
+              2.2949910163879395,
+              0.9440000057220459
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13701200485229492,
+              0.018000006675720215
+            ],
+            "center": [
+              8.280010223388672,
+              2.226485013961792,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.256010055541992,
+              2.2939910888671875,
+              1.340999960899353
+            ],
+            "max": [
+              8.304010391235352,
+              2.3029909133911133,
+              1.3890000581741333
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04800009727478027
+            ],
+            "center": [
+              8.280010223388672,
+              2.2984910011291504,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.271010398864746,
+              2.1579790115356445,
+              1.3560000658035278
+            ],
+            "max": [
+              8.289010047912598,
+              2.2949910163879395,
+              1.3739999532699585
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.13701200485229492,
+              0.017999887466430664
+            ],
+            "center": [
+              8.280010223388672,
+              2.226485013961792,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "round pull grip",
+            "bevelMetres": 0.001,
+            "min": [
+              8.604004859924316,
+              2.141975164413452,
+              0.8860000371932983
+            ],
+            "max": [
+              8.636004447937012,
+              2.1739752292633057,
+              1.4139999151229858
+            ],
+            "dimensions": [
+              0.03199958801269531,
+              0.032000064849853516,
+              0.5279998779296875
+            ],
+            "center": [
+              8.620004653930664,
+              2.157975196838379,
+              1.149999976158142
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.596004486083984,
+              2.293954610824585,
+              0.9110000133514404
+            ],
+            "max": [
+              8.644004821777344,
+              2.3029544353485107,
+              0.9589999914169312
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04799997806549072
+            ],
+            "center": [
+              8.620004653930664,
+              2.298454523086548,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.611004829406738,
+              2.157975196838379,
+              0.9259999990463257
+            ],
+            "max": [
+              8.62900447845459,
+              2.294954299926758,
+              0.9440000057220459
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.1369791030883789,
+              0.018000006675720215
+            ],
+            "center": [
+              8.620004653930664,
+              2.2264647483825684,
+              0.9350000023841858
+            ]
+          },
+          {
+            "kind": "handle glass fixing rose",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.596004486083984,
+              2.293954610824585,
+              1.340999960899353
+            ],
+            "max": [
+              8.644004821777344,
+              2.3029544353485107,
+              1.3890000581741333
+            ],
+            "dimensions": [
+              0.048000335693359375,
+              0.008999824523925781,
+              0.04800009727478027
+            ],
+            "center": [
+              8.620004653930664,
+              2.298454523086548,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "handle standoff",
+            "bevelMetres": 0.0007,
+            "min": [
+              8.611004829406738,
+              2.157975196838379,
+              1.3560000658035278
+            ],
+            "max": [
+              8.62900447845459,
+              2.294954299926758,
+              1.3739999532699585
+            ],
+            "dimensions": [
+              0.017999649047851562,
+              0.1369791030883789,
+              0.017999887466430664
+            ],
+            "center": [
+              8.620004653930664,
+              2.2264647483825684,
+              1.3650000095367432
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.5199985504150391,
+              0.006000129505991936
+            ],
+            "max": [
+              -7.570012092590332,
+              0.5299985408782959,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.3600001335144043,
+              0.009999990463256836,
+              0.04000000096857548
+            ],
+            "center": [
+              -7.750012159347534,
+              0.5249985456466675,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.5299985408782959,
+              0.006000129505991936
+            ],
+            "max": [
+              -7.9200119972229,
+              0.869998574256897,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.010000228881835938,
+              0.3400000333786011,
+              0.04000000096857548
+            ],
+            "center": [
+              -7.925012111663818,
+              0.6999985575675964,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.869998574256897,
+              0.006000129505991936
+            ],
+            "max": [
+              -7.570012092590332,
+              0.8799985647201538,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.3600001335144043,
+              0.009999990463256836,
+              0.04000000096857548
+            ],
+            "center": [
+              -7.750012159347534,
+              0.8749985694885254,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.580012321472168,
+              0.5299985408782959,
+              0.006000129505991936
+            ],
+            "max": [
+              -7.570012092590332,
+              0.869998574256897,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.010000228881835938,
+              0.3400000333786011,
+              0.04000000096857548
+            ],
+            "center": [
+              -7.57501220703125,
+              0.6999985575675964,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.5199985504150391,
+              5.474999904632568
+            ],
+            "max": [
+              -7.570012092590332,
+              0.5299985408782959,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.3600001335144043,
+              0.009999990463256836,
+              0.039999961853027344
+            ],
+            "center": [
+              -7.750012159347534,
+              0.5249985456466675,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.5299985408782959,
+              5.474999904632568
+            ],
+            "max": [
+              -7.9200119972229,
+              0.869998574256897,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.010000228881835938,
+              0.3400000333786011,
+              0.039999961853027344
+            ],
+            "center": [
+              -7.925012111663818,
+              0.6999985575675964,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.930012226104736,
+              0.869998574256897,
+              5.474999904632568
+            ],
+            "max": [
+              -7.570012092590332,
+              0.8799985647201538,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.3600001335144043,
+              0.009999990463256836,
+              0.039999961853027344
+            ],
+            "center": [
+              -7.750012159347534,
+              0.8749985694885254,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              -7.580012321472168,
+              0.5299985408782959,
+              5.474999904632568
+            ],
+            "max": [
+              -7.570012092590332,
+              0.869998574256897,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.010000228881835938,
+              0.3400000333786011,
+              0.039999961853027344
+            ],
+            "center": [
+              -7.57501220703125,
+              0.6999985575675964,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.5200051665306091,
+              0.006000129505991936
+            ],
+            "max": [
+              6.42999267578125,
+              0.530005156993866,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.3599996566772461,
+              0.009999990463256836,
+              0.04000000096857548
+            ],
+            "center": [
+              6.249992847442627,
+              0.5250051617622375,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.530005156993866,
+              0.006000129505991936
+            ],
+            "max": [
+              6.079992771148682,
+              0.8700051307678223,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.009999752044677734,
+              0.3399999737739563,
+              0.04000000096857548
+            ],
+            "center": [
+              6.074992895126343,
+              0.7000051438808441,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.8700051307678223,
+              0.006000129505991936
+            ],
+            "max": [
+              6.42999267578125,
+              0.8800051212310791,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.3599996566772461,
+              0.009999990463256836,
+              0.04000000096857548
+            ],
+            "center": [
+              6.249992847442627,
+              0.8750051259994507,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column foot junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.419992923736572,
+              0.530005156993866,
+              0.006000129505991936
+            ],
+            "max": [
+              6.42999267578125,
+              0.8700051307678223,
+              0.04600013047456741
+            ],
+            "dimensions": [
+              0.009999752044677734,
+              0.3399999737739563,
+              0.04000000096857548
+            ],
+            "center": [
+              6.424992799758911,
+              0.7000051438808441,
+              0.026000129990279675
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.5200051665306091,
+              5.474999904632568
+            ],
+            "max": [
+              6.42999267578125,
+              0.530005156993866,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.3599996566772461,
+              0.009999990463256836,
+              0.039999961853027344
+            ],
+            "center": [
+              6.249992847442627,
+              0.5250051617622375,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.530005156993866,
+              5.474999904632568
+            ],
+            "max": [
+              6.079992771148682,
+              0.8700051307678223,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.009999752044677734,
+              0.3399999737739563,
+              0.039999961853027344
+            ],
+            "center": [
+              6.074992895126343,
+              0.7000051438808441,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.069993019104004,
+              0.8700051307678223,
+              5.474999904632568
+            ],
+            "max": [
+              6.42999267578125,
+              0.8800051212310791,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.3599996566772461,
+              0.009999990463256836,
+              0.039999961853027344
+            ],
+            "center": [
+              6.249992847442627,
+              0.8750051259994507,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "column head junction",
+            "bevelMetres": 0.001,
+            "min": [
+              6.419992923736572,
+              0.530005156993866,
+              5.474999904632568
+            ],
+            "max": [
+              6.42999267578125,
+              0.8700051307678223,
+              5.514999866485596
+            ],
+            "dimensions": [
+              0.009999752044677734,
+              0.3399999737739563,
+              0.039999961853027344
+            ],
+            "center": [
+              6.424992799758911,
+              0.7000051438808441,
+              5.494999885559082
+            ]
+          },
+          {
+            "kind": "flush threshold cap",
+            "bevelMetres": 0.0005,
+            "min": [
+              -6.960000038146973,
+              1.9920072555541992,
+              0.15000022947788239
+            ],
+            "max": [
+              -4.140000343322754,
+              2.3320071697235107,
+              0.15300023555755615
+            ],
+            "dimensions": [
+              2.8199996948242188,
+              0.3399999141693115,
+              0.003000006079673767
+            ],
+            "center": [
+              -5.550000190734863,
+              2.162007212638855,
+              0.15150023251771927
+            ]
+          },
+          {
+            "kind": "flush threshold cap",
+            "bevelMetres": 0.0005,
+            "min": [
+              7.040004730224609,
+              1.9919942617416382,
+              0.15000022947788239
+            ],
+            "max": [
+              9.860004425048828,
+              2.3319942951202393,
+              0.15300023555755615
+            ],
+            "dimensions": [
+              2.8199996948242188,
+              0.3400000333786011,
+              0.003000006079673767
+            ],
+            "center": [
+              8.450004577636719,
+              2.1619942784309387,
+              0.15150023251771927
+            ]
+          },
+          {
+            "kind": "column contact extension",
+            "bevelMetres": 0.003,
+            "min": [
+              -7.9200119972229,
+              0.5299985408782959,
+              -0.1430453658103943
+            ],
+            "max": [
+              -7.580012321472168,
+              0.869998574256897,
+              0.008000129833817482
+            ],
+            "dimensions": [
+              0.3399996757507324,
+              0.3400000333786011,
+              0.15104549564421177
+            ],
+            "center": [
+              -7.750012159347534,
+              0.6999985575675964,
+              -0.0675226179882884
+            ]
+          },
+          {
+            "kind": "column contact extension",
+            "bevelMetres": 0.003,
+            "min": [
+              6.079992771148682,
+              0.530005156993866,
+              -0.1677602380514145
+            ],
+            "max": [
+              6.419992923736572,
+              0.8700051307678223,
+              0.008000129833817482
+            ],
+            "dimensions": [
+              0.3400001525878906,
+              0.3399999737739563,
+              0.17576036788523197
+            ],
+            "center": [
+              6.249992847442627,
+              0.7000051438808441,
+              -0.0798800541087985
+            ]
+          }
+        ],
+        "sourceNotes": [
+          "src/features/world/bu-cds-entry-layout.ts: existing approximate doors and retained canopy columns",
+          "assets-source/charles-bu/cds-entry-refinement-20261018.json: evidence and authorship boundary",
+          "No new site survey. Hardware diameters, stile/rail profiles, pressure caps and column joints are authored construction approximations.",
+          "Four old 0.035 x 0.080 x 0.560 m handle islands removed only after exact size/placement matching; no overlapping duplicate grips.",
+          "Two batches reuse the baked frame/trim materials. Short column extensions close the measured source-model 13-16 cm paving gap within each 34 cm footprint, without flattening terrain.",
+          "Existing source dimensions, door glazing, terrain ramp and closed exterior remain unchanged. No change to gameplay collision in this standalone sample."
+        ]
+      },
+      "newMeshCount": 2,
+      "newNgonCapsTriangulatedForTangentExport": 40,
+      "embeddedImages": 6,
+      "exportedMaterials": 7,
+      "tangentRepairs": {
+        "vertices": 10,
+        "meshes": [
+          {
+            "mesh": "Mesh_3.001",
+            "vertices": 5,
+            "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+          },
+          {
+            "mesh": "Mesh_6.001",
+            "vertices": 5,
+            "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+          }
+        ]
+      }
+    }
+  ],
+  "totalBytes": 6459540,
+  "limitations": [
+    "Fine construction dimensions are authored estimates derived from existing openings, not an as-built survey.",
+    "Glazing remains the prior opaque PBR approximation; no interior or transmission is introduced.",
+    "These are local review assets, not a campus-wide replacement."
+  ]
+}

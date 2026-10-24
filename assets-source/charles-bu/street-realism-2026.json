@@ -1,0 +1,62 @@
+{
+  "reviewed": "2026-10-17",
+  "scope": "Charles River Campus: East, Central, West and South; no Fenway or Medical Campus",
+  "coordinatePolicy": "Retain City of Boston source footprints, MassGIS/MassDOT road centrelines, existing stop positions and shared BU terrain. Review the three separately authored modern envelopes against BU's campus map and site descriptions: correct Booth's location and Yawkey's street/neighbor setbacks, and retain Kilachand Center's street-clear envelope. These are explicitly authored approximations, not recovered GIS geometry; details and primary references are in bu-campus-source-manifest.json authoredEnvelopeReview. Street furniture and frontage paving remain interpreted detail.",
+  "sources": [
+    {
+      "url": "https://www.bu.edu/articles/2024/reimagining-cummington-mall/",
+      "title": "Reimagining Cummington Mall",
+      "publisher": "Boston University",
+      "published": "2024-04-18",
+      "supports": "Cummington still serves delivery drivers and Warren garage users. The 2024 event was a temporary closure, and a permanent streetscape makeover was not then planned. The term mall does not justify replacing the carriageway with an uninterrupted stone plaza."
+    },
+    {
+      "url": "https://www.bu.edu/cpo/2012/07/31/new-pedestrian-mall-slated-for-charles-river-campus/",
+      "title": "New Pedestrian Mall Slated for Charles River Campus",
+      "publisher": "Boston University Campus Planning & Operations",
+      "published": "2012-07-31",
+      "supports": "Blandford, Hinsdale and Cummington are restricted-access university streets; delivery, emergency, accessibility transportation and garage access remain. Removed parking-meter posts were repurposed as bicycle racks."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2021/mbta-b-branch-station-consolidation-to-begin-february-15/",
+      "title": "MBTA B Branch Station Consolidation to Begin February 15",
+      "publisher": "Boston University, reporting the MBTA project briefing",
+      "published": "2021-02-09",
+      "supports": "The Amory and Babcock stations replace four former West Campus stops, with longer platforms, 150-foot canopies and windscreens, and access at both ends. The article describes the 225-foot platform design. Amory is east of St Paul/Buick; Babcock is east of Babcock Street.",
+      "implementation": "Modern platform length 68.58 m and canopy 45.72 m. Stop positions project continuously onto the existing median rather than snapping to an 8 m sample. Platform widths, posts, shelters, windscreens and end ramps are authored approximations, not engineering drawings."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2021/new-t-stops-now-open-along-west-campus/",
+      "title": "New T Stops Now Open along West Campus",
+      "publisher": "Boston University",
+      "published": "2021-11-15",
+      "supports": "Amory and Babcock opened in November 2021; the older BU West, St Paul, Pleasant and old Babcock arrangement should not be restored."
+    },
+    {
+      "url": "https://www.bu.edu/articles/2019/comm-ave-makeover-nears-completion/",
+      "title": "Comm Ave’s $20.4M Makeover Nears Completion",
+      "publisher": "Boston University",
+      "published": "2019",
+      "supports": "The BU Bridge to Packard's Corner phase places separated cycle tracks between parked cars and sidewalks and improves sidewalks, islands and signal infrastructure.",
+      "implementation": "Additional low separators only west of the BU Bridge, interrupted at cross streets. Their cross-section is a bounded authored representation; no surveyed lane geometry is claimed."
+    }
+  ],
+  "frontages": {
+    "implementation": "Street-facing segments of real footprint edges connect to the same road's outer sidewalk boundary when the gap is short. Academic frontages receive narrow paving infill. Brownstones and Bay State addresses receive one entrance link no wider than 1.6 m so gardens remain planted. Candidate patches overlapping buildings, playing fields, BU Beach or the protected Marsh forecourt are rejected.",
+    "inferredNotSurveyed": "Paving extent, entrance position, paving finish, furniture and precise planting beds are authored approximations. No parcel-wide fill or claim of door-by-door survey accuracy.",
+    "sharedMobileData": "src/features/world/bu-public-realm.ts: BU_PUBLIC_FRONTAGES and buStreetSidewalk",
+    "terrain": "All surfaces follow buElevation and the terrain triangulation; no terrain datum changes. Frontages sit at +0.102 m and existing sidewalks at +0.105 m, with only 0.06 m plan overlap for continuous walking."
+  },
+  "renderingReview": {
+    "problem": "Base grass and pavement inherited a -2/-2 slope depth bias, while gravel, rail heads and paint did not. At low camera angles the biased lower surface hid the physically higher track bed and markings. Rail heads were also below sleeper tops, and touring-route concrete ribbons crossed Nickerson's sports turf.",
+    "correction": "Shared bu-ground-layers assigns base terrain +1/+1 bias, physical surfaces neutral depth, and painted markings -0.25/-1 bias. Every material keeps depth testing and depth writing. Actual sidewalk polygons are clipped outside intersecting GIS carriageways; exact bevel patches connect their inner/outer edges across shared GIS nodes, including separate records over the Pike and Charles. Only outer avenue sidewalks participate, keeping the rail median clear. Visual courtyard paths are clipped outside existing sports envelopes without changing navigable routes.",
+    "railProfile": "Two tracks retain the model's existing median axes and 1.435 m gauge. Ballast is at terrain +0.073 m, sleeper tops at +0.152 m and rail heads at +0.192 m. Closer sleeper spacing and shallow rail webs are authored visual detail, not an MBTA engineering survey. Road crossings have a paved inset instead of loose ballast.",
+    "sharedData": ["src/features/world/bu-ground-layers.ts", "src/features/world/bu-public-realm.ts: BU_COURTYARD_PUBLIC_SEGMENTS, BU_SIDEWALK_JOIN_PATCHES and buClipSidewalkToJunctions"],
+    "verification": "Regression checks test field-path exclusion, cross-street sidewalk clipping, rail-head height above ballast, depth settings, finite geometry and the existing bounded mesh/material budgets. Primary BU 2019 corridor documentation confirms the split carriageways, central Green Line corridor and separated cycle tracks; the MBTA project page could not be fetched on this review date, so no new MBTA geometry is claimed."
+  },
+  "remainingLimitations": [
+    "Traffic lights, cars, operating transit and temporary construction closures are not simulated.",
+    "Rear service yards and every private frontage are not surveyed and are not indiscriminately paved.",
+    "The Mass Pike rail corridor and bridge geometry retain the existing representation; this pass does not claim new surveyed track positions."
+  ]
+}

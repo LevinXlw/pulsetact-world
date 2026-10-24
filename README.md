@@ -1,4 +1,19 @@
-# Pulsetact Campus Explorer
+# Pulsetact World
+
+## 当前开发规范
+
+所有后续开发遵守根目录 [AGENTS.md](AGENTS.md) 与 [项目开发规范：视觉还原](docs/development-standards.md)。2026-10-23 修订的核心标准是 **“做成和真实场景一样真实的3d模型”**：建筑几何、材质质感、光照反射、地形景观和近景细节均以实景为目标，不能仅以“形似”作为完成条件。局部尺寸可有合理误差，但不能降低真实感；与旧画风或质量约定冲突时，以当前真实还原要求为准。历史交付不自动满足新标准。
+
+## 当前项目状态
+
+2026-10-24，当前版本 **v0.2.0**（[更新记录](docs/releases/0.2.0.md)）。入口为 **校园世界单人探索**：Boston 的 MIT—查尔斯河—BU 连续步行区域，以及通过「校园旅行」切换的 UMD College Park、UPenn 与 University of Arizona（Tucson）。运行 `npm run dev -- --port 5186 --strictPort` 后访问 `/` 或 `/world/mit`。
+
+所有应用页面需要登录。临时固定账号为 `tony`，随机密码按要求只硬编码在 `server/auth-credentials.mjs`；修改后需重启本地服务或重新发布 Worker。后端通过 HttpOnly / SameSite=Lax Cookie 维护 8 小时会话，刷新保持登录，退出会撤销会话并保留本机探索存档。本地 Node 服务使用进程内会话；Cloudflare 正式版使用持久化 Durable Object，并启用 Secure Cookie。修改固定密码会让旧的线上会话失效。这不提供云存档或学校身份认证。Vite 开发服务禁止浏览器读取 `server/`、`worker/`、配置临时包及 `.world-data/`。
+
+当前入口不请求联机服务。WASD / 方向键行走、Shift 快走、拖动观察、滚轮缩放、E 互动、M 地图、J 手册、P 拍照；触屏设备显示方向按钮。角色与昵称保存在本机，探索、实验、位置、画质保存在 `pulsetact.world.solo.v1`，刷新后继续；清除站点数据会清除本机存档。照片直接下载到设备。单人浏览器验收：`node scripts/check-solo-playable.mjs`（预览服务端口 5186）。
+
+此前联机样板的实现保留在 `WorldPage.tsx` 与 `server/`，历史范围见 [首个可玩片段说明](docs/world-first-playable.md)。`/api/world/*` 同样要求有效登录会话。学生认证、Harvard 新版区域和跨校连续城市仍在后续规划中。原版入口保留于 `/classic`，以下为原校园探索记录。
+## Campus Explorer 历史说明
 
 Cambridge · Harvard & MIT。独立制作的中文校园探索体验，基于需求文档 v1.0 实现本地 P0。使用可行走的程序化 3D 场景，无需 API Key、登录、后端、外部 GLB 或图片服务。
 
@@ -13,6 +28,8 @@ Killian Court 已加入本地立面、柱廊、草坪、步道和树木样板，
 ## 运行
 
 开发环境：Windows、Node.js 24.16.0、npm 11.13.0。
+
+首次克隆时，将 `server/auth-credentials.example.mjs` 复制为 `server/auth-credentials.mjs`，在副本中设置随机密码后再启动、测试或部署。实际凭据文件不进入 Git，只由本地 Node 后端和 Cloudflare Worker 构建读取；已有开发／发布机器保留原文件即可，更新代码无需改密码。
 
 ```sh
 npm ci
@@ -62,8 +79,21 @@ P1：真实 AI 对话、登录和云存档、Blender / GLB、复杂动画、手�
 
 校园布局为艺术化压缩，非现实导航和建筑测绘。人物与活动为 Pulsetact 原创，非学校真实课程或学生陈述。素材与学校事实来源分开记录。
 
-## 静态部署
+## 运行构建产物
 
-`npm run build` 输出 `dist/`。任意静态托管服务需将未知应用路径回退到 `index.html`（包括 `/campus/mit`、`/journal`），资源文件正常返回文件本身。此交付未发布到线上，也不依赖部署账号。
+`npm run build` 输出 `dist/`，再运行 `npm start` 使用同一套登录后端和静态资源服务（默认 `http://127.0.0.1:4173`，支持 `HOST` / `PORT`）。`npm run dev` 与 `vite preview` 也接入同一登录服务。启用账号登录后，不能仅托管 `dist/` 而省略后端。Node 服务通过 HTTPS 反向代理部署时设置 `AUTH_SECURE_COOKIE=1`。
+
+## Cloudflare 正式部署
+
+正式地址：https://world.pulsetact.ai 。Worker 为 `pulsetact-world`，自定义域名、静态资源及 `AUTH_STORE` SQLite Durable Object 绑定由 `wrangler.jsonc` 管理。线上提供当前单人体验，历史多人服务不在这个 Worker 中运行。
+
+```sh
+npm run deploy:cloudflare
+node scripts/check-release-bu.mjs
+```
+
+本地预览发布包：先 `npm run build:cloudflare`，再 `npm run preview:cloudflare`。预览使用本地证书。正式发布后的 `check-release-bu.mjs` 完整验证 HTTPS 证书，并检查登录、真实地图跳转、手机高清、实际加载资源与本地发布目录的 SHA-256 一致性；可用 `WORLD_EXPECTED_VERSION` 指定 Wrangler 输出的部署 UUID。旧 `check-world-deployment.mjs` 保留为历史脚本，其中资源断言针对旧校园加载方式，不作为 v0.2.0 的发布门槛。重建 `dist-cloud/` 前先停止预览，避免 Windows 目录锁定。
+
+发布包保留运行需要的模型、来源说明和授权文件；剔除未使用的植被文件以及超过单文件大小限制的原始 detail GLB，后者由 Worker 使用 gzip 原件提供同一 URL。`/data/` 和人物、天空资源要求登录。发布清单和浏览器报告在 `output/deployment/`。探索进度仍属于浏览器和域名，本地预览的存档不会自动迁移到正式域名。
 
 详细验证和限制见 `docs/acceptance.md`；学校事实见 `docs/content-sources.md`；自制资源见 `docs/asset-manifest.json`。

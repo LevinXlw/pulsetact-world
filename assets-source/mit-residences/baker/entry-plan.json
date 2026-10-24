@@ -1,0 +1,8 @@
+{
+  "revision": "2026-10-24-north-entry",
+  "basis": "Registered 2025 orthophotography, 2018 source retaining-wall centerlines, and MIT Guide north entrance photograph; landscape boundaries are photo/orthophoto estimates, not a detailed as-built survey.",
+  "outerXZ": [[-300.1,246.4],[-298.5,244.2],[-286.5,238.6],[-278.0,234.65],[-272.0,239.6],[-271.3,241.3],[-278.7,245.6],[-285.2,250.0],[-290.539231,250.871],[-291.453331,252.3338],[-295.773231,250.0672],[-299.4,248.2]],
+  "treeIslandXZ": [[-299.0,244.15],[-298.35,243.0],[-296.5,241.95],[-294.0,241.25],[-292.3,241.5],[-292.1,242.5],[-293.2,244.15],[-295.0,245.5],[-297.0,245.5],[-298.6,244.9]],
+  "streetEdgeXZ": [[-298.5,244.2],[-286.5,238.6],[-278.0,234.65]],
+  "uncertainty": "Street-side edge and planting-island perimeter estimated at approximately 0.5–1.5 m from registered orthophotography; the long retaining wall centerline and elevation are tied to the retained GIS source."
+}

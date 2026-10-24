@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-22",
+  "scope": "Visual audit of the existing official Vassar-frontage photograph against the local source-mesh patch renders. No additional photos were downloaded: the network download approval call was interrupted. No mesh or game assets were edited by this audit.",
+  "existingViewedPhoto": {
+    "localPath": "output/design/mit-20261021/references/stata-official.webp",
+    "publicationUrl": "https://listart.mit.edu/art-artists/ray-maria-stata-center-2004",
+    "publisher": "MIT List Visual Arts Center",
+    "photographerCredit": "Charles Mayer Photography",
+    "description": "Vassar frontage with nearer Gates-end brick tower at image left, silver folded forms, silver curved intermediate volumes, farther Dreyfoos-end brick tower, and blue-edged canopy at image right.",
+    "rights": "Existing photo used as an architectural reference; no public-domain or redistributable license was established."
+  },
+  "primarySourcesRead": [
+    {
+      "url": "https://www.csail.mit.edu/about/visit-csail",
+      "fact": "Gates entrance is at the Main Street end; Dreyfoos entrance is at the Massachusetts Avenue end. This confirms the names independently of visual interpretation."
+    },
+    {
+      "url": "https://listart.mit.edu/art-artists/ray-maria-stata-center-2004",
+      "fact": "Credits the photo to Charles Mayer Photography. Describes steel, brick, aluminum, corrugated metal, and brightly painted red, yellow, and blue volumes, and an amphitheater facing Hockfield Court."
+    },
+    {
+      "url": "https://web.mit.edu/facilities/construction/completed/stata.html",
+      "fact": "MIT Facilities project page credits its four-photo gallery to Andy Ryan. The gallery URLs below were discovered but not downloaded or visually audited.",
+      "discoveredPhotoUrls": [
+        "https://web.mit.edu/facilities/photos/construction/Projects/stata/1_large.jpg",
+        "https://web.mit.edu/facilities/photos/construction/Projects/stata/002751_thumb_off.jpg",
+        "https://web.mit.edu/facilities/photos/construction/Projects/stata/003155_thumb_off.jpg",
+        "https://web.mit.edu/facilities/photos/construction/Projects/stata/003176_thumb_off.jpg",
+        "https://web.mit.edu/facilities/photos/construction/Projects/stata/003187_thumb_off.jpg"
+      ]
+    }
+  ],
+  "coordinates": {
+    "source": "Blender X east, Y north, Z up; patch numbers and coordinates refer to assets-source/mit-stata/patches.json.",
+    "three": "x=X, y=Z, z=-Y",
+    "names": "Gates is the northeast/Main Street end; Dreyfoos is the southwest/Massachusetts Avenue end."
+  },
+  "materials": [
+    { "patches": [5], "material": "red-orange brick", "confidence": "high", "reason": "Matches the large near brick wall at the left of the official photo and the northeast source render." },
+    { "patches": [21], "material": "red-orange brick", "confidence": "high", "reason": "Return wall of the same Gates-end brick tower; visible behind the silver folded projection." },
+    { "patches": [3, 6], "material": "red-orange brick", "confidence": "high", "reason": "Large Dreyfoos-end Vassar tower wall and its northeast return correspond to the farther rectangular brick volume in the official photo." },
+    { "patches": [9], "material": "red-orange brick", "confidence": "medium-high", "reason": "The tall straight wall southwest of the Gates folded silver cluster corresponds to the narrow high brick strip visible at the cluster's right." },
+    { "patches": [25], "material": "red-orange brick", "confidence": "medium", "reason": "Narrow return associated with patch 9; photograph does not resolve its full width clearly." },
+    { "patches": [54, 62, 64, 76], "material": "silver metal", "confidence": "high", "reason": "Folded vertical facets at the center of the Gates-end sculptural cluster; photo shows pale silver panels and strongly projecting rectangular window frames." },
+    { "patches": [20, 28], "material": "silver metal", "confidence": "medium", "reason": "Their lower projecting prism appears to correspond to the broad silver volume in front of the Gates brick tower; source simplifies the built slopes, so this association is less certain than the large brick walls." },
+    { "patches": [4, 8, 13], "material": "not established by the viewed photo", "confidence": "unconfirmed", "reason": "Side/rear-facing source walls are not adequately visible. Do not describe their brick/silver assignment as photographically verified." }
+  ],
+  "entrances": {
+    "gates": {
+      "photoLandmark": "Two large folded silver canopy plates below the silver facet cluster; no blue accent on these near canopies.",
+      "candidatePatch": 186,
+      "sourceCenter": [128.306, 327.122, 6.223],
+      "threePlanLocation": [128.306, -327.122],
+      "confidence": "medium",
+      "constraint": "This patch is in the correct canopy zone. Projecting its center down to terrain is a provisional implementation choice, not a photo-verified door center. The exact glazing plane beneath the canopy may be recessed or adjacent to this canopy side wall. No evidence justifies a precise numeric shift within the zone."
+    },
+    "dreyfoos": {
+      "photoLandmark": "Blue-edged folded canopy at image right, at the southwest edge of the far brick tower and beside a tall narrow glazed slot.",
+      "preferredCandidatePatch": 132,
+      "sourceCenter": [58.814, 292.697, 7.089],
+      "threePlanLocation": [58.814, -292.697],
+      "sourceBounds": { "min": [55.409, 292.326, 2.438], "max": [62.451, 293.092, 12.625] },
+      "confidence": "medium",
+      "constraint": "Patch 132 is a more plausible canopy/entry zone than patch 17: it is southwest of the main brick Vassar wall, near glazed-slot patch 23. Exact door center and opening normal remain unverified.",
+      "rejectedEarlierConfirmation": {
+        "patch": 17,
+        "sourceCenter": [90.397, 296.198, 10.962],
+        "reason": "This lies northeast of the Dreyfoos brick wall, towards the intervening round silver volumes; the blue-edged canopy in the photo lies on the opposite southwest side. An earlier verbal confirmation of patch 17 was too strong and is withdrawn."
+      }
+    }
+  },
+  "modelingConstraints": [
+    "Preserve the source massing and unequal tower offsets. The photograph combines a few large brick planes with concentrated silver folds and curved intermediate volumes; do not apply one uniform material across both towers.",
+    "Brick is warm red-orange with relatively subtle mortar. Brick tower openings are tall narrow paired-pane rectangles, usually recessed or nearly flush; on the broad near photo wall four columns and six clear rows are visible above the landscape/base zone.",
+    "Silver facets carry strongly projecting rectangular window boxes with dark reveals and pale metallic sills. Their row positions and projection vary with the facet; avoid painting a continuous flush rectangular grid over the entire folded cluster.",
+    "Metal planes should read as pale brushed silver in diffuse light, with restrained panel seams. The official view does not support mirror-like chrome across every silver surface.",
+    "The two Vassar canopies differ: Gates has paired silver folded plates, while the far Dreyfoos canopy has a conspicuous blue edge/band. Preserve their separate locations.",
+    "Only one public frontage photograph has been visually inspected in this audit. Rear/Hockfield material regions and exact window-by-window placement are not verified; no rear facade or full 360-degree accuracy claim is supported."
+  ]
+}

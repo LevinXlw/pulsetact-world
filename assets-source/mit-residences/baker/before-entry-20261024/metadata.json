@@ -1,0 +1,215 @@
+{
+  "id": "baker",
+  "name": "Baker House / W7",
+  "axes": "Blender east,north,up; glTF east,up,south; identity runtime transform",
+  "source": {
+    "modelId": "CAM_TZTMU-B3O9W-LFC4E",
+    "sourceName": "Baker House, Building W7",
+    "tile": "F4",
+    "modelDate": "2018-04-12",
+    "modelSource": "2018 Aerial Imagery by WSP",
+    "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+    "x": -300.604,
+    "z": 279.834,
+    "boundsXZ": {
+      "minX": -351.15,
+      "maxX": -250.059,
+      "minZ": 245.406,
+      "maxZ": 314.263
+    },
+    "statePlaneFeet": {
+      "easting": 765439.580107,
+      "northing": 2955248.985265
+    },
+    "catalogLatLon": {
+      "lat": 42.3566805584502,
+      "lon": -71.0960222213587
+    },
+    "inRuntimeManifest": true,
+    "runtimeCatalogPositionXZ": [
+      -325.931,
+      275.852
+    ],
+    "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+    "sourceEntry": "models/CAM_TZTMU-B3O9W-LFC4E_OBJ/CAM_TZTMU-B3O9W-LFC4E_OBJ.obj"
+  },
+  "sourceBounds": {
+    "x": [
+      -351.14984130859375,
+      -250.05892944335938
+    ],
+    "z": [
+      245.4055938720703,
+      314.26251220703125
+    ],
+    "y": [
+      2.671339988708496,
+      26.34473991394043
+    ]
+  },
+  "groundY": 2.671339988708496,
+  "mainRoofY": 22.6447399542799,
+  "diningRoofY": 8.64474,
+  "floorSpacingM": 3.02,
+  "windowRecessM": 0.28,
+  "scope": "Exterior only; no modeled accessible interior",
+  "sources": [
+    {
+      "url": "https://baker.mit.edu/about/",
+      "use": "six floors, serpentine river frontage, suspended stairs, dining pavilion"
+    },
+    {
+      "url": "https://listart.mit.edu/art-artists/baker-house-1949",
+      "use": "north stair tile cladding and window grouping"
+    },
+    {
+      "url": "https://news.mit.edu/2012/residential-hall-security-review-report",
+      "local": "references/north-mit-news.jpg",
+      "use": "north stair underside and glazing"
+    },
+    {
+      "local": "output/design/mit-20261021/references/baker.webp",
+      "use": "south shape, window proportions, roofing, dining skylights"
+    },
+    {
+      "url": "https://mitguidetoresidences.mit.edu/sites/default/files/header-background/7676815734_894a64a1c9_o.jpg",
+      "local": "assets-source/mit-residences/references/baker-mit-guide.jpg",
+      "use": "North stair stepped glazing and entrance canopy/door details"
+    }
+  ],
+  "camerasBlender": {
+    "south-overview": {
+      "eye": [
+        -284,
+        -407,
+        77
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 122
+    },
+    "north-stairs": {
+      "eye": [
+        -308,
+        -164,
+        51
+      ],
+      "target": [
+        -302,
+        -275,
+        13
+      ],
+      "scale": 113
+    },
+    "south-west": {
+      "eye": [
+        -409,
+        -351,
+        57
+      ],
+      "target": [
+        -302,
+        -279,
+        13
+      ],
+      "scale": 124
+    },
+    "window-close": {
+      "eye": [
+        -290,
+        -304,
+        4.37134
+      ],
+      "target": [
+        -291,
+        -277,
+        11.5
+      ],
+      "scale": 31,
+      "perspective": true
+    },
+    "north-entry-walk": {
+      "eye": [
+        -277,
+        -230,
+        4.37134
+      ],
+      "target": [
+        -294,
+        -251,
+        8.5
+      ],
+      "scale": 31,
+      "perspective": true
+    }
+  },
+  "approachPoints": [
+    {
+      "label": "North entry approach, approximate",
+      "x": -290,
+      "y": 2.671339988708496,
+      "z": 247
+    },
+    {
+      "label": "Memorial Drive facade viewpoint",
+      "x": -304,
+      "y": 2.671339988708496,
+      "z": 308
+    }
+  ],
+  "assumptions": [
+    "Window bay widths, frames, pergola dimensions and rooflight counts approximated from photographs.",
+    "Measured source supports overall outline and elevation; south curved elbows are smoothed within the source footprint tolerance.",
+    "North stair bottom slopes are photo-informed reconstruction; invisible original measured collision envelope intentionally blocks exterior entry."
+  ],
+  "outputs": {
+    "full": {
+      "bytes": 7434928,
+      "triangles": 109284,
+      "drawCalls": 18,
+      "meshes": 18
+    },
+    "mobile": {
+      "bytes": 3050600,
+      "triangles": 53174,
+      "drawCalls": 16,
+      "meshes": 16
+    }
+  },
+  "revision": "2026-10-23-realism-1",
+  "qualityStatus": "Stage iteration; offline model inspected, in-game visual acceptance still required",
+  "changes": [
+    "Planar three-dimensional aluminium frame extrusions, asymmetric sash lights and solid sloped projecting sills.",
+    "Separate semitransparent glass, recessed shading backing and varied roller blinds; no accessible interior is claimed.",
+    "225 x 75 mm water-struck brick coursing with warped mortar edges, normal relief and an independent roughness map.",
+    "North stair lower window sequence follows rising flights; source main envelope and base elevation retained.",
+    "Moon Garden light scoops have bell profiles, stems, flashing bases and full-detail guards.",
+    "Roof weathering and lap seams; unsupported repetitive rooftop room windows replaced with limited service vents."
+  ],
+  "lodPolicy": {
+    "full": "Complete outer frame extrusions, highlight lips, gasket strips, sill end caps and rooflight guards.",
+    "mobile": "Preserves silhouette, recess, glazing, blind depth, frame inner return and sloped sill; omits narrow highlight lips, gaskets, sill ends and rooflight guards."
+  },
+  "exportOptimization": "Only unit normals are quantized to aligned normalized signed bytes using KHR_mesh_quantization; positions, UVs and collision geometry are preserved.",
+  "knownGaps": [
+    "Individual room window positions and some north-brick opening groups remain photograph-informed approximations, not an exact facade survey.",
+    "Terracotta tile joints and limestone surface aging are not yet individually resolved.",
+    "Glass uses PBR alpha blending with a shallow shading backing; the runtime environment must supply reflections and lighting, and full physical transmission is not modeled.",
+    "North entrance appendage retains the survey volume; detailed as-built lobby footprint remains uncertain.",
+    "Landscaping, sidewalk, terrain and scene lighting are outside this building-only source and require the integrated scene review."
+  ],
+  "offlineEvidence": {
+    "before": "before-realism/",
+    "after": [
+      "south-overview.png",
+      "north-stairs.png",
+      "south-west.png",
+      "window-close.png",
+      "north-entry-walk.png"
+    ],
+    "kind": "Actual Blender model renders with a neutral preview ground, excluded from both GLBs."
+  }
+}

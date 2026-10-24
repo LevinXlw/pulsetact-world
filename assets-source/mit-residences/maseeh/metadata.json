@@ -1,0 +1,314 @@
+{
+  "building": "Maseeh Hall W1",
+  "source": {
+    "modelId": "CAM_5GU8J-DD9KS-40P6S",
+    "sourceName": "Fariborz Maseeh Hall, Building W1",
+    "tile": "F4",
+    "modelDate": "2010-04-14",
+    "modelSource": "2010 Aerial Imagery by Infotech",
+    "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+    "x": -114.592,
+    "z": 168.845,
+    "boundsXZ": {
+      "minX": -155.495,
+      "maxX": -73.689,
+      "minZ": 126.772,
+      "maxZ": 210.919
+    },
+    "statePlaneFeet": {
+      "easting": 766049.855953,
+      "northing": 2955613.121675
+    },
+    "catalogLatLon": {
+      "lat": 42.3576325503945,
+      "lon": -71.0937004420749
+    },
+    "inRuntimeManifest": true,
+    "runtimeCatalogPositionXZ": [
+      -135.16,
+      169.2
+    ],
+    "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+    "sourceEntry": "models/CAM_5GU8J-DD9KS-40P6S_OBJ/CAM_5GU8J-DD9KS-40P6S_OBJ.obj"
+  },
+  "coordinates": "Blender east,north,up; glTF east,up,south. No additional translation.",
+  "surveyBoundsEastNorthUp": {
+    "min": [
+      -155.49513085181295,
+      -210.91860016182488,
+      3.992887985775972e-05
+    ],
+    "max": [
+      -73.68873085181265,
+      -126.77150003482585,
+      32.16523982727965
+    ]
+  },
+  "roofHeight": 26.165239827279652,
+  "sourceBottomIsClosureNotTerrain": true,
+  "references": [
+    "https://news.mit.edu/2011/maseeh-hall-welcomed-0916",
+    "https://capitalprojects.mit.edu/projects/maseeh-hall-w1"
+  ],
+  "inferences": [
+    "Window bays, dimensions, masonry ornament and cupola curvature are photo estimates, not as-built measurements.",
+    "Historical 2010 survey massing retained; both entrance scroll gables and stone axes are visible in 2011 official photographs. South fine carving is partly hidden by mature trees and inferred from the clearer north elevation.",
+    "Doors are closed exterior geometry; no authored or accessible interior.",
+    "Offline renders are Blender diagnostic images, not game screenshots."
+  ],
+  "full": {
+    "windowOpenings": 961,
+    "facadeGroups": 135,
+    "cupolaCenters": [
+      [
+        -113.31678771972656,
+        -203.53460693359375,
+        29.285240173339844
+      ],
+      [
+        -87.47827911376953,
+        -191.81634521484375,
+        29.285240173339844
+      ]
+    ],
+    "entrances": [
+      {
+        "side": "Amherst Street north",
+        "approximateDoorCenterEastNorthUp": [
+          -119.92688751220703,
+          -154.73777770996094,
+          4.704260349273682
+        ],
+        "platformFrontCenterWorldXZ": [
+          -121.44139099121094,
+          151.4168243408203
+        ],
+        "platformFrontCenterEastNorthUp": [
+          -121.44139099121094,
+          -151.4168243408203,
+          3.9328317642211914
+        ],
+        "safeExteriorEastNorthUp": [
+          -122.04303741455078,
+          -150.0975341796875,
+          3.80426025390625
+        ],
+        "sourceTerrainHeight": 3.80426025390625,
+        "landingHeight": 4.70426025390625
+      },
+      {
+        "side": "Memorial Drive south court",
+        "approximateDoorCenterEastNorthUp": [
+          -113.12779235839844,
+          -170.3214569091797,
+          3.962185859680176
+        ],
+        "platformFrontCenterWorldXZ": [
+          -111.93943786621094,
+          172.25244140625
+        ],
+        "platformFrontCenterEastNorthUp": [
+          -111.93943786621094,
+          -172.25244140625,
+          3.962185859680176
+        ],
+        "safeExteriorEastNorthUp": [
+          -111.64068603515625,
+          -172.90753173828125,
+          3.8421859741210938
+        ],
+        "sourceTerrainHeight": 3.8421859741210938,
+        "landingHeight": 3.962185974121094
+      }
+    ],
+    "profile": "full",
+    "triangles": 105222,
+    "bytes": 7313064,
+    "meshes": 11,
+    "sha256": "ddfd788fd6998fe7fb94778d9730a2a1a7787e0fbaf39e652a81eb3750d20fb0",
+    "cameras": {
+      "south-overall": {
+        "eyeEastNorthUp": [
+          -54.0268440246582,
+          -289.60137939453125,
+          52.0
+        ],
+        "targetEastNorthUp": [
+          -112.51734161376953,
+          -173.39524841308594,
+          17.0
+        ],
+        "orthographicScale": 104
+      },
+      "north-overall": {
+        "eyeEastNorthUp": [
+          -165.80368041992188,
+          -49.32041931152344,
+          52.0
+        ],
+        "targetEastNorthUp": [
+          -114.92694854736328,
+          -165.70150756835938,
+          17.0
+        ],
+        "orthographicScale": 104
+      },
+      "south-court": {
+        "eyeEastNorthUp": [
+          -80.487548828125,
+          -241.21923828125,
+          15.0
+        ],
+        "targetEastNorthUp": [
+          -110.3626937866211,
+          -175.7098846435547,
+          17.0
+        ],
+        "orthographicScale": 62
+      },
+      "north-entry": {
+        "eyeEastNorthUp": [
+          -140.65277099609375,
+          -109.2906723022461,
+          17.0
+        ],
+        "targetEastNorthUp": [
+          -120.32107543945312,
+          -153.87342834472656,
+          17.0
+        ],
+        "orthographicScale": 45
+      },
+      "east-overall": {
+        "eyeEastNorthUp": [
+          5.808429718017578,
+          -155.70314025878906,
+          55.0
+        ],
+        "targetEastNorthUp": [
+          -112.77230072021484,
+          -168.01612854003906,
+          17.0
+        ],
+        "orthographicScale": 104
+      }
+    },
+    "visibleBoundsEastNorthUp": {
+      "min": [
+        -155.61216735839844,
+        -211.10276794433594,
+        -0.00047109293518587947
+      ],
+      "max": [
+        -73.46918487548828,
+        -126.55029296875,
+        34.58523941040039
+      ]
+    }
+  },
+  "mobile": {
+    "windowOpenings": 961,
+    "facadeGroups": 135,
+    "cupolaCenters": [
+      [
+        -113.31678771972656,
+        -203.53460693359375,
+        29.285240173339844
+      ],
+      [
+        -87.47827911376953,
+        -191.81634521484375,
+        29.285240173339844
+      ]
+    ],
+    "entrances": [
+      {
+        "side": "Amherst Street north",
+        "approximateDoorCenterEastNorthUp": [
+          -119.92688751220703,
+          -154.73777770996094,
+          4.704260349273682
+        ],
+        "platformFrontCenterWorldXZ": [
+          -121.44139099121094,
+          151.4168243408203
+        ],
+        "platformFrontCenterEastNorthUp": [
+          -121.44139099121094,
+          -151.4168243408203,
+          3.9328317642211914
+        ],
+        "safeExteriorEastNorthUp": [
+          -122.04303741455078,
+          -150.0975341796875,
+          3.80426025390625
+        ],
+        "sourceTerrainHeight": 3.80426025390625,
+        "landingHeight": 4.70426025390625
+      },
+      {
+        "side": "Memorial Drive south court",
+        "approximateDoorCenterEastNorthUp": [
+          -113.12779235839844,
+          -170.3214569091797,
+          3.962185859680176
+        ],
+        "platformFrontCenterWorldXZ": [
+          -111.93943786621094,
+          172.25244140625
+        ],
+        "platformFrontCenterEastNorthUp": [
+          -111.93943786621094,
+          -172.25244140625,
+          3.962185859680176
+        ],
+        "safeExteriorEastNorthUp": [
+          -111.64068603515625,
+          -172.90753173828125,
+          3.8421859741210938
+        ],
+        "sourceTerrainHeight": 3.8421859741210938,
+        "landingHeight": 3.962185974121094
+      }
+    ],
+    "profile": "mobile",
+    "triangles": 54330,
+    "bytes": 3648584,
+    "meshes": 11,
+    "sha256": "efc2746ea3cc8d1cf410ec1d10803dd54d038f1a72f0de0a0caff327f1a23a16",
+    "cameras": {
+      "mobile-south": {
+        "eyeEastNorthUp": [
+          -54.0268440246582,
+          -289.60137939453125,
+          52.0
+        ],
+        "targetEastNorthUp": [
+          -112.51734161376953,
+          -173.39524841308594,
+          17.0
+        ],
+        "orthographicScale": 104
+      }
+    },
+    "visibleBoundsEastNorthUp": {
+      "min": [
+        -155.61216735839844,
+        -211.10276794433594,
+        -0.00047109293518587947
+      ],
+      "max": [
+        -73.46918487548828,
+        -126.55029296875,
+        34.58523941040039
+      ]
+    }
+  },
+  "revision": "2026-10-23 realism iteration: both entrance axes, forward south apron, masonry depth and continuous copper cap normals",
+  "remainingVisualDifferences": [
+    "Fine heraldic carving, lettering, medallions and ornamental finial silhouettes are simplified; blank tablets are not exact replicas.",
+    "Facade-by-facade window pairing and room shade variation still use survey-bay inference where photographs are incomplete.",
+    "Copper aging and stone weathering are bounded procedural approximations, not scanned surfaces.",
+    "Runtime reflections, courtyard planting, iron boundary fence and paving are owned by the scene integration and require in-game visual acceptance."
+  ]
+}

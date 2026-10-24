@@ -1,0 +1,372 @@
+{
+  "date": "2026-10-19",
+  "units": "metres",
+  "coordinateSystem": "glTF Y-up; Blender importer performs standard axis conversion",
+  "samples": [
+    {
+      "id": "bay-state-192",
+      "note": "Reviewed authored 192 Bay State exterior, local metre coordinates. City footprint retained; window details are not surveyed.",
+      "toWorld": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -833.054,
+        2.8183511666666656,
+        986.687,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -4.415421485900879,
+          -1.139658808708191,
+          -9.392810821533203
+        ],
+        "max": [
+          4.404097557067871,
+          14.712000846862793,
+          9.121593475341797
+        ]
+      },
+      "triangles": 3317,
+      "meshes": 8,
+      "bytes": 330972,
+      "sha256": "6ca2bda5d43a7ce83d3cff7448d33ce8a8851b538a254049875d411b40c80ce5",
+      "materials": [
+        {
+          "name": "BU district · brownstone",
+          "finish": "brownstone",
+          "surface": "limestone",
+          "color": [
+            0.3094689228067428,
+            0.16826940017946088,
+            0.10702310296918527
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · stone",
+          "finish": "stone",
+          "surface": "limestone",
+          "color": [
+            0.5711248294565854,
+            0.4910208498384856,
+            0.3712376804636741
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · glass",
+          "finish": "glass",
+          "surface": "glass",
+          "color": [
+            0.13286832154414627,
+            0.25818285291079235,
+            0.2663556047920505
+          ],
+          "roughness": 0.55,
+          "metalness": 0.13,
+          "emissive": [
+            0.14126329113044458,
+            0.24228112245478564,
+            0.3094689228067428
+          ],
+          "emissiveIntensity": 0.075,
+          "side": 0
+        },
+        {
+          "name": "BU district · frame",
+          "finish": "frame",
+          "surface": "frame",
+          "color": [
+            0.158960835050774,
+            0.1844749944900301,
+            0.171441100722554
+          ],
+          "roughness": 0.76,
+          "metalness": 0.12,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · brick",
+          "finish": "brick",
+          "surface": "brick",
+          "color": [
+            0.3967552307153359,
+            0.171441100722554,
+            0.11193242782769693
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · trim",
+          "finish": "trim",
+          "surface": "trim",
+          "color": [
+            0.7230551289161951,
+            0.6307571363387763,
+            0.4793201830913402
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · roof",
+          "finish": "roof",
+          "surface": "roof",
+          "color": [
+            0.13013647668074665,
+            0.17788841597328695,
+            0.171441100722554
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU district · brickDark",
+          "finish": "brickDark",
+          "surface": "brick",
+          "color": [
+            0.22696587349938613,
+            0.08650046202808521,
+            0.05612849004241121
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        }
+      ]
+    },
+    {
+      "id": "cds-ground",
+      "note": "Clipped study of the existing authored CDS south podium: doors, retained canopy columns and threshold paving. Cut edges are sample boundaries, not new real-world walls.",
+      "toWorld": [
+        0.9895059058723947,
+        0,
+        0.1444924297105264,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.1444924297105264,
+        0,
+        0.9895059058723947,
+        0,
+        -873.2995578152193,
+        4.478491176840529,
+        1035.621125539902,
+        1
+      ],
+      "bounds": {
+        "min": [
+          -13.75,
+          -0.4325636625289917,
+          -4.349999904632568
+        ],
+        "max": [
+          13.75,
+          7.5,
+          4.349999904632568
+        ]
+      },
+      "triangles": 820,
+      "meshes": 7,
+      "bytes": 89132,
+      "sha256": "7ca6e37c96f11140f702db86274d4ebfeb913f659e3b2f2c51f73e18f0d129c1",
+      "materials": [
+        {
+          "name": "BU stone",
+          "finish": "stone",
+          "surface": "limestone",
+          "color": [
+            0.5840784178830671,
+            0.508881320845802,
+            0.407240211891531
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU trim",
+          "finish": "trim",
+          "surface": "trim",
+          "color": [
+            0.76052450467022,
+            0.6795424696265424,
+            0.5209955731953768
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU glass",
+          "finish": "glass",
+          "surface": "glass",
+          "color": [
+            0.12213877222015301,
+            0.25818285291079235,
+            0.2704977910022518
+          ],
+          "roughness": 0.52,
+          "metalness": 0.12,
+          "emissive": [
+            0.14126329113044458,
+            0.24228112245478564,
+            0.3094689228067428
+          ],
+          "emissiveIntensity": 0.075,
+          "side": 0
+        },
+        {
+          "name": "BU frame",
+          "finish": "frame",
+          "surface": "frame",
+          "color": [
+            0.3139887133649649,
+            0.3277780980458375,
+            0.2663556047920505
+          ],
+          "roughness": 0.76,
+          "metalness": 0.12,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU bronze",
+          "finish": "bronze",
+          "surface": "bronze",
+          "color": [
+            0.3231432091022285,
+            0.19806931954941637,
+            0.12743768042608497
+          ],
+          "roughness": 0.76,
+          "metalness": 0.12,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        },
+        {
+          "name": "BU glassShade",
+          "finish": "glassShade",
+          "surface": "glassShade",
+          "color": [
+            0.0343398068028541,
+            0.07818742179702069,
+            0.09084171117479915
+          ],
+          "roughness": 0.52,
+          "metalness": 0.12,
+          "emissive": [
+            0.14126329113044458,
+            0.24228112245478564,
+            0.3094689228067428
+          ],
+          "emissiveIntensity": 0.075,
+          "side": 0
+        },
+        {
+          "name": "BU paving",
+          "finish": "paving",
+          "surface": "pavement",
+          "color": [
+            0.623960391667596,
+            0.5209955731953768,
+            0.36130677977297226
+          ],
+          "roughness": 0.96,
+          "metalness": 0,
+          "emissive": [
+            0,
+            0,
+            0
+          ],
+          "emissiveIntensity": 1,
+          "side": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5349 @@
+{
+  "id": "questrom-full",
+  "createdUTC": "2026-10-19T10:38:37Z",
+  "blender": "4.5.9 LTS",
+  "input": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\questrom\\input\\questrom-full.glb",
+  "inputSHA256": "726a01703bb5ef59f641d0720a88b63a1d4a6bf2b8c8e349468e040d3296b22f",
+  "inputManifest": {
+    "id": "questrom-full",
+    "units": "metres",
+    "toWorld": [
+      0.9895059058723947,
+      0,
+      0.1444924297105264,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -0.1444924297105264,
+      0,
+      0.9895059058723947,
+      0,
+      -627.4573827557324,
+      5.035234103047126,
+      1062.433554652147,
+      1
+    ],
+    "frame": {
+      "anchor": [
+        -627.4573827557324,
+        5.035234103047126,
+        1062.433554652147
+      ],
+      "yaw": -0.145
+    },
+    "bounds": {
+      "min": [
+        -47.999996185302734,
+        -1.7338167428970337,
+        -20.319957733154297
+      ],
+      "max": [
+        56.00003433227539,
+        50.51000213623047,
+        37.00005340576172
+      ]
+    },
+    "bytes": 5334840,
+    "sha256": "726a01703bb5ef59f641d0720a88b63a1d4a6bf2b8c8e349468e040d3296b22f",
+    "triangles": 44262,
+    "meshes": [
+      {
+        "name": "BU architecture \u00b7 inset",
+        "finish": "inset",
+        "ground": false,
+        "triangles": 2080
+      },
+      {
+        "name": "BU architecture \u00b7 stone",
+        "finish": "stone",
+        "ground": false,
+        "triangles": 7690
+      },
+      {
+        "name": "BU architecture \u00b7 roof",
+        "finish": "roof",
+        "ground": false,
+        "triangles": 72
+      },
+      {
+        "name": "BU architecture \u00b7 trim",
+        "finish": "trim",
+        "ground": false,
+        "triangles": 6756
+      },
+      {
+        "name": "BU architecture \u00b7 glass",
+        "finish": "glass",
+        "ground": false,
+        "triangles": 812
+      },
+      {
+        "name": "BU architecture \u00b7 glassLight",
+        "finish": "glassLight",
+        "ground": false,
+        "triangles": 218
+      },
+      {
+        "name": "BU architecture \u00b7 frame",
+        "finish": "frame",
+        "ground": false,
+        "triangles": 16616
+      },
+      {
+        "name": "BU architecture \u00b7 glassShade",
+        "finish": "glassShade",
+        "ground": false,
+        "triangles": 1010
+      },
+      {
+        "name": "BU architecture \u00b7 brick",
+        "finish": "brick",
+        "ground": false,
+        "triangles": 8280
+      },
+      {
+        "name": "BU architecture \u00b7 wood",
+        "finish": "wood",
+        "ground": false,
+        "triangles": 24
+      },
+      {
+        "name": "BU ground \u00b7 paving",
+        "finish": "paving",
+        "ground": true,
+        "triangles": 364
+      },
+      {
+        "name": "BU ground \u00b7 stone",
+        "finish": "stone",
+        "ground": true,
+        "triangles": 220
+      },
+      {
+        "name": "BU ground \u00b7 brickLight",
+        "finish": "brickLight",
+        "ground": true,
+        "triangles": 98
+      },
+      {
+        "name": "BU ground \u00b7 inset",
+        "finish": "inset",
+        "ground": true,
+        "triangles": 22
+      }
+    ],
+    "collision": {
+      "ground": 4,
+      "walls": 4
+    },
+    "note": "Complete explicitly owned Questrom exterior: stepped masonry wings, roof, glass entrance slot, canopy, draped entry paving and terrain foundation skirts. Local origin is the original Questrom anchor and rigid base; horizontal frame is yaw -0.145, with no crop or additional translation. Runtime canvas inscription is deliberately excluded and remains a separate scene extra. Existing windows and dimensions are authored approximations, not an architectural survey."
+  },
+  "output": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-questrom\\questrom-full.glb",
+  "sha256": "fc81fd0f6d2adebfd1a79c7d54ee90fe8af263c8a10888783c51b7566c076089",
+  "bytes": 9302072,
+  "before": {
+    "objects": 14,
+    "vertices": 132786,
+    "triangles": 44262,
+    "blenderBoundsMetres": {
+      "min": [
+        -47.999996185302734,
+        -37.00005340576172,
+        -1.7338167428970337
+      ],
+      "max": [
+        56.00003433227539,
+        20.319957733154297,
+        50.51000213623047
+      ]
+    }
+  },
+  "after": {
+    "objects": 16,
+    "vertices": 135222,
+    "triangles": 51610,
+    "blenderBoundsMetres": {
+      "min": [
+        -47.999996185302734,
+        -37.00005340576172,
+        -1.7338167428970337
+      ],
+      "max": [
+        56.00003433227539,
+        20.319957733154297,
+        50.51000213623047
+      ]
+    }
+  },
+  "triangleDelta": 7348,
+  "primitives": 16,
+  "outwardExpansionMetres": 0,
+  "materials": [
+    {
+      "name": "inset \u00b7 Blender PBR",
+      "source": "inset",
+      "family": "plain",
+      "baseTintLinear": [
+        0.040915198624134064,
+        0.0666259378194809,
+        0.07036009430885315
+      ],
+      "bakedTileFamily": "plain"
+    },
+    {
+      "name": "stone \u00b7 Blender PBR",
+      "source": "stone",
+      "family": "stone",
+      "baseTintLinear": [
+        0.5840784311294556,
+        0.5088813304901123,
+        0.40724021196365356
+      ],
+      "bakedTileFamily": "concrete"
+    },
+    {
+      "name": "roof \u00b7 Blender PBR",
+      "source": "roof",
+      "family": "concrete",
+      "baseTintLinear": [
+        0.09305896610021591,
+        0.13563333451747894,
+        0.1441284716129303
+      ],
+      "bakedTileFamily": "concrete"
+    },
+    {
+      "name": "trim \u00b7 Blender PBR",
+      "source": "trim",
+      "family": "stone",
+      "baseTintLinear": [
+        0.7605245113372803,
+        0.6795424818992615,
+        0.520995557308197
+      ],
+      "bakedTileFamily": "concrete"
+    },
+    {
+      "name": "glass \u00b7 Blender PBR",
+      "source": "glass",
+      "family": "glass",
+      "baseTintLinear": [
+        0.02442775517702103,
+        0.05163657069206238,
+        0.05409955978393555
+      ],
+      "bakedTileFamily": "glass"
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR",
+      "source": "glassLight",
+      "family": "glass",
+      "baseTintLinear": [
+        0.047679513692855835,
+        0.07525242567062379,
+        0.07626520395278931
+      ],
+      "bakedTileFamily": "glass"
+    },
+    {
+      "name": "frame \u00b7 Blender PBR",
+      "source": "frame",
+      "family": "metal",
+      "baseTintLinear": [
+        0.31398871541023254,
+        0.3277781009674072,
+        0.26635560393333435
+      ],
+      "bakedTileFamily": "metal"
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR",
+      "source": "glassShade",
+      "family": "glass",
+      "baseTintLinear": [
+        0.0068679615855216985,
+        0.015637484192848206,
+        0.018168342113494874
+      ],
+      "bakedTileFamily": "glass"
+    },
+    {
+      "name": "brick \u00b7 Blender PBR",
+      "source": "brick",
+      "family": "brick",
+      "baseTintLinear": [
+        0.366252601146698,
+        0.13013647496700287,
+        0.07227185368537903
+      ],
+      "bakedTileFamily": "brick"
+    },
+    {
+      "name": "wood \u00b7 Blender PBR",
+      "source": "wood",
+      "family": "wood",
+      "baseTintLinear": [
+        0.16826939582824707,
+        0.08437620848417282,
+        0.04817182570695877
+      ],
+      "bakedTileFamily": "wood"
+    },
+    {
+      "name": "paving \u00b7 Blender PBR",
+      "source": "paving",
+      "family": "stone",
+      "baseTintLinear": [
+        0.6239603757858276,
+        0.520995557308197,
+        0.3613067865371704
+      ],
+      "bakedTileFamily": "concrete"
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR",
+      "source": "brickLight",
+      "family": "brick",
+      "baseTintLinear": [
+        0.47353148460388184,
+        0.20507873594760895,
+        0.12213877588510513
+      ],
+      "bakedTileFamily": "brick"
+    }
+  ],
+  "embeddedImages": 12,
+  "tangentRepairs": {
+    "vertices": 18,
+    "meshes": [
+      {
+        "mesh": "Mesh_12",
+        "vertices": 7,
+        "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+      },
+      {
+        "mesh": "Mesh_10",
+        "vertices": 5,
+        "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+      },
+      {
+        "mesh": "Mesh_11",
+        "vertices": 6,
+        "method": "Adjacent triangle UV derivative, orthogonalized against the exported normal."
+      }
+    ]
+  },
+  "mobileOfflineSource": {
+    "path": "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\questrom\\questrom-mobile-source.glb",
+    "sha256": "cee57d0497d934a3efcb7cd9072116d7b230d180d4221be77f2df78c1ec4a66f",
+    "bytes": 7402532,
+    "images": 0,
+    "textures": 0
+  },
+  "protectedSurfaceGeometrySHA256": {
+    "BU architecture \u00b7 glass": "33c06b089322c2b203618cd6e640dc3aa57a37fd8e00a4634ca3adda7af383ec",
+    "BU architecture \u00b7 glassLight": "6a6146c07502fe0154c75bc1f1b4090837e3e607f57500c56d1f715b1a45ea4e",
+    "BU architecture \u00b7 glassShade": "71ab60da617b8635b009b141709d4f41e9eba81aa142353d457afba0385ad615",
+    "BU ground \u00b7 paving": "7b8715afae6ea9df4c2e58e95437a385653715a7126ccc450af1310b9739bc99",
+    "BU ground \u00b7 stone": "eac20a27f97c92ed0b3b9f63b9e9d04ffc4a81d33a11145ae2d9813174cf4971",
+    "BU ground \u00b7 brickLight": "52249cc29717c3abd96ffd4e509fcf6bc3bd16d3f135eceffb5263eb57bd2cc9",
+    "BU ground \u00b7 inset": "e3118b6a98f1955c3b6f383bfaef487972f5ada1470d8de1ccc723b05c38dc32"
+  },
+  "allUpperSourceFacesRetainedAboveMetres": 7.5,
+  "sourceFacesRetainedOutsideExplicitHandlesBevelsAndTwoBaseWraps": true,
+  "baseWrapCorrection": {
+    "perSideMetres": 0.006,
+    "axis": "Blender X / glTF X",
+    "components": [
+      {
+        "object": "BU architecture \u00b7 roof",
+        "before": {
+          "min": [
+            -1.35000741481781,
+            -22.050029754638672,
+            -1.285903437064917e-07
+          ],
+          "max": [
+            0.05001412704586983,
+            -20.00994873046875,
+            0.8999999761581421
+          ],
+          "center": [
+            -0.6499966438859701,
+            -21.02998924255371,
+            0.4499999237838992
+          ],
+          "dimensions": [
+            1.4000215418636799,
+            2.040081024169922,
+            0.9000001047484858
+          ]
+        },
+        "after": {
+          "min": [
+            -1.35600745677948,
+            -22.050029754638672,
+            -1.285903437064917e-07
+          ],
+          "max": [
+            0.056014128029346466,
+            -20.00994873046875,
+            0.8999999761581421
+          ],
+          "dimensions": [
+            1.4120215848088264,
+            2.040081024169922,
+            0.9000001047484858
+          ]
+        },
+        "triangles": 12
+      },
+      {
+        "object": "BU architecture \u00b7 roof",
+        "before": {
+          "min": [
+            13.94998836517334,
+            -22.04999542236328,
+            -1.285903437064917e-07
+          ],
+          "max": [
+            15.349992752075195,
+            -20.0100154876709,
+            0.8999999761581421
+          ],
+          "center": [
+            14.649990558624268,
+            -21.03000545501709,
+            0.4499999237838992
+          ],
+          "dimensions": [
+            1.4000043869018555,
+            2.039979934692383,
+            0.9000001047484858
+          ]
+        },
+        "after": {
+          "min": [
+            13.943988800048828,
+            -22.04999542236328,
+            -1.285903437064917e-07
+          ],
+          "max": [
+            15.355992317199707,
+            -20.0100154876709,
+            0.8999999761581421
+          ],
+          "dimensions": [
+            1.412003517150879,
+            2.039979934692383,
+            0.9000001047484858
+          ]
+        },
+        "triangles": 12
+      }
+    ],
+    "trianglesChanged": 24,
+    "trianglesAdded": 0,
+    "untouchedRoofTriangles": 48,
+    "depthAndHeightUnchanged": true,
+    "reason": "Two original 1.40 m dark bases were coplanar with their 1.40 m stone piers; authored 6 mm side wrap resolves the overlap.",
+    "sideRayChecks": [
+      {
+        "centerX": -0.65,
+        "side": -1,
+        "originBlender": [
+          -2.6500000953674316,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "baseHitBlender": [
+          -1.355988621711731,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "pierHitBlender": [
+          -1.349995493888855,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "clearanceMetres": 0.0059931278228759766
+      },
+      {
+        "centerX": -0.65,
+        "side": 1,
+        "originBlender": [
+          1.350000023841858,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "baseHitBlender": [
+          0.05599403381347656,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "pierHitBlender": [
+          0.0500258207321167,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "clearanceMetres": 0.005968213081359863
+      },
+      {
+        "centerX": 14.65,
+        "side": -1,
+        "originBlender": [
+          12.649999618530273,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "baseHitBlender": [
+          13.944008827209473,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "pierHitBlender": [
+          13.950011253356934,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "clearanceMetres": 0.006002187728881836
+      },
+      {
+        "centerX": 14.65,
+        "side": 1,
+        "originBlender": [
+          16.649999618530273,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "baseHitBlender": [
+          15.355981826782227,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "pierHitBlender": [
+          15.349984169006348,
+          -21.030000686645508,
+          0.44999998807907104
+        ],
+        "clearanceMetres": 0.005997896194458008
+      }
+    ]
+  },
+  "removedOldHandles": [
+    {
+      "min": [
+        2.4524924755096436,
+        -20.220046997070312,
+        1.274999976158142
+      ],
+      "max": [
+        2.5075111389160156,
+        -20.139972686767578,
+        1.8250001668930054
+      ],
+      "center": [
+        2.4800018072128296,
+        -20.180009841918945,
+        1.5500000715255737
+      ],
+      "dimensions": [
+        0.05501866340637207,
+        0.08007431030273438,
+        0.5500001907348633
+      ],
+      "triangles": 12
+    },
+    {
+      "min": [
+        5.102480888366699,
+        -20.219953536987305,
+        1.274999976158142
+      ],
+      "max": [
+        5.157499313354492,
+        -20.14000129699707,
+        1.8250001668930054
+      ],
+      "center": [
+        5.129990100860596,
+        -20.179977416992188,
+        1.5500000715255737
+      ],
+      "dimensions": [
+        0.05501842498779297,
+        0.07995223999023438,
+        0.5500001907348633
+      ],
+      "triangles": 12
+    },
+    {
+      "min": [
+        7.752486705780029,
+        -20.21998405456543,
+        1.274999976158142
+      ],
+      "max": [
+        7.8075056076049805,
+        -20.140029907226562,
+        1.8250001668930054
+      ],
+      "center": [
+        7.779996156692505,
+        -20.180006980895996,
+        1.5500000715255737
+      ],
+      "dimensions": [
+        0.05501890182495117,
+        0.07995414733886719,
+        0.5500001907348633
+      ],
+      "triangles": 12
+    },
+    {
+      "min": [
+        10.40249252319336,
+        -20.220012664794922,
+        1.274999976158142
+      ],
+      "max": [
+        10.457510948181152,
+        -20.139944076538086,
+        1.8250001668930054
+      ],
+      "center": [
+        10.430001735687256,
+        -20.179978370666504,
+        1.5500000715255737
+      ],
+      "dimensions": [
+        0.05501842498779297,
+        0.08006858825683594,
+        0.5500001907348633
+      ],
+      "triangles": 12
+    },
+    {
+      "min": [
+        13.052498817443848,
+        -20.220041275024414,
+        1.274999976158142
+      ],
+      "max": [
+        13.10751724243164,
+        -20.13996696472168,
+        1.8250001668930054
+      ],
+      "center": [
+        13.080008029937744,
+        -20.180004119873047,
+        1.5500000715255737
+      ],
+      "dimensions": [
+        0.05501842498779297,
+        0.08007431030273438,
+        0.5500001907348633
+      ],
+      "triangles": 12
+    }
+  ],
+  "detail": {
+    "id": "questrom-construction-20261019-v1",
+    "frontWindowsRefined": 17,
+    "doorBaysRefined": 5,
+    "newMeshBatches": 2,
+    "semanticParts": {
+      "recessed window pressure cap": 68,
+      "door perimeter stile": 10,
+      "door top and fixed transom rail": 5,
+      "door bottom rail cap": 5,
+      "retained door waist rail cap": 5,
+      "door hinge fixing plate": 10,
+      "round door pull grip": 5,
+      "pull fixing rosette": 10,
+      "pull stand-off": 10
+    },
+    "doors": [
+      {
+        "centerX": 1.7000086456537247,
+        "originalBayWidthMetres": 2.449965924024582,
+        "glazingY": -20.024970054626465,
+        "doorTopMetres": 2.9,
+        "newClearWidthBetweenNarrowStilesMetres": 2.449965924024582,
+        "originalGlassUnchanged": true,
+        "handleAxisX": 2.480008645653725
+      },
+      {
+        "centerX": 4.349984407424927,
+        "originalBayWidthMetres": 2.450026035308838,
+        "glazingY": -20.025002479553223,
+        "doorTopMetres": 2.9,
+        "newClearWidthBetweenNarrowStilesMetres": 2.450026035308838,
+        "originalGlassUnchanged": true,
+        "handleAxisX": 5.129984407424927
+      },
+      {
+        "centerX": 6.999990224838257,
+        "originalBayWidthMetres": 2.450026035308838,
+        "glazingY": -20.02503204345703,
+        "doorTopMetres": 2.9,
+        "newClearWidthBetweenNarrowStilesMetres": 2.450026035308838,
+        "originalGlassUnchanged": true,
+        "handleAxisX": 7.779990224838257
+      },
+      {
+        "centerX": 9.649987697601318,
+        "originalBayWidthMetres": 2.4500436782836914,
+        "glazingY": -20.025001525878906,
+        "doorTopMetres": 2.9,
+        "newClearWidthBetweenNarrowStilesMetres": 2.4500436782836914,
+        "originalGlassUnchanged": true,
+        "handleAxisX": 10.429987697601318
+      },
+      {
+        "centerX": 12.299984455108643,
+        "originalBayWidthMetres": 2.450026512145996,
+        "glazingY": -20.02496910095215,
+        "doorTopMetres": 2.9,
+        "newClearWidthBetweenNarrowStilesMetres": 2.450026512145996,
+        "originalGlassUnchanged": true,
+        "handleAxisX": 13.079984455108642
+      }
+    ],
+    "apertureRayChecks": [
+      {
+        "kind": "window",
+        "origin": [
+          -14.379992485046387,
+          -20.2800350189209,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000096201896667,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -13.479991912841797,
+          -20.2800350189209,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999910831451416,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          22.869979858398438,
+          -20.280019760131836,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009560585022,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          23.76997947692871,
+          -20.280019760131836,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999912023544312,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -2.319995880126953,
+          -20.280010223388672,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000105738639832,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -1.419995903968811,
+          -20.280010223388672,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999882817268372,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          15.420001983642578,
+          -20.28000831604004,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.599987268447876,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          16.32000160217285,
+          -20.28000831604004,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000134348869324,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -9.769973754882812,
+          -20.279998779296875,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.599984347820282,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -8.869974136352539,
+          -20.279998779296875,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000143885612488,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -17.219982147216797,
+          -20.279991149902344,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009560585022,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -16.319982528686523,
+          -20.279991149902344,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999912023544312,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          27.479997634887695,
+          -20.279983520507812,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999844074249268,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          28.3799991607666,
+          -20.279983520507812,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000143885612488,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -6.92999267578125,
+          -20.27998161315918,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000096201896667,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -6.029992580413818,
+          -20.27998161315918,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999911427497864,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          20.02998924255371,
+          -20.27997589111328,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009024143219,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          20.929990768432617,
+          -20.27997589111328,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999897718429565,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          30.31998062133789,
+          -20.279966354370117,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009024143219,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          31.219980239868164,
+          -20.279966354370117,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999898314476013,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          41.49501037597656,
+          -15.28002643585205,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000096201896667,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          42.39501190185547,
+          -15.28002643585205,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999911427497864,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -25.554994583129883,
+          -15.280012130737305,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009560585022,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -24.65499496459961,
+          -15.280012130737305,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999912023544312,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          38.65502166748047,
+          -15.279982566833496,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009560585022,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          39.55501937866211,
+          -15.279982566833496,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999910831451416,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -28.39498519897461,
+          -15.27996826171875,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.600009560585022,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -27.494985580444336,
+          -15.27996826171875,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999912023544312,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -42.84498977661133,
+          -8.280021667480469,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000089645385742,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -41.94499206542969,
+          -8.280021667480469,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999903082847595,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -40.005008697509766,
+          -8.28000545501709,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999850034713745,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -39.10500717163086,
+          -8.28000545501709,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000152230262756,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -35.39499282836914,
+          -8.279969215393066,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.6000095009803772,
+        "newDetailClear": true
+      },
+      {
+        "kind": "window",
+        "origin": [
+          -34.494991302490234,
+          -8.279969215393066,
+          3.6500000953674316
+        ],
+        "glassDistance": 0.5999907851219177,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          1.2500087022781372,
+          -20.624969482421875,
+          1.899999976158142
+        ],
+        "glassDistance": 0.5999998450279236,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          2.1500086784362793,
+          -20.624969482421875,
+          1.899999976158142
+        ],
+        "glassDistance": 0.5999991297721863,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          3.899984359741211,
+          -20.625001907348633,
+          1.899999976158142
+        ],
+        "glassDistance": 0.599998414516449,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          4.799984455108643,
+          -20.625001907348633,
+          1.899999976158142
+        ],
+        "glassDistance": 0.6000005602836609,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          6.549990177154541,
+          -20.625032424926758,
+          1.899999976158142
+        ],
+        "glassDistance": 0.5999990105628967,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          7.449990272521973,
+          -20.625032424926758,
+          1.899999976158142
+        ],
+        "glassDistance": 0.6000018119812012,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          9.199987411499023,
+          -20.625001907348633,
+          1.899999976158142
+        ],
+        "glassDistance": 0.6000214219093323,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          10.099987983703613,
+          -20.625001907348633,
+          1.899999976158142
+        ],
+        "glassDistance": 0.5999794006347656,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          11.849984169006348,
+          -20.624969482421875,
+          1.899999976158142
+        ],
+        "glassDistance": 0.5999990105628967,
+        "newDetailClear": true
+      },
+      {
+        "kind": "door",
+        "origin": [
+          12.749984741210938,
+          -20.624969482421875,
+          1.899999976158142
+        ],
+        "glassDistance": 0.6000017523765564,
+        "newDetailClear": true
+      }
+    ],
+    "newMeshTopology": [
+      {
+        "object": "Questrom refined \u00b7 first-floor window metal",
+        "invalidVertices": 0,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "degenerateFaces": 0
+      },
+      {
+        "object": "Questrom refined \u00b7 entrance construction",
+        "invalidVertices": 0,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "degenerateFaces": 0
+      }
+    ],
+    "parts": [
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -15.03349781036377,
+          -19.795534133911133,
+          1.3825002908706665
+        ],
+        "max": [
+          -14.991497993469238,
+          -19.73053550720215,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -15.012497901916504,
+          -19.76303482055664,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -15.012497901916504,
+          -19.795534133911133,
+          1.3615002632141113
+        ],
+        "max": [
+          -12.84748649597168,
+          -19.73053550720215,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.165011405944824,
+          0.06499862670898438,
+          0.04200005531311035
+        ],
+        "center": [
+          -13.929992198944092,
+          -19.76303482055664,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -12.868486404418945,
+          -19.795534133911133,
+          1.3825002908706665
+        ],
+        "max": [
+          -12.826486587524414,
+          -19.73053550720215,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -12.84748649597168,
+          -19.76303482055664,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -15.012497901916504,
+          -19.795534133911133,
+          5.096499919891357
+        ],
+        "max": [
+          -12.84748649597168,
+          -19.73053550720215,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.165011405944824,
+          0.06499862670898438,
+          0.04200029373168945
+        ],
+        "center": [
+          -13.929992198944092,
+          -19.76303482055664,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          22.216472625732422,
+          -19.79551887512207,
+          1.3825002908706665
+        ],
+        "max": [
+          22.258472442626953,
+          -19.730520248413086,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          22.237472534179688,
+          -19.763019561767578,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          22.237472534179688,
+          -19.79551887512207,
+          1.3615002632141113
+        ],
+        "max": [
+          24.40248680114746,
+          -19.730520248413086,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06499862670898438,
+          0.04200005531311035
+        ],
+        "center": [
+          23.319979667663574,
+          -19.763019561767578,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          24.381486892700195,
+          -19.79551887512207,
+          1.3825002908706665
+        ],
+        "max": [
+          24.423486709594727,
+          -19.730520248413086,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          24.40248680114746,
+          -19.763019561767578,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          22.237472534179688,
+          -19.79551887512207,
+          5.096499919891357
+        ],
+        "max": [
+          24.40248680114746,
+          -19.730520248413086,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06499862670898438,
+          0.04200029373168945
+        ],
+        "center": [
+          23.319979667663574,
+          -19.763019561767578,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -2.9734721183776855,
+          -19.79551124572754,
+          1.3825002908706665
+        ],
+        "max": [
+          -2.931472063064575,
+          -19.730510711669922,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04200005531311035,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -2.9524720907211304,
+          -19.76301097869873,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -2.952471971511841,
+          -19.79551124572754,
+          1.3615002632141113
+        ],
+        "max": [
+          -0.7875197529792786,
+          -19.730510711669922,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1649522185325623,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          -1.8699958622455597,
+          -19.76301097869873,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -0.808519721031189,
+          -19.79551124572754,
+          1.3825002908706665
+        ],
+        "max": [
+          -0.7665197253227234,
+          -19.730510711669922,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.041999995708465576,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -0.7875197231769562,
+          -19.76301097869873,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -2.952471971511841,
+          -19.79551124572754,
+          5.096499919891357
+        ],
+        "max": [
+          -0.7875197529792786,
+          -19.730510711669922,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1649522185325623,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          -1.8699958622455597,
+          -19.76301097869873,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          14.766534805297852,
+          -19.795507431030273,
+          1.3825002908706665
+        ],
+        "max": [
+          14.808534622192383,
+          -19.73050880432129,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          14.787534713745117,
+          -19.76300811767578,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          14.787534713745117,
+          -19.795507431030273,
+          1.3615002632141113
+        ],
+        "max": [
+          16.952470779418945,
+          -19.73050880432129,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.164936065673828,
+          0.06499862670898438,
+          0.04200005531311035
+        ],
+        "center": [
+          15.870002746582031,
+          -19.76300811767578,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          16.93147087097168,
+          -19.795507431030273,
+          1.3825002908706665
+        ],
+        "max": [
+          16.97347068786621,
+          -19.73050880432129,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          16.952470779418945,
+          -19.76300811767578,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          14.787534713745117,
+          -19.795507431030273,
+          5.096499919891357
+        ],
+        "max": [
+          16.952470779418945,
+          -19.73050880432129,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.164936065673828,
+          0.06499862670898438,
+          0.04200029373168945
+        ],
+        "center": [
+          15.870002746582031,
+          -19.76300811767578,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -10.423471450805664,
+          -19.795499801635742,
+          1.3825002908706665
+        ],
+        "max": [
+          -10.381471633911133,
+          -19.730499267578125,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -10.402471542358398,
+          -19.762999534606934,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -10.402471542358398,
+          -19.795499801635742,
+          1.3615002632141113
+        ],
+        "max": [
+          -8.237476348876953,
+          -19.730499267578125,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1649951934814453,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          -9.319973945617676,
+          -19.762999534606934,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -8.258476257324219,
+          -19.795499801635742,
+          1.3825002908706665
+        ],
+        "max": [
+          -8.216476440429688,
+          -19.730499267578125,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -8.237476348876953,
+          -19.762999534606934,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -10.402471542358398,
+          -19.795499801635742,
+          5.096499919891357
+        ],
+        "max": [
+          -8.237476348876953,
+          -19.730499267578125,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1649951934814453,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          -9.319973945617676,
+          -19.762999534606934,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -17.873489379882812,
+          -19.795490264892578,
+          1.3825002908706665
+        ],
+        "max": [
+          -17.83148956298828,
+          -19.730491638183594,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -17.852489471435547,
+          -19.762990951538086,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -17.852489471435547,
+          -19.795490264892578,
+          1.3615002632141113
+        ],
+        "max": [
+          -15.68747615814209,
+          -19.730491638183594,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.165013313293457,
+          0.06499862670898438,
+          0.04200005531311035
+        ],
+        "center": [
+          -16.76998281478882,
+          -19.762990951538086,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -15.708476066589355,
+          -19.795490264892578,
+          1.3825002908706665
+        ],
+        "max": [
+          -15.666476249694824,
+          -19.730491638183594,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -15.68747615814209,
+          -19.762990951538086,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -17.852489471435547,
+          -19.795490264892578,
+          5.096499919891357
+        ],
+        "max": [
+          -15.68747615814209,
+          -19.730491638183594,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.165013313293457,
+          0.06499862670898438,
+          0.04200029373168945
+        ],
+        "center": [
+          -16.76998281478882,
+          -19.762990951538086,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          26.826499938964844,
+          -19.79548454284668,
+          1.3825002908706665
+        ],
+        "max": [
+          26.868499755859375,
+          -19.730484008789062,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          26.84749984741211,
+          -19.76298427581787,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          26.84749984741211,
+          -19.79548454284668,
+          1.3615002632141113
+        ],
+        "max": [
+          29.012496948242188,
+          -19.730484008789062,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.164997100830078,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          27.92999839782715,
+          -19.76298427581787,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          28.991497039794922,
+          -19.79548454284668,
+          1.3825002908706665
+        ],
+        "max": [
+          29.033496856689453,
+          -19.730484008789062,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          29.012496948242188,
+          -19.76298427581787,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          26.84749984741211,
+          -19.79548454284668,
+          5.096499919891357
+        ],
+        "max": [
+          29.012496948242188,
+          -19.730484008789062,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.164997100830078,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          27.92999839782715,
+          -19.76298427581787,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -7.583498954772949,
+          -19.795480728149414,
+          1.3825002908706665
+        ],
+        "max": [
+          -7.54149866104126,
+          -19.73048210144043,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04200029373168945,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -7.5624988079071045,
+          -19.762981414794922,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -7.562499046325684,
+          -19.795480728149414,
+          1.3615002632141113
+        ],
+        "max": [
+          -5.397486209869385,
+          -19.73048210144043,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.165012836456299,
+          0.06499862670898438,
+          0.04200005531311035
+        ],
+        "center": [
+          -6.479992628097534,
+          -19.762981414794922,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -5.418486595153809,
+          -19.795480728149414,
+          1.3825002908706665
+        ],
+        "max": [
+          -5.376486301422119,
+          -19.73048210144043,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04200029373168945,
+          0.06499862670898438,
+          3.7350000143051147
+        ],
+        "center": [
+          -5.397486448287964,
+          -19.762981414794922,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -7.562499046325684,
+          -19.795480728149414,
+          5.096499919891357
+        ],
+        "max": [
+          -5.397486209869385,
+          -19.73048210144043,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.165012836456299,
+          0.06499862670898438,
+          0.04200029373168945
+        ],
+        "center": [
+          -6.479992628097534,
+          -19.762981414794922,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          19.376483917236328,
+          -19.79547691345215,
+          1.3825002908706665
+        ],
+        "max": [
+          19.41848373413086,
+          -19.73047637939453,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          19.397483825683594,
+          -19.76297664642334,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          19.397483825683594,
+          -19.79547691345215,
+          1.3615002632141113
+        ],
+        "max": [
+          21.562496185302734,
+          -19.73047637939453,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          20.479990005493164,
+          -19.76297664642334,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          21.54149627685547,
+          -19.79547691345215,
+          1.3825002908706665
+        ],
+        "max": [
+          21.58349609375,
+          -19.73047637939453,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          21.562496185302734,
+          -19.76297664642334,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          19.397483825683594,
+          -19.79547691345215,
+          5.096499919891357
+        ],
+        "max": [
+          21.562496185302734,
+          -19.73047637939453,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          20.479990005493164,
+          -19.76297664642334,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          29.666473388671875,
+          -19.795467376708984,
+          1.3825002908706665
+        ],
+        "max": [
+          29.708473205566406,
+          -19.730466842651367,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          29.68747329711914,
+          -19.762967109680176,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          29.68747329711914,
+          -19.795467376708984,
+          1.3615002632141113
+        ],
+        "max": [
+          31.852487564086914,
+          -19.730466842651367,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          30.769980430603027,
+          -19.762967109680176,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          31.83148765563965,
+          -19.795467376708984,
+          1.3825002908706665
+        ],
+        "max": [
+          31.87348747253418,
+          -19.730466842651367,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          31.852487564086914,
+          -19.762967109680176,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          29.68747329711914,
+          -19.795467376708984,
+          5.096499919891357
+        ],
+        "max": [
+          31.852487564086914,
+          -19.730466842651367,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          30.769980430603027,
+          -19.762967109680176,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          40.84150695800781,
+          -14.795526504516602,
+          1.3825002908706665
+        ],
+        "max": [
+          40.883506774902344,
+          -14.730525970458984,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          40.86250686645508,
+          -14.763026237487793,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          40.86250686645508,
+          -14.795526504516602,
+          1.3615002632141113
+        ],
+        "max": [
+          43.02751541137695,
+          -14.730525970458984,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.165008544921875,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          41.945011138916016,
+          -14.763026237487793,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          43.00651550292969,
+          -14.795526504516602,
+          1.3825002908706665
+        ],
+        "max": [
+          43.04851531982422,
+          -14.730525970458984,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          43.02751541137695,
+          -14.763026237487793,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          40.86250686645508,
+          -14.795526504516602,
+          5.096499919891357
+        ],
+        "max": [
+          43.02751541137695,
+          -14.730525970458984,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.165008544921875,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          41.945011138916016,
+          -14.763026237487793,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -26.2085018157959,
+          -14.795512199401855,
+          1.3825002908706665
+        ],
+        "max": [
+          -26.166501998901367,
+          -14.730511665344238,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -26.187501907348633,
+          -14.763011932373047,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -26.187501907348633,
+          -14.795512199401855,
+          1.3615002632141113
+        ],
+        "max": [
+          -24.02248764038086,
+          -14.730511665344238,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          -25.104994773864746,
+          -14.763011932373047,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -24.043487548828125,
+          -14.795512199401855,
+          1.3825002908706665
+        ],
+        "max": [
+          -24.001487731933594,
+          -14.730511665344238,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -24.02248764038086,
+          -14.763011932373047,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -26.187501907348633,
+          -14.795512199401855,
+          5.096499919891357
+        ],
+        "max": [
+          -24.02248764038086,
+          -14.730511665344238,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          -25.104994773864746,
+          -14.763011932373047,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          38.00151443481445,
+          -14.795482635498047,
+          1.3825002908706665
+        ],
+        "max": [
+          38.043514251708984,
+          -14.73048210144043,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          38.02251434326172,
+          -14.762982368469238,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          38.02251434326172,
+          -14.795482635498047,
+          1.3615002632141113
+        ],
+        "max": [
+          40.18752670288086,
+          -14.73048210144043,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          39.10502052307129,
+          -14.762982368469238,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          40.166526794433594,
+          -14.795482635498047,
+          1.3825002908706665
+        ],
+        "max": [
+          40.208526611328125,
+          -14.73048210144043,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          40.18752670288086,
+          -14.762982368469238,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          38.02251434326172,
+          -14.795482635498047,
+          5.096499919891357
+        ],
+        "max": [
+          40.18752670288086,
+          -14.73048210144043,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          39.10502052307129,
+          -14.762982368469238,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -29.048492431640625,
+          -14.7954683303833,
+          1.3825002908706665
+        ],
+        "max": [
+          -29.006492614746094,
+          -14.730467796325684,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -29.02749252319336,
+          -14.762968063354492,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -29.02749252319336,
+          -14.7954683303833,
+          1.3615002632141113
+        ],
+        "max": [
+          -26.862478256225586,
+          -14.730467796325684,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200005531311035
+        ],
+        "center": [
+          -27.944985389709473,
+          -14.762968063354492,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -26.88347816467285,
+          -14.7954683303833,
+          1.3825002908706665
+        ],
+        "max": [
+          -26.84147834777832,
+          -14.730467796325684,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500053405761719,
+          3.7350000143051147
+        ],
+        "center": [
+          -26.862478256225586,
+          -14.762968063354492,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -29.02749252319336,
+          -14.7954683303833,
+          5.096499919891357
+        ],
+        "max": [
+          -26.862478256225586,
+          -14.730467796325684,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650142669677734,
+          0.06500053405761719,
+          0.04200029373168945
+        ],
+        "center": [
+          -27.944985389709473,
+          -14.762968063354492,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -43.498497009277344,
+          -7.795522212982178,
+          1.3825002908706665
+        ],
+        "max": [
+          -43.45649719238281,
+          -7.730522155761719,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -43.47749710083008,
+          -7.763022184371948,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -43.47749710083008,
+          -7.795522212982178,
+          1.3615002632141113
+        ],
+        "max": [
+          -41.31248474121094,
+          -7.730522155761719,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500005722045898,
+          0.04200005531311035
+        ],
+        "center": [
+          -42.39499092102051,
+          -7.763022184371948,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -41.3334846496582,
+          -7.795522212982178,
+          1.3825002908706665
+        ],
+        "max": [
+          -41.29148483276367,
+          -7.730522155761719,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -41.31248474121094,
+          -7.763022184371948,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -43.47749710083008,
+          -7.795522212982178,
+          5.096499919891357
+        ],
+        "max": [
+          -41.31248474121094,
+          -7.730522155761719,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1650123596191406,
+          0.06500005722045898,
+          0.04200029373168945
+        ],
+        "center": [
+          -42.39499092102051,
+          -7.763022184371948,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -40.658504486083984,
+          -7.795505523681641,
+          1.3825002908706665
+        ],
+        "max": [
+          -40.61650466918945,
+          -7.730505466461182,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -40.63750457763672,
+          -7.763005495071411,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -40.63750457763672,
+          -7.795505523681641,
+          1.3615002632141113
+        ],
+        "max": [
+          -38.472511291503906,
+          -7.730505466461182,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.1649932861328125,
+          0.06500005722045898,
+          0.04200005531311035
+        ],
+        "center": [
+          -39.55500793457031,
+          -7.763005495071411,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -38.49351119995117,
+          -7.795505523681641,
+          1.3825002908706665
+        ],
+        "max": [
+          -38.45151138305664,
+          -7.730505466461182,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -38.472511291503906,
+          -7.763005495071411,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -40.63750457763672,
+          -7.795505523681641,
+          5.096499919891357
+        ],
+        "max": [
+          -38.472511291503906,
+          -7.730505466461182,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.1649932861328125,
+          0.06500005722045898,
+          0.04200029373168945
+        ],
+        "center": [
+          -39.55500793457031,
+          -7.763005495071411,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -36.04849624633789,
+          -7.795469284057617,
+          1.3825002908706665
+        ],
+        "max": [
+          -36.00649642944336,
+          -7.730469226837158,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -36.027496337890625,
+          -7.762969255447388,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -36.027496337890625,
+          -7.795469284057617,
+          1.3615002632141113
+        ],
+        "max": [
+          -33.86248779296875,
+          -7.730469226837158,
+          1.4035003185272217
+        ],
+        "dimensions": [
+          2.165008544921875,
+          0.06500005722045898,
+          0.04200005531311035
+        ],
+        "center": [
+          -34.94499206542969,
+          -7.762969255447388,
+          1.3825002908706665
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -33.883487701416016,
+          -7.795469284057617,
+          1.3825002908706665
+        ],
+        "max": [
+          -33.841487884521484,
+          -7.730469226837158,
+          5.117500305175781
+        ],
+        "dimensions": [
+          0.04199981689453125,
+          0.06500005722045898,
+          3.7350000143051147
+        ],
+        "center": [
+          -33.86248779296875,
+          -7.762969255447388,
+          3.250000298023224
+        ]
+      },
+      {
+        "kind": "recessed window pressure cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          -36.027496337890625,
+          -7.795469284057617,
+          5.096499919891357
+        ],
+        "max": [
+          -33.86248779296875,
+          -7.730469226837158,
+          5.138500213623047
+        ],
+        "dimensions": [
+          2.165008544921875,
+          0.06500005722045898,
+          0.04200029373168945
+        ],
+        "center": [
+          -34.94499206542969,
+          -7.762969255447388,
+          5.117500066757202
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          0.42002567648887634,
+          -20.137470245361328,
+          0.20000000298023224
+        ],
+        "max": [
+          0.4750256836414337,
+          -20.062469482421875,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500000715255737,
+          0.07500076293945312,
+          2.649999901652336
+        ],
+        "center": [
+          0.44752568006515503,
+          -20.0999698638916,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          2.9249916076660156,
+          -20.137470245361328,
+          0.20000000298023224
+        ],
+        "max": [
+          2.9799916744232178,
+          -20.062469482421875,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500006675720215,
+          0.07500076293945312,
+          2.649999901652336
+        ],
+        "center": [
+          2.9524916410446167,
+          -20.0999698638916,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door top and fixed transom rail",
+        "bevelMetres": 0.0015,
+        "min": [
+          0.4750256836414337,
+          -20.137470245361328,
+          2.8524999618530273
+        ],
+        "max": [
+          2.9249916076660156,
+          -20.062469482421875,
+          2.947499990463257
+        ],
+        "dimensions": [
+          2.449965924024582,
+          0.07500076293945312,
+          0.09500002861022949
+        ],
+        "center": [
+          1.7000086456537247,
+          -20.0999698638916,
+          2.899999976158142
+        ]
+      },
+      {
+        "kind": "door bottom rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          0.4750256836414337,
+          -20.138469696044922,
+          0.18000000715255737
+        ],
+        "max": [
+          2.9249916076660156,
+          -20.08346939086914,
+          0.3199999928474426
+        ],
+        "dimensions": [
+          2.449965924024582,
+          0.05500030517578125,
+          0.13999998569488525
+        ],
+        "center": [
+          1.7000086456537247,
+          -20.11096954345703,
+          0.25
+        ]
+      },
+      {
+        "kind": "retained door waist rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          0.4750256836414337,
+          -20.138469696044922,
+          1.1775000095367432
+        ],
+        "max": [
+          2.9249916076660156,
+          -20.08346939086914,
+          1.222499966621399
+        ],
+        "dimensions": [
+          2.449965924024582,
+          0.05500030517578125,
+          0.04499995708465576
+        ],
+        "center": [
+          1.7000086456537247,
+          -20.11096954345703,
+          1.199999988079071
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          0.4075256884098053,
+          -20.14997100830078,
+          0.29750001430511475
+        ],
+        "max": [
+          0.4725256860256195,
+          -20.069969177246094,
+          0.3824999928474426
+        ],
+        "dimensions": [
+          0.06499999761581421,
+          0.0800018310546875,
+          0.08499997854232788
+        ],
+        "center": [
+          0.4400256872177124,
+          -20.109970092773438,
+          0.3400000035762787
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          0.4075256884098053,
+          -20.14997100830078,
+          2.677500009536743
+        ],
+        "max": [
+          0.4725256860256195,
+          -20.069969177246094,
+          2.762500047683716
+        ],
+        "dimensions": [
+          0.06499999761581421,
+          0.0800018310546875,
+          0.08500003814697266
+        ],
+        "center": [
+          0.4400256872177124,
+          -20.109970092773438,
+          2.7200000286102295
+        ]
+      },
+      {
+        "kind": "round door pull grip",
+        "bevelMetres": 0.001,
+        "min": [
+          2.4640085697174072,
+          -20.135971069335938,
+          1.2849998474121094
+        ],
+        "max": [
+          2.4960086345672607,
+          -20.10396957397461,
+          1.815000057220459
+        ],
+        "dimensions": [
+          0.032000064849853516,
+          0.032001495361328125,
+          0.5300002098083496
+        ],
+        "center": [
+          2.480008602142334,
+          -20.119970321655273,
+          1.5499999523162842
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          2.4560086727142334,
+          -20.036970138549805,
+          1.3109999895095825
+        ],
+        "max": [
+          2.5040085315704346,
+          -20.02897071838379,
+          1.3590000867843628
+        ],
+        "dimensions": [
+          0.04799985885620117,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          2.480008602142334,
+          -20.032970428466797,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          2.471008539199829,
+          -20.106969833374023,
+          1.3260000944137573
+        ],
+        "max": [
+          2.489008665084839,
+          -20.036970138549805,
+          1.343999981880188
+        ],
+        "dimensions": [
+          0.018000125885009766,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          2.480008602142334,
+          -20.071969985961914,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          2.4560086727142334,
+          -20.036970138549805,
+          1.7409999370574951
+        ],
+        "max": [
+          2.5040085315704346,
+          -20.02897071838379,
+          1.7890000343322754
+        ],
+        "dimensions": [
+          0.04799985885620117,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          2.480008602142334,
+          -20.032970428466797,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          2.471008539199829,
+          -20.106969833374023,
+          1.75600004196167
+        ],
+        "max": [
+          2.489008665084839,
+          -20.036970138549805,
+          1.7739999294281006
+        ],
+        "dimensions": [
+          0.018000125885009766,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          2.480008602142334,
+          -20.071969985961914,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          3.0699713230133057,
+          -20.137502670288086,
+          0.20000000298023224
+        ],
+        "max": [
+          3.124971389770508,
+          -20.062501907348633,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500006675720215,
+          0.07500076293945312,
+          2.649999901652336
+        ],
+        "center": [
+          3.0974713563919067,
+          -20.10000228881836,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          5.574997425079346,
+          -20.137502670288086,
+          0.20000000298023224
+        ],
+        "max": [
+          5.629997253417969,
+          -20.062501907348633,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05499982833862305,
+          0.07500076293945312,
+          2.649999901652336
+        ],
+        "center": [
+          5.602497339248657,
+          -20.10000228881836,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door top and fixed transom rail",
+        "bevelMetres": 0.0015,
+        "min": [
+          3.124971389770508,
+          -20.137502670288086,
+          2.8524999618530273
+        ],
+        "max": [
+          5.574997425079346,
+          -20.062501907348633,
+          2.947499990463257
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.07500076293945312,
+          0.09500002861022949
+        ],
+        "center": [
+          4.349984407424927,
+          -20.10000228881836,
+          2.899999976158142
+        ]
+      },
+      {
+        "kind": "door bottom rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          3.124971389770508,
+          -20.13850212097168,
+          0.18000000715255737
+        ],
+        "max": [
+          5.574997425079346,
+          -20.0835018157959,
+          0.3199999928474426
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.05500030517578125,
+          0.13999998569488525
+        ],
+        "center": [
+          4.349984407424927,
+          -20.11100196838379,
+          0.25
+        ]
+      },
+      {
+        "kind": "retained door waist rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          3.124971389770508,
+          -20.13850212097168,
+          1.1775000095367432
+        ],
+        "max": [
+          5.574997425079346,
+          -20.0835018157959,
+          1.222499966621399
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.05500030517578125,
+          0.04499995708465576
+        ],
+        "center": [
+          4.349984407424927,
+          -20.11100196838379,
+          1.199999988079071
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          3.05747127532959,
+          -20.150001525878906,
+          0.29750001430511475
+        ],
+        "max": [
+          3.122471332550049,
+          -20.07000160217285,
+          0.3824999928474426
+        ],
+        "dimensions": [
+          0.06500005722045898,
+          0.07999992370605469,
+          0.08499997854232788
+        ],
+        "center": [
+          3.0899713039398193,
+          -20.11000156402588,
+          0.3400000035762787
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          3.05747127532959,
+          -20.150001525878906,
+          2.677500009536743
+        ],
+        "max": [
+          3.122471332550049,
+          -20.07000160217285,
+          2.762500047683716
+        ],
+        "dimensions": [
+          0.06500005722045898,
+          0.07999992370605469,
+          0.08500003814697266
+        ],
+        "center": [
+          3.0899713039398193,
+          -20.11000156402588,
+          2.7200000286102295
+        ]
+      },
+      {
+        "kind": "round door pull grip",
+        "bevelMetres": 0.001,
+        "min": [
+          5.11398458480835,
+          -20.136003494262695,
+          1.2849998474121094
+        ],
+        "max": [
+          5.145984172821045,
+          -20.104001998901367,
+          1.815000057220459
+        ],
+        "dimensions": [
+          0.03199958801269531,
+          0.032001495361328125,
+          0.5300002098083496
+        ],
+        "center": [
+          5.129984378814697,
+          -20.12000274658203,
+          1.5499999523162842
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          5.105984210968018,
+          -20.037002563476562,
+          1.3109999895095825
+        ],
+        "max": [
+          5.153984546661377,
+          -20.029003143310547,
+          1.3590000867843628
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          5.129984378814697,
+          -20.033002853393555,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          5.1209845542907715,
+          -20.10700225830078,
+          1.3260000944137573
+        ],
+        "max": [
+          5.138984203338623,
+          -20.037002563476562,
+          1.343999981880188
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          5.129984378814697,
+          -20.072002410888672,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          5.105984210968018,
+          -20.037002563476562,
+          1.7409999370574951
+        ],
+        "max": [
+          5.153984546661377,
+          -20.029003143310547,
+          1.7890000343322754
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          5.129984378814697,
+          -20.033002853393555,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          5.1209845542907715,
+          -20.10700225830078,
+          1.75600004196167
+        ],
+        "max": [
+          5.138984203338623,
+          -20.037002563476562,
+          1.7739999294281006
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          5.129984378814697,
+          -20.072002410888672,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          5.719977378845215,
+          -20.137531280517578,
+          0.20000000298023224
+        ],
+        "max": [
+          5.774977207183838,
+          -20.062532424926758,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05499982833862305,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          5.747477293014526,
+          -20.100031852722168,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          8.225003242492676,
+          -20.137531280517578,
+          0.20000000298023224
+        ],
+        "max": [
+          8.280003547668457,
+          -20.062532424926758,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500030517578125,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          8.252503395080566,
+          -20.100031852722168,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door top and fixed transom rail",
+        "bevelMetres": 0.0015,
+        "min": [
+          5.774977207183838,
+          -20.137531280517578,
+          2.8524999618530273
+        ],
+        "max": [
+          8.225003242492676,
+          -20.062532424926758,
+          2.947499990463257
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.07499885559082031,
+          0.09500002861022949
+        ],
+        "center": [
+          6.999990224838257,
+          -20.100031852722168,
+          2.899999976158142
+        ]
+      },
+      {
+        "kind": "door bottom rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          5.774977207183838,
+          -20.138532638549805,
+          0.18000000715255737
+        ],
+        "max": [
+          8.225003242492676,
+          -20.083532333374023,
+          0.3199999928474426
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.05500030517578125,
+          0.13999998569488525
+        ],
+        "center": [
+          6.999990224838257,
+          -20.111032485961914,
+          0.25
+        ]
+      },
+      {
+        "kind": "retained door waist rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          5.774977207183838,
+          -20.138532638549805,
+          1.1775000095367432
+        ],
+        "max": [
+          8.225003242492676,
+          -20.083532333374023,
+          1.222499966621399
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.05500030517578125,
+          0.04499995708465576
+        ],
+        "center": [
+          6.999990224838257,
+          -20.111032485961914,
+          1.199999988079071
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          5.70747709274292,
+          -20.15003204345703,
+          0.29750001430511475
+        ],
+        "max": [
+          5.772477149963379,
+          -20.070032119750977,
+          0.3824999928474426
+        ],
+        "dimensions": [
+          0.06500005722045898,
+          0.07999992370605469,
+          0.08499997854232788
+        ],
+        "center": [
+          5.739977121353149,
+          -20.110032081604004,
+          0.3400000035762787
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          5.70747709274292,
+          -20.15003204345703,
+          2.677500009536743
+        ],
+        "max": [
+          5.772477149963379,
+          -20.070032119750977,
+          2.762500047683716
+        ],
+        "dimensions": [
+          0.06500005722045898,
+          0.07999992370605469,
+          0.08500003814697266
+        ],
+        "center": [
+          5.739977121353149,
+          -20.110032081604004,
+          2.7200000286102295
+        ]
+      },
+      {
+        "kind": "round door pull grip",
+        "bevelMetres": 0.001,
+        "min": [
+          7.76399040222168,
+          -20.136032104492188,
+          1.2849998474121094
+        ],
+        "max": [
+          7.795989990234375,
+          -20.10403060913086,
+          1.815000057220459
+        ],
+        "dimensions": [
+          0.03199958801269531,
+          0.032001495361328125,
+          0.5300002098083496
+        ],
+        "center": [
+          7.779990196228027,
+          -20.120031356811523,
+          1.5499999523162842
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          7.755990028381348,
+          -20.037031173706055,
+          1.3109999895095825
+        ],
+        "max": [
+          7.803990364074707,
+          -20.02903175354004,
+          1.3590000867843628
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          7.779990196228027,
+          -20.033031463623047,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          7.770990371704102,
+          -20.107032775878906,
+          1.3260000944137573
+        ],
+        "max": [
+          7.788990020751953,
+          -20.037033081054688,
+          1.343999981880188
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          7.779990196228027,
+          -20.072032928466797,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          7.755990028381348,
+          -20.037031173706055,
+          1.7409999370574951
+        ],
+        "max": [
+          7.803990364074707,
+          -20.02903175354004,
+          1.7890000343322754
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          7.779990196228027,
+          -20.033031463623047,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          7.770990371704102,
+          -20.107032775878906,
+          1.75600004196167
+        ],
+        "max": [
+          7.788990020751953,
+          -20.037033081054688,
+          1.7739999294281006
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          7.779990196228027,
+          -20.072032928466797,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          8.369965553283691,
+          -20.137500762939453,
+          0.20000000298023224
+        ],
+        "max": [
+          8.424965858459473,
+          -20.062501907348633,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500030517578125,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          8.397465705871582,
+          -20.100001335144043,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          10.875009536743164,
+          -20.137500762939453,
+          0.20000000298023224
+        ],
+        "max": [
+          10.930009841918945,
+          -20.062501907348633,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500030517578125,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          10.902509689331055,
+          -20.100001335144043,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door top and fixed transom rail",
+        "bevelMetres": 0.0015,
+        "min": [
+          8.424965858459473,
+          -20.137500762939453,
+          2.8524999618530273
+        ],
+        "max": [
+          10.875009536743164,
+          -20.062501907348633,
+          2.947499990463257
+        ],
+        "dimensions": [
+          2.4500436782836914,
+          0.07499885559082031,
+          0.09500002861022949
+        ],
+        "center": [
+          9.649987697601318,
+          -20.100001335144043,
+          2.899999976158142
+        ]
+      },
+      {
+        "kind": "door bottom rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          8.424965858459473,
+          -20.13850212097168,
+          0.18000000715255737
+        ],
+        "max": [
+          10.875009536743164,
+          -20.0835018157959,
+          0.3199999928474426
+        ],
+        "dimensions": [
+          2.4500436782836914,
+          0.05500030517578125,
+          0.13999998569488525
+        ],
+        "center": [
+          9.649987697601318,
+          -20.11100196838379,
+          0.25
+        ]
+      },
+      {
+        "kind": "retained door waist rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          8.424965858459473,
+          -20.13850212097168,
+          1.1775000095367432
+        ],
+        "max": [
+          10.875009536743164,
+          -20.0835018157959,
+          1.222499966621399
+        ],
+        "dimensions": [
+          2.4500436782836914,
+          0.05500030517578125,
+          0.04499995708465576
+        ],
+        "center": [
+          9.649987697601318,
+          -20.11100196838379,
+          1.199999988079071
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          8.357465744018555,
+          -20.150001525878906,
+          0.29750001430511475
+        ],
+        "max": [
+          8.422466278076172,
+          -20.07000160217285,
+          0.3824999928474426
+        ],
+        "dimensions": [
+          0.06500053405761719,
+          0.07999992370605469,
+          0.08499997854232788
+        ],
+        "center": [
+          8.389966011047363,
+          -20.11000156402588,
+          0.3400000035762787
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          8.357465744018555,
+          -20.150001525878906,
+          2.677500009536743
+        ],
+        "max": [
+          8.422466278076172,
+          -20.07000160217285,
+          2.762500047683716
+        ],
+        "dimensions": [
+          0.06500053405761719,
+          0.07999992370605469,
+          0.08500003814697266
+        ],
+        "center": [
+          8.389966011047363,
+          -20.11000156402588,
+          2.7200000286102295
+        ]
+      },
+      {
+        "kind": "round door pull grip",
+        "bevelMetres": 0.001,
+        "min": [
+          10.41398811340332,
+          -20.136001586914062,
+          1.2849998474121094
+        ],
+        "max": [
+          10.445987701416016,
+          -20.104000091552734,
+          1.815000057220459
+        ],
+        "dimensions": [
+          0.03199958801269531,
+          0.032001495361328125,
+          0.5300002098083496
+        ],
+        "center": [
+          10.429987907409668,
+          -20.1200008392334,
+          1.5499999523162842
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          10.405987739562988,
+          -20.03700065612793,
+          1.3109999895095825
+        ],
+        "max": [
+          10.453988075256348,
+          -20.029001235961914,
+          1.3590000867843628
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          10.429987907409668,
+          -20.033000946044922,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          10.420988082885742,
+          -20.10700225830078,
+          1.3260000944137573
+        ],
+        "max": [
+          10.438987731933594,
+          -20.037002563476562,
+          1.343999981880188
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          10.429987907409668,
+          -20.072002410888672,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          10.405987739562988,
+          -20.03700065612793,
+          1.7409999370574951
+        ],
+        "max": [
+          10.453988075256348,
+          -20.029001235961914,
+          1.7890000343322754
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          10.429987907409668,
+          -20.033000946044922,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          10.420988082885742,
+          -20.10700225830078,
+          1.75600004196167
+        ],
+        "max": [
+          10.438987731933594,
+          -20.037002563476562,
+          1.7739999294281006
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          10.429987907409668,
+          -20.072002410888672,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          11.019970893859863,
+          -20.137468338012695,
+          0.20000000298023224
+        ],
+        "max": [
+          11.074971199035645,
+          -20.062469482421875,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500030517578125,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          11.047471046447754,
+          -20.099968910217285,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door perimeter stile",
+        "bevelMetres": 0.0015,
+        "min": [
+          13.52499771118164,
+          -20.137468338012695,
+          0.20000000298023224
+        ],
+        "max": [
+          13.579998016357422,
+          -20.062469482421875,
+          2.8499999046325684
+        ],
+        "dimensions": [
+          0.05500030517578125,
+          0.07499885559082031,
+          2.649999901652336
+        ],
+        "center": [
+          13.552497863769531,
+          -20.099968910217285,
+          1.5249999538064003
+        ]
+      },
+      {
+        "kind": "door top and fixed transom rail",
+        "bevelMetres": 0.0015,
+        "min": [
+          11.074971199035645,
+          -20.137468338012695,
+          2.8524999618530273
+        ],
+        "max": [
+          13.52499771118164,
+          -20.062469482421875,
+          2.947499990463257
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.07499885559082031,
+          0.09500002861022949
+        ],
+        "center": [
+          12.299984455108643,
+          -20.099968910217285,
+          2.899999976158142
+        ]
+      },
+      {
+        "kind": "door bottom rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          11.074971199035645,
+          -20.138469696044922,
+          0.18000000715255737
+        ],
+        "max": [
+          13.52499771118164,
+          -20.08346939086914,
+          0.3199999928474426
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.05500030517578125,
+          0.13999998569488525
+        ],
+        "center": [
+          12.299984455108643,
+          -20.11096954345703,
+          0.25
+        ]
+      },
+      {
+        "kind": "retained door waist rail cap",
+        "bevelMetres": 0.0015,
+        "min": [
+          11.074971199035645,
+          -20.138469696044922,
+          1.1775000095367432
+        ],
+        "max": [
+          13.52499771118164,
+          -20.08346939086914,
+          1.222499966621399
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.05500030517578125,
+          0.04499995708465576
+        ],
+        "center": [
+          12.299984455108643,
+          -20.11096954345703,
+          1.199999988079071
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          11.007471084594727,
+          -20.14996910095215,
+          0.29750001430511475
+        ],
+        "max": [
+          11.072471618652344,
+          -20.069969177246094,
+          0.3824999928474426
+        ],
+        "dimensions": [
+          0.06500053405761719,
+          0.07999992370605469,
+          0.08499997854232788
+        ],
+        "center": [
+          11.039971351623535,
+          -20.10996913909912,
+          0.3400000035762787
+        ]
+      },
+      {
+        "kind": "door hinge fixing plate",
+        "bevelMetres": 0.001,
+        "min": [
+          11.007471084594727,
+          -20.14996910095215,
+          2.677500009536743
+        ],
+        "max": [
+          11.072471618652344,
+          -20.069969177246094,
+          2.762500047683716
+        ],
+        "dimensions": [
+          0.06500053405761719,
+          0.07999992370605469,
+          0.08500003814697266
+        ],
+        "center": [
+          11.039971351623535,
+          -20.10996913909912,
+          2.7200000286102295
+        ]
+      },
+      {
+        "kind": "round door pull grip",
+        "bevelMetres": 0.001,
+        "min": [
+          13.063984870910645,
+          -20.135969161987305,
+          1.2849998474121094
+        ],
+        "max": [
+          13.09598445892334,
+          -20.103967666625977,
+          1.815000057220459
+        ],
+        "dimensions": [
+          0.03199958801269531,
+          0.032001495361328125,
+          0.5300002098083496
+        ],
+        "center": [
+          13.079984664916992,
+          -20.11996841430664,
+          1.5499999523162842
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          13.055984497070312,
+          -20.036968231201172,
+          1.3109999895095825
+        ],
+        "max": [
+          13.103984832763672,
+          -20.028968811035156,
+          1.3590000867843628
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          13.079984664916992,
+          -20.032968521118164,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          13.070984840393066,
+          -20.10696792602539,
+          1.3260000944137573
+        ],
+        "max": [
+          13.088984489440918,
+          -20.036968231201172,
+          1.343999981880188
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          13.079984664916992,
+          -20.07196807861328,
+          1.3350000381469727
+        ]
+      },
+      {
+        "kind": "pull fixing rosette",
+        "bevelMetres": 0,
+        "min": [
+          13.055984497070312,
+          -20.036968231201172,
+          1.7409999370574951
+        ],
+        "max": [
+          13.103984832763672,
+          -20.028968811035156,
+          1.7890000343322754
+        ],
+        "dimensions": [
+          0.048000335693359375,
+          0.007999420166015625,
+          0.04800009727478027
+        ],
+        "center": [
+          13.079984664916992,
+          -20.032968521118164,
+          1.7649999856948853
+        ]
+      },
+      {
+        "kind": "pull stand-off",
+        "bevelMetres": 0,
+        "min": [
+          13.070984840393066,
+          -20.10696792602539,
+          1.75600004196167
+        ],
+        "max": [
+          13.088984489440918,
+          -20.036968231201172,
+          1.7739999294281006
+        ],
+        "dimensions": [
+          0.017999649047851562,
+          0.06999969482421875,
+          0.017999887466430664
+        ],
+        "center": [
+          13.079984664916992,
+          -20.07196807861328,
+          1.7649999856948853
+        ]
+      }
+    ],
+    "sourceNotes": [
+      "BU entrance photograph: https://www.bu.edu/online/files/2025/05/BUQ-externals-5712-2048x1365.jpg",
+      "BU full exterior photograph: https://www.bu.edu/files/2013/04/h_97-2661B-6.jpg",
+      "Local inspected references: output/questrom-reference-front.jpg and output/questrom-reference-wide.jpg",
+      "Existing shallow office-window apertures and five authored entry-bay axes remain unchanged. No new door opening, interior, stairs or geography.",
+      "Pressure-cap sections, hardware sizes and the 2.9 m door/transom split are construction approximations, not an as-built survey.",
+      "Only the five old box handles are replaced. Every other source face is protected outside the builder's explicit bounded bevel selections."
+    ]
+  },
+  "detailTriangles": 5872,
+  "boundedBevels": [
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          5.774996280670166,
+          -20.155057907104492,
+          0.18499980866909027
+        ],
+        "max": [
+          8.225022315979004,
+          -20.045011520385742,
+          0.31499993801116943
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.11004638671875,
+          0.13000012934207916
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          5.774996280670166,
+          -20.155057907104492,
+          1.1624997854232788
+        ],
+        "max": [
+          8.225022315979004,
+          -20.045011520385742,
+          1.2375000715255737
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.11004638671875,
+          0.07500028610229492
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          5.774996280670166,
+          -20.155057907104492,
+          4.710000514984131
+        ],
+        "max": [
+          8.225022315979004,
+          -20.045011520385742,
+          4.7900004386901855
+        ],
+        "dimensions": [
+          2.450026035308838,
+          0.11004638671875,
+          0.07999992370605469
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          5.732502460479736,
+          -20.154996871948242,
+          0.10000025480985641
+        ],
+        "max": [
+          5.807525157928467,
+          -20.044960021972656,
+          4.799999713897705
+        ],
+        "dimensions": [
+          0.07502269744873047,
+          0.11003684997558594,
+          4.699999459087849
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.382491111755371,
+          -20.155025482177734,
+          0.10000025480985641
+        ],
+        "max": [
+          8.457530975341797,
+          -20.04496192932129,
+          4.799999713897705
+        ],
+        "dimensions": [
+          0.07503986358642578,
+          0.11006355285644531,
+          4.699999459087849
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          3.124990224838257,
+          -20.155027389526367,
+          0.18499980866909027
+        ],
+        "max": [
+          5.575016498565674,
+          -20.04498291015625,
+          0.31499993801116943
+        ],
+        "dimensions": [
+          2.450026273727417,
+          0.11004447937011719,
+          0.13000012934207916
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          3.124990224838257,
+          -20.155027389526367,
+          1.1624997854232788
+        ],
+        "max": [
+          5.575016498565674,
+          -20.04498291015625,
+          1.2375000715255737
+        ],
+        "dimensions": [
+          2.450026273727417,
+          0.11004447937011719,
+          0.07500028610229492
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          3.124990224838257,
+          -20.155027389526367,
+          4.710000514984131
+        ],
+        "max": [
+          5.575016498565674,
+          -20.04498291015625,
+          4.7900004386901855
+        ],
+        "dimensions": [
+          2.450026273727417,
+          0.11004447937011719,
+          0.07999992370605469
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.425002098083496,
+          -20.154964447021484,
+          0.18499980866909027
+        ],
+        "max": [
+          10.875028610229492,
+          -20.045040130615234,
+          0.31499993801116943
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.10992431640625,
+          0.13000012934207916
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.425002098083496,
+          -20.154964447021484,
+          1.1624997854232788
+        ],
+        "max": [
+          10.875028610229492,
+          -20.045040130615234,
+          1.2375000715255737
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.10992431640625,
+          0.07500028610229492
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          8.425002098083496,
+          -20.154964447021484,
+          4.710000514984131
+        ],
+        "max": [
+          10.875028610229492,
+          -20.045040130615234,
+          4.7900004386901855
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.10992431640625,
+          0.07999992370605469
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          3.082496404647827,
+          -20.15496826171875,
+          0.10000025480985641
+        ],
+        "max": [
+          3.1575191020965576,
+          -20.045024871826172,
+          4.799999713897705
+        ],
+        "dimensions": [
+          0.07502269744873047,
+          0.10994338989257812,
+          4.699999459087849
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          11.032496452331543,
+          -20.155054092407227,
+          0.10000025480985641
+        ],
+        "max": [
+          11.107537269592285,
+          -20.044992446899414,
+          4.799999713897705
+        ],
+        "dimensions": [
+          0.07504081726074219,
+          0.1100616455078125,
+          4.699999459087849
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          0.47498413920402527,
+          -20.154998779296875,
+          0.18499980866909027
+        ],
+        "max": [
+          2.9250104427337646,
+          -20.044952392578125,
+          0.31499993801116943
+        ],
+        "dimensions": [
+          2.4500263035297394,
+          0.11004638671875,
+          0.13000012934207916
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          0.47498413920402527,
+          -20.154998779296875,
+          1.1624997854232788
+        ],
+        "max": [
+          2.9250104427337646,
+          -20.044952392578125,
+          1.2375000715255737
+        ],
+        "dimensions": [
+          2.4500263035297394,
+          0.11004638671875,
+          0.07500028610229492
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          0.47498413920402527,
+          -20.154998779296875,
+          4.710000514984131
+        ],
+        "max": [
+          2.9250104427337646,
+          -20.044952392578125,
+          4.7900004386901855
+        ],
+        "dimensions": [
+          2.4500263035297394,
+          0.11004638671875,
+          0.07999992370605469
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          11.074990272521973,
+          -20.15499496459961,
+          0.18499980866909027
+        ],
+        "max": [
+          13.525016784667969,
+          -20.04494857788086,
+          0.31499993801116943
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.11004638671875,
+          0.13000012934207916
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          11.074990272521973,
+          -20.15499496459961,
+          1.1624997854232788
+        ],
+        "max": [
+          13.525016784667969,
+          -20.04494857788086,
+          1.2375000715255737
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.11004638671875,
+          0.07500028610229492
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          11.074990272521973,
+          -20.15499496459961,
+          4.710000514984131
+        ],
+        "max": [
+          13.525016784667969,
+          -20.04494857788086,
+          4.7900004386901855
+        ],
+        "dimensions": [
+          2.450026512145996,
+          0.11004638671875,
+          0.07999992370605469
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -0.29497724771499634,
+          -20.13004493713379,
+          1.209999918937683
+        ],
+        "max": [
+          2.2350008487701416,
+          -19.819988250732422,
+          1.3499997854232788
+        ],
+        "dimensions": [
+          2.529978096485138,
+          0.3100566864013672,
+          0.1399998664855957
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          11.764988899230957,
+          -20.130016326904297,
+          1.209999918937683
+        ],
+        "max": [
+          14.295027732849121,
+          -19.819969177246094,
+          1.3499997854232788
+        ],
+        "dimensions": [
+          2.530038833618164,
+          0.3100471496582031,
+          0.1399998664855957
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          11.794981956481934,
+          -20.01004981994629,
+          5.150000095367432
+        ],
+        "max": [
+          14.264983177185059,
+          -19.789968490600586,
+          5.259999752044678
+        ],
+        "dimensions": [
+          2.470001220703125,
+          0.22008132934570312,
+          0.1099996566772461
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -0.26500141620635986,
+          -20.01003646850586,
+          5.150000095367432
+        ],
+        "max": [
+          2.2050161361694336,
+          -19.789953231811523,
+          5.259999752044678
+        ],
+        "dimensions": [
+          2.4700175523757935,
+          0.22008323669433594,
+          0.1099996566772461
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          -0.1449953019618988,
+          -19.797515869140625,
+          2.7664997577667236
+        ],
+        "max": [
+          2.0850327014923096,
+          -19.742450714111328,
+          2.821500062942505
+        ],
+        "dimensions": [
+          2.2300280034542084,
+          0.055065155029296875,
+          0.05500030517578125
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          11.914986610412598,
+          -19.797494888305664,
+          2.7664997577667236
+        ],
+        "max": [
+          14.144998550415039,
+          -19.742477416992188,
+          2.821500062942505
+        ],
+        "dimensions": [
+          2.2300119400024414,
+          0.05501747131347656,
+          0.05500030517578125
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          0.9424780607223511,
+          -19.797550201416016,
+          1.350000262260437
+        ],
+        "max": [
+          0.9975142478942871,
+          -19.742530822753906,
+          5.150000095367432
+        ],
+        "dimensions": [
+          0.055036187171936035,
+          0.055019378662109375,
+          3.7999998331069946
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          13.002507209777832,
+          -19.797536849975586,
+          1.350000262260437
+        ],
+        "max": [
+          13.057525634765625,
+          -19.742502212524414,
+          5.150000095367432
+        ],
+        "dimensions": [
+          0.05501842498779297,
+          0.055034637451171875,
+          3.7999998331069946
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          10.812231063842773,
+          -15.535019874572754,
+          0.6249998807907104
+        ],
+        "max": [
+          11.932212829589844,
+          -14.864988327026367,
+          6.775000095367432
+        ],
+        "dimensions": [
+          1.1199817657470703,
+          0.6700315475463867,
+          6.150000214576721
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          2.0677504539489746,
+          -15.534972190856934,
+          0.6249998807907104
+        ],
+        "max": [
+          3.1877920627593994,
+          -14.864949226379395,
+          6.775000095367432
+        ],
+        "dimensions": [
+          1.1200416088104248,
+          0.6700229644775391,
+          6.150000214576721
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 frame",
+      "boundsBlender": {
+        "min": [
+          0.4324903190135956,
+          -20.155033111572266,
+          0.10000025480985641
+        ],
+        "max": [
+          0.5075131058692932,
+          -20.04499626159668,
+          4.799999713897705
+        ],
+        "dimensions": [
+          0.07502278685569763,
+          0.11003684997558594,
+          4.699999459087849
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          13.989831924438477,
+          -22.086843490600586,
+          4.960000514984131
+        ],
+        "max": [
+          14.250174522399902,
+          -21.963123321533203,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603425979614258,
+          0.12372016906738281,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -0.2501686215400696,
+          -22.08692169189453,
+          4.960000514984131
+        ],
+        "max": [
+          0.010156305506825447,
+          -21.96308135986328,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.260324927046895,
+          0.12384033203125,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -0.5151782631874084,
+          -22.086896896362305,
+          4.960000514984131
+        ],
+        "max": [
+          -0.2548040747642517,
+          -21.963144302368164,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.26037418842315674,
+          0.12375259399414062,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          14.254810333251953,
+          -22.08690071105957,
+          4.960000514984131
+        ],
+        "max": [
+          14.51518440246582,
+          -21.96314811706543,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603740692138672,
+          0.12375259399414062,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -1.3500041961669922,
+          -22.000049591064453,
+          -1.285903437064917e-07
+        ],
+        "max": [
+          0.05003490298986435,
+          -19.999954223632812,
+          7.000000476837158
+        ],
+        "dimensions": [
+          1.4000390991568565,
+          2.0000953674316406,
+          7.000000605427502
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -1.4999979734420776,
+          -22.150028228759766,
+          6.410000324249268
+        ],
+        "max": [
+          0.20002707839012146,
+          -19.849985122680664,
+          6.7900004386901855
+        ],
+        "dimensions": [
+          1.700025051832199,
+          2.3000431060791016,
+          0.38000011444091797
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          13.949989318847656,
+          -22.000024795532227,
+          -1.285903437064917e-07
+        ],
+        "max": [
+          15.349993705749512,
+          -20.000019073486328,
+          7.000000476837158
+        ],
+        "dimensions": [
+          1.4000043869018555,
+          2.0000057220458984,
+          7.000000605427502
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          13.800021171569824,
+          -22.14998435974121,
+          6.410000324249268
+        ],
+        "max": [
+          15.49998664855957,
+          -19.84994125366211,
+          6.7900004386901855
+        ],
+        "dimensions": [
+          1.699965476989746,
+          2.3000431060791016,
+          0.38000011444091797
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -0.7801562547683716,
+          -22.08683967590332,
+          4.960000514984131
+        ],
+        "max": [
+          -0.5198136568069458,
+          -21.963119506835938,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603425979614258,
+          0.12372016906738281,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          14.519820213317871,
+          -22.086925506591797,
+          4.960000514984131
+        ],
+        "max": [
+          14.780144691467285,
+          -21.963085174560547,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.26032447814941406,
+          0.12384033203125,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          13.909968376159668,
+          -22.149978637695312,
+          4.830000400543213
+        ],
+        "max": [
+          15.390008926391602,
+          -22.009946823120117,
+          4.950000286102295
+        ],
+        "dimensions": [
+          1.4800405502319336,
+          0.1400318145751953,
+          0.11999988555908203
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          13.909968376159668,
+          -22.149978637695312,
+          5.650000095367432
+        ],
+        "max": [
+          15.390008926391602,
+          -22.009946823120117,
+          5.769999980926514
+        ],
+        "dimensions": [
+          1.4800405502319336,
+          0.1400318145751953,
+          0.11999988555908203
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -1.3900213241577148,
+          -22.150022506713867,
+          4.830000400543213
+        ],
+        "max": [
+          0.09002167731523514,
+          -22.009981155395508,
+          4.950000286102295
+        ],
+        "dimensions": [
+          1.48004300147295,
+          0.14004135131835938,
+          0.11999988555908203
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 trim",
+      "boundsBlender": {
+        "min": [
+          -1.3900213241577148,
+          -22.150022506713867,
+          5.650000095367432
+        ],
+        "max": [
+          0.09002167731523514,
+          -22.009981155395508,
+          5.769999980926514
+        ],
+        "dimensions": [
+          1.48004300147295,
+          0.14004135131835938,
+          0.11999988555908203
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -1.0451658964157104,
+          -22.086814880371094,
+          4.960000514984131
+        ],
+        "max": [
+          -0.7848344445228577,
+          -21.963071823120117,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603314518928528,
+          0.12374305725097656,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          14.78484058380127,
+          -22.08685302734375,
+          4.960000514984131
+        ],
+        "max": [
+          15.045154571533203,
+          -21.963109970092773,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603139877319336,
+          0.12374305725097656,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          -1.3101866245269775,
+          -22.08688735961914,
+          4.960000514984131
+        ],
+        "max": [
+          -1.0498440265655518,
+          -21.963167190551758,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603425979614258,
+          0.12372016906738281,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    },
+    {
+      "object": "BU architecture \u00b7 stone",
+      "boundsBlender": {
+        "min": [
+          15.049850463867188,
+          -22.086877822875977,
+          4.960000514984131
+        ],
+        "max": [
+          15.310193061828613,
+          -21.963157653808594,
+          5.639999866485596
+        ],
+        "dimensions": [
+          0.2603425979614258,
+          0.12372016906738281,
+          0.6799993515014648
+        ]
+      },
+      "widthMetres": 0.003,
+      "addedTriangles": 32
+    }
+  ],
+  "bevelAddedTriangles": 1536,
+  "previousAssetsUnchangedSHA256": {
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\full\\cds-full.blend": "102678eeb0d7fdc4593e761fabfa7adfb5571fd19d232f44c9afdbbe912fb83e",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\full\\cds-mobile-source.glb": "39eaebe3b32f3af2bd44e077127a2444271192a99222345bd6e94eaaed8babd0",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\public\\assets\\bu-cds\\cds-full.glb": "4cc94922dd7afe6132774218085fcd0d05601ec6db05ab0f1d775056b76547ac",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\cds-ground.blend": "ae4262d7886cfdf214fc582647721a420607fe399a206527f2c959bf4d64e65a",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\pass2\\cds-ground.blend": "e6101368876f97d3ef968bdd365a3bf20d70c8f326e3ec2c66bc4cd67aa614f1",
+    "C:\\Users\\xieli\\Desktop\\projects\\pulsetact-world\\assets-source\\charles-bu\\blender\\refine_cds.py": "3d9163d47f5ca56574d350bc4ae9c5221e37dba0ccf6ca8be9fa2250dd3c5366"
+  },
+  "reusedTexturesSHA256": {
+    "textures\\brick-basecolor.png": "92a8842e064539bbf66464b92e517be73e8972e40d84ec64e54e8bd6544e5e2b",
+    "textures\\brick-normal.png": "fb64e1d69f5515a42939eb67f640f7434da1137568c5cfe9d84d200ce1a8a4bf",
+    "textures\\brick-orm.png": "b816813a370bd7c16bf9ea37b0182446c8c1502d7bddf9dffda2d13cadd3b458",
+    "textures\\stone-basecolor.png": "8937a856a9cfee468c90fc9bf5e80bc4aed44cfeb125835ae8a110e1559ae6e2",
+    "textures\\stone-normal.png": "a7c9d5b21a032ef1ef28ca55c63885ae1580b9dd85bd6e393adefd07f267484f",
+    "textures\\stone-orm.png": "5025f66f3fe2dcc9b4cb957eb10233cba24eb9d3a2ca148063ac2c770a65e0b8",
+    "textures\\concrete-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "textures\\concrete-normal.png": "90f9ca2388f8ab63374c0a48dce6ea9851a9d3e12908c4d7bfba4cdefc823a96",
+    "textures\\concrete-orm.png": "efece217feef189e1735b00e805370ad0f9b20cb234da3067f261588fe9784b0",
+    "textures\\wood-basecolor.png": "2b1bab381396e0b887d2df39b3df92661d91e05536f61486e3af52fa280150ec",
+    "textures\\wood-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "textures\\wood-orm.png": "2d73c732ad0ea4f747ff9951cf7a748ab95ec0df6f7b7f5ff8ffcf70ba2771c6",
+    "textures\\metal-basecolor.png": "dfa4f0baa490be05b3e885e0532966707d1e4c2badadb78d9fde2f71fc7162fa",
+    "textures\\metal-normal.png": "62402baeef92eeda8b67dcdd8e90705e9591a7a421608a4a7509c08c18f91e04",
+    "textures\\metal-orm.png": "7687a638362439539fad3840547c125d4d3ee21b7eed094d3654ffc6c564060b"
+  },
+  "limitations": [
+    "Source model massing, approximate window/door geometry, source DEM and collision remain unchanged; not a new measured/as-built reconstruction.",
+    "Reference photo supports thin frame profiles, door/transom construction and pull hardware. Exact section sizes and the new 2.9m door head are authored estimates.",
+    "Only the two dark entrance bases widen 6 mm on each side to resolve source coplanar side faces; this thin wrap is authored, not surveyed. Heights/depths and all other roofs are unchanged.",
+    "Stone reuses the baked continuous concrete/mineral microtexture, preserving modeled large-panel joints without adding fictional small masonry bonds.",
+    "Opaque exterior glass uses the reviewed .2 linear tint/.16 roughness approach and requires runtime neighborhood reflection; no interior or transmission.",
+    "Canvas entrance inscription is excluded from this asset and must remain in the runtime extras group."
+  ]
+}

@@ -1,0 +1,1254 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "PBR asset matches manifest",
+      "passed": true
+    },
+    {
+      "name": "Mobile source matches manifest",
+      "passed": true
+    },
+    {
+      "name": "Complete Questrom under 10 MiB",
+      "passed": true
+    },
+    {
+      "name": "No mobile image loader inputs",
+      "passed": true
+    },
+    {
+      "name": "Exact mobile node/mesh parity",
+      "passed": true
+    },
+    {
+      "name": "All mobile geometry accessors retained",
+      "passed": true
+    },
+    {
+      "name": "Accessor 0 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 1 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 2 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 3 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 4 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 5 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 6 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 7 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 8 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 9 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 10 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 11 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 12 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 13 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 14 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 15 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 16 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 17 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 18 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 19 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 20 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 21 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 22 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 23 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 24 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 25 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 26 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 27 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 28 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 29 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 30 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 31 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 32 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 33 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 34 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 35 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 36 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 37 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 38 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 39 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 40 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 41 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 42 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 43 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 44 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 45 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 46 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 47 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 48 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 49 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 50 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 51 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 52 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 53 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 54 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 55 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 56 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 57 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 58 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 59 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 60 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 61 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 62 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 63 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 64 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 65 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 66 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 67 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 68 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 69 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 70 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 71 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 72 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 73 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 74 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 75 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 76 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 77 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 78 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Accessor 79 identical after removing textures",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 first-floor window metal: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Questrom refined \u00b7 entrance construction: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_8: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_6 \u00b7 bounded near-ground finishing: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_4: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_5: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_7: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_0: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_2: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_1 \u00b7 bounded near-ground finishing: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_3 \u00b7 bounded near-ground finishing: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_9: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_12: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_13: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_10: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: complete PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: valid triangles",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: aligned attributes",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: finite geometry/UV",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: unit normals",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: unit tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Mesh_11: orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "Measured full-building triangles match export",
+      "passed": true
+    },
+    {
+      "name": "Sixteen bounded draw calls",
+      "passed": true
+    },
+    {
+      "name": "Complete original roofline retained",
+      "passed": true
+    },
+    {
+      "name": "Incremental mobile geometry below 10k triangles",
+      "passed": true
+    },
+    {
+      "name": "Source footprint and site envelope retained",
+      "passed": true
+    },
+    {
+      "name": "Only two existing 12-triangle base wraps are resized",
+      "passed": true
+    },
+    {
+      "name": "6 mm base wrap, all 48 unrelated roof triangles retained",
+      "passed": true
+    },
+    {
+      "name": "Actual roof triangle count unchanged",
+      "passed": true
+    },
+    {
+      "name": "Source buffer matches exactly the two planned entrance base components",
+      "passed": true
+    },
+    {
+      "name": "Actual roof buffers equal source except the two planned X-only 6 mm wraps",
+      "passed": true
+    },
+    {
+      "name": "Actual GLB base -0.65 side -1: dark wrap covers stone side by 6 mm",
+      "passed": true
+    },
+    {
+      "name": "Actual GLB base -0.65 side 1: dark wrap covers stone side by 6 mm",
+      "passed": true
+    },
+    {
+      "name": "Actual GLB base 14.65 side -1: dark wrap covers stone side by 6 mm",
+      "passed": true
+    },
+    {
+      "name": "Actual GLB base 14.65 side 1: dark wrap covers stone side by 6 mm",
+      "passed": true
+    },
+    {
+      "name": "Five exact old box handles replaced without duplicates",
+      "passed": true
+    },
+    {
+      "name": "Visible first-floor windows and original five door bays refined",
+      "passed": true
+    },
+    {
+      "name": "44 actual construction rays retain visible glazing",
+      "passed": true
+    },
+    {
+      "name": "New outer stiles retain the original pane widths",
+      "passed": true
+    },
+    {
+      "name": "Four original ground batches retain ground flags",
+      "passed": true
+    },
+    {
+      "name": "Original-material colors available to the mobile baker",
+      "passed": true
+    },
+    {
+      "name": "Canvas inscription remains outside the GLB",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "Embedded PNG image",
+      "passed": true
+    },
+    {
+      "name": "Bounded reused image dimensions",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "frame \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "brick \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "brick \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "brick \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "brick \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "brick \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: exterior dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "glass \u00b7 Blender PBR: no invented interior, reviewed tint",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: exterior dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "glassLight \u00b7 Blender PBR: no invented interior, reviewed tint",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: exterior dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "glassShade \u00b7 Blender PBR: no invented interior, reviewed tint",
+      "passed": true
+    },
+    {
+      "name": "inset \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "inset \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "inset \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "inset \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "roof \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "stone \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "trim \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "wood \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "wood \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "wood \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "wood \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "wood \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "brickLight \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: opaque exterior",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: no emission",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: same mobile tint",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: no mobile texture references",
+      "passed": true
+    },
+    {
+      "name": "paving \u00b7 Blender PBR: base/normal/roughness channels",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: cds-full.blend",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: cds-mobile-source.glb",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: cds-full.glb",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: cds-ground.blend",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: cds-ground.blend",
+      "passed": true
+    },
+    {
+      "name": "Previous CDS asset/code unchanged: refine_cds.py",
+      "passed": true
+    }
+  ],
+  "triangles": 51610,
+  "primitives": 16,
+  "bytes": 9302072,
+  "mobileBytes": 7402532,
+  "images": 12
+}

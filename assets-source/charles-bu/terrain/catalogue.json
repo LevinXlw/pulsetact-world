@@ -1,0 +1,321 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "domain": null
+    },
+    {
+      "name": "Name",
+      "type": "esriFieldTypeString",
+      "alias": "Name",
+      "domain": null,
+      "length": 200
+    },
+    {
+      "name": "ProductName",
+      "type": "esriFieldTypeString",
+      "alias": "ProductName",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "Source",
+      "type": "esriFieldTypeString",
+      "alias": "Source",
+      "domain": null,
+      "length": 32
+    },
+    {
+      "name": "VerticalDatum",
+      "type": "esriFieldTypeString",
+      "alias": "VerticalDatum",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "AcquisitionDate",
+      "type": "esriFieldTypeDate",
+      "alias": "AcquisitionDate",
+      "domain": null,
+      "length": 8
+    },
+    {
+      "name": "URL",
+      "type": "esriFieldTypeString",
+      "alias": "URL",
+      "domain": null,
+      "length": 1000
+    },
+    {
+      "name": "Metadata",
+      "type": "esriFieldTypeString",
+      "alias": "Metadata",
+      "domain": null,
+      "length": 256
+    },
+    {
+      "name": "Resolution_X",
+      "type": "esriFieldTypeString",
+      "alias": "Resolution_X",
+      "domain": null,
+      "length": 50
+    },
+    {
+      "name": "Resolution_Y",
+      "type": "esriFieldTypeDouble",
+      "alias": "Resolution_Y",
+      "domain": null
+    },
+    {
+      "name": "Best",
+      "type": "esriFieldTypeInteger",
+      "alias": "Best",
+      "domain": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 2536,
+        "Name": "n43w072",
+        "ProductName": "USGS_3DEP",
+        "Source": "USGS",
+        "VerticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+        "AcquisitionDate": 1716336000000,
+        "URL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/current/n43w072/USGS_1_n43w072.tif",
+        "Metadata": "D:\\USGS_3DEP\\data\\1\\n43w072\\USGS_1_n43w072.xml",
+        "Resolution_X": "2.77777777786999E-04",
+        "Resolution_Y": -0.000277777777786999,
+        "Best": 20867
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 4498,
+        "Name": "n43w072",
+        "ProductName": "USGS_3DEP",
+        "Source": "USGS",
+        "VerticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+        "AcquisitionDate": 1716336000000,
+        "URL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/current/n43w072/USGS_13_n43w072.tif",
+        "Metadata": "D:\\USGS_3DEP\\data\\13\\n43w072\\USGS_13_n43w072.xml",
+        "Resolution_X": "9.25925926922017E-05",
+        "Resolution_Y": -0.00009259259269220167,
+        "Best": 13342
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 10371,
+        "Name": "ned19_n42x50_w071x25_ma_lftne_lot7_2011",
+        "ProductName": "USGS_3DEP",
+        "Source": "USGS",
+        "VerticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+        "AcquisitionDate": 1388534400000,
+        "URL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/19/IMG/ned19_n42x50_w071x25_ma_lftne_lot7_2011.zip",
+        "Metadata": "D:\\USGS_3DEP\\data\\19\\ned19_n42x50_w071x25_ma_lftne_lot7_2011\\ned19_n42x50_w071x25_ma_lftne_lot7_2011_meta.xml",
+        "Resolution_X": "0.00001",
+        "Resolution_Y": 0.00001,
+        "Best": 111255
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 45630,
+        "Name": "MA_NE_CMGP_Sandy_Z19_2013",
+        "ProductName": "USGS_3DEP",
+        "Source": "USGS",
+        "VerticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+        "AcquisitionDate": 1419984000000,
+        "URL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/MA_NE_CMGP_Sandy_Z19_2013/TIFF/USGS_1m_x32y470_MA_NE_CMGP_Sandy_Z19_2013.tif",
+        "Metadata": "D:\\USGS_3DEP\\data\\1m\\MA_NE_CMGP_Sandy_Z19_2013\\USGS_1m_x32y470_MA_NE_CMGP_Sandy_Z19_2013.xml",
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": 109236
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 137192,
+        "Name": "Ov_i02_L01_R0000005C_C0000001F.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 137990,
+        "Name": "Ov_i02_L02_R0000002E_C0000000F.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138229,
+        "Name": "Ov_i02_L03_R00000017_C00000007.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138312,
+        "Name": "Ov_i02_L04_R0000000B_C00000003.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138352,
+        "Name": "Ov_i02_L05_R00000005_C00000001.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138378,
+        "Name": "Ov_i02_L06_R00000002_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138399,
+        "Name": "Ov_i02_L07_R00000001_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138416,
+        "Name": "Ov_i02_L08_R00000000_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138433,
+        "Name": "Ov_i02_L09_R00000000_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138450,
+        "Name": "Ov_i02_L0A_R00000000_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138467,
+        "Name": "Ov_i02_L0B_R00000000_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 138484,
+        "Name": "Ov_i02_L0C_R00000000_C00000000.tif",
+        "ProductName": "",
+        "Source": null,
+        "VerticalDatum": null,
+        "AcquisitionDate": null,
+        "URL": null,
+        "Metadata": null,
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": null
+      }
+    }
+  ]
+}

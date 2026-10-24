@@ -1,0 +1,50 @@
+{
+  "reviewed": "2026-10-15",
+  "output": "src/features/world/campus-atlas-data.ts",
+  "coordinateReferenceSystem": "WGS84 longitude / latitude in degrees, EPSG:4326",
+  "authorship": "School names and locations are factual reference information. Campus outlines are newly authored low-detail overview envelopes drawn from official campus maps, not copied map artwork, cadastral boundaries, surveying data, legal property extents or game collision boundaries. No official map images are redistributed.",
+  "scope": "Five school markers in three metropolitan areas. Boston University includes the Charles River Campus only. Harvard depicts its Cambridge core only; Allston and Longwood are excluded. University of Maryland depicts College Park, not other University System of Maryland institutions. Penn depicts its West Philadelphia main campus, not all university-owned land.",
+  "sources": [
+    {
+      "school": "mit",
+      "city": "Cambridge, Massachusetts",
+      "location": [-71.09205, 42.35915],
+      "anchor": "Killian Court / Great Dome axis; uses the existing project's surveyed Boston world origin, as a representative campus marker rather than an official campus centroid.",
+      "urls": ["https://whereis.mit.edu/", "https://www.mit.edu/visit/"],
+      "outline": "Approximate Cambridge campus envelope between Vassar Street and the Charles River. Includes more geography than the currently reconstructed Killian Court experience."
+    },
+    {
+      "school": "harvard",
+      "city": "Cambridge, Massachusetts",
+      "location": [-71.1167, 42.3745],
+      "anchor": "Approximate Harvard Yard center from the official campus map.",
+      "urls": ["https://map.harvard.edu/", "https://www.harvard.edu/visit/maps-directions/", "https://hupad.harvard.edu/services-overview/information-services/maps/"],
+      "outline": "Approximate Harvard Yard and adjoining Cambridge academic area. Not the whole university, which also has Allston and Longwood campuses.",
+      "applicationStatus": "No Harvard CampusId in the current single-player world. The unrelated older /real/harvard prototype exists but is not treated as an open world destination and is not linked by this atlas."
+    },
+    {
+      "school": "bu",
+      "city": "Boston, Massachusetts",
+      "location": [-71.1069, 42.3505],
+      "anchor": "Approximate Marsh Chapel / central Charles River Campus location, checked against the official map and the project's City of Boston building data.",
+      "urls": ["https://maps.bu.edu/?id=647", "https://www.bumc.bu.edu/citylab/files/2023/06/BU-Charles-River-Campus-Map.pdf"],
+      "outline": "Approximate East, Central, West and South Campus envelope, including the Danielsen Hall eastern endpoint. Excludes Fenway and Medical Campus. The envelope includes public streets and intervening non-BU land; it must not be presented as BU-owned parcels."
+    },
+    {
+      "school": "umd",
+      "city": "College Park, Maryland",
+      "location": [-76.9432, 38.9865],
+      "anchor": "Approximate McKeldin Mall location, checked against UMD Facilities building footprints held in assets-source/maryland/umd-official-buildings.geojson and the official visitor map.",
+      "urls": ["https://maps.umd.edu/map/", "https://umdconf.umd.edu/drupal/current_map.pdf", "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/2"],
+      "outline": "Approximate main College Park academic, residential and athletic campus. Excludes remote research facilities and the broader Discovery District."
+    },
+    {
+      "school": "upenn",
+      "city": "Philadelphia, Pennsylvania",
+      "location": [-75.193802, 39.9515],
+      "anchor": "College Hall coordinate published in Penn Facilities' page geofield and directions link.",
+      "urls": ["https://facilities.upenn.edu/maps", "https://facilities.upenn.edu/maps/locations/college-hall"],
+      "outline": "Approximate West Philadelphia main campus envelope. The current playable vignette is College Green only; the atlas outline does not promise that the entire outlined campus can be explored."
+    }
+  ]
+}

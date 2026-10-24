@@ -1,0 +1,1363 @@
+{
+  "title": "MIT design map control points",
+  "purpose": "Design-only dataset; no runtime code or assets changed. Label positions are building/feature anchors, not entrances or navigation destinations.",
+  "createdDate": "2026-10-21",
+  "coordinateSystem": {
+    "sourceCRS": "EPSG:2249 / NAD83 Massachusetts Mainland, US survey feet",
+    "originStatePlaneFeet": {
+      "easting": 766425.8129794697,
+      "northing": 2956167.074144031
+    },
+    "objCoordinateOffsetsFeet": {
+      "xEasting": 731100,
+      "yNorthing": 2902900
+    },
+    "metresPerUSSurveyFoot": 0.3048006096012192,
+    "outputAxes": {
+      "x": "east-positive metres",
+      "z": "south-positive metres"
+    },
+    "conversion": {
+      "x": "(OBJ.x + 731100 - origin.easting) * 1200 / 3937",
+      "z": "-(OBJ.y + 2902900 - origin.northing) * 1200 / 3937"
+    },
+    "northUpMap": "Map screen x = x; map screen y = z. Negative z is north/up.",
+    "centerPolicy": "Prefer horizontal source OBJ bounding-box midpoint. Runtime manifest model positions are catalog-centroid-derived and can differ; they are preserved separately in components. Killian uses its existing named POI and the dome uses its authored axis.",
+    "runtimeSource": "scripts/prepare-campus-data.py"
+  },
+  "currentRuntimeExtentXZ": {
+    "minX": -420,
+    "maxX": 420,
+    "minZ": -420,
+    "maxZ": 420
+  },
+  "currentMITCoreWalkRule": "hypot(x - 34, z - 5) <= 190 && z <= 160; additional narrow river/bridge routes exist",
+  "designAnchorExtentXZ": {
+    "minX": -804.135,
+    "maxX": 763.008,
+    "minZ": -296.971,
+    "maxZ": 496.659
+  },
+  "residences": [
+    {
+      "id": "baker",
+      "name": "Baker House",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W7"
+      ],
+      "located": true,
+      "x": -300.604,
+      "z": 279.834,
+      "boundsXZ": {
+        "minX": -351.15,
+        "maxX": -250.059,
+        "minZ": 245.406,
+        "maxZ": 314.263
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_TZTMU-B3O9W-LFC4E",
+          "sourceName": "Baker House, Building W7",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -300.604,
+          "z": 279.834,
+          "boundsXZ": {
+            "minX": -351.15,
+            "maxX": -250.059,
+            "minZ": 245.406,
+            "maxZ": 314.263
+          },
+          "statePlaneFeet": {
+            "easting": 765439.580107,
+            "northing": 2955248.985265
+          },
+          "catalogLatLon": {
+            "lat": 42.3566805584502,
+            "lon": -71.0960222213587
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -325.931,
+            275.852
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_TZTMU-B3O9W-LFC4E_OBJ/CAM_TZTMU-B3O9W-LFC4E_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "burton-conner",
+      "name": "Burton-Conner House",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W51"
+      ],
+      "located": true,
+      "x": -497.225,
+      "z": 357.556,
+      "boundsXZ": {
+        "minX": -551.297,
+        "maxX": -443.153,
+        "minZ": 316.186,
+        "maxZ": 398.926
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_QSMUV-STYYC-5WK9T",
+          "sourceName": "Burton-Conner House, Building W51",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -497.225,
+          "z": 357.556,
+          "boundsXZ": {
+            "minX": -551.297,
+            "maxX": -443.153,
+            "minZ": 316.186,
+            "maxZ": 398.926
+          },
+          "statePlaneFeet": {
+            "easting": 764794.500032,
+            "northing": 2954993.992828
+          },
+          "catalogLatLon": {
+            "lat": 42.3559871222917,
+            "lon": -71.0981250729379
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_QSMUV-STYYC-5WK9T_OBJ/CAM_QSMUV-STYYC-5WK9T_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "macgregor",
+      "name": "MacGregor House",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W61"
+      ],
+      "located": true,
+      "x": -615.129,
+      "z": 411.08,
+      "boundsXZ": {
+        "minX": -655.684,
+        "maxX": -574.573,
+        "minZ": 373.642,
+        "maxZ": 448.518
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_Y7HKQ-IKADK-2XQ51",
+          "sourceName": "MacGregor House, Building W61",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -615.128,
+          "z": 411.08,
+          "boundsXZ": {
+            "minX": -655.684,
+            "maxX": -574.573,
+            "minZ": 373.642,
+            "maxZ": 448.518
+          },
+          "statePlaneFeet": {
+            "easting": 764407.680104,
+            "northing": 2954818.390325
+          },
+          "catalogLatLon": {
+            "lat": 42.3553043712188,
+            "lon": -71.0995419875191
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_Y7HKQ-IKADK-2XQ51_OBJ/CAM_Y7HKQ-IKADK-2XQ51_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "maseeh",
+      "name": "Maseeh Hall",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W1"
+      ],
+      "located": true,
+      "x": -114.592,
+      "z": 168.846,
+      "boundsXZ": {
+        "minX": -155.495,
+        "maxX": -73.689,
+        "minZ": 126.772,
+        "maxZ": 210.919
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_5GU8J-DD9KS-40P6S",
+          "sourceName": "Fariborz Maseeh Hall, Building W1",
+          "tile": "F4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -114.592,
+          "z": 168.845,
+          "boundsXZ": {
+            "minX": -155.495,
+            "maxX": -73.689,
+            "minZ": 126.772,
+            "maxZ": 210.919
+          },
+          "statePlaneFeet": {
+            "easting": 766049.855953,
+            "northing": 2955613.121675
+          },
+          "catalogLatLon": {
+            "lat": 42.3576325503945,
+            "lon": -71.0937004420749
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -135.16,
+            169.2
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_5GU8J-DD9KS-40P6S_OBJ/CAM_5GU8J-DD9KS-40P6S_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "mccormick",
+      "name": "McCormick Hall",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W4"
+      ],
+      "located": true,
+      "x": -195.583,
+      "z": 219.677,
+      "boundsXZ": {
+        "minX": -236.189,
+        "maxX": -154.977,
+        "minZ": 186.571,
+        "maxZ": 252.782
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_SJ4HY-5EZHM-RX78U",
+          "sourceName": "McCormick Hall, Building W4",
+          "tile": "F4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -195.583,
+          "z": 219.676,
+          "boundsXZ": {
+            "minX": -236.189,
+            "maxX": -154.977,
+            "minZ": 186.571,
+            "maxZ": 252.782
+          },
+          "statePlaneFeet": {
+            "easting": 765784.138965,
+            "northing": 2955446.352488
+          },
+          "catalogLatLon": {
+            "lat": 42.3571904638152,
+            "lon": -71.0941904164405
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -175.291,
+            218.498
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_SJ4HY-5EZHM-RX78U_OBJ/CAM_SJ4HY-5EZHM-RX78U_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "new-house",
+      "name": "New House",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W70"
+      ],
+      "located": true,
+      "x": -697.802,
+      "z": 446.945,
+      "boundsXZ": {
+        "minX": -756.746,
+        "maxX": -638.858,
+        "minZ": 405.434,
+        "maxZ": 488.456
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_2RH49-B2H07-YUSV8",
+          "sourceName": "New House, Building W70",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -697.802,
+          "z": 446.945,
+          "boundsXZ": {
+            "minX": -756.746,
+            "maxX": -638.858,
+            "minZ": 405.434,
+            "maxZ": 488.456
+          },
+          "statePlaneFeet": {
+            "easting": 764136.441801,
+            "northing": 2954700.721761
+          },
+          "catalogLatLon": {
+            "lat": 42.3552506104585,
+            "lon": -71.1001880980441
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_2RH49-B2H07-YUSV8_OBJ/CAM_2RH49-B2H07-YUSV8_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "next-house",
+      "name": "Next House",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W71"
+      ],
+      "located": true,
+      "x": -804.135,
+      "z": 496.659,
+      "boundsXZ": {
+        "minX": -861.891,
+        "maxX": -746.38,
+        "minZ": 458.985,
+        "maxZ": 534.334
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_WVRZB-RBCAO-FD4YE",
+          "sourceName": "Next House, Building W71",
+          "tile": "F4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -804.136,
+          "z": 496.659,
+          "boundsXZ": {
+            "minX": -861.891,
+            "maxX": -746.38,
+            "minZ": 458.985,
+            "maxZ": 534.334
+          },
+          "statePlaneFeet": {
+            "easting": 763787.577506,
+            "northing": 2954537.617265
+          },
+          "catalogLatLon": {
+            "lat": 42.3547111433717,
+            "lon": -71.1021914043942
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_WVRZB-RBCAO-FD4YE_OBJ/CAM_WVRZB-RBCAO-FD4YE_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "random",
+      "name": "Random Hall",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "NW61"
+      ],
+      "located": true,
+      "x": -515.284,
+      "z": -296.971,
+      "boundsXZ": {
+        "minX": -535.071,
+        "maxX": -495.496,
+        "minZ": -316.54,
+        "maxZ": -277.402
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_4JAHO-O9P8W-50JM7",
+          "sourceName": "Random Hall, Building NW61",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -515.284,
+          "z": -296.971,
+          "boundsXZ": {
+            "minX": -535.071,
+            "maxX": -495.496,
+            "minZ": -316.54,
+            "maxZ": -277.402
+          },
+          "statePlaneFeet": {
+            "easting": 764735.253431,
+            "northing": 2957141.386007
+          },
+          "catalogLatLon": {
+            "lat": 42.3618545870366,
+            "lon": -71.0982853833598
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_4JAHO-O9P8W-50JM7_OBJ/CAM_4JAHO-O9P8W-50JM7_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "simmons",
+      "name": "Simmons Hall",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W79"
+      ],
+      "located": true,
+      "x": -779.184,
+      "z": 230.435,
+      "boundsXZ": {
+        "minX": -832.483,
+        "maxX": -725.886,
+        "minZ": 190.561,
+        "maxZ": 270.309
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_Q9AGP-WQO46-VEO22",
+          "sourceName": "Simmons Hall, Building W79",
+          "tile": "F4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -779.185,
+          "z": 230.435,
+          "boundsXZ": {
+            "minX": -832.483,
+            "maxX": -725.886,
+            "minZ": 190.561,
+            "maxZ": 270.309
+          },
+          "statePlaneFeet": {
+            "easting": 763869.43725,
+            "northing": 2955411.056298
+          },
+          "catalogLatLon": {
+            "lat": 42.3571150898583,
+            "lon": -71.1015188276418
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_Q9AGP-WQO46-VEO22_OBJ/CAM_Q9AGP-WQO46-VEO22_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "east-campus",
+      "name": "East Campus",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "62",
+        "64"
+      ],
+      "located": true,
+      "x": 298.673,
+      "z": -130.567,
+      "boundsXZ": {
+        "minX": 251.274,
+        "maxX": 346.073,
+        "minZ": -186.092,
+        "maxZ": -75.042
+      },
+      "positionBasis": "combined horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [
+        "Two separate halls retained as components; marker is combined bounding-box midpoint."
+      ],
+      "components": [
+        {
+          "modelId": "CAM_GADXG-390X5-7ZFCQ",
+          "sourceName": "East Campus, Building 62",
+          "tile": "G4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 276.512,
+          "z": -120.552,
+          "boundsXZ": {
+            "minX": 251.274,
+            "maxX": 301.751,
+            "minZ": -166.062,
+            "maxZ": -75.042
+          },
+          "statePlaneFeet": {
+            "easting": 767333.004306,
+            "northing": 2956562.584507
+          },
+          "catalogLatLon": {
+            "lat": 42.360228915078,
+            "lon": -71.0886868308663
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            276.479,
+            -121.172
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_GADXG-390X5-7ZFCQ_OBJ/CAM_GADXG-390X5-7ZFCQ_OBJ.obj"
+        },
+        {
+          "modelId": "CAM_SW8DZ-52WAR-8W4BC",
+          "sourceName": "East Campus, Building 64",
+          "tile": "G4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 320.966,
+          "z": -140.78,
+          "boundsXZ": {
+            "minX": 295.859,
+            "maxX": 346.073,
+            "minZ": -186.092,
+            "maxZ": -95.469
+          },
+          "statePlaneFeet": {
+            "easting": 767478.849487,
+            "northing": 2956628.950517
+          },
+          "catalogLatLon": {
+            "lat": 42.360410519,
+            "lon": -71.0881453161563
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            320.991,
+            -141.559
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_SW8DZ-52WAR-8W4BC_OBJ/CAM_SW8DZ-52WAR-8W4BC_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "new-vassar",
+      "name": "New Vassar",
+      "category": "undergraduate-residence",
+      "buildingNumbers": [
+        "W46"
+      ],
+      "located": false,
+      "x": null,
+      "z": null,
+      "boundsXZ": null,
+      "positionBasis": null,
+      "inRuntimeManifest": false,
+      "detailStatus": "missing-source-location",
+      "notes": [
+        "No name or W46 record found in current MIT runtime manifest or the locally saved F4/G4 building catalogs. Location deliberately not estimated. Building number is an identification label, not a locally verified coordinate."
+      ],
+      "components": []
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "killian-court",
+      "name": "Killian Court",
+      "category": "landmark",
+      "located": true,
+      "x": 16.742,
+      "z": 55.459,
+      "positionBasis": "existing runtime named courtyard POI, not a measured courtyard centroid",
+      "source": "public/data/campuses/mit/manifest.json#/points/mit-killian",
+      "inRuntimeManifest": true,
+      "detailStatus": "partial-authored"
+    },
+    {
+      "id": "great-dome",
+      "name": "Great Dome / Building 10",
+      "category": "landmark",
+      "located": true,
+      "x": -1.849,
+      "z": -67.139,
+      "positionBasis": "authored dome axis from detail manifest, aligned to surveyed base",
+      "source": "public/data/killian/detail-manifest.json#/dome/center",
+      "inRuntimeManifest": true,
+      "detailStatus": "partial-authored"
+    },
+    {
+      "id": "kresge",
+      "name": "Kresge Auditorium",
+      "category": "landmark",
+      "buildingNumbers": [
+        "W16"
+      ],
+      "located": true,
+      "x": -248.76,
+      "z": 110.03,
+      "boundsXZ": {
+        "minX": -273.346,
+        "maxX": -224.173,
+        "minZ": 85.901,
+        "maxZ": 134.16
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_114M2-IZO66-D6XJO",
+          "sourceName": "Kresge Auditorium, Building W16",
+          "tile": "F4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -248.759,
+          "z": 110.03,
+          "boundsXZ": {
+            "minX": -273.346,
+            "maxX": -224.173,
+            "minZ": 85.901,
+            "maxZ": 134.16
+          },
+          "statePlaneFeet": {
+            "easting": 765609.675568,
+            "northing": 2955806.083724
+          },
+          "catalogLatLon": {
+            "lat": 42.3581422157569,
+            "lon": -71.0950609705808
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -247.511,
+            113.122
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_114M2-IZO66-D6XJO_OBJ/CAM_114M2-IZO66-D6XJO_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "chapel",
+      "name": "MIT Chapel",
+      "category": "landmark",
+      "buildingNumbers": [
+        "W15"
+      ],
+      "located": true,
+      "x": -166.787,
+      "z": 92.437,
+      "boundsXZ": {
+        "minX": -180.964,
+        "maxX": -152.61,
+        "minZ": 83.104,
+        "maxZ": 101.77
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_5PLQQ-BNVL1-I6KH9",
+          "sourceName": "Chapel, Building W15",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -166.787,
+          "z": 92.437,
+          "boundsXZ": {
+            "minX": -180.964,
+            "maxX": -152.61,
+            "minZ": 83.104,
+            "maxZ": 101.77
+          },
+          "statePlaneFeet": {
+            "easting": 765878.613513,
+            "northing": 2955863.803424
+          },
+          "catalogLatLon": {
+            "lat": 42.3583246365763,
+            "lon": -71.0941666081886
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -173.929,
+            92.509
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_5PLQQ-BNVL1-I6KH9_OBJ/CAM_5PLQQ-BNVL1-I6KH9_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "student-center",
+      "name": "Stratton Student Center",
+      "category": "landmark",
+      "buildingNumbers": [
+        "W20"
+      ],
+      "located": true,
+      "x": -224.005,
+      "z": 13.266,
+      "boundsXZ": {
+        "minX": -270.31,
+        "maxX": -177.699,
+        "minZ": -24.245,
+        "maxZ": 50.777
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_EASGT-022UA-D5ERC",
+          "sourceName": "Stratton Student Center, Building W20",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -224.005,
+          "z": 13.266,
+          "boundsXZ": {
+            "minX": -270.31,
+            "maxX": -177.699,
+            "minZ": -24.245,
+            "maxZ": 50.777
+          },
+          "statePlaneFeet": {
+            "easting": 765690.890956,
+            "northing": 2956123.552085
+          },
+          "catalogLatLon": {
+            "lat": 42.3590488603751,
+            "lon": -71.0947704781273
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -224.059,
+            12.302
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_EASGT-022UA-D5ERC_OBJ/CAM_EASGT-022UA-D5ERC_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "stata",
+      "name": "Stata Center",
+      "category": "landmark",
+      "buildingNumbers": [
+        "32"
+      ],
+      "located": true,
+      "x": 114.246,
+      "z": -275.197,
+      "boundsXZ": {
+        "minX": 48.195,
+        "maxX": 180.297,
+        "minZ": -330.445,
+        "maxZ": -219.95
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_EXP00-RH2O7-V8A8B",
+          "sourceName": "Ray and Maria Stata Center, Building 32",
+          "tile": "G4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 114.246,
+          "z": -275.198,
+          "boundsXZ": {
+            "minX": 48.195,
+            "maxX": 180.297,
+            "minZ": -330.445,
+            "maxZ": -219.95
+          },
+          "statePlaneFeet": {
+            "easting": 766800.635128,
+            "northing": 2957069.952588
+          },
+          "catalogLatLon": {
+            "lat": 42.3616260048848,
+            "lon": -71.0905486824843
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            122.358,
+            -275.616
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_EXP00-RH2O7-V8A8B_OBJ/CAM_EXP00-RH2O7-V8A8B_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Building",
+      "category": "landmark",
+      "buildingNumbers": [
+        "54"
+      ],
+      "located": true,
+      "x": 223.438,
+      "z": -131.484,
+      "boundsXZ": {
+        "minX": 205.001,
+        "maxX": 241.875,
+        "minZ": -145.012,
+        "maxZ": -117.957
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_FY5H1-TFL24-133MM",
+          "sourceName": "Green Building, Building 54",
+          "tile": "G4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 223.438,
+          "z": -131.484,
+          "boundsXZ": {
+            "minX": 205.001,
+            "maxX": 241.875,
+            "minZ": -145.012,
+            "maxZ": -117.957
+          },
+          "statePlaneFeet": {
+            "easting": 767158.876045,
+            "northing": 2956598.452382
+          },
+          "catalogLatLon": {
+            "lat": 42.3603332173869,
+            "lon": -71.0893312638333
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            223.336,
+            -132.501
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_FY5H1-TFL24-133MM_OBJ/CAM_FY5H1-TFL24-133MM_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "media-lab-e14",
+      "name": "Media Lab / E14",
+      "category": "landmark",
+      "buildingNumbers": [
+        "E14"
+      ],
+      "located": true,
+      "x": 387.289,
+      "z": -146.977,
+      "boundsXZ": {
+        "minX": 352.624,
+        "maxX": 421.954,
+        "minZ": -177.676,
+        "maxZ": -116.278
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_4S48W-E43O5-WTES7",
+          "sourceName": "E14, Building E14",
+          "tile": "G4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 387.289,
+          "z": -146.977,
+          "boundsXZ": {
+            "minX": 352.624,
+            "maxX": 421.954,
+            "minZ": -177.676,
+            "maxZ": -116.278
+          },
+          "statePlaneFeet": {
+            "easting": 767696.444688,
+            "northing": 2956649.281348
+          },
+          "catalogLatLon": {
+            "lat": 42.360473543706,
+            "lon": -71.0873481784386
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            386.623,
+            -148.876
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_4S48W-E43O5-WTES7_OBJ/CAM_4S48W-E43O5-WTES7_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "wiesner-e15",
+      "name": "Wiesner Building / E15",
+      "category": "landmark",
+      "buildingNumbers": [
+        "E15"
+      ],
+      "located": true,
+      "x": 362.163,
+      "z": -189.334,
+      "boundsXZ": {
+        "minX": 329.24,
+        "maxX": 395.086,
+        "minZ": -222.303,
+        "maxZ": -156.365
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_9XSG1-KVEZK-QZR0F",
+          "sourceName": "Wiesner Building, Building E15",
+          "tile": "G4",
+          "modelDate": "2010-04-14",
+          "modelSource": "2010 Aerial Imagery by Infotech",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 362.163,
+          "z": -189.334,
+          "boundsXZ": {
+            "minX": 329.24,
+            "maxX": 395.086,
+            "minZ": -222.303,
+            "maxZ": -156.365
+          },
+          "statePlaneFeet": {
+            "easting": 767614.010469,
+            "northing": 2956788.246294
+          },
+          "catalogLatLon": {
+            "lat": 42.3608475041437,
+            "lon": -71.0876433207009
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            362.109,
+            -190.297
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_9XSG1-KVEZK-QZR0F_OBJ/CAM_9XSG1-KVEZK-QZR0F_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "sloan-e62",
+      "name": "MIT Sloan / E62",
+      "category": "landmark",
+      "buildingNumbers": [
+        "E62"
+      ],
+      "located": true,
+      "x": 763.008,
+      "z": -250.552,
+      "boundsXZ": {
+        "minX": 718.461,
+        "maxX": 807.555,
+        "minZ": -310.012,
+        "maxZ": -191.092
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [
+        "Uses the 2018 building model; the separate older E62 catalog record CAM_97EPW-2CGCO-9N7YG is not merged into this marker."
+      ],
+      "components": [
+        {
+          "modelId": "CAM_V32ZE-P1JPL-XCQE7",
+          "sourceName": "MIT Sloan, Building E62",
+          "tile": "G4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": 763.008,
+          "z": -250.552,
+          "boundsXZ": {
+            "minX": 718.461,
+            "maxX": 807.555,
+            "minZ": -310.012,
+            "maxZ": -191.092
+          },
+          "statePlaneFeet": {
+            "easting": 768929.115286,
+            "northing": 2956989.093989
+          },
+          "catalogLatLon": {
+            "lat": 42.3612101377858,
+            "lon": -71.0827749782169
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/G4/Camb3D_G-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_V32ZE-P1JPL-XCQE7_OBJ/CAM_V32ZE-P1JPL-XCQE7_OBJ.obj"
+        }
+      ]
+    }
+  ],
+  "athletics": [
+    {
+      "id": "dupont-center",
+      "name": "Du Pont Athletic Center",
+      "category": "athletics-background",
+      "buildingNumbers": [
+        "W32"
+      ],
+      "located": true,
+      "x": -254.211,
+      "z": -21.773,
+      "boundsXZ": {
+        "minX": -297.864,
+        "maxX": -210.558,
+        "minZ": -48.317,
+        "maxZ": 4.772
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_D347W-3CQTN-UI9CV",
+          "sourceName": "Du Pont Athletic Center, Building W32",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -254.211,
+          "z": -21.772,
+          "boundsXZ": {
+            "minX": -297.864,
+            "maxX": -210.558,
+            "minZ": -48.317,
+            "maxZ": 4.772
+          },
+          "statePlaneFeet": {
+            "easting": 765591.7883,
+            "northing": 2956238.506088
+          },
+          "catalogLatLon": {
+            "lat": 42.3593813948027,
+            "lon": -71.0951324053734
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -254.05,
+            -24.492
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_D347W-3CQTN-UI9CV_OBJ/CAM_D347W-3CQTN-UI9CV_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "dupont-gym",
+      "name": "Du Pont Athletic Gymnasium",
+      "category": "athletics-background",
+      "buildingNumbers": [
+        "W31"
+      ],
+      "located": true,
+      "x": -257.931,
+      "z": -54.17,
+      "boundsXZ": {
+        "minX": -300.628,
+        "maxX": -215.234,
+        "minZ": -86.787,
+        "maxZ": -21.553
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_0RDFS-JN1CR-6T403",
+          "sourceName": "Du Pont Athletic Gymnasium, Building W31",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -257.931,
+          "z": -54.17,
+          "boundsXZ": {
+            "minX": -300.628,
+            "maxX": -215.234,
+            "minZ": -86.787,
+            "maxZ": -21.553
+          },
+          "statePlaneFeet": {
+            "easting": 765579.585568,
+            "northing": 2956344.795901
+          },
+          "catalogLatLon": {
+            "lat": 42.3596473405754,
+            "lon": -71.0951670038229
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -257.04,
+            -54.019
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_0RDFS-JN1CR-6T403_OBJ/CAM_0RDFS-JN1CR-6T403_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "zesiger",
+      "name": "Zesiger Sports and Fitness Center",
+      "category": "athletics-background",
+      "buildingNumbers": [
+        "W35"
+      ],
+      "located": true,
+      "x": -304.605,
+      "z": 48.381,
+      "boundsXZ": {
+        "minX": -352.224,
+        "maxX": -256.985,
+        "minZ": 1.448,
+        "maxZ": 95.314
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_I41SU-7C9TC-AD22Z",
+          "sourceName": "Zesiger Sports and Fitness Center, Building W35",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -304.604,
+          "z": 48.381,
+          "boundsXZ": {
+            "minX": -352.224,
+            "maxX": -256.985,
+            "minZ": 1.448,
+            "maxZ": 95.314
+          },
+          "statePlaneFeet": {
+            "easting": 765426.456609,
+            "northing": 2956008.343818
+          },
+          "catalogLatLon": {
+            "lat": 42.3587241500919,
+            "lon": -71.0957520194829
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -304.747,
+            48.753
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_I41SU-7C9TC-AD22Z_OBJ/CAM_I41SU-7C9TC-AD22Z_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "johnson",
+      "name": "Johnson Athletics Center",
+      "category": "athletics-background",
+      "buildingNumbers": [
+        "W34"
+      ],
+      "located": true,
+      "x": -369.144,
+      "z": 58.142,
+      "boundsXZ": {
+        "minX": -412.712,
+        "maxX": -325.577,
+        "minZ": -1.238,
+        "maxZ": 117.521
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": true,
+      "detailStatus": "base-survey-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_Z6S02-39YFE-N85U4",
+          "sourceName": "Johnson Athletics Center, Building W34",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -369.144,
+          "z": 58.141,
+          "boundsXZ": {
+            "minX": -412.712,
+            "maxX": -325.577,
+            "minZ": -1.238,
+            "maxZ": 117.521
+          },
+          "statePlaneFeet": {
+            "easting": 765214.712775,
+            "northing": 2955976.322064
+          },
+          "catalogLatLon": {
+            "lat": 42.3586079961403,
+            "lon": -71.0965366806324
+          },
+          "inRuntimeManifest": true,
+          "runtimeCatalogPositionXZ": [
+            -369.327,
+            61.961
+          ],
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_Z6S02-39YFE-N85U4_OBJ/CAM_Z6S02-39YFE-N85U4_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "carr-tennis",
+      "name": "Carr Indoor Tennis Facility",
+      "category": "athletics-background",
+      "buildingNumbers": [
+        "W53"
+      ],
+      "located": true,
+      "x": -473.105,
+      "z": 249.74,
+      "boundsXZ": {
+        "minX": -508.935,
+        "maxX": -437.275,
+        "minZ": 220.952,
+        "maxZ": 278.529
+      },
+      "positionBasis": "horizontal OBJ bounding-box midpoint",
+      "inRuntimeManifest": false,
+      "detailStatus": "local-source-only",
+      "notes": [],
+      "components": [
+        {
+          "modelId": "CAM_PX8A2-D3DF6-8A1CW",
+          "sourceName": "Carr Indoor Tennis Facility, Building W53",
+          "tile": "F4",
+          "modelDate": "2018-04-12",
+          "modelSource": "2018 Aerial Imagery by WSP",
+          "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+          "x": -473.105,
+          "z": 249.741,
+          "boundsXZ": {
+            "minX": -508.935,
+            "maxX": -437.275,
+            "minZ": 220.952,
+            "maxZ": 278.529
+          },
+          "statePlaneFeet": {
+            "easting": 764873.633896,
+            "northing": 2955347.717187
+          },
+          "catalogLatLon": {
+            "lat": 42.3569302858375,
+            "lon": -71.0978080422308
+          },
+          "inRuntimeManifest": false,
+          "runtimeCatalogPositionXZ": null,
+          "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+          "sourceEntry": "models/CAM_PX8A2-D3DF6-8A1CW_OBJ/CAM_PX8A2-D3DF6-8A1CW_OBJ.obj"
+        }
+      ]
+    },
+    {
+      "id": "outdoor-playing-fields",
+      "name": "Outdoor playing fields / track",
+      "category": "athletics-background",
+      "located": false,
+      "x": null,
+      "z": null,
+      "boundsXZ": null,
+      "positionBasis": null,
+      "notes": [
+        "Building catalogs provide nearby athletics-building anchors, not a verified outdoor field centroid or perimeter. Use the groundplan/orthophoto in a later design pass; no field point estimated here."
+      ],
+      "components": []
+    }
+  ],
+  "caveats": [
+    "Historical source geometry and source metadata are preserved; this file does not claim current facade or redevelopment accuracy.",
+    "New Vassar and outdoor field coordinates intentionally remain null.",
+    "Center anchors must not be used as safe player spawn or building entrance positions."
+  ]
+}

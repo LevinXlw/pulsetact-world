@@ -1,0 +1,48 @@
+{
+  "vertices": 308,
+  "faces": 572,
+  "bounds": {
+    "min": [
+      -155.49513085181295,
+      -210.91860016182488,
+      3.992887985775972e-05
+    ],
+    "max": [
+      -73.68873085181265,
+      -126.77150003482585,
+      32.16523982727965
+    ]
+  },
+  "source": {
+    "modelId": "CAM_5GU8J-DD9KS-40P6S",
+    "sourceName": "Fariborz Maseeh Hall, Building W1",
+    "tile": "F4",
+    "modelDate": "2010-04-14",
+    "modelSource": "2010 Aerial Imagery by Infotech",
+    "positionBasis": "horizontal bounding-box midpoint of original OBJ vertices",
+    "x": -114.592,
+    "z": 168.845,
+    "boundsXZ": {
+      "minX": -155.495,
+      "maxX": -73.689,
+      "minZ": 126.772,
+      "maxZ": 210.919
+    },
+    "statePlaneFeet": {
+      "easting": 766049.855953,
+      "northing": 2955613.121675
+    },
+    "catalogLatLon": {
+      "lat": 42.3576325503945,
+      "lon": -71.0937004420749
+    },
+    "inRuntimeManifest": true,
+    "runtimeCatalogPositionXZ": [
+      -135.16,
+      169.2
+    ],
+    "sourceArchive": "assets-source/cambridge-gis/mit/F4/Camb3D_F-4_2023_Bulding_Models_OBJ.zip",
+    "sourceEntry": "models/CAM_5GU8J-DD9KS-40P6S_OBJ/CAM_5GU8J-DD9KS-40P6S_OBJ.obj"
+  },
+  "patches": 235
+}

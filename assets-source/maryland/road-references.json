@@ -1,0 +1,30 @@
+{
+  "retrieved": "2026-10-15",
+  "sources": [
+    {
+      "url": "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/0",
+      "title": "UMD Roads",
+      "credit": "Maryland iMAP, University of Maryland Facilities Management",
+      "geometry": "Public pavement polygons, including streets, parking access, service areas, traffic circles and crosswalks."
+    },
+    {
+      "url": "https://mdgeodata.md.gov/imap/rest/services/Structure/MD_CampusFacilities/FeatureServer/1",
+      "title": "UMD Parking Lots",
+      "credit": "Maryland iMAP, University of Maryland College Park Facilities Planning, 2013",
+      "geometry": "Paved parking surfaces from Facilities Planning and Department of Transportation Services."
+    }
+  ],
+  "adaptation": "Same east/south frame and expanded centroid spacing as the full-campus layout. Retains source road topology; clipped to the playable bounds, legacy Mall landscaping, modeled building clearances and authored sports/open spaces. Ground markings and current construction closures are not represented.",
+  "statistics": {
+    "sourceFeatures": 1094,
+    "inCampusFeatures": 870,
+    "sourceTriangles": 12347,
+    "fragments": 10511,
+    "areaByKind": {
+      "crosswalk": 9591,
+      "road": 233067,
+      "service": 35737,
+      "parking": 415276
+    }
+  }
+}

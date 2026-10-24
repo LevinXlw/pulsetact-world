@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-17",
+  "scope": "Boston University Charles River main campus; exterior quality iteration",
+  "buildingEvidence": ["district-realism-2026.json", "landmark-realism-2026.json", "street-realism-2026.json"],
+  "renderChanges": [
+    "BU masonry uses per-piece facade orientation and foundation height after spatial batching.",
+    "BU glass uses a procedural view-dependent sky tint, not a captured environment or ray-traced reflection.",
+    "Urban tree crowns are interlocking opaque volumes with silhouette leaves and spatial culling; positions are unchanged.",
+    "The playable world and inspection camera share Boston daylight parameters.",
+    "Terrain, actual surfaces and painted markings have an explicit depth hierarchy, retained by the mobile bake."
+  ],
+  "mobile": {
+    "bytes": 22469712,
+    "trianglesIncludingCollision": 568206,
+    "visibleMeshes": 164,
+    "textures": 0,
+    "brownstonesWithAuthoredDetail": 30,
+    "streetTreeBudget": 180,
+    "runtime": "Offline welded geometry; no desktop procedural constructors are loaded on mobile. Default low quality and optional HD remain separate."
+  },
+  "inspection": {
+    "before": "output/bu-quality-20261017/before",
+    "after": "output/bu-full-campus/art",
+    "views": 13,
+    "desktopRoutes": "output/bu-full-campus/geometry-report.json",
+    "mobileRoutes": "output/bu-full-campus/mobile-geometry-report.json",
+    "finalMobileArenaRoutes": "output/bu-full-campus/mobile-geometry-report-selected.json"
+  },
+  "limits": [
+    "Street-level facade families, tree forms and garden details are authored approximations, not per-address survey models.",
+    "Terrain remains the existing interpolated height field; this pass adds no new elevation survey.",
+    "Mobile uses selected landmark detail and simplified context geometry, rather than desktop visual parity.",
+    "Automated touch Chromium regression does not replace a physical iPhone Safari test."
+  ],
+  "deploymentVersion": "423fe588-f7e1-4e12-b58e-b15460ef256b"
+}

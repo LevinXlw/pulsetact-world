@@ -1,0 +1,642 @@
+{
+  "checkedAt": "2026-10-05T03:36:31.883Z",
+  "base": "http://127.0.0.1:5173",
+  "checks": [
+    {
+      "name": "Two ambient people animate independently",
+      "passed": true,
+      "before": [
+        {
+          "person": "nathan",
+          "ready": true,
+          "clip": "Walk",
+          "time": 1.3272999999523156,
+          "paused": false,
+          "reduced": false,
+          "poseOnly": false,
+          "position": [
+            50.520673015987136,
+            3.9113684754016163,
+            51.69850410182876
+          ]
+        },
+        {
+          "person": "sophia",
+          "ready": true,
+          "clip": "Idle",
+          "time": 1.3272999999523156,
+          "paused": false,
+          "reduced": false,
+          "poseOnly": false,
+          "position": [
+            55.800016549999995,
+            3.9097624418080272,
+            55.760306209999996
+          ]
+        }
+      ],
+      "after": [
+        {
+          "person": "nathan",
+          "ready": true,
+          "clip": "Walk",
+          "time": 0.0855000476837173,
+          "paused": false,
+          "reduced": false,
+          "poseOnly": false,
+          "position": [
+            51.75074823051638,
+            3.907960774624655,
+            51.13092373205079
+          ]
+        },
+        {
+          "person": "sophia",
+          "ready": true,
+          "clip": "Idle",
+          "time": 2.3855000000000013,
+          "paused": false,
+          "reduced": false,
+          "poseOnly": false,
+          "position": [
+            55.800016549999995,
+            3.9097624418080272,
+            55.760306209999996
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Opening settings pauses both animation and movement; closing resumes both",
+      "passed": true
+    },
+    {
+      "name": "Low quality keeps both realistic characters",
+      "passed": true
+    },
+    {
+      "name": "People close-up camera opens with both models",
+      "passed": true
+    },
+    {
+      "name": "E opens the first NPC dialogue and a reply completes the interaction",
+      "passed": true,
+      "dialogue": "与 Alex 聊一聊"
+    },
+    {
+      "name": "Player movement selects the Walk clip",
+      "passed": true,
+      "actor": {
+        "person": "nathan",
+        "ready": true,
+        "clip": "Walk",
+        "time": 0.5360257302005333,
+        "paused": false,
+        "reduced": false,
+        "poseOnly": false,
+        "position": [
+          16.888406011319937,
+          4.428285388166955,
+          56.33743606791959
+        ]
+      }
+    },
+    {
+      "name": "Releasing movement returns the player to Idle",
+      "passed": true
+    },
+    {
+      "name": "Mode changes reuse the two cached local assets",
+      "passed": true,
+      "modelRequests": [
+        "http://127.0.0.1:5173/assets/people/nathan.glb",
+        "http://127.0.0.1:5173/assets/people/sophia.glb"
+      ]
+    },
+    {
+      "name": "Reduced motion holds grounded standing and idle poses",
+      "passed": true
+    },
+    {
+      "name": "A missing person asset preserves the 3D scene and the other person",
+      "passed": true,
+      "blocked": [
+        "http://127.0.0.1:5173/assets/people/nathan.glb"
+      ]
+    }
+  ],
+  "captures": [
+    {
+      "key": "01-default",
+      "label": "Default environment stroll",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 1.3272999999523156,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              50.520673015987136,
+              3.9113684754016163,
+              51.69850410182876
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 1.3272999999523156,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          58.990905,
+          5.591477772161989,
+          65.301177
+        ],
+        "cameraGroundHeight": 3.9414777721619885,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 176,
+        "triangles": 2484136
+      }
+    },
+    {
+      "key": "02-low-quality",
+      "label": "Both people in low quality",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 2.0982000474929814,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              54.090355472943955,
+              3.8968602818285376,
+              50.051383937973675
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 4.398199999809265,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "low",
+        "ambientOcclusion": false,
+        "presentation": true,
+        "cameraPosition": [
+          58.990905,
+          5.591477772161989,
+          65.301177
+        ],
+        "cameraGroundHeight": 3.9414777721619885,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 56,
+        "triangles": 812160
+      }
+    },
+    {
+      "key": "03-people-close",
+      "label": "People close-up",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Walk",
+            "time": 0.8894000952243809,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.35879062139652,
+              3.893453300132535,
+              49.466103556664955
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 5.489399999856946,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          60.88513124349854,
+          5.593470664024827,
+          59.13813619560016
+        ],
+        "cameraGroundHeight": 3.9257088940224776,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.7862976562140751,
+          -0.08289664630727607,
+          -0.6122614979428795
+        ],
+        "mode": "orbit",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 168,
+        "triangles": 2393224
+      }
+    },
+    {
+      "key": "04-story",
+      "label": "Player and story NPCs",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Idle",
+            "time": 0.7867000000476838,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              16.742,
+              4.428222797599801,
+              55.459
+            ]
+          },
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Idle",
+            "time": 0.7867000000476838,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              20.742,
+              4.403651360064316,
+              57.459
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 1.4867000000476829,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              4.878,
+              4.227375751662237,
+              -22.547
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": false,
+        "cameraPosition": [
+          17.742,
+          7.928222797599802,
+          61.459
+        ],
+        "cameraGroundHeight": 4.40207675450921,
+        "fov": 58,
+        "position": [
+          16.742,
+          4.428222797599801,
+          55.459
+        ],
+        "cameraForward": [
+          -0.15500150642821092,
+          -0.33325323882065366,
+          -0.9300090385692655
+        ],
+        "mode": "walk",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 184,
+        "triangles": 2535720
+      }
+    },
+    {
+      "key": "06-reduced-motion",
+      "label": "Reduced motion uses a standing pose",
+      "scene": {
+        "people": [
+          {
+            "person": "nathan",
+            "ready": true,
+            "clip": "Idle",
+            "time": 0,
+            "paused": false,
+            "reduced": true,
+            "poseOnly": false,
+            "position": [
+              48.69729748999999,
+              3.915578636611201,
+              52.53984464999999
+            ]
+          },
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 0,
+            "paused": false,
+            "reduced": true,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          58.990905,
+          5.591477772161989,
+          65.301177
+        ],
+        "cameraGroundHeight": 3.9414777721619885,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 176,
+        "triangles": 2484136
+      }
+    },
+    {
+      "key": "07-person-load-failure",
+      "label": "One missing person leaves the 3D scene usable",
+      "scene": {
+        "people": [
+          {
+            "person": "sophia",
+            "ready": true,
+            "clip": "Idle",
+            "time": 1.5669000000953663,
+            "paused": false,
+            "reduced": false,
+            "poseOnly": false,
+            "position": [
+              55.800016549999995,
+              3.9097624418080272,
+              55.760306209999996
+            ]
+          }
+        ],
+        "campus": "mit",
+        "vegetationStatus": "ready",
+        "quality": "standard",
+        "ambientOcclusion": true,
+        "presentation": true,
+        "cameraPosition": [
+          58.990905,
+          5.591477772161989,
+          65.301177
+        ],
+        "cameraGroundHeight": 3.9414777721619885,
+        "fov": 48,
+        "position": [
+          58.990905,
+          3.9414777721619885,
+          65.301177
+        ],
+        "cameraForward": [
+          -0.41745643615789263,
+          0.08489768280241602,
+          -0.9047223371649072
+        ],
+        "mode": "stroll",
+        "openingTrianglesRemoved": 14,
+        "surfaceTriangles": {
+          "walls": 22682,
+          "roofs": 7156
+        },
+        "calls": 173,
+        "triangles": 2419618
+      }
+    }
+  ],
+  "modelRequests": [
+    "http://127.0.0.1:5173/assets/people/nathan.glb",
+    "http://127.0.0.1:5173/assets/people/sophia.glb"
+  ],
+  "errors": [],
+  "reducedResult": {
+    "people": [
+      {
+        "person": "nathan",
+        "ready": true,
+        "clip": "Idle",
+        "time": 0,
+        "paused": false,
+        "reduced": true,
+        "poseOnly": false,
+        "position": [
+          48.69729748999999,
+          3.915578636611201,
+          52.53984464999999
+        ]
+      },
+      {
+        "person": "sophia",
+        "ready": true,
+        "clip": "Idle",
+        "time": 0,
+        "paused": false,
+        "reduced": true,
+        "poseOnly": false,
+        "position": [
+          55.800016549999995,
+          3.9097624418080272,
+          55.760306209999996
+        ]
+      }
+    ],
+    "campus": "mit",
+    "vegetationStatus": "ready",
+    "quality": "standard",
+    "ambientOcclusion": true,
+    "presentation": true,
+    "cameraPosition": [
+      58.990905,
+      5.591477772161989,
+      65.301177
+    ],
+    "cameraGroundHeight": 3.9414777721619885,
+    "fov": 48,
+    "position": [
+      58.990905,
+      3.9414777721619885,
+      65.301177
+    ],
+    "cameraForward": [
+      -0.41745643615789263,
+      0.08489768280241602,
+      -0.9047223371649072
+    ],
+    "mode": "stroll",
+    "openingTrianglesRemoved": 14,
+    "surfaceTriangles": {
+      "walls": 22682,
+      "roofs": 7156
+    },
+    "calls": 176,
+    "triangles": 2484136
+  },
+  "assetFailureResult": {
+    "people": [
+      {
+        "person": "sophia",
+        "ready": true,
+        "clip": "Idle",
+        "time": 0.0052999999523162845,
+        "paused": false,
+        "reduced": false,
+        "poseOnly": false,
+        "position": [
+          55.800016549999995,
+          3.9097624418080272,
+          55.760306209999996
+        ]
+      }
+    ],
+    "campus": "mit",
+    "vegetationStatus": "ready",
+    "quality": "standard",
+    "ambientOcclusion": true,
+    "presentation": true,
+    "cameraPosition": [
+      58.990905,
+      5.591477772161989,
+      65.301177
+    ],
+    "cameraGroundHeight": 3.9414777721619885,
+    "fov": 48,
+    "position": [
+      58.990905,
+      3.9414777721619885,
+      65.301177
+    ],
+    "cameraForward": [
+      -0.41745643615789263,
+      0.08489768280241602,
+      -0.9047223371649072
+    ],
+    "mode": "stroll",
+    "openingTrianglesRemoved": 14,
+    "surfaceTriangles": {
+      "walls": 22682,
+      "roofs": 7156
+    },
+    "calls": 173,
+    "triangles": 2419618
+  },
+  "note": "Isolated headless Chrome checks of the development scene. Screenshots require human review; model grounding and conversion metadata are checked separately."
+}

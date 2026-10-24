@@ -1,0 +1,1126 @@
+{
+  "samples": [
+    {
+      "id": "bay-state-192",
+      "bytes": 4877684,
+      "triangles": 25805,
+      "meshes": 10,
+      "materials": 8,
+      "images": [
+        {
+          "name": "metal-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 4515
+        },
+        {
+          "name": "metal-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 227366
+        },
+        {
+          "name": "metal-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 112634
+        },
+        {
+          "name": "stone-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 310577
+        },
+        {
+          "name": "stone-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 240297
+        },
+        {
+          "name": "stone-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 129050
+        },
+        {
+          "name": "brick-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 408098
+        },
+        {
+          "name": "brick-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 257603
+        },
+        {
+          "name": "brick-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 119454
+        },
+        {
+          "name": "concrete-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 86273
+        },
+        {
+          "name": "concrete-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 227366
+        },
+        {
+          "name": "concrete-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 121849
+        }
+      ]
+    },
+    {
+      "id": "cds-ground",
+      "bytes": 1581856,
+      "triangles": 5964,
+      "meshes": 9,
+      "materials": 7,
+      "images": [
+        {
+          "name": "metal-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 4515
+        },
+        {
+          "name": "metal-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 227366
+        },
+        {
+          "name": "metal-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 112634
+        },
+        {
+          "name": "stone-normal",
+          "width": 512,
+          "height": 512,
+          "bytes": 310577
+        },
+        {
+          "name": "stone-basecolor",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 240297
+        },
+        {
+          "name": "stone-orm",
+          "width": 512,
+          "height": 512,
+          "bytes": 129050
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "bay-state-192: valid GLB header",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: JSON chunk",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: complete binary chunk",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined frame orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: BU192 refined stone orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_4 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_7 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_0 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_3 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_2 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_6 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_1 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 unit normals",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: Mesh_5 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG metal-normal",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG metal-basecolor",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG metal-orm",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG stone-normal",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG stone-basecolor",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG stone-orm",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG brick-normal",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG brick-basecolor",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG brick-orm",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG concrete-normal",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG concrete-basecolor",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: embedded PNG concrete-orm",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: frame \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: frame \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: frame \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: stone \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: stone \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: stone \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brick \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brick \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brick \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brickDark \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brickDark \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brickDark \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brownstone \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brownstone \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: brownstone \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR glass roughness",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR no fictional interior transmission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: glass \u00b7 Blender PBR sample-specific linear glass tint",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: roof \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: roof \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: roof \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: trim \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: trim \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "bay-state-192: trim \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: valid GLB header",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: JSON chunk",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: complete binary chunk",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 metal construction orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: CDS pass2 \u00b7 column contact orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_4.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_3.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_2.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_5.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_0.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_1.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 PBR attributes",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 triangle indices",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 aligned attribute counts",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 finite geometry and UV",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 unit normals",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: Mesh_6.001 orthogonal tangent frames",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG metal-normal",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG metal-basecolor",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG metal-orm",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG stone-normal",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG stone-basecolor",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: embedded PNG stone-orm",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: PNG signature",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bounded texture resolution",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: frame.001 \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: frame.001 \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: frame.001 \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: trim.001 \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: trim.001 \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: trim.001 \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bronze \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bronze \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: bronze \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR glass roughness",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR no fictional interior transmission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glass.001 \u00b7 Blender PBR sample-specific linear glass tint",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR glass roughness",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR no fictional interior transmission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR dielectric glass",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: glassShade \u00b7 Blender PBR sample-specific linear glass tint",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: stone.001 \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: stone.001 \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: stone.001 \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: paving \u00b7 Blender PBR opaque facade",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: paving \u00b7 Blender PBR no emission",
+      "passed": true
+    },
+    {
+      "name": "cds-ground: paving \u00b7 Blender PBR baked PBR channels",
+      "passed": true
+    },
+    {
+      "name": "Both review samples together stay below 10 MiB",
+      "passed": true
+    }
+  ],
+  "totalBytes": 6459540,
+  "passed": true
+}

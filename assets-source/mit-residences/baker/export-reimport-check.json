@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "meshes": 23,
+  "collisionMeshes": 1,
+  "groundMeshes": 3,
+  "boundsBlender": {
+    "min": [
+      -351.1818542480469,
+      -314.2944641113281,
+      2.671339988708496
+    ],
+    "max": [
+      -250.02232360839844,
+      -234.64999389648438,
+      26.514739990234375
+    ]
+  },
+  "evidence": "exported-north-court.png",
+  "kind": "Offline render of delivered GLB reimported into Blender; measured terrain is inspection-only context"
+}

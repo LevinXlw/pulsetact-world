@@ -1,0 +1,39 @@
+{
+  "updatedAt": "2026-10-17",
+  "scope": "Shared replacement for existing Charles River, Maryland ODK fountain, and standalone MIT water materials.",
+  "implementation": {
+    "waves": "Analytic multi-scale noise gradients with world-space drift and distance filtering; no repeating bitmap, diagonal stripe field, or vertex displacement.",
+    "reflection": "Angle-dependent Fresnel sky response. Desktop standard Charles additionally renders the scene into one 768 x 384 half-float planar reflection, capped at 12 Hz. Desktop low and both mobile tiers allocate no planar reflection target.",
+    "shore": "A 256 x 128 single-channel distance field samples the existing open bank polylines. It supplies a restrained near-bank colour and calmer normals, not bathymetric depth.",
+    "mobile": "Replaces only the named Charles River water material in the offline GLB. Preserves its sparse geometry, underlying buffers and non-collision flags. The shader shares the live world clock and survives low / HD / low switches.",
+    "otherWater": "Maryland's horizontal pool surfaces share the shader; vertical waterfall faces keep their original normals. Standalone MIT retains the name water so its collision exclusion remains valid. The hidden older MIT water in World stays hidden.",
+    "ownership": "Campus owns shore field and materials. Reflection owner releases its target on low quality and dispose. Green Line remains runtime-only; the mobile campus rebake shifts platform slabs to the corrected vehicle clearance."
+  },
+  "limitations": [
+    "No swimming, boat physics, screen-space refraction, surveyed underwater terrain, or simulated fluid dynamics.",
+    "Mobile uses analytic sky reflection rather than reflected campus geometry.",
+    "Existing mobile Maryland/UPenn/Arizona bakes have no pool meshes; this change does not add new water bodies."
+  ],
+  "validation": {
+    "waterBrowserReport": "output/water-green-line/water-report.json",
+    "greenLineBrowserReport": "output/bu-green-line/report.json",
+    "mobileBudgetReport": "output/mobile-budget/production/report.json",
+    "note": "Reports are generated from the actual loaders/renderers; touch Chromium memory checks do not establish physical iPhone stability.",
+    "results": {
+      "unitTests": "50 files / 256 tests passed with 1–2 workers; the initial high-concurrency run hit an existing 5-second route-test timeout, which passed independently and in the bounded full rerun.",
+      "water": "Initial full desktop Boston / mobile low-HD-low / desktop UMD run: 68 checks, 16 captures, no errors. After increasing the desktop target to 768 x 384 and adding a 5-tap texel-sized filter: targeted desktop rerun 17 checks, 4 captures, no errors. The latter report replaces the initial report; original mobile and UMD image files remain.",
+      "legacyMit": "Three tiers standard / low / standard-again passed through the actual /real/mit page, with shared animated water and no shader error; output/water-green-line/legacy-mit/report.json.",
+      "greenLine": "27 checks / 8 desktop and mobile views passed; Central camera moved out of the adjacent building before visual acceptance.",
+      "productionMobile": "All 29 BU destinations, directional movement, HD opt-in, reload and map checks passed; no errors.",
+      "productionBudget": {"peakJsHeapMiB":70.96,"peakArrayBufferMiB":58.42,"status":"passed"},
+      "productionDeployment": "8 checks passed: authentication, desktop rendering, alternate avatar, campus travel, persistence, logout and mobile travel; no network failures.",
+      "mobileBostonBytes":26148160
+    }
+  },
+  "release": {
+    "url": "https://world.pulsetact.ai/",
+    "version": "01f334c3-12c4-4d7f-9720-e11edd52c47b",
+    "healthConfirmed": true,
+    "date": "2026-10-17"
+  }
+}

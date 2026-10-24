@@ -1,0 +1,60 @@
+{
+  "title": "University of Maryland, College Park — McKeldin Mall outdoor study",
+  "reviewed": "2026-10-15",
+  "authorship": "Original procedural geometry; reference images are inspected only and are not shipped as textures or copied meshes.",
+  "scope": "A playable stylized approximation of the McKeldin Mall core. Not a surveyed architectural reconstruction and not the complete College Park campus. Interiors, active water physics, event schedules and access control are not represented.",
+  "coordinateFrame": {
+    "units": "metres",
+    "x": "east",
+    "z": "south",
+    "y": "up",
+    "datum": 0,
+    "origin": "authored centre of the McKeldin Mall campus composition",
+    "simplifications": "The roughly east–west campus axis is aligned with local x. Ground slopes are flattened; library and administration terraces retain low steps. Side-building spacing, facade dimensions, roof heights and tree positions are approximate, composed from the official campus plan and photos. They are not geodetic coordinates."
+  },
+  "landmarks": [
+    {
+      "name": "McKeldin Library",
+      "modelCentre": [-160, 0],
+      "front": "east, towards McKeldin Mall",
+      "features": ["red brick Georgian facade", "pale stone basement with three arched doors", "six-column portico", "white triangular pediment with circular window", "three visible facade storeys", "taller rear library stacks", "Testudo sculpture as an original simplified turtle form"],
+      "sources": [
+        "https://facilities.umd.edu/info-resources/building-inventory/bldg-035",
+        "https://facilities.umd.edu/sites/default/files/styles/optimized/public/UMDBuildings/035.jpg?itok=HxPMyOW8",
+        "https://imd.umd.edu/directory/testudo"
+      ]
+    },
+    {
+      "name": "Thomas V. Miller Jr. Administration Building",
+      "modelCentre": [160, 0],
+      "front": "west, towards McKeldin Mall",
+      "features": ["red brick wings", "four-column pale portico", "triangular pediment and circular window", "projecting end pavilions", "broad stepped forecourt"],
+      "sources": [
+        "https://admin.umd.edu/",
+        "https://admin.umd.edu/sites/default/files/styles/optimized/public/2021-12/Miller_Admin_fall_hero.jpg?itok=KUeJyuYD"
+      ]
+    },
+    {
+      "name": "McKeldin Mall and Omicron Delta Kappa Fountain",
+      "modelCentre": [5, 0],
+      "confirmedWaterDimensionsMetres": [76.2, 4.8768],
+      "features": ["16-foot by 250-foot long water body", "five leadership tiers expressed as shallow basins", "long lawns and parallel pedestrian paths", "tree-lined margins"],
+      "sources": [
+        "https://cvs.umd.edu/campus-attractions",
+        "https://odk.umd.edu/odk-fountain",
+        "https://umdconf.umd.edu/drupal/current_map.pdf"
+      ]
+    }
+  ],
+  "secondaryContext": {
+    "names": ["Jiménez Hall", "Symons Hall", "Taliaferro Hall", "Francis Scott Key Hall"],
+    "status": "Simplified red-brick context masses with recessed window and door details; exterior dimensions and exact architectural ornament are illustrative.",
+    "source": "https://umdconf.umd.edu/drupal/current_map.pdf"
+  },
+  "playability": {
+    "bounds": {"minX": -235, "maxX": 235, "minZ": -120, "maxZ": 120},
+    "safeMainRoute": [[-108,14],[-72,14],[0,14],[72,14],[110,14]],
+    "fountain": "Solid shallow-basin collision proxy prevents walking into the water",
+    "vegetation": "Six broad lawn footprints plus two narrow fountain-side turf strips exclude the primary paving and fountain. Actual-ground-height masking removes blade roots where the raised cross-paths overlap the narrow strips; the common tree system receives trunk locations and canopy radii"
+  }
+}

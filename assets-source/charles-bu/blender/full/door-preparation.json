@@ -1,0 +1,102 @@
+{
+  "revision": "cds-runtime-door-openings-20261020-v1",
+  "inputSHA256": "4cc94922dd7afe6132774218085fcd0d05601ec6db05ab0f1d775056b76547ac",
+  "beforeTriangles": 27350,
+  "afterTriangles": 24730,
+  "removedTriangles": {
+    "moving-hardware": 2544,
+    "center-post": 88,
+    "backing-source-triangle": 2,
+    "leaf-pane": 8
+  },
+  "newBackingTriangles": 22,
+  "changedMeshes": [
+    {
+      "mesh": "CDS pass2 \u00b7 metal construction",
+      "removedTriangles": {
+        "moving-hardware": 2544
+      },
+      "retainedTriangles": 1408
+    },
+    {
+      "mesh": "BU architecture \u00b7 frame",
+      "removedTriangles": {
+        "center-post": 88
+      },
+      "retainedTriangles": 7580
+    },
+    {
+      "mesh": "BU architecture \u00b7 glassShade",
+      "removedTriangles": {
+        "backing-source-triangle": 2,
+        "leaf-pane": 8
+      },
+      "retainedTriangles": 56
+    }
+  ],
+  "movingDetailParts": 36,
+  "doors": [
+    {
+      "id": "west",
+      "originalLocalCenter": [
+        30.2,
+        0,
+        18.848
+      ],
+      "clearWidthBetweenJambs": 2.825,
+      "backingOpening": {
+        "width": 2.825,
+        "bottom": 0.1,
+        "top": 2.85
+      },
+      "leafCenters": [
+        29.474999999999998,
+        30.925
+      ],
+      "leafWidth": 1.37,
+      "leafBottom": 0.15,
+      "leafTop": 2.8,
+      "interiorCenter": [
+        30.2,
+        0,
+        19.068
+      ]
+    },
+    {
+      "id": "east",
+      "originalLocalCenter": [
+        44.2,
+        0,
+        18.848
+      ],
+      "clearWidthBetweenJambs": 2.825,
+      "backingOpening": {
+        "width": 2.825,
+        "bottom": 0.1,
+        "top": 2.85
+      },
+      "leafCenters": [
+        43.475,
+        44.925000000000004
+      ],
+      "leafWidth": 1.37,
+      "leafBottom": 0.15,
+      "leafTop": 2.8,
+      "interiorCenter": [
+        44.2,
+        0,
+        19.068
+      ]
+    }
+  ],
+  "unchanged": [
+    "node transforms",
+    "materials and baked image bytes",
+    "all ground/terrain/paving",
+    "all triangles outside the explicit static leaves/hardware/center posts and the two backing source triangles",
+    "all upper-storey geometry",
+    "existing exterior collision"
+  ],
+  "scope": "Exterior GLB only. Interior already has corresponding holes; runtime supplies animated leaves. Door axes and dimensions retain the authored model, not an as-built survey.",
+  "editableSource": "cds-full.blend retains the closed-door source. build-cds-full.py runs this exact postprocess on its export."
+}
