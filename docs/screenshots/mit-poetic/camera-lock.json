@@ -1,0 +1,123 @@
+{
+  "createdAt": "2026-10-25T14:25:33.949Z",
+  "frames": [
+    {
+      "id": "01-court-front",
+      "title": "主楼与 Killian Court 全景",
+      "eye": [
+        65.7,
+        8,
+        79.8
+      ],
+      "target": [
+        5,
+        21,
+        -51
+      ],
+      "fov": 52,
+      "wholeDome": true
+    },
+    {
+      "id": "02-portico-front",
+      "title": "主立面与穹顶",
+      "eye": [
+        37.2,
+        6.5,
+        18.1
+      ],
+      "target": [
+        8,
+        23,
+        -45
+      ],
+      "fov": 68,
+      "wholeDome": true
+    },
+    {
+      "id": "03-portico-walk",
+      "title": "柱廊步行视高近景",
+      "eye": [
+        18.77,
+        6.6,
+        -21.87
+      ],
+      "target": [
+        11,
+        13,
+        -38
+      ],
+      "fov": 73
+    },
+    {
+      "id": "04-court-oblique",
+      "title": "左侧斜视与庭院关系",
+      "eye": [
+        -19.2,
+        9,
+        62.9
+      ],
+      "target": [
+        6,
+        21,
+        -42
+      ],
+      "fov": 58,
+      "wholeDome": true
+    },
+    {
+      "id": "05-dome-elevated",
+      "title": "穹顶及主楼屋面层次",
+      "eye": [
+        83,
+        57,
+        33
+      ],
+      "target": [
+        1,
+        29,
+        -58
+      ],
+      "fov": 52,
+      "wholeDome": true
+    }
+  ],
+  "settings": {
+    "width": 1600,
+    "height": 1000,
+    "pixelRatio": 1,
+    "exposure": 1,
+    "background": "#c5d9d5",
+    "fog": [
+      180,
+      2600
+    ],
+    "shadowCamera": {
+      "left": -95,
+      "right": 95,
+      "top": 95,
+      "bottom": -95,
+      "near": 1,
+      "far": 390
+    }
+  },
+  "light": {
+    "sky": "#c2d8f2",
+    "ground": "#b6b5a3",
+    "ambient": 1.75,
+    "sun": "#fff3d9",
+    "intensity": 2.65,
+    "offset": [
+      -95,
+      115,
+      135
+    ]
+  },
+  "sources": {
+    "src/features/world/scene-assets.ts": "8e7b2407776b14b6cebc65a6ff62b399301cb0c23603b1954013900bb51615d0",
+    "src/features/world/scene-assets-desktop.ts": "bd9dcbcbaddc71273bb2e6b30dcfdb2d4cc11f2678a0a55d3be92db4561c5d49",
+    "src/features/world/painterly-surfaces.ts": "da354f757cbf872e2844a81ada283654b1e896f1127455f0c6c00387e5a85b26",
+    "src/features/world/campus-daylight.ts": "78f3a78a70de3cb41f8c0be9e51a869c1a60185e9954e972bdb50059d2e517ad",
+    "public/data/killian/detail.glb": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d",
+    "public/data/killian/detail-manifest.json": "9dc267e9b00a5acccf4ef112a4c036d8e606b6623ebcd3b17cd856629cc601d8"
+  }
+}

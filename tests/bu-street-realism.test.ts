@@ -40,6 +40,8 @@ describe('BU street-level public realm',()=>{
     for(const patch of BU_PUBLIC_FRONTAGES){
       expect(patch.area).toBeGreaterThan(0);
       expect(patch.area).toBeLessThan(145);
+      // Photo-backed curved aprons have dedicated dense clipping/coverage tests.
+      if(patch.source)continue;
       const building=BU_GROUND_BUILDINGS.find(b=>b.id===patch.buildingId)!;
       for(const p of patch.points.slice(0,2))expect(Math.min(...building.footprint.map((a,i)=>buSegmentProjection(...p,a,building.footprint[(i+1)%building.footprint.length]).distance))).toBeLessThan(.001);
       for(const p of patch.points.slice(2)){

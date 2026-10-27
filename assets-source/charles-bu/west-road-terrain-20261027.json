@@ -1,0 +1,208 @@
+{
+  "assetId": "bu-west-roads-residence-terrace",
+  "date": "2026-10-27",
+  "scope": "West Campus road/ground alignment, Babcock sidewalk joins, and the bounded Claflin–Sleeper raised public terrace. No Gaffney duplicate street, no whole-campus height reset.",
+  "workTypes": [
+    "terrain correction",
+    "public-realm component completion",
+    "desktop/mobile shared assembly"
+  ],
+  "sources": [
+    {
+      "type": "raw measured elevation",
+      "path": "assets-source/charles-bu/terrain-west/terrain-samples.json",
+      "dataset": "MA_NE_CMGP_Sandy_Z19_2013",
+      "rasterId": 45630,
+      "datum": "NAVD88 metres",
+      "sampleSpacingMetres": 12,
+      "note": "Retrieval 2026-10-27 is not acquisition date. Raw samples and service catalogue retained unchanged."
+    },
+    {
+      "type": "official photograph",
+      "url": "https://www.bu.edu/meetatbu/files/2024/09/West-Campus-Exterior.jpg",
+      "page": "https://www.bu.edu/meetatbu/summer/residence-halls-youth/west-campus/",
+      "path": "assets-source/charles-bu/references/west-20261027/west-campus-exterior.jpg",
+      "supports": "Nickerson playing surface lies below the residence entrance platform; the transition has a substantial retaining face, not uninterrupted undulating grass.",
+      "uncertainty": "Image upload directory is not a verified capture date; exact wall coordinates/material construction and path widths are not measured."
+    },
+    {
+      "type": "official schematic plan",
+      "url": "https://www.bu.edu/commencement/files/2025/05/CMCT_RedBook2025_Final.pdf",
+      "path": "output/bu-survey/nickerson-2025-map.png",
+      "supports": "Relative residence, field, Babcock and Harry Agganis Way connections. Event routing is not a paving survey."
+    }
+  ],
+  "confirmedDefects": [
+    "Legacy northern 5.2 m blend forced a false Babcock ramp: at x=-2400, z816=5.2 and z852=12.3059 despite independent measured 13.115 and12.950.",
+    "Desktop streets omitted the shared BU_SIDEWALK_JOIN_PATCHES already used by mobile.",
+    "Raw bare-earth cell (-2340,732)=7.521 falls under the occupied Sleeper/dining assembly; direct rendering created an isolated triangular sinkhole.",
+    "The actual Charles ground tile between z350 and590 was skipped by the old minZ600 gate, so (-2364,576) queried6.42597 while its mesh remained5.2.",
+    "New terrace meshes originally lacked bounding boxes; this was caught by the runtime loader and corrected before delivery. CampusCollision.rebuild now has a regression test."
+  ],
+  "implementation": {
+    "sourceFiles": [
+      "src/features/world/bu-terrain.ts",
+      "src/features/world/bu-campus-streets.ts",
+      "src/features/world/bu-west-terrace-layout.ts",
+      "src/features/world/bu-west-terrace.ts"
+    ],
+    "westCoreBounds": {
+      "minX": -2760,
+      "maxX": -1512,
+      "minZ": 540,
+      "maxZ": 1056,
+      "fadeMetres": 48
+    },
+    "groundBoundsNorth": 540,
+    "overlap": "The existing central DEM progressively takes priority in the shared strip; eastern core heights retain their existing survey.",
+    "terrace": "A bounded authored polygon repairs the residence court and shared building base using the stable Sleeper/Claflin samples. Its field-facing boundary is split into separate high and low ground faces at the retaining line; only rear edges and the existing access opening retain a fade. Local drape refinement is limited to this footprint.",
+    "footprint": [
+      [
+        -2330,
+        652
+      ],
+      [
+        -2329,
+        670
+      ],
+      [
+        -2322,
+        685
+      ],
+      [
+        -2308,
+        699
+      ],
+      [
+        -2289,
+        710
+      ],
+      [
+        -2268,
+        717
+      ],
+      [
+        -2250,
+        722
+      ],
+      [
+        -2248,
+        762
+      ],
+      [
+        -2318,
+        760
+      ],
+      [
+        -2348,
+        748
+      ],
+      [
+        -2370,
+        710
+      ],
+      [
+        -2370,
+        667
+      ],
+      [
+        -2355,
+        650
+      ]
+    ],
+    "field": "Nickerson centre remains7.9213m; the lower playing bowl is explicitly tested and not filled to13m.",
+    "structure": "Visible concrete retaining face, bounded three-point-two-metre concrete walk strips; wall geometry is also collision geometry. Existing Babcock→Nickerson touring line has a5.2m wall opening. This retains current access but does not claim full surveyed stairs or accessibility ramps.",
+    "classifications": "Topographic samples are measured; residence terrace boundary, retaining alignment, path widths and concrete finish are photo/map-guided approximations. No generic parcel-wide paving fill.",
+    "mobile": "createBUWestTerrace returns group/ground/walls/setQuality; root owns actual mobile-campus-build integration and rebake. Isolated constructor tests do not verify the shipped GLB."
+  },
+  "resources": {
+    "terraceMeshes": 2,
+    "retainingTriangles": 468,
+    "pavingTriangles": 1277,
+    "totalTerraceTriangles": 1745,
+    "additionalMaterials": 2,
+    "terrainNote": "Bounded3m edge refinement changes terrain triangle count locally; full street scene remains within the existing400000-triangle and20-material upper bounds.",
+    "measuredStreetTriangles": 389523,
+    "measuredStreetMaterials": 19
+  },
+  "verification": {
+    "command": "npm.cmd test -- tests/bu-west-terrace.test.ts tests/bu-west-terrain.test.ts tests/bu-terrain.test.ts tests/bu-street-kerbs.test.ts",
+    "result": "18 terrain/terrace/kerb tests passed; first-hit visibility regression uses actual Charles ground meshes. Full street scene measured389523 triangles and19 materials. npm.cmd run typecheck passed.",
+    "covers": [
+      "Archived raw USGS values versus runtime terrace correction",
+      "Babcock artificial ramp removal",
+      "DEM fade continuity",
+      "Actual northern Charles ground mesh raycasts",
+      "Desktop Babcock sidewalk bevel raycasts",
+      "Lower field retention",
+      "Actual plateau drape geometry versus height queries",
+      "CampusCollision.rebuild with non-null geometry bounds",
+      "Original access route remains clear through retaining-wall opening",
+      "Full width of added walks remains outside occupied buildings",
+      "Visible solid retaining face and bounded geometry budget"
+    ],
+    "visualStatus": "Parent is capturing actual world-loader after views. Technical checks do not claim real-scene G0–G4 acceptance.",
+    "supersedes": [
+      "The frozen legacy ground heights in west-dining-separation-20261026.json are historical before evidence.",
+      "Absolute-Y CPU ray examples in west-residence-floor-slabs-20261026.json remain historical; current tests shift the same ray relative to each tower's corrected base."
+    ]
+  },
+  "remaining": [
+    "Exact retaining-wall trace and material details need more dated close photographs.",
+    "The known original access opening is retained; full real stair/ramp circulation is not yet surveyed or reconstructed.",
+    "Raw USGS building-adjacent artefacts elsewhere are outside the bounded terrace repair.",
+    "Mobile export and true-device visual/performance status belong to parent verification."
+  ],
+  "retainingBoundaryRevision": {
+    "date": "2026-10-27",
+    "trigger": "Actual terrace-preview/04 still showed a grass slope and no retaining face.",
+    "diagnosis": "Six CPU rays from the archived walking camera towards wall height11.7 all hit Charles grass3–8m before the wall. A6m exterior terrace fade buried the wall despite correct wall geometry.",
+    "correction": "The field-facing boundary now has a real height discontinuity. drapeBUGeometry clips triangles at each retaining-wall edge and duplicates boundary vertices with face-interior height samples. The original access opening keeps a local transition; rear terrace edges retain their gradual blend.",
+    "beforeFirstHitWallCount": 0,
+    "afterFirstHitWallCount": 4,
+    "totalSampledWallSegments": 6,
+    "northEndNote": "The two northern faces meet higher original grade and taper into it; the four field-facing central/southern rays now first-hit the actual wall.",
+    "camera": [
+      -2310,
+      9.602833,
+      670
+    ],
+    "targets": [
+      [
+        -2315,
+        11.7,
+        692
+      ],
+      [
+        -2298.5,
+        11.7,
+        704.5
+      ],
+      [
+        -2278.5,
+        11.7,
+        713.5
+      ],
+      [
+        -2259,
+        11.7,
+        719.5
+      ]
+    ],
+    "sourceTests": "tests/bu-west-terrace.test.ts; actual Charles ground geometry plus terrace, not isolated wall rays",
+    "resources": {
+      "terrace": [
+        {
+          "name": "BU West terrace retaining wall",
+          "triangles": 468
+        },
+        {
+          "name": "BU West terrace paving",
+          "triangles": 1277
+        }
+      ],
+      "streetTriangles": 389523,
+      "streetMaterials": 19
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "User-provided art direction reference, not MIT architectural evidence",
+  "sourceFile": "98990c5f7ad818e5361681d117cfdb19.mp4",
+  "sourceSha256": "4c27925cfe8248ac964d7313e3e3bae342ec2a8326e6d050274348fb0eb3b8a6",
+  "durationSeconds": 90.233333,
+  "resolution": [1280, 720],
+  "frames": [
+    {"file": "frame-23s.jpg", "seconds": 23.404270746875},
+    {"file": "frame-63s.jpg", "seconds": 62.881353934375}
+  ],
+  "use": "Internal visual research. Frames are not runtime textures or architectural data. No third-party generation/upload performed; wider redistribution rights not established.",
+  "direction": "Clean materials, selected architectural details, broad light/shadow structure and quiet atmosphere.",
+  "userColorConstraint": "Keep Pulsetact World's established warm stone, green landscape and daylight palette; do not import the video's blue-white palette.",
+  "geometryEvidence": "assets-source/killian-reference/",
+  "implementation": "docs/pulsetact-poetic-art-direction.md"
+}

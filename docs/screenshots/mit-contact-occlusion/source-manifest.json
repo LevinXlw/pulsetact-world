@@ -1,0 +1,170 @@
+{
+  "createdAt": "2026-10-26T04:30:12.371Z",
+  "scope": "Runtime contact occlusion plus side-wing evidence audit; no geometry rebuild",
+  "technical": {
+    "focusedTests": 20,
+    "testFiles": 6,
+    "build": "passed",
+    "desktopGameplay": "passed",
+    "mobileEmulation": "passed"
+  },
+  "visual": "Local contact shading improved; full real-scene fidelity not accepted",
+  "files": {
+    "src/features/world/WorldScene.tsx": {
+      "bytes": 31195,
+      "sha256": "48a6c69abb227842f26ad3900af4ff97b0ecb60b49cfe920c50d7db473165aac"
+    },
+    "src/features/world/mit-scene-renderer.ts": {
+      "bytes": 7612,
+      "sha256": "6e20608dc89849b4a9174974bcd5d311310029d34863c1e8608f18cdd2b32543"
+    },
+    "tests/mit-scene-renderer.test.ts": {
+      "bytes": 5932,
+      "sha256": "bcf419f33621752843b432e4e3a701c90e0ff1dbcda353ac752c64ef49c0cb41"
+    },
+    "scripts/capture-mit-poetic.mjs": {
+      "bytes": 9275,
+      "sha256": "5d29489d778a7a36724b9db7713fb5f12b9af70a36dfa36d7caa6fb0e6209e79"
+    },
+    "scripts/check-mit-poetic-playable.mjs": {
+      "bytes": 8123,
+      "sha256": "e748de22dcbc2c8511ea6deb447a0c65a895221d8382de949d94561a29fb871e"
+    },
+    "src/features/world/mit-glass-reflection.ts": {
+      "bytes": 6473,
+      "sha256": "48d8b18ba7395d3eaa44cf1b68ee6cec0191b43f51590edd4d782e98bbe266c3"
+    },
+    "src/features/world/mit-poetic-materials.ts": {
+      "bytes": 8803,
+      "sha256": "8a85af0e2828beebe27d423fcfcf198bbd036b53b4ce46a8ec566973f33ac732"
+    },
+    "public/data/killian/detail.glb": {
+      "bytes": 56841004,
+      "sha256": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d"
+    },
+    "public/data/killian/mobile-portico.glb": {
+      "bytes": 1902028,
+      "sha256": "f781e568ff513f813bd20cbc8467e3b5c20a714704f4789b983440451f344c43"
+    },
+    "assets-source/killian-reference/courtyard-detail-audit-20261026.json": {
+      "bytes": 8308,
+      "sha256": "6e1577b54626076bdc45e8631fca95def7b83aadfae1afc7fb4dc63fbc7ee6a4"
+    },
+    "assets-source/killian-reference/ocw-newton-facade.jpg": {
+      "bytes": 23736,
+      "sha256": "3c1713b34f155fa1bad9a389552e45a2171c29f872d212f9d6461658b6eb32b1"
+    },
+    "docs/mit-poetic-delivery.md": {
+      "bytes": 20704,
+      "sha256": "5b52858f6e81bac56dfccf75788189208de5fa3e5576a7260fe279a576055b05"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-01-court-front.png": {
+      "bytes": 2091893,
+      "sha256": "7cef7639f3a793b6cd6b15b4e8d6527c40add828cc40300d467efa29b8a5bda9"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-02-portico-front.png": {
+      "bytes": 2097774,
+      "sha256": "7d7d7d18f27d2f5d92bc009fa1cc7593e08da7649e9f4b4acc61d1b701eaa53a"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-03-portico-walk.png": {
+      "bytes": 1913696,
+      "sha256": "110d143e5459b32ffdb748487921fe927af4d625d9bfb1c6160221ad683c479d"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-05-dome-elevated.png": {
+      "bytes": 2159659,
+      "sha256": "aa5f02e25e5ea4330f8f5f8106fd46205b2b6038246a4badb3263a6cc154a7e4"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-06-court-walk-oblique.png": {
+      "bytes": 2339105,
+      "sha256": "38fe1ba86de01687a85032fd94e23c0d5f3d5a9e01477d97c51ccac51d55a50d"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-07-capitals-close.png": {
+      "bytes": 1371251,
+      "sha256": "d6185b787bf63f86c12a4d4b304d1d96dfd41ed652b671be7bc174a92162f414"
+    },
+    "docs/screenshots/mit-contact-occlusion/after-report.json": {
+      "bytes": 11816,
+      "sha256": "70597bc9444723b0e891c296b2a659629a3fe84f2a698ae0d2775f500b7a873b"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-01-court-front.png": {
+      "bytes": 1838570,
+      "sha256": "0c0bcdf93d3897c2f462c62b12b039594e22fc2191310595270e7d1ce0aa5ca6"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-02-portico-front.png": {
+      "bytes": 1848080,
+      "sha256": "aecade2f9e84742cb8fd75d93566f0ba9d682b6b1827607a65830ced85aaa816"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-03-portico-walk.png": {
+      "bytes": 1508939,
+      "sha256": "f70477380152534897fa3992be937e8108adb9872b239c03b74946e6c605625e"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-05-dome-elevated.png": {
+      "bytes": 1936572,
+      "sha256": "ff4e4d1dc4e55aafa2b81072e560ddfe63dfa58583ac92582402b6edde4198ba"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-06-court-walk-oblique.png": {
+      "bytes": 2105071,
+      "sha256": "3cb33bfd0b76c73f35f00c66cbc470e2c994453a193c896750e568be611c92c7"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-07-capitals-close.png": {
+      "bytes": 1156252,
+      "sha256": "ac2cfe5c30ba8ad979b16cf03ec4a8b2770a9f9fd4f6db2ca494f595d18f08ba"
+    },
+    "docs/screenshots/mit-contact-occlusion/before-report.json": {
+      "bytes": 11821,
+      "sha256": "099fd972adf4a8871dd877f46176edd08a86e17c5dc830f8e9cd859dbc15a163"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-01-courtyard.png": {
+      "bytes": 115587,
+      "sha256": "3e144ef184f841023d5c5e7be7a12059e0e3c6222c884d078fa9fa5f469ae0d5"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-02-main-building.png": {
+      "bytes": 127062,
+      "sha256": "a4c8e4bc37a45f1be0e519163c707a13704935d2e1db0bdd64f7273aa4ec58e4"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-03-dome-look.png": {
+      "bytes": 143729,
+      "sha256": "79997ff563887b6cd171641deab4831dd8ef14e287e653d25d94a00d4ac2bd76"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-04-portico.png": {
+      "bytes": 179165,
+      "sha256": "a3c9865f31faaaf076585bc0dc534dd8ae8a23446e6336eddbba207b5a5e115a"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-05-mobile-hd.png": {
+      "bytes": 151672,
+      "sha256": "894121e6620f92e3923f39af0cd940dc776d990a3b42df0a2a90d219799f435b"
+    },
+    "docs/screenshots/mit-contact-occlusion/mobile-playable-report.json": {
+      "bytes": 7411,
+      "sha256": "7889036dfd8a9727c266d1fb21a82401a75d0069204daefa512f33bd8b70d1e8"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-00-arrival.png": {
+      "bytes": 1075821,
+      "sha256": "053a76f1a108e64e02cf72bf973870191e352df81975b44dbf6c7bd52cc6212d"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-01-courtyard.png": {
+      "bytes": 1306151,
+      "sha256": "4397bddc593043942619220449923e69b88ccc9d51670e16abbc48fb22435981"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-02-main-building.png": {
+      "bytes": 1077389,
+      "sha256": "c1b6fb75c05533b32078122e818ef82fb7458f04edb8ba65b6ba255109f8818b"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-03-dome-look.png": {
+      "bytes": 1299954,
+      "sha256": "fc1c86e98b474cb498bc1fba8dccc135234b04ff82e075fd53e0b0015123c723"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-04-portico.png": {
+      "bytes": 1160240,
+      "sha256": "779e7a9efe6235b7adaecc63ad950b58a58dfebd99270e420befdd5f4b921337"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-05-low-quality.png": {
+      "bytes": 1090046,
+      "sha256": "927c8dfafc5b1775f73bd04ad36c7fbfde8756b96b7279513b6e97accaf94318"
+    },
+    "docs/screenshots/mit-contact-occlusion/playable-report.json": {
+      "bytes": 11301,
+      "sha256": "d0ab0e1c5a39a1de5293cfced3d7d9cdf6b65af2e0f76537f74194d28bfefd12"
+    }
+  }
+}

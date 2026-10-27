@@ -5,6 +5,10 @@ import {openPortico, type PorticoOpening} from '../real-campus/portico';
 import {CampusCollision} from '../real-campus/campus-collision';
 import {createPainterlyVegetation} from './painterly-vegetation';
 import {createCampusSurface} from './painterly-surfaces';
+import {createMITPoeticSurface,isMITPoeticSurface} from './mit-poetic-materials';
+import {createMITPoeticAtmosphere} from './mit-poetic-atmosphere';
+import {createMITMainBuildingDetail} from './mit-main-building-detail';
+import {attachMITGlassReflection} from './mit-glass-reflection';
 import {createPainterlySky} from './painterly-sky';
 import {createPainterlyGroundDetail} from './painterly-ground-detail';
 import {createPainterlyCampusProps} from './painterly-campus-props';
@@ -17,6 +21,7 @@ import {createBUGreenLine} from './bu-green-line';
 import {createBUCommAveLandscape,buCASLandscapeReplaces} from './bu-comm-ave-landscape';
 import {createBUWarrenStreetscape} from './bu-warren-streetscape';
 import {createBULinkCourtDetail} from './bu-link-court-detail';
+import {createBUSertFacadeDetail} from './bu-sert-facade-detail';
 import {BU_CDS_ASSET_URL,loadCDSBuilding} from './bu-cds-asset';
 import {BU_QUESTROM_ASSET_URL,loadQuestromBuilding} from './bu-questrom-asset';
 import {loadStataCampusReplacement,MIT_STATA_ASSET_URL,MIT_STATA_BASE_URL} from './mit-stata-asset';
@@ -114,7 +119,7 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
   let lawn: Mesh | null = null;
   const materialFor = (name: string) => {
     if (palette.has(name)) return palette.get(name)!;
-    const material = createCampusSurface(name);
+    const material = isMITPoeticSurface(name)?createMITPoeticSurface(name):createCampusSurface(name);
     palette.set(name, material);
     return material;
   };
@@ -133,7 +138,7 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
       return;
     }
     object.material = Array.isArray(object.material) ? oldMaterials.map(m => materialFor(m.name)) : materialFor(name);
-    object.castShadow = !floorNames.has(name) && !name.includes('orthophotography') && !['water', 'glass', 'courtyardGlass'].includes(name);
+    object.castShadow = !floorNames.has(name) && !name.includes('orthophotography') && !['water', 'glass', 'courtyardGlass', 'porticoGlass', 'doorGlass'].includes(name);
     object.receiveShadow = true;
     object.geometry.computeBoundingBox();
     object.geometry.computeBoundingSphere();
@@ -144,6 +149,9 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
   // Removed source materials may own large aerial textures; release them now.
   originals.forEach(material => material.dispose());
   originalTextures.forEach(texture => texture.dispose());
+  const mainBuildingDetail=createMITMainBuildingDetail();
+  model.add(mainBuildingDetail);
+  model.userData.mitMainBuildingDetail=mainBuildingDetail.stats;
   model.userData.bakerReplacedSurveyPlanterTriangles=replaceBakerSurveyPlanters(base.scene,residences?.group);
   finishMITUnderpass(model);
   // The source-face removal and the replacement are committed together. Add
@@ -167,6 +175,8 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
   const boston = createBostonUniversity({wind});
   const streets = createBUCampusStreets(),fullBU=createBUFullCampus(),commLandscape=createBUCommAveLandscape(),warrenForecourt=createBUWarrenStreetscape(),linkCourt=createBULinkCourtDetail();
   model.add(river.group, boston.group,streets.group,fullBU.group,transit.group,commLandscape.group,warrenForecourt.group,linkCourt.group);
+  // Bounded photo-led Mugar lower screen; existing shell and collision stay.
+  model.add(createBUSertFacadeDetail().group);
   let cds:Awaited<ReturnType<typeof loadCDSBuilding>>|undefined;
   try {
     cds=await loadCDSBuilding(signal);
@@ -244,7 +254,16 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
   });
   collision.rebuild(ground, walls,bostonGround);
   model.add(createPainterlySky(wind));
+  const mitGlassReflection=attachMITGlassReflection(model);
+  cleanups.push(mitGlassReflection.dispose);
+  model.userData.mitGlassReflection=mitGlassReflection.stats;
+  const poeticAtmosphere=createMITPoeticAtmosphere(wind);
+  model.add(poeticAtmosphere.group);
+  model.userData.mitArtDirection={version:'poetic-campus-real-detail-v2',palette:'existing warm stone / green landscape; photo-informed warm-grey muntins',scope:'Building 10 and courtyard-facing architectural surfaces; real detail takes precedence',sourceGeometry:'public/data/killian/detail.glb'};
   const setQuality = (low:boolean) => {
+    mitGlassReflection.setQuality(low);
+    poeticAtmosphere.setQuality(low);
+    mainBuildingDetail.setQuality(low);
     vegetation.setQuality(low); groundDetail.setQuality(low); campusProps.setQuality(low);
     river.setQuality(low); boston.setQuality(low); riversideTrees.setQuality(low);
     river.water.material.setQuality(low?'mobile-hd':'desktop');reflection.setQuality(low);
@@ -259,6 +278,7 @@ export async function loadWorldAssets(signal: AbortSignal,campus:CampusId='bosto
   const update = (cameraPosition:Vector3,deltaSeconds=0) => {
     transit.update(deltaSeconds);
     const mitDistance=Math.hypot(cameraPosition.x-34,cameraPosition.z-5);
+    poeticAtmosphere.group.visible=mitDistance<220;
     // Keep the base skyline across the river; courtyard window recesses,
     // furniture and ground blades cannot be resolved from West Campus.
     detail.scene.visible=mitDistance<850;

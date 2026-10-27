@@ -1,0 +1,24 @@
+{
+  "quality": "standard",
+  "viewport": {
+    "width": 1600,
+    "height": 1000
+  },
+  "lastPosition": [
+    -2143.6684420915285,
+    13.70501694551152,
+    888.2741340367038
+  ],
+  "status": "timeout",
+  "start": [
+    -2114,
+    13.626882851510786,
+    892.3720836960199
+  ],
+  "note": "No navigation oscillation found in subsequent CPU review. Low-quality gameplay rerun recorded movement and frame counters and passed; cause of standard-quality slowdown not yet isolated. This attempt preceded the final frozen asset state.",
+  "kind": "Observed initial full-game check; reconstructed from command log, not a frame-time benchmark",
+  "wallClockLimitMs": 180000,
+  "distanceRemaining": 445.35724227187126,
+  "leg": "bu-new-balance",
+  "frameTime": "Not recorded by the original script"
+}

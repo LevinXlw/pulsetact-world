@@ -1,0 +1,984 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-26T16:11:16.197Z",
+  "base": "http://127.0.0.1:5186",
+  "kind": "Actual WebGL integration with runtime CDS/Questrom GLBs; isolated scene, not full-campus realism acceptance",
+  "sources": {
+    "src/features/world/bu-refined-building-asset.ts": "d205030fda1749b783b13225f8572400e58a438a8bdc4c30706ac4bcf9213e0c",
+    "src/features/world/painterly-sky.ts": "59b24bdd3dcd7355ab1747886dbb79631cf73fb277268b85d76ffb64e4fe3b5a",
+    "public/assets/bu-cds/cds-full.glb": "12667506e53feeb2bf5545ea2fbc03915a54e9f529c8bfcfb78fb776a5838820",
+    "public/assets/bu-questrom/questrom-full.glb": "fc81fd0f6d2adebfd1a79c7d54ee90fe8af263c8a10888783c51b7566c076089"
+  },
+  "profiles": [
+    {
+      "mode": "delayed-ready",
+      "status": "passed",
+      "checks": [
+        "Twelve real render frames during held image request produce zero cube or PMREM captures.",
+        "Both actual GLBs receive filtered reflections; same-view envMap on/off pixel comparison proves visible contribution.",
+        "Exactly two real 128px/260m captures after settlement, with no repeated captures across twelve more frames; fallback keeps uSkyReady=0.",
+        "Both PMREM targets disposed exactly once; all building envMap bindings cleared."
+      ],
+      "errors": [],
+      "expectedNetworkErrors": [],
+      "views": [
+        {
+          "id": "cds",
+          "position": [
+            -851.2118614087204,
+            59.23735271858858,
+            1133.1421066103348
+          ],
+          "target": [
+            -892.6345720489508,
+            49.686068882223836,
+            1018.079021498584
+          ],
+          "bounds": {
+            "min": [
+              -938.6598060936511,
+              1.9296497004000992,
+              985.0292265925077
+            ],
+            "max": [
+              -846.6093380042504,
+              97.44248806404757,
+              1051.1288164046603
+            ]
+          },
+          "pixelEvidence": {
+            "width": 960,
+            "height": 640,
+            "meanRGBDifference": 4.277818467881945,
+            "changedPixels": 164458,
+            "nonBlackPixels": 614400,
+            "maxDelta": 137
+          },
+          "glError": 0,
+          "state": {
+            "frame": 14,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "captures": [
+              {
+                "building": "cds",
+                "frame": 13,
+                "skyStatus": "ready",
+                "skyReady": 1,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -880.5252247493373,
+                  11.478491176840528,
+                  1046.6932634254774
+                ],
+                "completed": true
+              }
+            ],
+            "filteredTargets": [
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              }
+            ],
+            "shaderErrors": [],
+            "memory": {
+              "geometries": 29,
+              "textures": 23
+            },
+            "buildings": {
+              "cds": {
+                "ready": true,
+                "materials": 9,
+                "environmentMaterials": 9,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              },
+              "questrom": {
+                "ready": false,
+                "materials": 12,
+                "environmentMaterials": 0,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": false
+                  },
+                  {
+                    "name": "glassLight · Blender PBR",
+                    "environment": false
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "questrom",
+          "position": [
+            -580.2031180824101,
+            34.64770868762659,
+            1203.0194584536373
+          ],
+          "target": [
+            -627.6173785018283,
+            29.42332679971384,
+            1071.313179510809
+          ],
+          "bounds": {
+            "min": [
+              -680.2998900789596,
+              3.3014173601500927,
+              1035.4894519823324
+            ],
+            "max": [
+              -574.934866924697,
+              55.54523623927759,
+              1107.1369070392857
+            ]
+          },
+          "pixelEvidence": {
+            "width": 960,
+            "height": 640,
+            "meanRGBDifference": 2.8221006944444444,
+            "changedPixels": 110340,
+            "nonBlackPixels": 614400,
+            "maxDelta": 84
+          },
+          "glError": 0,
+          "state": {
+            "frame": 16,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "captures": [
+              {
+                "building": "cds",
+                "frame": 13,
+                "skyStatus": "ready",
+                "skyReady": 1,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -880.5252247493373,
+                  11.478491176840528,
+                  1046.6932634254774
+                ],
+                "completed": true
+              },
+              {
+                "building": "questrom",
+                "frame": 15,
+                "skyStatus": "ready",
+                "skyReady": 1,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -624.8656143059414,
+                  10.035234103047127,
+                  1093.1301788362925
+                ],
+                "completed": true
+              }
+            ],
+            "filteredTargets": [
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              },
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              }
+            ],
+            "shaderErrors": [],
+            "memory": {
+              "geometries": 29,
+              "textures": 24
+            },
+            "buildings": {
+              "cds": {
+                "ready": true,
+                "materials": 9,
+                "environmentMaterials": 9,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              },
+              "questrom": {
+                "ready": true,
+                "materials": 12,
+                "environmentMaterials": 12,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassLight · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "setup": {
+        "threeRevision": "176",
+        "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "assetBytes": {
+          "cds": 5283612,
+          "questrom": 9302072
+        },
+        "light": {
+          "sky": "#c2d8f2",
+          "ground": "#b6b5a3",
+          "ambient": 1.75,
+          "sun": "#fff3d9",
+          "intensity": 2.65,
+          "offset": [
+            -95,
+            115,
+            135
+          ]
+        }
+      },
+      "pending": {
+        "frame": 12,
+        "skyStatus": "loading",
+        "skyReady": 0,
+        "captures": [],
+        "filteredTargets": [],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 21
+        },
+        "buildings": {
+          "cds": {
+            "ready": false,
+            "materials": 9,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          },
+          "questrom": {
+            "ready": false,
+            "materials": 12,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          }
+        }
+      },
+      "settled": {
+        "frame": 28,
+        "skyStatus": "ready",
+        "skyReady": 1,
+        "captures": [
+          {
+            "building": "cds",
+            "frame": 13,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -880.5252247493373,
+              11.478491176840528,
+              1046.6932634254774
+            ],
+            "completed": true
+          },
+          {
+            "building": "questrom",
+            "frame": 15,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -624.8656143059414,
+              10.035234103047127,
+              1093.1301788362925
+            ],
+            "completed": true
+          }
+        ],
+        "filteredTargets": [
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 0
+          },
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 0
+          }
+        ],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 24
+        },
+        "buildings": {
+          "cds": {
+            "ready": true,
+            "materials": 9,
+            "environmentMaterials": 9,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": true
+              }
+            ]
+          },
+          "questrom": {
+            "ready": true,
+            "materials": 12,
+            "environmentMaterials": 12,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": true
+              }
+            ]
+          }
+        }
+      },
+      "disposed": {
+        "frame": 28,
+        "skyStatus": "ready",
+        "skyReady": 1,
+        "captures": [
+          {
+            "building": "cds",
+            "frame": 13,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -880.5252247493373,
+              11.478491176840528,
+              1046.6932634254774
+            ],
+            "completed": true
+          },
+          {
+            "building": "questrom",
+            "frame": 15,
+            "skyStatus": "ready",
+            "skyReady": 1,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -624.8656143059414,
+              10.035234103047127,
+              1093.1301788362925
+            ],
+            "completed": true
+          }
+        ],
+        "filteredTargets": [
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 1
+          },
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 1
+          }
+        ],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 22
+        },
+        "buildings": {
+          "cds": {
+            "ready": false,
+            "materials": 9,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          },
+          "questrom": {
+            "ready": false,
+            "materials": 12,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mode": "failed-fallback",
+      "status": "passed",
+      "checks": [
+        "Twelve real render frames during held image request produce zero cube or PMREM captures.",
+        "Both actual GLBs receive filtered reflections; same-view envMap on/off pixel comparison proves visible contribution.",
+        "Exactly two real 128px/260m captures after settlement, with no repeated captures across twelve more frames; fallback keeps uSkyReady=0.",
+        "Both PMREM targets disposed exactly once; all building envMap bindings cleared."
+      ],
+      "errors": [],
+      "expectedNetworkErrors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "views": [
+        {
+          "id": "cds",
+          "position": [
+            -851.2118614087204,
+            59.23735271858858,
+            1133.1421066103348
+          ],
+          "target": [
+            -892.6345720489508,
+            49.686068882223836,
+            1018.079021498584
+          ],
+          "bounds": {
+            "min": [
+              -938.6598060936511,
+              1.9296497004000992,
+              985.0292265925077
+            ],
+            "max": [
+              -846.6093380042504,
+              97.44248806404757,
+              1051.1288164046603
+            ]
+          },
+          "pixelEvidence": {
+            "width": 960,
+            "height": 640,
+            "meanRGBDifference": 4.107912326388889,
+            "changedPixels": 164458,
+            "nonBlackPixels": 614400,
+            "maxDelta": 127
+          },
+          "glError": 0,
+          "state": {
+            "frame": 14,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "captures": [
+              {
+                "building": "cds",
+                "frame": 13,
+                "skyStatus": "fallback",
+                "skyReady": 0,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -880.5252247493373,
+                  11.478491176840528,
+                  1046.6932634254774
+                ],
+                "completed": true
+              }
+            ],
+            "filteredTargets": [
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              }
+            ],
+            "shaderErrors": [],
+            "memory": {
+              "geometries": 29,
+              "textures": 22
+            },
+            "buildings": {
+              "cds": {
+                "ready": true,
+                "materials": 9,
+                "environmentMaterials": 9,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              },
+              "questrom": {
+                "ready": false,
+                "materials": 12,
+                "environmentMaterials": 0,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": false
+                  },
+                  {
+                    "name": "glassLight · Blender PBR",
+                    "environment": false
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "questrom",
+          "position": [
+            -580.2031180824101,
+            34.64770868762659,
+            1203.0194584536373
+          ],
+          "target": [
+            -627.6173785018283,
+            29.42332679971384,
+            1071.313179510809
+          ],
+          "bounds": {
+            "min": [
+              -680.2998900789596,
+              3.3014173601500927,
+              1035.4894519823324
+            ],
+            "max": [
+              -574.934866924697,
+              55.54523623927759,
+              1107.1369070392857
+            ]
+          },
+          "pixelEvidence": {
+            "width": 960,
+            "height": 640,
+            "meanRGBDifference": 2.7961968315972223,
+            "changedPixels": 110340,
+            "nonBlackPixels": 614400,
+            "maxDelta": 80
+          },
+          "glError": 0,
+          "state": {
+            "frame": 16,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "captures": [
+              {
+                "building": "cds",
+                "frame": 13,
+                "skyStatus": "fallback",
+                "skyReady": 0,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -880.5252247493373,
+                  11.478491176840528,
+                  1046.6932634254774
+                ],
+                "completed": true
+              },
+              {
+                "building": "questrom",
+                "frame": 15,
+                "skyStatus": "fallback",
+                "skyReady": 0,
+                "resolution": 128,
+                "far": 260,
+                "position": [
+                  -624.8656143059414,
+                  10.035234103047127,
+                  1093.1301788362925
+                ],
+                "completed": true
+              }
+            ],
+            "filteredTargets": [
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              },
+              {
+                "width": 384,
+                "height": 512,
+                "disposed": 0
+              }
+            ],
+            "shaderErrors": [],
+            "memory": {
+              "geometries": 29,
+              "textures": 23
+            },
+            "buildings": {
+              "cds": {
+                "ready": true,
+                "materials": 9,
+                "environmentMaterials": 9,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              },
+              "questrom": {
+                "ready": true,
+                "materials": 12,
+                "environmentMaterials": 12,
+                "glassMaterials": [
+                  {
+                    "name": "glass · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassLight · Blender PBR",
+                    "environment": true
+                  },
+                  {
+                    "name": "glassShade · Blender PBR",
+                    "environment": true
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "setup": {
+        "threeRevision": "176",
+        "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "assetBytes": {
+          "cds": 5283612,
+          "questrom": 9302072
+        },
+        "light": {
+          "sky": "#c2d8f2",
+          "ground": "#b6b5a3",
+          "ambient": 1.75,
+          "sun": "#fff3d9",
+          "intensity": 2.65,
+          "offset": [
+            -95,
+            115,
+            135
+          ]
+        }
+      },
+      "pending": {
+        "frame": 12,
+        "skyStatus": "loading",
+        "skyReady": 0,
+        "captures": [],
+        "filteredTargets": [],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 21
+        },
+        "buildings": {
+          "cds": {
+            "ready": false,
+            "materials": 9,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          },
+          "questrom": {
+            "ready": false,
+            "materials": 12,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          }
+        }
+      },
+      "settled": {
+        "frame": 28,
+        "skyStatus": "fallback",
+        "skyReady": 0,
+        "captures": [
+          {
+            "building": "cds",
+            "frame": 13,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -880.5252247493373,
+              11.478491176840528,
+              1046.6932634254774
+            ],
+            "completed": true
+          },
+          {
+            "building": "questrom",
+            "frame": 15,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -624.8656143059414,
+              10.035234103047127,
+              1093.1301788362925
+            ],
+            "completed": true
+          }
+        ],
+        "filteredTargets": [
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 0
+          },
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 0
+          }
+        ],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 23
+        },
+        "buildings": {
+          "cds": {
+            "ready": true,
+            "materials": 9,
+            "environmentMaterials": 9,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": true
+              }
+            ]
+          },
+          "questrom": {
+            "ready": true,
+            "materials": 12,
+            "environmentMaterials": 12,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": true
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": true
+              }
+            ]
+          }
+        }
+      },
+      "disposed": {
+        "frame": 28,
+        "skyStatus": "fallback",
+        "skyReady": 0,
+        "captures": [
+          {
+            "building": "cds",
+            "frame": 13,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -880.5252247493373,
+              11.478491176840528,
+              1046.6932634254774
+            ],
+            "completed": true
+          },
+          {
+            "building": "questrom",
+            "frame": 15,
+            "skyStatus": "fallback",
+            "skyReady": 0,
+            "resolution": 128,
+            "far": 260,
+            "position": [
+              -624.8656143059414,
+              10.035234103047127,
+              1093.1301788362925
+            ],
+            "completed": true
+          }
+        ],
+        "filteredTargets": [
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 1
+          },
+          {
+            "width": 384,
+            "height": 512,
+            "disposed": 1
+          }
+        ],
+        "shaderErrors": [],
+        "memory": {
+          "geometries": 29,
+          "textures": 21
+        },
+        "buildings": {
+          "cds": {
+            "ready": false,
+            "materials": 9,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          },
+          "questrom": {
+            "ready": false,
+            "materials": 12,
+            "environmentMaterials": 0,
+            "glassMaterials": [
+              {
+                "name": "glass · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassLight · Blender PBR",
+                "environment": false
+              },
+              {
+                "name": "glassShade · Blender PBR",
+                "environment": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-26T16:11:18.389Z"
+}

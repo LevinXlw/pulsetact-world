@@ -1,0 +1,324 @@
+{
+  "phase": "final",
+  "startedAt": "2026-10-26T15:34:52.938Z",
+  "base": "http://127.0.0.1:5186",
+  "views": [
+    {
+      "id": "01-gsu-street",
+      "title": "GSU · Commonwealth 临街立面",
+      "eye": [
+        -1444,
+        1.75,
+        989
+      ],
+      "target": [
+        -1368,
+        10.676583333333335,
+        961
+      ],
+      "fov": 62,
+      "camera": [
+        -1444,
+        8.062916589717375,
+        989
+      ],
+      "calls": 1800,
+      "triangles": 8359190,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "02-link-entry",
+      "title": "GSU–Mugar Link · 共享入口",
+      "eye": [
+        -12.52,
+        1.75,
+        86
+      ],
+      "target": [
+        -1348.8823102761542,
+        6.715856646378029,
+        938.7996553193508
+      ],
+      "fov": 65,
+      "sertLocal": true,
+      "camera": [
+        -1350.6814188100536,
+        6.675630674838514,
+        950.1276784691881
+      ],
+      "calls": 156,
+      "triangles": 832399,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "03-mugar-south",
+      "title": "Mugar · 南侧遮阳立面",
+      "eye": [
+        11,
+        1.75,
+        102
+      ],
+      "target": [
+        -1329.631150483623,
+        14.558600534263887,
+        948.4082008202282
+      ],
+      "fov": 65,
+      "sertLocal": true,
+      "camera": [
+        -1329.9622062606393,
+        6.298774016391576,
+        969.6188208505928
+      ],
+      "calls": 115,
+      "triangles": 550359,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "05-warren-front",
+      "title": "Warren Towers · 北侧街面",
+      "eye": [
+        -971,
+        1.75,
+        1044
+      ],
+      "target": [
+        -981,
+        18.19991175158671,
+        1095
+      ],
+      "fov": 65,
+      "camera": [
+        -971,
+        6.175859084354961,
+        1044
+      ],
+      "calls": 333,
+      "triangles": 2270167,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "06-warren-entry",
+      "title": "Warren · 门厅与接地",
+      "eye": [
+        -973.3,
+        1.75,
+        1069.4
+      ],
+      "target": [
+        -969.6,
+        9.19034375,
+        1079.1
+      ],
+      "fov": 69,
+      "camera": [
+        -973.3,
+        6.890014287784451,
+        1069.4
+      ],
+      "calls": 342,
+      "triangles": 2404157,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "07-link-oblique",
+      "title": "GSU–Mugar · 入口侧向关系",
+      "eye": [
+        -23,
+        1.75,
+        94
+      ],
+      "target": [
+        -1345.3227488977413,
+        6.722028510042228,
+        938.8283396933623
+      ],
+      "fov": 60,
+      "sertLocal": true,
+      "camera": [
+        -1362.2865235076551,
+        6.0417531395598765,
+        956.3848299742825
+      ],
+      "calls": 329,
+      "triangles": 2269643,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "08-cas-walk",
+      "title": "CAS · 主街延续关系",
+      "eye": [
+        -1002,
+        1.75,
+        3.3
+      ],
+      "target": [
+        -1100.6801625204623,
+        6.612426651822124,
+        1015.6238004145142
+      ],
+      "fov": 61,
+      "casLocal": true,
+      "camera": [
+        -1000.594016672479,
+        6.153873514579298,
+        1032.1578129162633
+      ],
+      "calls": 836,
+      "triangles": 3397001,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "09-warren-towers",
+      "title": "Warren · 三塔街景（补充机位）",
+      "eye": [
+        -971,
+        1.75,
+        1044
+      ],
+      "target": [
+        -981,
+        35.19991175158671,
+        1095
+      ],
+      "fov": 75,
+      "supplemental": true,
+      "camera": [
+        -971,
+        6.175859084354961,
+        1044
+      ],
+      "calls": 670,
+      "triangles": 4831819,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "10-claflin-window",
+      "title": "Claflin · 原餐厅墙遮挡的窗带",
+      "eye": [
+        -2291.061,
+        1.7,
+        714.327
+      ],
+      "target": [
+        -2293.4255,
+        6.733819270846891,
+        729.1395
+      ],
+      "fov": 52,
+      "supplemental": true,
+      "camera": [
+        -2291.061,
+        6.899999809265137,
+        714.327
+      ],
+      "calls": 141,
+      "triangles": 585053,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "11-west-residence-link",
+      "title": "西校区 · 宿舍与低层餐厅关系",
+      "eye": [
+        -2310,
+        1.7,
+        670
+      ],
+      "target": [
+        -2325,
+        21.200000241086055,
+        725
+      ],
+      "fov": 62,
+      "supplemental": true,
+      "camera": [
+        -2310,
+        7.009999942779541,
+        670
+      ],
+      "calls": 174,
+      "triangles": 731166,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "12-gsu-link-side",
+      "title": "GSU · 面向 Link 的砖墙与底层窗墙",
+      "eye": [
+        -12,
+        1.75,
+        94
+      ],
+      "target": [
+        -1363.16379347822,
+        11.030495126345285,
+        949.1577698943645
+      ],
+      "fov": 64,
+      "sertLocal": true,
+      "supplemental": true,
+      "camera": [
+        -1351.4226826490492,
+        6.463592547360106,
+        958.1102174087109
+      ],
+      "calls": 562,
+      "triangles": 2090541,
+      "nearObstacle": null,
+      "glError": 0
+    }
+  ],
+  "errors": [],
+  "status": "passed",
+  "kind": "Actual runtime asset loader at fixed inspection cameras; separate from complete-game walking checks",
+  "excludedViews": [
+    {
+      "id": "04-gsu-front",
+      "reason": "Historical camera is inside the GSU shell; excluded from exterior acceptance."
+    }
+  ],
+  "sources": {
+    "src/features/world/bu-full-campus.ts": "67012dd909a66ccdd843c253da0498a16386bec19b83a7b5aa89657fb46db8ed",
+    "src/features/world/bu-full-layout.ts": "9b947a1c32033f1e41e608745d98e79127a833db48e3a669b0d388c4db0310bf",
+    "src/features/world/bu-warren-tower-layout.ts": "f7a8c3d3f10845a8661f032b95a8d44f49f177d95c6862578e761955cdb8be0d",
+    "src/features/world/bu-sert-photo-facades.ts": "a9916c2aecec29946dcb0fcf2342f65ddb8cb584735954ab6852908bdc04e4da",
+    "src/features/world/bu-refined-building-asset.ts": "d205030fda1749b783b13225f8572400e58a438a8bdc4c30706ac4bcf9213e0c",
+    "src/features/world/painterly-sky.ts": "59b24bdd3dcd7355ab1747886dbb79631cf73fb277268b85d76ffb64e4fe3b5a",
+    "public/data/mobile/boston.glb": "23582ad787b07806d4dc1fae79dc6ccdb9157836a8adb9a5a1e86e8722531764"
+  },
+  "setup": {
+    "light": {
+      "sky": "#c2d8f2",
+      "ground": "#b6b5a3",
+      "ambient": 1.75,
+      "sun": "#fff3d9",
+      "intensity": 2.65,
+      "offset": [
+        -95,
+        115,
+        135
+      ]
+    },
+    "invalid": [],
+    "streets": {
+      "stats": {
+        "roadSegments": 189,
+        "walkRoutes": 189,
+        "trees": 560,
+        "streetMeshes": 604,
+        "frontagePatches": 926,
+        "frontageArea": 21348,
+        "transitPlatforms": 10
+      }
+    }
+  }
+}

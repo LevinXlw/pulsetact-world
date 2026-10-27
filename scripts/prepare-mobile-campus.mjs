@@ -2,6 +2,8 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {createServer} from 'vite';
+import {createHash} from 'node:crypto';
+import {refreshBostonMobileReplacementBases} from './prepare-boston-mobile-replacements.mjs';
 import {Color,Vector3,Matrix3} from 'three';
 
 /** KHR_mesh_quantization requires each BYTE VEC3 vertex to begin on a 4-byte
@@ -68,7 +70,10 @@ try{
     const binary=Buffer.concat(chunks),raw=Buffer.from(JSON.stringify(doc)),json=Buffer.concat([raw,Buffer.alloc((4-raw.length%4)%4,32)]),bin=Buffer.concat([binary,Buffer.alloc((4-binary.length%4)%4)]),out=Buffer.alloc(28+json.length+bin.length);
     out.writeUInt32LE(0x46546c67,0);out.writeUInt32LE(2,4);out.writeUInt32LE(out.length,8);out.writeUInt32LE(json.length,12);out.writeUInt32LE(0x4e4f534a,16);json.copy(out,20);out.writeUInt32LE(bin.length,20+json.length);out.writeUInt32LE(0x004e4942,24+json.length);bin.copy(out,28+json.length);
     await writeFile(`public/data/mobile/${campus}.glb`,out);
-    const metadata={version:1,campus,bytes:out.length,triangles,meshes:doc.meshes.length,visibleMeshes:doc.nodes.filter(n=>!n.extras.mobileHidden).length,textures:0};
+    const metadata={version:1,campus,bytes:out.length,sha256:createHash('sha256').update(out).digest('hex'),triangles,meshes:doc.meshes.length,visibleMeshes:doc.nodes.filter(n=>!n.extras.mobileHidden).length,textures:0};
+    // The actual phone loader selects the MIT-stripped whole-campus base.
+    // Synchronize both the primary and Stata-only fallback before publishing metadata.
+    if(campus==='boston')metadata.replacementBases=await refreshBostonMobileReplacementBases();
     if(campus!=='boston'){
       const bounds=REMOTE_LAYOUTS[campus].bounds,cell=campus==='umd'?6.25:campus==='arizona'?8:25,minX=Math.floor(bounds.minX/cell)*cell,minZ=Math.floor(bounds.minZ/cell)*cell,columns=Math.ceil((bounds.maxX-minX)/cell)+1,rows=Math.ceil((bounds.maxZ-minZ)/cell)+1;
       const height=campus==='umd'?(await vite.ssrLoadModule('/src/features/world/maryland-terrain.ts')).marylandElevation:campus==='arizona'?(await vite.ssrLoadModule('/src/features/world/arizona-geography.ts')).arizonaElevation:()=>0;

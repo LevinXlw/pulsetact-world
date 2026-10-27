@@ -1,0 +1,16 @@
+[
+ {"id":"01-west-overview","title":"西区：宿舍、道路与球场关系","eye":[-2410,110,840],"target":[-2260,8,690],"fov":60},
+ {"id":"02-west-babcock","title":"Babcock Street：路缘与人行道衔接","eye":[-2380,1.75,744],"target":[-2373,0.4,694],"fov":65},
+ {"id":"03-west-comm-ave","title":"西区 Commonwealth Avenue 路面","eye":[-2400,1.75,852],"target":[-2260,1.5,865],"fov":62},
+ {"id":"04-west-courtyard","title":"Claflin / Sleeper 前场与步道","eye":[-2310,1.7,670],"target":[-2325,2.0,725],"fov":65},
+ {"id":"05-west-east-path","title":"宿舍区东侧到 Nickerson 的步道","eye":[-2235,1.75,733],"target":[-2226,1.0,680],"fov":65},
+ {"id":"06-questrom-opposite","title":"从 Questrom 南侧向对街看","eye":[-624,1.75,1087],"target":[-650,13,1190],"fov":65},
+ {"id":"07-questrom-block","title":"Questrom 与 Metcalf 街区关系","eye":[-580,105,1060],"target":[-655,8,1180],"fov":62},
+ {"id":"08-metcalf-front","title":"Metcalf 临 Commonwealth 一侧","eye":[-646,1.75,1136],"target":[-660,12,1192],"fov":65},
+ {"id":"10-580-street","title":"580 Commonwealth 专属对街补充机位","eye":[-620,1.75,1087],"target":[-610,20,1150],"fov":67,"supplemental":true},
+ {"id":"11-580-corner","title":"580 西北折角与底层曲线近景","eye":[-647,1.75,1135],"target":[-616,18,1148],"fov":68,"supplemental":true},
+ {"id":"12-566-street","title":"566 Commonwealth 退后塔楼与阳台","eye":[-562,1.75,1090],"target":[-558,20,1175],"fov":65,"supplemental":true},
+ {"id":"13-560-bank","title":"560 Commonwealth 曲面低层商业建筑","eye":[-493,1.75,1117],"target":[-509,4,1160],"fov":66,"supplemental":true},
+ {"id":"14-west-retaining-wall","title":"Nickerson 球场到宿舍平台的挡墙","eye":[-2260,1.75,690],"target":[-2290,4,722],"fov":65,"supplemental":true},
+ {"id":"15-560-entry","title":"560 曲面入口与窗框近景","eye":[-483,1.75,1158],"target":[-494,2.2,1158],"fov":64,"supplemental":true}
+]

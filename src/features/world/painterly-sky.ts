@@ -3,8 +3,12 @@ import {BackSide, ClampToEdgeWrapping, Mesh, ShaderMaterial, SphereGeometry, SRG
 /** Broad cloud banks leave quiet blue space around the campus silhouette. */
 export function createPainterlySky(time: {value: number}) {
   const ready = {value: 0};
+  // Readiness for a one-shot scene reflection differs from texture readiness:
+  // a failed image settles on the procedural sky without sampling that image.
+  const loadState = {status: 'loading' as 'loading'|'ready'|'fallback'};
   const panorama = new TextureLoader().load('/assets/environment/mit-painted-sky-v1.png',
-    () => {ready.value = 1;}, undefined, () => { /* Keep the procedural sky if unavailable. */ });
+    () => {ready.value = 1;loadState.status = 'ready';}, undefined,
+    () => {loadState.status = 'fallback'; /* Keep the procedural sky if unavailable. */ });
   panorama.colorSpace = SRGBColorSpace;
   // The painting is a wide composition, not a tileable panorama. The shader
   // overlaps its ends; sampling must never filter across the original hard edge.
@@ -109,6 +113,7 @@ export function createPainterlySky(time: {value: number}) {
   });
   const sky=new Mesh(new SphereGeometry(1200,32,20),material);
   sky.name='Painted cloud sky';
+  sky.userData.painterlySkyLoadState=loadState;
   sky.frustumCulled=false;
   return sky;
 }

@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "source": "public/data/killian/detail.glb",
+  "sourceSha256": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d",
+  "output": "public/data/killian/mobile-portico.glb",
+  "sha256": "f781e568ff513f813bd20cbc8467e3b5c20a714704f4789b983440451f344c43",
+  "bytes": 1902028,
+  "triangles": 108644,
+  "vertices": 77376,
+  "meshes": 12,
+  "textures": 0,
+  "components": [
+    {
+      "name": "windowInterior",
+      "vertices": 312,
+      "triangles": 156,
+      "min": [
+        -4.999221324920654,
+        5.319989204406738,
+        -45.98808670043945
+      ],
+      "max": [
+        27.137706756591797,
+        18.415000915527344,
+        -31.123754501342773
+      ]
+    },
+    {
+      "name": "windowFrame",
+      "vertices": 5160,
+      "triangles": 2580,
+      "min": [
+        -4.718869686126709,
+        5.239989280700684,
+        -45.326290130615234
+      ],
+      "max": [
+        27.51094627380371,
+        18.4950008392334,
+        -30.36907196044922
+      ]
+    },
+    {
+      "name": "interiorShade",
+      "vertices": 600,
+      "triangles": 300,
+      "min": [
+        -4.995388984680176,
+        6.457489013671875,
+        -45.92557144165039
+      ],
+      "max": [
+        27.217666625976562,
+        15.572488784790039,
+        -31.004671096801758
+      ]
+    },
+    {
+      "name": "entranceDoor",
+      "vertices": 72,
+      "triangles": 36,
+      "min": [
+        6.599364280700684,
+        4.914988994598389,
+        -40.150291442871094
+      ],
+      "max": [
+        16.14243507385254,
+        8.134988784790039,
+        -35.65402603149414
+      ]
+    },
+    {
+      "name": "doorGlass",
+      "vertices": 144,
+      "triangles": 72,
+      "min": [
+        6.698739051818848,
+        5.6849894523620605,
+        -39.99687957763672
+      ],
+      "max": [
+        16.125179290771484,
+        7.524989128112793,
+        -35.62947082519531
+      ]
+    },
+    {
+      "name": "entrancePanel",
+      "vertices": 144,
+      "triangles": 72,
+      "min": [
+        6.705373764038086,
+        5.014989376068115,
+        -39.9902458190918
+      ],
+      "max": [
+        16.126922607421875,
+        5.574989318847656,
+        -35.61794662475586
+      ]
+    },
+    {
+      "name": "entranceFrame",
+      "vertices": 1008,
+      "triangles": 504,
+      "min": [
+        6.5794453620910645,
+        4.864989280700684,
+        -40.07729721069336
+      ],
+      "max": [
+        16.36345863342285,
+        8.184988975524902,
+        -35.29118347167969
+      ]
+    },
+    {
+      "name": "doorHardware",
+      "vertices": 540,
+      "triangles": 384,
+      "min": [
+        7.5771164894104,
+        6.022989273071289,
+        -39.53833770751953
+      ],
+      "max": [
+        15.365788459777832,
+        6.466989040374756,
+        -35.830142974853516
+      ]
+    },
+    {
+      "name": "stepNosing",
+      "vertices": 2640,
+      "triangles": 1320,
+      "min": [
+        -5.552945137023926,
+        4.240489482879639,
+        -40.81916046142578
+      ],
+      "max": [
+        35.12812805175781,
+        4.865489482879639,
+        -20.175670623779297
+      ]
+    },
+    {
+      "name": "columnTrim",
+      "vertices": 23840,
+      "triangles": 43880,
+      "min": [
+        -4.560266971588135,
+        4.864989280700684,
+        -42.41166305541992
+      ],
+      "max": [
+        31.35167121887207,
+        19.540000915527344,
+        -24.61624526977539
+      ]
+    },
+    {
+      "name": "columnStone",
+      "vertices": 27550,
+      "triangles": 48960,
+      "min": [
+        -4.06635046005249,
+        5.484989166259766,
+        -41.953372955322266
+      ],
+      "max": [
+        30.857755661010742,
+        18.920000076293945,
+        -25.074535369873047
+      ]
+    },
+    {
+      "name": "lettering",
+      "vertices": 15366,
+      "triangles": 10380,
+      "min": [
+        -3.279313802719116,
+        19.75,
+        -50.56600570678711
+      ],
+      "max": [
+        31.232248306274414,
+        32.5,
+        -24.286724090576172
+      ]
+    }
+  ],
+  "processing": "Lossless source positions and original triangles; deduplicated vertices and normalized signed-byte normals. No decimation or layout change.",
+  "scope": "Only the Building 10 columns, column bases/capitals, window frames/backings, door leaves/frames/hardware, step nosings and inscriptions omitted by the existing mobile shell.",
+  "collision": "columnStone, entranceDoor and entrancePanel join the mobile wall query; all walking ground remains the existing baked ground.",
+  "sourceGeometryBasis": "Original measured campus frame plus photo-informed portico-study.json; not a new survey."
+}

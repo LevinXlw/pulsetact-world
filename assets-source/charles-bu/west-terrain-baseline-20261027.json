@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-27",
+  "sourceSha256": "54788c79d4d33c986fa2242bf8c52e7f0e73468171648fb9d0f727408e047005",
+  "survey": "terrain-west/terrain-samples.json",
+  "sourceDataset": [
+    {
+      "id": 45630,
+      "name": "MA_NE_CMGP_Sandy_Z19_2013",
+      "verticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/MA_NE_CMGP_Sandy_Z19_2013/TIFF/USGS_1m_x32y470_MA_NE_CMGP_Sandy_Z19_2013.tif",
+      "acquisitionDate": 1419984000000
+    }
+  ],
+  "points": [
+    {
+      "x": -2400,
+      "z": 744,
+      "previousModelHeight": 5.199999999999999,
+      "surveyBilinearHeight": 12.624
+    },
+    {
+      "x": -2400,
+      "z": 780,
+      "previousModelHeight": 5.200000000000001,
+      "surveyBilinearHeight": 13.049
+    },
+    {
+      "x": -2400,
+      "z": 816,
+      "previousModelHeight": 5.2,
+      "surveyBilinearHeight": 13.115
+    },
+    {
+      "x": -2400,
+      "z": 840,
+      "previousModelHeight": 10.193343298398156,
+      "surveyBilinearHeight": 12.966
+    },
+    {
+      "x": -2400,
+      "z": 852,
+      "previousModelHeight": 12.30588754858483,
+      "surveyBilinearHeight": 12.95
+    },
+    {
+      "x": -2388,
+      "z": 744,
+      "previousModelHeight": 5.2,
+      "surveyBilinearHeight": 12.751
+    },
+    {
+      "x": -2340,
+      "z": 708,
+      "previousModelHeight": 5.2,
+      "surveyBilinearHeight": 13.025
+    },
+    {
+      "x": -2292,
+      "z": 744,
+      "previousModelHeight": 5.224418850439346,
+      "surveyBilinearHeight": 13.046
+    },
+    {
+      "x": -2328,
+      "z": 672,
+      "previousModelHeight": 5.199999999999999,
+      "surveyBilinearHeight": 13.301
+    },
+    {
+      "x": -2172,
+      "z": 852,
+      "previousModelHeight": 5.722153848737407,
+      "surveyBilinearHeight": 13.836
+    },
+    {
+      "x": -2256,
+      "z": 840,
+      "previousModelHeight": 7.345264263644325,
+      "surveyBilinearHeight": 13.546
+    }
+  ]
+}

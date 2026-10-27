@@ -1,0 +1,518 @@
+{
+  "assetId": "bu-streets-and-questrom-frontage-20261027",
+  "date": "2026-10-27",
+  "status": "阶段可试玩；完整实景真实感尚未验收通过",
+  "scope": [
+    "西区错误固定地形与路口人行道接缝",
+    "西区宿舍/球场台地的局部校准",
+    "Questrom对面580、566与560 Commonwealth的漏选修复与专属外部几何",
+    "560曲端入口与既有人行道之间的局部铺装",
+    "手机实际加载旧MIT整合包的派生同步修复",
+    "上述变更的移动导出和连续步行"
+  ],
+  "workTypes": [
+    "场地高程校准",
+    "道路装配修复",
+    "遗漏建筑补建",
+    "局部构件建模"
+  ],
+  "editableSource": "保留测绘原始数据、带来源的程序化模型及生成脚本；本轮未创建Blender母版。",
+  "referenceRecords": [
+    "assets-source/charles-bu/580-commonwealth/source-20261027.json",
+    "assets-source/charles-bu/566-commonwealth/source-20261027.json",
+    "assets-source/charles-bu/560-commonwealth/source-20261027.json",
+    "assets-source/charles-bu/west-road-terrain-20261027.json",
+    "assets-source/charles-bu/560-commonwealth/entry-apron-20261027.json"
+  ],
+  "visualReview": {
+    "identityAndMainVolumes": "三栋遗漏建筑的独立体块、580凸窗与灰顶、566阳台、560曲面玻璃已在正常运行图中确认。",
+    "remaining": "580窗/板比例及石带仍简化；566分户及底层窗列概括；560玻璃偏均匀。前场铺装、站台设施和相邻旧楼漏光尚待完善。"
+  },
+  "sources": {
+    "src/features/world/bu-terrain.ts": "fd674614088ea2d0927c66d11e796491a53563173ecc62e1e75716fa3dfec9a7",
+    "src/features/world/bu-west-terrain-data.ts": "b2df8fbbe3122e9b57f3c0787ae032d1187d5a23dcee475dda35099d533fc550",
+    "src/features/world/bu-campus-streets.ts": "323e6848cca368b7e28f4c51fc5882dd18f5c4ce8e7cf41b4e6e9d63b52fbe53",
+    "src/features/world/bu-public-realm.ts": "a12920536dc40760b02a99116c9e533c4c34792c966162892859f019b5cb8896",
+    "src/features/world/bu-full-campus.ts": "5fe96b5f8f25c128e78e75e2d11089ebe6177967299a63aa6c131f260ee72457",
+    "src/features/world/bu-full-layout.ts": "0ef3039f25c550245257c21bd4c60b28099a5e12fc84baf36303b22fa9491814",
+    "src/features/world/bu-west-terrace.ts": "83f29e7f43858b677b93fbe1c4ec0e18f5f4e8848c9e755cdd8e0f6c2644677d",
+    "src/features/world/bu-west-terrace-layout.ts": "6d8034b2b85fc2dd30fbb0009085c131eaaa23942a24475dde24ff0039c94835",
+    "src/features/world/bu-560-commonwealth.ts": "11003af916b6568413375f432ad2c6b69d3aa6534282d87028e6271b7a73a04f",
+    "src/features/world/bu-580-commonwealth.ts": "d1a6ed564c18125d6cbce5d78b9f09d103988a9e6a6e33af5494ff9e9e99c6e3",
+    "src/features/world/bu-566-commonwealth.ts": "6410c18037413caee989fc34021049c97ead8153ce053966716511e502c45ea5",
+    "src/features/world/mobile-campus-build.ts": "c11e734b400cf7643209abca18334dbc949291786b90d88e4abc982082319460",
+    "scripts/prepare-bu-campus.mjs": "fa9dd8f1fa3c4cfc4c95396f5e467eba1bc05085d05f44f6d3b108c4147ce7ec",
+    "scripts/prepare-bu-terrain.mjs": "958421791afb7713d65f92a4fba7edd65e9adb6eeb86836bb00f86fb88280c54",
+    "scripts/prepare-mobile-campus.mjs": "926981d37676d69ce48d8bd943e0e0e7db9fbce739a94c86a9473792170e2cbb",
+    "scripts/capture-bu-comm-ave.mjs": "233617cb24e8e2b078f2838ec40b207da11639a6cd7b82b1bf00353b59b24fd6",
+    "scripts/check-bu-continuous.mjs": "bac4f001242e00e1e812a25986071bbd45079fec275a198a3af32f7cc800c727",
+    "assets-source/charles-bu/street-review-cameras-20261027.json": "5f2bd8194a5e8c570edd2d26679a417bf4fe046f748999980426826a07fe8d88",
+    "assets-source/charles-bu/questrom-frontage-walk-20261027.json": "e9516542f711fbf69af5e693dd1a982990322118c91b4fd130f00b866ddee23c",
+    "assets-source/charles-bu/terrain-west/terrain-samples.json": "b702b82634d4419d5ed8946dc538b7423d3e146fda1784461500a59025e02412",
+    "src/features/world/mobile-campus.ts": "982ce589546cc779b83cb29fbc9c4dd1a35ccd90aa0d30f3265e894a190b0b53",
+    "scripts/prepare-boston-mobile-replacements.mjs": "685616a942d6b791acf3e57965c9b2ff99e64c6755c68aa1d2dae78032a70e4c",
+    "scripts/prepare-stata-base.mjs": "b93287a7ba06c6f38f912fa39228d277056aebe6dc7232f6d6d075bab6d17acc",
+    "scripts/prepare-mit-residences-base.py": "0a47af5d897481d8499203d4ca1539ac5f62fb64e7e982e88840c7896098a9bd",
+    "scripts/check-bu-playable.mjs": "e94e220505805ef4354167d68a40a34432ec7172c8efc9a1ba08d7c596375eb6",
+    "public/assets/mit-stata/boston-without-stata.glb": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+    "public/assets/mit-stata/boston-without-stata.json": "0c0db10c3454a381cfbb74f978ee59d2ba510b8a041dd85d8c6b07a8c82687be",
+    "public/assets/mit-residences/boston-without-residences.glb": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+    "public/assets/mit-residences/boston-without-residences.json": "1586056287584bf62b4b6dcd923bbe71a0415cd34105e6b4b5b87acd6dae2aeb",
+    "public/data/mobile/boston.replacements.json": "1cb1d8ca90f1beab36a112b3fc76f46bd2b66eed6a2c9f3538b6f60c01494d08",
+    "public/data/mobile/boston.glb": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+    "public/data/mobile/boston.json": "7b56185387abe0ee29a4628dc742d1bcb1dc8e74ed934539a212ca286cc65164"
+  },
+  "technical": {
+    "standardAttempt": {
+      "quality": "standard",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "lastPosition": [
+        -2143.6684420915285,
+        13.70501694551152,
+        888.2741340367038
+      ],
+      "status": "timeout",
+      "start": [
+        -2114,
+        13.626882851510786,
+        892.3720836960199
+      ],
+      "note": "No navigation oscillation found in subsequent CPU review. Low-quality gameplay rerun recorded movement and frame counters and passed; cause of standard-quality slowdown not yet isolated. This attempt preceded the final frozen asset state.",
+      "kind": "Observed initial full-game check; reconstructed from command log, not a frame-time benchmark",
+      "wallClockLimitMs": 180000,
+      "distanceRemaining": 445.35724227187126,
+      "leg": "bu-new-balance",
+      "frameTime": "Not recorded by the original script"
+    },
+    "mobileLoaderFix": {
+      "checkedAt": "2026-10-27T04:29:21.270Z",
+      "scope": "Boston phone base synchronization; CPU runtime-loader and geometry regression. No visual acceptance claimed.",
+      "rootCause": "loadMobileCampus normally selected the whole-city MIT residence replacement base generated from an older Boston bake, hiding current BU source geometry.",
+      "fix": {
+        "bake": "prepare-mobile-campus.mjs boston automatically regenerates both MIT-stripped mobile bases, then validates the source SHA chain before writing metadata.",
+        "compatibility": "Authored Stata/Baker/Maseeh assets and desktop derivative files remain unchanged. Stata-only fallback is synchronized too. Runtime still downloads one base on success.",
+        "loaderDiagnostics": "model.userData.mobileBaseAsset reports the real selected URL and bytes.",
+        "python": "PYTHON_EXECUTABLE, then PYTHON, then python; no machine-specific repository path."
+      },
+      "before": {
+        "actualLoaderTests": 4,
+        "failed": 4,
+        "report": "before-regression.json"
+      },
+      "after": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "report": "after-regression.json",
+        "coverage": [
+          "Actual loadMobileCampus selects residence base without downloading second city base.",
+          "Selected base and Stata-only fallback preserve every original byte and all non-Cambridge building mesh metadata from current Boston bake.",
+          "Both derivatives match SHA/byte/input linkage manifests.",
+          "Bank fascia and West floor slabs exist after real runtime assembly.",
+          "Direct bake rays validate 560 curved glazing and roof, 566 balcony recesses and floors, 580 apertures and floors, and West lobby/floor geometry."
+        ],
+        "testSubstitutions": [
+          "Canvas foliage factory",
+          "Authored MIT image/model decode fixtures; all real base fetches, base parsing, geometry and runtime assembly are exercised."
+        ],
+        "typecheck": "passed",
+        "existingMITAndMobileParserTests": {
+          "passed": 27
+        }
+      },
+      "protectedAssets": {
+        "count": 8,
+        "passed": true,
+        "report": "protected-assets-after.json"
+      },
+      "chain": {
+        "version": 1,
+        "source": {
+          "url": "/data/mobile/boston.glb",
+          "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "bytes": 29609576
+        },
+        "stata": {
+          "version": 1,
+          "url": "/assets/mit-stata/boston-without-stata.glb",
+          "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "bytes": 29946188,
+          "inputUrl": "/data/mobile/boston.glb",
+          "inputSHA256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "inputBytes": 29609576,
+          "removedTriangles": 1811
+        },
+        "residences": {
+          "version": 1,
+          "url": "/assets/mit-residences/boston-without-residences.glb",
+          "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+          "bytes": 30272616,
+          "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+          "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "inputBytes": 29946188,
+          "removedTriangles": 979
+        }
+      }
+    },
+    "tests": {
+      "passed": 91,
+      "failed": 0,
+      "suites": 17,
+      "report": "docs/screenshots/bu-streets-20261027/tests.json"
+    },
+    "build": {
+      "exitCode": 0,
+      "at": "2026-10-27T04:31:33.1483157Z",
+      "command": "npm.cmd run build"
+    },
+    "walkWest": "passed",
+    "walkEast": "passed",
+    "mobilePlay": "passed"
+  },
+  "comparison": {
+    "method": "修改前/本轮版本保持水平位置、视场角、相对地面眼高和日光。地形修正后绝对相机及目标高度随新地面变化，故不是完全相同的世界坐标相机。",
+    "beforeViews": [
+      "01-west-overview",
+      "02-west-babcock",
+      "03-west-comm-ave",
+      "04-west-courtyard",
+      "05-west-east-path",
+      "06-questrom-opposite",
+      "07-questrom-block",
+      "08-metcalf-front"
+    ],
+    "supplementalViews": [
+      "10-580-street",
+      "11-580-corner",
+      "12-566-street",
+      "13-560-bank",
+      "14-west-retaining-wall",
+      "15-560-entry"
+    ],
+    "kind": "固定检查图使用真实运行时资产加载器；walk与playable-mobile是完整游戏人物、HUD与输入检查；neutral仅临时替换建筑材质以检查几何。",
+    "photos": "实景参考保留原像素；照片与模型仅近似朝向，季节/相机不同。"
+  },
+  "resources": {
+    "actualMobileBase": {
+      "url": "/assets/mit-residences/boston-without-residences.glb",
+      "bytes": 30272616
+    },
+    "actualMobileAttachments": {
+      "stata": {
+        "status": "loaded",
+        "url": "/assets/mit-stata/stata-mobile.glb",
+        "baseUrl": "/assets/mit-residences/boston-without-residences.glb",
+        "bytes": 7648508
+      },
+      "residences": {
+        "status": "loaded",
+        "buildings": [
+          "baker",
+          "maseeh"
+        ],
+        "bytes": 6813888
+      },
+      "portico": {
+        "bytes": 1902028,
+        "url": "/data/killian/mobile-portico.glb",
+        "status": "loaded"
+      }
+    },
+    "mobileDifference": "三栋新增建筑保留与完整源相同的几何和真实开口；这不是减面LOD。移动导出去除外部纹理，低档关闭动态阴影，既有次要建筑沿用旧分级。挡墙、地面与通行开口同步保留。",
+    "mobileExport": {
+      "version": 1,
+      "campus": "boston",
+      "bytes": 29609576,
+      "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "triangles": 816040,
+      "meshes": 1174,
+      "visibleMeshes": 245,
+      "textures": 0,
+      "replacementBases": {
+        "version": 1,
+        "source": {
+          "url": "/data/mobile/boston.glb",
+          "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "bytes": 29609576
+        },
+        "stata": {
+          "version": 1,
+          "url": "/assets/mit-stata/boston-without-stata.glb",
+          "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "bytes": 29946188,
+          "inputUrl": "/data/mobile/boston.glb",
+          "inputSHA256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "inputBytes": 29609576,
+          "removedTriangles": 1811
+        },
+        "residences": {
+          "version": 1,
+          "url": "/assets/mit-residences/boston-without-residences.glb",
+          "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+          "bytes": 30272616,
+          "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+          "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "inputBytes": 29946188,
+          "removedTriangles": 979
+        }
+      }
+    },
+    "priorExport": {
+      "bytes": 25723232,
+      "triangles": 696841
+    },
+    "increase": {
+      "bytes": 3886344,
+      "triangles": 119199
+    },
+    "runtimeViews": [
+      {
+        "id": "01-west-overview",
+        "triangles": 3315625,
+        "drawCalls": 709
+      },
+      {
+        "id": "02-west-babcock",
+        "triangles": 542256,
+        "drawCalls": 109
+      },
+      {
+        "id": "03-west-comm-ave",
+        "triangles": 12822044,
+        "drawCalls": 2872
+      },
+      {
+        "id": "04-west-courtyard",
+        "triangles": 757960,
+        "drawCalls": 185
+      },
+      {
+        "id": "05-west-east-path",
+        "triangles": 459689,
+        "drawCalls": 97
+      },
+      {
+        "id": "06-questrom-opposite",
+        "triangles": 4616715,
+        "drawCalls": 614
+      },
+      {
+        "id": "07-questrom-block",
+        "triangles": 3176384,
+        "drawCalls": 476
+      },
+      {
+        "id": "08-metcalf-front",
+        "triangles": 1895910,
+        "drawCalls": 228
+      },
+      {
+        "id": "10-580-street",
+        "triangles": 3356947,
+        "drawCalls": 431
+      },
+      {
+        "id": "11-580-corner",
+        "triangles": 2123705,
+        "drawCalls": 374
+      },
+      {
+        "id": "12-566-street",
+        "triangles": 1247809,
+        "drawCalls": 164
+      },
+      {
+        "id": "13-560-bank",
+        "triangles": 1984063,
+        "drawCalls": 271
+      },
+      {
+        "id": "14-west-retaining-wall",
+        "triangles": 830373,
+        "drawCalls": 206
+      },
+      {
+        "id": "15-560-entry",
+        "triangles": 5569658,
+        "drawCalls": 1274
+      }
+    ],
+    "mobileViews": [
+      {
+        "id": "01-west-overview",
+        "triangles": 907628,
+        "drawCalls": 208
+      },
+      {
+        "id": "02-west-babcock",
+        "triangles": 300377,
+        "drawCalls": 52
+      },
+      {
+        "id": "03-west-comm-ave",
+        "triangles": 1294861,
+        "drawCalls": 502
+      },
+      {
+        "id": "04-west-courtyard",
+        "triangles": 272426,
+        "drawCalls": 57
+      },
+      {
+        "id": "05-west-east-path",
+        "triangles": 323499,
+        "drawCalls": 39
+      },
+      {
+        "id": "06-questrom-opposite",
+        "triangles": 415170,
+        "drawCalls": 50
+      },
+      {
+        "id": "07-questrom-block",
+        "triangles": 487774,
+        "drawCalls": 120
+      },
+      {
+        "id": "08-metcalf-front",
+        "triangles": 363070,
+        "drawCalls": 32
+      },
+      {
+        "id": "10-580-street",
+        "triangles": 420300,
+        "drawCalls": 56
+      },
+      {
+        "id": "11-580-corner",
+        "triangles": 414064,
+        "drawCalls": 50
+      },
+      {
+        "id": "12-566-street",
+        "triangles": 369054,
+        "drawCalls": 41
+      },
+      {
+        "id": "13-560-bank",
+        "triangles": 368690,
+        "drawCalls": 40
+      },
+      {
+        "id": "14-west-retaining-wall",
+        "triangles": 286870,
+        "drawCalls": 68
+      },
+      {
+        "id": "15-560-entry",
+        "triangles": 782838,
+        "drawCalls": 419
+      }
+    ],
+    "device": "Chrome headless desktop and phone emulation; not a physical phone",
+    "performance": "未以浏览器模拟值宣称真机达到30 FPS。移动真机帧时间与显存仍待验证。"
+  },
+  "gates": {
+    "G0": {
+      "status": "partial",
+      "note": "城市轮廓、USGS高程与BU官方实景/580平面图已保留；部分后立面、566商业入口和精细高程仍为推定。"
+    },
+    "G1": {
+      "status": "partial",
+      "note": "补齐漏选体块、专属轮廓并修正西区整体标高；实际多机位和中性材质图已检查。场地局部与建筑未覆盖细节尚待精校。"
+    },
+    "G2": {
+      "status": "partial",
+      "note": "新增建筑采用开口、窗框、楼板和退台/阳台构件；材质质感和店面细节仍未达到完整实景标准。"
+    },
+    "G3": {
+      "status": "bounded runtime checks passed",
+      "note": "西区及Questrom对面实际连续步行、手机模拟加载和画质切换见对应报告。"
+    },
+    "G4": {
+      "status": "partial",
+      "note": "源、导出hash和检查证据齐备；真机性能及完整视觉质量待继续。"
+    }
+  },
+  "remaining": [
+    "西区宿舍旧通用窗列、景观设施与入口构造仍需专属重建。",
+    "580/566店招、商业门厅、背面和精确窗框尺寸仍待更多实景校准。",
+    "USGS bare-earth数据不是建筑/台阶测量；局部平台修补属于有依据的场地重建，非原始测量。",
+    "标准画质自动步行曾超时，原因尚未完全隔离；省电档连续步行通过，不等于标准画质性能通过。",
+    "本轮为本地版本，未发布线上。"
+  ],
+  "evidence": {
+    "docs/screenshots/bu-streets-20261027/mobile-loader-fix/summary.json": "a507827c93b54ee98498462638055bdf17a784473b63d8210c19649f80bfcee6",
+    "docs/screenshots/bu-streets-20261027/mobile-loader-fix/before-regression.json": "45f5fe3d112959635bf088cd39aeef9767086f1cf832d3749e79e6149f19a4c6",
+    "docs/screenshots/bu-streets-20261027/mobile-loader-fix/after-regression.json": "6dccfc597fc43d9366e42dcd90dfc531257f1f35bea7b549750894b510382d7e",
+    "docs/screenshots/bu-streets-20261027/mobile-loader-fix/protected-assets-after.json": "001b0dc800a06f2de9a09620a57572e47b39fdca642554bd608e9d09b9d0cda1",
+    "docs/screenshots/bu-streets-20261027/mobile-stale/report.json": "088969c459982d3f47ab86ede6899b0ff25ae4197af56ba4dcff58e57666d81d",
+    "docs/screenshots/bu-streets-20261027/mobile-stale/10-580-street.png": "120a7d54853adeee47344f712af48188f3899d0a45d773950d798f64859c724b",
+    "docs/screenshots/bu-streets-20261027/before/01-west-overview.png": "0c24a70d353bf5d2d9a1c59028498d5ac7e06371ee6e0a7dd70104fd7892cce0",
+    "docs/screenshots/bu-streets-20261027/before/02-west-babcock.png": "562a040bfb5b7d8c380f364c54dea73b4511d76a6226e353f9961f34d8f543f3",
+    "docs/screenshots/bu-streets-20261027/before/03-west-comm-ave.png": "b9cb9486500b55927e2a52c1a7425029dd136f7f2506f0870bd1eb8fc409ea72",
+    "docs/screenshots/bu-streets-20261027/before/04-west-courtyard.png": "bdddc9eb6cd1b298a7fdccc203438e623083e7ad06f48ccb8bab7b705979d4da",
+    "docs/screenshots/bu-streets-20261027/before/05-west-east-path.png": "2f3a8d5a31566612e770b58f995b1a298c13636fa53bb023549bd2c27eb6715c",
+    "docs/screenshots/bu-streets-20261027/before/06-questrom-opposite.png": "cb2feb7e27c290182c606265efccc2afe3f199db1b89a1552a80eb1d9ec6740d",
+    "docs/screenshots/bu-streets-20261027/before/07-questrom-block.png": "8974f0f61fc214daebef71e9edbfb48bdd199acde1d94a1c391af317603dbddf",
+    "docs/screenshots/bu-streets-20261027/before/08-metcalf-front.png": "361ac4141450ac2ff8202e8c47939184aa03150b9654668a5646632ab5596653",
+    "docs/screenshots/bu-streets-20261027/before/report.json": "747dd9dcd3a450ffd44a6ed6656c85f7c697a82742818404407ab9d90488aa62",
+    "docs/screenshots/bu-streets-20261027/after/01-west-overview.png": "81aa297bb6149008047cdde2218820bb6d1715f9c0a6af4bc3cfab6cf05ca442",
+    "docs/screenshots/bu-streets-20261027/after/02-west-babcock.png": "e71e2bc1deb107a03a07b68ec0d255d277a9198e0cba293f54cd80ec6d2f2f73",
+    "docs/screenshots/bu-streets-20261027/after/03-west-comm-ave.png": "b5c47ead71e59a09588bd90bfd56c6e40a2f7448eec9137f0d6685c9f82b6da5",
+    "docs/screenshots/bu-streets-20261027/after/04-west-courtyard.png": "baa3a7e7fd623fa200e860917cda81322e98b8077f7c65b36ad7c7377fa3a38a",
+    "docs/screenshots/bu-streets-20261027/after/05-west-east-path.png": "077f8599e77e98bb3d9406aa988a2a74a327e0bb3a4cd6f249ba732961817391",
+    "docs/screenshots/bu-streets-20261027/after/06-questrom-opposite.png": "d6c4df50d0a564dec8e2a2da09bd73201f1422872ac1c8b92ea0e12d5f82a196",
+    "docs/screenshots/bu-streets-20261027/after/07-questrom-block.png": "0d6803e957e71576fa3cfae08cc11d084040e88a53dc76681606fe300a416523",
+    "docs/screenshots/bu-streets-20261027/after/08-metcalf-front.png": "a030f36df5672f6ae4053828a37f8d8963a79539605f19bdc463a424b0c30400",
+    "docs/screenshots/bu-streets-20261027/after/10-580-street.png": "5106c6f970834b61e49b87b2bb9c5ee5e9bd2c8aefc52e2f38ff6e0951605822",
+    "docs/screenshots/bu-streets-20261027/after/11-580-corner.png": "6bced1215ff745a0054779fc0bc944e371cb6defba144e31248cd7faa3b306ca",
+    "docs/screenshots/bu-streets-20261027/after/12-566-street.png": "435c784ff35f039c2b7d8d516d97a8d5d86f49c1f80dd2f6efdebd78c15cfce0",
+    "docs/screenshots/bu-streets-20261027/after/13-560-bank.png": "f88823a984a32cab9f0039e13b592538780a9d0c674c9865310bd4fb54111089",
+    "docs/screenshots/bu-streets-20261027/after/14-west-retaining-wall.png": "4af9bfc5b71e7e25c44d7e69f353797617a1ed98e94a8985feb67613d6284664",
+    "docs/screenshots/bu-streets-20261027/after/15-560-entry.png": "7da7f2dd042438bcbed2f24dce4724e031d72712bb485c721738607d69203d72",
+    "docs/screenshots/bu-streets-20261027/after/report.json": "eed21e6e1ff2e293f07088def3fa98aa0beec2d4e90e9fdf4ba8972fdee0c6f2",
+    "docs/screenshots/bu-streets-20261027/neutral/10-580-street.png": "4063340e84d0927eb9d09ae8bcc878a0014151f0c24fe451d26086648de1c2f4",
+    "docs/screenshots/bu-streets-20261027/neutral/12-566-street.png": "c1f0fb1cb6d8eb9c7a16b8d4c086c2acb53baede8af675e7cac01d56386484a3",
+    "docs/screenshots/bu-streets-20261027/neutral/13-560-bank.png": "f8c02853c30db7866d5ee02a3e827edab19969d13e3479d3584926e48765b8f1",
+    "docs/screenshots/bu-streets-20261027/neutral/15-560-entry.png": "1ec8767be144bdbb922b55911d07e77f41fb47f61274112094b390bb6ab7ed8c",
+    "docs/screenshots/bu-streets-20261027/neutral/report.json": "e134d8ea6dc9d03e2167f31f140790be3dc5cf1ac244ac484deefbf544d96dc5",
+    "docs/screenshots/bu-streets-20261027/walk-west/00-agganis.png": "366da1d167191a05cd49f3967403b0f5168fec4fbfdbc1ae1c4ead1ab16a0e9d",
+    "docs/screenshots/bu-streets-20261027/walk-west/01-bu-new-balance.png": "9e6b6a7434ce058ae3cfb1fb3ec14e56142ad3d29923e87bcebf1ec4bb2a079f",
+    "docs/screenshots/bu-streets-20261027/walk-west/02-bu-nickerson.png": "c47969eebacca04c7a5011ae14244175a29b1a1f4737e37c22c7eea99d4cb9fc",
+    "docs/screenshots/bu-streets-20261027/walk-west/03-bu-fitrec.png": "c1a4f0788ec9a54814b6d1760cf4d90187e5f0cd989411a4a019ec8fa0196aa5",
+    "docs/screenshots/bu-streets-20261027/walk-west/report.json": "6163bbfa74986a2aaa785baa40f4b5b3e5707b394a70f25adc1c5eec833d57f1",
+    "docs/screenshots/bu-streets-20261027/walk-east/00-questrom.png": "d4d198024a7334dd0bd396258b421ff4116c4e98c2fd87d1477ce8e091958828",
+    "docs/screenshots/bu-streets-20261027/walk-east/01-580-north-curb.png": "de76b78415cdc04683e74650f72bc2f7fd00c6ed6c56c276db52e6268e7bcb72",
+    "docs/screenshots/bu-streets-20261027/walk-east/02-580-northwest-corner.png": "ebb6ab64845a2f800291a5a0eafddc969f4ad2a3ddf7ff3d5c2548889491f66e",
+    "docs/screenshots/bu-streets-20261027/walk-east/03-566-north-curb.png": "3aa4dedaf5b07437f6b2e3cde9ef1e7faa7af694fe01b495b2d5eff06ec03d74",
+    "docs/screenshots/bu-streets-20261027/walk-east/report.json": "597bd0f1bca1cdff1e3fa2154497d00f8be865a17d0e3ff33695f5f8def09c95",
+    "docs/screenshots/bu-streets-20261027/mobile/01-west-overview.png": "7f45e0dd2f8097d0dbc2f8ea39aafc39500112be0527967a095a069fc180867c",
+    "docs/screenshots/bu-streets-20261027/mobile/02-west-babcock.png": "91c8728914e1819445b56c74f6a4938763bd9d2b87c32ddecfbf163c9f14e80c",
+    "docs/screenshots/bu-streets-20261027/mobile/03-west-comm-ave.png": "28b8ab80fdb7c88ad1edd9ab6e54adeed7a5b487c7cabb162546045d1acd2400",
+    "docs/screenshots/bu-streets-20261027/mobile/04-west-courtyard.png": "ab522d82ef5a3dcaf8818ef99c67b711deedb0ff36ba5254ace88843b2c4a1c9",
+    "docs/screenshots/bu-streets-20261027/mobile/05-west-east-path.png": "c5eb6b476b4cbf03a7118afcd757d761bbd9a0be0a6d07207d46e877f97e9de8",
+    "docs/screenshots/bu-streets-20261027/mobile/06-questrom-opposite.png": "a7c322d99d957143eabc6bc2bb3d4db444d40aa8b16f7366f3e864f88a2c7b9e",
+    "docs/screenshots/bu-streets-20261027/mobile/07-questrom-block.png": "3af4655cb15470ac732b28e2c50681680cb6494aac97538f008e9ff9e69d9e56",
+    "docs/screenshots/bu-streets-20261027/mobile/08-metcalf-front.png": "e4c0eb300dfaa0ec5a1d9b1aecd3bd8a32e67eb8bcd845bab1b84fc3413ac72d",
+    "docs/screenshots/bu-streets-20261027/mobile/10-580-street.png": "2a54f4297ceceaaa3d018e246e2e2cb3ea3c37718cd9a366d771de6c664e4cb4",
+    "docs/screenshots/bu-streets-20261027/mobile/11-580-corner.png": "23939c34a6ad5393ea63010add6d14ea44e09c044aba93d802ee656bd5df5833",
+    "docs/screenshots/bu-streets-20261027/mobile/12-566-street.png": "46511830685ebe89fa94888120181c391258eea3557c7293a30848a51c379360",
+    "docs/screenshots/bu-streets-20261027/mobile/13-560-bank.png": "4c574b3dc0ee7d949dea678c7bd89e533eb18851355409922ce748d04db102aa",
+    "docs/screenshots/bu-streets-20261027/mobile/14-west-retaining-wall.png": "892fdaaf5d8c56441e34ae03ce03d3ceb27efc03fe09cbb27c74dcc1876cc91e",
+    "docs/screenshots/bu-streets-20261027/mobile/15-560-entry.png": "0e74a116f352437db53ccdcabbba435c64450e6bc13a8f8eb6bcfba99086bf5d",
+    "docs/screenshots/bu-streets-20261027/mobile/report.json": "654b98d0670947ff3101c0c4ace227638c2b3f34f6b939ea5290fda2012be4c1",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/report.json": "a4483d7e68b12e49133aace3f75c7dfad5b21845b541baa22d16fa7d64673aac",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/bu-agganis.png": "3bf8bbc32cadfa614a3b113d397a976bc5793f8d397a60b6f224ad60a31030db",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/bu-fitrec.png": "b27df201a478e31754f140bd5b864cb3784fb9c6fc94f8c81ee0d8d08e26d149",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/bu-nickerson.png": "437423ec15d4978d035fecf0d79be93a9c94564c863b9a900035d758fd3edaa9",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/bu-questrom.png": "7898ff9e17f97958f2e2a087db55c1ef82aea53574715dc730f9344b96fbec27",
+    "docs/screenshots/bu-streets-20261027/playable-mobile/mobile-bu-hd.png": "dddb7bb628f2b1ea737d10ac9a594393df9e2370c529145dd5a2539233cd0bf7",
+    "docs/screenshots/bu-streets-20261027/tests.json": "78c8c68bb53bad6db20aa4ed0efc5442b1a04c1ec3c82eaa4300f9323863d16f",
+    "docs/screenshots/bu-streets-20261027/build.json": "137253140eed9878a14fb9f2e81b70de6d8389187784e8e040961d3d758f3862",
+    "docs/screenshots/bu-streets-20261027/standard-walk-attempt.json": "018b0bc7c8d4c128460b04ae8c78e134278ae9b4ddf08d28fa903c89f236b9c2"
+  }
+}

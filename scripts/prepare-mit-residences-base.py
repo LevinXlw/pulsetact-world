@@ -1,7 +1,10 @@
 """Remove only Baker/Maseeh source triangles, retaining the existing Stata removal.
 All original binary data and unrelated primitives are preserved byte for byte.
 """
-import json, struct, hashlib, math, itertools
+import json, struct, hashlib, math, itertools, argparse
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--mobile-only',action='store_true',help='Refresh only Boston phone base; preserve the desktop export.')
+args=parser.parse_args()
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 FT=1200/3937; ORIGIN=(766425.8129794697-731100,2956167.074144031-2902900)
@@ -38,7 +41,7 @@ def save(path,doc,blob):
     path.write_bytes(struct.pack('<4sII',b'glTF',2,28+len(j)+len(blob))+struct.pack('<I4s',len(j),b'JSON')+j+struct.pack('<I4s',len(blob),b'BIN\0')+blob)
 report={'sourceTriangles':counts,'assets':[]}
 out=ROOT/'public/assets/mit-residences';out.mkdir(parents=True,exist_ok=True)
-for prefix,tolerance in [('campus',.00004),('boston',.00053)]:
+for prefix,tolerance in ([('boston',.00053)] if args.mobile_only else [('campus',.00004),('boston',.00053)]):
     src=ROOT/f'public/assets/mit-stata/{prefix}-without-stata.glb';raw,doc,blob=read_glb(src)
     candidates=[p for m in doc['meshes'] for p in m['primitives'] if doc['materials'][p['material']].get('name') in ('Cambridge buildings (untextured)','Cambridge_buildings_(untextured)')];assert len(candidates)==1
     p=candidates[0];positions=values(doc,blob,p['attributes']['POSITION']);indices=[v[0] for v in values(doc,blob,p['indices'])] if 'indices' in p else list(range(len(positions)))
@@ -53,6 +56,9 @@ for prefix,tolerance in [('campus',.00004),('boston',.00053)]:
     p['indices']=len(doc['accessors']);doc['accessors'].append({'bufferView':vid,'componentType':5125,'count':len(keep),'type':'SCALAR','min':[min(keep)],'max':[max(keep)]})
     dest=out/f'{prefix}-without-residences.glb';save(dest,doc,new)
     result,d2,b2=read_glb(dest);assert b2[:len(blob)]==blob;assert src.read_bytes()==raw
+    if prefix=='boston':
+        manifest={'version':1,'url':'/'+dest.relative_to(ROOT/'public').as_posix(),'sha256':hashlib.sha256(result).hexdigest(),'bytes':len(result),'inputUrl':'/'+src.relative_to(ROOT/'public').as_posix(),'inputSHA256':hashlib.sha256(raw).hexdigest(),'inputBytes':len(raw),'removedTriangles':len(source)}
+        dest.with_suffix('.json').write_text(json.dumps(manifest,indent=2))
     report['assets'].append({'input':str(src.relative_to(ROOT)),'output':str(dest.relative_to(ROOT)),'removedTriangles':len(source),'retainedBuildingTriangles':len(keep)//3,'sourceMatchedExactlyOnce':True,'originalBinaryPreserved':True,'sha256':hashlib.sha256(result).hexdigest()})
-report['status']='passed';folder=ROOT/'output/mit-residences-20261023';folder.mkdir(parents=True,exist_ok=True);(folder/'base-removal-report.json').write_text(json.dumps(report,indent=2))
+report['status']='passed';folder=ROOT/('output/mobile-boston-replacements' if args.mobile_only else 'output/mit-residences-20261023');folder.mkdir(parents=True,exist_ok=True);(folder/('residences-base-removal-report.json' if args.mobile_only else 'base-removal-report.json')).write_text(json.dumps(report,indent=2))
 print(json.dumps(report))

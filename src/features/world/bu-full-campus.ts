@@ -3,17 +3,22 @@ import {mergeGeometries} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import {createCampusSurface} from './painterly-surfaces';
 import {BU_FULL_BUILDINGS,BU_FULL_SPACES} from './bu-full-layout';
 import {BU_ROAD_EDGES,buSegmentProjection} from './bu-campus-layout';
-import {BU_DEM_CORE_BOUNDS,buElevation,drapeBUGeometry} from './bu-terrain';
+import {BU_DEM_CORE_BOUNDS,BU_WEST_DEM_CORE_BOUNDS,buElevation,drapeBUGeometry} from './bu-terrain';
 import {configureBUGroundLayer} from './bu-ground-layers';
 import {BU_SERT_FRAME,BU_SERT_FOUNDATION_ANCHOR,BU_SERT_PARTS,BU_SERT_PUBLIC_PASSAGES,BU_SERT_FORECOURTS,BU_SERT_LINK_ENTRY,buSertPoint,buSertLocal} from './bu-sert-layout';
 import {BU_MARSH_ASSEMBLY} from './bu-landmark-layout';
 import {buBrownstoneEntry} from './bu-brownstone-entry';
 import {createBUFrontageGlazing} from './bu-frontage-glazing';
+import {buildBUGSULinkSide,buildBUMugarSouthUpper,isBUGSULinkSide,isBUMugarSouthUpper} from './bu-sert-photo-facades';
+import {buildBU580Commonwealth} from './bu-580-commonwealth';
+import {buildBU566Commonwealth} from './bu-566-commonwealth';
+import {buildBU560Commonwealth} from './bu-560-commonwealth';
+import {BU_WARREN_TOWERS,BU_WARREN_TOWER_SECTION} from './bu-warren-tower-layout';
 
 type Point=readonly[number,number];
 type Placement={x:number;z:number;yaw:number};
 type Building={id:string;name:string;x:number;z:number;width:number;depth:number;yaw:number;height:number;footprint:readonly Point[];holes?:readonly (readonly Point[])[];kind:string;custom?:boolean};
-type Finish='brick'|'brickBuff'|'brickDark'|'brickRose'|'brownstone'|'sandstone'|'stone'|'concrete'|'trim'|'roof'|'metal'|'iron'|'glass'|'glassLight'|'glassDark'|'frontageGlass'|'frontageGlassLight'|'frontageGlassDark'|'warrenCanopy'|'frame'|'wood'|'shade'|'paving'|'pavingBrick'|'grass'|'turf'|'soil'|'hedge'|'hedgeLight'|'white'|'red';
+type Finish='brick'|'brickBuff'|'brickDark'|'brickRose'|'brownstone'|'sandstone'|'stone'|'concrete'|'trim'|'roof'|'metal'|'iron'|'glass'|'glassLight'|'glassDark'|'frontageGlass'|'frontageGlassLight'|'frontageGlassDark'|'warrenCanopy'|'bankFascia'|'frame'|'wood'|'shade'|'paving'|'pavingBrick'|'grass'|'turf'|'soil'|'hedge'|'hedgeLight'|'white'|'red';
 type Opening={x:number;y:number;width:number;height:number;arch?:boolean;door?:boolean};
 type Profile={finish:Finish;levels:number;spacing:number;windowWidth:number;windowHeight:number;bands?:boolean;fins?:boolean;arches?:boolean;curtain?:boolean;flatCoping?:boolean};
 type CampusOptions={buildingIds?:ReadonlySet<string>;includeSpaces?:boolean;signage?:boolean;detail?:'full'|'mobile'};
@@ -92,8 +97,7 @@ export function createBUFullCampus(options:CampusOptions={}){
       const a=points[i],b=points[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])hit=!hit;
     }return hit;
   };
-  const intersectsDEM=(points:readonly Point[])=>{
-    const {minX,maxX,minZ,maxZ}=BU_DEM_CORE_BOUNDS;
+  const intersectsDEM=(points:readonly Point[])=>[BU_DEM_CORE_BOUNDS,BU_WEST_DEM_CORE_BOUNDS].some(({minX,maxX,minZ,maxZ})=>{
     // A centre test misses buildings straddling the DEM edge. Clip the actual
     // outer ring and holes, so bounding-box overlap alone cannot add basements
     // to unrelated parcels or to a courtyard containing the whole DEM region.
@@ -112,7 +116,7 @@ export function createBUFullCampus(options:CampusOptions={}){
       return Math.abs(area)/2;
     };
     return clippedArea(points)-courtyardRings.reduce((area,ring)=>area+clippedArea(ring),0)>1e-6;
-  };
+  });
   const roof=(points:readonly Point[],height:number,finish:Finish='roof')=>{
     const geo=new ShapeGeometry(outlineShape(points));geo.rotateX(-Math.PI/2);put(finish,geo,0,height,0);
   };
@@ -529,18 +533,32 @@ export function createBUFullCampus(options:CampusOptions={}){
     box('concrete',p,0,bottom+height-.08,.02,width,.16,.52);
   };
   const westResidence=(b:Building,points:Point[])=>{
-    const lobby=3.7,upper=b.height-lobby;
+    const lobby=3.7,upper=b.height-lobby,stories=12;
     eachFacade(points,(p,width)=>{
       const long=width>Math.max(b.width,b.depth)*.56;
       facade(p,width,0,lobby,{finish:'brickBuff',levels:1,spacing:5,windowWidth:3.6,windowHeight:2.7},width>22);
-      if(long)structuralGrid(p,width,lobby,upper,12,3.55,'stone',true);
+      if(long)structuralGrid(p,width,lobby,upper,stories,3.55,'stone',true);
       else{
         // The ends are mainly blank buff brick, interrupted by one narrow
         // central stair/light bay; wrapping the full grid around is incorrect.
-        facade(p,width,lobby,upper,{finish:'brickBuff',levels:12,spacing:Math.max(3,width-.9),windowWidth:Math.min(2.5,width*.4),windowHeight:2.1});
+        facade(p,width,lobby,upper,{finish:'brickBuff',levels:stories,spacing:Math.max(3,width-.9),windowWidth:Math.min(2.5,width*.4),windowHeight:2.1});
         if(width>7)for(const side of [-1,1])box('concrete',p,side*1.55,lobby+upper/2,.08,.22,upper,.64);
       }
     });
+    if(b.id==='claflin-hall'||b.id==='sleeper-hall'){
+      // These occupied towers previously cast only their open facade grids:
+      // sunlight could cross both window walls without ever meeting a floor.
+      // Add the 12 floor plates already implied by the retained upper-storey
+      // rhythm. A 22 cm concrete thickness is an authored structural estimate,
+      // not a measured dimension; each plate lies within its solid spandrel
+      // band, above the open lobby, leaving glazing/reveals and entrances intact.
+      const thickness=.22,startTriangles=triangleCount;
+      const levels=Array.from({length:stories},(_,i)=>lobby+i*upper/stories);
+      for(const level of levels)solid(points,level,thickness,'concrete');
+      const records=group.userData.westResidenceFloorSlabs??=[];
+      records.push({id:b.id,levels,thickness,triangles:triangleCount-startTriangles,
+        source:'existing 12-storey facade rhythm; thickness estimated; west-residence-floor-slabs-20261026.json'});
+    }
     roof(points,b.height);parapet(points,b.height,'concrete',.35);entrancePlate(b,points);
   };
   const studentVillagePart=(b:Building,points:Point[])=>{
@@ -596,6 +614,17 @@ export function createBUFullCampus(options:CampusOptions={}){
       if(part.kind==='union'){
         eachFacade(points,(p,width)=>{
           if(width<2.5){panel('concrete',p,0,height/2,0,width,height);return;}
+          const here=buSertLocal([p.x,p.z]),out=buSertLocal(local(p,0,.5));
+          if(isBUGSULinkSide(part.id,here,out)){
+            const detail=buildBUGSULinkSide(width,(finish,x,y,depth,w,h,d)=>box(finish,p,x,y,depth,w,h,d));
+            // The photo confirms the blank brick wall above the lower lights.
+            // Its uppermost storey is outside that photo: retain that existing
+            // model instead of projecting the brick treatment onto every face.
+            structuralGrid(p,width,detail.brickTop,height-detail.brickTop,1,4.6,'concrete');
+            box('concrete',p,0,11.55,.2,width,.42,1.1);
+            if(width>12){panel('brickDark',p,0,14.6,-.245,width-.5,1.3);for(let x=-width/2+2.2;x<width/2;x+=4.6)panel('glass',p,x,14.9,-.23,1.7,2.8);}
+            (group.userData.sertPhotoFacades??=[]).push({part:part.id,p,width,...detail});return;
+          }
           structuralGrid(p,width,0,5.2,1,4.6,'concrete');
           structuralGrid(p,width,5.2,height-5.2,2,4.6,'concrete');
           for(const y of [5.2,11.55])box('concrete',p,0,y,.2,width,.42,1.1);
@@ -613,11 +642,15 @@ export function createBUFullCampus(options:CampusOptions={}){
           }
           if(exposedBottom===0)facade(p,width,0,7.2,{finish:'concrete',levels:2,spacing:4.1,windowWidth:3.4,windowHeight:2.8,curtain:width>5});
           const upperBottom=Math.max(7.2,exposedBottom);
-          facade(p,width,upperBottom,part.top-upperBottom,{finish:'concrete',levels:Math.max(1,Math.round((part.top-upperBottom)/3.4)),spacing:1.85,windowWidth:.88,windowHeight:2.0,bands:true});
+          const photoSouth=isBUMugarSouthUpper(part.id,here,out);
+          if(photoSouth){
+            const detail=buildBUMugarSouthUpper(width,(finish,x,y,depth,w,h,d)=>box(finish,p,x,y,depth,w,h,d));
+            (group.userData.sertPhotoFacades??=[]).push({part:part.id,p,width,...detail});
+          }else facade(p,width,upperBottom,part.top-upperBottom,{finish:'concrete',levels:Math.max(1,Math.round((part.top-upperBottom)/3.4)),spacing:1.85,windowWidth:.88,windowHeight:2.0,bands:true});
           // PNF §4.3.4 locates the deep brise-soleil on the south and east
           // elevations. The quieter north/west walls must not repeat them.
           const sunFacing=out[0]>here[0]+.3||out[1]>here[1]+.3;
-          if(sunFacing&&width>5)for(let x=-width/2+.65;x<width/2-.3;x+=1.85)box('concrete',p,x,upperBottom+(part.top-upperBottom)/2,.29,.14,part.top-upperBottom,1.15);
+          if(!photoSouth&&sunFacing&&width>5)for(let x=-width/2+.65;x<width/2-.3;x+=1.85)box('concrete',p,x,upperBottom+(part.top-upperBottom)/2,.29,.14,part.top-upperBottom,1.15);
           if(exposedBottom===0)box('concrete',p,0,7.17,.2,width,.32,1.0);
         });
       }else if(part.kind==='redstone'){
@@ -961,13 +994,51 @@ export function createBUFullCampus(options:CampusOptions={}){
     parapet(points,podium,'concrete',.55);
     const long=b.width>=b.depth,p:Placement=long?b:{x:b.x,z:b.z,yaw:b.yaw+Math.PI/2};
     const width=long?b.width:b.depth,depth=long?b.depth:b.width;
-    for(let i=0;i<3;i++){
-      const x=(i-1)*width*.305,tw=Math.min(29,width*.255),td=Math.min(31,depth*.59),tp=clipTower(points,p,x,0,tw,td);
+    const section=BU_WARREN_TOWER_SECTION,towerRecords=[];
+    for(const tower of BU_WARREN_TOWERS){
+      const x=tower.centreFraction*width,tw=width*section.widthFraction,td=depth*section.depthFraction,tp=clipTower(points,p,x,0,tw,td);
       if(tp.length<3)continue;
-      skin(tp,podium,b.height-podium,{finish:'brickBuff',levels:14,spacing:3.1,windowWidth:2.08,windowHeight:1.58},false);
+      const h=b.height-podium,floor=h/section.levels;
+      eachFacade(tp,(face,span)=>{
+        if(span<.1)return;
+        // Long east/west sides have repeated vertical glazing; the short
+        // north/south ends are solid tan brick around ONE central window band.
+        // Openings cut through the solid wall in both desktop and mobile.
+        const across=Math.abs(Math.cos(face.yaw-p.yaw))>.8;
+        if(span<3.8){box('brickBuff',face,0,podium+h/2,-section.wallDepth/2,span,h,section.wallDepth);return;}
+        const count=across?1:section.sideBands,openingWidth=across?section.endWindowWidth:section.sideWindowWidth;
+        const spacing=(span-.8)/count,centres=Array.from({length:count},(_,i)=>(i-(count-1)/2)*spacing);
+        const wall=new Shape();wall.moveTo(-span/2,0);wall.lineTo(span/2,0);wall.lineTo(span/2,h);wall.lineTo(-span/2,h);wall.closePath();
+        for(const cx of centres){const hole=new Path();openingShape({x:cx,y:.12,width:openingWidth,height:h-.28},hole);wall.holes.push(hole);}
+        const at=local(face,0,-section.wallDepth);
+        put('brickBuff',new ExtrudeGeometry(wall,{depth:section.wallDepth,steps:1,bevelEnabled:false,curveSegments:1}),at[0],podium,at[1],face.yaw);
+        for(const cx of centres){
+          for(const side of [-1,1]){
+            // Original concrete reveals project past the wall; the new
+            // composite-metal fins proposed in the EPNF are not reproduced.
+            box('concrete',face,cx+side*(openingWidth/2+.08),podium+h/2,-.02,.16,h,.65);
+            box('frame',face,cx+side*(openingWidth/2-.04),podium+h/2,-.24,.07,h-.28,.13);
+          }
+          for(let row=0;row<section.levels;row++){
+            const y=podium+row*floor,glassHeight=floor-section.spandrelHeight-.13;
+            panel('frontageGlass',face,cx,y+section.spandrelHeight+glassHeight/2,section.glazingDepth,openingWidth-.12,glassHeight);
+            panel('shade',face,cx,y+section.spandrelHeight/2,-.30,openingWidth-.10,section.spandrelHeight);
+            box('concrete',face,cx,y+.075,.04,openingWidth+.16,.15,.57);
+            if(options.detail==='mobile'){
+              panel('frame',face,cx,y+section.spandrelHeight+glassHeight/2,-.225,.065,glassHeight);
+              panel('frame',face,cx,y+section.spandrelHeight+glassHeight*.34,-.225,openingWidth-.12,.065);
+            }else{
+              box('frame',face,cx,y+section.spandrelHeight+glassHeight/2,-.225,.065,glassHeight,.12);
+              box('frame',face,cx,y+section.spandrelHeight+glassHeight*.34,-.225,openingWidth-.12,.065,.12);
+            }
+          }
+        }
+      });
+      roof(tp,b.height);
       parapet(tp,b.height,'concrete',.9);const at=local(p,x,0);equipment({...b,x:at[0],z:at[1],width:tw,depth:td,yaw:p.yaw},tp,b.height);
-      for(const side of [-1,1])box('concrete',p,x+side*(tw/2-.12),podium+(b.height-podium)/2,0,.4,b.height-podium,td+.2);
+      towerRecords.push({id:tower.id,centre:at,width:tw,depth:td,footprint:tp,bottom:podium,top:b.height});
     }
+    group.userData.warrenTowers={version:2,source:'BU/MDS 2024 EPNF Figures 1-2, 1-3, 2-4; existing envelope only',towers:towerRecords};
   };
   const studentVillage=(b:Building,points:Point[],second:boolean)=>{
     const base=second?7.8:Math.min(29,b.height*.51),profile:Profile={finish:'brick',levels:second?2:9,spacing:3.4,windowWidth:2.3,windowHeight:1.9,bands:true};skin(points,0,base,profile);parapet(points,base,'stone',.4);
@@ -1225,7 +1296,7 @@ export function createBUFullCampus(options:CampusOptions={}){
   for(const source of BU_FULL_BUILDINGS){
     const b=source as Building,points=normalize(b.footprint);
     if(b.custom||points.length<3||b.height<=0||options.buildingIds&&!options.buildingIds.has(b.id))continue;
-    base=b.id==='law-tower'||b.id==='gsu-mugar'?buElevation(...BU_SERT_FOUNDATION_ANCHOR):b.id==='cas-east'?buElevation(...BU_MARSH_ASSEMBLY.foundationAnchor):buElevation(b.x,b.z);
+    base=source.terrainReference?buElevation(...source.terrainReference.anchor):b.id==='law-tower'||b.id==='gsu-mugar'?buElevation(...BU_SERT_FOUNDATION_ANCHOR):b.id==='cas-east'?buElevation(...BU_MARSH_ASSEMBLY.foundationAnchor):buElevation(b.x,b.z);
     footprintReference=points;courtyardRings=(b.holes??[]).map(ring=>normalize(ring).reverse());
     cell=`${Math.floor(b.x/CELL)}:${Math.floor(b.z/CELL)}`;seed=b.id.split('').reduce((n,c)=>n+c.charCodeAt(0),0);
     const name=b.name.toLowerCase(),kind=b.kind.toLowerCase(),startTriangles=triangleCount;let family='academic';
@@ -1233,7 +1304,10 @@ export function createBUFullCampus(options:CampusOptions={}){
       const bottom=intersectsDEM(points)?foundation(points,kind==='brownstone'?'brownstone':'concrete'):0;
       collider(b.name,points,b.height-bottom,bottom);
     }
-    if(b.id==='warren-services'){family='warren-parking';openGarage(b,points);}
+    if(b.id==='commonwealth-580'){family='580-commonwealth';group.userData.commonwealth580=buildBU580Commonwealth(b.footprint,{put});}
+    else if(b.id==='commonwealth-560'){family='560-commonwealth';group.userData.commonwealth560=buildBU560Commonwealth(b.footprint,{put});}
+    else if(b.id==='commonwealth-566'){family='566-commonwealth';group.userData.commonwealth566=buildBU566Commonwealth(b.footprint,{put});}
+    else if(b.id==='warren-services'){family='warren-parking';openGarage(b,points);}
     else if(b.id==='warren-towers'){family='warren-three-towers';warren(b,points);}
     else if(/^stuvi-(south-tower|north-tower|north-core|north-connectors)$/.test(b.id)){family='stuvi-surveyed-tower';studentVillagePart(b,points);}
     else if(/stuvi.?2|33 harry|student village ii/.test(name)){family='stuvi-combined';studentVillage(b,points,true);}
@@ -1258,8 +1332,8 @@ export function createBUFullCampus(options:CampusOptions={}){
       materials.set(key,material);return material;
     }
     type OtherFinish=Exclude<Finish,'frontageGlass'|'frontageGlassLight'|'frontageGlassDark'>;
-    const source:Record<OtherFinish,string>={brick:'brick',brickBuff:'brick',brickDark:'brick',brickRose:'brick',brownstone:'limestone',sandstone:'limestone',stone:'limestone',concrete:'concrete',trim:'trim',roof:'roof',metal:'frame',iron:'frame',glass:'glass',glassLight:'glass',glassDark:'glass',warrenCanopy:'glass',frame:'frame',wood:'entranceDoor',shade:'interiorShade',paving:'pavement',pavingBrick:'pavement',grass:'grass',turf:'grass',soil:'pavement',hedge:'grass',hedgeLight:'grass',white:'trim',red:'brick'};
-    const colors:Record<OtherFinish,string>={brick:'#a9735e',brickBuff:'#b7a488',brickDark:'#835343',brickRose:'#b77b69',brownstone:'#97725c',sandstone:'#ba9d7d',stone:'#c7baa4',concrete:'#c4bba6',trim:'#ddd0b8',roof:'#657573',metal:'#8d9d9a',iron:'#303b35',glass:'#668b8d',glassLight:'#8daaa8',glassDark:'#395861',warrenCanopy:'#6597a6',frame:'#6f7773',wood:'#6d5140',shade:'#34423f',paving:'#bdb8a4',pavingBrick:'#a87e68',grass:'#7d9a62',turf:'#5b865b',soil:'#675644',hedge:'#526f49',hedgeLight:'#738654',white:'#e6dfc6',red:'#a6433d'};
+    const source:Record<OtherFinish,string>={brick:'brick',brickBuff:'brick',brickDark:'brick',brickRose:'brick',brownstone:'limestone',sandstone:'limestone',stone:'limestone',concrete:'concrete',trim:'trim',roof:'roof',metal:'frame',iron:'frame',glass:'glass',glassLight:'glass',glassDark:'glass',warrenCanopy:'glass',bankFascia:'frame',frame:'frame',wood:'entranceDoor',shade:'interiorShade',paving:'pavement',pavingBrick:'pavement',grass:'grass',turf:'grass',soil:'pavement',hedge:'grass',hedgeLight:'grass',white:'trim',red:'brick'};
+    const colors:Record<OtherFinish,string>={brick:'#a9735e',brickBuff:'#b7a488',brickDark:'#835343',brickRose:'#b77b69',brownstone:'#97725c',sandstone:'#ba9d7d',stone:'#c7baa4',concrete:'#c4bba6',trim:'#ddd0b8',roof:'#657573',metal:'#8d9d9a',iron:'#303b35',glass:'#668b8d',glassLight:'#8daaa8',glassDark:'#395861',warrenCanopy:'#6597a6',bankFascia:'#76a6a1',frame:'#6f7773',wood:'#6d5140',shade:'#34423f',paving:'#bdb8a4',pavingBrick:'#a87e68',grass:'#7d9a62',turf:'#5b865b',soil:'#675644',hedge:'#526f49',hedgeLight:'#738654',white:'#e6dfc6',red:'#a6433d'};
     const material=createCampusSurface(source[finish],{profile:'bu',geometryFrame:true,...(finish==='paving'||finish==='pavingBrick'?{pavingStyle:finish==='pavingBrick'?'brick' as const:'stone' as const}:{})}) as MeshStandardMaterial;material.name=`BU district · ${finish}`;material.color=new Color(colors[finish]);
     if(finish==='iron'||finish==='warrenCanopy')material.side=DoubleSide;
     if(finish.startsWith('glass')){material.roughness=.55;material.metalness=.13;}if(surface)configureBUGroundLayer(material,finish==='white'?'marking':'surface');

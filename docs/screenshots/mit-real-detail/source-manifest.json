@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-25T19:33:46.491Z",
+  "version": "poetic-campus-real-detail-v2",
+  "files": [
+    {
+      "path": "src/features/world/mit-poetic-materials.ts",
+      "bytes": 8803,
+      "sha256": "8a85af0e2828beebe27d423fcfcf198bbd036b53b4ce46a8ec566973f33ac732"
+    },
+    {
+      "path": "src/features/world/mit-main-building-detail.ts",
+      "bytes": 9789,
+      "sha256": "0891fbeb6da59f376a84df5b0ce3f091abaa56a73349489fa639c3a9d1a507b5"
+    },
+    {
+      "path": "src/features/world/mit-glass-reflection.ts",
+      "bytes": 6473,
+      "sha256": "48d8b18ba7395d3eaa44cf1b68ee6cec0191b43f51590edd4d782e98bbe266c3"
+    },
+    {
+      "path": "src/features/world/scene-assets-desktop.ts",
+      "bytes": 23543,
+      "sha256": "2258b5fb9a8cf8e1dc7f980b71d73a4f5e2d52f4c17312ab6771c9d7b3196531"
+    },
+    {
+      "path": "src/features/world/mobile-campus.ts",
+      "bytes": 16069,
+      "sha256": "428059754a386765c834de70346a29bf78144f01c8dc6737967ecff93dbd8a3b"
+    },
+    {
+      "path": "public/data/killian/detail.glb",
+      "bytes": 56841004,
+      "sha256": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d"
+    },
+    {
+      "path": "public/data/killian/mobile-portico.glb",
+      "bytes": 1902028,
+      "sha256": "f781e568ff513f813bd20cbc8467e3b5c20a714704f4789b983440451f344c43"
+    },
+    {
+      "path": "assets-source/killian-reference/portico-study.json",
+      "bytes": 1407,
+      "sha256": "4539be061409338601ce9399cb73b323193199f0859e4dec96ccccc5a6923048"
+    }
+  ],
+  "detail": {
+    "version": 2,
+    "columns": 10,
+    "drumRibs": 128,
+    "drumGuttae": 320,
+    "wreaths": 2,
+    "wreathLeaves": 56,
+    "doorHeads": 3,
+    "doorHeadFinials": 9,
+    "batches": 7,
+    "triangles": 29680,
+    "visibleTriangles": 29680,
+    "lowQuality": false,
+    "source": "portico-study.json; maclaurin-front.webp; maclaurin-oblique.webp",
+    "scope": "Solid Ionic bolsters, drum relief, two frieze wreaths and three projecting door heads; small dimensions and ornament silhouettes photo-estimated"
+  },
+  "glass": {
+    "resolution": 128,
+    "captureFar": 220,
+    "position": [
+      20,
+      12,
+      -20
+    ],
+    "captures": 1,
+    "materials": 3,
+    "allocated": true,
+    "error": null,
+    "mode": "static courtyard scene probe; desktop only"
+  },
+  "validation": {
+    "tests": 16,
+    "build": "passed",
+    "physicalMobile": "not tested"
+  },
+  "runtime": {
+    "platform": {
+      "campusId": "boston",
+      "interior": null,
+      "doorHinges": [
+        {
+          "name": "cds-door-west-left",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-west-right",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-east-left",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-east-right",
+          "angle": 0
+        }
+      ],
+      "mobile": false,
+      "geometryCount": 162,
+      "textureCount": 79,
+      "position": [
+        12.410972825027928,
+        4.864989280700684,
+        -35.63655033425421
+      ],
+      "cameraPosition": [
+        14.861973130602298,
+        6.914989280690353,
+        -30.379119661057086
+      ],
+      "yaw": 3.5778343653752236,
+      "players": 0,
+      "walking": false,
+      "commuteMode": "walk",
+      "movementSpeed": 0,
+      "calls": 106,
+      "triangles": 1060755,
+      "workshop": [
+        63.5,
+        37.5
+      ],
+      "workshopDistance": 89.21347259511836,
+      "quality": "standard",
+      "objectCount": 44,
+      "domeInFrame": false,
+      "character": "pixiv",
+      "characterReady": true,
+      "selfId": "solo",
+      "renderedCharacters": [
+        {
+          "playerId": "solo",
+          "characterId": "pixiv",
+          "motion": "Idle"
+        }
+      ],
+      "characterMotion": "Idle"
+    },
+    "low": {
+      "campusId": "boston",
+      "interior": null,
+      "doorHinges": [
+        {
+          "name": "cds-door-west-left",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-west-right",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-east-left",
+          "angle": 0
+        },
+        {
+          "name": "cds-door-east-right",
+          "angle": 0
+        }
+      ],
+      "mobile": false,
+      "geometryCount": 162,
+      "textureCount": 78,
+      "position": [
+        12.410972825027928,
+        4.864989280700684,
+        -35.63655033425421
+      ],
+      "cameraPosition": [
+        14.861682487137166,
+        6.914989280700681,
+        -30.379743095442247
+      ],
+      "yaw": 3.5778343653752236,
+      "players": 0,
+      "walking": false,
+      "commuteMode": "walk",
+      "movementSpeed": 0,
+      "calls": 103,
+      "triangles": 1020147,
+      "workshop": [
+        63.5,
+        37.5
+      ],
+      "workshopDistance": 89.21347259511836,
+      "quality": "low",
+      "objectCount": 44,
+      "domeInFrame": false,
+      "character": "pixiv",
+      "characterReady": true,
+      "selfId": "solo",
+      "renderedCharacters": [
+        {
+          "playerId": "solo",
+          "characterId": "pixiv",
+          "motion": "Idle"
+        }
+      ],
+      "characterMotion": "Idle"
+    },
+    "frameSample": {
+      "medianMs": 6.099999999998545,
+      "p95Ms": 11.69999999999709,
+      "samples": 110,
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "viewport": [
+        1600,
+        1000
+      ],
+      "dpr": 1,
+      "environment": "Chrome headless, development server, idle at portico; desktop GPU also renders mobile emulation; not a target-device FPS guarantee"
+    }
+  }
+}

@@ -4,7 +4,7 @@ import {BU_GROUND_BUILDINGS} from './bu-campus-footprints';
 import type {WorldPoint} from './geo-coordinates';
 import {buBrownstoneEntry} from './bu-brownstone-entry';
 
-export type BUPublicFrontage={buildingId:string;roadName:string;kind:'frontage'|'entrance';points:WorldPoint[];area:number};
+export type BUPublicFrontage={buildingId:string;roadName:string;kind:'frontage'|'entrance';points:WorldPoint[];area:number;source?:string};
 
 /** The three university-owned malls retain delivery/garage access. BU's 2024
  * review explicitly says that a permanent pedestrian-paving conversion has
@@ -230,4 +230,60 @@ for(const frontage of BU_PUBLIC_FRONTAGES){
   if(clear){frontage.points=points;frontage.area=footprintArea;frontage.roadName=edge.road.name;}
 }
 
+
+/** Photo-backed curved entrance apron. The general frontage selector ignores
+ * sub-2.2m survey segments, so the 560 banking hall's curved door was stranded
+ * on grass. Keep every City1372 curve vertex; extend its outward ray only until
+ * it reaches an existing sidewalk, never to an arbitrary parcel rectangle.
+ * Desktop and mobile both consume this same BU_PUBLIC_FRONTAGES collection.
+ */
+export const BU_SOURCE_FRONTAGES:BUPublicFrontage[]=[];
+{
+  const building=BU_GROUND_BUILDINGS.find(b=>b.id==='commonwealth-560');
+  if(building&&building.footprint.length===38){
+    const ring=building.footprint,first=1,last=28;
+    const signed=ring.reduce((sum,a,i)=>{const b=ring[(i+1)%ring.length];return sum+a[0]*b[1]-b[0]*a[1];},0),sign=signed>0?1:-1;
+    const projectToSidewalk=(point:WorldPoint,nx:number,nz:number)=>{
+      const candidates:{point:WorldPoint;distance:number;roadName:string}[]=[];
+      for(const edge of streetEdges){
+        if(edge.road.name!=='COMMONWEALTH AVENUE'&&edge.road.name!=='BEACON STREET')continue;
+        const q=buSegmentProjection(...point,edge.a,edge.b),offset=edge.road.width/2+buStreetSidewalk(edge.road)-.06;
+        const start=(point[0]-edge.a[0])*q.nx+(point[1]-edge.a[1])*q.nz,side=start>=0?1:-1,direction=nx*q.nx+nz*q.nz;
+        if(Math.abs(direction)<.1)continue;
+        const distance=(offset*side-start)/direction;if(distance<=0||distance>8)continue;
+        const end:WorldPoint=[point[0]+nx*distance,point[1]+nz*distance];
+        if(Math.abs(buSegmentProjection(...end,edge.a,edge.b).distance-offset)>.001)continue;
+        candidates.push({point:end,distance,roadName:edge.road.name});
+      }
+      return candidates.sort((a,b)=>a.distance-b.distance)[0];
+    };
+    const outer:{point:WorldPoint;roadName:string}[]=[];
+    for(let i=first;i<=last;i++){
+      const p=ring[i],prev=ring[i-1],next=ring[(i+1)%ring.length];
+      const dx=next[0]-prev[0],dz=next[1]-prev[1],length=Math.hypot(dx,dz),nx=sign*dz/length,nz=-sign*dx/length;
+      // Reuse the straight-facade endpoint exactly, eliminating a wedge at
+      // either end of the newly paved arc without extending its source scope.
+      const existing=BU_PUBLIC_FRONTAGES.find(f=>f.buildingId===building.id&&((i===first&&Math.hypot(f.points[1][0]-p[0],f.points[1][1]-p[1])<.001)||(i===last&&Math.hypot(f.points[0][0]-p[0],f.points[0][1]-p[1])<.001)));
+      const projected=existing?{point:existing.points[i===first?2:3],roadName:existing.roadName}:projectToSidewalk(p,nx,nz);
+      if(!projected)break;outer.push(projected);
+    }
+    if(outer.length===last-first+1)for(let i=first;i<last;i++){
+      const a=ring[i],b=ring[i+1],oa=outer[i-first],ob=outer[i-first+1],dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz),nx=sign*dz/length,nz=-sign*dx/length;
+      // This convex source arc supplies an exact exterior half-plane. Clip
+      // against it before excluding every carriageway, including our own.
+      const points=clipHalfPlane([a,b,ob.point,oa.point],p=>(p[0]-a[0])*nx+(p[1]-a[1])*nz);
+      for(const part of buClipSidewalkToJunctions(points,[])){
+        const patchArea=area(part);if(patchArea<.01||patchArea>30)continue;
+        let clear=true;
+        for(let t=1;t<10;t++)for(let u=1;u<10;u++){
+          const inner:WorldPoint=[a[0]+dx*t/10,a[1]+dz*t/10],out:WorldPoint=[oa.point[0]+(ob.point[0]-oa.point[0])*t/10,oa.point[1]+(ob.point[1]-oa.point[1])*t/10];
+          const x=inner[0]+(out[0]-inner[0])*u/10,z=inner[1]+(out[1]-inner[1])*u/10;
+          if(contains(x,z,part)&&(occupied(x,z)||inCarriageway(x,z)))clear=false;
+        }
+        if(clear)BU_SOURCE_FRONTAGES.push({buildingId:building.id,roadName:oa.roadName,kind:'frontage',points:part,area:patchArea,source:'560-commonwealth/entry-apron-20261027.json'});
+      }
+    }
+  }
+}
+BU_PUBLIC_FRONTAGES.push(...BU_SOURCE_FRONTAGES);
 export function buPublicRealmContains(x:number,z:number){return BU_PUBLIC_FRONTAGES.some(p=>contains(x,z,p.points));}

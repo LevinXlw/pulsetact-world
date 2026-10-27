@@ -1,0 +1,349 @@
+{
+  "base": "http://127.0.0.1:5186",
+  "checks": [
+    "Login, enter, run across the actual courtyard toward Building 10 using WASD",
+    "Walk to the actual portico steps and inspect at player height",
+    "Climb the same five steps to the platform; standard/low toggle preserves ground position"
+  ],
+  "errors": [],
+  "screens": [
+    "01-courtyard.png",
+    "02-main-building.png",
+    "03-dome-look.png",
+    "04-portico.png",
+    "05-mobile-hd.png"
+  ],
+  "note": "Real local application, real login, normal game controls. Browser mobile emulation is not a physical device.",
+  "initial": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": true,
+    "rendering": {
+      "mode": "direct"
+    },
+    "geometryCount": 63,
+    "textureCount": 36,
+    "position": [
+      53.5,
+      3.9192692583823643,
+      52.5
+    ],
+    "cameraPosition": [
+      55.95070965504336,
+      5.969269258382364,
+      57.75680722365556
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 67,
+    "triangles": 413365,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 18.027756377319946,
+    "quality": "low",
+    "objectCount": 44,
+    "domeInFrame": true,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "approach": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": true,
+    "rendering": {
+      "mode": "direct"
+    },
+    "geometryCount": 59,
+    "textureCount": 35,
+    "position": [
+      27.153383352802887,
+      3.8826609253596693,
+      -4.013869125561115
+    ],
+    "cameraPosition": [
+      29.604099245149357,
+      5.932660750080427,
+      1.2429514771987242
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 61,
+    "triangles": 380387,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 55.176787433417346,
+    "quality": "low",
+    "objectCount": 43,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "portico": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": true,
+    "rendering": {
+      "mode": "direct"
+    },
+    "geometryCount": 59,
+    "textureCount": 35,
+    "position": [
+      14.966695181577427,
+      4.414999961853027,
+      -30.154489365538936
+    ],
+    "cameraPosition": [
+      17.41768044433401,
+      6.464893229055179,
+      -24.89709095940088
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 60,
+    "triangles": 379927,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 83.26230604487087,
+    "quality": "low",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "platform": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": true,
+    "rendering": {
+      "mode": "direct"
+    },
+    "geometryCount": 59,
+    "textureCount": 35,
+    "position": [
+      12.354122548297763,
+      4.864999771118164,
+      -35.75849499006745
+    ],
+    "cameraPosition": [
+      14.805133059764998,
+      6.914999771111052,
+      -30.501042425084307
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 60,
+    "triangles": 379927,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 89.34600085350368,
+    "quality": "low",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "low": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": true,
+    "rendering": {
+      "mode": "direct"
+    },
+    "geometryCount": 61,
+    "textureCount": 48,
+    "position": [
+      12.354122548297763,
+      4.864999771118164,
+      -35.75849499006745
+    ],
+    "cameraPosition": [
+      14.80483220513466,
+      6.914999771118164,
+      -30.501687762564735
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 62,
+    "triangles": 391863,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 89.34600085350368,
+    "quality": "standard",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "frameSample": {
+    "medianMs": 9.900000000001455,
+    "p95Ms": 15.19999999999709,
+    "samples": 110,
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": [
+      430,
+      932
+    ],
+    "dpr": 1,
+    "environment": "Chrome headless, development server, idle at portico; desktop GPU also renders mobile emulation; not a target-device FPS guarantee"
+  }
+}

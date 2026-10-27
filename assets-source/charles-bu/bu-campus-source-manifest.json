@@ -4,9 +4,9 @@
   "sourceSpatialReference": "NAD83 / Massachusetts Mainland (US feet); query returned WGS84",
   "coordinates": "Shared MIT/Boston local metres, x east / z south; geographic origin 42.35915,-71.09205",
   "queryCount": 1488,
-  "selectedCount": 458,
-  "universityOwnedOrNamed": 277,
-  "contextCount": 181,
+  "selectedCount": 461,
+  "universityOwnedOrNamed": 278,
+  "contextCount": 183,
   "scope": "Charles River Campus, West Campus and South Campus vicinity; not Medical Campus or Fenway Campus",
   "heightPolicy": "Use per-footprint BUILDING_HEIGHT_2010 in US feet where available. New TOP_GROUND_LEVEL values are repeated across many parcel joins and do not reliably represent each roof. Reviewed towers/arenas use individually checked top/2010 values. Facades and interior mass subdivisions remain authored approximations.",
   "groundPolicy": "BASE_ELEVATION preserved in metres NAVD88; not itself a complete terrain surface.",
@@ -22,7 +22,9 @@
     "https://www.bu.edu/commencement/files/2025/05/CMCT_RedBook2025_Final.pdf",
     "https://www.bu.edu/cpo/project/center-for-integrated-life-sciences-engineering/",
     "https://www.bu.edu/articles/2017/new-joan-edgar-booth-theatre-opens/",
-    "https://www.bu.edu/cpo/project/yawkey-center-for-student-services/"
+    "https://www.bu.edu/cpo/project/yawkey-center-for-student-services/",
+    "https://www.bu.edu/housing/residence/central-campus-graduate-apartments/580-commonwealth-avenue/",
+    "https://www.bu.edu/community/files/2022/11/2023-2033-BU-CRC-IMPNF.pdf"
   ],
   "notes": [
     "City data has no guarantee of currency. Addresses and building IDs repeat across multiple shapes, so the OBJECTID keys are retained.",
@@ -31,9 +33,12 @@
     "The narrow East Campus extension includes Danielsen Hall at 512 Beacon Street, its separate City footprint wing, nearby BU-owned parcels, and Beacon Street row-house context. It does not model all of Back Bay.",
     "Counts are building components, not independent university buildings: Law/Rich/Claflin/Sleeper tower components share source footprints with their lower connected buildings.",
     "Kilachand Center, Booth Theatre and Yawkey Center are authored approximate envelopes, absent from the older Boston source geometry; Booth is also outside Boston in Brookline. Their heights are estimates informed by documented floor counts, not measurements. Ground elevation is null so they do not masquerade as terrain observations.",
-    "Nickerson, New Balance and softball field centres/orientations are manually interpreted from official BU plans. The New Balance envelope includes the field-top Langsam Garage block."
+    "Nickerson, New Balance and softball field centres/orientations are manually interpreted from official BU plans. The New Balance envelope includes the field-top Langsam Garage block.",
+    "2026-10-26: West Dining now uses only the remainder of City footprint 124707 after extracting Claflin/Sleeper. The three component footprints preserve the original outer boundary and occupied area; terrainReference retains the original terrain sample/pad and dining foundation. See west-dining-separation-20261026.json.",
+    "2026-10-27: Recovered opposite-Questrom frontage City 1374 (580 Commonwealth, verified BU graduate housing) and 1373 (566 Commonwealth, private Kenmore Tower). Their real polygons were excluded by owner/address and 58 m centroid filtering. Separate dedicated builders distinguish ground envelopes from upper floors; no other selected footprint is regenerated.",
+    "2026-10-27: Separately recovered City 1372, the private low commercial building at 560 Commonwealth east of Kenmore Tower. Its 38-point source ring remains independent; no tower footprint merge or inferred parcel-wide paving is introduced. See 560-commonwealth/source-20261027.json."
   ],
-  "uniqueCityFootprints": 451,
+  "uniqueCityFootprints": 454,
   "sourceExtracts": [
     {
       "file": "boston-buildings-bu-area.json",

@@ -1,0 +1,548 @@
+{
+  "kind": "Complete game; one initial map transfer, then ordinary mouse orbit and WASD along the live navigation guide; custom inspection points use a clear final approach",
+  "quality": "low",
+  "viewport": {
+    "width": 1100,
+    "height": 700
+  },
+  "legs": [
+    {
+      "id": "580-north-curb",
+      "elapsedMs": 27118,
+      "samples": [
+        {
+          "time": 1793044355871,
+          "position": [
+            -632,
+            5.243533741782113,
+            1098
+          ],
+          "distance": 38.02959373961284,
+          "frames": 213,
+          "movementSpeed": 0
+        },
+        {
+          "time": 1793044357317,
+          "position": [
+            -641.3124332821551,
+            5.244001320525496,
+            1096.0864862631822
+          ],
+          "distance": 44.72232067972273,
+          "frames": 421,
+          "movementSpeed": 7.199994893105021
+        },
+        {
+          "time": 1793044358766,
+          "position": [
+            -651.4470928756558,
+            5.244510314737517,
+            1094.0040219101438
+          ],
+          "distance": 52.9927649566709,
+          "frames": 605,
+          "movementSpeed": 7.1999999999970665
+        },
+        {
+          "time": 1793044360185,
+          "position": [
+            -660.8821299274646,
+            5.244995119122145,
+            1092.065315617282
+          ],
+          "distance": 61.26196567936951,
+          "frames": 785,
+          "movementSpeed": 7.199999999999997
+        },
+        {
+          "time": 1793044361622,
+          "position": [
+            -671.1811167766176,
+            5.251999855041504,
+            1089.9490853889429
+          ],
+          "distance": 70.68351024699142,
+          "frames": 974,
+          "movementSpeed": 7.199999999999996
+        },
+        {
+          "time": 1793044363029,
+          "position": [
+            -681.4631772634028,
+            5.251999855041504,
+            1087.8363331803553
+          ],
+          "distance": 80.36041367869043,
+          "frames": 1154,
+          "movementSpeed": 7.1999999999999975
+        },
+        {
+          "time": 1793044364367,
+          "position": [
+            -688.3043457624289,
+            5.244999885559082,
+            1088.1249528953558
+          ],
+          "distance": 86.03795970682172,
+          "frames": 1380,
+          "movementSpeed": 6.919986922980594
+        },
+        {
+          "time": 1793044365675,
+          "position": [
+            -688.977424819649,
+            5.244999885559082,
+            1093.197252470658
+          ],
+          "distance": 84.19450517036505,
+          "frames": 1567,
+          "movementSpeed": 7.0221685298715055
+        },
+        {
+          "time": 1793044367074,
+          "position": [
+            -690.5694259733725,
+            5.304999828338623,
+            1103.3702029270573
+          ],
+          "distance": 81.57304994455403,
+          "frames": 1811,
+          "movementSpeed": 7.199999893158453
+        },
+        {
+          "time": 1793044368346,
+          "position": [
+            -692.1781180944799,
+            5.242468198748694,
+            1113.6498093264279
+          ],
+          "distance": 80.19007080603767,
+          "frames": 2048,
+          "movementSpeed": 7.1999999999999424
+        },
+        {
+          "time": 1793044369822,
+          "position": [
+            -690.7679054093057,
+            5.295945111661051,
+            1117.9002846348471
+          ],
+          "distance": 77.96321927002045,
+          "frames": 2261,
+          "movementSpeed": 7.038446508309597
+        },
+        {
+          "time": 1793044371210,
+          "position": [
+            -680.5351258399629,
+            5.291985514553188,
+            1119.6404364272264
+          ],
+          "distance": 67.58381624824362,
+          "frames": 2497,
+          "movementSpeed": 7.199999913309278
+        },
+        {
+          "time": 1793044372612,
+          "position": [
+            -671.050650380533,
+            5.282118151721832,
+            1121.2533341603103
+          ],
+          "distance": 57.96353051421283,
+          "frames": 2732,
+          "movementSpeed": 7.199999999999863
+        },
+        {
+          "time": 1793044374009,
+          "position": [
+            -660.7605410505361,
+            5.2498631395057105,
+            1123.0032352573771
+          ],
+          "distance": 47.526237074171426,
+          "frames": 2969,
+          "movementSpeed": 7.199999999999996
+        },
+        {
+          "time": 1793044375392,
+          "position": [
+            -652.1390164007341,
+            5.231573841914425,
+            1124.3898056577086
+          ],
+          "distance": 38.79612655408552,
+          "frames": 3242,
+          "movementSpeed": 6.926900470810982
+        },
+        {
+          "time": 1793044377021,
+          "position": [
+            -644.1425726419226,
+            5.220246915059895,
+            1125.6441143851753
+          ],
+          "distance": 30.706124499967288,
+          "frames": 3482,
+          "movementSpeed": 7.198897217750654
+        },
+        {
+          "time": 1793044378418,
+          "position": [
+            -634.5648855470155,
+            5.208885784507537,
+            1127.2922158971294
+          ],
+          "distance": 20.990949588292015,
+          "frames": 3721,
+          "movementSpeed": 7.1999999984851035
+        },
+        {
+          "time": 1793044380038,
+          "position": [
+            -625.1223350482317,
+            5.1842832153896055,
+            1129.0243119797967
+          ],
+          "distance": 11.394532377351009,
+          "frames": 4000,
+          "movementSpeed": 7.064653750607215
+        }
+      ],
+      "status": "walked",
+      "lastState": {
+        "position": [
+          -614.974774174722,
+          5.148491680184563,
+          1131.2830264058287
+        ],
+        "quality": "low",
+        "frames": 4250,
+        "movementSpeed": 7.1999999287391665,
+        "guide": {
+          "point": [
+            -614,
+            1131.5
+          ],
+          "distance": 0.9986301779300714,
+          "viaRoute": false,
+          "inspectionApproach": true
+        },
+        "distance": 0.9986301779300714,
+        "viewYaw": -1.789812791269003,
+        "desiredYaw": -1.7898143578999963,
+        "nextDistance": 0.9986301779300714
+      },
+      "arrival": [
+        -614.974774174722,
+        5.148491680184563,
+        1131.2830264058287
+      ]
+    },
+    {
+      "id": "580-northwest-corner",
+      "elapsedMs": 5645,
+      "samples": [
+        {
+          "time": 1793044382208,
+          "position": [
+            -614.4174534916995,
+            5.146500642501688,
+            1131.407078705919
+          ],
+          "distance": 30.692269250898732,
+          "frames": 4329,
+          "movementSpeed": 0
+        },
+        {
+          "time": 1793044383622,
+          "position": [
+            -623.6327397845076,
+            5.173694413433519,
+            1129.6025048056492
+          ],
+          "distance": 21.8150813223536,
+          "frames": 4525,
+          "movementSpeed": 7.199993995005237
+        },
+        {
+          "time": 1793044385333,
+          "position": [
+            -633.2259735508235,
+            5.205909832355936,
+            1127.7239197325634
+          ],
+          "distance": 13.342296741911216,
+          "frames": 4689,
+          "movementSpeed": 7.199999999992378
+        },
+        {
+          "time": 1793044386570,
+          "position": [
+            -638.6957816267001,
+            5.055152031976559,
+            1130.2775232677413
+          ],
+          "distance": 7.321202245564557,
+          "frames": 4867,
+          "movementSpeed": 7.198906004813012
+        }
+      ],
+      "status": "walked",
+      "lastState": {
+        "position": [
+          -644.6212853048862,
+          4.9883091583912105,
+          1133.748906599843
+        ],
+        "quality": "low",
+        "frames": 5083,
+        "movementSpeed": 7.199582789210809,
+        "guide": {
+          "point": [
+            -645,
+            1134
+          ],
+          "distance": 0.4543926890890315,
+          "viaRoute": false,
+          "inspectionApproach": true
+        },
+        "distance": 0.4543926890890315,
+        "viewYaw": 2.104182083990926,
+        "desiredYaw": 2.15626636447198,
+        "nextDistance": 0.4543926890890315
+      },
+      "arrival": [
+        -644.6212853048862,
+        4.9883091583912105,
+        1133.748906599843
+      ]
+    },
+    {
+      "id": "566-north-curb",
+      "elapsedMs": 14410,
+      "samples": [
+        {
+          "time": 1793044388368,
+          "position": [
+            -644.9380838283923,
+            4.984707217500582,
+            1133.9359679408694
+          ],
+          "distance": 82.94336492518116,
+          "frames": 5163,
+          "movementSpeed": 0
+        },
+        {
+          "time": 1793044389806,
+          "position": [
+            -643.6471383036551,
+            5.21424088570695,
+            1126.5153557723218
+          ],
+          "distance": 81.90424777711924,
+          "frames": 5405,
+          "movementSpeed": 7.199921696556195
+        },
+        {
+          "time": 1793044391207,
+          "position": [
+            -634.727829145771,
+            5.207294268361624,
+            1127.5230877624504
+          ],
+          "distance": 72.93376241435979,
+          "frames": 5690,
+          "movementSpeed": 7.199989285568369
+        },
+        {
+          "time": 1793044392625,
+          "position": [
+            -624.4445886066927,
+            5.183401232906489,
+            1129.0701208742255
+          ],
+          "distance": 62.56812763861722,
+          "frames": 5924,
+          "movementSpeed": 7.199999999994279
+        },
+        {
+          "time": 1793044394277,
+          "position": [
+            -614.9025264655688,
+            5.162726539604572,
+            1130.5056494929372
+          ],
+          "distance": 52.961298047652626,
+          "frames": 6165,
+          "movementSpeed": 7.199999999999997
+        },
+        {
+          "time": 1793044395893,
+          "position": [
+            -606.5380198776904,
+            5.186945999021983,
+            1132.0557796792607
+          ],
+          "distance": 44.54802764028554,
+          "frames": 6487,
+          "movementSpeed": 7.007550014243291
+        },
+        {
+          "time": 1793044397289,
+          "position": [
+            -596.236504957861,
+            5.241351727374853,
+            1133.5732064430572
+          ],
+          "distance": 34.24130309079964,
+          "frames": 6724,
+          "movementSpeed": 7.199999901766543
+        },
+        {
+          "time": 1793044398686,
+          "position": [
+            -586.6658581895613,
+            5.269851101231676,
+            1134.9829753621027
+          ],
+          "distance": 24.74543900427417,
+          "frames": 6965,
+          "movementSpeed": 7.199999999999856
+        },
+        {
+          "time": 1793044399991,
+          "position": [
+            -577.0546095301427,
+            5.275227644555011,
+            1136.3987249933714
+          ],
+          "distance": 15.433489549859742,
+          "frames": 7186,
+          "movementSpeed": 7.199999999999997
+        },
+        {
+          "time": 1793044401656,
+          "position": [
+            -568.1138666352113,
+            5.309585141306916,
+            1135.123624027409
+          ],
+          "distance": 6.472182340056435,
+          "frames": 7458,
+          "movementSpeed": 7.198770218753731
+        }
+      ],
+      "status": "walked",
+      "lastState": {
+        "position": [
+          -562.5375192292372,
+          5.193993638972841,
+          1133.1867051701934
+        ],
+        "quality": "low",
+        "frames": 7603,
+        "movementSpeed": 7.199999661898259,
+        "guide": {
+          "point": [
+            -562,
+            1133
+          ],
+          "distance": 0.5690217415676588,
+          "viaRoute": false,
+          "inspectionApproach": true
+        },
+        "distance": 0.5690217415676588,
+        "viewYaw": -1.2364883239346054,
+        "desiredYaw": -1.2364877998931254,
+        "nextDistance": 0.5690217415676588
+      },
+      "arrival": [
+        -562.5375192292372,
+        5.193993638972841,
+        1133.1867051701934
+      ]
+    }
+  ],
+  "errors": [],
+  "start": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": false,
+      "allocated": false,
+      "width": 0,
+      "height": 0,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 0,
+      "frames": 188,
+      "occlusionFrames": 0,
+      "calls": 277,
+      "triangles": 1957214,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 596,
+    "textureCount": 123,
+    "position": [
+      -632,
+      5.243533741782113,
+      1098
+    ],
+    "cameraPosition": [
+      -633.1656848301518,
+      7.293533741782113,
+      1107.1258522274227
+    ],
+    "yaw": 3.014546285223036,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 277,
+    "triangles": 1957214,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 1268.2194210782295,
+    "quality": "low",
+    "objectCount": 43,
+    "domeInFrame": true,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "startId": "bu-questrom",
+  "status": "passed"
+}

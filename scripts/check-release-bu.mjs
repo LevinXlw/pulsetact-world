@@ -2,12 +2,38 @@ import {createHash} from 'node:crypto';
 import {setDefaultResultOrder} from 'node:dns';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {resolve,sep} from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {gunzipSync} from 'node:zlib';
+import {GZIP_ASSET_PATHS} from './prepare-cloudflare.mjs';
 import {chromium,expect} from '@playwright/test';
 import {authenticateContext} from './test-auth.mjs';
 
 // Release-only smoke: actual UI, pixels, authenticated requests and deployed
 // bytes. No source-module imports, dev inspector, injected player pose, failed
 // password attempts or production mutations other than short-lived sessions.
+export const BU_RELEASE_DESTINATIONS = [
+ ['bu-mugar','Mugar Memorial Library'],
+ ['bu-gsu','George Sherman Union'],
+ ['bu-questrom','Questrom 商学院'],
+ ['bu-agganis','Agganis Arena'],
+ ['bu-nickerson','Nickerson Field · West Campus'],
+ ['bu-warren','Warren Towers'],
+];
+export const BOSTON_GZIP_RELEASE_PATHS = GZIP_ASSET_PATHS.filter(path=>path.includes('boston')).map(path=>'/'+path);
+export async function readReleaseAsset(root,path){
+ root=resolve(root);
+ const file=resolve(root,'.'+path);
+ if(!path.startsWith('/')||!file.startsWith(root+sep))throw Error('Asset path escaped the release directory.');
+ try{return await readFile(file);}
+ catch(error){
+  if(error.code!=='ENOENT'||!GZIP_ASSET_PATHS.includes(path.slice(1)))throw error;
+  // Browser response bodies have Content-Encoding decoded. Compare them with
+  // the exact original bytes even though staging only contains the .gz file.
+  return gunzipSync(await readFile(file+'.gz'));
+ }
+}
+
+async function main(){
 setDefaultResultOrder('ipv4first');
 const base=new URL(process.env.WORLD_VERIFY_URL||process.argv.find(arg=>/^https?:\/\//.test(arg))||'https://world.pulsetact.ai');
 if(base.username||base.password)throw Error('Do not embed credentials in the release URL.');
@@ -21,11 +47,7 @@ const url=path=>new URL(path,base).href;
 const redact=value=>String(value).replace(/(pulsetact_session\s*[=:]\s*)[^\s;,"']+/gi,'$1[redacted]');
 const report={base:base.origin,startedAt:new Date().toISOString(),status:'running',checks:[],integrity:[],modes:[]};
 await mkdir(directory,{recursive:true});
-const local=path=>{
- const file=resolve(root,'.'+path);
- if(!file.startsWith(root+sep))throw Error('Asset path escaped the release directory.');
- return readFile(file);
-};
+const local=path=>readReleaseAsset(root,path);
 const check=(name,details={})=>{report.checks.push({name,...details});console.log(`PASS ${name}`);};
 async function verifyBytes(path,bytes,status){
  const expected=await local(path),actualSha256=hash(bytes),expectedSha256=hash(expected);
@@ -35,7 +57,7 @@ async function verifyBytes(path,bytes,status){
 let browser;
 async function runMode(mode){
  const mobile=mode==='mobile',result={mode,checks:[],errors:[],networkFailures:[],views:[],requests:[]};report.modes.push(result);
- const context=await browser.newContext(mobile?{viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true}:{viewport:{width:1500,height:960},deviceScaleFactor:1});
+ const context=await browser.newContext({...(mobile?{viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true}:{viewport:{width:1500,height:960},deviceScaleFactor:1}),...(process.env.WORLD_VERIFY_PROXY?{proxy:{server:process.env.WORLD_VERIFY_PROXY}}:{})});
  const page=await context.newPage(),responses=new Map();page.setDefaultTimeout(30000);
  const activate=locator=>mobile?locator.tap():locator.click();
  const saved=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('pulsetact.world.solo.v1')||'null'));
@@ -100,7 +122,7 @@ async function runMode(mode){
   await page.getByLabel('旅途中，怎么称呼你？',{exact:true}).fill(mobile?'BU 手机发布验收':'BU 发布验收');
   await activate(page.getByRole('button',{name:/开始校园漫游|继续校园漫游/}));await ready();
   passed('HTTPS, release version, protected resources, valid authentication and nickname entry');
-  for(const [id,title] of [['bu-mugar','Mugar Memorial Library'],['bu-gsu','George Sherman Union'],['bu-warren','Warren Towers']]){
+  for(const [id,title] of BU_RELEASE_DESTINATIONS){
    await travel(id,title);await capture(id);passed(`real map travel and rendered view: ${title}`);
   }
   if(mobile){
@@ -111,6 +133,15 @@ async function runMode(mode){
    expect(result.requests.some(path=>['/assets/bu-cds/cds-full.glb','/assets/bu-questrom/questrom-full.glb'].includes(path))).toBe(false);
    passed('phone HD remains in mobile models at both Warren and the shared Link');
   }
+  // The normal globe UI provides a public route back to Building 10 / Killian
+  // Court. No development inspector or injected player position is used.
+  await activate(page.getByRole('navigation',{name:'世界菜单',exact:true}).getByRole('button',{name:'地图',exact:true}));
+  await activate(page.getByRole('button',{name:'地球总览',exact:true}));
+  await activate(page.getByRole('button',{name:'查看 MIT 的地理位置',exact:true}));
+  await activate(page.getByRole('button',{name:'进入 MIT 校园',exact:true}));await ready();
+  await expect.poll(async()=>(await saved())?.trackedId,{timeout:15000}).toBe('axis');
+  await expect(page.locator('.pw-location')).toContainText('MIT');
+  await capture('mit-main-building');passed('normal globe travel back to MIT main building / Killian Court');
   // Integrity is checked against the exact staged release, including hashed
   // lazy JS chunks that generate new desktop facade/court geometry. Read the
   // already-fetched response body so this does not re-download every bundle.
@@ -123,10 +154,26 @@ async function runMode(mode){
   }
   for(const path of paths){const response=responses.get(path);expect(response,`Runtime request ${path}`).toBeDefined();await verifyBytes(path,await response.body(),response.status());}
   if(mobile){
-   // The protected fallback must also be from this release if a later model
-   // request fails. Its download is separate from the live render checks.
-   const path='/data/mobile/boston.glb',response=await context.request.get(url(path),{headers:{'cache-control':'no-cache'},timeout:120000});
-   expect(response.headers()['cache-control']).toContain('private');await verifyBytes(path,await response.body(),response.status());await response.dispose();
+   // Check both replacement stages and the protected fallback, including exact
+   // decompressed bytes and conditional cache metadata on the stable URLs.
+   for(const path of BOSTON_GZIP_RELEASE_PATHS){
+    const response=await context.request.get(url(path),{headers:{'cache-control':'no-cache','accept-encoding':'gzip'},timeout:120000});
+    const headers=response.headers(),etag=headers.etag;
+    expect(headers['content-encoding'],`gzip ${path}`).toBe('gzip');
+    expect(headers['content-type']).toContain('model/gltf-binary');expect(etag).toBeTruthy();
+    if(path.startsWith('/data/'))expect(headers['cache-control']).toContain('private');
+    await verifyBytes(path,await response.body(),response.status());await response.dispose();
+    const head=await context.request.head(url(path),{headers:{'accept-encoding':'gzip'},timeout:120000});
+    expect(head.status()).toBe(200);expect((await head.body()).length).toBe(0);
+    const headHeaders=head.headers();
+    for(const name of ['etag','cache-control','content-encoding','content-type'])expect(headHeaders[name],`HEAD ${name}: ${path}`).toBe(headers[name]);
+    await head.dispose();
+    const conditional=await context.request.get(url(path),{headers:{'if-none-match':etag,'accept-encoding':'gzip'},timeout:120000});
+    expect(conditional.status(),`Conditional request ${path}`).toBe(304);expect((await conditional.body()).length).toBe(0);
+    for(const name of ['etag','cache-control','content-encoding'])expect(conditional.headers()[name],`304 ${name}: ${path}`).toBe(headers[name]);
+    await conditional.dispose();
+    check(`gzip GET, HEAD and conditional 304: ${path}`,{etag,cacheControl:headers['cache-control'],compressedBytes:Number(headers['content-length'])||null});
+   }
   }
   passed('HTML, actual runtime bundles and mobile campus bytes match staged SHA-256');
   expect(result.errors).toEqual([]);expect(result.networkFailures).toEqual([]);passed('no page, WebGL, crash or resource errors');result.status='passed';
@@ -147,3 +194,6 @@ finally{
  report.finishedAt=new Date().toISOString();await writeFile(`${directory}/report.json`,JSON.stringify(report,null,2));
  console.log(JSON.stringify({status:report.status,checks:report.checks.length,failure:report.failure,versions:report.modes.map(m=>m.version),report:`${directory}/report.json`}));await browser?.close();
 }
+
+}
+if(process.argv[1]&&pathToFileURL(resolve(process.argv[1])).href===import.meta.url)await main();

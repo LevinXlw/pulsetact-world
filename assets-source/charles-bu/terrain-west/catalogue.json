@@ -1,0 +1,96 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "domain": null
+    },
+    {
+      "name": "Name",
+      "type": "esriFieldTypeString",
+      "alias": "Name",
+      "domain": null,
+      "length": 200
+    },
+    {
+      "name": "ProductName",
+      "type": "esriFieldTypeString",
+      "alias": "ProductName",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "Source",
+      "type": "esriFieldTypeString",
+      "alias": "Source",
+      "domain": null,
+      "length": 32
+    },
+    {
+      "name": "VerticalDatum",
+      "type": "esriFieldTypeString",
+      "alias": "VerticalDatum",
+      "domain": null,
+      "length": 100
+    },
+    {
+      "name": "AcquisitionDate",
+      "type": "esriFieldTypeDate",
+      "alias": "AcquisitionDate",
+      "domain": null,
+      "length": 8
+    },
+    {
+      "name": "URL",
+      "type": "esriFieldTypeString",
+      "alias": "URL",
+      "domain": null,
+      "length": 1000
+    },
+    {
+      "name": "Metadata",
+      "type": "esriFieldTypeString",
+      "alias": "Metadata",
+      "domain": null,
+      "length": 256
+    },
+    {
+      "name": "Resolution_X",
+      "type": "esriFieldTypeString",
+      "alias": "Resolution_X",
+      "domain": null,
+      "length": 50
+    },
+    {
+      "name": "Resolution_Y",
+      "type": "esriFieldTypeDouble",
+      "alias": "Resolution_Y",
+      "domain": null
+    },
+    {
+      "name": "Best",
+      "type": "esriFieldTypeInteger",
+      "alias": "Best",
+      "domain": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 45630,
+        "Name": "MA_NE_CMGP_Sandy_Z19_2013",
+        "ProductName": "USGS_3DEP",
+        "Source": "USGS",
+        "VerticalDatum": "North American Vertical Datum of 1988 (NAVD 88)",
+        "AcquisitionDate": 1419984000000,
+        "URL": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/MA_NE_CMGP_Sandy_Z19_2013/TIFF/USGS_1m_x32y470_MA_NE_CMGP_Sandy_Z19_2013.tif",
+        "Metadata": "D:\\USGS_3DEP\\data\\1m\\MA_NE_CMGP_Sandy_Z19_2013\\USGS_1m_x32y470_MA_NE_CMGP_Sandy_Z19_2013.xml",
+        "Resolution_X": null,
+        "Resolution_Y": null,
+        "Best": 109236
+      }
+    }
+  ]
+}

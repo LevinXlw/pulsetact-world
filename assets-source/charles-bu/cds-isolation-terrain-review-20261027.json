@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27",
+  "scope": "CDS landmark isolation test; no runtime geometry or terrain changes",
+  "baselineRevision": "e2ec8c3",
+  "cause": "Adding surveyed 580/566/560 Commonwealth records to BU_FULL_BUILDINGS legitimately changes legacy building-derived height interpolation/pads around Questrom. The original entire-campus frozen signature unintentionally froze neighbouring ground heights.",
+  "diagnosis": {
+    "trianglesUnchanged": 110302,
+    "meshesUnchanged": 39,
+    "beforeSha256": "d11df2708c99f1bde5e4ae0bb125f2f71325e2f42e5dbcd4e2ffaa471b539333",
+    "afterSha256": "adc42f7f6be59e247d9d31c1df337382c7414155953527f11bc9607e62073469",
+    "method": "In-memory esbuild A/B with only bu-full-layout.ts read from HEAD:e2ec8c3 restores original signature. Replacing only the entire bu-terrain.ts with HEAD does not alter the current signature. Per-mesh Float32 attribute comparison locates the complete delta.",
+    "affected": [
+      {
+        "scope": "questrom",
+        "mesh": "BU ground · paving",
+        "positionYComponents": 323,
+        "maxHeightDeltaMetres": 0.007252693176269531,
+        "normalComponents": 384,
+        "maxNormalComponentDelta": 0.0006540200170945809
+      },
+      {
+        "scope": "questrom",
+        "mesh": "BU ground · stone",
+        "positionYComponents": 210,
+        "maxHeightDeltaMetres": 0.0006432533264160156,
+        "normalComponents": 156,
+        "maxNormalComponentDelta": 0.0002443475532345474
+      },
+      {
+        "scope": "questrom",
+        "mesh": "BU ground · brickLight",
+        "positionYComponents": 87,
+        "maxHeightDeltaMetres": 0.0005540847778320312,
+        "normalComponents": 65,
+        "maxNormalComponentDelta": 0.0002443475532345474
+      }
+    ],
+    "unchanged": "All CDS mesh attributes, all neighbouring architecture, every X/Z component, UV, campusBaseHeight, campusYaw, triangle count/winding and mesh count. The other 36 meshes have identical attributes."
+  },
+  "testCorrection": {
+    "historicalSignatures": "CDS: 22590 triangles/10 meshes; neighbouring architecture: 83242 triangles/21 meshes; neighbouring ground plan: 4470 triangles/8 meshes. All three signatures independently computed with HEAD layout, then verified identical with current layout. Together retain all original 110302 triangles/39 meshes.",
+    "terrainContract": "Ground plan signature excludes only Y/normal; live Questrom surface offsets and finite-difference slope normals are independently checked against current buElevation, with 0.1 mm position tolerance for Float32 geometry. Existing hiding tests still hash every non-CDS triangle/attribute before and after hiding CDS.",
+    "runtimeChanges": false,
+    "visualAcceptance": "Not applicable: this records technical test scope, not visual acceptance."
+  }
+}

@@ -24,8 +24,8 @@ describe('BU central district bare-earth terrain',()=>{
       expect(buElevation(x,z)).toBeCloseTo(buSurveyElevation(x,z)!,6);
     }
   });
-  it('limits this pass to the core and makes its boundary continuous',()=>{
-    for(const p of [[-1668,960],[-600,960],[-1200,720],[-1200,1100]])expect(buDEMWeight(...p as [number,number])).toBe(0);
+  it('keeps the eastern and southern core limits stable and its boundary continuous',()=>{
+    for(const p of [[-600,960],[-1200,720],[-1200,1100]])expect(buDEMWeight(...p as [number,number])).toBe(0);
     for(const x of [-1608,-624])for(let z=792;z<=1068;z+=12)expect(Math.abs(buElevation(x-.001,z)-buElevation(x+.001,z))).toBeLessThan(.003);
     expect(buSurveyElevation(-5000,0)).toBeUndefined();
   });

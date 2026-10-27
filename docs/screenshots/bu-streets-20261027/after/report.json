@@ -1,0 +1,423 @@
+{
+  "phase": "after",
+  "startedAt": "2026-10-27T04:29:23.423Z",
+  "base": "http://127.0.0.1:5186",
+  "views": [
+    {
+      "id": "01-west-overview",
+      "title": "西区：宿舍、道路与球场关系",
+      "eye": [
+        -2410,
+        110,
+        840
+      ],
+      "target": [
+        -2260,
+        15.789666666666667,
+        690
+      ],
+      "fov": 60,
+      "camera": [
+        -2410,
+        123.01766670631392,
+        840
+      ],
+      "calls": 709,
+      "triangles": 3315625,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "02-west-babcock",
+      "title": "Babcock Street：路缘与人行道衔接",
+      "eye": [
+        -2380,
+        1.75,
+        744
+      ],
+      "target": [
+        -2373,
+        12.872364583333335,
+        694
+      ],
+      "fov": 65,
+      "camera": [
+        -2380,
+        14.48366641998291,
+        744
+      ],
+      "calls": 109,
+      "triangles": 542256,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "03-west-comm-ave",
+      "title": "西区 Commonwealth Avenue 路面",
+      "eye": [
+        -2400,
+        1.75,
+        852
+      ],
+      "target": [
+        -2260,
+        15.054166666666665,
+        865
+      ],
+      "fov": 62,
+      "camera": [
+        -2400,
+        14.699999809265137,
+        852
+      ],
+      "calls": 2872,
+      "triangles": 12822044,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "04-west-courtyard",
+      "title": "Claflin / Sleeper 前场与步道",
+      "eye": [
+        -2310,
+        1.7,
+        670
+      ],
+      "target": [
+        -2325,
+        15.0315625,
+        725
+      ],
+      "fov": 65,
+      "camera": [
+        -2310,
+        9.602833022591982,
+        670
+      ],
+      "calls": 185,
+      "triangles": 757960,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "05-west-east-path",
+      "title": "宿舍区东侧到 Nickerson 的步道",
+      "eye": [
+        -2235,
+        1.75,
+        733
+      ],
+      "target": [
+        -2226,
+        8.8105,
+        680
+      ],
+      "fov": 65,
+      "camera": [
+        -2235,
+        14.605500047857111,
+        733
+      ],
+      "calls": 97,
+      "triangles": 459689,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "06-questrom-opposite",
+      "title": "从 Questrom 南侧向对街看",
+      "eye": [
+        -624,
+        1.75,
+        1087
+      ],
+      "target": [
+        -650,
+        17.650658272756353,
+        1190
+      ],
+      "fov": 65,
+      "camera": [
+        -624,
+        7.001999855041504,
+        1087
+      ],
+      "calls": 614,
+      "triangles": 4616715,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "07-questrom-block",
+      "title": "Questrom 与 Metcalf 街区关系",
+      "eye": [
+        -580,
+        105,
+        1060
+      ],
+      "target": [
+        -655,
+        12.709757420737386,
+        1180
+      ],
+      "fov": 62,
+      "camera": [
+        -580,
+        110.19978825251262,
+        1060
+      ],
+      "calls": 476,
+      "triangles": 3176384,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "08-metcalf-front",
+      "title": "Metcalf 临 Commonwealth 一侧",
+      "eye": [
+        -646,
+        1.75,
+        1136
+      ],
+      "target": [
+        -660,
+        16.55451454287435,
+        1192
+      ],
+      "fov": 65,
+      "camera": [
+        -646,
+        6.694963455200195,
+        1136
+      ],
+      "calls": 228,
+      "triangles": 1895910,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "10-580-street",
+      "title": "580 Commonwealth 专属对街补充机位",
+      "eye": [
+        -620,
+        1.75,
+        1087
+      ],
+      "target": [
+        -610,
+        24.842589363668854,
+        1150
+      ],
+      "fov": 67,
+      "supplemental": true,
+      "camera": [
+        -620,
+        7.001999328108926,
+        1087
+      ],
+      "calls": 431,
+      "triangles": 3356947,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "11-580-corner",
+      "title": "580 西北折角与底层曲线近景",
+      "eye": [
+        -647,
+        1.75,
+        1135
+      ],
+      "target": [
+        -616,
+        22.825520560984543,
+        1148
+      ],
+      "fov": 68,
+      "supplemental": true,
+      "camera": [
+        -647,
+        6.714218854904175,
+        1135
+      ],
+      "calls": 374,
+      "triangles": 2123705,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "12-566-street",
+      "title": "566 Commonwealth 退后塔楼与阳台",
+      "eye": [
+        -562,
+        1.75,
+        1090
+      ],
+      "target": [
+        -558,
+        24.89934639055563,
+        1175
+      ],
+      "fov": 65,
+      "supplemental": true,
+      "camera": [
+        -562,
+        6.938027540842692,
+        1090
+      ],
+      "calls": 164,
+      "triangles": 1247809,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "13-560-bank",
+      "title": "560 Commonwealth 曲面低层商业建筑",
+      "eye": [
+        -493,
+        1.75,
+        1117
+      ],
+      "target": [
+        -509,
+        8.782208785559678,
+        1160
+      ],
+      "fov": 66,
+      "supplemental": true,
+      "camera": [
+        -493,
+        6.475095523111098,
+        1117
+      ],
+      "calls": 271,
+      "triangles": 1984063,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "14-west-retaining-wall",
+      "title": "Nickerson 球场到宿舍平台的挡墙",
+      "eye": [
+        -2260,
+        1.75,
+        690
+      ],
+      "target": [
+        -2290,
+        17.046875,
+        722
+      ],
+      "fov": 65,
+      "supplemental": true,
+      "camera": [
+        -2260,
+        9.634666137322505,
+        690
+      ],
+      "calls": 206,
+      "triangles": 830373,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "15-560-entry",
+      "title": "560 曲面入口与窗框近景",
+      "eye": [
+        -483,
+        1.75,
+        1158
+      ],
+      "target": [
+        -494,
+        6.951449981982179,
+        1158
+      ],
+      "fov": 64,
+      "supplemental": true,
+      "camera": [
+        -483,
+        6.58595730763941,
+        1158
+      ],
+      "calls": 1274,
+      "triangles": 5569658,
+      "nearObstacle": null,
+      "glError": 0
+    }
+  ],
+  "errors": [],
+  "status": "passed",
+  "kind": "Actual runtime asset loader at fixed inspection cameras; separate from complete-game walking checks",
+  "cameraPolicy": "Same horizontal positions/FOV and eye height above corrected terrain; absolute eye/target heights change with the surveyed terrain correction.",
+  "excludedViews": [
+    {
+      "id": "04-gsu-front",
+      "reason": "Historical camera is inside the GSU shell; excluded from exterior acceptance."
+    }
+  ],
+  "sources": {
+    "src/features/world/bu-full-campus.ts": "5fe96b5f8f25c128e78e75e2d11089ebe6177967299a63aa6c131f260ee72457",
+    "src/features/world/bu-full-layout.ts": "0ef3039f25c550245257c21bd4c60b28099a5e12fc84baf36303b22fa9491814",
+    "src/features/world/bu-warren-tower-layout.ts": "f7a8c3d3f10845a8661f032b95a8d44f49f177d95c6862578e761955cdb8be0d",
+    "src/features/world/bu-sert-photo-facades.ts": "a9916c2aecec29946dcb0fcf2342f65ddb8cb584735954ab6852908bdc04e4da",
+    "src/features/world/bu-refined-building-asset.ts": "d205030fda1749b783b13225f8572400e58a438a8bdc4c30706ac4bcf9213e0c",
+    "src/features/world/painterly-sky.ts": "59b24bdd3dcd7355ab1747886dbb79631cf73fb277268b85d76ffb64e4fe3b5a",
+    "src/features/world/bu-terrain.ts": "fd674614088ea2d0927c66d11e796491a53563173ecc62e1e75716fa3dfec9a7",
+    "src/features/world/bu-west-terrain-data.ts": "b2df8fbbe3122e9b57f3c0787ae032d1187d5a23dcee475dda35099d533fc550",
+    "src/features/world/bu-west-terrace.ts": "ff7d8cb955fa93ef70e7174aec3a931bef1a2cffd389d68ff3e337a7727388bb",
+    "src/features/world/bu-west-terrace-layout.ts": "e16fad04dda28e1d5c63ce1c7245884ba9914556b454d0151ace50977639276e",
+    "src/features/world/bu-campus-streets.ts": "323e6848cca368b7e28f4c51fc5882dd18f5c4ce8e7cf41b4e6e9d63b52fbe53",
+    "src/features/world/bu-public-realm.ts": "64c5986c1ecc1a0e4909a112bcfdcee5cde602b2324b5708059046355d73b202",
+    "src/features/world/bu-580-commonwealth.ts": "d1a6ed564c18125d6cbce5d78b9f09d103988a9e6a6e33af5494ff9e9e99c6e3",
+    "src/features/world/bu-566-commonwealth.ts": "0b127f7b79850750fe894857a7e2730dbb56b75c09f2228a93e0273b62137f1a",
+    "src/features/world/bu-560-commonwealth.ts": "73fc363c2213863d632c3308ec4d1f9f9fec747fb782e4f29deeb0df2e1c0e61",
+    "src/features/world/mobile-campus.ts": "982ce589546cc779b83cb29fbc9c4dd1a35ccd90aa0d30f3265e894a190b0b53",
+    "public/data/mobile/boston.glb": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+    "public/assets/mit-stata/boston-without-stata.glb": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+    "public/assets/mit-residences/boston-without-residences.glb": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+    "public/data/mobile/boston.replacements.json": "1cb1d8ca90f1beab36a112b3fc76f46bd2b66eed6a2c9f3538b6f60c01494d08"
+  },
+  "setup": {
+    "light": {
+      "sky": "#c2d8f2",
+      "ground": "#b6b5a3",
+      "ambient": 1.75,
+      "sun": "#fff3d9",
+      "intensity": 2.65,
+      "offset": [
+        -95,
+        115,
+        135
+      ]
+    },
+    "invalid": [],
+    "neutralArchitecture": false,
+    "bankGeometry": true,
+    "mobileBase": {
+      "status": "loaded",
+      "url": "/assets/mit-stata/stata-full.glb",
+      "baseUrl": "/assets/mit-residences/campus-without-residences.glb",
+      "bytes": 18778304
+    },
+    "mobileResidences": {
+      "status": "loaded",
+      "buildings": [
+        "baker",
+        "maseeh"
+      ],
+      "bytes": 15041308
+    },
+    "streets": {
+      "stats": {
+        "roadSegments": 189,
+        "walkRoutes": 189,
+        "trees": 560,
+        "streetMeshes": 604,
+        "frontagePatches": 979,
+        "frontageArea": 22029,
+        "transitPlatforms": 10
+      }
+    }
+  }
+}

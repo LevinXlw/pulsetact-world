@@ -4,7 +4,7 @@ import {createServer} from 'vite';
 import {authenticateContext} from './test-auth.mjs';
 const base=process.argv.find(arg=>/^https?:\/\//.test(arg))??'http://127.0.0.1:5186',production=new URL(base).hostname==='world.pulsetact.ai',mobile=process.argv.includes('--mobile');
 const directory=process.env.BU_PLAYABLE_DIRECTORY??`output/bu-full-campus/${production?'production':'local'}${mobile?'-mobile':''}`;await mkdir(directory,{recursive:true});
-const vite=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom',logLevel:'error'});
+const vite=await createServer({server:{middlewareMode:true,hmr:false},optimizeDeps:{noDiscovery:true,include:[],entries:[]},appType:'custom',logLevel:'error'});
 const {WORLD_DESTINATIONS}=await vite.ssrLoadModule('/src/features/world/world-destinations.ts');
 const {buNavigationBlocked}=await vite.ssrLoadModule('/src/features/world/bu-campus-layout.ts');await vite.close();
 const places=WORLD_DESTINATIONS.filter(p=>p.id.startsWith('bu-'));
@@ -20,6 +20,29 @@ const map=()=>page.getByRole('navigation',{name:'世界菜单'}).getByRole('butt
 const check=name=>{report.checks.push(name);console.log(`PASS ${name}`);};
 async function ready(){await expect(page.locator('.pw-loading')).toHaveCount(0,{timeout:180000});await expect(page.getByRole('button',{name:'拍照下载',exact:true})).toBeEnabled({timeout:180000});await expect(page.locator('.pw-scene-error')).toHaveCount(0);}
 async function capture(name){await page.waitForTimeout(650);await page.screenshot({path:`${directory}/${name}.png`});report.views.push({name,scene:await page.evaluate(()=>window.__worldScene)});}
+async function recordVisit(place){
+ if((await save()).visitedPlaces.includes(place.id))return;
+ if(place.id==='bu-cds'){
+   // The real CDS door takes priority over the stamp panel and records entry.
+   const enter=page.getByTestId('enter-cds-interior');await expect(enter).toBeEnabled();
+   if(mobile)await enter.tap();else await page.keyboard.press('e');
+   await expect(page.getByTestId('cds-interior-visit')).toBeVisible({timeout:180000});
+   await expect(page.locator('.cds-visit-loading')).toHaveCount(0,{timeout:180000});
+   await expect(page.locator('.cds-visit-error')).toHaveCount(0);
+   await expect(page.locator('.cds-visit-scene canvas')).toBeVisible();
+   await expect(page.locator('.pw-scene canvas')).toHaveCount(0);
+   await expect.poll(async()=>(await save()).visitedPlaces.includes(place.id),{timeout:15000}).toBe(true);
+   const exit=page.locator('.cds-visit-interact');await expect(exit).toContainText('开门离开');await expect(exit).toBeEnabled();
+   if(mobile)await exit.tap();else await page.keyboard.press('e');
+   await ready();await expect(page.getByTestId('cds-interior-visit')).toHaveCount(0);
+   await expect.poll(async()=>(await save()).visitedPlaces.includes(place.id),{timeout:15000}).toBe(true);
+   check('CDS door entry records the visit and returns to the campus');
+ }else{
+   if(mobile)await page.locator('.pw-interaction').tap();else await page.keyboard.press('e');
+   const stamp=page.getByRole('button',{name:'记录这次到访',exact:true});await expect(stamp).toBeVisible();await stamp.click();
+   await expect.poll(async()=>(await save()).visitedPlaces.includes(place.id),{timeout:15000}).toBe(true);
+ }
+}
 try{
  await page.goto(base,{waitUntil:'domcontentloaded'});const enter=page.getByRole('button',{name:/开始校园漫游|继续校园漫游/});await expect(enter).toBeEnabled({timeout:180000});await page.getByLabel('旅途中，怎么称呼你？').fill('BU 漫游检查');await enter.click();await ready();
  expect((await save()).visited).toEqual(['axis']);expect((await save()).campusVisits).toEqual(['umd-library']);check('legacy Boston save and other-campus history retained');
@@ -33,7 +56,7 @@ try{
  for(const p of places){
    await map();await page.getByLabel('选择 BU 校园分区').selectOption('all');await page.getByRole('button',{name:`快速前往${p.title}`,exact:true}).click();await ready();await expect(page.locator('.pw-location')).toContainText('BOSTON UNIVERSITY');
    await expect.poll(async()=>{const point=(await save()).position;return Math.hypot(point[0]-p.position[0],point[1]-p.position[1]);},{timeout:15000}).toBeLessThan(1);
-   await capture(p.id);if(!(await save()).visitedPlaces.includes(p.id)){if(mobile)await page.locator('.pw-interaction').click();else await page.keyboard.press('e');await expect(page.getByRole('button',{name:'记录这次到访',exact:true})).toBeVisible();await page.getByRole('button',{name:'记录这次到访',exact:true}).click();}console.log(`Visited ${p.id}`);
+   await capture(p.id);await recordVisit(p);console.log(`Visited ${p.id}`);
  }
  expect((await save()).visitedPlaces.filter(id=>id.startsWith('bu-'))).toHaveLength(places.length);check(`all ${places.length} BU destinations load and can be recorded`);
  await map();await page.getByRole('button',{name:'快速前往Agganis Arena',exact:true}).click();await ready();

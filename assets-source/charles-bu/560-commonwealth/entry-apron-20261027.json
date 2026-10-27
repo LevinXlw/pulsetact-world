@@ -1,0 +1,54 @@
+{
+  "assetId": "commonwealth-560-entry-apron",
+  "version": "2026-10-27",
+  "scope": "Only the curved eastern entrance ofCity1372, between existing surveyed building vertices1–28 and the existing Commonwealth/Beacon sidewalk inner edges. Both straight-facade frontage patches remain unchanged.",
+  "reason": "The generic frontage selector excludes wall edges shorter than2.2m. All27 GIS segments of the curved nose were therefore skipped, leaving grass directly outside the bank entrance in actual-game screenshot15.",
+  "source": "src/features/world/bu-public-realm.ts::BU_SOURCE_FRONTAGES",
+  "reference": {
+    "local": "assets-source/charles-bu/560-commonwealth/bank-2019.jpg",
+    "url": "https://media.bizj.us/view/img/10901036/citizensbankkenmore04%2A1200xx5184-2922-0-257.jpg",
+    "date": "2019-09-05 article; photograph capture date unknown",
+    "observed": "The curved bank entrance and its immediate street frontage meet pale paving, not a grass island.",
+    "limits": "Material interpretation is photo-backed; boundaries use existing GIS building and road/sidewalk geometry, not a paving cadastral survey. Currenttenant is not asserted."
+  },
+  "bounds": {
+    "minX": -498.109,
+    "maxX": -488.37878639746805,
+    "minZ": 1149.7333704459602,
+    "maxZ": 1166.8993851380005
+  },
+  "patchCount": 27,
+  "areaSquareMetres": 97.8892068125424,
+  "construction": "Retain every original curve vertex. For each vertex, cast its averaged outward direction to the nearest valid existing sidewalk inner edge, with8m maximum travel and6cm overlap. At each arc end reuse the original straight-frontage endpoint exactly. Form27 small quads, clip to the building arc exterior half-plane and all road carriageways, then reject occupied-area intersections.",
+  "safetyGeometry": "No facade or whole-parcel extension. Dense11cm verification samples in every patch stay outside all occupied footprints and carriageways. Existing protectedcampus spaces and the566 tower receive no added paving.",
+  "material": "Existing public-realm paving atbuElevation+.102m; existing paving material scale/joints, no new texture or collisionwall.",
+  "platforms": "Appended toBU_PUBLIC_FRONTAGES, consumed by bothbu-campus-streets.ts andmobile-campus-build.ts. Mobile requires a fresh bakedGLB; parent task performs rebake and actual-runtime verification.",
+  "acceptanceRoute": [
+    [
+      -493.8,
+      1158.1
+    ],
+    [
+      -488.5,
+      1158.1
+    ]
+  ],
+  "verification": {
+    "command": "npm.cmd test -- tests/bu-560-entry-apron.test.ts tests/bu-street-realism.test.ts",
+    "result": "12/12 passed",
+    "checks": [
+      "scope/area bounds",
+      "continuous door-to-sidewalk paving at5cm sampling",
+      "dense11cm area sampling excluding all buildings and roads",
+      "actualdesktoppavingmesh raycasts at4 approachpoints",
+      "existingpublicrealm regressions"
+    ],
+    "G3": "root final15-entry recapture pending",
+    "G4": "sharedsourcecomplete; finalmobile rebake/hash pending"
+  },
+  "remainingLimits": [
+    "This corrects the paved entrance relationship; curbcut/door hardware, stonewear and currenttenant remain outside this apron correction.",
+    "Final actual-game screenshot and mobile bakedasset evidence are required before visual acceptance."
+  ],
+  "sourceSha256": "64c5986c1ecc1a0e4909a112bcfdcee5cde602b2324b5708059046355d73b202"
+}

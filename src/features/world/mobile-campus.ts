@@ -3,11 +3,15 @@ import {CampusCollision} from '../real-campus/campus-collision';
 import {createMobileGroundSampler} from './mobile-ground-sampler';
 import {parseMobileCampus} from './mobile-campus-glb';
 import {createMobileHdMaterials} from './mobile-hd-materials';
+import {createMITPoeticSurface,isMITPoeticSurface} from './mit-poetic-materials';
+import {createMITPoeticAtmosphere} from './mit-poetic-atmosphere';
+import {createMITMainBuildingDetail} from './mit-main-building-detail';
 import {createCharlesWaterMaterial} from './charles-water';
 import {createBUGreenLine} from './bu-green-line';
 import {createBUCommAveLandscape} from './bu-comm-ave-landscape';
 import {createBUFrontageGlazing,buFrontageGlazingVariant} from './bu-frontage-glazing';
 import {createBULinkCourtDetail} from './bu-link-court-detail';
+import {createBUSertFacadeDetail} from './bu-sert-facade-detail';
 import {createPainterlyVegetation} from './painterly-vegetation';
 import {loadStataCampusReplacement,MIT_STATA_MOBILE_ASSET_URL,MIT_STATA_MOBILE_BASE_URL} from './mit-stata-asset';
 import {loadMITCampusReplacement} from './mit-residences-asset';
@@ -28,8 +32,9 @@ export async function loadMobileCampus(signal:AbortSignal,campus:CampusId):Promi
   let stata:Awaited<ReturnType<typeof loadStataCampusReplacement>>['building']|undefined;
   let residences:Awaited<ReturnType<typeof loadMITCampusReplacement>>['residences'];
   let mitBaseUrl=MIT_STATA_MOBILE_BASE_URL;
+  let loadedBaseUrl='/data/mobile/'+campus+'.glb';
   const loadBaseBytes=async()=>{
-    if(campus==='boston')try{const replacement=await loadMITCampusReplacement(signal,'mobile');stata=replacement.building;residences=replacement.residences;mitBaseUrl=replacement.baseUrl;return replacement.baseBytes;}
+    if(campus==='boston')try{const replacement=await loadMITCampusReplacement(signal,'mobile');stata=replacement.building;residences=replacement.residences;mitBaseUrl=replacement.baseUrl;loadedBaseUrl=replacement.baseUrl;return replacement.baseBytes;}
     catch(error){signal.throwIfAborted();console.warn('Stata mobile exterior unavailable; retaining original building.',error);}
     return load(`/data/mobile/${campus}.glb`).then(r=>r.arrayBuffer());
   };
@@ -44,13 +49,17 @@ export async function loadMobileCampus(signal:AbortSignal,campus:CampusId):Promi
   }
   const meta=metaData.value,heightBytes=heightData.value;
   let model:ReturnType<typeof parseMobileCampus>;
+  let loadedBaseBytes=baseData.value.byteLength;
   try{model=parseMobileCampus(baseData.value);}
   catch(error){
     if(!stata)throw error;
     stata.dispose();stata=undefined;residences?.dispose();residences=undefined;
     console.warn('Stata mobile campus replacement is invalid; retaining original building.',error);
-    model=parseMobileCampus(await load(`/data/mobile/${campus}.glb`).then(r=>r.arrayBuffer()));
+    loadedBaseUrl='/data/mobile/'+campus+'.glb';
+    const fallbackBytes=await load(loadedBaseUrl).then(r=>r.arrayBuffer());loadedBaseBytes=fallbackBytes.byteLength;
+    model=parseMobileCampus(fallbackBytes);
   }
+  model.userData.mobileBaseAsset={url:loadedBaseUrl,bytes:loadedBaseBytes};
   if(stata){
     model.add(stata.group);
     model.userData.stataReplacement={status:'loaded',url:MIT_STATA_MOBILE_ASSET_URL,baseUrl:mitBaseUrl,bytes:stata.bytes};
@@ -79,18 +88,58 @@ export async function loadMobileCampus(signal:AbortSignal,campus:CampusId):Promi
   replaced.forEach(material=>material.dispose());
   const ground:Mesh[]=[],walls:Mesh[]=[],materials=new Set<Material>(),geometries=new Set<BufferGeometry>(),textures=new Set<Texture>();
   if(campus==='boston'){replaceBakerSurveyPlanters(model,residences?.group);finishMITUnderpass(model);}
+  // The dedicated MIT finishes retain the baked geometry and collision. They
+  // stay outside the Lambert-only optional HD conversion on both quality tiers.
+  const poeticAtmosphere=campus==='boston'?createMITPoeticAtmosphere(wind,true):undefined;
+  const mainBuildingDetail=campus==='boston'?createMITMainBuildingDetail():undefined;
+  if(campus==='boston'){
+    const poeticPalette=new Map<Material,Material>();
+    model.traverse(object=>{if(!(object instanceof Mesh))return;
+      const convert=(source:Material)=>{
+        if(!isMITPoeticSurface(source.name))return source;
+        let material=poeticPalette.get(source);
+        if(!material){material=createMITPoeticSurface(source.name,{mobile:true});material.side=source.side;poeticPalette.set(source,material);}
+        return material;
+      };
+      object.material=Array.isArray(object.material)?object.material.map(convert):convert(object.material);
+    });
+    poeticPalette.forEach((_,source)=>source.dispose());
+    model.add(poeticAtmosphere!.group);
+    model.add(mainBuildingDetail!);
+    model.userData.mitMainBuildingDetail=mainBuildingDetail!.stats;
+    model.userData.mitArtDirection={version:'poetic-campus-real-detail-v2',palette:'existing warm stone / green landscape; photo-informed warm-grey muntins',quality:'baked mobile geometry; retained stone courses; opaque approximate glazing; 24 motes; no shadow maps or reflection probe'};
+  }
   let disposed=false;const hdMaterials=createMobileHdMaterials(model,campus);
   let transit:ReturnType<typeof createBUGreenLine>|undefined;
   let residenceLandscape:ReturnType<typeof createMITResidenceLandscape>|undefined;
   let commTrees:ReturnType<typeof createPainterlyVegetation>|undefined;
   let linkTrees:ReturnType<typeof createPainterlyVegetation>|undefined;
-  const dispose=()=>{if(disposed)return;disposed=true;transit?.dispose();stata?.disposeEnvironment();residences?.disposeEnvironment();hdMaterials.dispose();collision.clear();model.traverse(o=>{if(o instanceof InstancedMesh)o.dispose();});materials.forEach(m=>m.dispose());geometries.forEach(g=>g.dispose());textures.forEach(t=>t.dispose());model.clear();materials.clear();geometries.clear();textures.clear();ground.length=0;walls.length=0;};
+  const dispose=()=>{if(disposed)return;disposed=true;transit?.dispose();stata?.disposeEnvironment();residences?.disposeEnvironment();hdMaterials.dispose();collision.clear();model.traverse(o=>{if(o instanceof InstancedMesh)o.dispose();if(o instanceof Mesh){geometries.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){materials.add(m);for(const value of Object.values(m))if(value instanceof Texture)textures.add(value);}}});materials.forEach(m=>m.dispose());geometries.forEach(g=>g.dispose());textures.forEach(t=>t.dispose());model.clear();materials.clear();geometries.clear();textures.clear();ground.length=0;walls.length=0;};
   try{
     if(campus==='boston'){
+      // The historic phone bake omitted the actual columns, frames and doors.
+      // Restore just these source components: retaining the capital alone would
+      // leave it floating and would let a player pass through the column line.
+      const porticoBytes=await load('/data/killian/mobile-portico.glb').then(r=>r.arrayBuffer());
+      const portico=parseMobileCampus(porticoBytes),porticoPalette=new Map<Material,Material>();
+      portico.traverse(object=>{if(!(object instanceof Mesh))return;
+        const convert=(source:Material)=>{
+          if(!isMITPoeticSurface(source.name))return source;
+          let material=porticoPalette.get(source);
+          if(!material){material=createMITPoeticSurface(source.name,{mobile:true});material.side=source.side;porticoPalette.set(source,material);}
+          return material;
+        };
+        object.material=Array.isArray(object.material)?object.material.map(convert):convert(object.material);
+      });
+      porticoPalette.forEach((_,source)=>source.dispose());
+      model.add(portico);model.userData.mitMobilePortico={bytes:porticoBytes.byteLength,url:'/data/killian/mobile-portico.glb',status:'loaded'};
       const sourceGround:Mesh[]=[];model.updateMatrixWorld(true);model.traverse(o=>{if(o instanceof Mesh&&(o.userData.mobileGround||o.userData.stataGround||o.userData.mitResidenceGround))sourceGround.push(o);});
       const streets=createMITResidenceStreets(createMobileGroundSampler(sourceGround),sourceGround);model.add(streets.group);
       const commLandscape=createBUCommAveLandscape({mobile:true});model.add(commLandscape.group);sourceGround.push(...commLandscape.ground);
       const linkCourt=createBULinkCourtDetail({mobile:true});model.add(linkCourt.group);sourceGround.push(...linkCourt.ground);
+      // Same projecting screen as desktop, after HD material discovery so
+      // toggling quality cannot replace its purpose-built glazing shader.
+      model.add(createBUSertFacadeDetail({mobile:true}).group);
       linkCourt.walls.forEach(mesh=>{mesh.userData.mobileWall=true;});
       // Temporary sampler for rooting just this small court before the final
       // collision index is assembled with the new trunks and boundary fence.
@@ -117,6 +166,9 @@ export async function loadMobileCampus(signal:AbortSignal,campus:CampusId):Promi
       for(const extra of [object.customDepthMaterial,object.customDistanceMaterial])if(extra){materials.add(extra);for(const value of Object.values(extra))if(value instanceof Texture)textures.add(value);}
       geometries.add(object.geometry);
     });
+    // Apply after the common source-visibility pass so the low tier does not
+    // accidentally re-enable tiny high-level ornaments at first arrival.
+    mainBuildingDetail?.setQuality(true);
     let sampler:((x:number,z:number)=>number|undefined)|undefined;
     if(meta.grid&&heightBytes){
       const grid=meta.grid,values=new Float32Array(heightBytes);
@@ -127,6 +179,6 @@ export async function loadMobileCampus(signal:AbortSignal,campus:CampusId):Promi
     for(let i=0;i<p.count;i++){color.copy(bottom).lerp(top,Math.max(0,Math.min(1,p.getY(i)/3200)));colors[i*3]=color.r;colors[i*3+1]=color.g;colors[i*3+2]=color.b;}
     geometry.setAttribute('color',new Float32BufferAttribute(colors,3));const material=new MeshBasicMaterial({vertexColors:true,side:BackSide,depthWrite:false}),sky=new Mesh(geometry,material);sky.renderOrder=-1;sky.frustumCulled=false;model.add(sky);materials.add(material);geometries.add(geometry);
     if(campus==='boston'){transit=createBUGreenLine({quality:'mobile'});model.add(transit.group);}
-    signal.throwIfAborted();return{model,collision,wind,setQuality:low=>{hdMaterials.setQuality(low);stata?.setQuality(low);residences?.setQuality(low);residenceLandscape?.setQuality(low);commTrees?.setQuality(low);linkTrees?.setQuality(low);waterMaterials.forEach(m=>m.setQuality(low?'mobile':'mobile-hd'));},update:(camera,deltaSeconds=0)=>{sky.position.copy(camera);transit?.update(deltaSeconds);residenceLandscape?.update(camera);commTrees?.update(camera);linkTrees?.update(camera);},dispose};
+    signal.throwIfAborted();return{model,collision,wind,setQuality:low=>{hdMaterials.setQuality(low);mainBuildingDetail?.setQuality(low);poeticAtmosphere?.setQuality(low);stata?.setQuality(low);residences?.setQuality(low);residenceLandscape?.setQuality(low);commTrees?.setQuality(low);linkTrees?.setQuality(low);waterMaterials.forEach(m=>m.setQuality(low?'mobile':'mobile-hd'));},update:(camera,deltaSeconds=0)=>{sky.position.copy(camera);if(poeticAtmosphere)poeticAtmosphere.group.visible=Math.hypot(camera.x-34,camera.z-5)<220;transit?.update(deltaSeconds);residenceLandscape?.update(camera);commTrees?.update(camera);linkTrees?.update(camera);},dispose};
   }catch(error){dispose();throw error;}
 }

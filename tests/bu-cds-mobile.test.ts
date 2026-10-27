@@ -117,7 +117,8 @@ describe('offline refined CDS mobile replacement',()=>{
     }
     const buffer=bytes(new URL('../public/data/mobile/boston.glb',import.meta.url));
     const doc=JSON.parse(new TextDecoder().decode(new Uint8Array(buffer,20,new DataView(buffer).getUint32(12,true))));
-    expect(buffer.byteLength).toBeLessThan(25*1024*1024);
+    // 2026-10-27: retain the three recovered Commonwealth facades, West survey and terrace; measured 29,606,692 bytes.
+    expect(buffer.byteLength).toBeLessThan(30*1024*1024);
     expect(doc.images).toBeUndefined();expect(doc.textures).toBeUndefined();
     const metadata=JSON.parse(readFileSync(new URL('../public/data/mobile/boston.json',import.meta.url),'utf8'));
     expect(metadata.bytes).toBe(buffer.byteLength);expect(metadata.textures).toBe(0);

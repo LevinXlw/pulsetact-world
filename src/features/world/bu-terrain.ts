@@ -1,6 +1,8 @@
 import {BufferGeometry,Float32BufferAttribute} from 'three';
 import {BU_FULL_BUILDINGS,BU_FULL_SPACES} from './bu-full-layout';
 import {BU_TERRAIN_DATA} from './bu-terrain-data';
+import {BU_WEST_TERRAIN_DATA} from './bu-west-terrain-data';
+import {BU_WEST_TERRACE_EDGE,buWestTerraceEdgeDistance,reconstructBUWestTerrace} from './bu-west-terrace-layout';
 
 /** Core district: USGS 3DEP bare-earth elevations, NAVD88 metres. Elsewhere
  * retain the older building-base interpolation until that district is rebuilt.
@@ -10,22 +12,41 @@ export const BU_TERRAIN_CELL=12;
 export const BU_DEM_CORE_BOUNDS={minX:-1608,maxX:-624,minZ:780,maxZ:1080};
 // Includes the Beacon Street approach to Danielsen, with room for the east edge
 // to return gradually to the surrounding scene datum beyond the walk boundary.
-export const BU_TERRAIN_BOUNDS={minX:-2850,maxX:390,minZ:600,maxZ:1600};
+export const BU_TERRAIN_BOUNDS={minX:-2850,maxX:390,minZ:540,maxZ:1600};
 const smooth=(v:number)=>{const t=Math.max(0,Math.min(1,v));return t*t*(3-2*t);};
 /** Stop north of the Mass Pike cut. Its grade-separated roadway retains its
  * own model in this pass, so a bare-earth trough is not depressed twice. */
-export function buDEMWeight(x:number,z:number){
+/** Keep the original central-core fade and add independently sampled West
+ * Campus terrain. The overlap uses the central DEM progressively, avoiding a
+ * seam while leaving every point outside the new western footprint unchanged. */
+const centralDEMWeight=(x:number,z:number)=>{
   const b=BU_DEM_CORE_BOUNDS;
   return smooth(Math.min(x-b.minX,b.maxX-x,z-b.minZ,b.maxZ-z)/48);
+};
+export const BU_WEST_DEM_CORE_BOUNDS={minX:-2760,maxX:-1512,minZ:540,maxZ:1056};
+export function buWestDEMWeight(x:number,z:number){
+  const b=BU_WEST_DEM_CORE_BOUNDS;
+  return smooth(Math.min(x-b.minX,b.maxX-x,z-b.minZ,b.maxZ-z)/48);
 }
-export function buSurveyElevation(x:number,z:number):number|undefined{
-  const {grid,values}=BU_TERRAIN_DATA,gx=(x-grid.minX)/grid.step,gz=(z-grid.minZ)/grid.step;
+export function buDEMWeight(x:number,z:number){return Math.max(centralDEMWeight(x,z),buWestDEMWeight(x,z));}
+type SurveyGrid={grid:{minX:number;minZ:number;step:number;columns:number;rows:number};values:number[]};
+function sampleSurvey(data:SurveyGrid,x:number,z:number):number|undefined{
+  const {grid,values}=data,gx=(x-grid.minX)/grid.step,gz=(z-grid.minZ)/grid.step;
   if(gx<0||gz<0||gx>grid.columns-1||gz>grid.rows-1)return undefined;
   const ix=Math.min(grid.columns-2,Math.floor(gx)),iz=Math.min(grid.rows-2,Math.floor(gz)),tx=gx-ix,tz=gz-iz;
   const at=(dx:number,dz:number)=>values[(iz+dz)*grid.columns+ix+dx];
   return at(0,0)*(1-tx)*(1-tz)+at(1,0)*tx*(1-tz)+at(0,1)*(1-tx)*tz+at(1,1)*tx*tz;
 }
-const samples=BU_FULL_BUILDINGS.filter(b=>b.groundElevation!==null&&b.groundElevation>=1&&b.groundElevation<25);
+export function buWestSurveyElevation(x:number,z:number){return sampleSurvey(BU_WEST_TERRAIN_DATA,x,z);}
+export function buSurveyElevation(x:number,z:number):number|undefined{
+  const central=sampleSurvey(BU_TERRAIN_DATA,x,z),west=buWestSurveyElevation(x,z),weight=buWestDEMWeight(x,z);
+  if(west===undefined||weight===0)return central;
+  if(central===undefined)return west;
+  return west+(central-west)*centralDEMWeight(x,z);
+}
+
+const samples=BU_FULL_BUILDINGS.filter(b=>b.groundElevation!==null&&b.groundElevation>=1&&b.groundElevation<25)
+  .map(b=>b.terrainReference?{...b,x:b.terrainReference.anchor[0],z:b.terrainReference.anchor[1]}:b);
 const sampleCells=new Map<string,typeof samples>();
 for(const sample of samples){const key=`${Math.floor(sample.x/200)}:${Math.floor(sample.z/200)}`,list=sampleCells.get(key)??[];list.push(sample);sampleCells.set(key,list);}
 function rawElevation(x:number,z:number){
@@ -42,13 +63,18 @@ function rawElevation(x:number,z:number){
   return 5.2+(base-5.2)*blend;
 }
 type Pad={minX:number;maxX:number;minZ:number;maxZ:number;height:number};
-const pads:Pad[]=BU_FULL_BUILDINGS.filter(b=>!b.custom).map(b=>({
-  minX:Math.floor((Math.min(...b.footprint.map(p=>p[0]))-2)/12)*12,
-  maxX:Math.ceil((Math.max(...b.footprint.map(p=>p[0]))+2)/12)*12,
-  minZ:Math.floor((Math.min(...b.footprint.map(p=>p[1]))-2)/12)*12,
-  maxZ:Math.ceil((Math.max(...b.footprint.map(p=>p[1]))+2)/12)*12,
-  height:rawElevation(b.x,b.z),
-}));
+const pads:Pad[]=BU_FULL_BUILDINGS.filter(b=>!b.custom).map(b=>{
+  // A split survey assembly can change its visual footprint without moving
+  // the pre-existing terrain pad or ground observation used by its neighbors.
+  const points=b.terrainReference?.footprint??b.footprint,anchor=b.terrainReference?.anchor??[b.x,b.z];
+  return{
+    minX:Math.floor((Math.min(...points.map(p=>p[0]))-2)/12)*12,
+    maxX:Math.ceil((Math.max(...points.map(p=>p[0]))+2)/12)*12,
+    minZ:Math.floor((Math.min(...points.map(p=>p[1]))-2)/12)*12,
+    maxZ:Math.ceil((Math.max(...points.map(p=>p[1]))+2)/12)*12,
+    height:rawElevation(anchor[0],anchor[1]),
+  };
+});
 for(const space of BU_FULL_SPACES){
   const c=Math.abs(Math.cos(space.yaw)),s=Math.abs(Math.sin(space.yaw)),width=space.width*c+space.depth*s,depth=space.width*s+space.depth*c;
   pads.unshift({minX:Math.floor((space.x-width/2-3)/12)*12,maxX:Math.ceil((space.x+width/2+3)/12)*12,minZ:Math.floor((space.z-depth/2-3)/12)*12,maxZ:Math.ceil((space.z+depth/2+3)/12)*12,height:rawElevation(space.x,space.z)});
@@ -69,12 +95,14 @@ function latticeHeight(ix:number,iz:number){
   const legacy=weight?base+(sum/weight-base)*strongest:base,dem=buSurveyElevation(x,z),blend=buDEMWeight(x,z);
   // Blend AFTER legacy building pads: otherwise their large bounding rectangles
   // erase the actual campus slopes and retain the former artificial flat core.
-  const height=dem===undefined?legacy:legacy+(dem-legacy)*blend;lattice.set(key,height);return height;
+  const measured=dem===undefined?legacy:legacy+(dem-legacy)*blend;
+  lattice.set(key,measured);return measured;
 }
 export function buElevation(x:number,z:number):number{
   const gx=x/BU_TERRAIN_CELL,gz=z/BU_TERRAIN_CELL,ix=Math.floor(gx),iz=Math.floor(gz),tx=gx-ix,tz=gz-iz;
   const a=latticeHeight(ix,iz),d=latticeHeight(ix+1,iz+1);
-  return tx>=tz?a+(latticeHeight(ix+1,iz)-a)*tx+(d-latticeHeight(ix+1,iz))*tz:a+(d-latticeHeight(ix,iz+1))*tx+(latticeHeight(ix,iz+1)-a)*tz;
+  const measured=tx>=tz?a+(latticeHeight(ix+1,iz)-a)*tx+(d-latticeHeight(ix+1,iz))*tz:a+(d-latticeHeight(ix,iz+1))*tx+(latticeHeight(ix,iz+1)-a)*tz;
+  return reconstructBUWestTerrace(x,z,measured);
 }
 type Vertex=number[];
 /** The input must already be in campus world coordinates. Returns a NEW
@@ -101,10 +129,20 @@ export function drapeBUGeometry(geometry:BufferGeometry,maxEdge=12,elevation:(x:
     if(Math.hypot(ay*bz-az*by,az*bx-ax*bz,ax*by-ay*bx)<1e-9)return;
     const verts=[a,b,c],edges=verts.map((v,i)=>Math.hypot(v[po]-verts[(i+1)%3][po],v[po+2]-verts[(i+1)%3][po+2]));
     const longest=Math.max(...edges);
-    if(longest>Math.max(maxEdge,2)&&depth<5){const i=edges.indexOf(longest),j=(i+1)%3,k=(i+2)%3,m= mix(verts[i],verts[j],.5);emit(verts[i],m,verts[k],up,depth+1);emit(m,verts[j],verts[k],up,depth+1);return;}
+    const terrace=up&&Math.max(...verts.map(v=>v[po]))>=-2376&&Math.min(...verts.map(v=>v[po]))<=-2242&&Math.max(...verts.map(v=>v[po+2]))>=644&&Math.min(...verts.map(v=>v[po+2]))<=768;
+    // Resolve the bounded reconstructed terrace edge in actual ground meshes,
+    // not only in the height query. All other terrain retains its old budget.
+    if(longest>Math.max(terrace?Math.min(maxEdge,3):maxEdge,2)&&depth<7){const i=edges.indexOf(longest),j=(i+1)%3,k=(i+2)%3,m= mix(verts[i],verts[j],.5);emit(verts[i],m,verts[k],up,depth+1);emit(m,verts[j],verts[k],up,depth+1);return;}
+    const centreX=verts.reduce((n,v)=>n+v[po],0)/3,centreZ=verts.reduce((n,v)=>n+v[po+2],0)/3;
     for(const original of verts){
-      const v=original.slice(),x=v[po],z=v[po+2];v[po+1]+=elevation(x,z)-5.2;
-      if(up&&no>=0){const dx=(elevation(x+.8,z)-elevation(x-.8,z))/1.6,dz=(elevation(x,z+.8)-elevation(x,z-.8))/1.6,length=Math.hypot(dx,1,dz);v[no]=-dx/length;v[no+1]=1/length;v[no+2]=-dz/length;}
+      const v=original.slice(),x=v[po],z=v[po+2],edgeDistance=terrace?buWestTerraceEdgeDistance(x,z):Infinity;
+      // Opposite sides have separate vertices at the same wall line. Probe
+      // just inside this clipped face so an outside triangle never samples
+      // the upper platform and creates another grass ramp across the wall.
+      const inward=Math.hypot(centreX-x,centreZ-z)||1,probe=edgeDistance<.001?.0001/inward:0;
+      v[po+1]+=elevation(x+(centreX-x)*probe,z+(centreZ-z)*probe)-5.2;
+      if(up&&no>=0&&edgeDistance<.81){v[no]=0;v[no+1]=1;v[no+2]=0;}
+      else if(up&&no>=0){const dx=(elevation(x+.8,z)-elevation(x-.8,z))/1.6,dz=(elevation(x,z+.8)-elevation(x,z-.8))/1.6,length=Math.hypot(dx,1,dz);v[no]=-dx/length;v[no+1]=1/length;v[no+2]=-dz/length;}
       names.forEach((_,i)=>{for(let k=0;k<sizes[i];k++)output[i].push(v[offsets[i]+k]);});emitted++;
     }
   }
@@ -121,7 +159,20 @@ export function drapeBUGeometry(geometry:BufferGeometry,maxEdge=12,elevation:(x:
         const x=ix*BU_TERRAIN_CELL,z=iz*BU_TERRAIN_CELL;
         let poly=clip(tri,v=>v[po]-x);poly=clip(poly,v=>x+BU_TERRAIN_CELL-v[po]);poly=clip(poly,v=>v[po+2]-z);poly=clip(poly,v=>z+BU_TERRAIN_CELL-v[po+2]);
         if(poly.length<3)continue;
-        for(const sign of [-1,1]){const half=clip(poly,v=>sign*((v[po]-x)-(v[po+2]-z)));for(let i=1;i<half.length-1;i++)emit(half[0],half[i],half[i+1],up);}
+        for(const sign of [-1,1]){
+          const half=clip(poly,v=>sign*((v[po]-x)-(v[po+2]-z)));let parts=[half];
+          if(up&&x+BU_TERRAIN_CELL>=-2376&&x<=-2242&&z+BU_TERRAIN_CELL>=644&&z<=768){
+            for(let edge=1;edge<BU_WEST_TERRACE_EDGE.length;edge++){
+              const a=BU_WEST_TERRACE_EDGE[edge-1],b=BU_WEST_TERRACE_EDGE[edge];
+              const side=(v:Vertex)=>(b[0]-a[0])*(v[po+2]-a[1])-(b[1]-a[1])*(v[po]-a[0]);
+              parts=parts.flatMap(part=>{
+                const distances=part.map(side);
+                return distances.some(d=>d< -1e-7)&&distances.some(d=>d>1e-7)?[clip(part,side),clip(part,v=>-side(v))]:[part];
+              });
+            }
+          }
+          for(const part of parts)for(let i=1;i<part.length-1;i++)emit(part[0],part[i],part[i+1],up);
+        }
       }
     }
     if(emitted>start)result.addGroup(start,emitted-start,group.materialIndex);

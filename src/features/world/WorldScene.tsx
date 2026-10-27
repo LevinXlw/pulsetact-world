@@ -58,6 +58,37 @@ type WorldSceneProps = {
 
 const wrapAngle = (angle: number) => Math.atan2(Math.sin(angle), Math.cos(angle));
 
+/** Desktop-only contact shading around Killian Court. Taking frame ownership
+ * also keeps the photo button on the same rendering path as normal play. */
+function MITFrameRenderer({enabled}:{enabled:boolean}) {
+  const {gl,scene,camera}=useThree();
+  const pipeline=useRef<ReturnType<typeof import('./mit-scene-renderer').createMITSceneRenderer>|null>(null);
+  const active=useRef(enabled);active.current=enabled;
+  const draw=()=>{
+    const nearCourt=Math.hypot(camera.position.x-34,camera.position.z-5)<260;
+    if(pipeline.current)pipeline.current.render(camera,active.current&&nearCourt);
+    else gl.render(scene,camera);
+  };
+  useEffect(()=>{
+    let cancelled=false;
+    scene.userData.renderMITFrame=draw;
+    void import('./mit-scene-renderer').then(({createMITSceneRenderer})=>{
+      if(cancelled)return;
+      pipeline.current=createMITSceneRenderer(gl,scene);
+      scene.userData.mitRenderer=pipeline.current.stats;
+    }).catch(error=>{
+      if(!cancelled)scene.userData.mitRenderer={mode:'direct',error:String(error)};
+    });
+    return()=>{
+      cancelled=true;pipeline.current?.dispose();pipeline.current=null;
+      if(scene.userData.renderMITFrame===draw)delete scene.userData.renderMITFrame;
+      delete scene.userData.mitRenderer;
+    };
+  },[gl,scene,camera]);
+  useFrame(draw,1);
+  return null;
+}
+
 function RemoteStudent({player, assets, quality}: {player: WorldPlayer; assets: WorldAssets; quality: 'standard'|'low'}) {
   const group = useRef<Group>(null);
   const previous = useRef<[number, number]>(player.position);
@@ -133,7 +164,7 @@ function CampusWorld(props: WorldSceneProps) {
       live.current.onError('画面渲染已中断，请以省电模式重试。探索记录会保留。');
     };
     gl.domElement.addEventListener('webglcontextlost',lost);
-    const capture=()=>gl.render(scene,camera);
+    const capture=()=>typeof scene.userData.renderMITFrame==='function'?scene.userData.renderMITFrame():gl.render(scene,camera);
     gl.domElement.addEventListener('world-capture',capture);
     return()=>{gl.domElement.removeEventListener('webglcontextlost',lost);gl.domElement.removeEventListener('world-capture',capture);};
   },[gl,scene,camera]);
@@ -346,7 +377,7 @@ function CampusWorld(props: WorldSceneProps) {
           });
         });
         (window as unknown as {__worldScene: unknown}).__worldScene = {
-        campusId,interior:props.interior??null,doorHinges,mobile:props.mobile,geometryCount:gl.info.memory.geometries,textureCount:gl.info.memory.textures,position: point.current.toArray(), cameraPosition: camera.position.toArray(), yaw: yaw.current,
+        campusId,interior:props.interior??null,doorHinges,mobile:props.mobile,rendering:scene.userData.mitRenderer??{mode:'direct'},geometryCount:gl.info.memory.geometries,textureCount:gl.info.memory.textures,position: point.current.toArray(), cameraPosition: camera.position.toArray(), yaw: yaw.current,
         players: props.players.length, walking: moving, calls: gl.info.render.calls, triangles: gl.info.render.triangles,
         workshop: WORKSHOP_POSITION, workshopDistance: Math.hypot(point.current.x - WORKSHOP_POSITION[0], point.current.z - WORKSHOP_POSITION[1]),
         quality: props.quality, objectCount: scene.children.length, domeInFrame: inFrame,
@@ -378,6 +409,7 @@ export default function WorldScene(props: WorldSceneProps) {
   return <Canvas frameloop={props.suspendRendering ? 'never' : 'always'} shadows={mobile || quality === 'low' ? false : 'soft'} dpr={quality === 'low' ? 1 : [1, 1.5]} camera={{position: [57, 6, 60], fov: 52, near: .12, far: 4200}} gl={{antialias: !mobile, preserveDrawingBuffer: !mobile,powerPreference:mobile?'low-power':'default', toneMapping: ACESFilmicToneMapping, toneMappingExposure: 1.0}}>
     <color attach="background" args={[haze]}/>
     {!props.interior&&<fog attach="fog" args={[haze,desert?240:180,desert?2800:2600]}/>}
+    {!mobile&&!props.interior&&(props.campusId??'boston')==='boston'&&<MITFrameRenderer enabled={quality==='standard'}/>}
     <CampusWorld key={props.interior??props.campusId??'boston'} {...props} mobile={mobile} quality={quality}/>
   </Canvas>;
 }

@@ -1,0 +1,226 @@
+{
+  "assetId": "bu-claflin-sleeper-floor-slabs",
+  "date": "2026-10-26",
+  "scope": "Structural floor infill for existing Claflin Hall and Sleeper Hall only; Rich Hall, glass materials, footprint, lobby entrances, and other campus buildings are unchanged.",
+  "generator": "src/features/world/bu-full-campus.ts:westResidence",
+  "layout": "src/features/world/bu-full-layout.ts",
+  "precedingFootprintCorrection": "assets-source/charles-bu/west-dining-separation-20261026.json",
+  "basis": {
+    "storeys": "12 upper storeys retained from the existing facade rhythm; not independently measured this round",
+    "lobbyHeightMetres": 3.7,
+    "slabsPerTower": 12,
+    "slabThicknessMetres": 0.22,
+    "thicknessStatus": "Authored structural estimate, not a surveyed or engineering-verified measurement.",
+    "placement": "Each slab occupies the bottom 0.22 m of an existing solid spandrel band and follows the tower footprint. The lowest starts above the open lobby at local 3.7 m. No ground floor fill, partitions, stairs, or new rooms."
+  },
+  "cpuSunlightEvidence": {
+    "sunOffset": [
+      -95,
+      115,
+      135
+    ],
+    "method": "Selected two tower models; visible meshes and colliders temporarily DoubleSide for conservative CPU rays. Sample x=-2355..-2270, z=630..725 at 2 m intervals, eye buElevation(x,z)+0.03, normalized BOSTON_DAYLIGHT direction, far=150. Count a deep leak only if first visible hit is glass, no shadow-casting geometry intersects, and collision entry/exit span >=10 m.",
+    "before": {
+      "sunOffset": [
+        -95,
+        115,
+        135
+      ],
+      "direction": [
+        -0.4722045598960883,
+        0.5716160461900016,
+        0.671027532483915
+      ],
+      "unobstructedDeepRays": 140,
+      "examples": [
+        {
+          "ground": [
+            -2347,
+            5.199999999999999,
+            672
+          ],
+          "building": "Sleeper Hall",
+          "paneAt": [
+            -2354.084045001393,
+            13.805422896422975,
+            682.066800791453
+          ],
+          "insideDistance": 18.29757593312691
+        },
+        {
+          "ground": [
+            -2339,
+            5.2,
+            660
+          ],
+          "building": "Sleeper Hall",
+          "paneAt": [
+            -2354.805554400018,
+            24.3630395368639,
+            682.4605246737098
+          ],
+          "insideDistance": 17.1806916014056
+        },
+        {
+          "ground": [
+            -2339,
+            5.2,
+            676
+          ],
+          "building": "Sleeper Hall",
+          "paneAt": [
+            -2341.228303254214,
+            7.927419728785412,
+            679.1665362033568
+          ],
+          "insideDistance": 35.11405317325478
+        },
+        {
+          "ground": [
+            -2291,
+            5.20092731688967,
+            722
+          ],
+          "building": "Claflin Hall",
+          "paneAt": [
+            -2295.9411632072583,
+            11.212335409886638,
+            729.0216529787356
+          ],
+          "insideDistance": 35.160518054175526
+        },
+        {
+          "ground": [
+            -2289,
+            5.200000000000001,
+            718
+          ],
+          "building": "Claflin Hall",
+          "paneAt": [
+            -2296.673722062293,
+            14.519242496459892,
+            728.9047629306268
+          ],
+          "insideDistance": 35.160503019282814
+        },
+        {
+          "ground": [
+            -2289,
+            5.201018861396411,
+            722
+          ],
+          "building": "Claflin Hall",
+          "paneAt": [
+            -2294.143054914192,
+            11.456822178576095,
+            729.3085517201674
+          ],
+          "insideDistance": 35.160554958003445
+        }
+      ],
+      "models": [
+        {
+          "id": "claflin-hall",
+          "family": "west-residence",
+          "triangles": 8467
+        },
+        {
+          "id": "sleeper-hall",
+          "family": "west-residence",
+          "triangles": 7801
+        }
+      ],
+      "triangles": 16268,
+      "meshes": 24
+    },
+    "after": {
+      "unobstructedDeepRays": 0,
+      "models": [
+        {
+          "id": "claflin-hall",
+          "family": "west-residence",
+          "triangles": 9163
+        },
+        {
+          "id": "sleeper-hall",
+          "family": "west-residence",
+          "triangles": 8569
+        }
+      ],
+      "slabs": [
+        {
+          "id": "claflin-hall",
+          "levels": [
+            3.7,
+            7.0408333333333335,
+            10.381666666666666,
+            13.7225,
+            17.063333333333333,
+            20.404166666666665,
+            23.744999999999997,
+            27.085833333333333,
+            30.426666666666662,
+            33.7675,
+            37.108333333333334,
+            40.44916666666666
+          ],
+          "thickness": 0.22,
+          "triangles": 696,
+          "source": "existing 12-storey facade rhythm; thickness estimated; west-residence-floor-slabs-20261026.json"
+        },
+        {
+          "id": "sleeper-hall",
+          "levels": [
+            3.7,
+            7.0408333333333335,
+            10.381666666666666,
+            13.7225,
+            17.063333333333333,
+            20.404166666666665,
+            23.744999999999997,
+            27.085833333333333,
+            30.426666666666662,
+            33.7675,
+            37.108333333333334,
+            40.44916666666666
+          ],
+          "thickness": 0.22,
+          "triangles": 768,
+          "source": "existing 12-storey facade rhythm; thickness estimated; west-residence-floor-slabs-20261026.json"
+        }
+      ],
+      "triangles": 17732,
+      "meshes": 24
+    }
+  },
+  "resourceDelta": {
+    "addedTriangles": 1464,
+    "byTower": {
+      "claflin-hall": 696,
+      "sleeper-hall": 768
+    },
+    "addedVisibleMeshes": 0,
+    "addedMaterials": 0,
+    "isolatedFullTriangles": 17732,
+    "isolatedMobileTriangles": 8432,
+    "mobileConstructorScope": "The isolated detail=mobile constructor adds the same 1464 triangles. This alone does not verify the shipped phone resource."
+  },
+  "actualMobileExport": {
+    "status": "Parent agent separately added claflin-hall, sleeper-hall and west-dining to mobile-campus-build.ts signatureIds and rebaked boston.glb.",
+    "triangles": 696841,
+    "bytes": 25723232,
+    "verification": "Parent reports 4 tests passed in tests/bu-west-mobile-export.test.ts against the actual GLB. This is not a true-device performance or visual acceptance claim."
+  },
+  "verification": {
+    "regression": "tests/bu-west-residence-floor-slabs.test.ts",
+    "visualStatus": "CPU geometric evidence is separate from visual acceptance. Parent is recording final world-loader screenshots; this record alone does not claim G0-G4 acceptance.",
+    "limitations": [
+      "Inherited floor count and estimated thickness require future reference refinement.",
+      "No interior partitions or full room reconstruction.",
+      "Shadow-map resolution and runtime appearance remain a separate visual check."
+    ],
+    "testResult": "32 tests passed across floor-slabs (5), west-dining-separation (6), bu-terrain (5), and bu-district-realism (16), 2026-10-26.",
+    "command": "npm.cmd test -- tests/bu-west-residence-floor-slabs.test.ts tests/bu-west-dining-separation.test.ts tests/bu-terrain.test.ts tests/bu-district-realism.test.ts"
+  },
+  "terrainSupersededBy": "west-road-terrain-20261027.json: legacy 5.2m-era absolute heights are retained as historical before evidence; runtime now uses measured West DEM and bounded residence terrace correction."
+}

@@ -1,0 +1,186 @@
+{
+  "assetId": "mit-killian-courtyard-side-wings",
+  "date": "2026-10-26",
+  "scope": "Read-only geometry and reference audit of the six court-facing elevations recorded in detail-manifest.json; no runtime geometry modification",
+  "status": "Existing window depth confirmed in source; full facade and site fidelity remain unaccepted",
+  "reference": {
+    "file": "assets-source/killian-reference/ocw-newton-facade.jpg",
+    "sha256": "3c1713b34f155fa1bad9a389552e45a2171c29f872d212f9d6461658b6eb32b1",
+    "page": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/resources/8-01scf16/",
+    "source": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/424dd4989c1235387a32fbb5a17b80c1_8-01scf16.jpg",
+    "credit": "Photo courtesy of Dr. Michelle Tomasik, MIT OpenCourseWare",
+    "dateKnown": "Published with the Fall 2016 course; capture date not stated",
+    "view": "Upward oblique view of the NEWTON end facade at Killian Court",
+    "observations": [
+      "An entrance or large opening is flanked by two Ionic columns below a projecting, layered lintel.",
+      "The upper small window has a recessed frame and a layered stone border.",
+      "The upper cornice contains projecting repeated blocks and carved name inscriptions.",
+      "Broad stone surfaces have natural color variation and localized darkening beneath projecting moldings."
+    ],
+    "limitations": [
+      "This is a 320-pixel-wide image of a distinct end facade, not a survey of the standard windows along Buildings 3 and 4.",
+      "The exact facade index and world position of this end elevation have not been established in this audit.",
+      "No concealed interior dimensions, drip grooves, wall build-up, current window specification, or planting positions can be established from this image."
+    ],
+    "use": "Local visual study and attribution only; not a runtime texture, third-party AI input, or authorization to redistribute as a game asset"
+  },
+  "evidenceReviewed": [
+    "docs/mit-realism-references.json",
+    "scripts/courtyard-geometry.mjs",
+    "public/data/killian/detail-manifest.json",
+    "src/features/real-campus/courtyard-ground-detail.ts",
+    "src/features/world/painterly-campus-props.ts",
+    "assets-source/killian-reference/maclaurin-wide.webp",
+    "assets-source/killian-reference/killiancourt.jpg",
+    "docs/screenshots/mit-real-detail/02-portico-front.png"
+  ],
+  "existingGeometry": {
+    "facadeIndices": [
+      9,
+      10,
+      14,
+      17,
+      18,
+      20
+    ],
+    "wallDepth": {
+      "front": 0.025,
+      "back": -0.615,
+      "thickness": 0.64
+    },
+    "glassCenterDepth": -0.32,
+    "glassThickness": 0.035,
+    "sideFrameCenterDepth": -0.292,
+    "sideFrameDepth": 0.12,
+    "backingCenterDepth": -0.92,
+    "finding": "Wall volumes are partitioned around the apertures, so their side faces already form visible stone reveals. The glazing is recessed within these reveals and overlaps the perimeter frames. An added front reveal lining would duplicate existing geometry.",
+    "smallJoint": "The outer edge of each side frame is 12.5 mm inside the nominal aperture edge. This should not be interpreted as missing wall geometry.",
+    "interiorLimit": "A dark backing sits behind the wall. Filling the space between the wall back and the backing would invent an unverified interior return, so it was not added."
+  },
+  "remainingGaps": [
+    {
+      "topic": "Facade-specific geometry",
+      "finding": "Opening counts and rhythm remain the generated 27/8/4-column pattern. The supplied full-building photos largely depict Building 10 and do not establish every side-wing elevation.",
+      "nextAction": "Locate the NEWTON end facade in the campus geometry and obtain additional oblique views before replacing that elevation with its distinctive entrance, opening proportions and cornice. Calibrate each long wing separately."
+    },
+    {
+      "topic": "Visible depth and materials",
+      "finding": "The current runtime screenshot reads flatter than the source geometry would suggest. Aperture depth, physical mullions and layered sills already exist; adding another lining is not a justified correction.",
+      "nextAction": "Evaluate contact shadow and ambient occlusion changes at fixed walk-height and grazing-angle viewpoints. Preserve warm stone color, physical glass reflection and natural surface variation. This is a rendering/material task, not complete building reconstruction."
+    },
+    {
+      "topic": "Court landscape and edge fidelity",
+      "finding": "Existing stone edging already follows the actual sloped paving, and local grass blades sample the lawn mesh. Tree forms and some prop placement remain generalized or explicitly illustrative, so additional invented benches or trees would not improve site fidelity.",
+      "nextAction": "Obtain and reconcile dated site views for tree species, canopy scale, density and furniture positions. Retain the existing walkable ground and curb relationships while this evidence is gathered."
+    }
+  ],
+  "decision": "Do not create a redundant courtyard window-detail module in this iteration. Reserve geometry changes for facade-specific corrections supported by identified site views.",
+  "validation": {
+    "technical": "Source cross-section inspected; no code or geometry changed and no new runtime validation claimed.",
+    "visual": "Compared the existing runtime front screenshot with local official photographs. Different viewpoints, not a registered image comparison; no G0-G4 visual acceptance claimed."
+  },
+  "facadeMapping": {
+    "newtonFacadeIndex": null,
+    "newtonWorldAnchor": null,
+    "status": "Unknown: the official OCW caption identifies Killian Court but does not identify the building number or elevation. Do not assign this entrance to an existing facade by symmetry or material resemblance alone.",
+    "surveyedCandidates": [
+      {
+        "facadeIndex": 9,
+        "model": "CAM_NCSVT-TQ9F9-BG2NN",
+        "center": [
+          -19.805631178687566,
+          0,
+          24.887398414861615
+        ],
+        "normal": [
+          0.9085993766784668,
+          0,
+          -0.41766873002052307
+        ],
+        "width": 91.30250054151418,
+        "top": 23.575040817260742
+      },
+      {
+        "facadeIndex": 10,
+        "model": "CAM_NCSVT-TQ9F9-BG2NN",
+        "center": [
+          -25.606829771281923,
+          0,
+          -22.827748618163813
+        ],
+        "normal": [
+          0.4254436790943146,
+          0,
+          0.9049848914146423
+        ],
+        "width": 29.317394154557405,
+        "top": 23.575040817260742
+      },
+      {
+        "facadeIndex": 14,
+        "model": "CAM_NCSVT-TQ9F9-BG2NN",
+        "center": [
+          3.020217354286082,
+          0,
+          72.89238941021932
+        ],
+        "normal": [
+          0.9117748141288757,
+          0,
+          -0.4106903374195099
+        ],
+        "width": 14.992071944575606,
+        "top": 25.67494010925293
+      },
+      {
+        "facadeIndex": 17,
+        "model": "CAM_WP4AV-34RPJ-DGCTC",
+        "center": [
+          47.18221835212385,
+          0,
+          -56.29169962247757
+        ],
+        "normal": [
+          0.4122071862220764,
+          0,
+          0.9110901355743408
+        ],
+        "width": 28.816575097731175,
+        "top": 23.274940490722656
+      },
+      {
+        "facadeIndex": 18,
+        "model": "CAM_WP4AV-34RPJ-DGCTC",
+        "center": [
+          79.17117156158294,
+          0,
+          -20.72854845296034
+        ],
+        "normal": [
+          -0.9103913307189941,
+          0,
+          0.4137483239173889
+        ],
+        "width": 91.17475259266098,
+        "top": 23.274940490722656
+      },
+      {
+        "facadeIndex": 20,
+        "model": "CAM_WP4AV-34RPJ-DGCTC",
+        "center": [
+          100.9652320923547,
+          0,
+          27.531651361924467
+        ],
+        "normal": [
+          -0.9173600077629089,
+          0,
+          0.3980586528778076
+        ],
+        "width": 14.733258551804283,
+        "top": 25.074939727783203
+      }
+    ],
+    "note": "These are existing manifest anchors, not a confirmed matching set for the NEWTON facade. Source-script labels for Buildings 3 and 4 are inherited, not independently checked against every building subdivision."
+  }
+}

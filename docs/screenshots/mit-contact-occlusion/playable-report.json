@@ -1,0 +1,493 @@
+{
+  "base": "http://127.0.0.1:5186",
+  "checks": [
+    "Actual GTAO frames, synchronous game photo event, and drawing-buffer resize",
+    "Login, enter, run across the actual courtyard toward Building 10 using WASD",
+    "Walk to the actual portico steps and inspect at player height",
+    "Low quality releases GTAO resources; standard quality rebuilds them without errors",
+    "Climb the same five steps to the platform; standard/low toggle preserves ground position"
+  ],
+  "errors": [],
+  "screens": [
+    "01-courtyard.png",
+    "02-main-building.png",
+    "03-dome-look.png",
+    "04-portico.png",
+    "05-low-quality.png"
+  ],
+  "note": "Real local application, real login, normal game controls. Browser mobile emulation is not a physical device.",
+  "initial": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": true,
+      "allocated": true,
+      "width": 1040,
+      "height": 650,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 86,
+      "frames": 117,
+      "occlusionFrames": 117,
+      "calls": 317,
+      "triangles": 2947848,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 164,
+    "textureCount": 86,
+    "position": [
+      53.5,
+      3.9194955034460603,
+      52.5
+    ],
+    "cameraPosition": [
+      55.44366627813784,
+      4.819495503446061,
+      56.66919193600268
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 317,
+    "triangles": 2947848,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 18.027756377319946,
+    "quality": "standard",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "contactInitial": {
+    "version": 1,
+    "enabled": true,
+    "allocated": true,
+    "width": 1040,
+    "height": 650,
+    "radiusMetres": 0.65,
+    "strength": 0.38,
+    "samples": 16,
+    "excludedMeshes": 86,
+    "frames": 117,
+    "occlusionFrames": 117,
+    "calls": 317,
+    "triangles": 2947848,
+    "error": null,
+    "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+  },
+  "captureEvent": {
+    "before": 118,
+    "after": 119
+  },
+  "contactResized": {
+    "version": 1,
+    "enabled": true,
+    "allocated": true,
+    "width": 832,
+    "height": 520,
+    "radiusMetres": 0.65,
+    "strength": 0.38,
+    "samples": 16,
+    "excludedMeshes": 86,
+    "frames": 123,
+    "occlusionFrames": 123,
+    "calls": 443,
+    "triangles": 4094155,
+    "error": null,
+    "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+  },
+  "approach": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": true,
+      "allocated": true,
+      "width": 1040,
+      "height": 650,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 85,
+      "frames": 899,
+      "occlusionFrames": 899,
+      "calls": 321,
+      "triangles": 3106780,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 163,
+    "textureCount": 85,
+    "position": [
+      27.11795336025176,
+      3.884064451970536,
+      -4.089866965775904
+    ],
+    "cameraPosition": [
+      29.568669566566715,
+      5.93406426300219,
+      1.1669543104508189
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 321,
+    "triangles": 3106780,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 55.25731039353756,
+    "quality": "standard",
+    "objectCount": 43,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "portico": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": true,
+      "allocated": true,
+      "width": 1040,
+      "height": 650,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 86,
+      "frames": 1554,
+      "occlusionFrames": 1554,
+      "calls": 297,
+      "triangles": 2949394,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 163,
+    "textureCount": 85,
+    "position": [
+      14.911590629362625,
+      4.414989471435547,
+      -30.27268941732521
+    ],
+    "cameraPosition": [
+      17.36250584719398,
+      6.4649315476280185,
+      -25.015441258552514
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 391,
+    "triangles": 3983742,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 83.39047281330085,
+    "quality": "standard",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "platform": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": true,
+      "allocated": true,
+      "width": 1040,
+      "height": 650,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 86,
+      "frames": 1705,
+      "occlusionFrames": 1705,
+      "calls": 295,
+      "triangles": 2940430,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 163,
+    "textureCount": 85,
+    "position": [
+      12.43142695341826,
+      4.864989280700684,
+      -35.5926759366266
+    ],
+    "cameraPosition": [
+      14.883265296362504,
+      6.914989280646004,
+      -30.333447661297953
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 295,
+    "triangles": 2940430,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 89.16579180712056,
+    "quality": "standard",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "low": {
+    "campusId": "boston",
+    "interior": null,
+    "doorHinges": [
+      {
+        "name": "cds-door-west-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-west-right",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-left",
+        "angle": 0
+      },
+      {
+        "name": "cds-door-east-right",
+        "angle": 0
+      }
+    ],
+    "mobile": false,
+    "rendering": {
+      "version": 1,
+      "enabled": false,
+      "allocated": false,
+      "width": 0,
+      "height": 0,
+      "radiusMetres": 0.65,
+      "strength": 0.38,
+      "samples": 16,
+      "excludedMeshes": 86,
+      "frames": 1757,
+      "occlusionFrames": 1743,
+      "calls": 103,
+      "triangles": 1020147,
+      "error": null,
+      "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+    },
+    "geometryCount": 162,
+    "textureCount": 78,
+    "position": [
+      12.43142695341826,
+      4.864989280700684,
+      -35.5926759366266
+    ],
+    "cameraPosition": [
+      14.882136641562717,
+      6.914989280700682,
+      -30.33586864196872
+    ],
+    "yaw": 3.5778343653752236,
+    "players": 0,
+    "walking": false,
+    "commuteMode": "walk",
+    "movementSpeed": 0,
+    "calls": 103,
+    "triangles": 1020147,
+    "workshop": [
+      63.5,
+      37.5
+    ],
+    "workshopDistance": 89.16579180712056,
+    "quality": "low",
+    "objectCount": 44,
+    "domeInFrame": false,
+    "character": "pixiv",
+    "characterReady": true,
+    "selfId": "solo",
+    "renderedCharacters": [
+      {
+        "playerId": "solo",
+        "characterId": "pixiv",
+        "motion": "Idle"
+      }
+    ],
+    "characterMotion": "Idle"
+  },
+  "contactDisabled": {
+    "version": 1,
+    "enabled": false,
+    "allocated": false,
+    "width": 0,
+    "height": 0,
+    "radiusMetres": 0.65,
+    "strength": 0.38,
+    "samples": 16,
+    "excludedMeshes": 86,
+    "frames": 1758,
+    "occlusionFrames": 1743,
+    "calls": 103,
+    "triangles": 1020147,
+    "error": null,
+    "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+  },
+  "contactReenabled": {
+    "version": 1,
+    "enabled": true,
+    "allocated": true,
+    "width": 1040,
+    "height": 650,
+    "radiusMetres": 0.65,
+    "strength": 0.38,
+    "samples": 16,
+    "excludedMeshes": 86,
+    "frames": 1807,
+    "occlusionFrames": 1750,
+    "calls": 388,
+    "triangles": 3967884,
+    "error": null,
+    "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+  },
+  "frameSample": {
+    "medianMs": 12.39999999999418,
+    "p95Ms": 12.60000000000582,
+    "samples": 110,
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": [
+      1600,
+      1000
+    ],
+    "dpr": 1,
+    "environment": "Chrome headless, development server, idle at portico; desktop GPU also renders mobile emulation; not a target-device FPS guarantee"
+  }
+}

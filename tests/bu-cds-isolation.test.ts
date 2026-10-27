@@ -11,22 +11,23 @@ afterAll(()=>campus.group.traverse(object=>{
   if(object instanceof Mesh){object.geometry.dispose();for(const material of Array.isArray(object.material)?object.material:[object.material])material.dispose();}
 }));
 
-/** Ignore batch order, but retain every triangle's winding and all attributes. */
-function visibleGeometrySignature(excludeCDS=false) {
+/** Ignore batch order; terrainPlan retains winding/XZ and shader attributes,
+ * while surveyed Y and normals are verified against the live height field. */
+function visibleGeometrySignature(excludeCDS=false,include:(mesh:Mesh)=>boolean=()=>true,terrainPlan=false) {
   const parts=new Map<string,string[]>();let triangles=0,meshes=0;
   campus.group.traverseVisible(object=>{
-    if(!(object instanceof Mesh))return;
+    if(!(object instanceof Mesh)||!include(object))return;
     if(excludeCDS&&object.userData.buLandmarkScope==='cds')return;
     const geometry=object.geometry;
     expect(geometry.index).toBeNull();
     const key=object.name,hashes=parts.get(key)??[];
-    const attributes=Object.keys(geometry.attributes).sort().map(name=>({name,attribute:geometry.getAttribute(name)}));
+    const attributes=Object.keys(geometry.attributes).filter(name=>!terrainPlan||name!=='normal').sort().map(name=>({name,attribute:geometry.getAttribute(name)}));
     for(let i=0;i<geometry.getAttribute('position').count;i+=3){
       const hash=createHash('sha256');
       for(const {name,attribute} of attributes){
         hash.update(name);
         const values=new Float32Array(3*attribute.itemSize);
-        for(let vertex=0;vertex<3;vertex++)for(let axis=0;axis<attribute.itemSize;axis++)values[vertex*attribute.itemSize+axis]=attribute.getComponent(i+vertex,axis);
+        for(let vertex=0;vertex<3;vertex++)for(let axis=0;axis<attribute.itemSize;axis++)values[vertex*attribute.itemSize+axis]=terrainPlan&&name==='position'&&axis===1?0:attribute.getComponent(i+vertex,axis);
         hash.update(new Uint8Array(values.buffer));
       }
       hashes.push(hash.digest('hex'));triangles++;
@@ -39,13 +40,55 @@ function visibleGeometrySignature(excludeCDS=false) {
 }
 
 describe('CDS landmark visual isolation',()=>{
-  it('retains every pre-isolation visible triangle and shading attribute',()=>{
-    // Captured before introducing scope separation. Includes every landmark,
-    // rigid building, terrain skirt, draped paving and foundation shader frame.
-    expect(visibleGeometrySignature()).toEqual({
-      triangles:110302,meshes:39,
-      sha256:'d11df2708c99f1bde5e4ae0bb125f2f71325e2f42e5dbcd4e2ffaa471b539333',
+  it('retains every pre-isolation CDS triangle and shading attribute',()=>{
+    // Signatures independently extracted from e2ec8c3 before the 2026-10-27
+    // survey/layout additions; see cds-isolation-terrain-review-20261027.json.
+    expect(visibleGeometrySignature(false,mesh=>mesh.userData.buLandmarkScope==='cds')).toEqual({
+      triangles:22590,meshes:10,
+      sha256:'9f5b4cf48977883549ba216b141466baee251a21f38cf424df8a1ea8daf5a18f',
     });
+  });
+
+  it('retains neighbouring architecture and every ground plan/shader attribute',()=>{
+    expect(visibleGeometrySignature(true,mesh=>!mesh.userData.buGround)).toEqual({
+      triangles:83242,meshes:21,
+      sha256:'cda03dd0d45fc1fad46dd4e0bbf207827b719244a41acb73a1dda5ceaff2562b',
+    });
+    // New surveyed buildings can legitimately change the legacy interpolation
+    // around Questrom. Preserve all 4,470 ground triangles' XZ and attributes
+    // without freezing those neighbouring surfaces to obsolete elevations.
+    expect(visibleGeometrySignature(true,mesh=>Boolean(mesh.userData.buGround),true)).toEqual({
+      triangles:4470,meshes:8,
+      sha256:'5577305218650434f6b6e8d76064bc18899c99af088abe4177b176488dfd8a88',
+    });
+  });
+
+  it('keeps Questrom paving height and slope consistent with the current terrain',()=>{
+    const offsets:Record<string,number[]>={
+      'BU ground · paving':[-.011,.039,.041,.063],
+      'BU ground · stone':[.038,.056],
+      'BU ground · brickLight':[.04,.052],
+    };
+    let checked=0;
+    campus.questrom.visual.traverseVisible(object=>{
+      if(!(object instanceof Mesh)||!offsets[object.name])return;
+      const position=object.geometry.getAttribute('position'),normal=object.geometry.getAttribute('normal');
+      for(let i=0;i<position.count;i++){
+        const x=position.getX(i),z=position.getZ(i),offset=position.getY(i)-buElevation(x,z);
+        // Clipped vertical sides interpolate continuously through slab thickness.
+        expect(offset).toBeGreaterThanOrEqual(Math.min(...offsets[object.name])-.0001);
+        expect(offset).toBeLessThanOrEqual(Math.max(...offsets[object.name])+.0001);
+        if(normal.getY(i)>.5){
+          expect(Math.min(...offsets[object.name].map(expected=>Math.abs(offset-expected)))).toBeLessThan(.0001);
+          const dx=(buElevation(x+.8,z)-buElevation(x-.8,z))/1.6,dz=(buElevation(x,z+.8)-buElevation(x,z-.8))/1.6,length=Math.hypot(dx,1,dz);
+          expect(normal.getX(i)).toBeCloseTo(-dx/length,4);
+          expect(normal.getY(i)).toBeCloseTo(1/length,4);
+          expect(normal.getZ(i)).toBeCloseTo(-dz/length,4);
+        }
+        checked++;
+      }
+    });
+    expect(checked).toBeGreaterThan(1000);
   });
 
   it('owns the entire CDS height and surface batches without taking neighbouring landmarks',()=>{

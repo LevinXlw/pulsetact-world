@@ -1,10 +1,27 @@
-import {CubeCamera,Group,HalfFloatType,Matrix4,Mesh,MeshStandardMaterial,PMREMGenerator,Texture,Vector3,Vector4,WebGLCubeRenderTarget,type Material,type WebGLRenderTarget} from 'three';
+import {CubeCamera,Group,HalfFloatType,Matrix4,Mesh,MeshStandardMaterial,PMREMGenerator,ShaderMaterial,Texture,Vector3,Vector4,WebGLCubeRenderTarget,type Material,type Scene,type WebGLRenderTarget} from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {configureBUGroundLayer} from './bu-ground-layers';
 
 type RefinedBuildingOptions={id:'cds'|'questrom'|'stata'|'baker'|'maseeh';label:string;url:string;toWorld:Matrix4;probeLocal:readonly [number,number,number];environment?:{size:64|128;keepOnLow?:boolean}};
 // Nearby buildings may share a reflection view; never begin a nested probe.
 let capturingNeighborhood=false;
+// Do not keep a removed campus model alive through its cached sky mesh.
+const reflectionSkies=new WeakMap<Scene,WeakRef<Mesh>>();
+
+function reflectionSkySettled(scene:Scene){
+ let sky=reflectionSkies.get(scene)?.deref();
+ if(sky){let root:Mesh['parent']=sky;while(root?.parent)root=root.parent;if(root!==scene)sky=undefined;}
+ if(!sky){
+  const found=scene.getObjectByName('Painted cloud sky');
+  // Static backgrounds and the phone's procedural sky have no pending image.
+  if(!(found instanceof Mesh))return true;
+  sky=found;reflectionSkies.set(scene,new WeakRef(sky));
+ }
+ for(const material of Array.isArray(sky.material)?sky.material:[sky.material]){
+  if(material instanceof ShaderMaterial&&material.uniforms.uSkyReady&&material.uniforms.uSkyReady.value!==1&&sky.userData.painterlySkyLoadState?.status!=='fallback')return false;
+ }
+ return true;
+}
 
 function releaseModel(group:Group){
  const geometry=new Set<Mesh['geometry']>(),materials=new Set<Material>(),textures=new Set<Texture>();
@@ -27,6 +44,9 @@ function attachEnvironment(group:Group,meshes:Mesh[],options:RefinedBuildingOpti
   previous.get(this)?.call(this,renderer,scene,camera,...rest);
   if(!enabled||disposed||capturing||capturingNeighborhood||failed||environment)return;
   camera.getWorldPosition(eye);if(eye.distanceTo(probePosition)>260)return;
+  // Never retain the loading sky in a one-shot probe. An explicit image
+  // failure is also settled: capture the final procedural fallback once.
+  if(!reflectionSkySettled(scene))return;
   capturing=true;capturingNeighborhood=true;
   // The sky writes at the far plane; nearby blocks are enough to reflect the
   // street. A campus-wide probe uploads otherwise unseen distant buildings.

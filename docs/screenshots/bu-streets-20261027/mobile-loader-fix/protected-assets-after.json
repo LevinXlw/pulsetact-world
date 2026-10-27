@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-27T04:28:52.597Z",
+  "assets": [
+    {
+      "path": "public/assets/mit-stata/campus-without-stata.glb",
+      "bytes": 11920796,
+      "sha256": "a58046ac33971aa6db203c43db80e5b998a45f329caa74c8d2c0e672d7f81bb1",
+      "afterBytes": 11920796,
+      "afterSHA256": "a58046ac33971aa6db203c43db80e5b998a45f329caa74c8d2c0e672d7f81bb1",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-stata/stata-full.glb",
+      "bytes": 18778304,
+      "sha256": "7323a3691adc14dda79373e49a02f751dad3093e6ab8a0df2d8031fcce09be12",
+      "afterBytes": 18778304,
+      "afterSHA256": "7323a3691adc14dda79373e49a02f751dad3093e6ab8a0df2d8031fcce09be12",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-stata/stata-mobile.glb",
+      "bytes": 7648508,
+      "sha256": "a6d4e77f3af7485787f97264ee4b91619ecc328f97881a1d7fe1ac4b1f59c14b",
+      "afterBytes": 7648508,
+      "afterSHA256": "a6d4e77f3af7485787f97264ee4b91619ecc328f97881a1d7fe1ac4b1f59c14b",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-residences/campus-without-residences.glb",
+      "bytes": 12248496,
+      "sha256": "76871b31fb96c6be6475d541f8c539042f7f6bcc8306af768ef1f5e84204cc9a",
+      "afterBytes": 12248496,
+      "afterSHA256": "76871b31fb96c6be6475d541f8c539042f7f6bcc8306af768ef1f5e84204cc9a",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-residences/baker-full.glb",
+      "bytes": 7728244,
+      "sha256": "ad8249bdbde330894b458d11480e81a5a0ba326fed3f29419d17f7e40ac719db",
+      "afterBytes": 7728244,
+      "afterSHA256": "ad8249bdbde330894b458d11480e81a5a0ba326fed3f29419d17f7e40ac719db",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-residences/baker-mobile.glb",
+      "bytes": 3165304,
+      "sha256": "4ea94a46e1c99a09d8cbbe09efb474e496bef50ec03e80223cb3c0d2c0291ac1",
+      "afterBytes": 3165304,
+      "afterSHA256": "4ea94a46e1c99a09d8cbbe09efb474e496bef50ec03e80223cb3c0d2c0291ac1",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-residences/maseeh-full.glb",
+      "bytes": 7313064,
+      "sha256": "ddfd788fd6998fe7fb94778d9730a2a1a7787e0fbaf39e652a81eb3750d20fb0",
+      "afterBytes": 7313064,
+      "afterSHA256": "ddfd788fd6998fe7fb94778d9730a2a1a7787e0fbaf39e652a81eb3750d20fb0",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/mit-residences/maseeh-mobile.glb",
+      "bytes": 3648584,
+      "sha256": "efc2746ea3cc8d1cf410ec1d10803dd54d038f1a72f0de0a0caff327f1a23a16",
+      "afterBytes": 3648584,
+      "afterSHA256": "efc2746ea3cc8d1cf410ec1d10803dd54d038f1a72f0de0a0caff327f1a23a16",
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

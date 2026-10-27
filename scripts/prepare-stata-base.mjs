@@ -1,13 +1,16 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import {dirname} from 'node:path';
 
 // Remove only the surveyed Stata triangles, retaining every original binary
 // byte, vertex attribute, material, texture, node and non-Stata triangle.
 // The filtered index accessor is appended; original campus files stay intact.
 const sourcePath='assets-source/mit-stata/source.obj';
 const outputDirectory='public/assets/mit-stata';
-const reportPath='output/stata-full-20261022/base-removal-report.json';
+const mobileOnly=process.argv.includes('--mobile-only');
+assert(process.argv.slice(2).every(arg=>arg==='--mobile-only'),'Only --mobile-only is supported.');
+const reportPath=mobileOnly?'output/mobile-boston-replacements/stata-base-removal-report.json':'output/stata-full-20261022/base-removal-report.json';
 const expectedTriangles=1811;
 const feetToMetres=1200/3937;
 const origin=[766425.8129794697-731100,2956167.074144031-2902900];
@@ -74,7 +77,7 @@ try{
   for(const task of [
     {input:'public/data/campuses/mit/campus.glb',output:`${outputDirectory}/campus-without-stata.glb`,tolerance:.00004,precision:'Original float32 world positions.'},
     {input:'public/data/mobile/boston.glb',output:`${outputDirectory}/boston-without-stata.glb`,tolerance:.00053,precision:'World positions rounded to 0.001 m and stored as float32.'},
-  ]){
+  ].filter(task=>!mobileOnly||task.input==='public/data/mobile/boston.glb')){
     const inputBytes=await readFile(task.input),{document:original,binary}=parseGLB(inputBytes),document=structuredClone(original),candidates=[];
     for(const [meshIndex,mesh] of document.meshes.entries())for(const [primitiveIndex,primitive] of mesh.primitives.entries())if(['Cambridge buildings (untextured)','Cambridge_buildings_(untextured)'].includes(document.materials[primitive.material]?.name))candidates.push({meshIndex,primitiveIndex,primitive});
     assert.equal(candidates.length,1,'Expected exactly one Cambridge survey building primitive.');
@@ -111,8 +114,9 @@ try{
     const untouchedPrimitives=[];for(const [mi,mesh] of original.meshes.entries())for(const [pi,p] of mesh.primitives.entries())if(mi!==meshIndex||pi!==primitiveIndex){assert.deepEqual(p,reloaded.document.meshes[mi].primitives[pi]);untouchedPrimitives.push({mesh:mi,primitive:pi,material:original.materials[p.material]?.name,triangles:(p.mode??4)===4?triangleCount(original,p):null});}
     await writeFile(task.output,outputBytes);const saved=await readFile(task.output);assert.equal(sha256(saved),sha256(outputBytes),'Saved asset differs from verified bytes.');assert.equal(sha256(await readFile(task.input)),sha256(inputBytes),'Original input file changed.');
     const result={input:task.input,output:task.output,inputSHA256:sha256(inputBytes),outputSHA256:sha256(outputBytes),inputBytes:inputBytes.length,outputBytes:outputBytes.length,precision:task.precision,coordinateToleranceMetres:task.tolerance,maximumMatchErrorMetres:maximumMatchError,buildingPrimitive:{mesh:meshIndex,primitive:primitiveIndex,trianglesBefore:originalIndices.length/3,trianglesAfter:retainedIndices.length/3,removed:removedTriangleIndices.length,allSourceTrianglesMatchedOnce:true,sourceTrianglesRemaining:remainingMatches,retainedIndexSHA256:sha256(indexBytes)},sceneTrianglesBefore:beforeTotal,sceneTrianglesAfter:afterTotal,originalBinarySHA256:sha256(binary),originalBinaryUnchanged:true,metadataUnchangedExceptAppendedIndices:true,unmodifiedPrimitiveCount:untouchedPrimitives.length,unmodifiedTriangleCount:untouchedPrimitives.reduce((sum,p)=>sum+(p.triangles??0),0),removedOriginalTriangleIndices:removedTriangleIndices,untouchedPrimitives};
+    if(task.input==='public/data/mobile/boston.glb')await writeFile(task.output.replace(/\.glb$/,'.json'),JSON.stringify({version:1,url:task.output.slice('public'.length),sha256:result.outputSHA256,bytes:result.outputBytes,inputUrl:task.input.slice('public'.length),inputSHA256:result.inputSHA256,inputBytes:result.inputBytes,removedTriangles:result.buildingPrimitive.removed},null,2));
     report.assets.push(result);console.log(JSON.stringify({input:task.input,output:task.output,removed:removedTriangleIndices.length,neighborBuildingTrianglesPreserved:retainedIndices.length/3,otherTrianglesPreserved:result.unmodifiedTriangleCount,maximumMatchErrorMetres:maximumMatchError}));
   }
-  report.status='passed';report.checks=['Every one of the 1811 surveyed source Stata triangles matched once in each asset.','Triangle correspondence uses all three world-space vertices; bounding boxes never decide removal.','Every retained building index is unchanged and in the original order, preserving triangle winding.','Every non-target primitive and all original metadata remain unchanged.','The complete original binary chunk is preserved byte for byte, including positions, normals, UVs, textures and old indices.','The output contains no remaining triangle matching the surveyed Stata shell.','Both original campus GLBs remain byte-identical; separate assets were written and re-read for verification.'];
+  report.status='passed';report.checks=['Every one of the 1811 surveyed source Stata triangles matched once in each asset.','Triangle correspondence uses all three world-space vertices; bounding boxes never decide removal.','Every retained building index is unchanged and in the original order, preserving triangle winding.','Every non-target primitive and all original metadata remain unchanged.','The complete original binary chunk is preserved byte for byte, including positions, normals, UVs, textures and old indices.','The output contains no remaining triangle matching the surveyed Stata shell.','Every selected input campus GLB remains byte-identical; separate assets were written and re-read for verification.'];
 }catch(error){report.status='failed';report.error=String(error);process.exitCode=1;console.error(error);}
-finally{await mkdir('output/stata-full-20261022',{recursive:true});await writeFile(reportPath,JSON.stringify(report,null,2));}
+finally{await mkdir(dirname(reportPath),{recursive:true});await writeFile(reportPath,JSON.stringify(report,null,2));}

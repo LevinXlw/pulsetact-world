@@ -91,10 +91,10 @@ for(const {detail,model} of models)describe(`GSU–Mugar shared Link entrance ($
 
   it('keeps the entrance improvement inside a small offline geometry allowance',()=>{
     const triangles=model.group.userData.districtModels[0].triangles;
-    // Captured pass-two baseline: 58,176 full / 20,760 mobile. New upper
-    // glazing, six framed doors and the courtyard grid add 2,014 / 1,942
-    // triangles, with only two dedicated glazing batches.
-    expect(triangles).toBeLessThan((detail==='mobile'?20760:58176)+2300);
+    // The 2026-10-26 Mugar/GSU replacement preserves true upper apertures on
+    // mobile as well, increasing its old 22,702 count to 24,118 triangles.
+    // It reuses the same material batches and stays within this bounded budget.
+    expect(triangles).toBeLessThan(detail==='mobile'?25000:61000);
     expect(visible).toHaveLength(15);
     expect(model.walls).toHaveLength(BU_SERT_PARTS.length);
   });

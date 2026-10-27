@@ -1,9 +1,38 @@
 {
   "version": 1,
   "campus": "boston",
-  "bytes": 24733396,
-  "triangles": 670231,
-  "meshes": 1143,
-  "visibleMeshes": 220,
-  "textures": 0
+  "bytes": 29609576,
+  "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+  "triangles": 816040,
+  "meshes": 1174,
+  "visibleMeshes": 245,
+  "textures": 0,
+  "replacementBases": {
+    "version": 1,
+    "source": {
+      "url": "/data/mobile/boston.glb",
+      "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "bytes": 29609576
+    },
+    "stata": {
+      "version": 1,
+      "url": "/assets/mit-stata/boston-without-stata.glb",
+      "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "bytes": 29946188,
+      "inputUrl": "/data/mobile/boston.glb",
+      "inputSHA256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "inputBytes": 29609576,
+      "removedTriangles": 1811
+    },
+    "residences": {
+      "version": 1,
+      "url": "/assets/mit-residences/boston-without-residences.glb",
+      "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "bytes": 30272616,
+      "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+      "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "inputBytes": 29946188,
+      "removedTriangles": 979
+    }
+  }
 }

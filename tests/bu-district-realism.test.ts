@@ -35,7 +35,9 @@ describe('BU district architecture preserves actual envelopes',()=>{
       }
       expect(mesh.geometry.boundingSphere?.radius).toBeGreaterThan(0);
     }
-    expect(triangles).toBeGreaterThan(35000);expect(triangles).toBeLessThan(70000);
+    // Warren now preserves its narrow-end/long-side real openings in the
+    // offline mobile export; allow their recorded ~15.6k triangle increase.
+    expect(triangles).toBeGreaterThan(35000);expect(triangles).toBeLessThan(82000);
     expect(mobile.walls).toHaveLength(mobileIds.size);
     expect(mobile.group.userData.districtModels.map((model:{id:string})=>model.id).sort()).toEqual([...mobileIds].sort());
   });
@@ -53,7 +55,7 @@ describe('BU district architecture preserves actual envelopes',()=>{
     }
   });
   it('closes DEM-edge foundations even when the building centre is outside the survey core',()=>{
-    const buildings=build(new Set(['warren-towers','boston-11622','stuvi-one']),'mobile');
+    const buildings=build(new Set(['warren-towers','boston-11622','danielsen-hall']),'mobile');
     buildings.group.updateMatrixWorld(true);
     for(const id of ['warren-towers','boston-11622']){
       const source=BU_FULL_BUILDINGS.find(b=>b.id===id)!,base=buElevation(source.x,source.z);
@@ -69,7 +71,7 @@ describe('BU district architecture preserves actual envelopes',()=>{
       expect(hit(visible(buildings))).toBe(true);expect(hit([wall])).toBe(true);
       expect(new Box3().setFromObject(wall).max.y).toBeCloseTo(base+source.height,3);
     }
-    const unaffected=BU_FULL_BUILDINGS.find(b=>b.id==='stuvi-one')!,wall=buildings.walls.find(w=>w.name===unaffected.name)!;
+    const unaffected=BU_FULL_BUILDINGS.find(b=>b.id==='danielsen-hall')!,wall=buildings.walls.find(w=>w.name===unaffected.name)!;
     expect(unaffected.footprint.every(p=>buDEMWeight(...p)===0)).toBe(true);
     expect(new Box3().setFromObject(wall).min.y).toBeCloseTo(buElevation(unaffected.x,unaffected.z),3);
   });
@@ -77,11 +79,13 @@ describe('BU district architecture preserves actual envelopes',()=>{
     const warren=build(new Set(['warren-towers']),'mobile');
     const source=BU_FULL_BUILDINGS.find(building=>building.id==='warren-towers')!,datum=buElevation(source.x,source.z);
     const point=(x:number)=>[source.x+x*Math.cos(source.yaw),source.z-x*Math.sin(source.yaw)];
-    for(const fraction of [-.305,0,.305]){
+    // Roof-plan trace: A/B/C run east to west; the western terrace means the
+    // three towers are not centred symmetrically on the entire podium.
+    for(const fraction of [-.210,.065,.340]){
       const [x,z]=point(source.width*fraction),height=roofAt(warren,x,z);
       expect(height).toBeDefined();expect(height!-datum).toBeGreaterThan(59);
     }
-    for(const fraction of [-.1525,.1525]){
+    for(const fraction of [-.0725,.2025]){
       const [x,z]=point(source.width*fraction),height=roofAt(warren,x,z);
       expect(height).toBeDefined();expect(height!-datum).toBeGreaterThan(13);expect(height!-datum).toBeLessThan(16);
     }
@@ -148,7 +152,9 @@ describe('BU district architecture preserves actual envelopes',()=>{
     // No 17.92 m shell may remain across the low Link or historic courtyard.
     expect(sert.walls.some(wall=>wall.name==='George Sherman Union / Mugar Memorial Library')).toBe(false);
     let triangles=0;for(const mesh of visible(sert))triangles+=(mesh.geometry.index?.count??mesh.geometry.getAttribute('position').count)/3;
-    expect(triangles).toBeLessThan(24000);
+    // Photo-calibrated Mugar/GSU retain real recessed openings on mobile;
+    // the recorded assembly is 24,118 triangles (previously 22,702).
+    expect(triangles).toBeLessThan(25000);
   });
   it('keeps the Law–Mugar public paths open while the Pappas third-floor bridge spans overhead',()=>{
     const sert=build(new Set(['gsu-mugar','law-tower']),'mobile'),datum=buElevation(...BU_SERT_FOUNDATION_ANCHOR);

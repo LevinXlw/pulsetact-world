@@ -1,5 +1,13 @@
 export { AuthStore } from './auth.mjs';
 
+// Logical model URLs remain stable; staging emits lossless gzip bodies.
+const GZIP_MODEL_PATHS = new Set([
+  '/data/killian/detail.glb',
+  '/data/mobile/boston.glb',
+  '/assets/mit-stata/boston-without-stata.glb',
+  '/assets/mit-residences/boston-without-residences.glb',
+]);
+
 function json(status, data) {
   return Response.json(data, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } });
 }
@@ -34,20 +42,21 @@ export default {
       if (path.startsWith('/api/')) return json(404, { error: '请求不存在。' });
       if (!['GET', 'HEAD'].includes(request.method)) return json(405, { error: '不支持的请求方式。' });
 
-      const rawDetail = path === '/data/killian/detail.glb';
-      if (rawDetail) url.pathname += '.gz';
-      const asset = await env.ASSETS.fetch(rawDetail ? new Request(url, request) : request);
+      const gzipModel = GZIP_MODEL_PATHS.has(path);
+      if (gzipModel) url.pathname += '.gz';
+      const asset = await env.ASSETS.fetch(gzipModel ? new Request(url, request) : request);
       const headers = new Headers(asset.headers);
       headers.set('X-Content-Type-Options', 'nosniff');
       headers.set('X-Frame-Options', 'DENY');
       headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
       if (headers.get('Content-Type')?.includes('text/html')) headers.set('Cache-Control', 'no-store');
       else if (protectedResource) headers.set('Cache-Control', 'private, max-age=3600');
-      if (rawDetail && asset.ok) {
-        // Keep the >25 MiB legacy URL working using its smaller existing gzip artifact.
+      if (gzipModel && (asset.ok || asset.status === 304) && !headers.get('Content-Type')?.includes('text/html')) {
+        // Conditional headers and the asset ETag identify the same gzip representation.
+        // HEAD and 304 retain its metadata without returning a body.
         headers.set('Content-Type', 'model/gltf-binary');
         headers.set('Content-Encoding', 'gzip');
-        return new Response(asset.body, { status: asset.status, headers, encodeBody: 'manual' });
+        return new Response(request.method === 'HEAD' || asset.status === 304 ? null : asset.body, { status: asset.status, headers, encodeBody: 'manual' });
       }
       return new Response(asset.body, { status: asset.status, headers });
     } catch {

@@ -59,6 +59,10 @@ const named = {
   1362: ['com','College of Communication','academic'],
   1363: ['warren-services','Warren Towers service wing','academic'],
   1369: ['metcalf-science','Metcalf Science Center','academic'],
+  1372: ['commonwealth-560','560 Commonwealth Avenue commercial building','context'],
+  1373: ['commonwealth-566','Kenmore Tower / 566 Commonwealth Avenue','context'],
+  // BU Housing/2023 IMP identify this otherwise addressless City record.
+  1374: ['commonwealth-580','580 Commonwealth Avenue graduate apartments','residence',35.357],
   1841: ['warren-towers','Warren Towers','residence',60.2],
   1842: ['cas-east','College of Arts & Sciences / Tsai Performance Center','historic'],
   1844: ['the-towers','The Towers residence','residence'],
@@ -104,18 +108,24 @@ const all = city.features.map(f=>{
 });
 const inMain=f=>f.geo[0]>-71.1249&&f.geo[0]<-71.094&&f.geo[1]>42.3464&&f.geo[1]<42.3549;
 const inEast=f=>f.geo[0]>=-71.094&&f.geo[0]<-71.0897&&f.geo[1]>42.3495&&f.geo[1]<42.3513;
-const primary=all.filter(f=>(f.owned||f.named)&&(inMain(f)||inEast(f)));
-const selected=all.filter(f=>primary.includes(f)||((inMain(f)||inEast(f))&&primary.some(p=>Math.hypot(p.centre[0]-f.centre[0],p.centre[1]-f.centre[1])<58))||(inEast(f)&&/BEACON ST/.test(f.a.PART_ADDRESS||'')));
+// Recover only the reviewed opposite-Questrom buildings; do not silently expand
+// the old 58 m context selection around these late identity corrections.
+const recoveredIds=new Set([1372,1373,1374]);
+const primary=all.filter(f=>(f.owned||(f.named&&!recoveredIds.has(f.a.OBJECTID)))&&(inMain(f)||inEast(f)));
+const selected=all.filter(f=>recoveredIds.has(f.a.OBJECTID)||primary.includes(f)||((inMain(f)||inEast(f))&&primary.some(p=>Math.hypot(p.centre[0]-f.centre[0],p.centre[1]-f.centre[1])<58))||(inEast(f)&&/BEACON ST/.test(f.a.PART_ADDRESS||'')));
 // 278 Babcock was demolished for the New Balance Field / Langsam Garage project.
 const buildings=selected.filter(f=>Math.abs(area(f.footprint))>22&&f.a.OBJECTID!==3218).map(f=>{
-  const a=f.a,address=(a.PART_ADDRESS||'').trim(),identity=f.named;
+  const a=f.a,address=a.OBJECTID===1374?'580 Commonwealth Avenue':(a.PART_ADDRESS||'').trim(),identity=f.named;
   const old=a.BUILDING_HEIGHT_2010*foot,current=a.TOP_GROUND_LEVEL*foot;
   let height=old>2&&old<130?old:current>2&&current<130?current:Math.max(8,Number(a.PART_FLOORS)||3)*3.25;
   let heightField=old>2&&old<130?'BUILDING_HEIGHT_2010':current>2&&current<130?'TOP_GROUND_LEVEL':'estimated';
   if(identity?.[3]){height=identity[3];heightField='reviewed-landmark-height';}
   const brownstone=/BAY STATE|BUSWELL|MOUNTFORT|BEACON/.test(address)&&height<28&&Math.abs(area(f.footprint))<1400;
-  return {id:identity?.[0]??`boston-${a.OBJECTID}`,name:identity?.[1]??(address||`Campus vicinity building ${a.OBJECTID}`),address,kind:identity?.[2]??(brownstone?'brownstone':f.owned?'academic':'context'),...orientedBox(f.footprint),height:round(height),groundElevation:a.BASE_ELEVATION>0?round(a.BASE_ELEVATION*foot):a.GROUND_ELEVATION_2010>0?round(a.GROUND_ELEVATION_2010*foot):null,heightSource:heightField==='estimated'?'estimated':'city-gis',heightField,cityObjectId:a.OBJECTID,universityOwned:f.owned||!!identity,footprint:f.footprint,...(f.rings.length>1?{holes:f.rings.slice(1).filter(r=>within(r[0],f.footprint))}:{}),...(identity?.[4]?{custom:true}:{})};
+  return {id:identity?.[0]??`boston-${a.OBJECTID}`,name:identity?.[1]??(address||`Campus vicinity building ${a.OBJECTID}`),address,kind:identity?.[2]??(brownstone?'brownstone':f.owned?'academic':'context'),...orientedBox(f.footprint),height:round(height),groundElevation:a.BASE_ELEVATION>0?round(a.BASE_ELEVATION*foot):a.GROUND_ELEVATION_2010>0?round(a.GROUND_ELEVATION_2010*foot):null,heightSource:heightField==='estimated'?'estimated':'city-gis',heightField,cityObjectId:a.OBJECTID,universityOwned:f.owned||!!identity&&identity[2]!=='context',footprint:f.footprint,...(f.rings.length>1?{holes:f.rings.slice(1).filter(r=>within(r[0],f.footprint))}:{}),...(identity?.[4]?{custom:true}:{})};
 });
+// Only this addressless City record receives the verified BU identity/height.
+const commonwealth580=buildings.find(b=>b.id==='commonwealth-580');
+Object.assign(commonwealth580,{heightSource:'official-bu',heightField:'BU 2023-2033 IMP: 116 ft; 11 above-ground floors',footprintSource:'Boston GIS 1374 unchanged ground envelope; upper floor separation: 580-commonwealth/source-20261027.json'});
 // The city stores the Sert complex as one footprint. The narrow law tower is
 // identifiable within its eastern outline and in BU's 2012 site plan (Fig 1-3).
 // Keep the low complex, then express this distinct vertical component separately.
@@ -130,7 +140,23 @@ caseBuilding.footprint=[...caseOriginal.slice(0,55),...caseOriginal.slice(66)];
 Object.assign(caseBuilding,orientedBox(caseBuilding.footprint));
 buildings.push({...caseBuilding,id:'rich-hall',name:'Rich Hall',address:'277 Babcock Street',kind:'residence',...orientedBox(richRing),height:45.15,heightField:'TOP_GROUND_LEVEL (Rich Hall within combined city footprint)',footprint:richRing});
 const west=buildings.find(b=>b.id==='west-dining'),westOriginal=west.footprint;
-for(const [id,name,address,ring] of [['claflin-hall','Claflin Hall','273 Babcock Street',westOriginal.slice(11,26)],['sleeper-hall','Sleeper Hall','275 Babcock Street',westOriginal.slice(54,71)]])buildings.push({...west,id,name,address,kind:'residence',...orientedBox(ring),height:43.79,heightField:'TOP_GROUND_LEVEL (tower within combined city footprint)',footprint:ring});
+for(const [id,name,address,ring,frame] of [
+  // Include the existing neck vertex 10 in the closing join. The old 11–25
+  // chord crossed the outside of the City ring by a narrow triangular sliver.
+  // Retain the tower's original placement metadata/terrain sample unchanged.
+  ['claflin-hall','Claflin Hall','273 Babcock Street',westOriginal.slice(10,26),westOriginal.slice(11,26)],
+  ['sleeper-hall','Sleeper Hall','275 Babcock Street',westOriginal.slice(54,71)],
+])buildings.push({...west,id,name,address,kind:'residence',...orientedBox(frame??ring),height:43.79,heightField:'TOP_GROUND_LEVEL (tower within combined city footprint)',footprint:ring});
+// The two extracted tower rings must also leave the low dining footprint.
+// Otherwise its full-height brick wall fills their lobby windows and renders
+// coplanar with the tower masonry. The three components still partition the
+// unchanged City ring; their two shared closing chords are internal joins.
+// Keep the old terrain reference because legacy western ground pads/samples
+// must not move when a compound survey record is separated into components.
+west.terrainReference={anchor:[west.x,west.z],footprint:westOriginal};
+west.footprint=[...westOriginal.slice(0,11),...westOriginal.slice(25,55),...westOriginal.slice(70)];
+Object.assign(west,orientedBox(west.footprint));
+west.footprintSource='city-gis-124707 dining remainder after unchanged Claflin/Sleeper component extraction; west-dining-separation-20261026.json';
 // Modern buildings absent from the older city survey or outside Boston. These are explicitly authored
 // envelopes located from BU's address/site descriptions, not surveyed polygons.
 const recent=[
@@ -184,9 +210,13 @@ sourceNote.authoredModernEnvelopes=recent.map(b=>b.name);
 sourceNote.authoredEnvelopeReview={reviewed:'2026-10-16',sources:['https://www.bu.edu/parentsprogram/files/2020-boston-university-calendar-ISSUU.pdf','https://www.bu.edu/cpo/project/booth-theatre-and-cfa-production-center/','https://www.bu.edu/cfa/venues-facilities/joan-edgar-booth-theatre/','https://www.bu.edu/cpo/project/yawkey-center-for-student-services/'],notes:['Booth is in Brookline, beyond the Boston footprint survey. Its previously authored envelope overlapped Commonwealth Avenue. The corrected approximate envelope sits south of the avenue, east of the main CFA block, with the documented plaza and Dummer Street buffer. This is interpreted from BU map/site descriptions, not a recovered Brookline survey.','Yawkey retains the documented Bay State/Deerfield site while its approximate north edge is set back from Bay State and its west/south sides are clipped clear of neighboring surveyed facades.','Kilachand Center retains its existing street-clear envelope. No City footprint or MassGIS road is translated. Brookline GIS query was attempted but its live server was unreachable on the review date.']};
 sourceNote.references.push('https://www.bu.edu/reservations/25live/building-codes/','https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf','https://www.bu.edu/community/files/2012/03/New-Balance-Field-PNF.pdf','https://www.bu.edu/commencement/files/2025/05/CMCT_RedBook2025_Final.pdf','https://www.bu.edu/cpo/project/center-for-integrated-life-sciences-engineering/','https://www.bu.edu/articles/2017/new-joan-edgar-booth-theatre-opens/','https://www.bu.edu/cpo/project/yawkey-center-for-student-services/');
 sourceNote.notes.push('Counts are building components, not independent university buildings: Law/Rich/Claflin/Sleeper tower components share source footprints with their lower connected buildings.','Kilachand Center, Booth Theatre and Yawkey Center are authored approximate envelopes, absent from the older Boston source geometry; Booth is also outside Boston in Brookline. Their heights are estimates informed by documented floor counts, not measurements. Ground elevation is null so they do not masquerade as terrain observations.','Nickerson, New Balance and softball field centres/orientations are manually interpreted from official BU plans. The New Balance envelope includes the field-top Langsam Garage block.');
+sourceNote.notes.push('2026-10-26: West Dining now uses only the remainder of City footprint 124707 after extracting Claflin/Sleeper. The three component footprints preserve the original outer boundary and occupied area; terrainReference retains the original terrain sample/pad and dining foundation. See west-dining-separation-20261026.json.');
+sourceNote.notes.push("2026-10-27: Recovered opposite-Questrom frontage City 1374 (580 Commonwealth, verified BU graduate housing) and 1373 (566 Commonwealth, private Kenmore Tower). Their real polygons were excluded by owner/address and 58 m centroid filtering. Separate dedicated builders distinguish ground envelopes from upper floors; no other selected footprint is regenerated.");
+sourceNote.references.push("https://www.bu.edu/housing/residence/central-campus-graduate-apartments/580-commonwealth-avenue/","https://www.bu.edu/community/files/2022/11/2023-2033-BU-CRC-IMPNF.pdf");
+sourceNote.notes.push("2026-10-27: Separately recovered City 1372, the private low commercial building at 560 Commonwealth east of Kenmore Tower. Its 38-point source ring remains independent; no tower footprint merge or inferred parcel-wide paving is introduced. See 560-commonwealth/source-20261027.json.");
 await writeFile(new URL('bu-campus-source-manifest.json',source),JSON.stringify(sourceNote,null,2)+'\n');
 await writeFile(new URL('bu-selected-building-index.json',source),JSON.stringify(buildings.map(({footprint,holes,...b})=>b),null,2)+'\n');
-const header=`/** Generated by scripts/prepare-bu-campus.mjs. City of Boston GIS footprints, retrieved 2026-10-15.\n * Real shared metre coordinates; no visual stretching. Context buildings are not all BU-owned.\n * Heights and NAVD88 ground observations retain provenance; see assets-source/charles-bu/bu-campus-source-manifest.json. */\nimport type { WorldPoint } from './geo-coordinates';\nexport type BUCampusBuilding = { id:string; name:string; address:string; kind:'historic'|'academic'|'residence'|'arena'|'law'|'stuvi'|'photonics'|'fitrec'|'garage'|'brownstone'|'library'|'context'; x:number; z:number; width:number; depth:number; yaw:number; height:number; groundElevation:number|null; heightSource:'city-gis'|'official-bu'|'estimated'; heightField:string; cityObjectId:number; universityOwned:boolean; footprint:WorldPoint[]; holes?:WorldPoint[][]; custom?:boolean; footprintSource?:string };\nexport const BU_FULL_BOUNDS = ${JSON.stringify(bounds)};\nexport const BU_FULL_BUILDINGS: BUCampusBuilding[] = [\n`;
+const header=`/** Generated by scripts/prepare-bu-campus.mjs. City of Boston GIS footprints, retrieved 2026-10-15.\n * Real shared metre coordinates; no visual stretching. Context buildings are not all BU-owned.\n * Heights and NAVD88 ground observations retain provenance; see assets-source/charles-bu/bu-campus-source-manifest.json. */\nimport type { WorldPoint } from './geo-coordinates';\nexport type BUCampusBuilding = { id:string; name:string; address:string; kind:'historic'|'academic'|'residence'|'arena'|'law'|'stuvi'|'photonics'|'fitrec'|'garage'|'brownstone'|'library'|'context'; x:number; z:number; width:number; depth:number; yaw:number; height:number; groundElevation:number|null; heightSource:'city-gis'|'official-bu'|'estimated'; heightField:string; cityObjectId:number; universityOwned:boolean; footprint:WorldPoint[]; holes?:WorldPoint[][]; custom?:boolean; footprintSource?:string; terrainReference?:{anchor:WorldPoint;footprint:WorldPoint[]} };\nexport const BU_FULL_BOUNDS = ${JSON.stringify(bounds)};\nexport const BU_FULL_BUILDINGS: BUCampusBuilding[] = [\n`;
 const footer=`\nexport type BUCampusSpace = {id:string;name:string;x:number;z:number;width:number;depth:number;yaw:number;kind:'soccer'|'field-hockey'|'softball';source:string};\nexport const BU_FULL_SPACES: BUCampusSpace[] = ${JSON.stringify(spaces)};\n\n/** Actual footprints, including courtyards, with optional walking clearance. */\nexport function isInsideBUCampusBuilding(x:number,z:number,padding=0):boolean {\n  const inside=(ring:WorldPoint[])=>{let hit=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>z)!==(b[1]>z)&&x<(b[0]-a[0])*(z-a[1])/(b[1]-a[1])+a[0])hit=!hit;}return hit;};\n  return BU_FULL_BUILDINGS.some(b=>{\n    if(Math.hypot(x-b.x,z-b.z)>Math.hypot(b.width,b.depth)/2+padding+2)return false;\n    if(inside(b.footprint)&&!(b.holes??[]).some(inside))return true;\n    if(padding<=0)return false;\n    return [b.footprint,...(b.holes??[])].some(r=>r.some((a,i)=>{const c=r[(i+1)%r.length],dx=c[0]-a[0],dz=c[1]-a[1],t=Math.max(0,Math.min(1,((x-a[0])*dx+(z-a[1])*dz)/(dx*dx+dz*dz||1)));return Math.hypot(x-a[0]-t*dx,z-a[1]-t*dz)<padding;}));\n  });\n}\n`;
 await writeFile(new URL('../src/features/world/bu-full-layout.ts',import.meta.url),header+buildings.map(b=>JSON.stringify(b)).join(',\n')+'\n];\n'+footer);
 console.log(JSON.stringify({buildings:buildings.length,bounds,universityOwnedOrNamed:sourceNote.universityOwnedOrNamed,contextCount:sourceNote.contextCount,spaces}));

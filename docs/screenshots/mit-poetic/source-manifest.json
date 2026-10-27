@@ -1,0 +1,76 @@
+{
+  "recordedAt": "2026-10-25T16:44:30.446Z",
+  "scope": "MIT poetic campus stage sample; source and export provenance. Existing unrelated local edits in shared loaders are preserved.",
+  "files": [
+    {
+      "path": "src/features/world/mit-poetic-materials.ts",
+      "bytes": 5428,
+      "sha256": "045612c71998d56e4c54bcba5947fd90a2dcdc82acf484303dd3ff864d268aba"
+    },
+    {
+      "path": "src/features/world/mit-poetic-atmosphere.ts",
+      "bytes": 2728,
+      "sha256": "0ec0d13f3b9697a723b0ffdc668641e5037fcff54048976bbe3596ff8b64fa50"
+    },
+    {
+      "path": "src/features/world/mit-main-building-detail.ts",
+      "bytes": 6170,
+      "sha256": "9c9454ec4405f4f5266e77b628c3d11ea5ebc9915fa7d657de4cbfdf261cc9fc"
+    },
+    {
+      "path": "src/features/world/scene-assets-desktop.ts",
+      "bytes": 23160,
+      "sha256": "062aaaf1401357deceac4e91361b1e29e30f21e17c1a5db49b27ecaf47f82319"
+    },
+    {
+      "path": "src/features/world/mobile-campus.ts",
+      "bytes": 15967,
+      "sha256": "a73e9a93fe206ec1ffb36694b74456cadf4d0908b1fe8517e9bcfebef54465eb"
+    },
+    {
+      "path": "scripts/prepare-mit-mobile-portico.mjs",
+      "bytes": 6285,
+      "sha256": "c91be3a930f98d14f135d71dbf14a28bb2d938eb8727dc1704915ed0e6df504c"
+    },
+    {
+      "path": "public/data/killian/detail.glb",
+      "bytes": 56841004,
+      "sha256": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d"
+    },
+    {
+      "path": "public/data/killian/detail-manifest.json",
+      "bytes": 86093,
+      "sha256": "9dc267e9b00a5acccf4ef112a4c036d8e606b6623ebcd3b17cd856629cc601d8"
+    },
+    {
+      "path": "public/data/killian/mobile-portico.glb",
+      "bytes": 1902028,
+      "sha256": "f781e568ff513f813bd20cbc8467e3b5c20a714704f4789b983440451f344c43"
+    },
+    {
+      "path": "public/data/killian/mobile-portico.json",
+      "bytes": 4605,
+      "sha256": "9567987b7331c52dd25dec229358c33493b555061f6baaab6cb2cf32b2cc19d3"
+    },
+    {
+      "path": "assets-source/art-direction/demo-style-20261025/source.json",
+      "bytes": 1004,
+      "sha256": "0ab805958d133ea9a699789db01cbea9e0906ccee7ebf270702cf97a1ef92944"
+    }
+  ],
+  "validation": {
+    "tests": {
+      "files": [
+        "tests/mit-main-building-detail.test.ts",
+        "tests/mit-mobile-portico.test.ts",
+        "tests/killian-detail.test.ts",
+        "tests/mit-surface-projection.test.ts"
+      ],
+      "passed": 12
+    },
+    "productionBuild": "passed",
+    "desktopGameplay": "output/mit-poetic/playable-verified/report.json",
+    "mobileEmulationGameplay": "output/mit-poetic/playable-mobile-verified/report.json",
+    "physicalMobile": "not tested"
+  }
+}

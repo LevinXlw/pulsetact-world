@@ -1,0 +1,147 @@
+{
+  "assetId": "commonwealth-560",
+  "version": "2026-10-27",
+  "identity": "560-574 Commonwealth Avenue, former Citizens Bank commercial building; private context, not BU-owned",
+  "status": "bounded reconstruction; actual-game and current-condition acceptance pending",
+  "scope": "Independent City1372 curved commercial building east of Kenmore Tower: surveyed ring/height, tall single banking hall, real glazing and transoms, curved entry, stone base/head, unbranded cyan fascia, closed floor and roof.",
+  "source": "src/features/world/bu-560-commonwealth.ts",
+  "changeCategories": [
+    "geometry reconstruction",
+    "physical facade components"
+  ],
+  "references": [
+    {
+      "kind": "Boston city survey",
+      "local": "assets-source/charles-bu/boston-buildings-bu-area.json",
+      "objectId": 1372,
+      "parcelId": "0504141000",
+      "facts": "38-point open ring;1 floor;BUILDING_HEIGHT_2010=29.67ft, stored9.043m;survey acquisition2010 for height, other attributes not dated"
+    },
+    {
+      "kind": "Actual exterior photograph",
+      "url": "https://media.bizj.us/view/img/10901036/citizensbankkenmore04%2A1200xx5184-2922-0-257.jpg",
+      "article": "https://www.bizjournals.com/boston/news/2019/09/05/citizens-bank-names-boston-as-of-of-four-tech-hubs.html",
+      "local": "assets-source/charles-bu/560-commonwealth/bank-2019.jpg",
+      "date": "2019-09-05 article; exact image capture date unknown",
+      "direction": "From eastern curved end toward566 behind it; oblique street view, not survey-registered",
+      "observed": "Rounded glazed end, single tall hall, dark base, pale stone head, cyan fascia, metal coping, vertical frames and horizontal transoms, central glazed entry. Photo pixels directly inspected."
+    },
+    {
+      "kind": "Preservation project chronology",
+      "url": "https://www.bostonpreservation.org/advocacy-project/kenmore-hotel",
+      "date": "Activity log2018-2019",
+      "supports": "Existing circa1954 curved commercial building and proposed replacement hotel; proposal is not treated as already built."
+    },
+    {
+      "kind": "Developer project description",
+      "url": "https://www.markdevelopmentllc.com/portfolio",
+      "date": "Read2026-10-27, page publication date unknown",
+      "supports": "One Kenmore is described as proposed; no proposed hotel added to this reconstruction."
+    }
+  ],
+  "referenceRights": "Photo is research only. It is not used as a texture, redistributed with the runtime, or uploaded to third-party generation. No bank logo, text, tenant claim or advertising is included.",
+  "coordinates": "Metres,Y up,absolute worldXZ and relativebuilding-baseY. Original GRS80 Lambert projection fromgeo-coordinates.ts. Parent supplies ground base.",
+  "dimensions": {
+    "center": [
+      -511.614,
+      1163.416
+    ],
+    "width": 33.635,
+    "depth": 23.914,
+    "yaw": -0.147,
+    "roofTop": 9.043
+  },
+  "section": {
+    "glassBottom": 1,
+    "glassTop": 6.65,
+    "fasciaTop": 8,
+    "wallDepth": 0.34,
+    "glassRecess": 0.24,
+    "doorTop": 2.4,
+    "slabThickness": 0.22
+  },
+  "measurementLimits": "Outline and overallheight are surveyed. Section splits, opening/frame spacing, entry span and stone joint sizes are estimated from the2019 photograph. The9m height is consistent with the pictured tall hall and approximately2.4m door; no extra storey is invented.",
+  "materials": "Existing stone/brownstone/frame/roof/frontageGlass plus bankFascia, a frame-family opaque material tinted#76a6a1. Glass panes physically recess24cm behind open base/head construction. Thin geometric joints separate upper stone courses.",
+  "collision": "Exact original City1372 ring, separate fromCity1373. Curved entry is visual; no unsupported accessible interior is created.",
+  "resources": {
+    "triangles": 5130,
+    "materialFamilies": 6,
+    "fullMobile": "Identical envelope and components; parent selects material quality. No dedicated reduction required for this small source in current pass.",
+    "runtime": "Actual screenshot,bakedGLB hash,drawcalls and frame timing handled by root acceptance run; true mobile device not tested here."
+  },
+  "verification": {
+    "command": "npm.cmd test -- tests/bu-560-commonwealth.test.ts tests/bu-566-commonwealth.test.ts",
+    "result": "9/9 passed;4 cover560",
+    "covers": [
+      "privateGIS identity and separate tower relationship",
+      "curved and long-side glass raycasts through real openings",
+      "closed roof",
+      "opaque cyan band above glass",
+      "finite geometry,height and budget"
+    ],
+    "G0": "outline,identity and visible street elevations supported;currenttenant/westwall unknown",
+    "G1": "bounded geometry checks pass;game visual review pending",
+    "G2": "openings/roof raycasts pass;material visual review pending",
+    "G3": "root game screenshot/walk pending",
+    "G4": "source,probes and resource count complete;mobile export verification pending"
+  },
+  "probeContract": "glazingProbes use actual pane worldXZ/relativeY and outwardnormal. Startglass+normal*2 toward-negative-normal for3m; expect firstglass atdistance2. Very shortGIS fragments masked by real neighboring window frames are not used as glass probes. roofProbe starty+1 downward2m expects roof aty9.043+base.",
+  "remainingGaps": [
+    "Reference shows2019 exterior, not verified currenttenant/condition; no brand claimed.",
+    "West service wall and interior remain unverified, with restrained solid wall treatment.",
+    "Precise stone stains,coping wear,entry hardware and window/frame dimensions are approximated.",
+    "Street forecourt/planting and566 northern setback ground are separate assets; this footprint is not enlarged to fill them.",
+    "Actual game appearance and mobile export hash must be reviewed before any visual acceptance claim."
+  ],
+  "sourceSha256": "73fc363c2213863d632c3308ec4d1f9f9fec747fb782e4f29deeb0df2e1c0e61",
+  "referenceSha256": "3d88ef7298fb9fce55c004a3862d2e5a9d564f2d95da222cb2041594127dde27",
+  "omissionCause": "City1372 existed in GIS, ownerUSTRUST. Its center was71.692339m from the nearest old primary City1847/565Commonwealth, beyond the58m context selection cutoff; explicitly recovered without changing private ownership.",
+  "entryApron": "560-commonwealth/entry-apron-20261027.json:27 sharedsourcepatches,97.8892m2; curved entrance now connects to existing sidewalk; actualfinalscreenshot/mobile rebake pending.",
+  "runtimeReview": {
+    "status": "阶段可试玩；完整实景真实感尚未验收通过",
+    "archive": "docs/screenshots/bu-streets-20261027",
+    "normalMaterialViews": "after",
+    "neutralMaterialViews": "neutral",
+    "continuousWalk": "passed",
+    "phoneEmulation": "passed",
+    "actualMobileExport": {
+      "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "version": 1,
+      "campus": "boston",
+      "bytes": 29609576,
+      "triangles": 816040,
+      "meshes": 1174,
+      "visibleMeshes": 245,
+      "textures": 0,
+      "replacementBases": {
+        "version": 1,
+        "source": {
+          "url": "/data/mobile/boston.glb",
+          "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "bytes": 29609576
+        },
+        "stata": {
+          "version": 1,
+          "url": "/assets/mit-stata/boston-without-stata.glb",
+          "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "bytes": 29946188,
+          "inputUrl": "/data/mobile/boston.glb",
+          "inputSHA256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "inputBytes": 29609576,
+          "removedTriangles": 1811
+        },
+        "residences": {
+          "version": 1,
+          "url": "/assets/mit-residences/boston-without-residences.glb",
+          "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+          "bytes": 30272616,
+          "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+          "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "inputBytes": 29946188,
+          "removedTriangles": 979
+        }
+      }
+    },
+    "visualLimit": "580窗/板比例及石带仍简化；566分户及底层窗列概括；560玻璃偏均匀。前场铺装、站台设施和相邻旧楼漏光尚待完善。"
+  }
+}

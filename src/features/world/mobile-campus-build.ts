@@ -213,6 +213,13 @@ export async function buildMobileCampus(signal:AbortSignal,campus:CampusId):Prom
       const questromSource=await new GLTFLoader().parseAsync(questromBytes,'');signal.throwIfAborted();
       retiredVisuals.push(landmarks.questrom.visual);replaceMobileQuestromVisual(landmarks,questromSource.scene,questromPlacement.toWorld);
       const signatureIds=new Set(['gsu-mugar','cas-east','warren-towers','warren-services','stuvi-one','stuvi-south-tower','stuvi-north-tower','stuvi-north-core','stuvi-north-connectors','law-tower','agganis','fitrec']);
+      // Keep the corrected dining/tower partition, facade material divisions,
+      // recessed windows and floor plates in the actual phone export. These
+      // three formerly fell back to generic six-row brick boxes here.
+      for(const id of ['west-dining','claflin-hall','sleeper-hall'])signatureIds.add(id);
+      // Recovered Commonwealth frontage must keep the dedicated tower/bay
+      // silhouettes and real openings in the exported phone scene as well.
+      for(const id of ['commonwealth-580','commonwealth-566','commonwealth-560'])signatureIds.add(id);
       for(const [x,z,count] of [[-650,990,20],[-1110,1240,10]]){
         const houses=BU_FULL_BUILDINGS.filter(b=>b.kind==='brownstone'&&!b.custom).sort((a,b)=>Math.hypot(a.x-x,a.z-z)-Math.hypot(b.x-x,b.z-z));
         houses.slice(0,count).forEach(b=>signatureIds.add(b.id));
@@ -224,6 +231,10 @@ export async function buildMobileCampus(signal:AbortSignal,campus:CampusId):Prom
       model.add(district.group);ground.push(...district.ground);walls.push(...district.walls);district.setQuality(true);
       const {createBUWarrenStreetscape}=await import('./bu-warren-streetscape');
       const warrenForecourt=createBUWarrenStreetscape({mobile:true});model.add(warrenForecourt.group);ground.push(...warrenForecourt.ground);
+      // Use the same surveyed West platform/paving and retaining-wall breaks
+      // as desktop, so the phone route does not walk through an omitted wall.
+      const {createBUWestTerrace}=await import('./bu-west-terrace');
+      const westTerrace=createBUWestTerrace();model.add(westTerrace.group);ground.push(...westTerrace.ground);walls.push(...westTerrace.walls);westTerrace.setQuality(true);
       BU_FULL_BUILDINGS.forEach((b,i)=>{if(!b.custom&&!signatureIds.has(b.id))building(b,buElevation,i);});
       for(const road of BU_CAMPUS_ROADS){
         const sidewalk=buStreetSidewalk(road),roadHeight:Height=road.kind==='expressway'?(x,z)=>buElevation(x,z)+buExpresswayDrop(x,z):buElevation;

@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25",
+  "scope": "Mugar west block, lower two-storey south window wall only; no upper-facade or footprint replacement",
+  "sources": [
+    {
+      "url": "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf",
+      "section": "4.3.4 Mugar Memorial Library",
+      "supports": "Large plate-glass lower windows, narrow vertical upper windows and deep projecting concrete sun fins on the south/east elevations."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Mugar_Memorial_Library_from_Commonwealth_Avenue,_July_2021.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Mugar_Memorial_Library_from_Commonwealth_Avenue%2C_July_2021.jpg",
+      "local": "assets-source/charles-bu/references/sert-20261025/mugar-south-2021.jpg",
+      "author": "Pi.1415926535",
+      "taken": "2021-07-06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "modifications": "None; original image retained as an architectural reference, not used as a game texture.",
+      "supports": "South lower window wall has thin but deep upright concrete blades, shorter lower hanging tails and a horizontal intermediate band. Glazing is behind this screen, not at its outer edge."
+    },
+    {
+      "url": "https://www.bu.edu/reservations/gsu/",
+      "imageUrl": "https://www.bu.edu/reservations/files/2023/08/GSU_Exterior_0008.jpg",
+      "local": "assets-source/charles-bu/references/sert-20261025/bu-gsu-exterior-2023.jpg",
+      "rights": "Boston University published reference photograph; not a runtime texture or a claim of open licensing.",
+      "supports": "Mugar edge beside the shared Link has exposed-aggregate concrete, deep fin returns and pale metal glazing frames."
+    },
+    {
+      "url": "https://www.klopfermartin.com/projects/boston-university-mugar-library",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/63090ece5d79f54f7b96b1be/da5c6fcc-8931-4660-ac65-572650d8b013/MugarLibrary_ExistingStreet_BW_1500w.jpg?format=1500w",
+      "local": "assets-source/charles-bu/references/sert-20261025/mugar-existing-street.jpg",
+      "rights": "Klopfer Martin Design Group published reference; not a game texture or a claim of open licensing.",
+      "supports": "Context reference only: photograph depicts the Bay State Road side and was not used to infer the south elevation geometry."
+    }
+  ],
+  "implementation": {
+    "module": "src/features/world/bu-sert-facade-detail.ts",
+    "factory": "createBUSertFacadeDetail({mobile?:boolean})",
+    "integration": "scene-assets-desktop.ts and mobile-campus.ts add this bounded module after existing shells; their model traversal owns disposal.",
+    "southBoundary": "Derived from the retained mugar-west GIS-clipped footprint through BU_SERT_FRAME; no source footprint vertices are moved.",
+    "datum": "Existing BU_SERT_FOUNDATION_ANCHOR sampled by buElevation; local geometry is not terrain-warped.",
+    "sectionsMetres": {
+      "mainFinWidth": 0.145,
+      "mainFinDepth": 1.18,
+      "mainFinProjectionPastFacade": 0.86,
+      "mainFinBottom": 3.88,
+      "mainFinTop": 7.05,
+      "lowerTailBottom": 2.75,
+      "lowerTailTop": 3.54,
+      "lowerTailProjection": 0.49,
+      "midBandCentre": 3.68,
+      "glazingRecessFromRetainedFacade": 0.265
+    },
+    "grid": "Each existing primary curtain-wall bay is split in two, keeping old upright axes aligned. This is an authored fit, not a claimed measured bay count.",
+    "glass": "New opaque PBR panes sit in front of the existing old curtain glass and behind its structural frame. Borrow the established sky-reflection material; no new texture/probe, interior or building reflection.",
+    "collision": "No new ground or wall collider. The inherited building wall remains closed and the projecting screen starts above pedestrian head height; the shared Link door corridor stays clear.",
+    "mobile": "Same geometry and object positions, light mobile sky reflection. Added after mobile HD material discovery so switching low/HD retains the dedicated material. No mobile GLB is rebaked."
+  },
+  "limits": [
+    "Fin positions, dimensions, band levels and metal sections are photo-led estimates fitted to the inherited facade rhythm, not as-built measurements.",
+    "The upper Mugar facade, remaining east/north/west elevations, GSU and surrounding trees retain earlier models and substantial real-scene differences.",
+    "The source south photograph includes trees, bicycle racks, notices and older portal details; this bounded facade pass does not claim to reproduce those or add a new public entrance.",
+    "New glass is an opaque exterior representation and does not recreate library interiors; sky reflection is not a live reflection of courtyard trees/buildings.",
+    "Technical geometry and collision tests do not establish final real-scene fidelity. Runtime before/after comparison is required."
+  ],
+  "validation": {
+    "tests": ["tests/bu-sert-facade-detail.test.ts", "tests/bu-link-entry.test.ts", "tests/bu-frontage-glazing.test.ts"],
+    "runtimeReviewDirectory": "output/boston-downtown-20261025/bu/",
+    "runtimeViews": ["03-mugar-south", "04-gsu-front"],
+    "testResult": "3 targeted test files / 14 tests passed on 2026-10-25.",
+    "result": "Desktop before and after technical captures passed at two locked camera positions; mobile after passed at 03-mugar-south. Actual visual inspection confirms the new lower screen and recessed glazing at 03, but upper facades remain simplified. The old 04-gsu-front camera is inside the GSU shell in both before and after and is invalid for exterior visual acceptance. It remains recorded for diagnosis, not as a successful exterior comparison.",
+    "mobileLimit": "Mobile capture runs the mobile resource configuration in desktop Chromium, not an iOS hardware test. Geometry matches desktop, but simplified lighting/reflection produces a flatter result."
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-27",
+  "scope": "Source recovery and bounded geometry reconstruction of 580 Commonwealth Avenue, opposite Questrom. Actual runtime visual review is performed separately by root.",
+  "identity": {
+    "id": "commonwealth-580",
+    "cityObjectId": 1374,
+    "address": "580 Commonwealth Avenue",
+    "verifiedOwner": "Boston University",
+    "sourceAddress": "blank",
+    "sourceOwner": "blank",
+    "reasonPreviouslyOmitted": "The city feature has no address/contact identity. It failed BU-owner/name selection and the old 58 m primary-centroid context distance. Metcalf 1369 is already included farther south-west and cannot substitute for this frontage.",
+    "nearestPreviousPrimary": {
+      "cityObjectId": 1369,
+      "distanceMeters": 81.792,
+      "selectionThresholdMeters": 58
+    }
+  },
+  "sources": [
+    {
+      "url": "https://gis.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2",
+      "local": "../boston-buildings-bu-area.json",
+      "sha256": "9206dbfa8884659f971d0d62f1c7c3794c009cf18873a6527ff459e7497b6e25",
+      "use": "OBJECTID 1374 unchanged georeferenced ground outline; 2010 height used as cross-check only."
+    },
+    {
+      "url": "https://www.bu.edu/community/files/2022/11/2023-2033-BU-CRC-IMPNF.pdf",
+      "local": "../../../output/bu-survey/campus-2023.pdf",
+      "use": "Existing property table, printed page 3-7: 580 Commonwealth 2004, B+11, 116 feet. Main top 35.357 m."
+    },
+    {
+      "url": "https://www.bu.edu/housing/residence/central-campus-graduate-apartments/580-commonwealth-avenue/",
+      "use": "Verified building identity, published exterior and floor 1 / 2–10 / 11 plans; 11 one-bedroom and 209 studio apartments."
+    },
+    {
+      "url": "https://www.bu.edu/housing/files/2021/07/21-1267-HOUSING-094-1200x826.jpg",
+      "local": "bu-housing-exterior.jpg",
+      "bytes": 269090,
+      "sha256": "e84a3e18913b10d04d22b51350e1f5e003390266c34ff689f4fd4706ba43069d",
+      "use": "Local visual/geometric reference only; not bundled as runtime textures; no third-party generation upload."
+    },
+    {
+      "url": "https://www.bu.edu/bridge/archive/2004/10-15/photos/housing.jpg",
+      "local": "bu-bridge-exterior-2004.jpg",
+      "bytes": 34422,
+      "sha256": "50adb4d27b85d924f4d038099b2666fde2d10a0481baacd5cee5fd22d7254127",
+      "use": "Local visual/geometric reference only; not bundled as runtime textures; no third-party generation upload."
+    },
+    {
+      "url": "https://www.bu.edu/housing/files/2022/03/580-Comm-Ave-Floor-1-1-scaled.jpg",
+      "local": "floor-1.jpg",
+      "bytes": 316348,
+      "sha256": "11aa51deda185a47dd434711d39bebbcf2bd34f5e8c8f6279a4c35050d82d56d",
+      "use": "Local visual/geometric reference only; not bundled as runtime textures; no third-party generation upload."
+    },
+    {
+      "url": "https://www.bu.edu/housing/files/2022/03/580-Comm-Ave-Floors-2-10-scaled.jpg",
+      "local": "floor-2-10.jpg",
+      "bytes": 369035,
+      "sha256": "b1e9c2171071fea0246f2f6ea567b71577287220c2cfd5b2ae89f15801755621",
+      "use": "Local visual/geometric reference only; not bundled as runtime textures; no third-party generation upload."
+    },
+    {
+      "url": "https://www.bu.edu/housing/files/2022/03/580-Comm-Ave-Floor-11-scaled.jpg",
+      "local": "floor-11.jpg",
+      "bytes": 389546,
+      "sha256": "9787cc1193fb14d609f402dba8c8ab1aa71df9a8fb936e8e9e1a4d81ec9969f5",
+      "use": "Local visual/geometric reference only; not bundled as runtime textures; no third-party generation upload."
+    }
+  ],
+  "observations": [
+    "Official exterior shows red brick, pale projected bay piers/bands, dark window frames, metal-clad top storey and raised north-west polygonal corner. Warm project palette retained.",
+    "Floor 1 has a broad curved west shop facade; floors 2–10 have a straight west wall, a middle faceted bay and north-west polygonal corner. Extruding the entire GIS footprint to 11 floors would be incorrect.",
+    "Floor 11 removes the two north projected bays and west mid-wall bay, retaining the corner unit.",
+    "The plan north frontage faces the Commonwealth / Questrom side; plan right is west, corroborated by 566 tower to the east (left in street photo)."
+  ],
+  "parameters": {
+    "groundTop": 3.8,
+    "regularApartmentFloors": 9,
+    "apartmentPitch": 3.1,
+    "metalFloorBottom": 31.7,
+    "mainTop": 35.357,
+    "cornerTop": 37.05,
+    "wallThickness": 0.36,
+    "glazingRecess": 0.27,
+    "groundRing": "all 60 City vertices unchanged for footprint/collision/ground slab; curved glazing combines 3 adjacent short survey edges",
+    "upperRing": "City vertices 0–30 plus plan-inferred straight west wall/bay at City vertex 30 frame, then vertices57–59",
+    "topRing": "same upper ring with north bay projections and west middle bay removed",
+    "worldFrameYaw": -0.159
+  },
+  "inferenceLimits": [
+    "Official plans are diagrammatic and undimensioned. Rear small recesses retain City outline; exact upper facade depths and row/pane dimensions are estimated from plans/photos.",
+    "116 feet applies to the published building-height datum. The corner cap is represented 1.693 m above it from exterior proportions, not a surveyed height.",
+    "No occupied interiors are invented; structural floor plates prevent through-building sky/light. Rear apertures follow plan window sides approximately and are not claimed as complete as-built elevations.",
+    "No new street trees, signs, vehicles or unseen roof equipment are inferred.",
+    "566 Commonwealth (City1373) is separately registered as private context; independent source/module owns its geometry.",
+    "Desktop and mobile use the same bounded 580 silhouette/opening geometry; total district mobile budget must be checked after rebake.",
+    "Ground storefronts are bounded shell/frame geometry from the plan and exterior. Exact entrance threshold/steps, retail signage and current tenant fit-out remain uncalibrated; this does not claim completed near-view storefront reconstruction."
+  ],
+  "files": [
+    "src/features/world/bu-580-commonwealth.ts",
+    "src/features/world/bu-full-layout.ts",
+    "scripts/prepare-bu-campus.mjs",
+    "tests/bu-580-commonwealth.test.ts"
+  ],
+  "technicalValidation": {
+    "focusedTests": "6 passed: identity, source envelope, separated floor silhouettes, collision, finite bounds/budget, recessed opening ray, closed floor ray; full/mobile",
+    "typecheck": "tsc --noEmit passed on 2026-10-27",
+    "generator": "Ran generator in memory with all writeFile calls intercepted: 460 records, unchanged bounds, no additional IDs added/removed; both recovered records exactly equal saved layout. Did not overwrite generated layout.",
+    "geometryBudget": {
+      "triangles": 50706,
+      "finishes": 7,
+      "fullMobileSameGeometry": true,
+      "measurement": "Standalone source emitter counts indexed/non-indexed triangles, before campus batching; no browser launched."
+    }
+  },
+  "visualValidation": {
+    "status": "Partial actual-runtime review on 2026-10-27; not final visual acceptance",
+    "before": [
+      "output/bu-streets-20261027/before/06-questrom-opposite.png",
+      "output/bu-streets-20261027/before/07-questrom-block.png",
+      "output/bu-streets-20261027/before/08-metcalf-front.png"
+    ],
+    "reviewed": [
+      "output/bu-streets-20261027/geometry/06-questrom-opposite.png",
+      "output/bu-streets-20261027/geometry/07-questrom-block.png"
+    ],
+    "findings": [
+      "The previously missing 580 frontage is present in the actual desktop scene; twin projected bay strips, north-west corner and upper metal storey are distinct from generic campus blocks.",
+      "The curved shop ground envelope is separated from the upper straight west wall rather than extruded as a tall cylinder.",
+      "Current views are limited. Storefront entry/steps, precise window spacing/frame material and unseen rear elevations remain incomplete. Actual mobile rebake, walking clearance and additional exterior directions are validated separately by the root task.",
+      "Nearby Metcalf still shows generic windows and through-building shadow artifacts; this geometry change is scoped to 580 and must not be presented as full opposing-block realism."
+    ]
+  },
+  "runtimeReview": {
+    "status": "阶段可试玩；完整实景真实感尚未验收通过",
+    "archive": "docs/screenshots/bu-streets-20261027",
+    "normalMaterialViews": "after",
+    "neutralMaterialViews": "neutral",
+    "continuousWalk": "passed",
+    "phoneEmulation": "passed",
+    "actualMobileExport": {
+      "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "version": 1,
+      "campus": "boston",
+      "bytes": 29609576,
+      "triangles": 816040,
+      "meshes": 1174,
+      "visibleMeshes": 245,
+      "textures": 0,
+      "replacementBases": {
+        "version": 1,
+        "source": {
+          "url": "/data/mobile/boston.glb",
+          "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "bytes": 29609576
+        },
+        "stata": {
+          "version": 1,
+          "url": "/assets/mit-stata/boston-without-stata.glb",
+          "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "bytes": 29946188,
+          "inputUrl": "/data/mobile/boston.glb",
+          "inputSHA256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+          "inputBytes": 29609576,
+          "removedTriangles": 1811
+        },
+        "residences": {
+          "version": 1,
+          "url": "/assets/mit-residences/boston-without-residences.glb",
+          "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+          "bytes": 30272616,
+          "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+          "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+          "inputBytes": 29946188,
+          "removedTriangles": 979
+        }
+      }
+    },
+    "visualLimit": "580窗/板比例及石带仍简化；566分户及底层窗列概括；560玻璃偏均匀。前场铺装、站台设施和相邻旧楼漏光尚待完善。"
+  }
+}

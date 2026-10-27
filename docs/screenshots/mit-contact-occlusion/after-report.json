@@ -1,0 +1,444 @@
+{
+  "phase": "campus-contact-after",
+  "mobile": false,
+  "postProcessing": true,
+  "capturedAt": "2026-10-26T04:24:07.846Z",
+  "kind": "Actual world asset loader and selected game rendering path with Boston daylight; fixed inspection camera without player HUD, not a complete gameplay check.",
+  "settings": {
+    "width": 1600,
+    "height": 1000,
+    "pixelRatio": 1,
+    "exposure": 1,
+    "background": "#c5d9d5",
+    "fog": [
+      180,
+      2600
+    ],
+    "shadowCamera": {
+      "left": -95,
+      "right": 95,
+      "top": 95,
+      "bottom": -95,
+      "near": 1,
+      "far": 390
+    }
+  },
+  "sources": {
+    "src/features/world/scene-assets.ts": "8e7b2407776b14b6cebc65a6ff62b399301cb0c23603b1954013900bb51615d0",
+    "src/features/world/scene-assets-desktop.ts": "2258b5fb9a8cf8e1dc7f980b71d73a4f5e2d52f4c17312ab6771c9d7b3196531",
+    "src/features/world/painterly-surfaces.ts": "da354f757cbf872e2844a81ada283654b1e896f1127455f0c6c00387e5a85b26",
+    "src/features/world/campus-daylight.ts": "78f3a78a70de3cb41f8c0be9e51a869c1a60185e9954e972bdb50059d2e517ad",
+    "src/features/world/mit-poetic-materials.ts": "8a85af0e2828beebe27d423fcfcf198bbd036b53b4ce46a8ec566973f33ac732",
+    "src/features/world/mit-main-building-detail.ts": "0891fbeb6da59f376a84df5b0ce3f091abaa56a73349489fa639c3a9d1a507b5",
+    "src/features/world/mit-glass-reflection.ts": "48d8b18ba7395d3eaa44cf1b68ee6cec0191b43f51590edd4d782e98bbe266c3",
+    "src/features/world/mit-scene-renderer.ts": "6e20608dc89849b4a9174974bcd5d311310029d34863c1e8608f18cdd2b32543",
+    "src/features/world/mobile-campus.ts": "428059754a386765c834de70346a29bf78144f01c8dc6737967ecff93dbd8a3b",
+    "public/data/killian/detail.glb": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d",
+    "public/data/killian/detail-manifest.json": "9dc267e9b00a5acccf4ef112a4c036d8e606b6623ebcd3b17cd856629cc601d8",
+    "public/data/killian/mobile-portico.glb": "f781e568ff513f813bd20cbc8467e3b5c20a714704f4789b983440451f344c43"
+  },
+  "excludedViews": [
+    {
+      "id": "04-court-oblique",
+      "reason": "Original camera was blocked by a side-wing facade; retained in camera lock for history only, excluded from acceptance and presentation."
+    }
+  ],
+  "supplementalFrames": [
+    {
+      "id": "06-court-walk-oblique",
+      "title": "庭院内步行斜视（本轮补充，无修改前同机位）",
+      "eye": [
+        2.42,
+        7,
+        14.31
+      ],
+      "target": [
+        5,
+        22,
+        -45
+      ],
+      "fov": 70,
+      "wholeDome": true,
+      "supplemental": true
+    },
+    {
+      "id": "07-capitals-close",
+      "title": "柱头实体与梁底近景（本轮补充，无修改前同机位）",
+      "eye": [
+        16.6,
+        7,
+        -26.6
+      ],
+      "target": [
+        12.9,
+        19.3,
+        -34.6
+      ],
+      "fov": 45,
+      "supplemental": true
+    }
+  ],
+  "frames": [
+    {
+      "id": "01-court-front",
+      "title": "主楼与 Killian Court 全景",
+      "eye": [
+        65.7,
+        8,
+        79.8
+      ],
+      "target": [
+        5,
+        21,
+        -51
+      ],
+      "fov": 52,
+      "wholeDome": true,
+      "calls": 291,
+      "triangles": 3061995,
+      "geometryCount": 130,
+      "textureCount": 50,
+      "groundHeight": 3.961891682228927,
+      "crownProjectionBounds": {
+        "min": [
+          -0.2074531593150839,
+          0.023312898703454082,
+          0.9983109569422658
+        ],
+        "max": [
+          0.19374889158821118,
+          0.3999716287385211,
+          0.9987936152944829
+        ]
+      }
+    },
+    {
+      "id": "02-portico-front",
+      "title": "主立面与穹顶",
+      "eye": [
+        37.2,
+        6.5,
+        18.1
+      ],
+      "target": [
+        8,
+        23,
+        -45
+      ],
+      "fov": 68,
+      "wholeDome": true,
+      "calls": 294,
+      "triangles": 3130263,
+      "geometryCount": 132,
+      "textureCount": 50,
+      "groundHeight": 3.915925821911925,
+      "crownProjectionBounds": {
+        "min": [
+          -0.26730728431092377,
+          -0.09277377775870173,
+          0.9966875269021105
+        ],
+        "max": [
+          0.2274126722312565,
+          0.4718961648544392,
+          0.9981438452290685
+        ]
+      }
+    },
+    {
+      "id": "03-portico-walk",
+      "title": "柱廊步行视高近景",
+      "eye": [
+        18.77,
+        6.6,
+        -21.87
+      ],
+      "target": [
+        11,
+        13,
+        -38
+      ],
+      "fov": 73,
+      "calls": 273,
+      "triangles": 2918152,
+      "geometryCount": 132,
+      "textureCount": 50,
+      "groundHeight": 4.221930836179633,
+      "crownProjectionBounds": {
+        "min": [
+          -0.45685950144997634,
+          -0.10627853215410502,
+          0.991957506443129
+        ],
+        "max": [
+          0.3621099012685532,
+          1.1256838949680137,
+          0.9972232794712712
+        ]
+      }
+    },
+    {
+      "id": "05-dome-elevated",
+      "title": "穹顶及主楼屋面层次",
+      "eye": [
+        83,
+        57,
+        33
+      ],
+      "target": [
+        1,
+        29,
+        -58
+      ],
+      "fov": 52,
+      "wholeDome": true,
+      "calls": 250,
+      "triangles": 2863303,
+      "geometryCount": 132,
+      "textureCount": 50,
+      "groundHeight": 4.304503999737573,
+      "crownProjectionBounds": {
+        "min": [
+          -0.22958600416391814,
+          -0.11404781986951944,
+          0.9977411116304862
+        ],
+        "max": [
+          0.3028551179412211,
+          0.34181794933040144,
+          0.9985658522879618
+        ]
+      }
+    },
+    {
+      "id": "06-court-walk-oblique",
+      "title": "庭院内步行斜视（本轮补充，无修改前同机位）",
+      "eye": [
+        2.42,
+        7,
+        14.31
+      ],
+      "target": [
+        5,
+        22,
+        -45
+      ],
+      "fov": 70,
+      "wholeDome": true,
+      "supplemental": true,
+      "calls": 298,
+      "triangles": 3075683,
+      "geometryCount": 133,
+      "textureCount": 50,
+      "groundHeight": 4.310261809441731,
+      "crownProjectionBounds": {
+        "min": [
+          -0.36259064130170604,
+          -0.07446291262306315,
+          0.9963222842071778
+        ],
+        "max": [
+          0.1647583049755776,
+          0.5015575138115985,
+          0.9978350052813151
+        ]
+      }
+    },
+    {
+      "id": "07-capitals-close",
+      "title": "柱头实体与梁底近景（本轮补充，无修改前同机位）",
+      "eye": [
+        16.6,
+        7,
+        -26.6
+      ],
+      "target": [
+        12.9,
+        19.3,
+        -34.6
+      ],
+      "fov": 45,
+      "supplemental": true,
+      "calls": 192,
+      "triangles": 2427794,
+      "geometryCount": 133,
+      "textureCount": 50,
+      "groundHeight": 4.192254059096186,
+      "crownProjectionBounds": {
+        "min": [
+          -1.0318102350302951,
+          -1.9138303130588987,
+          0.9913008359213177
+        ],
+        "max": [
+          0.8134371874295376,
+          0.4427797883136036,
+          0.9968017874994531
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "loaded": {
+    "light": {
+      "sky": "#c2d8f2",
+      "ground": "#b6b5a3",
+      "ambient": 1.75,
+      "sun": "#fff3d9",
+      "intensity": 2.65,
+      "offset": [
+        -95,
+        115,
+        135
+      ]
+    },
+    "userData": {
+      "mitMainBuildingDetail": {
+        "version": 2,
+        "columns": 10,
+        "drumRibs": 128,
+        "drumGuttae": 320,
+        "wreaths": 2,
+        "wreathLeaves": 56,
+        "doorHeads": 3,
+        "doorHeadFinials": 9,
+        "batches": 7,
+        "triangles": 29680,
+        "visibleTriangles": 29680,
+        "lowQuality": false,
+        "source": "portico-study.json; maclaurin-front.webp; maclaurin-oblique.webp",
+        "scope": "Solid Ionic bolsters, drum relief, two frieze wreaths and three projecting door heads; small dimensions and ornament silhouettes photo-estimated"
+      },
+      "bakerReplacedSurveyPlanterTriangles": 180,
+      "mitUnderpassConcreteTriangles": 24,
+      "stataReplacement": {
+        "status": "loaded",
+        "url": "/assets/mit-stata/stata-full.glb",
+        "baseUrl": "/assets/mit-residences/campus-without-residences.glb",
+        "bytes": 18778304
+      },
+      "mitResidenceReplacement": {
+        "status": "loaded",
+        "buildings": [
+          "baker",
+          "maseeh"
+        ],
+        "bytes": 15041308
+      },
+      "cdsReplacement": {
+        "status": "loaded",
+        "url": "/assets/bu-cds/cds-full.glb",
+        "bytes": 5283612
+      },
+      "questromReplacement": {
+        "status": "loaded",
+        "url": "/assets/bu-questrom/questrom-full.glb",
+        "bytes": 9302072,
+        "retainedGroundMeshes": 4
+      },
+      "mitGlassReflection": {
+        "resolution": 128,
+        "captureFar": 220,
+        "position": [
+          20,
+          12,
+          -20
+        ],
+        "captures": 0,
+        "materials": 3,
+        "allocated": false,
+        "error": null,
+        "mode": "static courtyard scene probe; desktop only"
+      },
+      "mitArtDirection": {
+        "version": "poetic-campus-real-detail-v2",
+        "palette": "existing warm stone / green landscape; photo-informed warm-grey muntins",
+        "scope": "Building 10 and courtyard-facing architectural surfaces; real detail takes precedence",
+        "sourceGeometry": "public/data/killian/detail.glb"
+      }
+    }
+  },
+  "finalUserData": {
+    "mitMainBuildingDetail": {
+      "version": 2,
+      "columns": 10,
+      "drumRibs": 128,
+      "drumGuttae": 320,
+      "wreaths": 2,
+      "wreathLeaves": 56,
+      "doorHeads": 3,
+      "doorHeadFinials": 9,
+      "batches": 7,
+      "triangles": 29680,
+      "visibleTriangles": 29680,
+      "lowQuality": false,
+      "source": "portico-study.json; maclaurin-front.webp; maclaurin-oblique.webp",
+      "scope": "Solid Ionic bolsters, drum relief, two frieze wreaths and three projecting door heads; small dimensions and ornament silhouettes photo-estimated"
+    },
+    "bakerReplacedSurveyPlanterTriangles": 180,
+    "mitUnderpassConcreteTriangles": 24,
+    "stataReplacement": {
+      "status": "loaded",
+      "url": "/assets/mit-stata/stata-full.glb",
+      "baseUrl": "/assets/mit-residences/campus-without-residences.glb",
+      "bytes": 18778304
+    },
+    "mitResidenceReplacement": {
+      "status": "loaded",
+      "buildings": [
+        "baker",
+        "maseeh"
+      ],
+      "bytes": 15041308
+    },
+    "cdsReplacement": {
+      "status": "loaded",
+      "url": "/assets/bu-cds/cds-full.glb",
+      "bytes": 5283612
+    },
+    "questromReplacement": {
+      "status": "loaded",
+      "url": "/assets/bu-questrom/questrom-full.glb",
+      "bytes": 9302072,
+      "retainedGroundMeshes": 4
+    },
+    "mitGlassReflection": {
+      "resolution": 128,
+      "captureFar": 220,
+      "position": [
+        20,
+        12,
+        -20
+      ],
+      "captures": 1,
+      "materials": 3,
+      "allocated": true,
+      "error": null,
+      "mode": "static courtyard scene probe; desktop only"
+    },
+    "mitArtDirection": {
+      "version": "poetic-campus-real-detail-v2",
+      "palette": "existing warm stone / green landscape; photo-informed warm-grey muntins",
+      "scope": "Building 10 and courtyard-facing architectural surfaces; real detail takes precedence",
+      "sourceGeometry": "public/data/killian/detail.glb"
+    }
+  },
+  "rendering": {
+    "version": 1,
+    "enabled": true,
+    "allocated": true,
+    "width": 1040,
+    "height": 650,
+    "radiusMetres": 0.65,
+    "strength": 0.38,
+    "samples": 16,
+    "excludedMeshes": 44,
+    "frames": 18,
+    "occlusionFrames": 18,
+    "calls": 192,
+    "triangles": 2427794,
+    "error": null,
+    "method": "bounded-resolution GTAO with display-space contact multiply; no GI"
+  },
+  "status": "passed"
+}

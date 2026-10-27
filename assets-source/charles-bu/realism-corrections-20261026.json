@@ -1,0 +1,280 @@
+{
+  "assetId": "bu-realism-corrections-20261026",
+  "date": "2026-10-26",
+  "status": "阶段可试玩；尚未通过完整实景真实感验收",
+  "scope": [
+    "Warren 上部三塔形体与四向窗带",
+    "Mugar 西块南侧上部立面",
+    "GSU 面向 Link 的中层砖墙与底层窗墙",
+    "West Dining/Claflin/Sleeper 重复外壳装配",
+    "Claflin/Sleeper 楼板及三栋楼实际手机导出",
+    "精修建筑等待天空加载后捕获环境反射"
+  ],
+  "workTypes": [
+    "局部形体重建",
+    "窗洞与构件补全",
+    "重复装配修复",
+    "运行时反射加载修复"
+  ],
+  "sourceRecords": [
+    "warren-tower-reconstruction-20261026.json",
+    "sert-photo-facades-20261026.json",
+    "west-dining-separation-20261026.json",
+    "west-residence-floor-slabs-20261026.json"
+  ],
+  "editableMaster": "有参数、参考来源和测试的现有程序化源；本轮没有创建 Blender 母版，也不宣称整座建筑完成重建。",
+  "sources": {
+    "src/features/world/bu-full-campus.ts": "67012dd909a66ccdd843c253da0498a16386bec19b83a7b5aa89657fb46db8ed",
+    "src/features/world/bu-full-layout.ts": "9b947a1c32033f1e41e608745d98e79127a833db48e3a669b0d388c4db0310bf",
+    "src/features/world/bu-terrain.ts": "54788c79d4d33c986fa2242bf8c52e7f0e73468171648fb9d0f727408e047005",
+    "src/features/world/bu-warren-tower-layout.ts": "f7a8c3d3f10845a8661f032b95a8d44f49f177d95c6862578e761955cdb8be0d",
+    "src/features/world/bu-sert-photo-facades.ts": "a9916c2aecec29946dcb0fcf2342f65ddb8cb584735954ab6852908bdc04e4da",
+    "src/features/world/bu-refined-building-asset.ts": "d205030fda1749b783b13225f8572400e58a438a8bdc4c30706ac4bcf9213e0c",
+    "src/features/world/painterly-sky.ts": "59b24bdd3dcd7355ab1747886dbb79631cf73fb277268b85d76ffb64e4fe3b5a",
+    "src/features/world/mobile-campus-build.ts": "eae8a48935c6dce2c7e5c8627ca7cf00d78724b8d28f69728c346fb92e32d8f2",
+    "scripts/prepare-bu-campus.mjs": "d5262f62c3ef6e40598f4b8dcd36466036f85ef1385e1e1501ff4f62be836ea8",
+    "scripts/prepare-mobile-campus.mjs": "f83a385f279f1658810d5f31ce1fab8b2edcc730c9b98c2d233077457fef8829",
+    "scripts/capture-bu-comm-ave.mjs": "e2ad0b0bbde91b09ff6d2648ba4cef115712416337414b356ce5c127ec6a42e9",
+    "scripts/check-bu-continuous.mjs": "54361c09a5946164db6d784534cdbf0262e5869abafed65481ea882f27e8b75f",
+    "scripts/check-bu-playable.mjs": "4146f1438018d380a419cbe488af06ecbe9c96c574ae50ffbaef178691164d71",
+    "public/data/mobile/boston.glb": "23582ad787b07806d4dc1fae79dc6ccdb9157836a8adb9a5a1e86e8722531764",
+    "public/data/mobile/boston.json": "2f90ec25dc5d6cf889ed27a4df1a7dc8e48463b882e4db54df86995aa0dcb8dc"
+  },
+  "referencePdf": {
+    "url": "https://www.bu.edu/community/files/2024/02/Warren-Towers-EPNF.pdf",
+    "sha256": "1a7c1b5df43c82722ec1a937435509f4c2425af5d6a1981d81069542cf84d866",
+    "preservedPages": [
+      22,
+      23,
+      40
+    ],
+    "rights": "BU/MDS 公开建筑研究资料，仅保留本地对照；未用于游戏纹理，不声明开放再分发授权。",
+    "dateLimit": "采用2022–2023现状；提案中的新金属饰面未作为现状建模。"
+  },
+  "comparison": {
+    "sameCameraPairs": [
+      "02-link-entry",
+      "03-mugar-south",
+      "05-warren-front",
+      "06-warren-entry"
+    ],
+    "lighting": "BOSTON_DAYLIGHT; fixed against original before/report.json",
+    "sourcePhotos": "实景与模型为近似朝向，非相同相机/季节；真实照片没有经过编辑。",
+    "supplemental": [
+      "overview/09-warren-towers.png",
+      "after/10-claflin-window.png",
+      "after/11-west-residence-link.png",
+      "after/12-gsu-link-side.png"
+    ],
+    "excluded": [
+      {
+        "id": "output/bu-reality-20261026/before/04-gsu-front",
+        "reason": "历史机位位于GSU壳内，不能作外立面验收。"
+      },
+      {
+        "id": "output/bu-reality-20261026/after/09-warren-towers",
+        "reason": "初次补充机位被CAS内部遮挡；final/09改用已验证街道位置。归档after图均来自final复验。"
+      }
+    ],
+    "distinction": "before/after/overview 是真实运行时资产加载器的固定机位检查；continuous/mobile 是完整游戏HUD、人物与交互检查。"
+  },
+  "technical": {
+    "focusedTests": {
+      "files": 14,
+      "passed": 83,
+      "command": "npx vitest run <14 related BU suites>",
+      "exitCode": 0
+    },
+    "mobileExportTests": {
+      "files": 3,
+      "passed": 13,
+      "suites": [
+        "bu-west-mobile-export",
+        "bu-cds-mobile",
+        "bu-questrom-mobile"
+      ],
+      "exitCode": 0
+    },
+    "floorSlabTests": "See west-residence-floor-slabs-20261026.json for final targeted checks after adding floor occlusion.",
+    "productionBuild": {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "warning": "Existing large output chunks remain."
+    },
+    "continuous": {
+      "status": "passed",
+      "route": [
+        "GSU",
+        "Mugar",
+        "Marsh",
+        "Warren",
+        "CDS",
+        "Questrom"
+      ],
+      "method": "仅起点地图传送一次，后续鼠标旋转与W/Shift连续行走；没有在各段之间传送。"
+    },
+    "mobile": {
+      "status": "passed",
+      "checks": [
+        "legacy Boston save and other-campus history retained",
+        "old checkpoint inside Warren Towers moves to a safe arrival",
+        "district selection, building search and empty state work",
+        "CDS door entry records the visit and returns to the campus",
+        "all 29 BU destinations load and can be recorded",
+        "direction-pad movement works on West Campus",
+        "BU supports opting into HD after mobile entry",
+        "shared Link arrival renders its brick paving and concrete in mobile HD",
+        "CDS street-level glazing and Bay State entrances render after the HD switch",
+        "new BU visits survive refresh",
+        "mobile reload safely starts in low quality",
+        "mobile map fits the viewport"
+      ],
+      "device": "Chrome mobile emulation 390x844 DPR3; not physical phone"
+    },
+    "reflection": {
+      "status": "passed",
+      "report": "docs/screenshots/bu-reality-20261026/reflections/report.json"
+    }
+  },
+  "resources": {
+    "mobileExport": {
+      "version": 1,
+      "campus": "boston",
+      "bytes": 25723232,
+      "triangles": 696841,
+      "meshes": 1155,
+      "visibleMeshes": 229,
+      "textures": 0
+    },
+    "priorMobileExport": {
+      "bytes": 24733396,
+      "triangles": 670231
+    },
+    "increase": {
+      "bytes": 989836,
+      "triangles": 26610
+    },
+    "fullRuntimeViews": [
+      {
+        "id": "01-gsu-street",
+        "triangles": 8359190,
+        "drawCalls": 1800
+      },
+      {
+        "id": "02-link-entry",
+        "triangles": 832399,
+        "drawCalls": 156
+      },
+      {
+        "id": "03-mugar-south",
+        "triangles": 550359,
+        "drawCalls": 115
+      },
+      {
+        "id": "05-warren-front",
+        "triangles": 2270167,
+        "drawCalls": 333
+      },
+      {
+        "id": "06-warren-entry",
+        "triangles": 2404157,
+        "drawCalls": 342
+      },
+      {
+        "id": "07-link-oblique",
+        "triangles": 2269643,
+        "drawCalls": 329
+      },
+      {
+        "id": "08-cas-walk",
+        "triangles": 3397001,
+        "drawCalls": 836
+      },
+      {
+        "id": "10-claflin-window",
+        "triangles": 585053,
+        "drawCalls": 141
+      },
+      {
+        "id": "11-west-residence-link",
+        "triangles": 731166,
+        "drawCalls": 174
+      },
+      {
+        "id": "12-gsu-link-side",
+        "triangles": 2090541,
+        "drawCalls": 562
+      }
+    ],
+    "overview": [
+      {
+        "id": "09-warren-towers",
+        "triangles": 4831819,
+        "drawCalls": 670
+      }
+    ],
+    "mobileDifference": "Warren和Mugar本轮开口保留；Warren细小内窗框低档简化为平面。Claflin/Sleeper/West Dining改为专属低档源，保留楼板和材质分区；低档仍关闭动态阴影，部分次要窗扇/饰边简化。",
+    "timing": "本轮未采集足以证明60/30 FPS达标的真机帧时间序列；不作性能达标承诺。"
+  },
+  "gates": {
+    "G0": {
+      "status": "bounded evidence recorded",
+      "note": "官方规划现状照片/图纸、BU照片和城市原始轮廓已保留；精确窗框和未覆盖朝向仍有未知。"
+    },
+    "G1": {
+      "status": "partial",
+      "note": "修正Warren长宽/排列/窗带和西校区重复壳；其余立面及基座仍需重校，完整中性材质多角度验收未完成。"
+    },
+    "G2": {
+      "status": "partial",
+      "note": "真实开口和框体进深通过射线及游戏画面检查；两座西区塔楼补楼板以阻止贯穿漏光。混凝土骨料、玻璃层次、局部饰面仍有差距。"
+    },
+    "G3": {
+      "status": "bounded runtime checks passed",
+      "note": "本轮接入完整游戏，中央校区连续步行和移动模拟目的地/交互/画质切换通过。截图不代表整座校园实景验收。"
+    },
+    "G4": {
+      "status": "partial",
+      "note": "可复现源、GLB及hash、分级差异和截图归档齐备；真机性能与完整视觉质量待继续。"
+    }
+  },
+  "remaining": [
+    "Warren基座层高/退界、材质尺度、设备与局部窗框仍需实景精修。",
+    "Mugar其他立面、GSU顶部和其他朝向仍有通用窗格。",
+    "West宿舍和餐厅仍是旧近似立面，本轮仅修重复装配。",
+    "草地/步道、植被位置及高楼近景阴影仍需进一步实景对照。",
+    "移动真机待验证；本地改动未发布线上。"
+  ],
+  "evidenceFiles": {
+    "docs/screenshots/bu-reality-20261026/before/report.json": "3881abc88a8d92da611ac2e08b32db1846f2bc35248b1427baba9c42945b7caa",
+    "docs/screenshots/bu-reality-20261026/before/02-link-entry.png": "9c457f6065afa96c995990edacf315ca0a4a0ff83c36dae0a186d916673152b4",
+    "docs/screenshots/bu-reality-20261026/before/03-mugar-south.png": "ff6a43b4cf35b5a7a89dc48f33706c3aa18305024dc9bcc43c152eff1bd9f1d5",
+    "docs/screenshots/bu-reality-20261026/before/05-warren-front.png": "e57e66e045c22d7e3a47068e6b8c881fd8143b099c0c23c2ee74f82ca8f98329",
+    "docs/screenshots/bu-reality-20261026/before/06-warren-entry.png": "6795290aa50ed261c95b36796478f6af948bef387796196caf4a419b87ba3c50",
+    "docs/screenshots/bu-reality-20261026/after/report.json": "96f6c7110d303c9b0d7515281b654153f4983aa185499e9dff877ad8a270316e",
+    "docs/screenshots/bu-reality-20261026/after/02-link-entry.png": "cb005506c62ef663335b62153b14c2e5704bcf726d80f4858e85ea074a861a5f",
+    "docs/screenshots/bu-reality-20261026/after/03-mugar-south.png": "7ccd38cdfbcef0da08f82b0664d0bf53050d7d1a06a2644cb14b4a7a9150f4e8",
+    "docs/screenshots/bu-reality-20261026/after/05-warren-front.png": "bd7e9c5b41e3b55ea9f8e95a09426a8d1dce02f52b41c23395b2503bf487008c",
+    "docs/screenshots/bu-reality-20261026/after/06-warren-entry.png": "af235ba9161f64f25cb93d5bbd7bd9d02bd279e95c35ee81de50cbdfdcd667c8",
+    "docs/screenshots/bu-reality-20261026/after/10-claflin-window.png": "13836786fa8aac6b4918377a2632a4fe360d1f79b6210b7889aa40b0e25c2955",
+    "docs/screenshots/bu-reality-20261026/after/11-west-residence-link.png": "3553d5e1ccc59057eea391aec1169d137bc0143afb0e09409326b10879af1c5b",
+    "docs/screenshots/bu-reality-20261026/after/12-gsu-link-side.png": "8ef8063765179344a7b2a025a6708eb6b27dac052a9737d3f6cd3e449fe844df",
+    "docs/screenshots/bu-reality-20261026/shadow-before/11-west-residence-link.png": "a010d7fcce902c2c9eb088e0e3d84363dcdf824088ed60699e20b8c9c8fc38ea",
+    "docs/screenshots/bu-reality-20261026/overview/report.json": "96f6c7110d303c9b0d7515281b654153f4983aa185499e9dff877ad8a270316e",
+    "docs/screenshots/bu-reality-20261026/overview/09-warren-towers.png": "e1cce55332d62e14266f9b760db827566072ea9d3a72c936dc16faaeaf35f1a0",
+    "docs/screenshots/bu-reality-20261026/continuous/report.json": "79fb1d4c0e5669707a907e7cc275de345f7129fdecc0dbc9b411e10b090cf169",
+    "docs/screenshots/bu-reality-20261026/continuous/00-gsu.png": "67ef5f671521fadee81a05917fa99a47acd0df521b0dc10f51ee36315ef240de",
+    "docs/screenshots/bu-reality-20261026/continuous/01-bu-mugar.png": "b7c6f4ad99dc76cd74a8eefc4e79e4e4ea5d843bf6ae4b3f7a62266454acc597",
+    "docs/screenshots/bu-reality-20261026/continuous/03-bu-warren.png": "5420acd53900a10cd63f1d25d7841cfe7f10296583225ffc5c927f9bac9677e6",
+    "docs/screenshots/bu-reality-20261026/continuous/05-bu-questrom.png": "9089b5fc1d9cea255932679b5d4e852d7a2b676d96b4bdba65625eeb7b370666",
+    "docs/screenshots/bu-reality-20261026/mobile/report.json": "94812c82a800f313b50b4a7cba3bf77b9f68f09ba43668d5c892bcf8130008cf",
+    "docs/screenshots/bu-reality-20261026/mobile/bu-warren.png": "b3e0fcaed1f2f535960c7785c5c1bc85cd4eddc978908973eea3b9c985fc10e4",
+    "docs/screenshots/bu-reality-20261026/mobile/bu-nickerson.png": "7fdf1860a4b9f256a1448cfdd4eaf072c598935ab7dee94c288b0df1ca8f4b23",
+    "docs/screenshots/bu-reality-20261026/mobile/mobile-gsu-link-hd.png": "932adad6e363b7e48f527bdfdcbb3c7bd9a9f35c92bbe757f95459d3f4b147a9",
+    "docs/screenshots/bu-reality-20261026/mobile/mobile-bu-hd.png": "9047f8ec273410944369054ada885eb7569c05704c163de0def5069124f8c3e2",
+    "assets-source/charles-bu/references/warren-20261026/warren-existing-aerial-p22.png": "3003db22fb658701cb1286e328fa44a8e3c5f2f0905c922c57ff1ce4c1ccbe91",
+    "assets-source/charles-bu/references/warren-20261026/warren-existing-photos-p23.png": "52815756acc1a115e489ed88c27233fee6d42224b2cafc44d1d6c742be2e479c",
+    "assets-source/charles-bu/references/warren-20261026/warren-roof-plan-p40.png": "a658dade93821f20ead35296986434bf46f465eec588cc4e37885ee8d272ea91",
+    "docs/screenshots/bu-reality-20261026/reflections/report.json": "3fe03d5d8842d6490e979df75f47c175a931326b281de50d986a82cf1508c885"
+  }
+}

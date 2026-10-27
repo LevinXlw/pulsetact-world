@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-10-27T04:24:53.096Z",
+  "kind": "CPU runtime-loader regression; no browser or visual acceptance",
+  "command": "npm test -- --run tests/mobile-campus-selected-base.test.ts",
+  "result": "4 tests failed before synchronizing stale derivative files",
+  "failures": [
+    "Runtime-selected residence base binary differs from current Boston bake",
+    "Source SHA chain is not present",
+    "Bank fascia is absent after actual mobile runtime assembly",
+    "Stata-only fallback base binary also differs from current Boston bake"
+  ],
+  "independentChecks": {
+    "typecheck": "passed",
+    "mitReplacementAndMobileParser": "27 tests passed"
+  }
+}

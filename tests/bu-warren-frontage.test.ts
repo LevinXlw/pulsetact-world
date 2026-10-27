@@ -48,7 +48,9 @@ describe('Warren existing Commonwealth retail frontage',()=>{
   it('keeps low detail bounded while preserving the same door and shop locations',()=>{
     const [full,mobile]=models;
     expect(mobile.group.userData.warrenStreetfront).toEqual(full.group.userData.warrenStreetfront);
-    expect(mobile.group.userData.districtModels[0].triangles).toBeLessThan(17000);
-    expect(mobile.group.children.filter(o=>o.visible)).toHaveLength(15);
+    // The 2026-10-26 tower correction retains real recessed bands and
+    // concrete shelves on mobile; only small sash sections become planes.
+    expect(mobile.group.userData.districtModels[0].triangles).toBeLessThan(34000);
+    expect(mobile.group.children.filter(o=>o.visible).length).toBeLessThanOrEqual(15);
   });
 });

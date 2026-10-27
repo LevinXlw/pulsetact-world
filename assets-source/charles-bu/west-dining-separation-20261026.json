@@ -1,0 +1,217 @@
+{
+  "assetId": "bu-west-dining-separation",
+  "date": "2026-10-26",
+  "scope": "Assembly correction of West Dining / Claflin Hall / Sleeper Hall, not an architectural reconstruction or material change",
+  "source": {
+    "cityObjectId": 124707,
+    "originalExtract": "assets-source/charles-bu/boston-buildings-bu-area.json",
+    "generator": "scripts/prepare-bu-campus.mjs",
+    "layout": "src/features/world/bu-full-layout.ts",
+    "campusMap": "https://www.bu.edu/commencement/files/2025/05/CMCT_RedBook2025_Final.pdf",
+    "coordinates": "Existing shared metre frame; x east, y up, z south"
+  },
+  "problem": "The original combined 6.2 m dining shell remained across both independently generated tower footprints, covering lobby glass and creating coplanar masonry.",
+  "partition": {
+    "dining": "original[0:11] + original[25:55] + original[70:]",
+    "claflin": "original[10:26]; original tower placement, height and all outer City vertices retained",
+    "sleeper": "original[54:71], unchanged",
+    "claflinJoinCorrection": "The old closing chord from index 25 to 11 crossed a narrow wedge outside the original ring. Including the existing neck vertex 10 makes the two component closing edges internal, with no translated or invented GIS point.",
+    "terrain": "Dining terrainReference stores its prior combined footprint and anchor. Terrain observations/pads and dining foundation keep that reference; rendering/collision/map use the separated footprint."
+  },
+  "originalFootprintSha256": "9ed269583cb33edbf71d09495c327ec59414e34749ab3446b0d93727bc130997",
+  "originalAnchor": [
+    -2315.878,
+    726.346
+  ],
+  "originalBounds": {
+    "width": 125.343,
+    "depth": 52.342,
+    "yaw": -0.609
+  },
+  "terrainChecks": [
+    {
+      "x": -2420,
+      "z": 660,
+      "height": 5.2
+    },
+    {
+      "x": -2420,
+      "z": 710,
+      "height": 5.2
+    },
+    {
+      "x": -2420,
+      "z": 760,
+      "height": 5.199999999999999
+    },
+    {
+      "x": -2420,
+      "z": 810,
+      "height": 5.199999999999999
+    },
+    {
+      "x": -2420,
+      "z": 860,
+      "height": 12.887058649870346
+    },
+    {
+      "x": -2420,
+      "z": 910,
+      "height": 13.350954284175751
+    },
+    {
+      "x": -2370,
+      "z": 660,
+      "height": 5.200000000000001
+    },
+    {
+      "x": -2370,
+      "z": 710,
+      "height": 5.2
+    },
+    {
+      "x": -2370,
+      "z": 760,
+      "height": 5.200000411481662
+    },
+    {
+      "x": -2370,
+      "z": 810,
+      "height": 5.200000738057788
+    },
+    {
+      "x": -2370,
+      "z": 860,
+      "height": 12.935765051245108
+    },
+    {
+      "x": -2370,
+      "z": 910,
+      "height": 13.467812042420148
+    },
+    {
+      "x": -2320,
+      "z": 660,
+      "height": 5.2
+    },
+    {
+      "x": -2320,
+      "z": 710,
+      "height": 5.2
+    },
+    {
+      "x": -2320,
+      "z": 760,
+      "height": 5.2022549423034565
+    },
+    {
+      "x": -2320,
+      "z": 810,
+      "height": 5.206732359417397
+    },
+    {
+      "x": -2320,
+      "z": 860,
+      "height": 12.667429288821719
+    },
+    {
+      "x": -2320,
+      "z": 910,
+      "height": 13.258607154855794
+    },
+    {
+      "x": -2270,
+      "z": 660,
+      "height": 5.200000000000001
+    },
+    {
+      "x": -2270,
+      "z": 710,
+      "height": 5.2
+    },
+    {
+      "x": -2270,
+      "z": 760,
+      "height": 5.261700480344477
+    },
+    {
+      "x": -2270,
+      "z": 810,
+      "height": 5.381183113401035
+    },
+    {
+      "x": -2270,
+      "z": 860,
+      "height": 12.385577950208717
+    },
+    {
+      "x": -2270,
+      "z": 910,
+      "height": 13.020926760872495
+    },
+    {
+      "x": -2220,
+      "z": 660,
+      "height": 5.2
+    },
+    {
+      "x": -2220,
+      "z": 710,
+      "height": 5.199999999999999
+    },
+    {
+      "x": -2220,
+      "z": 760,
+      "height": 5.700071613513328
+    },
+    {
+      "x": -2220,
+      "z": 810,
+      "height": 6.021507773067093
+    },
+    {
+      "x": -2220,
+      "z": 860,
+      "height": 10.607115198826785
+    },
+    {
+      "x": -2220,
+      "z": 910,
+      "height": 12.764482842401865
+    }
+  ],
+  "towerChecks": [
+    {
+      "id": "claflin-hall",
+      "footprintSha256": "3c3d257d4df8d0c0ac5c1441c71a3fe00359efbb9310dab450a3ca032d4a50c2",
+      "x": -2287.371,
+      "z": 744.212,
+      "width": 52.993,
+      "depth": 27.86,
+      "yaw": -0.158,
+      "height": 43.79,
+      "foundation": 5.2266859056282415
+    },
+    {
+      "id": "sleeper-hall",
+      "footprintSha256": "08c11f3b9ec7627280a593acdc274312f9698891eb014c185695ca2977d9b05f",
+      "x": -2341.567,
+      "z": 704.914,
+      "width": 52.684,
+      "depth": 25.842,
+      "yaw": -1.071,
+      "height": 43.79,
+      "foundation": 5.2
+    }
+  ],
+  "technicalChecks": [
+    "Original outer directed perimeter and occupied area preserved by the three-component partition",
+    "Full/mobile real builder raycasts expose both original lobby window samples, without the dining skin in front",
+    "Map and ground footprints match the collision geometry",
+    "30 prior terrain samples and existing tower placement/foundation checks"
+  ],
+  "visualStatus": "已在实际运行时的Claflin窗带近景和两宿舍/餐厅关系图中确认重复外墙消失；移动端已重烘焙并完成目的地加载检查。旧立面真实感仍未验收。",
+  "remaining": "The prior generic West Dining/tower architectural approximations remain; this change only removes duplicate assembly surfaces.",
+  "runtimeArchive": "docs/screenshots/bu-reality-20261026",
+  "terrainSupersededBy": "west-road-terrain-20261027.json: legacy 5.2m-era absolute heights are retained as historical before evidence; runtime now uses measured West DEM and bounded residence terrace correction."
+}

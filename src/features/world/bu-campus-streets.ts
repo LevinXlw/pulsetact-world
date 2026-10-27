@@ -6,10 +6,11 @@ import {BU_GROUND_BUILDINGS} from './bu-campus-footprints';
 import {BU_TERRAIN_CELL,buElevation,drapeBUGeometry} from './bu-terrain';
 import type {WorldPoint} from './geo-coordinates';
 import type {LawnFootprint} from './bu-ground-detail';
-import {BU_COURTYARD_PUBLIC_SEGMENTS,BU_PUBLIC_FRONTAGES,BU_TRANSIT_PLATFORM_DETAILS,buClipSidewalkToJunctions,buStreetSidewalk} from './bu-public-realm';
+import {BU_COURTYARD_PUBLIC_SEGMENTS,BU_PUBLIC_FRONTAGES,BU_SIDEWALK_JOIN_PATCHES,BU_TRANSIT_PLATFORM_DETAILS,buClipSidewalkToJunctions,buStreetSidewalk} from './bu-public-realm';
 import {configureBUGroundLayer} from './bu-ground-layers';
 import {BU_RIVER_FOOTBRIDGES} from './bu-river-core-layout';
 import {createBUTransitSurface} from './bu-transit-surfaces';
+import {createBUWestTerrace} from './bu-west-terrace';
 import {buCASLandscapeReplaces} from './bu-comm-ave-landscape-layout';
 
 type Finish='asphalt'|'paving'|'brickPaving'|'curb'|'joint'|'stripe'|'yellow'|'cycle'|'rail'|'railWeb'|'gravel'|'tactile'|'metal'|'lamp'|'wood'|'mulch'|'steel';
@@ -233,6 +234,10 @@ export function createBUCampusStreets(){
     }
   }
 
+  // Shared GIS-node bevels already used by the mobile bake also close
+  // desktop sidewalk cracks. They are clipped outside crossing carriageways.
+  for(const points of BU_SIDEWALK_JOIN_PATCHES)patch('paving',points,.105);
+
   // Walking routes through a field do not mean a concrete path crosses it.
   for(const [a,b] of BU_COURTYARD_PUBLIC_SEGMENTS){
     const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz),yaw=Math.atan2(dx,dz),count=Math.ceil(length/10);
@@ -338,6 +343,7 @@ export function createBUCampusStreets(){
     geometry.computeBoundingBox();geometry.computeBoundingSphere();const mesh=new Mesh(geometry,materials[batch.finish]);mesh.name=`BU street ${batch.surface?'ground':'detail'} ${batch.finish}`;mesh.receiveShadow=true;
     mesh.castShadow=['metal','steel','wood'].includes(batch.finish)&&!batch.surface;group.add(mesh);allMeshes.push(mesh);if(batch.surface)ground.push(mesh);else detailMeshes.push(mesh);
   }
+  const westTerrace=createBUWestTerrace();group.add(westTerrace.group);ground.push(...westTerrace.ground);walls.push(...westTerrace.walls);
   group.updateMatrixWorld(true);group.userData.stats={roadSegments:BU_CAMPUS_ROADS.length,walkRoutes:BU_CAMPUS_ROADS.length,trees:trees.length,streetMeshes:allMeshes.length,frontagePatches:BU_PUBLIC_FRONTAGES.length,frontageArea:Math.round(BU_PUBLIC_FRONTAGES.reduce((sum,p)=>sum+p.area,0)),transitPlatforms:BU_TRANSIT_PLATFORM_DETAILS.length*2};
-  return {group,ground,walls,trees,lawns,setQuality:(low:boolean)=>{for(const mesh of allMeshes){mesh.receiveShadow=!low;if(['metal','wood'].some(name=>mesh.name.endsWith(name)))mesh.castShadow=!low;}for(const mesh of detailMeshes)if(mesh.name.endsWith('joint'))mesh.visible=!low;}};
+  return {group,ground,walls,trees,lawns,setQuality:(low:boolean)=>{westTerrace.setQuality(low);for(const mesh of allMeshes){mesh.receiveShadow=!low;if(['metal','wood'].some(name=>mesh.name.endsWith(name)))mesh.castShadow=!low;}for(const mesh of detailMeshes)if(mesh.name.endsWith('joint'))mesh.visible=!low;}};
 }

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "url": "/assets/mit-residences/boston-without-residences.glb",
+  "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+  "bytes": 30272616,
+  "inputUrl": "/assets/mit-stata/boston-without-stata.glb",
+  "inputSHA256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+  "inputBytes": 29946188,
+  "removedTriangles": 979
+}

@@ -1,0 +1,2499 @@
+{
+  "checks": [
+    "legacy Boston save and other-campus history retained",
+    "old checkpoint inside Warren Towers moves to a safe arrival",
+    "district selection, building search and empty state work",
+    "CDS door entry records the visit and returns to the campus",
+    "all 29 BU destinations load and can be recorded",
+    "direction-pad movement works on West Campus",
+    "BU supports opting into HD after mobile entry",
+    "shared Link arrival renders its brick paving and concrete in mobile HD",
+    "CDS street-level glazing and Bay State entrances render after the HD switch",
+    "new BU visits survive refresh",
+    "mobile reload safely starts in low quality",
+    "mobile map fits the viewport"
+  ],
+  "errors": [],
+  "views": [
+    {
+      "name": "01-whole-campus-map",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 122,
+        "textureCount": 35,
+        "position": [
+          -976.3537367972386,
+          5.24739956064327,
+          1072.8833663959729
+        ],
+        "cameraPosition": [
+          -974.8571792256139,
+          7.29739956064327,
+          1063.805904447013
+        ],
+        "yaw": 6.119789919401953,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 84,
+        "triangles": 369778,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1467.4176328982278,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "02-west-campus-map",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 122,
+        "textureCount": 35,
+        "position": [
+          -976.3537367972386,
+          5.24739956064327,
+          1072.8833663959729
+        ],
+        "cameraPosition": [
+          -974.8571792256139,
+          7.29739956064327,
+          1063.805904447013
+        ],
+        "yaw": 6.119789919401953,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 84,
+        "triangles": 369778,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1467.4176328982278,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "03-building-search",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 122,
+        "textureCount": 35,
+        "position": [
+          -976.3537367972386,
+          5.24739956064327,
+          1072.8833663959729
+        ],
+        "cameraPosition": [
+          -974.8571792256139,
+          7.29739956064327,
+          1063.805904447013
+        ],
+        "yaw": 6.119789919401953,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 84,
+        "triangles": 369778,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1467.4176328982278,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-beach",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 172,
+        "textureCount": 39,
+        "position": [
+          -1169.748,
+          2.9169987361832996,
+          907.449
+        ],
+        "cameraPosition": [
+          -1168.5021639022527,
+          4.9669987361832995,
+          901.7843824120644
+        ],
+        "yaw": 6.066698950794983,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 110,
+        "triangles": 341574,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1509.209028632217,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-marsh",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 174,
+        "textureCount": 39,
+        "position": [
+          -1177.818,
+          4.697293473387462,
+          981
+        ],
+        "cameraPosition": [
+          -1177.818,
+          6.747293473387462,
+          989.5
+        ],
+        "yaw": 3.141592653589793,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 54,
+        "triangles": 340534,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1559.1865273673961,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-questrom",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 232,
+        "textureCount": 43,
+        "position": [
+          -632,
+          5.244999885559082,
+          1098
+        ],
+        "cameraPosition": [
+          -633.1656848301518,
+          7.294999885559082,
+          1107.1258522274227
+        ],
+        "yaw": 3.014546285223036,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 104,
+        "triangles": 533007,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1268.2194210782295,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-cds",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 266,
+        "textureCount": 43,
+        "position": [
+          -864.9119352883902,
+          4.476963838974148,
+          1036.661996496087
+        ],
+        "cameraPosition": [
+          -865.5621512220878,
+          6.526963838974148,
+          1041.114773072513
+        ],
+        "yaw": 2.9965926535897434,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 88,
+        "triangles": 419640,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1363.9184054876528,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-castle",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 117,
+        "textureCount": 35,
+        "position": [
+          -956.7320105112598,
+          3.1618616984973476,
+          942.2805019771283
+        ],
+        "cameraPosition": [
+          -959.7278103351723,
+          5.211861698497348,
+          950.9790756196887
+        ],
+        "yaw": 2.8099142462468683,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 62,
+        "triangles": 434655,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1363.6352562286704,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-gsu",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 139,
+        "textureCount": 38,
+        "position": [
+          -1358.6264919902385,
+          4.770916267240511,
+          962.0287797695514
+        ],
+        "cameraPosition": [
+          -1362.1856091652846,
+          6.820916267240511,
+          970.5124514354218
+        ],
+        "yaw": 2.7443680216955,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 68,
+        "triangles": 417541,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1696.2302979968956,
+        "quality": "low",
+        "objectCount": 42,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-law",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 146,
+        "textureCount": 38,
+        "position": [
+          -1228,
+          3.0150001079053412,
+          875
+        ],
+        "cameraPosition": [
+          -1223.891237035821,
+          5.065000107905341,
+          866.7684711684772
+        ],
+        "yaw": 5.820218381782624,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 59,
+        "triangles": 361980,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1539.2785647828662,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-mugar",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 146,
+        "textureCount": 38,
+        "position": [
+          -1351.4656858257028,
+          4.796120298202139,
+          955.0657879503726
+        ],
+        "cameraPosition": [
+          -1352.9087371344974,
+          6.8461202982021385,
+          964.1519093957522
+        ],
+        "yaw": 2.984088846443403,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 52,
+        "triangles": 318279,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1686.432586047005,
+        "quality": "low",
+        "objectCount": 42,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-warren",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 174,
+        "textureCount": 38,
+        "position": [
+          -976.3537367972386,
+          5.24739956064327,
+          1072.8833663959729
+        ],
+        "cameraPosition": [
+          -974.8571792256139,
+          7.29739956064327,
+          1063.805904447013
+        ],
+        "yaw": 6.119789919401953,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 84,
+        "triangles": 369778,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1467.4176328982278,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-com",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 174,
+        "textureCount": 38,
+        "position": [
+          -832.6288095802703,
+          5.304999828338623,
+          1095.7399418331033
+        ],
+        "cameraPosition": [
+          -831.173673111357,
+          7.354999828338623,
+          1086.65574798572
+        ],
+        "yaw": 6.124351291047606,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 41,
+        "triangles": 298382,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1386.693411627344,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-photonics",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 207,
+        "textureCount": 40,
+        "position": [
+          -1197.9836376054934,
+          5.304999828338623,
+          1103.6657912840326
+        ],
+        "cameraPosition": [
+          -1207.0449377423308,
+          7.354999828338623,
+          1102.0743014693778
+        ],
+        "yaw": 1.3969337003133695,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 104,
+        "triangles": 415948,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1651.6811019233392,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-engineering",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 245,
+        "textureCount": 40,
+        "position": [
+          -877.1518105656824,
+          5.046254474869357,
+          1159.468415860597
+        ],
+        "cameraPosition": [
+          -879.2099565243149,
+          7.096254474869357,
+          1168.4352455797878
+        ],
+        "yaw": 2.9159718064347726,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 110,
+        "triangles": 420822,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1464.1171247237135,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-kilachand-center",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 243,
+        "textureCount": 40,
+        "position": [
+          -764.1521220015796,
+          5.301926439474612,
+          1106.7087660392092
+        ],
+        "cameraPosition": [
+          -762.6969855326663,
+          7.351926439474612,
+          1097.6245721918258
+        ],
+        "yaw": 6.124351291047604,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 38,
+        "triangles": 295004,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1352.1151653719464,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-cfa",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 243,
+        "textureCount": 40,
+        "position": [
+          -1801.976166311929,
+          5.071320036001261,
+          904.3645648044194
+        ],
+        "cameraPosition": [
+          -1803.3745054609403,
+          7.1213200360012605,
+          913.4576747028174
+        ],
+        "yaw": 2.9890078739622434,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 30,
+        "triangles": 250410,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2057.0501940379113,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-booth",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 243,
+        "textureCount": 40,
+        "position": [
+          -1672.7386772083476,
+          4.637711036753629,
+          962.3073902917846
+        ],
+        "cameraPosition": [
+          -1671.3539115585831,
+          6.687711036753629,
+          953.2122034275562
+        ],
+        "yaw": 6.132093080362672,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 30,
+        "triangles": 250410,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1967.1790598144578,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-cgs",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 248,
+        "textureCount": 40,
+        "position": [
+          -1857.8095803731853,
+          4.983478683118995,
+          895.7784980376954
+        ],
+        "cameraPosition": [
+          -1859.2079195221966,
+          7.033478683118995,
+          904.8716079360934
+        ],
+        "yaw": 2.989007873962244,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 37,
+        "triangles": 253706,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2104.2985728806707,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-fitrec",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 275,
+        "textureCount": 40,
+        "position": [
+          -2018.5466237841304,
+          6.793061213113308,
+          870.6731438156444
+        ],
+        "cameraPosition": [
+          -2019.9933558634314,
+          8.843061213113309,
+          879.7586799192941
+        ],
+        "yaw": 2.983683735303035,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 57,
+        "triangles": 305171,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2242.564521075489,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-agganis",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 277,
+        "textureCount": 40,
+        "position": [
+          -2114,
+          12.771694398356882,
+          892.3720836960199
+        ],
+        "cameraPosition": [
+          -2114.2604678453354,
+          14.821694398356883,
+          901.5683958102071
+        ],
+        "yaw": 3.1132771476785623,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 42,
+        "triangles": 289207,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2339.297443567785,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-stuvi",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 302,
+        "textureCount": 40,
+        "position": [
+          -1935.682899892235,
+          5.625255120321414,
+          768.5231902682136
+        ],
+        "cameraPosition": [
+          -1926.6143873030449,
+          7.675255120321414,
+          770.0730545912119
+        ],
+        "yaw": 4.543118284238378,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 82,
+        "triangles": 319768,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2128.644444695131,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-stuvi2",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 395,
+        "textureCount": 75,
+        "position": [
+          -2196,
+          5.309999942779541,
+          668
+        ],
+        "cameraPosition": [
+          -2204.477235391237,
+          7.359999942779541,
+          671.574420249713
+        ],
+        "yaw": 1.9698254695520394,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 194,
+        "triangles": 885943,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2345.8197927377114,
+        "quality": "low",
+        "objectCount": 42,
+        "domeInFrame": true,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-nickerson",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 395,
+        "textureCount": 75,
+        "position": [
+          -2211,
+          5.309999942779541,
+          678
+        ],
+        "cameraPosition": [
+          -2206.1732901356822,
+          7.359999942779541,
+          685.8321690409296
+        ],
+        "yaw": 3.693887632525847,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 42,
+        "triangles": 284560,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2362.9622299139696,
+        "quality": "low",
+        "objectCount": 42,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-new-balance",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 393,
+        "textureCount": 75,
+        "position": [
+          -2540.1449993955853,
+          5.304999828338623,
+          685.4209537502484
+        ],
+        "cameraPosition": [
+          -2548.280903937758,
+          7.354999828338623,
+          689.7159575081811
+        ],
+        "yaw": 2.0565197531332933,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 136,
+        "triangles": 713752,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2683.052151037372,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-south",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 434,
+        "textureCount": 83,
+        "position": [
+          -1094.0761666986991,
+          3.2015911447922933,
+          1284.9546982005565
+        ],
+        "cameraPosition": [
+          -1091.0896555591064,
+          5.251591144792293,
+          1293.656465332185
+        ],
+        "yaw": 3.4722034170792964,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 112,
+        "triangles": 406542,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1701.8007538403244,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-bay-state",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 450,
+        "textureCount": 83,
+        "position": [
+          -580.9750707990387,
+          5.292881649928495,
+          986.6689622006447
+        ],
+        "cameraPosition": [
+          -581.78603839633,
+          7.342881649928495,
+          995.8331496472296
+        ],
+        "yaw": 3.0533294454815563,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 83,
+        "triangles": 479797,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1147.2880351884066,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-kilachand",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 450,
+        "textureCount": 83,
+        "position": [
+          -405.47515866310926,
+          2.791739860152427,
+          1003.2062589800317
+        ],
+        "cameraPosition": [
+          -406.45088803661554,
+          4.841739860152426,
+          1012.3543709267493
+        ],
+        "yaw": 3.035335273699547,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 93,
+        "triangles": 610892,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1073.5577665297274,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-yawkey",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 450,
+        "textureCount": 83,
+        "position": [
+          -487.3802010898071,
+          4.4773087922062516,
+          1008.3671752162875
+        ],
+        "cameraPosition": [
+          -486.5690963514919,
+          6.527308792206251,
+          999.2029999067747
+        ],
+        "yaw": 6.19490713417507,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 40,
+        "triangles": 295154,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1116.2670235500104,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-towers",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 451,
+        "textureCount": 83,
+        "position": [
+          -632.4782525352362,
+          5.086704288582402,
+          995.0036915836664
+        ],
+        "cameraPosition": [
+          -631.4754032618887,
+          7.1367042885824015,
+          985.8585128902265
+        ],
+        "yaw": 6.173962918914803,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 87,
+        "triangles": 363716,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1183.7225381812875,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-danielsen",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 453,
+        "textureCount": 83,
+        "position": [
+          154.7410908687347,
+          3.0484119794806697,
+          937.2700691578311
+        ],
+        "cameraPosition": [
+          157.9437883785347,
+          5.0984119794806695,
+          945.8946113868843
+        ],
+        "yaw": 3.4971568157312847,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 122,
+        "triangles": 715302,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 904.3843839956575,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "bu-bridge",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 520,
+        "textureCount": 85,
+        "position": [
+          -1532.8641120005514,
+          8.201298083250277,
+          876.5469190720094
+        ],
+        "cameraPosition": [
+          -1542.0008777035298,
+          10.251298083250276,
+          875.4701124557229
+        ],
+        "yaw": 1.4534832302443514,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 317,
+        "triangles": 591875,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1803.435086297131,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "mobile-bu-hd",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 551,
+        "textureCount": 100,
+        "position": [
+          -2114.1950065421743,
+          12.665079053214944,
+          899.257160139168
+        ],
+        "cameraPosition": [
+          -2114.455474387509,
+          14.715079053214945,
+          908.4534722533551
+        ],
+        "yaw": -0.028315505897191534,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 60,
+        "triangles": 289811,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 2342.0036175398714,
+        "quality": "standard",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "mobile-gsu-link-hd",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 551,
+        "textureCount": 100,
+        "position": [
+          -1351.4656858257028,
+          4.796120298202139,
+          955.0657879503726
+        ],
+        "cameraPosition": [
+          -1352.9087371344974,
+          6.8461202982021385,
+          964.1519093957522
+        ],
+        "yaw": 2.984088846443403,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 52,
+        "triangles": 318279,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1686.432586047005,
+        "quality": "standard",
+        "objectCount": 42,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "mobile-cds-hd",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 550,
+        "textureCount": 100,
+        "position": [
+          -864.9119352883902,
+          4.476963838974148,
+          1036.661996496087
+        ],
+        "cameraPosition": [
+          -865.5621512220878,
+          6.526963838974148,
+          1041.114773072513
+        ],
+        "yaw": 2.9965926535897434,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 88,
+        "triangles": 419640,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1363.9184054876528,
+        "quality": "standard",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "mobile-bay-state-hd",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 547,
+        "textureCount": 100,
+        "position": [
+          -580.9750707990387,
+          5.292881649928495,
+          986.6689622006447
+        ],
+        "cameraPosition": [
+          -581.78603839633,
+          7.342881649928495,
+          995.8331496472296
+        ],
+        "yaw": 3.0533294454815563,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 83,
+        "triangles": 479797,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1147.2880351884066,
+        "quality": "standard",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    },
+    {
+      "name": "mobile-west-map",
+      "scene": {
+        "campusId": "boston",
+        "interior": null,
+        "doorHinges": [
+          {
+            "name": "cds-door-west-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-west-right",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-left",
+            "angle": 0
+          },
+          {
+            "name": "cds-door-east-right",
+            "angle": 0
+          }
+        ],
+        "mobile": true,
+        "rendering": {
+          "mode": "direct"
+        },
+        "geometryCount": 111,
+        "textureCount": 39,
+        "position": [
+          -580.9750707990387,
+          5.292881649928495,
+          986.6689622006447
+        ],
+        "cameraPosition": [
+          -581.78603839633,
+          7.342881649928495,
+          995.8331496472296
+        ],
+        "yaw": 3.0533294454815563,
+        "players": 0,
+        "walking": false,
+        "commuteMode": "walk",
+        "movementSpeed": 0,
+        "calls": 83,
+        "triangles": 479797,
+        "workshop": [
+          63.5,
+          37.5
+        ],
+        "workshopDistance": 1147.2880351884066,
+        "quality": "low",
+        "objectCount": 43,
+        "domeInFrame": false,
+        "character": "pixiv",
+        "characterReady": true,
+        "selfId": "solo",
+        "renderedCharacters": [
+          {
+            "playerId": "solo",
+            "characterId": "pixiv",
+            "motion": "Idle"
+          }
+        ],
+        "characterMotion": "Idle"
+      }
+    }
+  ],
+  "status": "passed"
+}

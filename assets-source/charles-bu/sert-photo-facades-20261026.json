@@ -1,0 +1,106 @@
+{
+  "assetId": "bu-sert-mugar-south-upper-and-gsu-link-side",
+  "date": "2026-10-26",
+  "category": "Bounded facade reconstruction; replacement of generic geometry, not a whole-complex reconstruction",
+  "scope": [
+    "Mugar west block: identified south elevation from 7.2 m above the retained shared foundation to the retained 21.7 m roof datum.",
+    "GSU: only the east-facing inner-court segments beside the Link, local x between -26.5 and -22, local z 74.5 to 98.2, lower glazing and the middle brick band through 11.56 m."
+  ],
+  "sources": [
+    {
+      "url": "https://www.bu.edu/community/files/2012/06/FinalPNF-EENF6-15-12Small.pdf",
+      "local": "output/bu-survey/law-plan.pdf",
+      "sha256": "c397ceca0501eab55ed3e3d5f25d06ddf7f038eb78258d5cf096166d758bb9b2",
+      "evidence": "Section 4.3.4 describes the existing six-storey west Mugar block, plate-glass lower windows, narrow vertical upper windows, and deep thin concrete sun fins on south/east elevations. Figures 3-10/3-11 provide context for the retained building family and relative volumes, not proof of all completed 2014 details.",
+      "use": "Published BU planning reference; local study only, not a runtime texture."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Mugar_Memorial_Library_from_Commonwealth_Avenue,_July_2021.jpg",
+      "local": "assets-source/charles-bu/references/sert-20261025/mugar-south-2021.jpg",
+      "sha256": "b12f2fcca3f18737786930862bb24c8e636d9b694854d5867dac423b9cf9ce56",
+      "author": "Pi.1415926535",
+      "taken": "2021-07-06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "evidence": "Exposed-aggregate concrete upper wall with deep narrow vertical apertures; broad continuous wall surfaces instead of a projecting rectilinear grid around each window. Deep lower sun-screen fins remain visually distinct.",
+      "limits": "Mature trees obscure much of the upper elevation. Exact upper bay count, aperture dimensions and all floor positions cannot be measured from this single photograph.",
+      "use": "Unmodified local architectural reference with attribution; no photograph pixels included in runtime materials."
+    },
+    {
+      "url": "https://www.bu.edu/reservations/gsu/",
+      "imageUrl": "https://www.bu.edu/reservations/files/2023/08/GSU_Exterior_0008.jpg",
+      "local": "assets-source/charles-bu/references/sert-20261025/bu-gsu-exterior-2023.jpg",
+      "sha256": "b5b758133b10fb188946b94a08ed4bcb34b3ea230661c86c2eb6136e4f71b934",
+      "evidence": "Looking north into the Link courtyard, the GSU wall on the left has a continuous brick area above tall lower glazing. Mugar is on the right. This supports only the identified east-facing GSU court wall, not repeating brick on every GSU orientation.",
+      "limits": "The photograph crops the uppermost GSU storey; that storey retains the previous model. Brick-band heights and lower window spacing are fitted estimates.",
+      "use": "BU-published reference for local study; not a claim of open licensing, runtime image use, or permission for third-party AI input."
+    }
+  ],
+  "generation": {
+    "source": "src/features/world/bu-sert-photo-facades.ts",
+    "integration": "src/features/world/bu-full-campus.ts::sertComplex, only the union and mugar branches",
+    "approach": "Source-backed procedural replacement with editable parameters; Three.js solid wall sections, recessed panes and frames share the existing campus batches.",
+    "mugar": {
+      "retainedFoundation": "BU_SERT_FOUNDATION_ANCHOR and buElevation, unchanged",
+      "southPlane": "Derived from the retained mugar-west GIS-clipped footprint, using the same boundary as the existing lower screen module",
+      "upperBottom": 7.2,
+      "upperTop": 21.7,
+      "rows": 4,
+      "columns": "ceil(existing south width / 4.1 m), tied to the retained lower curtain-wall primary bay grid; not a surveyed upper window count",
+      "openingWidth": 0.46,
+      "openingHeight": 2.55,
+      "openingBottomAboveEachInheritedFloor": 0.5,
+      "wallThickness": 0.6,
+      "glassCenterDepth": -0.44,
+      "glassThickness": 0.025,
+      "frameWidth": 0.045,
+      "change": "The selected upper face no longer emits the generic openings, projecting window sills/heads, storey bands, or full-height outer fins. Solid wall volumes partition around the replacement slit apertures. The 2026-10-25 lower screen remains in place."
+    },
+    "gsu": {
+      "selector": "Only east-facing source facade segments centered in local x(-26.5,-22), z[74.5,98.2]",
+      "glazingTop": 5.2,
+      "brickBandTop": 11.56,
+      "glazingCenterDepth": -0.34,
+      "primaryBaySpacing": 2.3,
+      "change": "Replace the generic glazed middle storey with a solid brick wall and retain tall recessed lower lights. No old glazing or concrete grid is generated underneath this replacement. The top storey, other orientations, and original collision remain."
+    },
+    "coordinatePolicy": "No footprint, building position, occupied mass, shared floor datum, sidewalk, entrance axis, road, passage, terrain or collision coordinate is moved.",
+    "materials": "Existing warm concrete/brick/frame palette and BU frontage glass are reused. Reflection remains the existing BU sky-based approximation; this work does not add live courtyard reflection or interiors."
+  },
+  "qualityLevels": {
+    "desktop": "True slit apertures, retained masonry reveal depth and recessed solid frames.",
+    "mobile": "Same new aperture geometry and selected facade scope in the offline bake; complete gsu-mugar procedural assembly increases from 22,702 to 24,118 triangles, within the explicit 25,000 triangle test budget. Existing 15 visible material batches remain.",
+    "export": {
+      "path": "public/data/mobile/boston.glb",
+      "sha256": "23582ad787b07806d4dc1fae79dc6ccdb9157836a8adb9a5a1e86e8722531764",
+      "metrics": {
+        "version": 1,
+        "campus": "boston",
+        "bytes": 25723232,
+        "triangles": 696841,
+        "meshes": 1155,
+        "visibleMeshes": 229,
+        "textures": 0
+      }
+    }
+  },
+  "validation": {
+    "tests": [
+      "tests/bu-sert-photo-facades.test.ts",
+      "tests/bu-link-entry.test.ts",
+      "tests/bu-sert-facade-detail.test.ts",
+      "tests/bu-sert-navigation.test.ts"
+    ],
+    "technical": "23 tests passed and TypeScript typecheck passed. Ray tests confirm actual recess, flush masonry, GSU material separation, bounded facade orientation, unchanged footprint/height colliders and existing approach/passages.",
+    "runtimeEvidence": "Root integration records fixed-camera before/after views under output/bu-reality-20261026, including 01-gsu-street, 02-link-entry and 03-mugar-south.",
+    "visualStatus": "已进行Mugar南侧固定机位前后和GSU庭院侧检查，并在完整游戏到访；修正后的墙/开口类别成立，整体材质和未覆盖立面仍为阶段状态。",
+    "archive": "docs/screenshots/bu-reality-20261026"
+  },
+  "remaining": [
+    "Upper aperture counts and dimensions are photo-led estimates registered to the existing mass, not an as-built measured elevation.",
+    "Mugar north/east/west faces and stepped eastern blocks retain prior generic facade geometry; this bounded correction must not be described as the complete Mugar rebuild.",
+    "GSU uppermost storey and other elevations, current roof enclosures and some projecting volumes remain uncalibrated.",
+    "Trees, planting positions, interiors and furniture were not added or invented to conceal missing architectural evidence.",
+    "The building's exposed-aggregate concrete and glass still require further material/lighting comparison in the actual game."
+  ]
+}

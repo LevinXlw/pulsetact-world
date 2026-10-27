@@ -1,0 +1,232 @@
+{
+  "phase": "before",
+  "startedAt": "2026-10-26T05:29:46.442Z",
+  "base": "http://127.0.0.1:5186",
+  "views": [
+    {
+      "id": "01-gsu-street",
+      "title": "GSU · Commonwealth 临街立面",
+      "eye": [
+        -1444,
+        1.75,
+        989
+      ],
+      "target": [
+        -1368,
+        10.676583333333335,
+        961
+      ],
+      "fov": 62,
+      "camera": [
+        -1444,
+        8.062916589717375,
+        989
+      ],
+      "calls": 1800,
+      "triangles": 8402830,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "02-link-entry",
+      "title": "GSU–Mugar Link · 共享入口",
+      "eye": [
+        -12.52,
+        1.75,
+        86
+      ],
+      "target": [
+        -1348.8823102761542,
+        6.715856646378029,
+        938.7996553193508
+      ],
+      "fov": 65,
+      "sertLocal": true,
+      "camera": [
+        -1350.6814188100536,
+        6.675630674838514,
+        950.1276784691881
+      ],
+      "calls": 156,
+      "triangles": 832715,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "03-mugar-south",
+      "title": "Mugar · 南侧遮阳立面",
+      "eye": [
+        11,
+        1.75,
+        102
+      ],
+      "target": [
+        -1329.631150483623,
+        14.558600534263887,
+        948.4082008202282
+      ],
+      "fov": 65,
+      "sertLocal": true,
+      "camera": [
+        -1329.9622062606393,
+        6.298774016391576,
+        969.6188208505928
+      ],
+      "calls": 115,
+      "triangles": 550675,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "04-gsu-front",
+      "title": "GSU · 窗墙与结构近景",
+      "eye": [
+        -65,
+        1.75,
+        97
+      ],
+      "target": [
+        -1393.6697203358922,
+        11.456784027951636,
+        937.2251077205508
+      ],
+      "fov": 68,
+      "sertLocal": true,
+      "camera": [
+        -1404.237203358995,
+        6.404540972626984,
+        952.7598527315394
+      ],
+      "calls": 227,
+      "triangles": 1348676,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "05-warren-front",
+      "title": "Warren Towers · 北侧街面",
+      "eye": [
+        -971,
+        1.75,
+        1044
+      ],
+      "target": [
+        -981,
+        18.19991175158671,
+        1095
+      ],
+      "fov": 65,
+      "camera": [
+        -971,
+        6.175859084354961,
+        1044
+      ],
+      "calls": 333,
+      "triangles": 2291671,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "06-warren-entry",
+      "title": "Warren · 门厅与接地",
+      "eye": [
+        -973.3,
+        1.75,
+        1069.4
+      ],
+      "target": [
+        -969.6,
+        9.19034375,
+        1079.1
+      ],
+      "fov": 69,
+      "camera": [
+        -973.3,
+        6.890014287784451,
+        1069.4
+      ],
+      "calls": 342,
+      "triangles": 2425661,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "07-link-oblique",
+      "title": "GSU–Mugar · 入口侧向关系",
+      "eye": [
+        -23,
+        1.75,
+        94
+      ],
+      "target": [
+        -1345.3227488977413,
+        6.722028510042228,
+        938.8283396933623
+      ],
+      "fov": 60,
+      "sertLocal": true,
+      "camera": [
+        -1362.2865235076551,
+        6.0417531395598765,
+        956.3848299742825
+      ],
+      "calls": 329,
+      "triangles": 2258511,
+      "nearObstacle": null,
+      "glError": 0
+    },
+    {
+      "id": "08-cas-walk",
+      "title": "CAS · 主街延续关系",
+      "eye": [
+        -1002,
+        1.75,
+        3.3
+      ],
+      "target": [
+        -1100.6801625204623,
+        6.612426651822124,
+        1015.6238004145142
+      ],
+      "fov": 61,
+      "casLocal": true,
+      "camera": [
+        -1000.594016672479,
+        6.153873514579298,
+        1032.1578129162633
+      ],
+      "calls": 836,
+      "triangles": 3425659,
+      "nearObstacle": null,
+      "glError": 0
+    }
+  ],
+  "errors": [],
+  "status": "passed",
+  "setup": {
+    "light": {
+      "sky": "#c2d8f2",
+      "ground": "#b6b5a3",
+      "ambient": 1.75,
+      "sun": "#fff3d9",
+      "intensity": 2.65,
+      "offset": [
+        -95,
+        115,
+        135
+      ]
+    },
+    "invalid": [],
+    "streets": {
+      "stats": {
+        "roadSegments": 189,
+        "walkRoutes": 189,
+        "trees": 560,
+        "streetMeshes": 604,
+        "frontagePatches": 926,
+        "frontageArea": 21348,
+        "transitPlatforms": 10
+      }
+    }
+  }
+}
