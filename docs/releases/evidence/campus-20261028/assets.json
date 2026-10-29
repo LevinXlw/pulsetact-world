@@ -1,0 +1,571 @@
+{
+  "files": [
+    {
+      "path": "favicon.svg",
+      "bytes": 203
+    },
+    {
+      "path": "index.html",
+      "bytes": 706
+    },
+    {
+      "path": "decoders/draco/draco_decoder.js",
+      "bytes": 512498
+    },
+    {
+      "path": "decoders/draco/draco_decoder.wasm",
+      "bytes": 192420
+    },
+    {
+      "path": "decoders/draco/draco_wasm_wrapper.js",
+      "bytes": 58572
+    },
+    {
+      "path": "decoders/draco/LICENSE",
+      "bytes": 10351
+    },
+    {
+      "path": "decoders/draco/NOTICE.txt",
+      "bytes": 361
+    },
+    {
+      "path": "data/mobile/arizona.glb",
+      "bytes": 11410356
+    },
+    {
+      "path": "data/mobile/arizona.ground.bin",
+      "bytes": 109032
+    },
+    {
+      "path": "data/mobile/arizona.json",
+      "bytes": 286
+    },
+    {
+      "path": "data/mobile/boston.json",
+      "bytes": 1320
+    },
+    {
+      "path": "data/mobile/boston.replacements.json",
+      "bytes": 1009
+    },
+    {
+      "path": "data/mobile/umd.glb",
+      "bytes": 8916964
+    },
+    {
+      "path": "data/mobile/umd.ground.bin",
+      "bytes": 690440
+    },
+    {
+      "path": "data/mobile/umd.json",
+      "bytes": 292
+    },
+    {
+      "path": "data/mobile/upenn.glb",
+      "bytes": 130416
+    },
+    {
+      "path": "data/mobile/upenn.ground.bin",
+      "bytes": 672
+    },
+    {
+      "path": "data/mobile/upenn.json",
+      "bytes": 274
+    },
+    {
+      "path": "data/killian/concrete_pavement-color.jpg",
+      "bytes": 926197
+    },
+    {
+      "path": "data/killian/concrete_pavement-normal.jpg",
+      "bytes": 1184345
+    },
+    {
+      "path": "data/killian/concrete_pavement-roughness.jpg",
+      "bytes": 475799
+    },
+    {
+      "path": "data/killian/concrete_wall_001-color.jpg",
+      "bytes": 79320
+    },
+    {
+      "path": "data/killian/concrete_wall_001-normal.jpg",
+      "bytes": 179270
+    },
+    {
+      "path": "data/killian/concrete_wall_001-roughness.jpg",
+      "bytes": 156479
+    },
+    {
+      "path": "data/killian/detail-manifest.json",
+      "bytes": 89995
+    },
+    {
+      "path": "data/killian/environment.json",
+      "bytes": 35681
+    },
+    {
+      "path": "data/killian/facades.json",
+      "bytes": 93630
+    },
+    {
+      "path": "data/killian/font-LICENSE.txt",
+      "bytes": 2019
+    },
+    {
+      "path": "data/killian/grass_medium_01-normal.jpg",
+      "bytes": 956166
+    },
+    {
+      "path": "data/killian/leafy_grass-color.jpg",
+      "bytes": 1195394
+    },
+    {
+      "path": "data/killian/leafy_grass-normal.jpg",
+      "bytes": 1466049
+    },
+    {
+      "path": "data/killian/leafy_grass-roughness.jpg",
+      "bytes": 511385
+    },
+    {
+      "path": "data/killian/mobile-portico.glb",
+      "bytes": 1902028
+    },
+    {
+      "path": "data/killian/mobile-portico.json",
+      "bytes": 4803
+    },
+    {
+      "path": "data/killian/sources.json",
+      "bytes": 3732
+    },
+    {
+      "path": "data/killian/sparse_grass-color.jpg",
+      "bytes": 955945
+    },
+    {
+      "path": "data/killian/sparse_grass-normal.jpg",
+      "bytes": 1440314
+    },
+    {
+      "path": "data/killian/sparse_grass-roughness.jpg",
+      "bytes": 463340
+    },
+    {
+      "path": "data/campuses/mit/campus.glb",
+      "bytes": 11581344
+    },
+    {
+      "path": "data/campuses/mit/manifest.json",
+      "bytes": 44214
+    },
+    {
+      "path": "data/campuses/mit/overview.jpg",
+      "bytes": 959427
+    },
+    {
+      "path": "data/campuses/harvard/campus.glb",
+      "bytes": 20221544
+    },
+    {
+      "path": "data/campuses/harvard/manifest.json",
+      "bytes": 122751
+    },
+    {
+      "path": "data/campuses/harvard/overview.jpg",
+      "bytes": 1080801
+    },
+    {
+      "path": "assets/arizona-campus-CDTHzLMK.js",
+      "bytes": 33504
+    },
+    {
+      "path": "assets/bu-green-line-layout-CFO6wIHo.js",
+      "bytes": 13265
+    },
+    {
+      "path": "assets/campus-collision-BsydJm3y.js",
+      "bytes": 1720
+    },
+    {
+      "path": "assets/CampusCanvas-CXGMg5Bd.js",
+      "bytes": 9328
+    },
+    {
+      "path": "assets/cds-interior-assets-DZLq-iRg.js",
+      "bytes": 5508
+    },
+    {
+      "path": "assets/CDSInteriorVisit-Bd3zbBzi.css",
+      "bytes": 4753
+    },
+    {
+      "path": "assets/CDSInteriorVisit-DTX9K-YW.js",
+      "bytes": 6017
+    },
+    {
+      "path": "assets/Character-BNThp82C.js",
+      "bytes": 4723
+    },
+    {
+      "path": "assets/character-catalog-Dpz4N8tW.js",
+      "bytes": 1880
+    },
+    {
+      "path": "assets/CharacterPreviewPage-B7MXA2jD.js",
+      "bytes": 5916
+    },
+    {
+      "path": "assets/CharacterPreviewPage-CGWcn6Im.css",
+      "bytes": 6260
+    },
+    {
+      "path": "assets/courtyard-ground-detail-QRdW7a-H.js",
+      "bytes": 27896
+    },
+    {
+      "path": "assets/index-C9ukTLCq.css",
+      "bytes": 26398
+    },
+    {
+      "path": "assets/index-CWFDqVX9.js",
+      "bytes": 338415
+    },
+    {
+      "path": "assets/local-assets-CKGJQXdU.js",
+      "bytes": 1566
+    },
+    {
+      "path": "assets/LocalCampusScene-CzaEan5U.js",
+      "bytes": 87936
+    },
+    {
+      "path": "assets/maryland-campus-CKEqA7lA.js",
+      "bytes": 21465
+    },
+    {
+      "path": "assets/maryland-campus-paving-l53_Wruc.js",
+      "bytes": 1754
+    },
+    {
+      "path": "assets/maryland-expansion-PcLGgy1y.js",
+      "bytes": 18387
+    },
+    {
+      "path": "assets/maryland-full-campus-CRXMuexe.js",
+      "bytes": 47829
+    },
+    {
+      "path": "assets/maryland-road-layout-BR0mqo6g.js",
+      "bytes": 1346147
+    },
+    {
+      "path": "assets/maryland-street-layout-0mpssrel.js",
+      "bytes": 328
+    },
+    {
+      "path": "assets/maryland-streetscape-CtD1sFf3.js",
+      "bytes": 8449
+    },
+    {
+      "path": "assets/maryland-terrain-BTNC5A-I.js",
+      "bytes": 222287
+    },
+    {
+      "path": "assets/mit-baker-site-cleanup-Ds-9Mcjv.js",
+      "bytes": 102852
+    },
+    {
+      "path": "assets/mit-scene-renderer-CkW-dNmE.js",
+      "bytes": 28928
+    },
+    {
+      "path": "assets/mobile-campus-CQgP3_lr.js",
+      "bytes": 23743
+    },
+    {
+      "path": "assets/mobile-device-Ds5va4r2.js",
+      "bytes": 2549083
+    },
+    {
+      "path": "assets/penn-campus-DRkzitnF.js",
+      "bytes": 13720
+    },
+    {
+      "path": "assets/RealCampusPage-CWQKXjO2.css",
+      "bytes": 14693
+    },
+    {
+      "path": "assets/RealCampusPage-DLQiLtqb.js",
+      "bytes": 25236
+    },
+    {
+      "path": "assets/scene-assets-desktop-DaJ1_ZMV.js",
+      "bytes": 178082
+    },
+    {
+      "path": "assets/SimplexNoise-CvvqKU7a.js",
+      "bytes": 5507
+    },
+    {
+      "path": "assets/SkeletonUtils-UiEG024E.js",
+      "bytes": 50418
+    },
+    {
+      "path": "assets/SoloWorldPage-BrD1irZj.css",
+      "bytes": 66689
+    },
+    {
+      "path": "assets/SoloWorldPage-BzRY4Pc0.js",
+      "bytes": 103864
+    },
+    {
+      "path": "assets/three-CN5Xtgz3.js",
+      "bytes": 859185
+    },
+    {
+      "path": "assets/WorldScene-DYHFeD9P.js",
+      "bytes": 28279
+    },
+    {
+      "path": "assets/people/ATTRIBUTION.md",
+      "bytes": 888
+    },
+    {
+      "path": "assets/people/models.json",
+      "bytes": 3087
+    },
+    {
+      "path": "assets/people/nathan.glb",
+      "bytes": 4256840
+    },
+    {
+      "path": "assets/people/sophia.glb",
+      "bytes": 4200988
+    },
+    {
+      "path": "assets/people/sources.json",
+      "bytes": 2847
+    },
+    {
+      "path": "assets/mit-stata/boston-without-stata.json",
+      "bytes": 363
+    },
+    {
+      "path": "assets/mit-stata/campus-without-stata.glb",
+      "bytes": 11920796
+    },
+    {
+      "path": "assets/mit-stata/manifest.json",
+      "bytes": 58679
+    },
+    {
+      "path": "assets/mit-stata/stata-full.glb",
+      "bytes": 18778304
+    },
+    {
+      "path": "assets/mit-stata/stata-mobile.glb",
+      "bytes": 7648508
+    },
+    {
+      "path": "assets/mit-residences/baker-full.glb",
+      "bytes": 7728244
+    },
+    {
+      "path": "assets/mit-residences/baker-mobile.glb",
+      "bytes": 3165304
+    },
+    {
+      "path": "assets/mit-residences/boston-without-residences.json",
+      "bytes": 391
+    },
+    {
+      "path": "assets/mit-residences/campus-without-residences.glb",
+      "bytes": 12248496
+    },
+    {
+      "path": "assets/mit-residences/maseeh-full.glb",
+      "bytes": 7313064
+    },
+    {
+      "path": "assets/mit-residences/maseeh-mobile.glb",
+      "bytes": 3648584
+    },
+    {
+      "path": "assets/maps/world-land.json",
+      "bytes": 1257964
+    },
+    {
+      "path": "assets/environment/mit-painted-sky-v1.png",
+      "bytes": 1588262
+    },
+    {
+      "path": "assets/environment/sky-source.json",
+      "bytes": 1747
+    },
+    {
+      "path": "assets/characters/sakurada/LICENSE.txt",
+      "bytes": 1006
+    },
+    {
+      "path": "assets/characters/sakurada/sakurada.glb",
+      "bytes": 7148468
+    },
+    {
+      "path": "assets/characters/sakurada/SOURCE.json",
+      "bytes": 5169
+    },
+    {
+      "path": "assets/characters/pixiv/character.glb",
+      "bytes": 5622828
+    },
+    {
+      "path": "assets/characters/pixiv/LICENSE-ANIMATIONS.txt",
+      "bytes": 332
+    },
+    {
+      "path": "assets/characters/pixiv/SOURCE.json",
+      "bytes": 1582
+    },
+    {
+      "path": "assets/characters/mobile-hd/pixiv.glb",
+      "bytes": 3492556
+    },
+    {
+      "path": "assets/characters/mobile-hd/sakurada.glb",
+      "bytes": 5376080
+    },
+    {
+      "path": "assets/characters/mobile-hd/SOURCE.json",
+      "bytes": 15621
+    },
+    {
+      "path": "assets/characters/mobile/pixiv.glb",
+      "bytes": 3309176
+    },
+    {
+      "path": "assets/characters/mobile/sakurada.glb",
+      "bytes": 4657368
+    },
+    {
+      "path": "assets/characters/mobile/SOURCE.json",
+      "bytes": 15494
+    },
+    {
+      "path": "assets/bu-questrom/manifest.json",
+      "bytes": 136974
+    },
+    {
+      "path": "assets/bu-questrom/questrom-full.glb",
+      "bytes": 9302072
+    },
+    {
+      "path": "assets/bu-quality-pass2/bay-state-192.glb",
+      "bytes": 4877684
+    },
+    {
+      "path": "assets/bu-quality-pass2/cds-ground.glb",
+      "bytes": 1581856
+    },
+    {
+      "path": "assets/bu-quality-pass2/manifest.json",
+      "bytes": 79655
+    },
+    {
+      "path": "assets/bu-quality/bay-state-192.glb",
+      "bytes": 4270864
+    },
+    {
+      "path": "assets/bu-quality/cds-ground.glb",
+      "bytes": 1250884
+    },
+    {
+      "path": "assets/bu-quality/manifest.json",
+      "bytes": 20862
+    },
+    {
+      "path": "assets/bu-cds-interior/interior-desktop.glb",
+      "bytes": 13608240
+    },
+    {
+      "path": "assets/bu-cds-interior/interior-mobile.glb",
+      "bytes": 1910008
+    },
+    {
+      "path": "assets/bu-cds-interior/manifest.json",
+      "bytes": 17005
+    },
+    {
+      "path": "assets/bu-cds-interior/physics.glb",
+      "bytes": 354552
+    },
+    {
+      "path": "assets/bu-cds/cds-full.glb",
+      "bytes": 5283612
+    },
+    {
+      "path": "assets/bu-cds/manifest.json",
+      "bytes": 28710
+    },
+    {
+      "path": "data/killian/detail.glb.gz",
+      "bytes": 6617629
+    },
+    {
+      "path": "data/mobile/boston.glb.gz",
+      "bytes": 9262130
+    },
+    {
+      "path": "assets/mit-stata/boston-without-stata.glb.gz",
+      "bytes": 9408330
+    },
+    {
+      "path": "assets/mit-residences/boston-without-residences.glb.gz",
+      "bytes": 9548579
+    }
+  ],
+  "omitted": [
+    "data/killian/detail.glb",
+    "data/mobile/boston.glb",
+    "assets/mit-stata/boston-without-stata.glb",
+    "assets/mit-residences/boston-without-residences.glb",
+    "data/killian/vegetation.glb",
+    "data/killian/vegetation.glb.gz"
+  ],
+  "gzip": [
+    {
+      "url": "/data/killian/detail.glb",
+      "path": "data/killian/detail.glb.gz",
+      "bytes": 6617629,
+      "rawBytes": 56841004,
+      "rawSha256": "42fbe183da2306dcd235b8da990bffe3eb8997720fee464f5adf81183b9b662d",
+      "gzipSha256": "45454dcf2fb7016093d5e20d8167372a3f80f05c876b0d3a8da96cf36aba85da"
+    },
+    {
+      "url": "/data/mobile/boston.glb",
+      "path": "data/mobile/boston.glb.gz",
+      "bytes": 9262130,
+      "rawBytes": 29609576,
+      "rawSha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "gzipSha256": "3af2f2a515ecc45a67318f0cc7735245a9a3b41d9bd1d2c915a1fc2f0bf98bea"
+    },
+    {
+      "url": "/assets/mit-stata/boston-without-stata.glb",
+      "path": "assets/mit-stata/boston-without-stata.glb.gz",
+      "bytes": 9408330,
+      "rawBytes": 29946188,
+      "rawSha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "gzipSha256": "ba6b9d4879efe054d41eb80ad3a4d9e7c82f4a8114aac2e9cba441ba8acee89e"
+    },
+    {
+      "url": "/assets/mit-residences/boston-without-residences.glb",
+      "path": "assets/mit-residences/boston-without-residences.glb.gz",
+      "bytes": 9548579,
+      "rawBytes": 30272616,
+      "rawSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "gzipSha256": "5e3a37f5799b8d13a42dfba4d695fc93d30bc2a05245983f9188fb302e073f9e"
+    }
+  ],
+  "bytes": 265488836
+}

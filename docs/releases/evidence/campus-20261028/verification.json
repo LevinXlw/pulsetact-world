@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "deployedOn": "2026-10-28",
+  "verifiedOn": "2026-10-29",
+  "sourceCommit": "d2dc768198d4075c821a010dfb5bfb45ca5740e3",
+  "deploymentVersion": "90c6fa27-bcb9-4e30-93bf-0a8f92b9ebda",
+  "previousVersion": "428277b4-1bbb-46c9-b05b-d70f9ff28e16",
+  "site": "https://world.pulsetact.ai/",
+  "tests": {
+    "passed": 485,
+    "failed": 0,
+    "workers": 4
+  },
+  "desktopChecks": 10,
+  "mobileChecks": 14,
+  "scope": "Production browser functionality and exact release-resource identity. Desktop Chrome and phone emulation; not physical-phone performance or full photoreal acceptance.",
+  "files": 131,
+  "assetBytes": 265488836,
+  "evidence": {
+    "desktop-bu-questrom.png": "4811bfddc11370b0ed1d6980bbfd2f72309ee9981f7f23392a02dafcab8e051a",
+    "mobile-bu-questrom.png": "eed0c1b649e63df63c3c07caa9bbb7cdf14c52513c31a8f4ade79211b4b119c9",
+    "desktop-bu-nickerson.png": "802c6cf1182dde369dc90859a71ea5f49d29fa29981f472f7bf36689e13fb073",
+    "mobile-bu-nickerson.png": "54c553bd46486b83b48f4e858663f04e69e5fb8cb4911c22c711e849bd288e37"
+  }
+}

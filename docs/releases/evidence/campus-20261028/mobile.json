@@ -1,0 +1,634 @@
+{
+  "base": "https://world.pulsetact.ai",
+  "startedAt": "2026-10-29T02:07:56.787Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "mobile: HTTPS, release version, protected resources, valid authentication and nickname entry"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: Mugar Memorial Library"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: George Sherman Union"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: Questrom 商学院"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: Agganis Arena"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: Nickerson Field · West Campus"
+    },
+    {
+      "name": "mobile: real map travel and rendered view: Warren Towers"
+    },
+    {
+      "name": "mobile: phone HD remains in mobile models at both Warren and the shared Link"
+    },
+    {
+      "name": "mobile: normal globe travel back to MIT Killian Court arrival"
+    },
+    {
+      "name": "gzip GET, HEAD and conditional 304: /data/mobile/boston.glb",
+      "etag": "\"1195d84a2ebf60366054f6742edd55a2\"",
+      "cacheControl": "private, max-age=3600",
+      "compressedBytes": 9262130
+    },
+    {
+      "name": "gzip GET, HEAD and conditional 304: /assets/mit-stata/boston-without-stata.glb",
+      "etag": "\"835cb1a6d813e85b58f5d170c4adf93c\"",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "compressedBytes": 9408330
+    },
+    {
+      "name": "gzip GET, HEAD and conditional 304: /assets/mit-residences/boston-without-residences.glb",
+      "etag": "\"0e90311ef569a800d1d1d2739a96b02c\"",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "compressedBytes": 9548579
+    },
+    {
+      "name": "mobile: HTML, actual runtime bundles and mobile campus bytes match staged SHA-256"
+    },
+    {
+      "name": "mobile: no page, WebGL, crash or resource errors"
+    }
+  ],
+  "integrity": [
+    {
+      "path": "/index.html",
+      "bytes": 1073,
+      "sha256": "9273c4281727ab58c365323903791861686732692dc5b80a3d2fd1e845e7a480",
+      "rawSha256": "9273c4281727ab58c365323903791861686732692dc5b80a3d2fd1e845e7a480",
+      "expectedSha256": "5a74d13183c99d5e4963efb2ab8e15da1b9c2104e6bdd6870adfef46bfa40652",
+      "normalizedSha256": "5a74d13183c99d5e4963efb2ab8e15da1b9c2104e6bdd6870adfef46bfa40652",
+      "removedBytes": 367,
+      "beaconSha256": "91b7d9733082c92acf9323b856e64331bdd90fd9896753c814365aff338697cb"
+    },
+    {
+      "path": "/assets/index-CWFDqVX9.js",
+      "bytes": 338415,
+      "sha256": "662d94e3b0d4b51d44e3694368cf47c61a19ba5a19988a06fa1b619589630737",
+      "rawSha256": "662d94e3b0d4b51d44e3694368cf47c61a19ba5a19988a06fa1b619589630737",
+      "expectedSha256": "662d94e3b0d4b51d44e3694368cf47c61a19ba5a19988a06fa1b619589630737",
+      "normalizedSha256": "662d94e3b0d4b51d44e3694368cf47c61a19ba5a19988a06fa1b619589630737",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/three-CN5Xtgz3.js",
+      "bytes": 859185,
+      "sha256": "7e0799274fb3c460f04ce10ab2fe900dc3948e58a6c2c6e888b030fd275c06b7",
+      "rawSha256": "7e0799274fb3c460f04ce10ab2fe900dc3948e58a6c2c6e888b030fd275c06b7",
+      "expectedSha256": "7e0799274fb3c460f04ce10ab2fe900dc3948e58a6c2c6e888b030fd275c06b7",
+      "normalizedSha256": "7e0799274fb3c460f04ce10ab2fe900dc3948e58a6c2c6e888b030fd275c06b7",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/index-C9ukTLCq.css",
+      "bytes": 26398,
+      "sha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "rawSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "expectedSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "normalizedSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/character-catalog-Dpz4N8tW.js",
+      "bytes": 1880,
+      "sha256": "323997b6e5ee1f80c5a389d6fa46db6f86cf03c878a805efc7dbdc4fd6c8de76",
+      "rawSha256": "323997b6e5ee1f80c5a389d6fa46db6f86cf03c878a805efc7dbdc4fd6c8de76",
+      "expectedSha256": "323997b6e5ee1f80c5a389d6fa46db6f86cf03c878a805efc7dbdc4fd6c8de76",
+      "normalizedSha256": "323997b6e5ee1f80c5a389d6fa46db6f86cf03c878a805efc7dbdc4fd6c8de76",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-street-layout-0mpssrel.js",
+      "bytes": 328,
+      "sha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "rawSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "expectedSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "normalizedSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SoloWorldPage-BrD1irZj.css",
+      "bytes": 66689,
+      "sha256": "10426771fd78c9a3035a083f4c97cc7a8b0be62a772e98f0d14f78532a831d5c",
+      "rawSha256": "10426771fd78c9a3035a083f4c97cc7a8b0be62a772e98f0d14f78532a831d5c",
+      "expectedSha256": "10426771fd78c9a3035a083f4c97cc7a8b0be62a772e98f0d14f78532a831d5c",
+      "normalizedSha256": "10426771fd78c9a3035a083f4c97cc7a8b0be62a772e98f0d14f78532a831d5c",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/bu-green-line-layout-CFO6wIHo.js",
+      "bytes": 13265,
+      "sha256": "b6ab2e5e796dcfac8c5edecc924f428b1f81495caacd5b3e24e3e261efb45d96",
+      "rawSha256": "b6ab2e5e796dcfac8c5edecc924f428b1f81495caacd5b3e24e3e261efb45d96",
+      "expectedSha256": "b6ab2e5e796dcfac8c5edecc924f428b1f81495caacd5b3e24e3e261efb45d96",
+      "normalizedSha256": "b6ab2e5e796dcfac8c5edecc924f428b1f81495caacd5b3e24e3e261efb45d96",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SoloWorldPage-BzRY4Pc0.js",
+      "bytes": 103864,
+      "sha256": "65e43f23622a8fd40365e2c79562bde1b9273a496bffe58e8d524e6d90f5f58c",
+      "rawSha256": "65e43f23622a8fd40365e2c79562bde1b9273a496bffe58e8d524e6d90f5f58c",
+      "expectedSha256": "65e43f23622a8fd40365e2c79562bde1b9273a496bffe58e8d524e6d90f5f58c",
+      "normalizedSha256": "65e43f23622a8fd40365e2c79562bde1b9273a496bffe58e8d524e6d90f5f58c",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-road-layout-BR0mqo6g.js",
+      "bytes": 1346147,
+      "sha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "rawSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "expectedSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "normalizedSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mobile-device-Ds5va4r2.js",
+      "bytes": 2549083,
+      "sha256": "4a85ee3aa189756c60a948cf96f874ccc298dc2e2bdaf8096b626c5ee94c1130",
+      "rawSha256": "4a85ee3aa189756c60a948cf96f874ccc298dc2e2bdaf8096b626c5ee94c1130",
+      "expectedSha256": "4a85ee3aa189756c60a948cf96f874ccc298dc2e2bdaf8096b626c5ee94c1130",
+      "normalizedSha256": "4a85ee3aa189756c60a948cf96f874ccc298dc2e2bdaf8096b626c5ee94c1130",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SkeletonUtils-UiEG024E.js",
+      "bytes": 50418,
+      "sha256": "e999ad246003701c883505a0c84b09524eaf5eeb0e55e929783a26ebc3fb7078",
+      "rawSha256": "e999ad246003701c883505a0c84b09524eaf5eeb0e55e929783a26ebc3fb7078",
+      "expectedSha256": "e999ad246003701c883505a0c84b09524eaf5eeb0e55e929783a26ebc3fb7078",
+      "normalizedSha256": "e999ad246003701c883505a0c84b09524eaf5eeb0e55e929783a26ebc3fb7078",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/WorldScene-DYHFeD9P.js",
+      "bytes": 28279,
+      "sha256": "270b8af8033571313c3fca9875dc418e00855694adafb4ae6e2240cef05a20d3",
+      "rawSha256": "270b8af8033571313c3fca9875dc418e00855694adafb4ae6e2240cef05a20d3",
+      "expectedSha256": "270b8af8033571313c3fca9875dc418e00855694adafb4ae6e2240cef05a20d3",
+      "normalizedSha256": "270b8af8033571313c3fca9875dc418e00855694adafb4ae6e2240cef05a20d3",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/courtyard-ground-detail-QRdW7a-H.js",
+      "bytes": 27896,
+      "sha256": "c393a734ed1490e657e37e413de91d4b5012e73031e770828aaece4e50a9121a",
+      "rawSha256": "c393a734ed1490e657e37e413de91d4b5012e73031e770828aaece4e50a9121a",
+      "expectedSha256": "c393a734ed1490e657e37e413de91d4b5012e73031e770828aaece4e50a9121a",
+      "normalizedSha256": "c393a734ed1490e657e37e413de91d4b5012e73031e770828aaece4e50a9121a",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/campus-collision-BsydJm3y.js",
+      "bytes": 1720,
+      "sha256": "b77670554da14752262d248afe2ada83297fe597b9eef6abb7d89a5d4fd7006e",
+      "rawSha256": "b77670554da14752262d248afe2ada83297fe597b9eef6abb7d89a5d4fd7006e",
+      "expectedSha256": "b77670554da14752262d248afe2ada83297fe597b9eef6abb7d89a5d4fd7006e",
+      "normalizedSha256": "b77670554da14752262d248afe2ada83297fe597b9eef6abb7d89a5d4fd7006e",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mobile-campus-CQgP3_lr.js",
+      "bytes": 23743,
+      "sha256": "f07a49cdeb8331245437d06ebf290651e33290d38e55ad090f0a3ee0fe8158e4",
+      "rawSha256": "f07a49cdeb8331245437d06ebf290651e33290d38e55ad090f0a3ee0fe8158e4",
+      "expectedSha256": "f07a49cdeb8331245437d06ebf290651e33290d38e55ad090f0a3ee0fe8158e4",
+      "normalizedSha256": "f07a49cdeb8331245437d06ebf290651e33290d38e55ad090f0a3ee0fe8158e4",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-baker-site-cleanup-Ds-9Mcjv.js",
+      "bytes": 102852,
+      "sha256": "276c65b4c073466910e78c46c77e5a22c2ab00928ccb252b2a7efeac9f954f07",
+      "rawSha256": "276c65b4c073466910e78c46c77e5a22c2ab00928ccb252b2a7efeac9f954f07",
+      "expectedSha256": "276c65b4c073466910e78c46c77e5a22c2ab00928ccb252b2a7efeac9f954f07",
+      "normalizedSha256": "276c65b4c073466910e78c46c77e5a22c2ab00928ccb252b2a7efeac9f954f07",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-residences/boston-without-residences.glb",
+      "bytes": 30272616,
+      "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "rawSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "expectedSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "normalizedSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/data/mobile/boston.json",
+      "bytes": 1320,
+      "sha256": "d9e691b237847d0c091fa883f4e9cc21c4ae565df8d7fcf699df8659be398bfa",
+      "rawSha256": "d9e691b237847d0c091fa883f4e9cc21c4ae565df8d7fcf699df8659be398bfa",
+      "expectedSha256": "d9e691b237847d0c091fa883f4e9cc21c4ae565df8d7fcf699df8659be398bfa",
+      "normalizedSha256": "d9e691b237847d0c091fa883f4e9cc21c4ae565df8d7fcf699df8659be398bfa",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/data/mobile/boston.glb",
+      "bytes": 29609576,
+      "sha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "rawSha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "expectedSha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "normalizedSha256": "6b9b02b24e73aa818e7d2e7663013fcdb1a095af137aa22c24fd5155db4c97f7",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-stata/boston-without-stata.glb",
+      "bytes": 29946188,
+      "sha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "rawSha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "expectedSha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "normalizedSha256": "a74a9e813ef5ae61cee32883ab7da3b3bc98ee37cc5f9e04b1c4cbdf173eea8d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-residences/boston-without-residences.glb",
+      "bytes": 30272616,
+      "sha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "rawSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "expectedSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "normalizedSha256": "bb4e67f5e036127578a041c633289f339ee3b6010007be3249f0fdd27ee19cf0",
+      "removedBytes": 0,
+      "beaconSha256": null
+    }
+  ],
+  "modes": [
+    {
+      "mode": "mobile",
+      "checks": [
+        "HTTPS, release version, protected resources, valid authentication and nickname entry",
+        "real map travel and rendered view: Mugar Memorial Library",
+        "real map travel and rendered view: George Sherman Union",
+        "real map travel and rendered view: Questrom 商学院",
+        "real map travel and rendered view: Agganis Arena",
+        "real map travel and rendered view: Nickerson Field · West Campus",
+        "real map travel and rendered view: Warren Towers",
+        "phone HD remains in mobile models at both Warren and the shared Link",
+        "normal globe travel back to MIT Killian Court arrival",
+        "HTML, actual runtime bundles and mobile campus bytes match staged SHA-256",
+        "no page, WebGL, crash or resource errors"
+      ],
+      "errors": [],
+      "networkFailures": [],
+      "views": [
+        {
+          "name": "bu-mugar",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 61,
+            "range": 220.66666666666666
+          },
+          "position": [
+            -1351.4656858257028,
+            955.0657879503726
+          ],
+          "trackedId": "bu-mugar"
+        },
+        {
+          "name": "bu-gsu",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 0.8987630208333334,
+            "visibleCoverageRatio": 0.9996744791666666,
+            "colors": 188,
+            "range": 254
+          },
+          "position": [
+            -1358.6264919902385,
+            962.0287797695514
+          ],
+          "trackedId": "bu-gsu"
+        },
+        {
+          "name": "bu-questrom",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 58,
+            "range": 215.66666666666666
+          },
+          "position": [
+            -632,
+            1098
+          ],
+          "trackedId": "bu-questrom"
+        },
+        {
+          "name": "bu-agganis",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 61,
+            "range": 220.66666666666666
+          },
+          "position": [
+            -2114,
+            892.3720836960199
+          ],
+          "trackedId": "bu-agganis"
+        },
+        {
+          "name": "bu-nickerson",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 46,
+            "range": 221.66666666666666
+          },
+          "position": [
+            -2211,
+            678
+          ],
+          "trackedId": "bu-nickerson"
+        },
+        {
+          "name": "bu-warren",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 44,
+            "range": 203.66666666666666
+          },
+          "position": [
+            -976.3537367972386,
+            1072.8833663959729
+          ],
+          "trackedId": "bu-warren"
+        },
+        {
+          "name": "warren-hd",
+          "pixels": {
+            "width": 585,
+            "height": 1266,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 53,
+            "range": 169.66666666666666
+          },
+          "position": [
+            -976.3537367972386,
+            1072.8833663959729
+          ],
+          "trackedId": "bu-warren"
+        },
+        {
+          "name": "link-hd",
+          "pixels": {
+            "width": 585,
+            "height": 1266,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 56,
+            "range": 221.66666666666666
+          },
+          "position": [
+            -1351.4656858257028,
+            955.0657879503726
+          ],
+          "trackedId": "bu-mugar"
+        },
+        {
+          "name": "mit-killian-arrival",
+          "pixels": {
+            "width": 585,
+            "height": 1266,
+            "opaqueRatio": 1,
+            "visibleCoverageRatio": 1,
+            "colors": 67,
+            "range": 221.66666666666666
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "trackedId": "axis"
+        }
+      ],
+      "requests": [
+        "/assets/index-CWFDqVX9.js",
+        "/assets/three-CN5Xtgz3.js",
+        "/assets/index-C9ukTLCq.css",
+        "/assets/index-CWFDqVX9.js",
+        "/assets/three-CN5Xtgz3.js",
+        "/assets/index-C9ukTLCq.css",
+        "/assets/SoloWorldPage-BzRY4Pc0.js",
+        "/assets/character-catalog-Dpz4N8tW.js",
+        "/assets/mobile-device-Ds5va4r2.js",
+        "/assets/bu-green-line-layout-CFO6wIHo.js",
+        "/assets/maryland-road-layout-BR0mqo6g.js",
+        "/assets/maryland-street-layout-0mpssrel.js",
+        "/assets/SoloWorldPage-BrD1irZj.css",
+        "/assets/WorldScene-DYHFeD9P.js",
+        "/assets/SkeletonUtils-UiEG024E.js",
+        "/assets/mobile-campus-CQgP3_lr.js",
+        "/assets/campus-collision-BsydJm3y.js",
+        "/assets/mit-baker-site-cleanup-Ds-9Mcjv.js",
+        "/assets/courtyard-ground-detail-QRdW7a-H.js",
+        "/assets/mit-stata/stata-mobile.glb",
+        "/assets/mit-residences/boston-without-residences.glb",
+        "/assets/mit-residences/baker-mobile.glb",
+        "/assets/mit-residences/maseeh-mobile.glb",
+        "/data/mobile/boston.json",
+        "/data/killian/mobile-portico.glb",
+        "/assets/characters/mobile/pixiv.glb",
+        "/assets/characters/mobile-hd/pixiv.glb",
+        "/assets/maps/world-land.json"
+      ],
+      "integrityResponses": [
+        {
+          "path": "/assets/index-CWFDqVX9.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 338415
+        },
+        {
+          "path": "/assets/three-CN5Xtgz3.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 859185
+        },
+        {
+          "path": "/assets/index-C9ukTLCq.css",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 26398
+        },
+        {
+          "path": "/assets/index-CWFDqVX9.js",
+          "status": 304,
+          "captured": false,
+          "source": "playwright",
+          "reason": "non-200"
+        },
+        {
+          "path": "/assets/three-CN5Xtgz3.js",
+          "status": 304,
+          "captured": false,
+          "source": "playwright",
+          "reason": "non-200"
+        },
+        {
+          "path": "/assets/index-C9ukTLCq.css",
+          "status": 304,
+          "captured": false,
+          "source": "playwright",
+          "reason": "non-200"
+        },
+        {
+          "path": "/assets/character-catalog-Dpz4N8tW.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 1880
+        },
+        {
+          "path": "/assets/maryland-street-layout-0mpssrel.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 328
+        },
+        {
+          "path": "/assets/SoloWorldPage-BrD1irZj.css",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 66689
+        },
+        {
+          "path": "/assets/bu-green-line-layout-CFO6wIHo.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 13265
+        },
+        {
+          "path": "/assets/SoloWorldPage-BzRY4Pc0.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 103864
+        },
+        {
+          "path": "/assets/maryland-road-layout-BR0mqo6g.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 1346147
+        },
+        {
+          "path": "/assets/mobile-device-Ds5va4r2.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 2549083
+        },
+        {
+          "path": "/assets/SkeletonUtils-UiEG024E.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 50418
+        },
+        {
+          "path": "/assets/WorldScene-DYHFeD9P.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 28279
+        },
+        {
+          "path": "/assets/courtyard-ground-detail-QRdW7a-H.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 27896
+        },
+        {
+          "path": "/assets/campus-collision-BsydJm3y.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 1720
+        },
+        {
+          "path": "/assets/mobile-campus-CQgP3_lr.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 23743
+        },
+        {
+          "path": "/assets/mit-baker-site-cleanup-Ds-9Mcjv.js",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 102852
+        },
+        {
+          "path": "/assets/mit-residences/boston-without-residences.glb",
+          "status": 200,
+          "captured": true,
+          "source": "cdp",
+          "requestId": "9784.40",
+          "bytes": 30272616
+        },
+        {
+          "path": "/data/mobile/boston.json",
+          "status": 200,
+          "captured": true,
+          "source": "playwright",
+          "bytes": 1320
+        }
+      ],
+      "integrityInspector": {
+        "scope": "test-only response retention; not game runtime or phone memory",
+        "maxTotalBufferSize": 268435456,
+        "maxResourceBufferSize": 67108864
+      },
+      "version": "90c6fa27-bcb9-4e30-93bf-0a8f92b9ebda",
+      "status": "passed"
+    }
+  ],
+  "finishedAt": "2026-10-29T02:09:15.124Z"
+}
