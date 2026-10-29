@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-29T07:16:53.825Z",
+  "url": "https://world.pulsetact.ai/",
+  "sourceCommit": "51445c03d674176f831a516e60631e1d68b0c69a",
+  "deploymentVersion": "9f74ff78-e946-4dc7-9617-97eda0838881",
+  "previousVersion": "90c6fa27-bcb9-4e30-93bf-0a8f92b9ebda",
+  "tests": {
+    "passed": 521,
+    "total": 521,
+    "failed": 0
+  },
+  "build": {
+    "typecheck": true,
+    "production": true,
+    "cloudflare": true,
+    "assets": 131,
+    "totalBytes": 265512891,
+    "note": "Whole site asset inventory, not initial transfer size. Existing large JS chunk warning retained."
+  },
+  "localChecks": [
+    {
+      "mode": "desktop",
+      "checks": 7,
+      "status": "passed"
+    },
+    {
+      "mode": "mobile",
+      "checks": 7,
+      "status": "passed"
+    }
+  ],
+  "onlineChecks": [
+    {
+      "mode": "desktop",
+      "checks": 7,
+      "status": "passed",
+      "version": "9f74ff78-e946-4dc7-9617-97eda0838881",
+      "errors": [],
+      "resourceErrors": []
+    },
+    {
+      "mode": "mobile",
+      "checks": 7,
+      "status": "passed",
+      "version": "9f74ff78-e946-4dc7-9617-97eda0838881",
+      "errors": [],
+      "resourceErrors": []
+    }
+  ],
+  "exactOnlineAssets": {
+    "status": "passed",
+    "count": 39,
+    "coverage": "HTML and every JS/CSS file in staged assets directory",
+    "record": "assets.json"
+  },
+  "screenshots": [
+    "desktop-motorcycle-side.png",
+    "desktop-broom-side.png",
+    "mobile-motorcycle-side.png",
+    "mobile-broom-side.png"
+  ],
+  "sourceSha256": {
+    "src/features/world/commute-vehicle-model.ts": "01e36058b6781c933793bea3d426c34c0a56037436ed2969c606bca3acb4639a",
+    "src/features/world/character-riding-pose.ts": "681a76f8b0a3c8260cba23218bcd8bcf061dac3fcb15778f6a28ec78337e6cdf",
+    "src/features/world/WorldScene.tsx": "db3bc2a64ed026c3b19fc1b3188866be670d98af6d75eb3bf782fc7f091af9c5",
+    "src/features/world/SoloWorldPage.tsx": "5a11877a1ff417813385559f9a1298de497adc55b068e3bdcc180bda789f0cfe"
+  },
+  "recovery": [
+    "Initial Wrangler deployment could not reach the OAuth refresh endpoint. Using explicit IPv4 loopback proxy and IPv4 DNS preference succeeded without replacing credentials.",
+    "First online mobile attempt stopped at the login-service reconnect screen before commute checks. A fresh isolated mobile session passed all seven checks; original failed attempt retained. No auth or runtime workaround was introduced."
+  ],
+  "visual": {
+    "status": "stage-playable",
+    "review": "Actual production side views show both vehicles and rider contact poses in MIT Killian Court; motorcycle tires grounded and broom intentionally hovering. Front view of broom is substantially occluded by rider; side view retained for visibility. Material microdetail and close hand/clothing fidelity still need further refinement.",
+    "physicalMobile": "not-verified",
+    "g0ToG4FinalAcceptance": false
+  }
+}

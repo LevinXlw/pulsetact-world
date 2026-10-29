@@ -1,0 +1,415 @@
+{
+  "status": "failed",
+  "base": "https://world.pulsetact.ai",
+  "startedAt": "2026-10-29T06:57:19.196Z",
+  "profiles": [
+    {
+      "mode": "desktop",
+      "status": "passed",
+      "checks": [
+        "Built application, normal login/nickname and MIT map arrival",
+        "motorcycle: visible menu, front/side game views, cruise and direct stow",
+        "motorcycle: held boost increases movement; normal map travel stows vehicle",
+        "broom: visible menu, front/side game views, cruise and direct stow",
+        "broom: held boost increases movement; normal map travel stows vehicle",
+        "Reload retains saved position and restores walking",
+        "No horizontal overflow, page errors, GL errors or failed assets"
+      ],
+      "movement": [
+        {
+          "mode": "walk",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            51.48178645309765,
+            48.1709031074316
+          ],
+          "distanceMetres": 4.776428145188155,
+          "inputDurationMs": 1441,
+          "saveWaitMs": 3300,
+          "input": "W"
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            48.42158683432865,
+            41.60673120372702
+          ],
+          "distanceMetres": 12.01888453015165,
+          "inputDurationMs": 1445,
+          "saveWaitMs": 3300,
+          "input": "W",
+          "walkDistanceRatio": 2.516291288137487
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            46.488186570109015,
+            37.45956001425077
+          ],
+          "distanceMetres": 16.59458835104155,
+          "inputDurationMs": 1469,
+          "saveWaitMs": 3300,
+          "input": "W + Shift",
+          "cruiseDistanceRatio": 1.3807095250321175
+        },
+        {
+          "mode": "broom",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            47.021582474752186,
+            38.60370185040263
+          ],
+          "distanceMetres": 15.33222084024168,
+          "inputDurationMs": 1431,
+          "saveWaitMs": 3300,
+          "input": "W",
+          "walkDistanceRatio": 3.2099762362567077
+        },
+        {
+          "mode": "broom",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            44.38353218516052,
+            32.94504628908252
+          ],
+          "distanceMetres": 21.575592693020727,
+          "inputDurationMs": 1482,
+          "saveWaitMs": 3300,
+          "input": "W + Shift",
+          "cruiseDistanceRatio": 1.4072059695613304
+        }
+      ],
+      "views": [
+        {
+          "name": "walk-cruise-moved",
+          "screenshot": "desktop-walk-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9791666666666666,
+            "colors": 159,
+            "range": 239
+          },
+          "position": [
+            51.48178645309765,
+            48.1709031074316
+          ],
+          "controls": {
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-front",
+          "screenshot": "desktop-motorcycle-front.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9860026041666666,
+            "colors": 140,
+            "range": 240
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-side",
+          "screenshot": "desktop-motorcycle-side.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9807942708333334,
+            "colors": 148,
+            "range": 218.66666666666666
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-cruise-moved",
+          "screenshot": "desktop-motorcycle-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9895833333333334,
+            "colors": 137,
+            "range": 238.66666666666666
+          },
+          "position": [
+            48.42158683432865,
+            41.60673120372702
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-boost-moved",
+          "screenshot": "desktop-motorcycle-boost-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9899088541666666,
+            "colors": 129,
+            "range": 231
+          },
+          "position": [
+            46.488186570109015,
+            37.45956001425077
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-front",
+          "screenshot": "desktop-broom-front.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9853515625,
+            "colors": 147,
+            "range": 211
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-side",
+          "screenshot": "desktop-broom-side.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9801432291666666,
+            "colors": 148,
+            "range": 216
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-cruise-moved",
+          "screenshot": "desktop-broom-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9876302083333334,
+            "colors": 140,
+            "range": 201
+          },
+          "position": [
+            47.021582474752186,
+            38.60370185040263
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-boost-moved",
+          "screenshot": "desktop-broom-boost-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9879557291666666,
+            "colors": 126,
+            "range": 207.66666666666666
+          },
+          "position": [
+            44.38353218516052,
+            32.94504628908252
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "reload-stowed",
+          "screenshot": "desktop-reload-stowed.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9794921875,
+            "colors": 170,
+            "range": 240
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "resourceErrors": [],
+      "version": "9f74ff78-e946-4dc7-9617-97eda0838881",
+      "menuScreenshot": "desktop-commute-menu.png"
+    },
+    {
+      "mode": "mobile",
+      "status": "failed",
+      "checks": [],
+      "movement": [],
+      "views": [],
+      "errors": [],
+      "resourceErrors": [],
+      "version": "9f74ff78-e946-4dc7-9617-97eda0838881",
+      "failure": "\u001b[31mTimed out 180000ms waiting for \u001b[39mexpect(locator).toBeVisible()\n\nLocator: getByRole('navigation', { name: '世界菜单', exact: true })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - locator._expect with timeout 180000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '世界菜单', exact: true })\u001b[22m\n"
+    }
+  ],
+  "scope": "Built app commute UI, saved movement, boost, stow, map travel and reload; MIT Killian Court only.",
+  "evidence": "Actual game screenshots. Pixel checks detect a blank scene; vehicle shape, materials and rider pose still require visual review. Phone emulation is not a physical-device test.",
+  "failure": "mobile: \u001b[31mTimed out 180000ms waiting for \u001b[39mexpect(locator).toBeVisible()\n\nLocator: getByRole('navigation', { name: '世界菜单', exact: true })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - locator._expect with timeout 180000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '世界菜单', exact: true })\u001b[22m\n",
+  "finishedAt": "2026-10-29T07:04:26.293Z"
+}

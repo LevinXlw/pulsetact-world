@@ -1,0 +1,854 @@
+{
+  "status": "passed",
+  "base": "http://127.0.0.1:4189",
+  "startedAt": "2026-10-29T06:46:18.960Z",
+  "profiles": [
+    {
+      "mode": "desktop",
+      "status": "passed",
+      "checks": [
+        "Built application, normal login/nickname and MIT map arrival",
+        "motorcycle: visible menu, front/side game views, cruise and direct stow",
+        "motorcycle: held boost increases movement; normal map travel stows vehicle",
+        "broom: visible menu, front/side game views, cruise and direct stow",
+        "broom: held boost increases movement; normal map travel stows vehicle",
+        "Reload retains saved position and restores walking",
+        "No horizontal overflow, page errors, GL errors or failed assets"
+      ],
+      "movement": [
+        {
+          "mode": "walk",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            51.482914704805864,
+            48.17332322346504
+          ],
+          "distanceMetres": 4.773757955394823,
+          "inputDurationMs": 1434,
+          "saveWaitMs": 3300,
+          "input": "W"
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            48.62415554959168,
+            42.04124399209007
+          ],
+          "distanceMetres": 11.539472966196064,
+          "inputDurationMs": 1413,
+          "saveWaitMs": 3300,
+          "input": "W",
+          "walkDistanceRatio": 2.417272319631394
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            46.370419497109346,
+            37.20694796011389
+          ],
+          "distanceMetres": 16.873303139630465,
+          "inputDurationMs": 1442,
+          "saveWaitMs": 3300,
+          "input": "W + Shift",
+          "cruiseDistanceRatio": 1.4622247644289663
+        },
+        {
+          "mode": "broom",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            47.01249578540109,
+            38.58421077192203
+          ],
+          "distanceMetres": 15.353725957393191,
+          "inputDurationMs": 1428,
+          "saveWaitMs": 3300,
+          "input": "W",
+          "walkDistanceRatio": 3.2162765898178707
+        },
+        {
+          "mode": "broom",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            44.53672369328182,
+            33.27364426266857
+          ],
+          "distanceMetres": 21.213040260391548,
+          "inputDurationMs": 1452,
+          "saveWaitMs": 3300,
+          "input": "W + Shift",
+          "cruiseDistanceRatio": 1.381621654525946
+        }
+      ],
+      "views": [
+        {
+          "name": "walk-cruise-moved",
+          "screenshot": "desktop-walk-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9817708333333334,
+            "colors": 158,
+            "range": 239.33333333333331
+          },
+          "position": [
+            51.482914704805864,
+            48.17332322346504
+          ],
+          "controls": {
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-front",
+          "screenshot": "desktop-motorcycle-front.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9873046875,
+            "colors": 151,
+            "range": 241
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-side",
+          "screenshot": "desktop-motorcycle-side.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9794921875,
+            "colors": 152,
+            "range": 219
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-cruise-moved",
+          "screenshot": "desktop-motorcycle-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9837239583333334,
+            "colors": 135,
+            "range": 234
+          },
+          "position": [
+            48.62415554959168,
+            42.04124399209007
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "motorcycle-boost-moved",
+          "screenshot": "desktop-motorcycle-boost-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9860026041666666,
+            "colors": 139,
+            "range": 231
+          },
+          "position": [
+            46.370419497109346,
+            37.20694796011389
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-front",
+          "screenshot": "desktop-broom-front.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9873046875,
+            "colors": 136,
+            "range": 210.66666666666669
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-side",
+          "screenshot": "desktop-broom-side.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9798177083333334,
+            "colors": 148,
+            "range": 216
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-cruise-moved",
+          "screenshot": "desktop-broom-cruise-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9860026041666666,
+            "colors": 140,
+            "range": 200.66666666666666
+          },
+          "position": [
+            47.01249578540109,
+            38.58421077192203
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "broom-boost-moved",
+          "screenshot": "desktop-broom-boost-moved.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.9873046875,
+            "colors": 130,
+            "range": 207.66666666666666
+          },
+          "position": [
+            44.53672369328182,
+            33.27364426266857
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 1264.109375,
+              "y": 721.609375,
+              "width": 135.890625,
+              "height": 63.390625
+            },
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        },
+        {
+          "name": "reload-stowed",
+          "screenshot": "desktop-reload-stowed.png",
+          "pixels": {
+            "width": 1440,
+            "height": 900,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 0.978515625,
+            "colors": 169,
+            "range": 239.66666666666669
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".pw-bottom": {
+              "x": 38,
+              "y": 841.203125,
+              "width": 1364,
+              "height": 41.796875
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "resourceErrors": [],
+      "menuScreenshot": "desktop-commute-menu.png"
+    },
+    {
+      "mode": "mobile",
+      "status": "passed",
+      "checks": [
+        "Built application, normal login/nickname and MIT map arrival",
+        "motorcycle: visible menu, front/side game views, cruise and direct stow",
+        "motorcycle: held boost increases movement; normal map travel stows vehicle",
+        "broom: visible menu, front/side game views, cruise and direct stow",
+        "broom: held boost increases movement; normal map travel stows vehicle",
+        "Reload retains saved position and restores walking",
+        "No horizontal overflow, page errors, GL errors or failed assets"
+      ],
+      "movement": [
+        {
+          "mode": "walk",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            51.60532965718565,
+            48.435905045277046
+          ],
+          "distanceMetres": 4.484043209977443,
+          "inputDurationMs": 1509,
+          "saveWaitMs": 3300,
+          "input": "direction touch contact"
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            48.75580590804049,
+            42.323635891867646
+          ],
+          "distanceMetres": 11.22790114150761,
+          "inputDurationMs": 1539,
+          "saveWaitMs": 3300,
+          "input": "direction touch contact",
+          "walkDistanceRatio": 2.5039680965884563
+        },
+        {
+          "mode": "motorcycle",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            46.1318449516164,
+            36.6952021514879
+          ],
+          "distanceMetres": 17.437928313000757,
+          "inputDurationMs": 1605,
+          "saveWaitMs": 3300,
+          "input": "simultaneous direction and boost touch contacts",
+          "cruiseDistanceRatio": 1.5530888714842483
+        },
+        {
+          "mode": "broom",
+          "boosted": false,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            47.2772505517966,
+            39.15211352842383
+          ],
+          "distanceMetres": 14.727141065162707,
+          "inputDurationMs": 1542,
+          "saveWaitMs": 3300,
+          "input": "direction touch contact",
+          "walkDistanceRatio": 3.284344145567855
+        },
+        {
+          "mode": "broom",
+          "boosted": true,
+          "before": [
+            53.5,
+            52.5
+          ],
+          "after": [
+            44.12335794409935,
+            32.38696882486521
+          ],
+          "distanceMetres": 22.191337032644718,
+          "inputDurationMs": 1594,
+          "saveWaitMs": 3300,
+          "input": "simultaneous direction and boost touch contacts",
+          "cruiseDistanceRatio": 1.506832652342734
+        }
+      ],
+      "views": [
+        {
+          "name": "walk-cruise-moved",
+          "screenshot": "mobile-walk-cruise-moved.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 59,
+            "range": 219
+          },
+          "position": [
+            51.60532965718565,
+            48.435905045277046
+          ],
+          "controls": {
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "motorcycle-front",
+          "screenshot": "mobile-motorcycle-front.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 49,
+            "range": 220.33333333333331
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "motorcycle-side",
+          "screenshot": "mobile-motorcycle-side.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 90,
+            "range": 221.33333333333334
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "motorcycle-cruise-moved",
+          "screenshot": "mobile-motorcycle-cruise-moved.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 73,
+            "range": 222.33333333333334
+          },
+          "position": [
+            48.75580590804049,
+            42.323635891867646
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "motorcycle-boost-moved",
+          "screenshot": "mobile-motorcycle-boost-moved.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 81,
+            "range": 221
+          },
+          "position": [
+            46.1318449516164,
+            36.6952021514879
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "broom-front",
+          "screenshot": "mobile-broom-front.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 35,
+            "range": 195
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "broom-side",
+          "screenshot": "mobile-broom-side.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 70,
+            "range": 217.33333333333331
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "broom-cruise-moved",
+          "screenshot": "mobile-broom-cruise-moved.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 77,
+            "range": 221
+          },
+          "position": [
+            47.2772505517966,
+            39.15211352842383
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "broom-boost-moved",
+          "screenshot": "mobile-broom-boost-moved.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 72,
+            "range": 221
+          },
+          "position": [
+            44.12335794409935,
+            32.38696882486521
+          ],
+          "controls": {
+            ".solo-ride-controls": {
+              "x": 244.109375,
+              "y": 629.609375,
+              "width": 127.890625,
+              "height": 111.390625
+            },
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        },
+        {
+          "name": "reload-stowed",
+          "screenshot": "mobile-reload-stowed.png",
+          "pixels": {
+            "width": 390,
+            "height": 844,
+            "visibleCoverageRatio": 1,
+            "opaqueRatio": 1,
+            "colors": 61,
+            "range": 219.33333333333334
+          },
+          "position": [
+            53.5,
+            52.5
+          ],
+          "controls": {
+            ".pw-mobile-pad": {
+              "x": 20,
+              "y": 648,
+              "width": 140,
+              "height": 92
+            },
+            ".pw-bottom": {
+              "x": 15,
+              "y": 767,
+              "width": 360,
+              "height": 61
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "resourceErrors": [],
+      "menuScreenshot": "mobile-commute-menu.png"
+    }
+  ],
+  "scope": "Built app commute UI, saved movement, boost, stow, map travel and reload; MIT Killian Court only.",
+  "evidence": "Actual game screenshots. Pixel checks detect a blank scene; vehicle shape, materials and rider pose still require visual review. Phone emulation is not a physical-device test.",
+  "finishedAt": "2026-10-29T06:49:21.065Z"
+}

@@ -1,0 +1,397 @@
+{
+  "status": "passed",
+  "version": "9f74ff78-e946-4dc7-9617-97eda0838881",
+  "checkedAt": "2026-10-29T07:04:25.409Z",
+  "assets": [
+    {
+      "path": "/index.html",
+      "bytes": 706,
+      "sha256": "ab87b0f9f00d8a31b0bc51a981e0bcac130f299a07c635819577e0c2f4b12dd1",
+      "rawSha256": "ab87b0f9f00d8a31b0bc51a981e0bcac130f299a07c635819577e0c2f4b12dd1",
+      "expectedSha256": "ab87b0f9f00d8a31b0bc51a981e0bcac130f299a07c635819577e0c2f4b12dd1",
+      "normalizedSha256": "ab87b0f9f00d8a31b0bc51a981e0bcac130f299a07c635819577e0c2f4b12dd1",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/arizona-campus-RRdnktiQ.js",
+      "bytes": 33498,
+      "sha256": "b48236047aea9b1184a5cb67b5802839d33eeae7ddc9d6218e80ff2209c69ae7",
+      "rawSha256": "b48236047aea9b1184a5cb67b5802839d33eeae7ddc9d6218e80ff2209c69ae7",
+      "expectedSha256": "b48236047aea9b1184a5cb67b5802839d33eeae7ddc9d6218e80ff2209c69ae7",
+      "normalizedSha256": "b48236047aea9b1184a5cb67b5802839d33eeae7ddc9d6218e80ff2209c69ae7",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/bu-green-line-layout-Tu2QATmt.js",
+      "bytes": 13259,
+      "sha256": "30379646a0e2239ae4bad58efc1ddc76efb59341c509474c433c5d1377ed58a7",
+      "rawSha256": "30379646a0e2239ae4bad58efc1ddc76efb59341c509474c433c5d1377ed58a7",
+      "expectedSha256": "30379646a0e2239ae4bad58efc1ddc76efb59341c509474c433c5d1377ed58a7",
+      "normalizedSha256": "30379646a0e2239ae4bad58efc1ddc76efb59341c509474c433c5d1377ed58a7",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/campus-collision-CVhiXPjv.js",
+      "bytes": 1720,
+      "sha256": "e343e68937bfabb9200f5e95227d740adb3ce47ef3d2401bb0a12981f8a6b508",
+      "rawSha256": "e343e68937bfabb9200f5e95227d740adb3ce47ef3d2401bb0a12981f8a6b508",
+      "expectedSha256": "e343e68937bfabb9200f5e95227d740adb3ce47ef3d2401bb0a12981f8a6b508",
+      "normalizedSha256": "e343e68937bfabb9200f5e95227d740adb3ce47ef3d2401bb0a12981f8a6b508",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/CampusCanvas-9YZCEGyK.js",
+      "bytes": 9328,
+      "sha256": "59283a4496f0d250e617677325e3ef7c6c6251199281c162f0522c2e705ed6e5",
+      "rawSha256": "59283a4496f0d250e617677325e3ef7c6c6251199281c162f0522c2e705ed6e5",
+      "expectedSha256": "59283a4496f0d250e617677325e3ef7c6c6251199281c162f0522c2e705ed6e5",
+      "normalizedSha256": "59283a4496f0d250e617677325e3ef7c6c6251199281c162f0522c2e705ed6e5",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/cds-interior-assets-Cigd6L51.js",
+      "bytes": 5508,
+      "sha256": "afec40c145f69c5bc157bbfdecefe9232f90d35193cfffdd8c1547da8309d1bd",
+      "rawSha256": "afec40c145f69c5bc157bbfdecefe9232f90d35193cfffdd8c1547da8309d1bd",
+      "expectedSha256": "afec40c145f69c5bc157bbfdecefe9232f90d35193cfffdd8c1547da8309d1bd",
+      "normalizedSha256": "afec40c145f69c5bc157bbfdecefe9232f90d35193cfffdd8c1547da8309d1bd",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/CDSInteriorVisit-B8FnQ4jj.js",
+      "bytes": 6018,
+      "sha256": "998de3ca91665ab7d577704b8c094b9f2e3489e8bda28de3ccc93a5cf06e74f5",
+      "rawSha256": "998de3ca91665ab7d577704b8c094b9f2e3489e8bda28de3ccc93a5cf06e74f5",
+      "expectedSha256": "998de3ca91665ab7d577704b8c094b9f2e3489e8bda28de3ccc93a5cf06e74f5",
+      "normalizedSha256": "998de3ca91665ab7d577704b8c094b9f2e3489e8bda28de3ccc93a5cf06e74f5",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/CDSInteriorVisit-Bd3zbBzi.css",
+      "bytes": 4753,
+      "sha256": "99370ec9561f7e9032ac49295b58c37749a1fdc0dd7555cd5fd10384909a0af3",
+      "rawSha256": "99370ec9561f7e9032ac49295b58c37749a1fdc0dd7555cd5fd10384909a0af3",
+      "expectedSha256": "99370ec9561f7e9032ac49295b58c37749a1fdc0dd7555cd5fd10384909a0af3",
+      "normalizedSha256": "99370ec9561f7e9032ac49295b58c37749a1fdc0dd7555cd5fd10384909a0af3",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/Character-BIqZ65a7.js",
+      "bytes": 4723,
+      "sha256": "0e58cfa019c5e5dcd3d19cd730864fa4024162aa71e37b30638056c355838510",
+      "rawSha256": "0e58cfa019c5e5dcd3d19cd730864fa4024162aa71e37b30638056c355838510",
+      "expectedSha256": "0e58cfa019c5e5dcd3d19cd730864fa4024162aa71e37b30638056c355838510",
+      "normalizedSha256": "0e58cfa019c5e5dcd3d19cd730864fa4024162aa71e37b30638056c355838510",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/character-catalog-BCzIcEUQ.js",
+      "bytes": 1880,
+      "sha256": "0c1a5b9834a30478d83aa2357aa5e7f5e0e387b202e9a8a593275a5d3d6d7e58",
+      "rawSha256": "0c1a5b9834a30478d83aa2357aa5e7f5e0e387b202e9a8a593275a5d3d6d7e58",
+      "expectedSha256": "0c1a5b9834a30478d83aa2357aa5e7f5e0e387b202e9a8a593275a5d3d6d7e58",
+      "normalizedSha256": "0c1a5b9834a30478d83aa2357aa5e7f5e0e387b202e9a8a593275a5d3d6d7e58",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/CharacterPreviewPage-B4SXNlTe.js",
+      "bytes": 5923,
+      "sha256": "16189cbb33295c49257b98e82fb86f727ce517189e36452a477a5b12f5cf524f",
+      "rawSha256": "16189cbb33295c49257b98e82fb86f727ce517189e36452a477a5b12f5cf524f",
+      "expectedSha256": "16189cbb33295c49257b98e82fb86f727ce517189e36452a477a5b12f5cf524f",
+      "normalizedSha256": "16189cbb33295c49257b98e82fb86f727ce517189e36452a477a5b12f5cf524f",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/CharacterPreviewPage-CGWcn6Im.css",
+      "bytes": 6260,
+      "sha256": "f70f51c4f7678b17188094d12d7a2b060b4296082874f5ed465dd64d060561ff",
+      "rawSha256": "f70f51c4f7678b17188094d12d7a2b060b4296082874f5ed465dd64d060561ff",
+      "expectedSha256": "f70f51c4f7678b17188094d12d7a2b060b4296082874f5ed465dd64d060561ff",
+      "normalizedSha256": "f70f51c4f7678b17188094d12d7a2b060b4296082874f5ed465dd64d060561ff",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/commute-B4FNF8XK.js",
+      "bytes": 2550219,
+      "sha256": "a45677558bc49d9566eeacab2107615f4c5b31c92f693cec3a9a710a9399678d",
+      "rawSha256": "a45677558bc49d9566eeacab2107615f4c5b31c92f693cec3a9a710a9399678d",
+      "expectedSha256": "a45677558bc49d9566eeacab2107615f4c5b31c92f693cec3a9a710a9399678d",
+      "normalizedSha256": "a45677558bc49d9566eeacab2107615f4c5b31c92f693cec3a9a710a9399678d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/courtyard-ground-detail-C2FIoHCJ.js",
+      "bytes": 27896,
+      "sha256": "e978b0f0a619523c8887a1c9687202d43a43dcd80e571b83beed3cbb551da88e",
+      "rawSha256": "e978b0f0a619523c8887a1c9687202d43a43dcd80e571b83beed3cbb551da88e",
+      "expectedSha256": "e978b0f0a619523c8887a1c9687202d43a43dcd80e571b83beed3cbb551da88e",
+      "normalizedSha256": "e978b0f0a619523c8887a1c9687202d43a43dcd80e571b83beed3cbb551da88e",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/index-C9ukTLCq.css",
+      "bytes": 26398,
+      "sha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "rawSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "expectedSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "normalizedSha256": "e8ce7e470d09861081b43335f91b006df209166042c477b8fa1629e7be62319c",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/index-DWEtgOl_.js",
+      "bytes": 338409,
+      "sha256": "6c361b51c5d390c0a53252273e276edcb99cea070f2f00f6179b04e87a0a47d9",
+      "rawSha256": "6c361b51c5d390c0a53252273e276edcb99cea070f2f00f6179b04e87a0a47d9",
+      "expectedSha256": "6c361b51c5d390c0a53252273e276edcb99cea070f2f00f6179b04e87a0a47d9",
+      "normalizedSha256": "6c361b51c5d390c0a53252273e276edcb99cea070f2f00f6179b04e87a0a47d9",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/local-assets-D9kznjy_.js",
+      "bytes": 1566,
+      "sha256": "88a3e20f60ecb364dc09aa72964617a4cd5d94a41aabb1f4195ea2d74a6e395d",
+      "rawSha256": "88a3e20f60ecb364dc09aa72964617a4cd5d94a41aabb1f4195ea2d74a6e395d",
+      "expectedSha256": "88a3e20f60ecb364dc09aa72964617a4cd5d94a41aabb1f4195ea2d74a6e395d",
+      "normalizedSha256": "88a3e20f60ecb364dc09aa72964617a4cd5d94a41aabb1f4195ea2d74a6e395d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/LocalCampusScene-CUjMXFdw.js",
+      "bytes": 87936,
+      "sha256": "70ec0b105df5ee01c972870a22db2e82bbda3919c55da700c0241d545bcc170e",
+      "rawSha256": "70ec0b105df5ee01c972870a22db2e82bbda3919c55da700c0241d545bcc170e",
+      "expectedSha256": "70ec0b105df5ee01c972870a22db2e82bbda3919c55da700c0241d545bcc170e",
+      "normalizedSha256": "70ec0b105df5ee01c972870a22db2e82bbda3919c55da700c0241d545bcc170e",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-campus-DDA99RTc.js",
+      "bytes": 21459,
+      "sha256": "2f81e566a3353e54c9d4567257c25bb612c10f2f55ff6ec060af59ce283b34f8",
+      "rawSha256": "2f81e566a3353e54c9d4567257c25bb612c10f2f55ff6ec060af59ce283b34f8",
+      "expectedSha256": "2f81e566a3353e54c9d4567257c25bb612c10f2f55ff6ec060af59ce283b34f8",
+      "normalizedSha256": "2f81e566a3353e54c9d4567257c25bb612c10f2f55ff6ec060af59ce283b34f8",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-campus-paving-DNIlOjrH.js",
+      "bytes": 1748,
+      "sha256": "7c6a74478072478203864a6868a1ac2ab697aef6b370e2cac0916ec0f953cedf",
+      "rawSha256": "7c6a74478072478203864a6868a1ac2ab697aef6b370e2cac0916ec0f953cedf",
+      "expectedSha256": "7c6a74478072478203864a6868a1ac2ab697aef6b370e2cac0916ec0f953cedf",
+      "normalizedSha256": "7c6a74478072478203864a6868a1ac2ab697aef6b370e2cac0916ec0f953cedf",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-expansion-CrYf-1wM.js",
+      "bytes": 18381,
+      "sha256": "16ca52f59773f36eb193b345aa40310dafe15c52639f5b4e8a771950c8bcdb3f",
+      "rawSha256": "16ca52f59773f36eb193b345aa40310dafe15c52639f5b4e8a771950c8bcdb3f",
+      "expectedSha256": "16ca52f59773f36eb193b345aa40310dafe15c52639f5b4e8a771950c8bcdb3f",
+      "normalizedSha256": "16ca52f59773f36eb193b345aa40310dafe15c52639f5b4e8a771950c8bcdb3f",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-full-campus-CubT4-B7.js",
+      "bytes": 47823,
+      "sha256": "4616a3fca31359e92b050744089e2503eca87a9ab36647000abdacd6ef0237d1",
+      "rawSha256": "4616a3fca31359e92b050744089e2503eca87a9ab36647000abdacd6ef0237d1",
+      "expectedSha256": "4616a3fca31359e92b050744089e2503eca87a9ab36647000abdacd6ef0237d1",
+      "normalizedSha256": "4616a3fca31359e92b050744089e2503eca87a9ab36647000abdacd6ef0237d1",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-road-layout-BR0mqo6g.js",
+      "bytes": 1346147,
+      "sha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "rawSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "expectedSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "normalizedSha256": "1925a571c4ba59c93fb6c47e391069ca663c89a2f14393da6af5d675bd63edc0",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-street-layout-0mpssrel.js",
+      "bytes": 328,
+      "sha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "rawSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "expectedSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "normalizedSha256": "562ab48f5de643db523fbfaeb7063d3d07a56c5d1732061ba62a2999f541921d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-streetscape-BgSuBXyQ.js",
+      "bytes": 8516,
+      "sha256": "1d5c0e593082a3e4cc5fc519598a90fb89f791ce41bc0a8aa1c640f57c1a14c8",
+      "rawSha256": "1d5c0e593082a3e4cc5fc519598a90fb89f791ce41bc0a8aa1c640f57c1a14c8",
+      "expectedSha256": "1d5c0e593082a3e4cc5fc519598a90fb89f791ce41bc0a8aa1c640f57c1a14c8",
+      "normalizedSha256": "1d5c0e593082a3e4cc5fc519598a90fb89f791ce41bc0a8aa1c640f57c1a14c8",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/maryland-terrain-4ydj0Q73.js",
+      "bytes": 222281,
+      "sha256": "d04b0d6e1809691bc8b3c278376e716f0d27388cd0080909316f1a9c9b01aa9d",
+      "rawSha256": "d04b0d6e1809691bc8b3c278376e716f0d27388cd0080909316f1a9c9b01aa9d",
+      "expectedSha256": "d04b0d6e1809691bc8b3c278376e716f0d27388cd0080909316f1a9c9b01aa9d",
+      "normalizedSha256": "d04b0d6e1809691bc8b3c278376e716f0d27388cd0080909316f1a9c9b01aa9d",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-baker-site-cleanup-CD_M4czy.js",
+      "bytes": 102846,
+      "sha256": "e0f4433f5f28c0ed16e25dacb9a0d4e313f36669a030c851a64e29b272aa84fd",
+      "rawSha256": "e0f4433f5f28c0ed16e25dacb9a0d4e313f36669a030c851a64e29b272aa84fd",
+      "expectedSha256": "e0f4433f5f28c0ed16e25dacb9a0d4e313f36669a030c851a64e29b272aa84fd",
+      "normalizedSha256": "e0f4433f5f28c0ed16e25dacb9a0d4e313f36669a030c851a64e29b272aa84fd",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mit-scene-renderer-DFiSOiRk.js",
+      "bytes": 28928,
+      "sha256": "72ab45e310cea66ef98d699b908241a60ea9f06f6352bce7093dd7d73491d63a",
+      "rawSha256": "72ab45e310cea66ef98d699b908241a60ea9f06f6352bce7093dd7d73491d63a",
+      "expectedSha256": "72ab45e310cea66ef98d699b908241a60ea9f06f6352bce7093dd7d73491d63a",
+      "normalizedSha256": "72ab45e310cea66ef98d699b908241a60ea9f06f6352bce7093dd7d73491d63a",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/mobile-campus-CNl5lSlK.js",
+      "bytes": 23737,
+      "sha256": "0f43af709c87a077e40e92d15ddbc6ab0aedd04500e9a50c44cd5c2f3be73f90",
+      "rawSha256": "0f43af709c87a077e40e92d15ddbc6ab0aedd04500e9a50c44cd5c2f3be73f90",
+      "expectedSha256": "0f43af709c87a077e40e92d15ddbc6ab0aedd04500e9a50c44cd5c2f3be73f90",
+      "normalizedSha256": "0f43af709c87a077e40e92d15ddbc6ab0aedd04500e9a50c44cd5c2f3be73f90",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/penn-campus-1uVuy8mx.js",
+      "bytes": 13714,
+      "sha256": "7c72478a1f68c3463a45adb66981dd4f687e18e99f62934250e5fd2513fff661",
+      "rawSha256": "7c72478a1f68c3463a45adb66981dd4f687e18e99f62934250e5fd2513fff661",
+      "expectedSha256": "7c72478a1f68c3463a45adb66981dd4f687e18e99f62934250e5fd2513fff661",
+      "normalizedSha256": "7c72478a1f68c3463a45adb66981dd4f687e18e99f62934250e5fd2513fff661",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/RealCampusPage-CWQKXjO2.css",
+      "bytes": 14693,
+      "sha256": "de5a2a7d75d79ec704a4b0a40744b0049db341ad4c5fe7632d0d0dda23b883a0",
+      "rawSha256": "de5a2a7d75d79ec704a4b0a40744b0049db341ad4c5fe7632d0d0dda23b883a0",
+      "expectedSha256": "de5a2a7d75d79ec704a4b0a40744b0049db341ad4c5fe7632d0d0dda23b883a0",
+      "normalizedSha256": "de5a2a7d75d79ec704a4b0a40744b0049db341ad4c5fe7632d0d0dda23b883a0",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/RealCampusPage-DKARKrHV.js",
+      "bytes": 25236,
+      "sha256": "2368879c64d3239e7c0ba4e155fed597fbb05cc42acf59c409250469c9c70757",
+      "rawSha256": "2368879c64d3239e7c0ba4e155fed597fbb05cc42acf59c409250469c9c70757",
+      "expectedSha256": "2368879c64d3239e7c0ba4e155fed597fbb05cc42acf59c409250469c9c70757",
+      "normalizedSha256": "2368879c64d3239e7c0ba4e155fed597fbb05cc42acf59c409250469c9c70757",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/scene-assets-desktop-SI2lfO70.js",
+      "bytes": 176694,
+      "sha256": "4b63e4cdf5c79285b6e655a43d9d28dfa497be891d344097e0b9d74893d3c324",
+      "rawSha256": "4b63e4cdf5c79285b6e655a43d9d28dfa497be891d344097e0b9d74893d3c324",
+      "expectedSha256": "4b63e4cdf5c79285b6e655a43d9d28dfa497be891d344097e0b9d74893d3c324",
+      "normalizedSha256": "4b63e4cdf5c79285b6e655a43d9d28dfa497be891d344097e0b9d74893d3c324",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SimplexNoise-vjoMaxVR.js",
+      "bytes": 5507,
+      "sha256": "57fec9640d59a7dd9846f745c16cbe3d5565c1f85486f2a47d5b5c553e4e63fc",
+      "rawSha256": "57fec9640d59a7dd9846f745c16cbe3d5565c1f85486f2a47d5b5c553e4e63fc",
+      "expectedSha256": "57fec9640d59a7dd9846f745c16cbe3d5565c1f85486f2a47d5b5c553e4e63fc",
+      "normalizedSha256": "57fec9640d59a7dd9846f745c16cbe3d5565c1f85486f2a47d5b5c553e4e63fc",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SkeletonUtils-DT2P0MW1.js",
+      "bytes": 50418,
+      "sha256": "fff4fc2e6b9007d8154f4228f1266b8920190bb385a3d55b7adde095242f85bd",
+      "rawSha256": "fff4fc2e6b9007d8154f4228f1266b8920190bb385a3d55b7adde095242f85bd",
+      "expectedSha256": "fff4fc2e6b9007d8154f4228f1266b8920190bb385a3d55b7adde095242f85bd",
+      "normalizedSha256": "fff4fc2e6b9007d8154f4228f1266b8920190bb385a3d55b7adde095242f85bd",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SoloWorldPage-DNcmzboE.js",
+      "bytes": 108253,
+      "sha256": "52af1cbc205a6e137abf5672f1f206e9887964476ce056f6dcc72c0708aee358",
+      "rawSha256": "52af1cbc205a6e137abf5672f1f206e9887964476ce056f6dcc72c0708aee358",
+      "expectedSha256": "52af1cbc205a6e137abf5672f1f206e9887964476ce056f6dcc72c0708aee358",
+      "normalizedSha256": "52af1cbc205a6e137abf5672f1f206e9887964476ce056f6dcc72c0708aee358",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/SoloWorldPage-TX2Ciebl.css",
+      "bytes": 70585,
+      "sha256": "1a566607ee2356b26ad79622c20646e40cfa1f65ed4e4c5a6cc5ef880719cd47",
+      "rawSha256": "1a566607ee2356b26ad79622c20646e40cfa1f65ed4e4c5a6cc5ef880719cd47",
+      "expectedSha256": "1a566607ee2356b26ad79622c20646e40cfa1f65ed4e4c5a6cc5ef880719cd47",
+      "normalizedSha256": "1a566607ee2356b26ad79622c20646e40cfa1f65ed4e4c5a6cc5ef880719cd47",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/three-C-EbrrQY.js",
+      "bytes": 859203,
+      "sha256": "a985676ad0406bb81af31325a81cda73af1903525038e5466978302da1e747af",
+      "rawSha256": "a985676ad0406bb81af31325a81cda73af1903525038e5466978302da1e747af",
+      "expectedSha256": "a985676ad0406bb81af31325a81cda73af1903525038e5466978302da1e747af",
+      "normalizedSha256": "a985676ad0406bb81af31325a81cda73af1903525038e5466978302da1e747af",
+      "removedBytes": 0,
+      "beaconSha256": null
+    },
+    {
+      "path": "/assets/WorldScene-D9Yh1amo.js",
+      "bytes": 44274,
+      "sha256": "ecd970c28ab3b388ef524a8fbe4cde280013181ba3eadff9c54390c6d8e51649",
+      "rawSha256": "ecd970c28ab3b388ef524a8fbe4cde280013181ba3eadff9c54390c6d8e51649",
+      "expectedSha256": "ecd970c28ab3b388ef524a8fbe4cde280013181ba3eadff9c54390c6d8e51649",
+      "normalizedSha256": "ecd970c28ab3b388ef524a8fbe4cde280013181ba3eadff9c54390c6d8e51649",
+      "removedBytes": 0,
+      "beaconSha256": null
+    }
+  ]
+}
