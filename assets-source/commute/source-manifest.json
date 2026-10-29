@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "motorcycle": {
+    "name": "Unbranded evergreen classic street motorcycle",
+    "authorship": "Original procedural meshes and materials for this project; no downloaded model, branded badge, photograph or external texture is embedded.",
+    "reference": "https://www.triumphmotorcycles.com/motorcycles/classic/bonneville/bonneville-t100",
+    "referenceUse": "Official component descriptions and published proportions informed the 1.45 m wheelbase, approximately 0.79 m saddle, spoke wheels, twin cradle, twin cylinders, round headlamp and swept handlebar. Generic interpretation, not a dimensional Triumph replica.",
+    "triangles": 39720,
+    "materialBatches": 16,
+    "dimensionsMeters": [0.90, 1.265, 2.232],
+    "details": "Physical spokes, discs, tire tread, engine fins, tubular frame, fork, sculpted tank, stitched saddle, controls and mirrors.",
+    "remaining": "Cast markings, exact tire tread specification, cables and instrument lettering are simplified. No CAD or photogrammetry was used."
+  },
+  "broom": {
+    "name": "Ash and reed enchanted commuter broom",
+    "authorship": "Original fictional prop with a curved ash handle, individually tapered reed bundle, brass bindings and subdued jade emissive details.",
+    "triangles": 22080,
+    "materialBatches": 7,
+    "dimensionsMeters": [0.455, 0.375, 2.294],
+    "motion": "Low hover follows traversable ground; it does not implement free flight."
+  },
+  "rider": {
+    "source": "Existing Pixiv and Sakurada avatars and their retargeted CC0 Seated animation; source licenses remain under public/assets/characters.",
+    "method": "Reversible skeleton overlay matches hips, wrists and ankles to actor-local contacts. Each mixer update starts from restored animation baselines. Torso lean adapts to arm length; neck and head compensate so the rider looks ahead.",
+    "checks": "Both avatars and both modes tested with actual mobile GLB node hierarchies: 240 stationary frames without accumulating rotation, head direction within 0.16 rad of the seated baseline, grip/foot contacts, correct left/right sides, and restoration to Idle.",
+    "visualEvidence": "Actual gameplay HUD and side-view captures are collected by scripts/check-world-commute.mjs in output/world-commute-20261025. Automated geometry checks do not establish final visual fidelity."
+  },
+  "files": ["src/features/world/commute-vehicle-model.ts", "src/features/world/CommuteVehicle.tsx", "src/features/world/character-riding-pose.ts"]
+}

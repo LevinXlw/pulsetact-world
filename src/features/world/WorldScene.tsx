@@ -14,6 +14,8 @@ import {BOSTON_DAYLIGHT} from './campus-daylight';
 import {isInsideCDSInterior} from './cds-interior-layout';
 import {CDS_DOORS,CDS_DOOR_BY_ID,cdsLocalToWorld,type CDSDoorId} from './cds-door-layout';
 import {CDSDoors} from './CDSDoors';
+import {CommuteVehicle} from './CommuteVehicle';
+import {advanceCommuteMovement,getCommuteMode,type CommuteMode} from './commute';
 
 export type CharacterReview = {id: CharacterId; motion: CharacterMotion; angle: number; close: boolean};
 
@@ -32,6 +34,9 @@ type WorldSceneProps = {
   openingDoor?:CDSDoorId|null;
   onDoorOpened?:()=>void;
   mobile?:boolean;
+  commuteMode?:CommuteMode;
+  boosting?:boolean;
+  onCommuteBlocked?:()=>void;
   allowMobileHd?:boolean;
   campusId?:CampusId;
   paused: boolean;
@@ -126,6 +131,7 @@ function RemoteStudent({player, assets, quality}: {player: WorldPlayer; assets: 
 
 function CampusWorld(props: WorldSceneProps) {
   const indoor=props.interior==='cds';
+  const commute=getCommuteMode(indoor?'walk':props.commuteMode),riding=commute.id!=='walk';
   const doorway=CDS_DOOR_BY_ID[props.interiorDoor??'east'].interior;
   const campusId=props.campusId??'boston',spawn=indoor?doorway.position:campusSpawn(campusId),lookTarget=indoor?doorway.lookAt:campusLookTarget(campusId);
   const initialYaw=Math.atan2(spawn[0]-lookTarget[0],spawn[1]-lookTarget[1]);
@@ -152,6 +158,7 @@ function CampusWorld(props: WorldSceneProps) {
   const point = useRef(new Vector3(spawn[0], 3, spawn[1]));
   const actor = useRef<Group>(null), sun = useRef<DirectionalLight>(null);
   const keys = useRef(new Set<string>()), speed = useRef(0), yaw = useRef(initialYaw + Math.PI);
+  const actualSpeed=useRef(0);
   const look = useRef({yaw: initialYaw, pitch: initialPitch, distance: initialDistance});
   const drag = useRef<{id: number; x: number; y: number} | null>(null);
   const movedAt = useRef(0), firstCamera = useRef(true);
@@ -233,6 +240,19 @@ function CampusWorld(props: WorldSceneProps) {
   }, [gl]);
   useEffect(() => {if (props.paused) {keys.current.clear(); speed.current = 0; drag.current = null;}}, [props.paused]);
   useEffect(()=>{
+    speed.current=0;actualSpeed.current=0;
+    if(!riding||!assets||assets!==ownedAssets.current)return;
+    // A rider occupies more room than a pedestrian. Reject summons next to a
+    // wall or edge instead of embedding the vehicle or moving the saved point.
+    const origin=new Vector3(point.current.x,point.current.y+.72,point.current.z),direction=new Vector3();
+    for(let i=0;i<12;i++){
+      const angle=i*Math.PI/6;direction.set(Math.sin(angle),0,Math.cos(angle));
+      const reach=commute.clearance+(commute.id==='motorcycle'?.5:.8)*Math.abs(Math.cos(angle-yaw.current));
+      const x=point.current.x+direction.x*reach,z=point.current.z+direction.z*reach,h=assets.collision.groundHeight(x,z);
+      if(!walkableCampus(campusId,x,z)||h===undefined||Math.abs(h-point.current.y)>.68||assets.collision.distance(origin,direction,reach)!==undefined){live.current.onCommuteBlocked?.();break;}
+    }
+  },[commute.id,assets]);
+  useEffect(()=>{
     if(!props.openingDoor)return;
     const door=CDS_DOOR_BY_ID[props.openingDoor],center=indoor?door.local:cdsLocalToWorld(door.local);
     const doorYaw=Math.atan2(point.current.x-center[0],point.current.z-center[1]);
@@ -288,12 +308,13 @@ function CampusWorld(props: WorldSceneProps) {
     const dx = active ? Number(k.has('d') || k.has('arrowright')) - Number(k.has('a') || k.has('arrowleft')) + (props.moveInput?.x ?? 0) : 0;
     const dz = active ? Number(k.has('w') || k.has('arrowup')) - Number(k.has('s') || k.has('arrowdown')) + (props.moveInput?.z ?? 0) : 0;
     let moving = false;
-    const isRunning = active && k.has('shift');
+    const isRunning = active && (k.has('shift')||!!props.boosting);
+    actualSpeed.current=0;
     if (dx || dz) {
       v.forward.set(-Math.sin(look.current.yaw), 0, -Math.cos(look.current.yaw));
       v.right.set(-v.forward.z, 0, v.forward.x);
       v.direction.copy(v.forward).multiplyScalar(dz).addScaledVector(v.right, dx).normalize();
-      speed.current += ((isRunning ? 7.2 : 3.6) - speed.current) * (1 - Math.exp(-10 * dt));
+      speed.current += ((isRunning ? commute.sprintSpeed : commute.speed) - speed.current) * (1 - Math.exp(-(riding?4.2:10) * dt));
       const step = speed.current * dt;
       const tryStep = (x: number, z: number) => {
         v.next.set(point.current.x + x, point.current.y, point.current.z + z);
@@ -306,7 +327,14 @@ function CampusWorld(props: WorldSceneProps) {
         if (height === undefined || Math.abs(height - point.current.y) > .68) return false;
         v.origin.copy(point.current).y += .9;
         v.ray.set(x, 0, z).normalize();
-        if (assets.collision.distance(v.origin, v.ray, Math.hypot(x, z) + .34) !== undefined) return false;
+        const reach=Math.hypot(x,z)+(riding?1.3:commute.clearance);
+        if (assets.collision.distance(v.origin, v.ray, reach) !== undefined) return false;
+        if(riding){
+          // Sweep both sides as well as the centre so the wider vehicle cannot
+          // skim through railings or pass a gap that only a pedestrian fits.
+          const ox=point.current.x,oz=point.current.z,sideX=-v.ray.z*.3,sideZ=v.ray.x*.3;
+          for(const side of [-1,1]){v.origin.set(ox+sideX*side,Math.max(height,point.current.y)+.46,oz+sideZ*side);if(assets.collision.distance(v.origin,v.ray,reach)!==undefined)return false;}
+        }
         if(indoor){
           // Catch low benches/table edges that the chest ray passes over.
           // Raise this probe above the next valid tread so stairs stay clear.
@@ -315,22 +343,29 @@ function CampusWorld(props: WorldSceneProps) {
         }
         v.next.y = height; point.current.copy(v.next); return true;
       };
-      moving = tryStep(v.direction.x * step, v.direction.z * step);
-      // Sliding along a facade prevents the character sticking to its edge.
-      if (!moving && Math.abs(v.direction.x) > .01 && Math.abs(v.direction.z) > .01) moving = tryStep(v.direction.x * step, 0) || tryStep(0, v.direction.z * step);
+      const movement=advanceCommuteMovement(v.direction.x,v.direction.z,step,tryStep);
+      moving=movement.moving;actualSpeed.current=dt>0?movement.distance/dt:0;
       if (moving) yaw.current += wrapAngle(Math.atan2(v.direction.x, v.direction.z) - yaw.current) * (1 - Math.exp(-13 * dt));
     } else speed.current = 0;
     actor.current.position.copy(point.current);
     actor.current.rotation.y = props.characterReview ? initialYaw + props.characterReview.angle : yaw.current;
+    let slope=0;
+    if(commute.id==='motorcycle'){
+      const fx=Math.sin(yaw.current)*.65,fz=Math.cos(yaw.current)*.65;
+      const front=assets.collision.groundHeight(point.current.x+fx,point.current.z+fz),back=assets.collision.groundHeight(point.current.x-fx,point.current.z-fz);
+      if(front!==undefined&&back!==undefined)slope=Math.max(-.28,Math.min(.28,Math.atan2(back-front,1.3)));
+    }
+    actor.current.rotation.x+=(slope-actor.current.rotation.x)*(1-Math.exp(-10*dt));
     if (moving !== walking) setWalking(moving);
     if ((moving && isRunning) !== running) setRunning(moving && isRunning);
 
     const view = look.current;
     const review = props.characterReview;
     const cameraYaw = review ? initialYaw : view.yaw;
-    const cameraDistance = review ? (review.close ? 1.55 : 4.6) : view.distance;
-    v.camera.set(point.current.x + Math.sin(cameraYaw) * cameraDistance, point.current.y + (review ? (review.close ? 1.53 : .9) : 2.05), point.current.z + Math.cos(cameraYaw) * cameraDistance);
-    v.aim.copy(point.current).y += review ? (review.close ? 1.48 : .65) : 1.25;
+    const cameraDistance = review ? (review.close ? 1.55 : 4.6) : view.distance+(riding?1.1:0);
+    const orbitPitch=Math.max(-.12,Math.min(.72,.24-view.pitch)),orbitDistance=riding?Math.cos(orbitPitch)*cameraDistance:cameraDistance;
+    v.camera.set(point.current.x + Math.sin(cameraYaw) * orbitDistance, point.current.y + (review ? (review.close ? 1.53 : .9) : riding?1+Math.sin(orbitPitch)*cameraDistance:2.05), point.current.z + Math.cos(cameraYaw) * orbitDistance);
+    v.aim.copy(point.current).y += review ? (review.close ? 1.48 : .65) : riding?1:1.25;
     v.ray.copy(v.camera).sub(v.aim);
     const length = v.ray.length(); v.ray.normalize();
     const obstruction = assets.collision.distance(v.aim, v.ray, length, true);
@@ -340,11 +375,13 @@ function CampusWorld(props: WorldSceneProps) {
     camera.position.lerp(v.camera, firstCamera.current || indoor ? 1 : 1 - Math.exp(-14 * dt));
     actor.current.visible=!indoor||camera.position.distanceTo(v.aim)>.65;
     assets.update(camera.position,dt);
-    if (review) camera.lookAt(v.aim);
+    // The larger mounted silhouette must stay framed even when a wall shortens
+    // the camera ray. A fixed walking pitch would crop the vehicle below frame.
+    if (review||riding) camera.lookAt(v.aim);
     else camera.rotation.set(view.pitch, view.yaw, 0, 'YXZ');
     firstCamera.current = false;
     if (camera instanceof PerspectiveCamera) {
-      const targetFov = review ? 36 : running ? 57 : 52;
+      const targetFov = review ? 36 : riding&&camera.position.distanceTo(v.aim)<2.2?68:riding&&moving?58:running ? 57 : 52;
       if (Math.abs(camera.fov - targetFov) > .01) {camera.fov += (targetFov - camera.fov) * (1 - Math.exp(-4 * dt)); camera.updateProjectionMatrix();}
     }
     if (sun.current) {
@@ -378,7 +415,7 @@ function CampusWorld(props: WorldSceneProps) {
         });
         (window as unknown as {__worldScene: unknown}).__worldScene = {
         campusId,interior:props.interior??null,doorHinges,mobile:props.mobile,rendering:scene.userData.mitRenderer??{mode:'direct'},geometryCount:gl.info.memory.geometries,textureCount:gl.info.memory.textures,position: point.current.toArray(), cameraPosition: camera.position.toArray(), yaw: yaw.current,
-        players: props.players.length, walking: moving, calls: gl.info.render.calls, triangles: gl.info.render.triangles,
+        players: props.players.length, walking: moving, commuteMode:commute.id,movementSpeed:actualSpeed.current,calls: gl.info.render.calls, triangles: gl.info.render.triangles,
         workshop: WORKSHOP_POSITION, workshopDistance: Math.hypot(point.current.x - WORKSHOP_POSITION[0], point.current.z - WORKSHOP_POSITION[1]),
         quality: props.quality, objectCount: scene.children.length, domeInFrame: inFrame,
         character: selectedCharacter, characterReady, selfId: props.selfId, renderedCharacters,
@@ -394,7 +431,7 @@ function CampusWorld(props: WorldSceneProps) {
     {assets && <>
       <primitive object={assets.model}/>
       {(indoor||campusId==='boston')&&<CDSDoors inside={indoor} activeDoor={props.activeDoor??null} openingDoor={props.openingDoor??null} onOpened={props.onDoorOpened}/>}
-      <group ref={actor} userData={{playerId: props.selfId}}><CharacterAvatar key={characterVersion} id={selectedCharacter} quality={props.quality} motion={props.characterReview?.motion ?? (running ? 'Run' : walking ? 'Walk' : 'Idle')} onReady={()=>{setReadyCharacter(characterLoad);live.current.onCharacterReady?.();}} onError={props.onError}/></group>
+      <group ref={actor} userData={{playerId: props.selfId}}>{riding&&<CommuteVehicle mode={commute.id as 'motorcycle'|'broom'} moving={walking} speedRef={actualSpeed}/>}<CharacterAvatar key={characterVersion} id={selectedCharacter} quality={props.quality} ride={riding?commute.id as 'motorcycle'|'broom':undefined} motion={props.characterReview?.motion ?? (riding?'Idle':running ? 'Run' : walking ? 'Walk' : 'Idle')} onReady={()=>{setReadyCharacter(characterLoad);live.current.onCharacterReady?.();}} onError={props.onError}/></group>
       {props.players.filter(player => player.id !== props.selfId).map(player => <RemoteStudent key={player.id} player={player} assets={assets} quality={props.quality}/>)}
       {!indoor&&campusId==='boston'&&<LearningWorkshop position={[WORKSHOP_POSITION[0], assets.collision.groundHeight(...WORKSHOP_POSITION) ?? 3, WORKSHOP_POSITION[1]]}/>}
       {props.discoveries?.map(discovery => <DiscoveryMarker key={discovery.id} title={discovery.title} active={discovery.active} completed={discovery.completed} position={[discovery.position[0],assets.collision.groundHeight(...discovery.position) ?? 3,discovery.position[1]]}/>)}

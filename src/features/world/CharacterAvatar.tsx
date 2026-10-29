@@ -6,6 +6,8 @@ import {clone} from 'three/examples/jsm/utils/SkeletonUtils.js';
 import {toonGradient} from './scene-assets';
 import {characterCandidate, type CharacterId, type CharacterMotion} from './character-catalog';
 import {isMobileWorld} from './mobile-device';
+import {createCharacterRidingPose} from './character-riding-pose';
+import type {RideMode} from './commute-vehicle-model';
 
 // Avatars share source geometry/textures while mounted and own their bones,
 // mixers and converted materials. Only the small entry sources stay cached.
@@ -132,10 +134,11 @@ function createCharacter(gltf: GLTF, facing: number) {
   const mixer = new AnimationMixer(scene);
   const actions = new Map<string, AnimationAction>();
   gltf.animations.forEach(clip => actions.set(clip.name, mixer.clipAction(clip)));
+  const riding=createCharacterRidingPose(root,scene);
   geometries.forEach(geometry=>geometryUsers.set(geometry,(geometryUsers.get(geometry)??0)+1));
   let disposed=false;
   return {
-    root, mixer, actions,
+    root, mixer, actions,riding,
     get disposed(){return disposed;},
     dispose() {
       if(disposed)return;
@@ -157,8 +160,8 @@ function createCharacter(gltf: GLTF, facing: number) {
 }
 type CharacterInstance = ReturnType<typeof createCharacter>;
 
-export function CharacterAvatar({id = 'pixiv', motion = 'Idle', quality = 'low', onReady, onError}: {
-  id?: CharacterId; motion?: CharacterMotion; quality?: 'standard'|'low'; onReady?: () => void; onError?: (message: string) => void;
+export function CharacterAvatar({id = 'pixiv', motion = 'Idle', quality = 'low', ride,onReady, onError}: {
+  id?: CharacterId; motion?: CharacterMotion; quality?: 'standard'|'low'; ride?:RideMode;onReady?: () => void; onError?: (message: string) => void;
 }) {
   const candidate = characterCandidate(id);
   const [mobile]=useState(isMobileWorld);
@@ -181,14 +184,17 @@ export function CharacterAvatar({id = 'pixiv', motion = 'Idle', quality = 'low',
     // React can retain the old instance for one render while its replacement
     // loads (including fast refresh). Never reactivate an uncached action.
     if (!instance || instance.disposed) return;
-    const next = instance.actions.get(motion) ?? instance.actions.get('Idle');
+    if(!ride)instance.riding.reset();
+    const next = instance.actions.get(ride?'Seated':motion) ?? instance.actions.get('Idle');
     if (!next) return;
     instance.actions.forEach(action => {if (action !== next) action.fadeOut(.2);});
     next.reset().setEffectiveTimeScale(1).setEffectiveWeight(1).fadeIn(.2).play();
-  }, [instance, motion]);
-  useFrame((_, delta) => {
+  }, [instance, motion,ride]);
+  useFrame(({clock}, delta) => {
     if (!instance || instance.disposed) return;
+    instance.riding.restore();
     instance.mixer.update(Math.min(delta, .05));
+    if(ride)instance.riding.apply(ride,clock.elapsedTime);
     if (import.meta.env.DEV) {
       instance.root.userData.motion = motion;
       instance.root.userData.characterId = id;

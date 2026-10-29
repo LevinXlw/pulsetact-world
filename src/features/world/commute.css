@@ -1,0 +1,24 @@
+.solo-commute-panel>p:first-child{color:#6b7d67;font-size:13px;margin:0 0 20px;line-height:1.7}
+.solo-commute-options{display:grid;gap:12px}
+.solo-commute-options>button{width:100%;display:flex;align-items:center;gap:17px;text-align:left;border:1px solid #ccd6bf;border-radius:5px 20px 5px 20px;padding:20px 18px;color:#2c4f40;background:#f3f2e8;transition:background .18s,border-color .18s}
+.solo-commute-options>button:hover,.solo-commute-options>button[aria-pressed=true]{background:#e1e9cf;border-color:#7e986b}
+.solo-commute-icon{display:grid;place-items:center;flex-shrink:0;width:60px;height:60px;border-radius:50%;background:#e7e6d5;color:#647a54}
+.solo-commute-icon.motorcycle{background:#e9dfcc;color:#8d654a}.solo-commute-icon.broom{background:#dce5de;color:#577d7b}
+.solo-commute-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:7px}.solo-commute-copy strong{font-size:17px;font-weight:500}.solo-commute-copy small{font-size:11px;line-height:1.65;color:#677b65}.solo-commute-copy em{font-size:10px;font-style:normal;color:#8c795d;font-variant-numeric:tabular-nums}
+.solo-commute-select{font-size:11px;color:#57734d;flex-shrink:0}
+.solo-ride-controls{position:absolute;right:40px;bottom:115px;z-index:4;display:flex;flex-direction:column;align-items:stretch;gap:7px;max-width:190px}.solo-ride-status,.solo-ride-boost{display:flex;align-items:center;justify-content:center;gap:9px;color:#fff9e7;border:1px solid #e3e9c784;border-radius:12px;background:#294d3cde;padding:11px 14px;min-height:44px;font-size:11px;backdrop-filter:blur(9px)}.solo-ride-status span{display:flex;flex-direction:column;gap:4px;text-align:left}.solo-ride-status small{font-size:9px;color:#d2dabc}.solo-ride-boost{display:none;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}.solo-ride-boost[aria-pressed=true]{background:#839354;color:#fff}
+@media(any-pointer:coarse){.solo-ride-boost{display:flex}.solo-ride-controls{right:max(18px,env(safe-area-inset-right));bottom:calc(101px + env(safe-area-inset-bottom));max-width:148px}.solo-ride-status{padding:9px 10px}.solo-ride-status small{font-size:9px}}
+@media(max-width:650px){.solo-commute-options>button{padding:15px 12px;gap:11px}.solo-commute-icon{width:43px;height:43px}.solo-commute-icon svg{width:26px}.solo-commute-copy strong{font-size:15px}.solo-commute-copy small{font-size:10px}.solo-commute-copy em{font-size:9px}.solo-ride-controls{right:18px;bottom:103px;max-width:145px}}
+@media(any-pointer:coarse) and (max-height:550px) and (orientation:landscape){.solo-ride-controls{bottom:20px;right:max(18px,env(safe-area-inset-right));max-width:140px}.solo-ride-status{min-height:36px;padding:6px 10px}.solo-ride-boost{min-height:36px;padding:7px 10px}}
+/* Leave the centre of a portrait screen clear while travelling. */
+@media(max-width:650px) and (orientation:portrait){
+ .solo-world:not([data-commute-mode=walk]) .pw-chapter{top:92px;max-width:calc(100% - 85px)}
+ .solo-world:not([data-commute-mode=walk]) .pw-chapter>span,.solo-world:not([data-commute-mode=walk]) .pw-chapter>p,.solo-world:not([data-commute-mode=walk]) .solo-progress{display:none}
+ .solo-world:not([data-commute-mode=walk]) .pw-chapter h1{font-size:21px;margin:0}
+ .solo-world:not([data-commute-mode=walk]) .solo-wayfinder{top:132px;padding:8px 10px;max-width:calc(100% - 92px)}
+ .solo-world:not([data-commute-mode=walk]) .solo-wayfinder small{display:none}
+ .solo-world:not([data-commute-mode=walk]) .solo-wayfinder strong{font-size:11px}
+ .solo-world:not([data-commute-mode=walk]) .pw-interaction{bottom:calc(220px + env(safe-area-inset-bottom));width:max-content;max-width:calc(100% - 40px);min-height:44px;padding:8px 12px;font-size:11px}
+ .solo-world:not([data-commute-mode=walk]) .pw-interaction>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .solo-world:not([data-commute-mode=walk]) .pw-interaction small,.solo-world:not([data-commute-mode=walk]) .pw-interaction kbd{display:none}
+}
