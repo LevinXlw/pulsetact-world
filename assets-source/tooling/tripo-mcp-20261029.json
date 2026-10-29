@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-29T06:54:55.992Z",
+  "scope": "Offline tooling integration; no asset generation or uploads",
+  "installation": {
+    "prefix": "assets-source/tools/tripo-mcp",
+    "manifest": "scripts/tripo-mcp/package.json",
+    "lock": "scripts/tripo-mcp/package-lock.json",
+    "lock_sha256": "aa8413499a6f44cc6a9c1ff27a55e1d251cd41ce53226b960b27c52e9fd9e469",
+    "node_version": "v24.16.0",
+    "packages": {
+      "tripo-cli": "0.8.0",
+      "@modelcontextprotocol/sdk": "1.32.2"
+    },
+    "cli_entry": "assets-source/tools/tripo-mcp/node_modules/tripo-cli/dist/cli.js",
+    "cli_sha256": "48f7eb3c5721cfa8399cbace8f062d4bae3fc83d380b755dd2d78e1872ae5f67",
+    "command": "tripo mcp",
+    "transport": "stdio",
+    "npm_integrity": "sha512-koZ2vDIyqezJFZoGxnET98mzAmKVkhvrAJjY7gfsgTLiHyASOsPLLRFUw91yuMrfZ1t6ojcluajC4iz7I+OKYw=="
+  },
+  "authentication": {
+    "source": "Stored active named profile in user .tripo/config.json",
+    "credential_presence": "PRESENT",
+    "authenticated": true,
+    "region": "ov",
+    "secrets_copied": false,
+    "account_names_or_balance_amounts_recorded": false
+  },
+  "verification": {
+    "script": "scripts/check-tripo-mcp.mjs",
+    "script_sha256": "a36b5a2b3c9c171d82605467c0123a2131ba8e65bf2ab35948c99149b35853b6",
+    "passed": true,
+    "server": {
+      "name": "tripo-cli",
+      "version": "0.8.0"
+    },
+    "stages": [
+      {
+        "stage": "installation",
+        "passed": true
+      },
+      {
+        "stage": "credentials",
+        "passed": true
+      },
+      {
+        "stage": "initialize",
+        "passed": true
+      },
+      {
+        "stage": "tools/list",
+        "passed": true,
+        "count": 5
+      },
+      {
+        "stage": "tripo_balance",
+        "passed": true
+      }
+    ],
+    "tool_names": [
+      "tripo_balance",
+      "tripo_history",
+      "tripo_make",
+      "tripo_task_get",
+      "tripo_task_wait"
+    ],
+    "calls": [
+      {
+        "tool": "tripo_balance",
+        "passed": true
+      }
+    ],
+    "paid_tasks_created": 0,
+    "uploads": 0,
+    "stderr_bytes": 0,
+    "network": "Direct requests failed; existing local system proxy passed",
+    "environment": {
+      "proxy": "configured",
+      "credential_overrides": false,
+      "analytics": "disabled_for_this_process",
+      "update_check": "disabled_for_this_process"
+    }
+  },
+  "codex_registration": {
+    "name": "tripo",
+    "scope": "User-level config outside repository",
+    "enabled": true,
+    "verified_by": "Root agent: codex mcp add followed by codex mcp get",
+    "cwd": "C:/Users/xieli/Desktop/projects/pulsetact-world",
+    "startup_timeout_sec": 30,
+    "tool_timeout_sec": 900,
+    "current_chat_native_tools_reloaded": false,
+    "next_connection_check": "Reload MCP or open a new chat and confirm native Tripo tool availability"
+  },
+  "provenance": {
+    "official_cli_docs": "https://developers.tripo3d.ai/en/docs/cli",
+    "codex_mcp_docs": "https://learn.chatgpt.com/docs/extend/mcp?surface=cli",
+    "npm_package": "https://registry.npmjs.org/tripo-cli/0.8.0",
+    "declared_source_repository": "https://github.com/vast-enterprise/Tripo-API-CLI",
+    "source_audit": "Declared repository returned public 404; inspected official npm publication source and verified tarball integrity"
+  },
+  "project_standard": "docs/development-standards.md section 12; generated candidates still require source/license records, editable master cleanup, and real-scene/runtime visual acceptance"
+}
